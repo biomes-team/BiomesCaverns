@@ -2,12 +2,13 @@
 <Defs>
 
   <RoofDef>
-    <defName>BiomesCaverns_RockRoofSolid</defName>
-    <label>solid overhead mountain</label>
+    <defName>BiomesCaverns_RockRoofStable</defName>
+    <label>stable overhead mountain</label>
     <isThickRoof>true</isThickRoof>
     <isNatural>true</isNatural>
     <collapseLeavingThingDef>CollapsedRocks</collapseLeavingThingDef>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
   </RoofDef>
-
+  
+  
 </Defs>
