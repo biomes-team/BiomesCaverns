@@ -80,25 +80,10 @@ namespace BiomesCaverns.Patches
     {
         static void Postfix(IntVec3 cell, Map map, ref float __result)
         {
-            if (map.roofGrid.RoofAt(c) == BiomesCavernsDefOf.BiomesCaverns_RockRoofStable)
+            if (map.roofGrid.RoofAt(cell) == BiomesCavernsDefOf.BiomesCaverns_RockRoofStable)
             {
                 __result *= 0.25f;
             }
-        }
-    }
-
-    /// <summary>
-    /// TODO: REMOVE THIS
-    /// This patch disables ALL cave plants 
-    /// This is for testing only, since too many glowing cave plants makes the map too laggy to test
-    /// </summary>
-    [HarmonyPatch(typeof(RimWorld.WildPlantSpawner), "GoodRoofForCavePlant")]
-    static class CavePlantDisable
-    {
-        static bool Prefix(ref bool __result)
-        {
-            __result = false;
-            return false;
         }
     }
 
