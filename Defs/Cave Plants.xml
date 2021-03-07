@@ -2,7 +2,7 @@
 <Defs>	
     
     <ThingDef ParentName="TreeBase">
-        <defName>MushroomTree</defName>
+        <defName>BMT_MushroomTree</defName>
         <label>mushroom tree</label>
         <description>A strong mushroom tree. Slow-growing, but its fungus is very strong.</description>
         <graphicData>
@@ -10,8 +10,8 @@
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
 		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_CavePlant">
-				<biomes_CavePlant>true</biomes_CavePlant>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<cavePlant>true</cavePlant>
 			</li>
 		</modExtensions>
         <statBases>

@@ -40,7 +40,7 @@ namespace BiomesCaverns.MapGeneration
             List<RoofThreshold> list = new List<RoofThreshold>();
             list.Add(new RoofThreshold
             {
-                roofDef = BiomesCavernsDefOf.BiomesCaverns_RockRoofStable,
+                roofDef = BiomesCavernsDefOf.BMT_RockRoofStable,
                 minGridVal = 0.33f
             });
             //list.Add(new RoofThreshold

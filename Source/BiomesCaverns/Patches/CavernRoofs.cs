@@ -19,7 +19,7 @@ namespace BiomesCaverns.Patches
     {
         static void Postfix(int index, ref RoofGrid __instance, ref Color __result)
         {
-            if (BiomesCavernsDefOf.BiomesCaverns_RockRoofStable != null && __instance.RoofAt(index) == BiomesCavernsDefOf.BiomesCaverns_RockRoofStable)
+            if (BiomesCavernsDefOf.BMT_RockRoofStable != null && __instance.RoofAt(index) == BiomesCavernsDefOf.BMT_RockRoofStable)
             {
                 //__result = Color.black;
 
@@ -42,7 +42,7 @@ namespace BiomesCaverns.Patches
     {
         static bool Prefix(Map map, GenStepParams parms)
         {
-            if(map.Biome.defName == "BiomesCaverns_SurfaceCavern")
+            if(map.Biome.defName == "BMT_SurfaceCavern")
             {
                 new RocksFromGrid_Surface().Generate(map, parms);
                 return false;
@@ -62,7 +62,7 @@ namespace BiomesCaverns.Patches
     {
         static bool Prefix(IntVec3 c, Map map, ref bool __result)
         {
-            if(map.roofGrid.RoofAt(c) == BiomesCavernsDefOf.BiomesCaverns_RockRoofStable)
+            if(map.roofGrid.RoofAt(c) == BiomesCavernsDefOf.BMT_RockRoofStable)
             {
                 __result = true;
                 return false;
@@ -80,7 +80,7 @@ namespace BiomesCaverns.Patches
     {
         static void Postfix(IntVec3 cell, Map map, ref float __result)
         {
-            if (map.roofGrid.RoofAt(cell) == BiomesCavernsDefOf.BiomesCaverns_RockRoofStable)
+            if (map.roofGrid.RoofAt(cell) == BiomesCavernsDefOf.BMT_RockRoofStable)
             {
                 __result *= 0.25f;
             }

@@ -107,7 +107,7 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-      <MushroomTree>1.0</MushroomTree>
+      <BMT_MushroomTree>1.0</BMT_MushroomTree>
       <Plant_Grass>5.0</Plant_Grass>
       <Plant_TallGrass>2.0</Plant_TallGrass>
       <Plant_Brambles>1.0</Plant_Brambles>

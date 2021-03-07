@@ -11,7 +11,7 @@ namespace BiomesCaverns
     [DefOf]
     public static class BiomesCavernsDefOf
     {
-        public static RoofDef BiomesCaverns_RockRoofStable;
+        public static RoofDef BMT_RockRoofStable;
 
     }
 }
