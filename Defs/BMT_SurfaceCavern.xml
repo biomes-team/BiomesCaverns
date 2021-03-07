@@ -2,7 +2,7 @@
 <Defs>
 
   <BiomeDef>
-    <defName>BiomesCaverns_SurfaceCavern</defName>
+    <defName>BMT_SurfaceCavern</defName>
     <label>surface cavern</label>
     <description>A shallow cave system, partly open to the outdoors.\n\nWhile normal life is still possible here, colonies that can adapt to the dark will fare better.</description>
     <workerClass>BiomesCaverns.BiomeWorker_Test</workerClass>
