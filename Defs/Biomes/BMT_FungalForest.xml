@@ -2,15 +2,20 @@
 <Defs>
 
   <BiomeDef>
-    <defName>BMT_SurfaceCavern</defName>
-    <label>surface cavern</label>
-    <description>A shallow cave system, partly open to the outdoors.\n\nWhile normal life is still possible here, colonies that can adapt to the dark will fare better.</description>
+    <defName>BMT_FungalForest</defName>
+    <label>fungal forest</label>
+    <description>A damp cave system full of fungi</description>
     <workerClass>BiomesCaverns.BiomeWorker_Test</workerClass>
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isCavern>true</isCavern>
+		</li>
+	</modExtensions>
     <animalDensity>3.7</animalDensity>
     <plantDensity>0.65</plantDensity>
     <settlementSelectionWeight>1</settlementSelectionWeight>
     <movementDifficulty>1</movementDifficulty>
-    <texture>World/Biomes/TemperateForest</texture>
+    <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
     <foragedFood>RawBerries</foragedFood>
     <wildPlantRegrowDays>20</wildPlantRegrowDays>
@@ -107,7 +112,7 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-      <BMT_MushroomTree>1.0</BMT_MushroomTree>
+      <BMT_Spirecap>1.0</BMT_Spirecap>
       <Plant_Grass>5.0</Plant_Grass>
       <Plant_TallGrass>2.0</Plant_TallGrass>
       <Plant_Brambles>1.0</Plant_Brambles>

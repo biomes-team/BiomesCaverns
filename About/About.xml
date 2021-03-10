@@ -2,10 +2,23 @@
 <ModMetaData>
   <name>Biomes! Caverns</name>
   <author>The Biomes Mod Team</author>
-  <packageId>BiomesTeam.BiomesCaverns</packageId>
   <supportedVersions>
     <li>1.2</li>
   </supportedVersions>
+  <packageId>BiomesTeam.BiomesCaverns</packageId>
+    <modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+	<li>
+        <packageId>BiomesTeam.BiomesCore</packageId>
+        <displayName>Biomes! Core</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2038000893</steamWorkshopUrl>
+    </li>
+</modDependencies>
   <description>
 The caverns module for the Biomes! mods. Requires Biomes! Core loaded before it.
   </description>
