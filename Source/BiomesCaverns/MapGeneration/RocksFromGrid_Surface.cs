@@ -33,7 +33,7 @@ namespace BiomesCaverns.MapGeneration
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            Log.Message("Caves");
+            Log.Message("Surface Caverns");
 
             map.regionAndRoomUpdater.Enabled = false;
             float num = 0.7f;

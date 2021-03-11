@@ -1,4 +1,5 @@
 ﻿using BiomesCaverns.MapGeneration;
+using BiomesCore.DefModExtensions;
 using HarmonyLib;
 using System;
 using System.Collections.Generic;
@@ -42,10 +43,21 @@ namespace BiomesCaverns.Patches
     {
         static bool Prefix(Map map, GenStepParams parms)
         {
+            // special roofs for surface caverns
             if(map.Biome.defName == "BMT_SurfaceCavern")
             {
                 new RocksFromGrid_Surface().Generate(map, parms);
                 return false;
+            }
+
+            // solid cave roof for other caverns
+            if (map.Biome.HasModExtension<BiomesMap>())
+            {
+                if (map.Biome.GetModExtension<BiomesMap>().isCavern)
+                {
+                    new RocksFromGrid_Cavern().Generate(map, parms);
+                    return false;
+                }
             }
 
             return true;

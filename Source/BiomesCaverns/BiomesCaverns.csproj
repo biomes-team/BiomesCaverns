@@ -39,6 +39,10 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="BiomesCore">
+      <HintPath>..\..\..\RWBiomes_Core\1.2\Assemblies\BiomesCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -297,6 +301,7 @@
     <Compile Include="BiomesCavernsDefOf.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="BiomesCaverns.cs" />
+    <Compile Include="MapGeneration\RocksFromGrid_Cavern.cs" />
     <Compile Include="MapGeneration\RocksFromGrid_Surface.cs" />
     <Compile Include="Patches\CavernRoofs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
