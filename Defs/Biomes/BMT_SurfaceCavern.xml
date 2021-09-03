@@ -5,7 +5,7 @@
     <defName>BMT_SurfaceCavern</defName>
     <label>surface cavern</label>
     <description>A shallow cave system, partly open to the outdoors.\n\nWhile normal life is still possible here, colonies that can adapt to the dark will fare better.</description>
-    <workerClass>BiomesCaverns.BiomeWorker_Test</workerClass>
+    <workerClass>BiomesCaverns.BiomeWorker_NoTest</workerClass>
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isCavern>true</isCavern>

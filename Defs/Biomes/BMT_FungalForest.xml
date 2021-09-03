@@ -9,6 +9,9 @@
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isCavern>true</isCavern>
+			<cavernShapes>
+				<li>Tunnels</li>
+			</cavernShapes>
 		</li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
@@ -76,26 +79,16 @@
     </terrainsByFertility>
     <terrainPatchMakers>
       <li>
-        <perlinFrequency>0.015</perlinFrequency>
+        <perlinFrequency>0.025</perlinFrequency>
         <thresholds>
           <li>
             <terrain>SoilRich</terrain>
             <min>0.73</min>
-            <max>0.80</max>
-          </li>
-          <li>
-            <terrain>Mud</terrain>
-            <min>0.80</min>
             <max>0.93</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
             <min>0.93</min>
-            <max>1.06</max>
-          </li>
-          <li>
-            <terrain>WaterDeep</terrain>
-            <min>1.06</min>
             <max>999</max>
           </li>
         </thresholds>

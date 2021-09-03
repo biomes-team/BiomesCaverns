@@ -299,6 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomesCavernsDefOf.cs" />
+    <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="BiomesCaverns.cs" />
     <Compile Include="MapGeneration\RocksFromGrid_Cavern.cs" />
