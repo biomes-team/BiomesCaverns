@@ -19,6 +19,12 @@
         <steamWorkshopUrl>steam://url/CommunityFilePage/2038000893</steamWorkshopUrl>
     </li>
 </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>brrainz.harmony</li>
+    <li>BiomesTeam.BiomesCore</li>
+  </loadAfter>
   <description>
 The caverns module for the Biomes! mods. Requires Biomes! Core loaded before it.
   </description>
