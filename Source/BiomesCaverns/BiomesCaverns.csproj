@@ -103,10 +103,6 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.FileSystemHttpModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.FileSystemHttpModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
       <Private>False</Private>
@@ -297,6 +293,8 @@
     <Compile Include="MapGeneration\RocksFromGrid_Surface.cs" />
     <Compile Include="Patches\CavernRoofs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection.cs" />
+    <Compile Include="RoofExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

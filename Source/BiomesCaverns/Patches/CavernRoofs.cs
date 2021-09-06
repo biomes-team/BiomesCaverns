@@ -4,10 +4,11 @@ using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using RimWorld;
+using System.Reflection;
+using System.Reflection.Emit;
 
 namespace BiomesCaverns.Patches
 {
@@ -15,7 +16,7 @@ namespace BiomesCaverns.Patches
     ///  Picks color for custom roofs, when roof overlay is toggled
     ///  Vanilla: thin roof = white, thick roof = 50% grey
     /// </summary>
-    [HarmonyPatch(typeof(Verse.RoofGrid), "GetCellExtraColor")]
+    [HarmonyPatch(typeof(RoofGrid), "GetCellExtraColor")]
     static class RoofColorPatch
     {
         static void Postfix(int index, ref RoofGrid __instance, ref Color __result)
@@ -38,7 +39,7 @@ namespace BiomesCaverns.Patches
     /// <summary>
     /// Allows placement of the cave roofs on map generation
     /// </summary>
-    [HarmonyPatch(typeof(RimWorld.GenStep_RocksFromGrid), "Generate")]
+    [HarmonyPatch(typeof(GenStep_RocksFromGrid), "Generate")]
     static class CaveRoofGeneration
     {
         static bool Prefix(Map map, GenStepParams parms)
@@ -69,7 +70,7 @@ namespace BiomesCaverns.Patches
     /// <summary>
     /// cave roofs don't have to be within range of a wall
     /// </summary>
-    [HarmonyPatch(typeof(Verse.RoofCollapseUtility), "WithinRangeOfRoofHolder")]
+    [HarmonyPatch(typeof(RoofCollapseUtility), "WithinRangeOfRoofHolder")]
     static class RoofCollapse_Disable
     {
         static bool Prefix(IntVec3 c, Map map, ref bool __result)
@@ -87,7 +88,7 @@ namespace BiomesCaverns.Patches
     /// <summary>
     /// Lowers infestation chance under cave roofs
     /// </summary>
-    [HarmonyPatch(typeof(RimWorld.InfestationCellFinder), "GetMountainousnessScoreAt")]
+    [HarmonyPatch(typeof(InfestationCellFinder), "GetMountainousnessScoreAt")]
     static class InfestationModifier
     {
         static void Postfix(IntVec3 cell, Map map, ref float __result)
@@ -99,4 +100,66 @@ namespace BiomesCaverns.Patches
         }
     }
 
+    [HarmonyPatch]
+    static class Cavern_FindPlayerStartSpot
+    {
+        public static MethodInfo IntVec3UnbreachableRoofedInfo = AccessTools.Method(typeof(IntVec3Extensions), "UnbreachableRoofed");
+
+        static MethodBase TargetMethod()
+        {
+            // Fetch the first lambda in Generate
+            return typeof(GenStep_FindPlayerStartSpot).GetLambda("Generate");
+        }
+
+        // Changes
+        // IntVec3.Roofed -> IntVec3Extended.Roofed
+        // in lambda function passed to TryFindCentralCell
+        [HarmonyPriority(Priority.First)]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            return instructions.ReplaceFunction(
+                IntVec3UnbreachableRoofedInfo,
+                "Roofed",
+                "GenStep_FindPlayerStartSpot.Generate");
+        }
+    }
+
+    [HarmonyPatch(typeof(DropCellFinder), "CanPhysicallyDropInto")]
+    static class CanPhysicallyDropIntoCavernRoofs
+    {
+        public static MethodInfo RoofDefUnbreachableRoofedInfo = AccessTools.Method(typeof(RoofDefExtensions), "UnbreachableRoofed");
+
+        // Changes
+        // IntVec3.Roofed -> IntVec3Extended.Roofed
+        // in lambda function passed to TryFindCentralCell
+        [HarmonyPriority(Priority.First)]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            bool repeat = true;
+            OpCode codeToMatch = OpCodes.Ldfld;
+            string fieldToMatch = "isThickRoof";
+            string parentMethodName = "CanPhysicallyDropInto";
+            bool found = false;
+            List<CodeInstruction> runningChanges = new List<CodeInstruction>();
+            foreach (CodeInstruction instruction in instructions)
+            {
+                // Find the section calling fieldToMatch and change to RoofDefUnbreachableRoofedInfo call
+                if ((repeat || !found) && instruction.opcode == codeToMatch && (instruction.operand as FieldInfo)?.Name == fieldToMatch)
+                {
+                    runningChanges.Add(new CodeInstruction(OpCodes.Call, RoofDefUnbreachableRoofedInfo));
+                   // runningChanges.Add(instruction);
+                    found = true;
+                }
+                else
+                {
+                    runningChanges.Add(instruction);
+                }
+            }
+            if (!found)
+            {
+                Log.ErrorOnce(String.Format("[BiomesCaverns] Cannot find {0} in {1}, skipping patch", fieldToMatch, parentMethodName), parentMethodName.GetHashCode() + fieldToMatch.GetHashCode());
+            }
+            return runningChanges.AsEnumerable();
+        }
+    }
 }

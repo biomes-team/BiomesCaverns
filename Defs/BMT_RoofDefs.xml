@@ -6,7 +6,7 @@
     <label>stable overhead mountain</label>
     <isThickRoof>true</isThickRoof>
     <isNatural>true</isNatural>
-    <collapseLeavingThingDef>CollapsedRocks</collapseLeavingThingDef>
+    <!-- <collapseLeavingThingDef>CollapsedRocks</collapseLeavingThingDef> -->
     <filthLeaving>Filth_RubbleRock</filthLeaving>
   </RoofDef>
   
