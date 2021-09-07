@@ -86,7 +86,7 @@ namespace BiomesCaverns
             return lambda;
         }
 
-        public static MethodInfo GetLocalFunc(Type parentType, string parentMethod = null, MethodType parentMethodType = MethodType.Normal, Type[] parentArgs = null, string localFunc = null)
+        public static MethodInfo GetLocalFunc(this Type parentType, string parentMethod = null, MethodType parentMethodType = MethodType.Normal, Type[] parentArgs = null, string localFunc = null)
         {
             var parent = GetMethod(parentType, parentMethod, parentMethodType, parentArgs);
             if (parent == null)
@@ -121,7 +121,7 @@ namespace BiomesCaverns
 
         // Based on https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/Symbols/Synthesized/GeneratedNameKind.cs
         // and https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/Symbols/Synthesized/GeneratedNames.cs
-        public static int GetMethodDebugId(MethodBase method)
+        public static int GetMethodDebugId(this MethodBase method)
         {
             string cur = null;
 
@@ -164,7 +164,7 @@ namespace BiomesCaverns
         }
 
         // Copied from Harmony.PatchProcessor
-        public static MethodBase GetMethod(Type type, string methodName, MethodType methodType, Type[] args)
+        public static MethodBase GetMethod(this Type type, string methodName, MethodType methodType, Type[] args)
         {
             if (type == null) return null;
 
@@ -246,18 +246,16 @@ namespace BiomesCaverns
         public delegate List<CodeInstruction> CodeInstructionReplacementFunction(List<CodeInstruction> opsUpToCall, CodeInstruction callInstruction);
 
         // Used to replace a function call in a transpiler patch
-        public static IEnumerable<CodeInstruction> ReplaceFunction(this IEnumerable<CodeInstruction> instructions, CodeInstructionReplacementFunction func, string patchCallName, string originalFuncName, OpCode? codeToMatch = null, bool repeat = true)
+        public static IEnumerable<CodeInstruction> ReplaceFunction(this IEnumerable<CodeInstruction> instructions, CodeInstructionReplacementFunction func, string patchCallName, string originalFuncName, bool repeat = true)
         {
-            if (codeToMatch == null)
-            {
-                codeToMatch = OpCodes.Call;
-            }
+            //Log.Warning("Starting for " + patchCallName);
             bool found = false;
             List<CodeInstruction> runningChanges = new List<CodeInstruction>();
             foreach (CodeInstruction instruction in instructions)
             {
                 // Find the section calling TryFindRandomPawnEntryCell
-                if ((repeat || !found) && instruction.opcode == codeToMatch && (instruction.operand as MethodInfo)?.Name == patchCallName)
+                //Log.Warning("Opcode: " + instruction.opcode.ToString() + ", Operand: " + instruction.operand.ToStringSafe());
+                if ((repeat || !found) && (instruction.opcode == OpCodes.Call || instruction.opcode == OpCodes.Callvirt) && (instruction.operand as MethodInfo)?.Name == patchCallName)
                 {
                     runningChanges = func(runningChanges, instruction).ToList();
                     found = true;
@@ -281,9 +279,9 @@ namespace BiomesCaverns
             return opsUpToCall;
         }
 
-        public static IEnumerable<CodeInstruction> ReplaceFunction(this IEnumerable<CodeInstruction> instructions, MethodInfo newMethod, string patchCallName, string originalFuncName, OpCode? codeToMatch = null, bool repeat = true)
+        public static IEnumerable<CodeInstruction> ReplaceFunction(this IEnumerable<CodeInstruction> instructions, MethodInfo newMethod, string patchCallName, string originalFuncName, bool repeat = true)
         {
-            return ReplaceFunction(instructions, (opsUpToCall, _callInstruction) => PreCallReplaceFunction(opsUpToCall, newMethod), patchCallName, originalFuncName, codeToMatch, repeat);
+            return ReplaceFunction(instructions, (opsUpToCall, _callInstruction) => PreCallReplaceFunction(opsUpToCall, newMethod), patchCallName, originalFuncName, repeat);
         }
 
         public static List<CodeInstruction> PreCallReplaceFunctionArgument(List<CodeInstruction> opsUpToCall, MethodInfo newMethod, IEnumerable<CodeInstruction> addedArguments, int distanceFromRight)
@@ -313,7 +311,6 @@ namespace BiomesCaverns
                 (opsUpToCall, _callInstruction) => PreCallReplaceFunctionArgument(opsUpToCall, newMethod, new List<CodeInstruction>() { addedArgument }, distanceFromRight),
                 patchCallName,
                 originalFuncName,
-                null,
                 repeat);
         }
 
@@ -324,7 +321,6 @@ namespace BiomesCaverns
                 (opsUpToCall, _callInstruction) => PreCallReplaceFunctionArgument(opsUpToCall, newMethod, addedArguments, distanceFromRight),
                 patchCallName,
                 originalFuncName,
-                null,
                 repeat);
         }
     }

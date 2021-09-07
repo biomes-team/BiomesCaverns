@@ -107,13 +107,12 @@ namespace BiomesCaverns.Patches
 
         static MethodBase TargetMethod()
         {
-            // Fetch the first lambda in Generate
+            // Fetch the first lambda
             return typeof(GenStep_FindPlayerStartSpot).GetLambda("Generate");
         }
 
         // Changes
         // IntVec3.Roofed -> IntVec3Extended.Roofed
-        // in lambda function passed to TryFindCentralCell
         [HarmonyPriority(Priority.First)]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
@@ -123,6 +122,93 @@ namespace BiomesCaverns.Patches
                 "GenStep_FindPlayerStartSpot.Generate");
         }
     }
+
+    [HarmonyPatch]
+    static class Cavern_DropCellFinder_RandomDropSpot
+    {
+        public static MethodInfo IntVec3UnbreachableRoofedInfo = AccessTools.Method(typeof(IntVec3Extensions), "UnbreachableRoofed");
+
+        static MethodBase TargetMethod()
+        {
+            // Fetch the first lambda in Generate
+            return typeof(DropCellFinder).GetLambda("RandomDropSpot");
+        }
+
+        // Changes
+        // IntVec3.Roofed -> IntVec3Extended.Roofed
+        [HarmonyPriority(Priority.First)]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            return instructions.ReplaceFunction(
+                IntVec3UnbreachableRoofedInfo,
+                "Roofed",
+                "DropCellFinder.RandomDropSpot");
+        }
+    }
+
+    [HarmonyPatch]
+    static class Cavern_DropCellFinder_TradeDropSpot
+    {
+        public static MethodInfo RoofGridUnbreachableRoofedInfo = AccessTools.Method(typeof(RoofGridExtensions), "UnbreachableRoofed", new Type[] { typeof(RoofGrid), typeof(IntVec3) });
+
+        static MethodBase TargetMethod()
+        {
+            // Fetch the third lambda
+            return typeof(DropCellFinder).GetLambda("TradeDropSpot", lambdaOrdinal: 2);
+        }
+
+        // Changes
+        // RoofGrid.Roofed -> RoofGridExtended.Roofed
+        [HarmonyPriority(Priority.First)]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            return instructions.ReplaceFunction(
+                RoofGridUnbreachableRoofedInfo,
+                "Roofed",
+                "DropCellFinder.TradeDropSpot");
+        }
+    }
+
+    [HarmonyPatch]
+    static class Cavern_DropCellFinder_TryFindSafeLandingSpotCloseToColony
+    {
+        public static MethodInfo IntVec3UnbreachableRoofedInfo = AccessTools.Method(typeof(IntVec3Extensions), "UnbreachableRoofed");
+
+        static MethodBase TargetMethod()
+        {
+            // Fetch the third lambda
+            return typeof(DropCellFinder).GetLocalFunc("TryFindSafeLandingSpotCloseToColony", localFunc: "SpotValidator");
+        }
+
+        // Changes
+        // IntVec3.Roofed -> IntVec3Extended.Roofed
+        [HarmonyPriority(Priority.First)]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            return instructions.ReplaceFunction(
+                IntVec3UnbreachableRoofedInfo,
+                "Roofed",
+                "DropCellFinder.TryFindSafeLandingSpotCloseToColony");
+        }
+    }
+
+    [HarmonyPatch(typeof(DropCellFinder), "FindRaidDropCenterDistant")]
+    static class Cavern_DropCellFinder_FindRaidDropCenterDistant
+    {
+        public static MethodInfo IntVec3UnbreachableRoofedInfo = AccessTools.Method(typeof(IntVec3Extensions), "UnbreachableRoofed");
+
+        // Changes
+        // IntVec3.Roofed -> IntVec3Extended.Roofed
+        [HarmonyPriority(Priority.First)]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            return instructions.ReplaceFunction(
+                IntVec3UnbreachableRoofedInfo,
+                "Roofed",
+                "DropCellFinder.FindRaidDropCenterDistant");
+        }
+    }
+
 
     [HarmonyPatch(typeof(DropCellFinder), "CanPhysicallyDropInto")]
     static class CanPhysicallyDropIntoCavernRoofs
