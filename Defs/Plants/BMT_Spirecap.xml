@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>	
-    
-    <ThingDef ParentName="TreeBase" Name="BMT_CaveTreeBase" Abstract="True">
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<cavePlant>true</cavePlant>
-			</li>
-		</modExtensions>
-        <plant>
-            <growMinGlow>0</growMinGlow>
-            <growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
-			<interferesWithRoof>false</interferesWithRoof>
-            <harvestTag>Wood</harvestTag>
-            <harvestedThingDef>WoodLog</harvestedThingDef>
-        </plant>
-    </ThingDef>
-	
 	
 	
     <ThingDef ParentName="BMT_CaveTreeBase">
