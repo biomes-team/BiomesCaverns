@@ -131,6 +131,7 @@
     </wildPlants>
     <wildAnimals>
       <BMT_GiantSnail>0.20</BMT_GiantSnail>
+	  <BMT_GlowSnail>0.20</BMT_GlowSnail>
 	  
       <GuineaPig>0.45</GuineaPig>
       <Yak>0.06</Yak>
