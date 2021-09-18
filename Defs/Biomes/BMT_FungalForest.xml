@@ -11,13 +11,14 @@
 			<isCavern>true</isCavern>
 			<cavernShapes>
 				<li>LavaTubes</li>
+				<li>OpenCaverns</li>
 			</cavernShapes>
 		</li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
     <plantDensity>0.65</plantDensity>
-    <settlementSelectionWeight>1</settlementSelectionWeight>
-    <movementDifficulty>1</movementDifficulty>
+    <settlementSelectionWeight>0.2</settlementSelectionWeight>
+    <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
     <foragedFood>RawBerries</foragedFood>
@@ -25,7 +26,7 @@
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
-    <diseaseMtbDays>50</diseaseMtbDays>
+    <diseaseMtbDays>40</diseaseMtbDays>
     <diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
@@ -51,6 +52,7 @@
         <diseaseInc>Disease_SensoryMechanites</diseaseInc>
         <commonality>30</commonality>
       </li>
+
       <li>
         <diseaseInc>Disease_MuscleParasites</diseaseInc>
         <commonality>50</commonality>
@@ -65,7 +67,7 @@
         <commonality>100</commonality>
       </li>
     </diseases>
-    <terrainsByFertility>
+	<terrainsByFertility>
       <li>
         <terrain>Soil</terrain>
         <min>-999</min>
@@ -79,23 +81,33 @@
     </terrainsByFertility>
     <terrainPatchMakers>
       <li>
-        <perlinFrequency>0.025</perlinFrequency>
+        <perlinFrequency>0.035</perlinFrequency>
         <thresholds>
           <li>
             <terrain>SoilRich</terrain>
-            <min>0.73</min>
-            <max>0.93</max>
+            <min>0.63</min>
+            <max>0.83</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.93</min>
+            <min>0.83</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+	  <li>
+        <perlinFrequency>0.03</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>MarshyTerrain</terrain>
+            <min>0.52</min>
             <max>999</max>
           </li>
         </thresholds>
       </li>
     </terrainPatchMakers>
     <baseWeatherCommonalities>
-      <Clear>18</Clear>
+      <BMT_Calm>18</BMT_Calm>
       <Fog>1</Fog>
       <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
@@ -106,6 +118,7 @@
     </baseWeatherCommonalities>
     <wildPlants>
       <BMT_Spirecap>1.0</BMT_Spirecap>
+	  
       <Plant_Grass>5.0</Plant_Grass>
       <Plant_TallGrass>2.0</Plant_TallGrass>
       <Plant_Brambles>1.0</Plant_Brambles>
@@ -117,7 +130,8 @@
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
     </wildPlants>
     <wildAnimals>
-      <Donkey>0.20</Donkey>
+      <BMT_GiantSnail>0.20</BMT_GiantSnail>
+	  
       <GuineaPig>0.45</GuineaPig>
       <Yak>0.06</Yak>
       <Bison>0.07</Bison>
