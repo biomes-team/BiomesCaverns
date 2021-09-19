@@ -119,15 +119,17 @@
     <wildPlants>
       <BMT_Spirecap>1.0</BMT_Spirecap>
 	  
-      <Plant_Grass>5.0</Plant_Grass>
-      <Plant_TallGrass>2.0</Plant_TallGrass>
-      <Plant_Brambles>1.0</Plant_Brambles>
-      <Plant_Dandelion>0.5</Plant_Dandelion>
-      <Plant_Bush>0.6</Plant_Bush>
-      <Plant_TreeOak>0.5</Plant_TreeOak>
-      <Plant_TreePoplar>0.5</Plant_TreePoplar>
-      <Plant_Berry>0.05</Plant_Berry>
-      <Plant_HealrootWild>0.05</Plant_HealrootWild>
+      <BMT_FloorMold>5.0</BMT_FloorMold>
+	  <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+	  
+      <!-- <Plant_TallGrass>2.0</Plant_TallGrass> -->
+      <!-- <Plant_Brambles>1.0</Plant_Brambles> -->
+      <!-- <Plant_Dandelion>0.5</Plant_Dandelion> -->
+      <!-- <Plant_Bush>0.6</Plant_Bush> -->
+      <!-- <Plant_TreeOak>0.5</Plant_TreeOak> -->
+      <!-- <Plant_TreePoplar>0.5</Plant_TreePoplar> -->
+      <!-- <Plant_Berry>0.05</Plant_Berry> -->
+      <!-- <Plant_HealrootWild>0.05</Plant_HealrootWild> -->
     </wildPlants>
     <wildAnimals>
       <BMT_GiantSnail>0.20</BMT_GiantSnail>
