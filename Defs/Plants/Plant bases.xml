@@ -17,5 +17,22 @@
         </plant>
     </ThingDef>
 	
-
+	 <ThingDef ParentName="PlantBase" Name="BMT_CavePlantBase" Abstract="True">
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<cavePlant>true</cavePlant>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Nutrition>0.20</Nutrition>
+		</statBases>
+        <plant>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+        </plant>
+    </ThingDef>
+	
+	
 </Defs>
