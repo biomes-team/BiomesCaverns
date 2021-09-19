@@ -10,8 +10,8 @@
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isCavern>true</isCavern>
 			<cavernShapes>
-				<li>LavaTubes</li>
-				<li>OpenCaverns</li>
+				<li>FungalForest</li>
+				<!-- <li>OpenCaverns</li> -->
 			</cavernShapes>
 		</li>
 	</modExtensions>
