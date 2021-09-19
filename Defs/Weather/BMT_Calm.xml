@@ -9,7 +9,7 @@
     <favorability>Good</favorability>
     <perceivePriority>0</perceivePriority>
     <ambientSounds>
-      <li>Ambient_Wind_Clear</li>
+      <li>BMT_Ambient_Cave_Calm</li>
     </ambientSounds>   
     <!-- Colors are dark, and don't change throughout the day -->
     <skyColorsDay>
