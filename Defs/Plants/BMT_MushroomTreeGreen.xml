@@ -3,22 +3,22 @@
 	
 	
     <ThingDef ParentName="BMT_CaveTreeBase">
-        <defName>BMT_ImperialYellow</defName>
-        <label>imperial yellow</label>
-        <description>A strong yellow mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+        <defName>BMT_MushroomTreeGreen</defName>
+        <label>green mushroom tree</label> 
+        <description>A strong green mushroom tree. Slow-growing, but this woody fungus is very strong.</description>
         <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/ImperialYellow</texPath>
+            <texPath>BMT_Caverns/Things/Plant/MushroomTreeGreen</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
         <statBases>
-            <Beauty>4</Beauty>
+            <Beauty>2</Beauty>
         </statBases>
         <plant>
-            <wildClusterRadius>2</wildClusterRadius>
+            <wildClusterRadius>3</wildClusterRadius>
             <growDays>30</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>
-            <harvestYield>40</harvestYield>
+            <harvestYield>36</harvestYield>
 			<wildOrder>1</wildOrder>
             <neverBlightable>true</neverBlightable>
         </plant>
