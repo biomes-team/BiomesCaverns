@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	
+    <ThingDef ParentName="BMT_CavePlantBase">
+        <defName>BMT_ButtonMushroom</defName>
+        <label>button mushroom</label>
+        <description>Button mushrooms are edible raw, but preferably cooked.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Plant/ButtonMushroom</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        
+        <plant>
+		    <harvestYield>5</harvestYield>
+		    <harvestedThingDef>MushroomCrop</harvestedThingDef>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+        </plant>
+    </ThingDef>
+</Defs>
