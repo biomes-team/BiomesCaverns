@@ -4,7 +4,9 @@
     <ThingDef ParentName="TreeBase" Name="BMT_CaveTreeBase" Abstract="True">
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<cavePlant>true</cavePlant>
+				<allowInCave>true</allowInCave>
+				<allowOnLand>true</allowOnLand>
+				<allowOnDry>true</allowOnDry>
 			</li>
 		</modExtensions>
         <plant>
@@ -20,7 +22,9 @@
 	 <ThingDef ParentName="PlantBase" Name="BMT_CavePlantBase" Abstract="True">
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<cavePlant>true</cavePlant>
+				<allowInCave>true</allowInCave>
+				<allowOnLand>true</allowOnLand>
+				<allowOnDry>true</allowOnDry>
 			</li>
 		</modExtensions>
 		<statBases>
