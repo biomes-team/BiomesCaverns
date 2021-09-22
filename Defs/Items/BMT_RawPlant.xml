@@ -1,28 +1,28 @@
-  <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
   
-  <Defs>
+<Defs>
   
-  <ThingDef ParentName="PlantFoodRawBase">
-    <defName>MushroomCrop</defName>
-    <label>mushrooms</label>
-    <description>Edible mushrooms.</description>
-    <graphicData>
-      <texPath>Things/Item/Crops/Mushroomcrop</texPath>
-    </graphicData>
-    <statBases>
-      <MarketValue>1.1</MarketValue>
-    </statBases>
-    <ingestible>
-      <foodType>VegetableOrFruit</foodType>
-    </ingestible>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>30</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
+  
+	<ThingDef ParentName="BiomesCore_FruitBase">
+		<defName>MushroomCrop</defName>
+		<label>mushrooms</label>
+		<description>Edible mushrooms.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/Mushroomcrop</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<comps>
+			  <li Class="CompProperties_Rottable">
+					<daysToRotStart>30</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+			  </li>
+		</comps>
+		<ingestible>
+		  <foodType>VegetableOrFruit</foodType>
+		</ingestible>
   </ThingDef>
   
   
-  
-  </Defs>
+</Defs>
