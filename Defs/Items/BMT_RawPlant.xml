@@ -3,7 +3,7 @@
 <Defs>
   
   
-	<ThingDef ParentName="BiomesCore_FruitBase">
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>MushroomCrop</defName>
 		<label>mushrooms</label>
 		<description>Edible mushrooms.</description>
