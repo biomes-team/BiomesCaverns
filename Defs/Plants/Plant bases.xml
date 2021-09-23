@@ -12,6 +12,7 @@
         <plant>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
 			<interferesWithRoof>false</interferesWithRoof>
             <harvestTag>Wood</harvestTag>
             <harvestedThingDef>WoodLog</harvestedThingDef>
@@ -32,6 +33,7 @@
         <plant>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
 			<interferesWithRoof>false</interferesWithRoof>
         </plant>
     </ThingDef>
