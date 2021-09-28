@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/IncidentDef[defName = "Flashstorm"]/disallowedBiomes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/IncidentDef[defName = "Flashstorm"]</xpath>
+			<value>
+				<disallowedBiomes>
+					<li>BMT_FungalForest</li>
+				</disallowedBiomes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/IncidentDef[defName="Flashstorm"]/disallowedBiomes</xpath>
+			<value>
+				<li>BMT_FungalForest</li>
+			</value>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/IncidentDef[defName = "ToxicFallout"]/disallowedBiomes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/IncidentDef[defName = "ToxicFallout"]</xpath>
+			<value>
+				<disallowedBiomes>
+					<li>BMT_FungalForest</li>
+				</disallowedBiomes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/IncidentDef[defName="ToxicFallout"]/disallowedBiomes</xpath>
+			<value>
+				<li>BMT_FungalForest</li>
+			</value>
+		</match>
+	</Operation>
+	
+	
+</Patch>
