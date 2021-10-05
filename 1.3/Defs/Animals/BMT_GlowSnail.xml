@@ -81,7 +81,7 @@
                 <bodyGraphicData>
                     <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
                     <drawSize>1.2</drawSize>
-					<shaderType>TransparentPostLight</shaderType>
+					<!-- <shaderType>TransparentPostLight</shaderType> -->
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
@@ -92,7 +92,7 @@
                 <bodyGraphicData>
                     <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
                     <drawSize>1.7</drawSize>
-					<shaderType>TransparentPostLight</shaderType>
+					<!-- <shaderType>TransparentPostLight</shaderType> -->
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>

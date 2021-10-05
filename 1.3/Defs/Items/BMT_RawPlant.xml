@@ -4,7 +4,7 @@
   
   
 	<ThingDef ParentName="PlantFoodRawBase">
-		<defName>MushroomCrop</defName>
+		<defName>BMT_MushroomCrop</defName>
 		<label>mushrooms</label>
 		<description>Edible mushrooms.</description>
 		<graphicData>
