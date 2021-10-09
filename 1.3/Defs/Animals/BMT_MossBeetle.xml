@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>BMT_MossBeetle</defName>
+    <label>moss beetle</label>
+    <description>A large beetle, commonly found in dark, damp places.</description>
+    <statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>100</MarketValue>
+      <FilthRate>4</FilthRate>
+      <LeatherAmount>0</LeatherAmount>
+    </statBases>
+    <!-- <uiIconScale>2</uiIconScale> -->
+    <tools>
+      <li>
+        <label>mandibles</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>BeetleLike</body>
+      <baseBodySize>0.45</baseBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <wildness>0.45</wildness>
+      <roamMtbDays>2.5</roamMtbDays>
+      <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <lifeExpectancy>16</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BMT_EggMossBeetleFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>4.5</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_MossBeetle</defName>
+    <label>moss beetle</label>
+    <race>BMT_MossBeetle</race>
+    <combatPower>30</combatPower>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <lifeStages>
+      <li>
+	    <label>moss grub</label>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
+          <drawSize>0.65</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossGrub</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/MossBeetle/MossBeetle</texPath>
+          <drawSize>0.85</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossBeetle</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/MossBeetle/MossBeetle</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossBeetle</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggMossBeetleFertilized</defName>
+	<label>moss beetle egg (fert.)</label>
+	<description>A moss beetle egg. If all goes well, it should hatch into a baby moss beetle. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+        <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		<color>(118,135,137)</color>
+		<drawSize>0.8</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>10.0</MarketValue>
+	</statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>8</hatcherDaystoHatch>
+		<hatcherPawn>BMT_MossBeetle</hatcherPawn>
+	  </li>
+	</comps>
+  </ThingDef>
+
+
+  </Defs>
+
