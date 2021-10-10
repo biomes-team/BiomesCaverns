@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	
+    <ThingDef ParentName="BMT_CavePlantBase">
+        <defName>BMT_Seadew</defName>
+        <label>seadew</label>
+        <description>Sewdew light up to attract small prey, which becomes trapped in it's sticky gills.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Plant/Seadew</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        
+        <plant>
+		    <harvestYield>5</harvestYield>
+		    <harvestedThingDef>BMT_MushroomCrop</harvestedThingDef>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+        </plant>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>3.9</glowRadius>
+			<glowColor>(78,226,229,0)</glowColor>
+		  </li>
+		</comps>
+    </ThingDef>
+</Defs>
