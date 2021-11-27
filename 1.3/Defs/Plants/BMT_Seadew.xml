@@ -3,8 +3,8 @@
 	
 	
     <ThingDef ParentName="BMT_CavePlantBase">
-        <defName>BMT_Seadew</defName>
-        <label>seadew</label>
+        <defName>BMT_Dewshrooms</defName>
+        <label>dewshrooms</label>
         <description>Sewdew light up to attract small prey, which becomes trapped in it's sticky gills.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/Seadew</texPath>
@@ -27,7 +27,9 @@
 		<comps>
 		  <li Class="CompProperties_Glower">
 			<glowRadius>3.9</glowRadius>
-			<glowColor>(78,226,229,0)</glowColor>
+			<!-- <glowColor>(78,226,229,0)</glowColor> -->
+			<!-- <glowColor>(22,149,152,0)</glowColor> -->
+			<glowColor>(15,104,106,0)</glowColor>
 		  </li>
 		</comps>
     </ThingDef>
