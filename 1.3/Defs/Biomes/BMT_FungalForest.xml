@@ -121,6 +121,9 @@
       <BMT_FloorMold>5.0</BMT_FloorMold>
 	  <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
 	  <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
+	  
+	  <BMT_Sagecrust>0.7</BMT_Sagecrust>
+	  
       <!-- <Plant_TallGrass>2.0</Plant_TallGrass> -->
       <!-- <Plant_Brambles>1.0</Plant_Brambles> -->
       <!-- <Plant_Dandelion>0.5</Plant_Dandelion> -->
