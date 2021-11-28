@@ -3,23 +3,23 @@
 	
 	
     <ThingDef ParentName="BMT_CavePlantBase">
-        <defName>BMT_Sagecrust</defName>
-        <label>sagecrust</label>
-        <description>Sage crust.</description>
+        <defName>BMT_RustPuff</defName>
+        <label>rust puff</label>
+        <description>Rust puff.</description>
         <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/Sagecrust</texPath>
+            <texPath>BMT_Caverns/Things/Plant/RustPuff</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
         
         <plant>
-             <fertilitySensitivity>0.0</fertilitySensitivity>
-			<growDays>3.5</growDays>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<visualSizeRange>0.25~0.6</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>6</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
+			<wildClusterWeight>2</wildClusterWeight>
 			<wildOrder>1</wildOrder>
         </plant>
     </ThingDef>
