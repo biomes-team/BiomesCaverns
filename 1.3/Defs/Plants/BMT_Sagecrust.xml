@@ -15,10 +15,10 @@
              <fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>3.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.2~0.5</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
-			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>1</wildOrder>
         </plant>
