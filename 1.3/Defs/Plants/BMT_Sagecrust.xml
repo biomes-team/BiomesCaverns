@@ -5,7 +5,7 @@
     <ThingDef ParentName="BMT_CavePlantBase">
         <defName>BMT_Sagecrust</defName>
         <label>sagecrust</label>
-        <description>Sage crust.</description>
+        <description>A tough, leafy lichen that can survive with minimal light.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/Sagecrust</texPath>
             <graphicClass>Graphic_Random</graphicClass>

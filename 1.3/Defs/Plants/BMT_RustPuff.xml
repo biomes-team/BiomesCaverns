@@ -4,8 +4,8 @@
 	
     <ThingDef ParentName="BMT_CavePlantBase">
         <defName>BMT_RustPuff</defName>
-        <label>rust puff</label>
-        <description>Rust puff.</description>
+        <label>rustpuff</label>
+        <description>A large puffball mushroom with flaky, rust-colored spores.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/RustPuff</texPath>
             <graphicClass>Graphic_Random</graphicClass>

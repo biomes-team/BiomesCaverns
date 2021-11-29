@@ -5,7 +5,7 @@
     <ThingDef ParentName="BMT_CavePlantBase">
         <defName>BMT_Pusmelon</defName>
         <label>pusmelon</label>
-        <description>Pusmelon.</description>
+        <description>A green, gourd-like fungus that produces sacs of foul-smelling liquid.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/Pusmelon</texPath>
             <graphicClass>Graphic_Random</graphicClass>
