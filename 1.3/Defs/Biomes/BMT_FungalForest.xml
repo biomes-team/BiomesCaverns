@@ -116,30 +116,30 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-      <BMT_Spirecap>1.0</BMT_Spirecap>
-	  
-      <BMT_FloorMold>5.0</BMT_FloorMold>
-	  <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
-	  <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-	  
-	  <BMT_Sagecrust>0.7</BMT_Sagecrust>
-	  <BMT_RustPuff>0.2</BMT_RustPuff>
-	  <BMT_Pusmelon>0.1</BMT_Pusmelon>
-      <!-- <Plant_TallGrass>2.0</Plant_TallGrass> -->
-      <!-- <Plant_Brambles>1.0</Plant_Brambles> -->
-      <!-- <Plant_Dandelion>0.5</Plant_Dandelion> -->
-      <!-- <Plant_Bush>0.6</Plant_Bush> -->
-      <!-- <Plant_TreeOak>0.5</Plant_TreeOak> -->
-      <!-- <Plant_TreePoplar>0.5</Plant_TreePoplar> -->
-      <!-- <Plant_Berry>0.05</Plant_Berry> -->
-      <!-- <Plant_HealrootWild>0.05</Plant_HealrootWild> -->
+	<!-- ground cover -->
+		<BMT_FloorMold>5.0</BMT_FloorMold>
+		<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+		<BMT_Dewshrooms>0.02</BMT_Dewshrooms>
+		<BMT_Sagecrust>0.7</BMT_Sagecrust>
+		<BMT_RustPuff>0.2</BMT_RustPuff>
+		<BMT_Pusmelon>0.1</BMT_Pusmelon>
+		
+	<!-- mid sized -->
+		<!-- <BMT_BleedingTooth>0.2</BMT_BleedingTooth> -->
+		
+	<!-- trees -->
+		<BMT_Spirecap>1.0</BMT_Spirecap>
+		
+	<!-- other harvestable -->
+      
     </wildPlants>
+
     <wildAnimals>
 	<!-- herbivores -->
-      <BMT_GiantSnail>0.20</BMT_GiantSnail>
-	  <BMT_GlowSnail>0.20</BMT_GlowSnail>
-	  <BMT_MossBeetle>0.15</BMT_MossBeetle>
-	  
+		<BMT_GiantSnail>0.20</BMT_GiantSnail>
+		<BMT_GlowSnail>0.05</BMT_GlowSnail>
+		<BMT_MossBeetle>0.15</BMT_MossBeetle>
+
 	<!-- predators -->
 		<BMT_Xyrion>0.05</BMT_Xyrion>
 	
