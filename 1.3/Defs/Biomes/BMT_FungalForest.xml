@@ -135,37 +135,14 @@
       <!-- <Plant_HealrootWild>0.05</Plant_HealrootWild> -->
     </wildPlants>
     <wildAnimals>
+	<!-- herbivores -->
       <BMT_GiantSnail>0.20</BMT_GiantSnail>
 	  <BMT_GlowSnail>0.20</BMT_GlowSnail>
 	  <BMT_MossBeetle>0.15</BMT_MossBeetle>
 	  
-	  
-      <GuineaPig>0.45</GuineaPig>
-      <Yak>0.06</Yak>
-      <Bison>0.07</Bison>
-      <Horse>0.20</Horse>
-      <Hare>1.0</Hare>
-      <Squirrel>1.0</Squirrel>
-      <Rat>1.0</Rat>
-      <Deer>0.5</Deer>
-      <WildBoar>0.5</WildBoar>
-      <Turkey>0.5</Turkey>
-      <Raccoon>0.5</Raccoon>
-      <Ibex>0.5</Ibex>
-      <Muffalo>0.5</Muffalo>
-      <Alpaca>0.5</Alpaca>
-      <Boomalope>0.4</Boomalope>
-      <Boomrat>0.4</Boomrat>
-      <Tortoise>0.3</Tortoise>
-      <Gazelle>0.3</Gazelle>
-      <Megasloth>0.2</Megasloth>
-      <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Fox_Red>0.07</Fox_Red>
-      <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
+	<!-- predators -->
+		<BMT_Xyrion>0.05</BMT_Xyrion>
+	
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
