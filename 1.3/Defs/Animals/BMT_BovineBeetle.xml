@@ -98,7 +98,7 @@
     <ecoSystemWeight>0.15</ecoSystemWeight>
     <lifeStages>
       <li>
-	    <label>moss grub</label>
+	    <label>bovine grub</label>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/BovineBeetle/BovineBeetleLarva</texPath>
           <drawSize>1.1</drawSize>
