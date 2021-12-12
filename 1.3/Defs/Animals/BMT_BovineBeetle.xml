@@ -50,6 +50,7 @@
       <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
       <lifeExpectancy>16</lifeExpectancy>
+      <packAnimal>true</packAnimal>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
