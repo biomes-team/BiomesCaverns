@@ -10,7 +10,6 @@
             <texPath>BMT_Caverns/Things/Plant/FloorMold</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
-        
         <plant>
              <fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>3.5</growDays>

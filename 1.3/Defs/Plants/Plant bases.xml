@@ -5,8 +5,7 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
-				<allowOnLand>true</allowOnLand>
-				<allowOnDry>true</allowOnDry>
+				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<plant>
@@ -23,8 +22,7 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
-				<allowOnLand>true</allowOnLand>
-				<allowOnDry>true</allowOnDry>
+				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<statBases>
