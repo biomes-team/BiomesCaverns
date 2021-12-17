@@ -131,7 +131,7 @@
 		<BMT_Spirecap>1.0</BMT_Spirecap>
 		
 	<!-- other harvestable -->
-		<BMT_Stimquill>0.02</BMT_Stimquill>		<!-- stimulant drug -->
+		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
       
     </wildPlants>
 
