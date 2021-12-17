@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	
+    <ThingDef ParentName="BMT_CavePlantBase">
+        <defName>BMT_Pusmelon</defName>
+        <label>pusmelon</label>
+        <description>A green, gourd-like fungus that produces sacs of foul-smelling liquid.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Plant/Pusmelon</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        
+        <plant>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3.8</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>20</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+        </plant>
+    </ThingDef>
+</Defs>

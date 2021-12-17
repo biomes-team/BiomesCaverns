@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	
+    <ThingDef ParentName="BMT_CavePlantBase">
+        <defName>BMT_RustPuff</defName>
+        <label>rustpuff</label>
+        <description>A large puffball mushroom with flaky, rust-colored spores.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Plant/RustPuff</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        
+        <plant>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.25~0.6</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>2</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+        </plant>
+    </ThingDef>
+</Defs>

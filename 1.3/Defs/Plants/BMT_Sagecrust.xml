@@ -3,22 +3,23 @@
 	
 	
     <ThingDef ParentName="BMT_CavePlantBase">
-        <defName>BMT_FloorMold</defName>
-        <label>floor mold</label>
-        <description>Floor mold.</description>
+        <defName>BMT_Sagecrust</defName>
+        <label>sagecrust</label>
+        <description>A tough, leafy lichen that can survive with minimal light.</description>
         <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/FloorMold</texPath>
+            <texPath>BMT_Caverns/Things/Plant/Sagecrust</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
+        
         <plant>
              <fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>3.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
-			<topWindExposure>0.3</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
+			<visualSizeRange>0.2~0.5</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>1</wildOrder>
         </plant>
     </ThingDef>

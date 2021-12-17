@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Caves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveCrawler" or defName="VAECaves_CaveBear"]/race/wildBiomes</xpath>
+					<value>
+						<BMT_FungalForest>0.03</BMT_FungalForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "VAECaves_AncientGiantSpider"]/race/wildBiomes</xpath>
+					<value>
+						<BMT_FungalForest>0.0025</BMT_FungalForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "VAECaves_GiantSpider"]/race/wildBiomes</xpath>
+					<value>
+						<BMT_FungalForest>0.01</BMT_FungalForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "VAECaves_Wyrm"]/race/wildBiomes</xpath>
+					<value>
+						<BMT_FungalForest>0.02</BMT_FungalForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "VAECaves_BlindSalamander"]/race/wildBiomes</xpath>
+					<value>
+						<BMT_FungalForest>0.05</BMT_FungalForest>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

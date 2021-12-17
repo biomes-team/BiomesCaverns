@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	
+    <ThingDef ParentName="BMT_CaveBushBase">
+        <defName>BMT_Stimquill</defName>
+        <label>stimquill</label>
+        <description>Known for its stimulant properties, this plant is found deep underground.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Plant/Stimquill</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        
+        <neverMultiSelect>false</neverMultiSelect>
+         <plant> 
+             <fertilitySensitivity>0.5</fertilitySensitivity> 
+			 <growDays>5.5</growDays> 
+			 <fertilityMin>0.05</fertilityMin> 
+			 <!-- <maxMeshCount>4</maxMeshCount>  -->
+			 <!-- <visualSizeRange>0.25~0.6</visualSizeRange>  -->
+			 <!-- <topWindExposure>0.2</topWindExposure>  -->
+			 <wildClusterRadius>6</wildClusterRadius> 
+			 <wildClusterWeight>2</wildClusterWeight> 
+			 <wildOrder>2</wildOrder> 
+         </plant> 
+    </ThingDef>
+</Defs>

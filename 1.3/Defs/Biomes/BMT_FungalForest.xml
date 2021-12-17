@@ -116,52 +116,35 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-      <BMT_Spirecap>1.0</BMT_Spirecap>
-	  
-      <BMT_FloorMold>5.0</BMT_FloorMold>
-	  <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
-	  <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-      <!-- <Plant_TallGrass>2.0</Plant_TallGrass> -->
-      <!-- <Plant_Brambles>1.0</Plant_Brambles> -->
-      <!-- <Plant_Dandelion>0.5</Plant_Dandelion> -->
-      <!-- <Plant_Bush>0.6</Plant_Bush> -->
-      <!-- <Plant_TreeOak>0.5</Plant_TreeOak> -->
-      <!-- <Plant_TreePoplar>0.5</Plant_TreePoplar> -->
-      <!-- <Plant_Berry>0.05</Plant_Berry> -->
-      <!-- <Plant_HealrootWild>0.05</Plant_HealrootWild> -->
+	<!-- ground cover -->
+		<BMT_FloorMold>5.0</BMT_FloorMold>
+		<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+		<BMT_Dewshrooms>0.02</BMT_Dewshrooms>
+		<BMT_Sagecrust>0.7</BMT_Sagecrust>
+		<BMT_RustPuff>0.2</BMT_RustPuff>
+		<BMT_Pusmelon>0.1</BMT_Pusmelon>
+		
+	<!-- mid sized -->
+		<!-- <BMT_BleedingTooth>0.2</BMT_BleedingTooth> -->
+		
+	<!-- trees -->
+		<BMT_Spirecap>1.0</BMT_Spirecap>
+		
+	<!-- other harvestable -->
+		<BMT_Stimquill>0.02</BMT_Stimquill>		<!-- stimulant drug -->
+      
     </wildPlants>
+
     <wildAnimals>
-      <BMT_GiantSnail>0.20</BMT_GiantSnail>
-	  <BMT_GlowSnail>0.20</BMT_GlowSnail>
-	  <BMT_MossBeetle>0.15</BMT_MossBeetle>
-	  
-	  
-      <GuineaPig>0.45</GuineaPig>
-      <Yak>0.06</Yak>
-      <Bison>0.07</Bison>
-      <Horse>0.20</Horse>
-      <Hare>1.0</Hare>
-      <Squirrel>1.0</Squirrel>
-      <Rat>1.0</Rat>
-      <Deer>0.5</Deer>
-      <WildBoar>0.5</WildBoar>
-      <Turkey>0.5</Turkey>
-      <Raccoon>0.5</Raccoon>
-      <Ibex>0.5</Ibex>
-      <Muffalo>0.5</Muffalo>
-      <Alpaca>0.5</Alpaca>
-      <Boomalope>0.4</Boomalope>
-      <Boomrat>0.4</Boomrat>
-      <Tortoise>0.3</Tortoise>
-      <Gazelle>0.3</Gazelle>
-      <Megasloth>0.2</Megasloth>
-      <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Fox_Red>0.07</Fox_Red>
-      <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
+	<!-- herbivores -->
+		<BMT_GiantSnail>0.20</BMT_GiantSnail>
+		<BMT_GlowSnail>0.05</BMT_GlowSnail>
+		<BMT_MossBeetle>0.15</BMT_MossBeetle>
+		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
+
+	<!-- predators -->
+		<BMT_Xyrion>0.05</BMT_Xyrion>
+	
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
