@@ -19,7 +19,7 @@
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>
             <harvestYield>40</harvestYield>
-			<wildOrder>1</wildOrder>
+			<wildOrder>3</wildOrder>
             <neverBlightable>true</neverBlightable>
         </plant>
     </ThingDef>
