@@ -12,8 +12,6 @@
         </graphicData>
         
         <plant>
-		    <harvestYield>5</harvestYield>
-		    <harvestedThingDef>BMT_MushroomCrop</harvestedThingDef>
             <fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>3.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
