@@ -7,26 +7,26 @@
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
-				<growingHours>0.0~0.5</growingHours>
+				<growingHours>0.6~0.1</growingHours>
 			</li>
 		</modExtensions>
-        <defName>BMT_Jellycap</defName>
-        <label>jellycap</label>
-        <description>A strong purple mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+        <defName>BMT_Embrun</defName>
+        <label>embrun</label>
+        <description>A strong brown mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
         <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/Jellycap</texPath>
+            <texPath>BMT_Caverns/Things/Plant/Embrun</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
         <statBases>
-            <Beauty>4</Beauty>
+            <Beauty>2</Beauty>
         </statBases>
         <plant>
-            <wildClusterRadius>10</wildClusterRadius>
+            <wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
-            <growDays>18</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestWork>1000</harvestWork>
-            <harvestYield>30</harvestYield>
+            <growDays>12</growDays>
+            <dieIfLeafless>false</dieIfLeafless>
+            <harvestWork>700</harvestWork>
+            <harvestYield>25</harvestYield>
 			<wildOrder>3</wildOrder>
             <neverBlightable>true</neverBlightable>
         </plant>
