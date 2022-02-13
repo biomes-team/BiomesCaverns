@@ -15,7 +15,7 @@
 		</li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
-    <plantDensity>0.65</plantDensity>
+    <plantDensity>0.55</plantDensity>
     <settlementSelectionWeight>0.2</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
@@ -120,7 +120,7 @@
 		<BMT_FloorMold>5.0</BMT_FloorMold>
 		<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
 		<BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-		<BMT_Sagecrust>0.7</BMT_Sagecrust>
+		<BMT_Sagecrust>1.0</BMT_Sagecrust>
 		<BMT_RustPuff>0.2</BMT_RustPuff>
 		<BMT_Pusmelon>0.1</BMT_Pusmelon>
 		
@@ -128,7 +128,8 @@
 		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
 		
 	<!-- trees -->
-		<BMT_GleamPlum>1.0</BMT_GleamPlum>
+		<BMT_GleamPlum>0.5</BMT_GleamPlum>
+		<BMT_Jellycap>0.5</BMT_Jellycap>
 		
 	<!-- other harvestable -->
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
@@ -142,9 +143,9 @@
 		<BMT_GlowSnail>0.05</BMT_GlowSnail>
 		<BMT_MossBeetle>0.15</BMT_MossBeetle>
 		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
+		<BMT_Xyrion>0.05</BMT_Xyrion>
 
 	<!-- predators -->
-		<BMT_Xyrion>0.05</BMT_Xyrion>
 	
     </wildAnimals>
     <allowedPackAnimals>

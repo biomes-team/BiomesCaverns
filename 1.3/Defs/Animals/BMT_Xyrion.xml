@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_Xyrion</defName>
     <label>xyrion</label>
-    <description>These large salamander-like creatures are fierce predators.</description>
+    <description>These large salamander-like creatures make good pets.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>240</MarketValue>
@@ -19,7 +19,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>11</power>
+        <power>8</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -28,7 +28,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>11</power>
+        <power>8</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
@@ -36,7 +36,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>16</power>
+        <power>12</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -46,7 +46,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>6</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -67,11 +67,11 @@
       <baseBodySize>0.9</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
       <baseHungerRate>0.2</baseHungerRate>
-      <foodType>CarnivoreAnimal</foodType>
+      <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
-      <wildness>0.5</wildness>
-      <trainability>None</trainability>
-      <petness>0.0</petness>
+      <wildness>0.0</wildness>
+      <trainability>Intermediate</trainability>
+      <petness>0.5</petness>
       <lifeExpectancy>11</lifeExpectancy>
       <lifeStageAges>
         <li>
