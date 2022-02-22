@@ -80,32 +80,32 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GiantSlug/GiantSlug</texPath>
-					<drawSize>1.45</drawSize>
+					<drawSize>1.0</drawSize>
 					<!-- need texture for size -->
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GiantSlug/Dessicated_GiantSlug</texPath>
-					<drawSize>1.45</drawSize>
+					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GiantSlug/GiantSlug</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GiantSlug/Dessicated_GiantSlug</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GiantSlug/GiantSlug</texPath>
-					<drawSize>2.85</drawSize>
+					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GiantSlug/Dessicated_GiantSlug</texPath>
-					<drawSize>2.85</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
