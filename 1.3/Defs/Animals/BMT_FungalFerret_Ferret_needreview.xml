@@ -79,10 +79,22 @@
       <baseHungerRate>0.15</baseHungerRate>
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
-      <wildness>0.0</wildness>
+      <wildness>0.4</wildness>
       <trainability>Advanced</trainability>
       <petness>0.08</petness>
+	  <nuzzleMtbHours>30</nuzzleMtbHours>
+	  <gestationPeriodDays>5.661</gestationPeriodDays>
       <lifeExpectancy>10</lifeExpectancy>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1)</li>
+          <li>(3, 0.2)</li>
+          <li>(4, 0.1)</li>
+          <li>(4.5, 0)</li>
+        </points>
+      </litterSizeCurve>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
