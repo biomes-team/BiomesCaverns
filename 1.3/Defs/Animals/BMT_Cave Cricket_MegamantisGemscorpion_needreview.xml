@@ -124,6 +124,10 @@
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricket</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
+					<drawSize>0.7</drawSize>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
 					<drawSize>0.9</drawSize>
@@ -138,6 +142,14 @@
 						<offset>(0,0,0)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
+					<drawSize>0.7</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
 					<drawSize>1.2</drawSize>
