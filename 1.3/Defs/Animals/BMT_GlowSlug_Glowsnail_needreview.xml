@@ -34,7 +34,7 @@
 		</tools>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>BiomesCore_Snail</body>
+			<body>BiomesCore_Slug</body>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.5</baseHealthScale>
