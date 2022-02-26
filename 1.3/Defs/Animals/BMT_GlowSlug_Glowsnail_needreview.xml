@@ -75,6 +75,7 @@
 		<race>BMT_GlowSlug</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

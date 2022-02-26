@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_SonarRabbit</defName>
     <label>sonar rabbit</label>
-    <description>In the underground, the ability of echolocation had ensured the survival of this rabbit..</description>
+    <description>In the underground, the ability of echolocation had ensured the survival of this rabbit.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <MarketValue>240</MarketValue>
@@ -92,6 +92,7 @@
     <race>BMT_SonarRabbit</race>
     <combatPower>33</combatPower>
     <ecoSystemWeight>0.25</ecoSystemWeight>
+	<wildGroupSize>1~4</wildGroupSize>
 	<alternateGraphicChance>1</alternateGraphicChance>
 	<alternateGraphics>
 		<li>

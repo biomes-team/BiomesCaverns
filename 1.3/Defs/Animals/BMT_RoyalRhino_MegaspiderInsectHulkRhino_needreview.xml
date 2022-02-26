@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseInsect">
     <defName>BMT_RoyalRhino</defName>
-    <label>royal rhino Beetle</label>
+    <label>royal rhino beetle</label>
     <description>A vary large, subterranean beetle. The royal rhino beetle is gentle by nature, but extremely dangerous when enraged.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>

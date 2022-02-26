@@ -108,6 +108,7 @@
 		<race>BMT_CaveCricket</race>
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<wildGroupSize>4~8</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

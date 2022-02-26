@@ -81,7 +81,7 @@
       <leatherDef>Leather_Plain</leatherDef>
       <wildness>0.4</wildness>
       <trainability>Advanced</trainability>
-      <petness>0.08</petness>
+      <petness>0.8</petness>
 	  <nuzzleMtbHours>30</nuzzleMtbHours>
 	  <gestationPeriodDays>5.661</gestationPeriodDays>
       <lifeExpectancy>10</lifeExpectancy>

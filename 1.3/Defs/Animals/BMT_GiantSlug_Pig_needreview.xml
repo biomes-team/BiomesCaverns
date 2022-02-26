@@ -75,7 +75,8 @@
 		<label>giant slug</label>
 		<race>BMT_GiantSlug</race>
 		<combatPower>75</combatPower>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<ecoSystemWeight>0.8</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
