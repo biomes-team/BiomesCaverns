@@ -24,11 +24,10 @@
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 			<!-- Sadly does not work as i liked to -->
-			<li Class="VFEPirates.CompProperties_FilthSpawner"> <!--VFEPirates.CompProperties_FilthSpawner need a biomes!  fuel-filth spawnder (-->
-				<filthDef>BMT_Trail_Fuel</filthDef>
-				<spawnCountOnSpawn>5</spawnCountOnSpawn>
-				<spawnRadius>1</spawnRadius>
-				<spawnEachXticks>30</spawnEachXticks>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Filth_Fuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>2000~6000</spawnIntervalRange>
 			</li>
 		</comps>
 		<tools>
