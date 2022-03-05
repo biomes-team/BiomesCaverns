@@ -9,8 +9,8 @@
     <description>A vary large, subterranean beetle. The royal rhino beetle is gentle by nature, but extremely dangerous when enraged.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
-      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 	  <ArmorRating_Heat>0.3</ArmorRating_Heat>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>500</MarketValue>
@@ -67,6 +67,8 @@
         <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
         <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
       </willNeverEat>
+      <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
       <useMeatFrom>Megaspider</useMeatFrom>
       <lifeExpectancy>25</lifeExpectancy>
       <wildness>1</wildness>
@@ -92,9 +94,6 @@
       <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-	  <wildBiomes>
-		<BMT_FungalForest>0.01</BMT_FungalForest>
-	  </wildBiomes>
     </race>
     <tradeTags>
       <li>AnimalInsect</li>

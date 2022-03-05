@@ -4,14 +4,14 @@
 
 
   <ThingDef ParentName="AnimalThingBase">
-    <defName>BMT_FungalFerret</defName>
-    <label>fungal ferret</label>
-    <description>the fungal ferret is evolved from the ferret of earth, what it self is one of just three domesticated predators of early humankind.</description>
+    <defName>BMT_MossyFennec</defName>
+    <label>mossy fennec</label>
+    <description>the mossy fennec looks like it belongs to the genus Vulpes, but this one is in symbiosis with moss.</description>
     <statBases>
-      <MoveSpeed>5.0</MoveSpeed>
-      <MarketValue>120</MarketValue>
-      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
-      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <MoveSpeed>4.6</MoveSpeed>
+      <MarketValue>200</MarketValue>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
     </statBases>
     <tools>
       <li>
@@ -19,14 +19,14 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>7</power>
+        <power>8</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 		<surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>10</amount>
+              <amount>12</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -37,14 +37,14 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>7</power>
+        <power>8</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 		<surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>10</amount>
+              <amount>12</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -54,17 +54,17 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>8</power>
+        <power>9</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
+        <chanceFactor>0.9</chanceFactor>
       </li>
       <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>3</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -74,27 +74,28 @@
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
 	  <maxPreyBodySize>0.90</maxPreyBodySize>
-      <baseBodySize>0.5</baseBodySize>
+      <baseBodySize>0.55</baseBodySize>
       <baseHealthScale>0.7</baseHealthScale>
-      <baseHungerRate>0.15</baseHungerRate>
+      <baseHungerRate>0.12</baseHungerRate>
       <foodType>CarnivoreAnimal</foodType>
-      <leatherDef>Leather_Plain</leatherDef>
+      <leatherDef>Leather_Fox</leatherDef>
+	  <useMeatFrom>Fox_Fennec</useMeatFrom>
       <wildness>0.4</wildness>
       <trainability>Advanced</trainability>
       <petness>0.8</petness>
-	  <nuzzleMtbHours>30</nuzzleMtbHours>
-	  <gestationPeriodDays>5.661</gestationPeriodDays>
+	  <nuzzleMtbHours>90</nuzzleMtbHours>
+	  <gestationPeriodDays>10</gestationPeriodDays>
+      <predator>true</predator>
+	  <litterSizeCurve>
+		<points>
+			<li>(0.5, 0)</li>
+			<li>(1, 1)</li>
+			<li>(2, 1.7)</li>
+			<li>(2.5, 0.7)</li>
+			<li>(3, 0)</li>
+		</points>
+			</litterSizeCurve>
       <lifeExpectancy>10</lifeExpectancy>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(2, 1)</li>
-          <li>(3, 0.2)</li>
-          <li>(4, 0.1)</li>
-          <li>(4.5, 0)</li>
-        </points>
-      </litterSizeCurve>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -103,11 +104,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.11</minAge>
+          <minAge>0.1</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.2222</minAge>
+          <minAge>0.333</minAge>
           <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
           <soundDeath>Pawn_Boomrat_Death</soundDeath>
           <soundCall>Pawn_Boomrat_Call</soundCall>
@@ -117,9 +118,7 @@
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-	  <wildBiomes>
-		<BMT_FungalForest>0.2</BMT_FungalForest>
-	  </wildBiomes>
+
     </race>
     <tradeTags>
       <li>AnimalExotic</li>
@@ -127,54 +126,54 @@
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BMT_FungalFerret</defName>
-    <label>fungal ferret</label>
-    <race>BMT_FungalFerret</race>
+    <defName>BMT_MossyFennec</defName>
+    <label>mossy fennec</label>
+    <race>BMT_MossyFennec</race>
     <combatPower>45</combatPower>
-    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
     <lifeStages>
       <li>
-        <label>Ferret kit</label>
-        <labelPlural>Ferret kits</labelPlural>
+        <label>Mossy Fennec kit</label>
+        <labelPlural>Mossy Fennec kits</labelPlural>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FungalFerret/FungalFerret</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>BMT_Caverns/Things/Animal/MossyFennec/MossyFennec</texPath>
+          <drawSize>1</drawSize>
           <shadowData>
             <volume>(0.2, 0.2, 0.2)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FungalFerret/Dessicated_FungalFerret</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>BMT_Caverns/Things/Animal/MossyFennec/Dessicated_MossyFennec</texPath>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FungalFerret/FungalFerret</texPath>
-          <drawSize>1.0</drawSize>
+          <texPath>BMT_Caverns/Things/Animal/MossyFennec/MossyFennec</texPath>
+          <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FungalFerret/Dessicated_FungalFerret</texPath>
-          <drawSize>1.0</drawSize>
+          <texPath>BMT_Caverns/Things/Animal/MossyFennec/Dessicated_MossyFennec</texPath>
+          <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FungalFerret/FungalFerret</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>BMT_Caverns/Things/Animal/MossyFennec/MossyFennec</texPath>
+          <drawSize>1.7</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FungalFerret/Dessicated_FungalFerret</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>BMT_Caverns/Things/Animal/MossyFennec/Dessicated_MossyFennec</texPath>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

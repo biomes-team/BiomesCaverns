@@ -65,9 +65,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-			<wildBiomes>
-				<BMT_FungalForest>0.5</BMT_FungalForest>
-			</wildBiomes>
 		</race>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

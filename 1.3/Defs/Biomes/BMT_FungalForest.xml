@@ -142,13 +142,19 @@
     <wildAnimals>
 	<!-- herbivores -->
 		<BMT_GiantSnail>0.20</BMT_GiantSnail>
+		<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
 		<BMT_GlowSnail>0.05</BMT_GlowSnail>
+		<BMT_GlowSlug>0.10</BMT_GlowSlug>
 		<BMT_MossBeetle>0.15</BMT_MossBeetle>
 		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
 		<BMT_Xyrion>0.05</BMT_Xyrion>
-
+		<BMT_Yooka>0.5</BMT_Yooka>
+		<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
+		<BMT_GiantSlug>0.5</BMT_GiantSlug>
+		<BMT_CaveCricket>0.25</BMT_CaveCricket>
 	<!-- predators -->
-	
+		<BMT_MossyFennec>0.10</BMT_MossyFennec>
+		<BMT_FungalFerret>0.10</BMT_FungalFerret>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
