@@ -148,7 +148,7 @@
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dromedary/Dessicated_Dromedary</texPath>
+          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -159,7 +159,7 @@
           <drawSize>2.25</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dromedary/Dessicated_Dromedary</texPath>
+          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
           <drawSize>2.25</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -174,7 +174,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dromedary/Dessicated_Dromedary</texPath>
+          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
           <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
