@@ -20,7 +20,7 @@
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
-    <foragedFood>RawBerries</foragedFood>
+    <foragedFood>BMT_AbyssalGrapes</foragedFood>
     <wildPlantRegrowDays>20</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
@@ -135,6 +135,7 @@
 		
 	<!-- other harvestable -->
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
+		<BMT_AbyssalGrapesVine>0.005</BMT_AbyssalGrapesVine>		<!-- food -->
 		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
       
     </wildPlants>
@@ -160,6 +161,7 @@
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Alpaca</li>
+	  <li>BMT_GiantSnail</li>
     </allowedPackAnimals>
   </BiomeDef>
 

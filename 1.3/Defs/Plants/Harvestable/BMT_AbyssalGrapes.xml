@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- plant -->
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_AbyssalGrapesVine</defName>
+		<label>abyssal grapes</label>
+		<description>A medium-sized vine that yields abyssal grapes when harvested. tastes nice when eaten raw.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/AbyssalGrapes</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.2, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>19.5</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<leaflessGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</leaflessGraphicPath>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</immatureGraphicPath>
+			<harvestYield>12</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<harvestedThingDef>BMT_AbyssalGrapes</harvestedThingDef>
+			<visualSizeRange>0.6~1.1</visualSizeRange>
+			<!-- <topWindExposure>0.1</topWindExposure> -->
+			<wildOrder>2</wildOrder>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>50</wildClusterWeight>
+		</plant>
+	</ThingDef>
+	<!-- fruit -->
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_AbyssalGrapes</defName>
+		<label>abyssal grapes</label>
+		<description>Raw grapes. Nice to eat, even when raw.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/AbyssalGrapes/AbyssalGrapes</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+</Defs>
