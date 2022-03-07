@@ -24,6 +24,7 @@
     <li>Ludeon.RimWorld.Royalty</li>
     <li>brrainz.harmony</li>
     <li>BiomesTeam.BiomesCore</li>
+	<li>BiomesTeam.BiomesIslands</li>
   </loadAfter>
   <description>
 The caverns module for the Biomes! mods. Requires Biomes! Core loaded before it.
