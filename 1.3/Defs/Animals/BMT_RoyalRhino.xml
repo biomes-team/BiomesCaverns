@@ -14,7 +14,6 @@
 	  <ArmorRating_Heat>0.3</ArmorRating_Heat>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>500</MarketValue>
-      <LeatherAmount>0</LeatherAmount>
     </statBases>
     <uiIconScale>2</uiIconScale>
     <tools>
@@ -62,6 +61,7 @@
       <baseBodySize>3</baseBodySize>
       <baseHungerRate>0.6</baseHungerRate>
       <baseHealthScale>8</baseHealthScale>
+	  <leatherDef>BMT_RoyalChitin</leatherDef>
 	  <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
       <willNeverEat>
         <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
@@ -105,7 +105,7 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>BMT_RoyalRhino</defName>
-    <label>royal rhino Beetle</label>
+    <label>royal rhino beetle</label>
     <race>BMT_RoyalRhino</race>
     <combatPower>300</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
@@ -146,6 +146,10 @@
           <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
           <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
+       <butcherBodyPart>
+          <bodyPartGroup>HornAttackTool</bodyPartGroup>
+          <thing>BMT_RoyalRhinoHorn</thing>
+        </butcherBodyPart>
       </li>
     </lifeStages>
   </PawnKindDef>
