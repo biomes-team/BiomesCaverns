@@ -113,17 +113,11 @@
     <race>BMT_Yooka</race>
     <combatPower>33</combatPower>
     <ecoSystemWeight>0.25</ecoSystemWeight>
-	<wildGroupSize>1~4</wildGroupSize>
-	<alternateGraphicChance>1</alternateGraphicChance>
+	<wildGroupSize>1~2</wildGroupSize>
+	<alternateGraphicChance>0.85</alternateGraphicChance>
 	<alternateGraphics>
 		<li>
 			<color>(37,50,37)</color>
-		</li>
-		<li>
-			<color>(186,186,186)</color>
-		</li>
-		<li>
-			<color>(49, 38, 32)</color>
 		</li>
 		<li>
 			<color>(74, 75, 66)</color>
@@ -134,9 +128,6 @@
 		<li>
 			<color>(125, 124, 72)</color>
 		</li>
-		<li>
-			<color>(74, 51, 87)</color>
-		</li>
 	</alternateGraphics>
     <lifeStages>
       <li>
@@ -146,6 +137,7 @@
           <texPath>BMT_Caverns/Things/Animal/Yooka/Yooka</texPath>
 		  <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
+		  <color>(49, 38, 32)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
@@ -157,6 +149,7 @@
           <texPath>BMT_Caverns/Things/Animal/Yooka/Yooka</texPath>
 		  <shaderType>CutoutComplex</shaderType>
           <drawSize>2.25</drawSize>
+		  <color>(49, 38, 32)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
@@ -168,6 +161,7 @@
           <texPath>BMT_Caverns/Things/Animal/Yooka/Yooka</texPath>
 		  <shaderType>CutoutComplex</shaderType>
           <drawSize>3</drawSize>
+		  <color>(49, 38, 32)</color>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
             <offset>(0,0,0)</offset>

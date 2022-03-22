@@ -23,11 +23,10 @@
 				<milkAmount>4</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
-			<!-- Sadly does not work as i liked to -->
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>Filth_Fuel</thingToSpawn>
 				<spawnCount>1</spawnCount>
-				<spawnIntervalRange>2000~6000</spawnIntervalRange>
+				<spawnIntervalRange>1000~3000</spawnIntervalRange>
 			</li>
 		</comps>
 		<tools>
@@ -41,7 +40,6 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
-			<!-- chemecal burn -->
 		</tools>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -92,16 +90,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>0.7</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>0.7</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
 					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -112,11 +100,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
+					<drawSize>1.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -158,7 +156,7 @@
 		</graphicData>
 		<filth>
 			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-			<disappearsInDays>0.1~0.5</disappearsInDays>
+			<disappearsInDays>0.5~1</disappearsInDays>
 			<rainWashes>true</rainWashes>
 			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
 			<canFilthAttach>true</canFilthAttach>
