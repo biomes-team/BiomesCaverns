@@ -113,10 +113,18 @@
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricket</texPath>
 					<drawSize>0.7</drawSize>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
+					<drawSize>0.7</drawSize>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricketFemale_east</texPath>
+					<drawSize>0.7</drawSize>
+				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -125,12 +133,16 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>0.9</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
 					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricketFemale_east</texPath>
+					<drawSize>0.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -143,7 +155,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,0)</offset>
@@ -153,6 +165,10 @@
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricketFemale_east</texPath>
+					<drawSize>1.2</drawSize>
+				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
