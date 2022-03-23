@@ -25,10 +25,16 @@
 		<comps>
 		  <li Class="CompProperties_Glower">
 			<glowRadius>3.9</glowRadius>
-			<!-- <glowColor>(78,226,229,0)</glowColor> -->
-			<!-- <glowColor>(22,149,152,0)</glowColor> -->
 			<glowColor>(15,104,106,0)</glowColor>
 		  </li>
 		</comps>
+		
+        <modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+				<growingHours>0.75~0.25</growingHours>
+			</li>
+		</modExtensions>
     </ThingDef>
 </Defs>

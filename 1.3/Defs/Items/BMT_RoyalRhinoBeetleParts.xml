@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BiomesCore_ChitinBase">
+		<defName>BMT_RoyalChitin</defName>
+		<label>royal chilin</label>
+		<description>A legendary, royal, chitinous shell.</description>
+		<graphicData>
+			<color>(81,48,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(81,48,100)</color>
+		</stuffProps>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_RoyalRhinoHorn</defName>
+		<label>royal rhino beetle horn</label>
+		<description>A royal rhino beetle's horn. It's priceless in most markets. This is a true trophy and needed for specal items.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/RoyalRhinoHorn/RoyalRhinoHorn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

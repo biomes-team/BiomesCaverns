@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BMT_Yooka</defName>
+    <label>yooka</label>
+    <description>A towering hunchbacked mammal, closely related to camels and llamas.</description>
+    <statBases>
+      <MoveSpeed>4.3</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>3</milkIntervalDays>
+        <milkAmount>36</milkAmount>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithHoovesAndHump</body>
+      <baseBodySize>2.1</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <baseHungerRate>0.635</baseHungerRate>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+      <leatherDef>Leather_Camel</leatherDef>
+      <wildness>0.75</wildness>
+      <trainability>None</trainability>
+	  <roamMtbDays>6</roamMtbDays>
+      <lifeExpectancy>45</lifeExpectancy>
+      <willNeverEat>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+      </willNeverEat>
+	  <gestationPeriodDays>6.66</gestationPeriodDays>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Dromedary_Wounded</soundWounded>
+          <soundDeath>Pawn_Dromedary_Death</soundDeath>
+          <soundCall>Pawn_Dromedary_Call</soundCall>
+          <soundAngry>Pawn_Dromedary_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_Yooka</defName>
+    <label>yooka</label>
+    <race>BMT_Yooka</race>
+    <combatPower>33</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+	<wildGroupSize>1~2</wildGroupSize>
+	<alternateGraphicChance>0.85</alternateGraphicChance>
+	<alternateGraphics>
+		<li>
+			<color>(37,50,37)</color>
+		</li>
+		<li>
+			<color>(74, 75, 66)</color>
+		</li>
+		<li>
+			<color>(89, 96, 67)</color>
+		</li>
+		<li>
+			<color>(125, 124, 72)</color>
+		</li>
+	</alternateGraphics>
+    <lifeStages>
+      <li>
+		<label>Yooka cria</label>
+        <labelPlural>Yooka crias</labelPlural>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Yooka/Yooka</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
+		  <color>(49, 38, 32)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Yooka/Yooka</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+          <drawSize>2.25</drawSize>
+		  <color>(49, 38, 32)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Yooka/Yooka</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+          <drawSize>3</drawSize>
+		  <color>(49, 38, 32)</color>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpaca/Dessicated_Alpaca</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

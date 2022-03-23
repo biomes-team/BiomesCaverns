@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>BMT_Apparel_ChitinArmor</defName>
+		<label>chitin armor</label>
+		<description>Overlapping chitin plates of armor covering the entire body from neck to feet.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/ChitinArmor/ChitinArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.2</generateCommonality>
+		<costList>
+			<BMT_RoyalChitin>30</BMT_RoyalChitin>
+		</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>12</Mass>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.14</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/ChitinArmor/ChitinArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<only>(81,48,100)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>BMT_Apparel_ChitinHelmet</defName>
+		<label>chitin helmet</label>
+		<description>A chitin helmet which gives moderate protection. a true testament to your strength.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Headgear/ChitinHelmet/ChitinHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costList>
+			<BMT_RoyalChitin>10</BMT_RoyalChitin>
+			<BMT_RoyalRhinoHorn>1</BMT_RoyalRhinoHorn>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>6800</WorkToMake>
+			<Mass>2.8</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit='False'>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>BMT_Caverns/Things/Headgear/ChitinHelmet/ChitinHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit='False'>
+				<li>CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<only>(81,48,100)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+</Defs>

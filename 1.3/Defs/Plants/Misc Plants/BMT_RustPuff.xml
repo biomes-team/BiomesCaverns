@@ -11,6 +11,14 @@
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
         
+        <modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+				<growingHours>0.9~0.6</growingHours>
+			</li>
+		</modExtensions>
+		
         <plant>
             <fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5.5</growDays>

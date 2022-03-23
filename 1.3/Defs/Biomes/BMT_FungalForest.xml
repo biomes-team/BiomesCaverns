@@ -15,12 +15,12 @@
 		</li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
-    <plantDensity>0.65</plantDensity>
+    <plantDensity>0.55</plantDensity>
     <settlementSelectionWeight>0.2</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
-    <foragedFood>RawBerries</foragedFood>
+    <foragedFood>BMT_AbyssalGrapes</foragedFood>
     <wildPlantRegrowDays>20</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
@@ -120,7 +120,7 @@
 		<BMT_FloorMold>5.0</BMT_FloorMold>
 		<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
 		<BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-		<BMT_Sagecrust>0.7</BMT_Sagecrust>
+		<BMT_Sagecrust>1.0</BMT_Sagecrust>
 		<BMT_RustPuff>0.2</BMT_RustPuff>
 		<BMT_Pusmelon>0.1</BMT_Pusmelon>
 		
@@ -128,10 +128,14 @@
 		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
 		
 	<!-- trees -->
-		<BMT_GleamPlum>1.0</BMT_GleamPlum>
+		<BMT_GleamPlum>0.5</BMT_GleamPlum>
+		<BMT_Jellycap>0.5</BMT_Jellycap>
+		<BMT_Embrun>0.3</BMT_Embrun>
+		<BMT_Viritoll>0.3</BMT_Viritoll>
 		
 	<!-- other harvestable -->
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
+		<BMT_AbyssalGrapesVine>0.005</BMT_AbyssalGrapesVine>		<!-- food -->
 		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
       
     </wildPlants>
@@ -139,17 +143,25 @@
     <wildAnimals>
 	<!-- herbivores -->
 		<BMT_GiantSnail>0.20</BMT_GiantSnail>
+		<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
 		<BMT_GlowSnail>0.05</BMT_GlowSnail>
+		<BMT_GlowSlug>0.10</BMT_GlowSlug>
 		<BMT_MossBeetle>0.15</BMT_MossBeetle>
 		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
-
-	<!-- predators -->
 		<BMT_Xyrion>0.05</BMT_Xyrion>
-	
+		<BMT_Yooka>0.5</BMT_Yooka>
+		<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
+		<BMT_GiantSlug>0.5</BMT_GiantSlug>
+		<BMT_CaveCricket>0.25</BMT_CaveCricket>
+		<BMT_TruffleMole>0.1</BMT_TruffleMole>
+	<!-- predators -->
+		<BMT_MossyFennec>0.10</BMT_MossyFennec>
+		<BMT_FungalFerret>0.10</BMT_FungalFerret>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Alpaca</li>
+	  <li>BMT_GiantSnail</li>
     </allowedPackAnimals>
   </BiomeDef>
 

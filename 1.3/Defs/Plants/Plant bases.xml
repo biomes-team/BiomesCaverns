@@ -17,7 +17,7 @@
 			<cavePlant>true</cavePlant>
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
-			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
 		</plant>
 	</ThingDef>
 
