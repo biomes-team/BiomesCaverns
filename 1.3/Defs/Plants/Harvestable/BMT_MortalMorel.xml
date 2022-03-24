@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_MortalMorelPlant</defName>
+		<label>mortal morel</label>
+		<description>A slow-growing mushroom which yields fungal medicine when harvested. Sowing and harvesting mortal morel are both very labor-intensive tasks because of its delicate shoots.\n\nMortal morel !!NEED SOME BACKSTORY!!.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/MortalMorel</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<!-- mustBeWildToSow>true</mustBeWildToSow -->
+			<fertilityMin>1.0</fertilityMin>
+			<wildClusterRadius>4</wildClusterRadius>
+			<growDays>10</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>1000</harvestWork>
+			<harvestYield>1</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_MedicineFungal</harvestedThingDef>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<wildOrder>2</wildOrder>
+			<neverBlightable>false</neverBlightable>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.3~1.0</visualSizeRange>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="MedicineBase">
+		<defName>BMT_MedicineFungal</defName>
+		<label>fungal medicine</label>
+		<description>A pack of fungal concoctions extracted from the mortal morel. It is less potent than industrial pharmaceuticals, but much better than nothing.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/MortalMorel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.35</Mass>
+			<Flammability>1.3</Flammability>
+			<MedicalPotency>0.60</MedicalPotency>
+			<MedicalQualityMax>0.70</MedicalQualityMax>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+</Defs>
