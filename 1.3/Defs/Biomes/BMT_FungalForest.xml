@@ -128,10 +128,11 @@
 		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
 		
 	<!-- trees -->
-		<BMT_GleamPlum>0.5</BMT_GleamPlum>
-		<BMT_Jellycap>0.5</BMT_Jellycap>
-		<BMT_Embrun>0.3</BMT_Embrun>
-		<BMT_Viritoll>0.3</BMT_Viritoll>
+		<BMT_GleamPlum>0.3</BMT_GleamPlum>
+		<BMT_Jellycap>0.3</BMT_Jellycap>
+		<BMT_Embrun>0.15</BMT_Embrun>
+		<BMT_Viritoll>0.15</BMT_Viritoll>
+		<BMT_Nogtyl>0.1</BMT_Nogtyl>		<!-- wood -->
 		
 	<!-- other harvestable -->
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
