@@ -139,6 +139,7 @@
 		<BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>		<!-- food -->
 		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
 		<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>		<!-- Medicine -->
+		<BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>		<!-- Textiles -->
       
     </wildPlants>
 
