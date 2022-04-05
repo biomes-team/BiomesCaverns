@@ -55,6 +55,24 @@
 							</modExtensions>
 						</value>
 					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant</xpath>
+						<value>
+							<interferesWithRoof>false</interferesWithRoof>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Plant_MossGauranlen"]/plant</xpath>
+						<value>
+							<interferesWithRoof>false</interferesWithRoof>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Plant_PodGauranlen"]/plant</xpath>
+						<value>
+							<interferesWithRoof>false</interferesWithRoof>
+						</value>
+					</li>
 				</operations>
 			</match>
 		</match>
