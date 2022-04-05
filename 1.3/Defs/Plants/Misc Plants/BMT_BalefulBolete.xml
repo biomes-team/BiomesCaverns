@@ -8,6 +8,9 @@
 			<texPath>BMT_Caverns/Things/Plant/BalefulBolete</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<statBases>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
@@ -15,11 +18,12 @@
 				<growingHours>0.5~0.99</growingHours>
 			</li>
 		</modExtensions>
+		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<maxMeshCount>4</maxMeshCount>
+			<!-- <maxMeshCount>4</maxMeshCount> -->
 			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
