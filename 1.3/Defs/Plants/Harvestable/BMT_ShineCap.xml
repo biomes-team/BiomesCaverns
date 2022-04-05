@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- plant -->
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_Shinecap</defName>
+		<label>shine cap</label>
+		<description>this large mushroom lives in symbiosis with a surprisingly tasty slime mold called Glimmerslime.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>1.25</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Shinecap/ShinecapGrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>30</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Shinecap/ShinecapImmature</immatureGraphicPath>
+			<harvestYield>25</harvestYield>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.5</harvestAfterGrowth>
+			<harvestFailable>true</harvestFailable>
+			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
+			<visualSizeRange>0.8~1.6</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<!-- fruit -->
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_Glimmerslime</defName>
+		<label>Glimmerslime</label>
+		<description>glimmerslime is one of the slime molds, which are not real mushrooms at all. they live in symbiosis with the shinecaps.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/Glimmerslime/Glimmerslime</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+</Defs>
