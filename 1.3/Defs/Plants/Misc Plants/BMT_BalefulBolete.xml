@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_BalefulBolete</defName>
+		<label>baleful bolete</label>
+		<description>A big blue capped mushroom.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/BalefulBolete</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+				<growingHours>0.5~0.99</growingHours>
+			</li>
+		</modExtensions>
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+</Defs>

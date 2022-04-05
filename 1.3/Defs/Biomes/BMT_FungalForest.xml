@@ -126,6 +126,8 @@
 		
 	<!-- mid sized -->
 		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
+		<BMT_BalefulBolete>0.02</BMT_BalefulBolete>
+		<BMT_VioletWimple>0.02</BMT_VioletWimple>
 		
 	<!-- trees -->
 		<BMT_GleamPlum>0.2</BMT_GleamPlum>
