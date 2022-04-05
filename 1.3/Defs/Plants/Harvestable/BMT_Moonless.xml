@@ -29,7 +29,6 @@
 			</sowTags>
 			<wildOrder>2</wildOrder>
 			<neverBlightable>false</neverBlightable>
-			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.3~1.0</visualSizeRange>
 		</plant>
 	</ThingDef>
