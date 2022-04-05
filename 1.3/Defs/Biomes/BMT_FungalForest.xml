@@ -128,6 +128,7 @@
 		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
 		<BMT_BalefulBolete>0.02</BMT_BalefulBolete>
 		<BMT_VioletWimple>0.02</BMT_VioletWimple>
+		<BMT_CrimsonCap>0.02</BMT_CrimsonCap>
 		
 	<!-- trees -->
 		<BMT_GleamPlum>0.2</BMT_GleamPlum>
@@ -142,6 +143,7 @@
 		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
 		<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>		<!-- Medicine -->
 		<BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>		<!-- Textiles -->
+		<BMT_Shinecap>0.003</BMT_Shinecap>		<!-- Fruit Tree -->
       
     </wildPlants>
 
