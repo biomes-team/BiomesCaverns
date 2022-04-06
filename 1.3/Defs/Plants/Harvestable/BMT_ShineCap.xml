@@ -43,7 +43,7 @@
 	<!-- fruit -->
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_Glimmerslime</defName>
-		<label>Glimmerslime</label>
+		<label>glimmerslime</label>
 		<description>glimmerslime is one of the slime molds, which are not real mushrooms at all. they live in symbiosis with the shinecaps.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Crops/Glimmerslime/Glimmerslime</texPath>

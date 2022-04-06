@@ -21,7 +21,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_RoyalRhinoHorn</defName>
 		<label>royal rhino beetle horn</label>
-		<description>A royal rhino beetle's horn. It's priceless in most markets. This is a true trophy and needed for specal items.</description>
+		<description>A royal rhino beetle's horn. It's priceless in most markets. This is a true trophy and needed for special items.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/RoyalRhinoHorn/RoyalRhinoHorn</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
