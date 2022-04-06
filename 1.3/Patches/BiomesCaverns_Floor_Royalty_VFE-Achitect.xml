@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Furniture Expanded - Architect</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TerrainDef ParentName="FloorBase">
+								<defName>BMT_FineWoodenFloorMushroom</defName>
+								<label>fine mushroom floor</label>
+								<description>Beautiful mushroom parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+								<texturePath>Terrains/FineWoodenFloor</texturePath>
+								<renderPrecedence>228</renderPrecedence>
+								<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+								<color>(195,195,195)</color>
+								<costList>
+									<BMT_MushroomLog>20</BMT_MushroomLog>
+								</costList>
+								<statBases>
+									<WorkToBuild>5000</WorkToBuild>
+									<Beauty>3</Beauty>
+									<Flammability>0.22</Flammability>
+								</statBases>
+								<tags>
+									<li>FineFloor</li>
+								</tags>
+								<constructEffect>ConstructWood</constructEffect>
+								<designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+							</TerrainDef>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>
