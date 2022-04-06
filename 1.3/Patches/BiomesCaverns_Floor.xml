@@ -31,8 +31,8 @@
 						<defName>BMT_BridgeMushroom</defName>
 						<label>mushroom bridge</label>
 						<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
-						<texturePath>Terrain/Surfaces/Bridge</texturePath>
-						<uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+						<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
+						<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
 						<layerable>true</layerable>
 						<bridge>true</bridge>
 						<affordances>
@@ -125,6 +125,17 @@
 							<xpath>/Defs/ThingDef[defName="BMT_WoodPlankFloorMushroom"]</xpath>
 							<value>
 								<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="BMT_BridgeMushroom"]</xpath>
+							<value>
+								<modExtensions>
+									<li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+										<loopPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopPath>
+										<rightPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightPath>
+									</li>
+								</modExtensions>
 							</value>
 						</li>
 					</operations>
