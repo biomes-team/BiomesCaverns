@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<TerrainDef ParentName="FloorBase">
+						<defName>BMT_WoodPlankFloorMushroom</defName>
+						<label>mushroom floor</label>
+						<renderPrecedence>250</renderPrecedence>
+						<description>Mushroom plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+						<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+						<burnedDef>BurnedWoodPlankFloor</burnedDef>
+						<color>(195,195,195)</color>
+						<statBases>
+							<WorkToBuild>85</WorkToBuild>
+							<Flammability>0.22</Flammability>
+						</statBases>
+						<costList>
+							<BMT_MushroomLog>3</BMT_MushroomLog>
+						</costList>
+						<constructEffect>ConstructWood</constructEffect>
+					</TerrainDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<TerrainDef>
+						<defName>BMT_BridgeMushroom</defName>
+						<label>mushroom bridge</label>
+						<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+						<texturePath>Terrain/Surfaces/Bridge</texturePath>
+						<uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+						<layerable>true</layerable>
+						<bridge>true</bridge>
+						<affordances>
+							<li>Light</li>
+						</affordances>
+						<designationCategory>Structure</designationCategory>
+						<fertility>0</fertility>
+						<constructEffect>ConstructWood</constructEffect>
+						<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+						<edgeType>Hard</edgeType>
+						<renderPrecedence>400</renderPrecedence>
+						<autoRebuildable>true</autoRebuildable>
+						<statBases>
+							<WorkToBuild>1500</WorkToBuild>
+							<Flammability>0.8</Flammability>
+						</statBases>
+						<costList>
+							<BMT_MushroomLog>12</BMT_MushroomLog>
+						</costList>
+						<tags>
+							<li>Floor</li>
+						</tags>
+						<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+						<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+						<destroyEffect>Bridge_Collapse</destroyEffect>
+						<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+					</TerrainDef>
+				</value>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Ideology</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs</xpath>
+							<value>
+								<TerrainDef ParentName="FloorBase">
+									<defName>BMT_Boards_TotemicMushroom</defName>
+									<label>mushroom totemic boards</label>
+									<renderPrecedence>250</renderPrecedence>
+									<description>Fine mushroom boards decorated in a totemic style.</description>
+									<texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+									<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+									<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+									<dominantStyleCategory>Totemic</dominantStyleCategory>
+									<color>(195,195,195)</color>
+									<statBases>
+										<WorkToBuild>5000</WorkToBuild>
+										<Beauty>3</Beauty>
+										<StyleDominance>1</StyleDominance>
+										<Flammability>0.22</Flammability>
+									</statBases>
+									<costList>
+										<BMT_MushroomLog>20</BMT_MushroomLog>
+									</costList>
+									<constructEffect>ConstructWood</constructEffect>
+									<tags>
+										<li>FineFloor</li>
+									</tags>
+								</TerrainDef>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Furniture Expanded - Architect</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs</xpath>
+							<value>
+								<TerrainDef ParentName="VFEArch_WoodenParquetBase">
+									<defName>BMT_WoodenParquetMushroom</defName>
+									<label>mushroom parquet</label>
+									<color>(195,195,195)</color>
+									<costList>
+										<BMT_MushroomLog>12</BMT_MushroomLog>
+									</costList>
+								</TerrainDef>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="BMT_WoodPlankFloorMushroom"]</xpath>
+							<value>
+								<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
