@@ -10,7 +10,7 @@
 					<xpath>/Defs</xpath>
 					<value>
 						<DesignatorDropdownGroupDef>
-							<defName>Floor_Boards_Totemic</defName>
+							<defName>Floor_Totemic_Boards</defName>
 							<label>totemic boards</label>
 						</DesignatorDropdownGroupDef>
 					</value>
@@ -18,7 +18,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
 					<value>
-						<designatorDropdown>Floor_Boards_Totemic</designatorDropdown>
+						<designatorDropdown>Floor_Totemic_Boards</designatorDropdown>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -47,9 +47,18 @@
 							<tags>
 								<li>FineFloor</li>
 							</tags>
-							<designatorDropdown>Floor_Boards_Totemic</designatorDropdown>
+							<designatorDropdown>Floor_Totemic_Boards</designatorDropdown>
 						</TerrainDef>
 					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignatorGroups</xpath>
+					<value>
+						<li>Floor_Totemic_Boards</li>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignators/li[3]</xpath>
 				</li>
 			</operations>
 		</match>
