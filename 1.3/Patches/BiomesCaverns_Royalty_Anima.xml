@@ -19,6 +19,15 @@
 						</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
+					<value>
+						<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+							<allowInCave>true</allowInCave>
+							<allowInBuilding>true</allowInBuilding>
+						</li>
+					</value>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]/plant</xpath>
 					<value>
@@ -37,6 +46,15 @@
 							<graphicPaths>
 								<li>BMT_Caverns/Things/Plant/AnimaShroom/AnimaShroomGrass</li>
 							</graphicPaths>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
+					<value>
+						<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+							<allowInCave>true</allowInCave>
+							<allowInBuilding>true</allowInBuilding>
 						</li>
 					</value>
 				</li>
