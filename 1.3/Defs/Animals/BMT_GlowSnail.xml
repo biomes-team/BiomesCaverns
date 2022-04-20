@@ -1,121 +1,117 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-
-    <ThingDef ParentName="AnimalThingBase" >
-        <defName>BMT_GlowSnail</defName>
-        <label>glowsnail</label>
-        <description>A bioluminescent snail, found deep underground.</description>
-        <statBases>
-            <MoveSpeed>2.1</MoveSpeed>
-            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-            <ComfyTemperatureMax>45</ComfyTemperatureMax>
-            <MarketValue>240</MarketValue>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_GlowSnail</defName>
+		<label>glowsnail</label>
+		<description>A bioluminescent snail, found deep underground./n/nSimilar to the other gigantic snail species found underground and on Caveworlds, this species has been modified to bioluminesce.</description>
+		<statBases>
+			<MoveSpeed>2.1</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>240</MarketValue>
 			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
-        </statBases>
+		</statBases>
 		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BMT_GlowSnailEggFertilized</eggFertilizedDef>
-			<eggLayIntervalDays>6</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>1~1</eggCountRange>
-		  </li>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggGlowSnailUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggGlowSnailFertilized</eggFertilizedDef>
+				<eggLayIntervalDays>6</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
 		</comps>
-        <tools>
-            <li>
-                <label>head</label>
-                <capacities>
-                <li>Blunt</li>
-                </capacities>
-                <power>7</power>
-                <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-            </li>
-        </tools>
-        <race>
-            <herdAnimal>false</herdAnimal>
-            <body>BiomesCore_Snail</body>
-		  <baseHungerRate>0.12</baseHungerRate>
-		  <baseBodySize>0.6</baseBodySize>
-		  <baseHealthScale>0.65</baseHealthScale>
-            <foodType>VegetarianRoughAnimal</foodType>
-            <packAnimal>false</packAnimal>
-            <wildness>0.75</wildness>
-            <lifeExpectancy>35</lifeExpectancy>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<body>BiomesCore_Snail</body>
+			<baseHungerRate>0.12</baseHungerRate>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHealthScale>0.65</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<wildness>0.75</wildness>
+			<lifeExpectancy>35</lifeExpectancy>
 			<trainability>None</trainability>
-            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
-            <!-- <meatLabel>snail meat</meatLabel> -->
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+			<!-- <meatLabel>snail meat</meatLabel> -->
 			<!-- <meatColor>(62,133,215)</meatColor> -->
 			<leatherDef>BMT_Snailshell</leatherDef>
-            <lifeStageAges>
-                <li>
-				  <def>AnimalBaby</def>
-				  <minAge>0</minAge>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
 				</li>
 				<li>
-				  <def>AnimalJuvenile</def>
-				  <minAge>0.12</minAge>
+					<def>AnimalJuvenile</def>
+					<minAge>0.12</minAge>
 				</li>
 				<li>
-				  <def>AnimalAdult</def>
-				  <minAge>0.3</minAge>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
 				</li>
-            </lifeStageAges>
-		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-        </race>
-    </ThingDef>
-
-    <PawnKindDef ParentName="AnimalKindBase">
-        <defName>BMT_GlowSnail</defName>
-        <label>glowsnail</label>
-        <race>BMT_GlowSnail</race>
-        <combatPower>40</combatPower>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_GlowSnail</defName>
+		<label>glowsnail</label>
+		<race>BMT_GlowSnail</race>
+		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.45</ecoSystemWeight>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
-                    <drawSize>0.95</drawSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
+					<drawSize>0.95</drawSize>
 					<!-- <shaderType>TransparentPostLight</shaderType> -->
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
-                    <drawSize>0.95</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
-                    <drawSize>1.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
+					<drawSize>0.95</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
+					<drawSize>1.3</drawSize>
 					<!-- <shaderType>TransparentPostLight</shaderType> -->
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
-                    <drawSize>1.3</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
-                    <drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
+					<drawSize>1.6</drawSize>
 					<shaderType>TransparentPostLight</shaderType>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
-                    <drawSize>1.6</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    </PawnKindDef>
-	
-
-   <ThingDef ParentName="EggFertBase">
-		<defName>BMT_GlowSnailEggFertilized</defName>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGlowSnailFertilized</defName>
 		<label>glowsnail egg (fert.)</label>
 		<description>A fertilized glowsnail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -128,10 +124,24 @@
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Hatcher">
-			<hatcherDaystoHatch>8</hatcherDaystoHatch>
-			<hatcherPawn>BMT_GlowSnail</hatcherPawn>
-		  </li>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherPawn>BMT_GlowSnail</hatcherPawn>
+			</li>
 		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggGlowSnailUnfertilized</defName>
+		<label>glowsnail egg (unfert.)</label>
+		<description>An unfertilized glowsnail egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(62,227,227)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>23.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
 	</ThingDef>
 </Defs>

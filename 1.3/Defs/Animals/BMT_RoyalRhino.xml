@@ -1,180 +1,199 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-  <ThingDef ParentName="BaseInsect">
-    <defName>BMT_RoyalRhino</defName>
-    <label>royal rhino beetle</label>
-    <description>A vary large, subterranean beetle. The royal rhino beetle is gentle by nature, but extremely dangerous when enraged.</description>
-    <statBases>
-      <MoveSpeed>5</MoveSpeed>
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-	  <ArmorRating_Heat>0.3</ArmorRating_Heat>
-      <ComfyTemperatureMin>0</ComfyTemperatureMin>
-      <MarketValue>500</MarketValue>
-    </statBases>
-    <uiIconScale>2</uiIconScale>
-    <tools>
-      <li>
-        <label>mandibles</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>horn</label>
-        <capacities>
-          <li>Scratch</li>
-		  <li>Stab</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-		<surpriseAttack>
-			<extraMeleeDamages>
+	<ThingDef ParentName="BaseInsect">
+		<defName>BMT_RoyalRhino</defName>
+		<label>royal rhino beetle</label>
+		<description>A vary large, subterranean beetle. The royal rhino beetle is gentle by nature, but extremely dangerous when enraged.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<uiIconScale>2</uiIconScale>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggRoyalRhinoUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggRoyalRhinoFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>10</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>BeetleLikeWithHorn</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHungerRate>0.6</baseHungerRate>
+			<baseHealthScale>8</baseHealthScale>
+			<leatherDef>BMT_RoyalChitin</leatherDef>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
+			<manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.95</manhunterOnDamageChance>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>25</lifeExpectancy>
+			<wildness>0.95</wildness>
+			<trainability>Intermediate</trainability>
+			<lifeStageAges>
 				<li>
-					<def>Stun</def>
-					<amount>20</amount>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
 				</li>
-			</extraMeleeDamages>
-		</surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.1</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <body>BeetleLikeWithHorn</body>
-      <baseBodySize>3</baseBodySize>
-      <baseHungerRate>0.6</baseHungerRate>
-      <baseHealthScale>8</baseHealthScale>
-	  <leatherDef>BMT_RoyalChitin</leatherDef>
-	  <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
-      <willNeverEat>
-        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
-      </willNeverEat>
-      <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
-      <useMeatFrom>Megaspider</useMeatFrom>
-      <lifeExpectancy>25</lifeExpectancy>
-      <wildness>1</wildness>
-      <trainability>Intermediate</trainability>
-      <lifeStageAges>
-        <li>
-          <def>EusocialInsectLarva</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>EusocialInsectJuvenile</def>
-          <minAge>0.03</minAge>
-        </li>
-        <li>
-          <def>EusocialInsectAdult</def>
-          <minAge>0.4</minAge>
-          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
-          <soundDeath>Pawn_Megascarab_Death</soundDeath>
-          <soundCall>Pawn_Megascarab_Call</soundCall>
-          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-    <tradeTags>
-      <li>AnimalInsect</li>
-	  <li>AnimalFighter</li>
-	  <li>AnimalAlpha</li>
-	  <li>AnimalExotic</li>
-    </tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BMT_RoyalRhino</defName>
-    <label>royal rhino beetle</label>
-    <race>BMT_RoyalRhino</race>
-    <combatPower>300</combatPower>
-    <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.15</ecoSystemWeight>
-    <lifeStages>
-      <li>
-	  	<label>royal grub</label>
-        <labelPlural>royal grubs</labelPlural>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalGrub</texPath>
-          <drawSize>1</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalGrub</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
-          <drawSize>1.5</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
-          <drawSize>1.5</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
-          <drawSize>3</drawSize>
-          <shadowData>
-            <volume>(0.2, 0.3, 0.2)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
-          <drawSize>3</drawSize>
-        </dessicatedBodyGraphicData>
-       <butcherBodyPart>
-          <bodyPartGroup>HornAttackTool</bodyPartGroup>
-          <thing>BMT_RoyalRhinoHorn</thing>
-        </butcherBodyPart>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-
-  <ThingDef ParentName="EggFertBase">
-	<defName>BMT_EggRoyalRhinoFertilized</defName>
-	<label>Royal Rhino beetle egg (fert.)</label>
-	<description>A Royal Rhino beetle egg. If all goes well, it should hatch into a Royal Rhino Grub. It can be eaten raw, but it's much better cooked.</description>
-	<graphicData>
-        <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-		<color>(74, 51, 87)</color>
-		<drawSize>1</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>20.0</MarketValue>
-	</statBases>
-	<comps>
-	  <li Class="CompProperties_Hatcher">
-		<hatcherDaystoHatch>15</hatcherDaystoHatch>
-		<hatcherPawn>BMT_RoyalRhino</hatcherPawn>
-	  </li>
-	</comps>
-  </ThingDef>
-
-
-  </Defs>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+			<li>AnimalFighter</li>
+			<li>AnimalAlpha</li>
+			<li>AnimalExotic</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_RoyalRhino</defName>
+		<label>royal rhino beetle</label>
+		<race>BMT_RoyalRhino</race>
+		<combatPower>300</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>royal grub</label>
+				<labelPlural>royal grubs</labelPlural>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalGrub</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalGrub</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HornAttackTool</bodyPartGroup>
+					<thing>BMT_RoyalRhinoHorn</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggRoyalRhinoFertilized</defName>
+		<label>Royal Rhino beetle egg (fert.)</label>
+		<description>a royal rhino beetle egg. If all goes well, it should hatch into a Royal Rhino Grub. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(74, 51, 87)</color>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.50</Mass>
+			<MarketValue>70.0</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>BMT_RoyalRhino</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggRoyalRhinoUnfertilized</defName>
+		<label>Royal Rhino beetle egg (unfert.)</label>
+		<description>An unfertilized royal rhino beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(74, 51, 87)</color>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.50</Mass>
+			<MarketValue>70.0</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+</Defs>
 
