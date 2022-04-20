@@ -4,6 +4,8 @@
 		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[text()="WoodLog"]]/fuelFilter/thingDefs</xpath>
 		<value>
 			<li>BMT_MushroomLog</li>
+			<li>BMT_EggChemSnailUnfertilized</li>
+			<li>BMT_EggChemSnailFertilized</li>
 		</value>
 	</Operation>
 </Patch>
