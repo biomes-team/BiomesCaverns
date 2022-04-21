@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseInsect">
 		<defName>BMT_MossBeetle</defName>
 		<label>moss beetle</label>
-		<description>A large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<description>a large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>

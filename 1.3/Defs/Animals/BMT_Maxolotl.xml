@@ -3,9 +3,10 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Maxolotl</defName>
 		<label>maxolotl</label>
-		<description>These large salamanders prefer wet environments with pools of water they can comfortably slip into. /n/n While they lack teeth, their strong jaws can crush the shells of most insects.</description>
+		<description>These large salamanders prefer wet environments with pools of water they can comfortably slip into. \n\nWhile they lack teeth, their strong jaws can crush the shells of most insects.</description>
 		<statBases>
 			<MoveSpeed>5.1</MoveSpeed>
+			<SwimSpeed MayRequire="biomesteam.biomesislands">8.6</SwimSpeed>
 			<MarketValue>900</MarketValue>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -51,6 +52,9 @@
 			</li>
 		</tools>
 		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>100</rateInTicks>
+			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggMaxolotlUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggMaxolotlFertilized</eggFertilizedDef>

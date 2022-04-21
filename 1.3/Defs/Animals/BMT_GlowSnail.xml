@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GlowSnail</defName>
 		<label>glowsnail</label>
-		<description>A bioluminescent snail, found deep underground./n/nSimilar to the other gigantic snail species found underground and on Caveworlds, this species has been modified to bioluminesce.</description>
+		<description>A bioluminescent snail, found deep underground.\n\nSimilar to the other gigantic snail species found underground and on Caveworlds, this species has been modified to bioluminesce.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

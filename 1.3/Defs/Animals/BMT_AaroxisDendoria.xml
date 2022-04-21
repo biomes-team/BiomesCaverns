@@ -33,7 +33,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoria</defName>
 		<label>AaroxisDendoria</label>
-		<description>.\n\n.</description>
+		<description>Uniquely engineered for life in an underground environment, this moth has been altered to produce silk even in adulthood, at the cost of remaining wingless.</description>
 		<statBases>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

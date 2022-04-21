@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GiantSlug</defName>
 		<label>giant slug</label>
-		<description>A huge slug, found deep underground. These slugs like the pigs of the deep.</description>
+		<description>A huge slug, found deep underground.\n\nA huge slug, roughly the size of a pig. It is often used as a meat source for underground colonies.</description>
 		<statBases>
 			<MoveSpeed>2.3</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
