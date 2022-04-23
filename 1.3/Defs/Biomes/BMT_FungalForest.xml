@@ -158,14 +158,15 @@
 		<BMT_Xyrion>0.1</BMT_Xyrion>
 		<BMT_Yooka>0.2</BMT_Yooka>
 		<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
-		<BMT_GiantSlug>0.5</BMT_GiantSlug>
+		<BMT_GiantSlug>0.3</BMT_GiantSlug>
 		<BMT_CaveCricket>0.25</BMT_CaveCricket>
 		<BMT_TruffleMole>0.1</BMT_TruffleMole>
-		<BMT_Goeto>0.5</BMT_Goeto>
+		<BMT_Goeto>0.3</BMT_Goeto>
 		<BMT_Maxolotl>0.05</BMT_Maxolotl>
+		<BMT_Pillbug>0.2</BMT_Pillbug>
 	<!-- predators -->
-		<BMT_MossyFennec>0.10</BMT_MossyFennec>
-		<BMT_FungalFerret>0.10</BMT_FungalFerret>
+		<BMT_MossyFennec>0.1</BMT_MossyFennec>
+		<BMT_FungalFerret>0.1</BMT_FungalFerret>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
