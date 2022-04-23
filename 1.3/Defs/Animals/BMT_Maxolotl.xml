@@ -52,9 +52,6 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>100</rateInTicks>
-			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggMaxolotlUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggMaxolotlFertilized</eggFertilizedDef>
@@ -62,6 +59,9 @@
 				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<rateInTicks>100</rateInTicks>
 			</li>
 		</comps>
 		<race>
