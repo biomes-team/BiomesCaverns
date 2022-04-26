@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GlowSlug</defName>
 		<label>glowslug</label>
-		<description>A bioluminescent slug, found deep underground.</description>
+		<description>A bioluminescent slug, found deep underground.\n\nThis bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that it has survived this long, let alone to the large size it is.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -14,7 +14,8 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_GlowSlugEggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGlowSlugUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggGlowSlugFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>6</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~1</eggCountRange>
@@ -110,7 +111,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_GlowSlugEggFertilized</defName>
+		<defName>BMT_EggGlowSlugFertilized</defName>
 		<label>glowslug egg (fert.)</label>
 		<description>A fertilized glowslug egg. If all goes well, it should hatch into a baby slug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -128,5 +129,19 @@
 				<hatcherPawn>BMT_GlowSlug</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggGlowSlugUnfertilized</defName>
+		<label>glowslug egg (unfert.)</label>
+		<description>An unfertilized glowslug egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(62,227,227)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>23.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
 	</ThingDef>
 </Defs>

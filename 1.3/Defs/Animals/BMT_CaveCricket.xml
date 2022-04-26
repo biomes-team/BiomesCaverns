@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_CaveCricket</defName>
 		<label>cave cricket</label>
-		<description>These crickets are a pest. they are hungry and lay many eggs, but got fast growing insect meat.</description>
+		<description>These hungry crickets lay many eggs.\n\nWhile often considered a pest to cave-dwellers trying to eke out a living underground, some have domesticated these crickets for their own use. They are fast growing, meaty, and lay a multitude of eggs.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<MarketValue>100</MarketValue>
@@ -47,6 +47,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggCaveCricketUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggCaveCricketFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
@@ -190,5 +191,18 @@
 				<hatcherPawn>BMT_CaveCricket</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggCaveCricketUnfertilized</defName>
+		<label>cave cricket egg (unfert.)</label>
+		<description>An unfertilized cave cricket egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(237,231,228)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

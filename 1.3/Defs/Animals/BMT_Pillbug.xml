@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseInsect">
+		<defName>BMT_Pillbug</defName>
+		<label>pillbug</label>
+		<description>This large isopod is in a way, the bottom of the cavern food chain. It feeds on virtually any filth it finds, keeping the tunnels and catacombs clean.</description>
+		<statBases>
+			<MoveSpeed>2.75</MoveSpeed>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>200</MarketValue>
+			<FilthRate>4</FilthRate>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<!-- <uiIconScale>2</uiIconScale> -->
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain MayRequire="oskarpotocki.vanillafactionsexpanded.core">VEF_AnimalWeirdEater</thinkTreeMain>
+			<body>BeetleLike</body>
+			<baseBodySize>0.60</baseBodySize>
+			<baseHungerRate>2</baseHungerRate>
+			<baseHealthScale>0.6</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.45</wildness>
+			<roamMtbDays>2.5</roamMtbDays>
+			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+			<lifeExpectancy>16</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggPillbugUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggPillbugFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5.5</eggLayIntervalDays>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_EatWeirdFood" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<customThingToEat>
+			<li>Filth_Blood</li>
+			<li>ForsakenBlood</li>
+			<li>Filth_Blood_Gerzee</li>
+			<li>AvaliBlood</li>
+			<li>OG_FilthBlood_Eldar</li>
+			<li>OG_FilthBlood_Orkoid</li>
+			<li>OG_FilthBlood_Tau</li>
+			<li>OG_FilthBlood_Kroot</li>
+			<li>OG_FilthBlood_Ambull</li>
+			<li>OG_FilthBlood_ClawedFiend</li>
+			<li>OG_FilthBlood_ChaosDeamon</li>
+			<li>BloodSlimePerson</li>
+			<li>RE_FilthDrellBlood</li>
+			<li>Filth_BloodNaga</li>
+			<li>OG_FilthBlood_Tyranid</li>
+			<li>Filth_BloodInsect</li>
+			<li>AA_Filth_BlueBlood</li>
+			<li>FilthCum</li>
+			<li>FilthGirlCum</li>
+			<li>FilthMixture</li>
+			<li>Filth_Vomit</li>
+			<li>Filth_CorpseBile</li>
+			<li>Filth_AnimalFilth</li>
+			<li>PM_Filth_Slurry</li>
+			<li>Filth_Ash</li>
+			<li>Filth_AmnioticFluid</li>
+			<li>Filth_Slime</li>
+			<li>Filth_Hair</li>
+			</customThingToEat>
+			<nutrition>1</nutrition>
+			<digThingIfMapEmpty>true</digThingIfMapEmpty>
+			<fullyDestroyThing>true</fullyDestroyThing>
+			<needsWater>true</needsWater>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Pillbug</defName>
+		<label>pillbug</label>
+		<race>BMT_Pillbug</race>
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
+					<drawSize>0.60</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
+					<drawSize>0.60</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
+					<drawSize>0.80</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
+					<drawSize>0.80</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
+					<drawSize>1.0</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggPillbugFertilized</defName>
+		<label>pillbug egg (fert.)</label>
+		<description>A pillbug egg. If all goes well, it should hatch into a baby pillbug. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(71,71,70)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Pillbug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggPillbugUnfertilized</defName>
+		<label>pillbug egg (unfert.)</label>
+		<description>An unfertilized pillbug egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(71,71,70)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<DesignatorDropdownGroupDef>
+							<defName>Floor_Totemic_Boards</defName>
+							<label>totemic boards</label>
+						</DesignatorDropdownGroupDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
+					<value>
+						<designatorDropdown>Floor_Totemic_Boards</designatorDropdown>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<TerrainDef ParentName="FloorBase">
+							<defName>BMT_MushroomBoards_Totemic</defName>
+							<label>totemic mushroom boards</label>
+							<renderPrecedence>250</renderPrecedence>
+							<description>fine mushroom boards decorated in a totemic style.</description>
+							<texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+							<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+							<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+							<dominantStyleCategory>Totemic</dominantStyleCategory>
+							<color>(195,195,195)</color>
+							<statBases>
+								<WorkToBuild>5000</WorkToBuild>
+								<Beauty>3</Beauty>
+								<StyleDominance>1</StyleDominance>
+								<Flammability>0.22</Flammability>
+							</statBases>
+							<costList>
+								<BMT_MushroomLog>20</BMT_MushroomLog>
+							</costList>
+							<constructEffect>ConstructWood</constructEffect>
+							<tags>
+								<li>FineFloor</li>
+							</tags>
+							<designatorDropdown>Floor_Totemic_Boards</designatorDropdown>
+						</TerrainDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignatorGroups</xpath>
+					<value>
+						<li>Floor_Totemic_Boards</li>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignators/li[3]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

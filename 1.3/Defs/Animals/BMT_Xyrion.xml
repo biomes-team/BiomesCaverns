@@ -1,155 +1,150 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-
-
-  <ThingDef ParentName="AnimalThingBase">
-    <defName>BMT_Xyrion</defName>
-    <label>xyrion</label>
-    <description>These large salamander-like creatures make good pets.</description>
-    <statBases>
-      <MoveSpeed>4.0</MoveSpeed>
-      <MarketValue>240</MarketValue>
-      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-      <ComfyTemperatureMax>50</ComfyTemperatureMax>
-    </statBases>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BMT_EggXyrionFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>5.661</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1~2</eggCountRange>
-      </li>
-    </comps>
-    <race>
-      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
-      <baseBodySize>0.9</baseBodySize>
-      <baseHealthScale>1.0</baseHealthScale>
-      <baseHungerRate>0.2</baseHungerRate>
-      <foodType>OmnivoreRoughAnimal</foodType>
-      <leatherDef>Leather_Lizard</leatherDef>
-      <wildness>0.0</wildness>
-      <trainability>Intermediate</trainability>
-      <petness>0.5</petness>
-      <lifeExpectancy>11</lifeExpectancy>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.1</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.2222</minAge>
-          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
-          <soundDeath>Pawn_Iguana_Death</soundDeath>
-          <soundCall>Pawn_Iguana_Call</soundCall>
-          <soundAngry>Pawn_Iguana_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-    </race>
-    <tradeTags>
-      <li>AnimalUncommon</li>
-    </tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BMT_Xyrion</defName>
-    <label>xyrion</label>
-    <race>BMT_Xyrion</race>
-    <combatPower>80</combatPower>
-    <ecoSystemWeight>0.55</ecoSystemWeight>
-    <lifeStages>
-      <li>
-	  	<label>xyrion hatchling</label>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Xyrion/Xyrion</texPath>
-          <drawSize>1</drawSize>
-		  <color>(99,77,65)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Xyrion/Xyrion</texPath>
-          <drawSize>1.35</drawSize>
-		  <color>(99,77,65)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1.35</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Xyrion/Xyrion</texPath>
-          <drawSize>1.65</drawSize>
-		  <color>(99,77,65)</color>
-          <shadowData>
-            <volume>(0.25, 0.3, 0.25)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1.65</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-
-   <ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_Xyrion</defName>
+		<label>xyrion</label>
+		<description>These large salamander-like creatures make good pets.\n\nThese large reptiles were first brought to Rimworlds as a strange pet due to its ability to lose its tail without harm, much like some geckos. Years after some were released or escaped into their preferred habit of underground caverns, it was discovered that they can be raised and farmed for their surprisingly nutritious tails.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<MarketValue>240</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggXyrionUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggXyrionFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5.661</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<baseHungerRate>0.2</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<wildness>0.0</wildness>
+			<trainability>Intermediate</trainability>
+			<petness>0.5</petness>
+			<lifeExpectancy>11</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
+					<soundWounded>Pawn_Iguana_Wounded</soundWounded>
+					<soundDeath>Pawn_Iguana_Death</soundDeath>
+					<soundCall>Pawn_Iguana_Call</soundCall>
+					<soundAngry>Pawn_Iguana_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Xyrion</defName>
+		<label>xyrion</label>
+		<race>BMT_Xyrion</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>0.55</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>xyrion hatchling</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Xyrion/Xyrion</texPath>
+					<drawSize>1</drawSize>
+					<color>(255,255,255)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Xyrion/Xyrion</texPath>
+					<drawSize>1.35</drawSize>
+					<color>(255,255,255)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+					<drawSize>1.35</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Xyrion/Xyrion</texPath>
+					<drawSize>1.65</drawSize>
+					<color>(255,255,255)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+					<drawSize>1.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggXyrionFertilized</defName>
 		<label>xyrion egg (fert.)</label>
 		<description>A fertilized xyrion egg. If all goes well, it should hatch into a xyrion. It can be eaten raw, but it's much better cooked.</description>
@@ -162,10 +157,23 @@
 			<MarketValue>20.0</MarketValue>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Hatcher">
-			<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-			<hatcherPawn>BMT_Xyrion</hatcherPawn>
-		  </li>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Xyrion</hatcherPawn>
+			</li>
 		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggXyrionUnfertilized</defName>
+		<label>xyrion egg (unfert.)</label>
+		<description>An unfertilized xyrion egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(237,231,228)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

@@ -15,6 +15,7 @@
         </statBases>
         <plant>
             <wildClusterRadius>2</wildClusterRadius>
+			<wildClusterWeight>20</wildClusterWeight>
             <growDays>30</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>

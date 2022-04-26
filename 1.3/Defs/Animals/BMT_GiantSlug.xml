@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GiantSlug</defName>
 		<label>giant slug</label>
-		<description>A huge slug, found deep underground. These slugs like the pigs of the deep.</description>
+		<description>A huge slug, found deep underground.\n\nA huge slug, roughly the size of a pig. It is often used as a meat source for underground colonies.</description>
 		<statBases>
 			<MoveSpeed>2.3</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -14,7 +14,8 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_GiantSlugEggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGiantSlugUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggGiantSlugFertilized</eggFertilizedDef>
 				<!-- xeye: should be hermaphroditic, if posible -->
 				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -109,7 +110,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_GiantSlugEggFertilized</defName>
+		<defName>BMT_EggGiantSlugFertilized</defName>
 		<label>giant slug egg (fert.)</label>
 		<description>A fertilized giant slug egg. If all goes well, it should hatch into a baby slug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -127,5 +128,19 @@
 				<hatcherPawn>BMT_GiantSlug</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggGiantSlugUnfertilized</defName>
+		<label>giant slug egg (unfert.)</label>
+		<description>An unfertilized giant slug egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(102,84,49)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
 	</ThingDef>
 </Defs>

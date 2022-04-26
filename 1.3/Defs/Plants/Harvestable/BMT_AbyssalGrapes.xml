@@ -24,7 +24,6 @@
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<growDays>19.5</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
-			<leaflessGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</leaflessGraphicPath>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</immatureGraphicPath>
 			<harvestYield>12</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
@@ -35,7 +34,6 @@
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<harvestedThingDef>BMT_AbyssalGrapes</harvestedThingDef>
 			<visualSizeRange>0.6~1.1</visualSizeRange>
-			<!-- <topWindExposure>0.1</topWindExposure> -->
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>50</wildClusterWeight>
@@ -47,7 +45,7 @@
 		<label>abyssal grapes</label>
 		<description>Raw grapes. Nice to eat, even when raw.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/AbyssalGrapes/AbyssalGrapes</texPath>
+			<texPath>BMT_Caverns/Things/Item/Crops/AbyssalGrapes/AbyssalGrapes</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.2</MarketValue>

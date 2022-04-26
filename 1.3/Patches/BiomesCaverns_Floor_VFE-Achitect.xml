@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Architect</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<TerrainDef ParentName="FloorBase">
+							<defName>BMT_WoodenParquetMushroom</defName>
+							<label>mushroom parquet</label>
+							<description>Beautifully laid down wooden flooring for that posh, fancy feeling. Whilst beautiful, it takes a long time to lay down and is also very flammable.</description>
+							<texturePath>Terrains/Parquet</texturePath>
+							<renderPrecedence>228</renderPrecedence>
+							<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+							<color>(195,195,195)</color>
+							<costList>
+								<BMT_MushroomLog>12</BMT_MushroomLog>
+							</costList>
+							<statBases>
+								<WorkToBuild>3000</WorkToBuild>
+								<Beauty>2</Beauty>
+								<Flammability>0.22</Flammability>
+							</statBases>
+							<constructEffect>ConstructWood</constructEffect>
+							<designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
+						</TerrainDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="BMT_WoodPlankFloorMushroom"]</xpath>
+					<value>
+						<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/TerrainDef[defName="BMT_BridgeMushroom"]</xpath>
+					<value>
+						<li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+							<loopPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopPath>
+							<rightPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightPath>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

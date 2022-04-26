@@ -1,170 +1,163 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-
-
-  <ThingDef ParentName="AnimalThingBase">
-    <defName>BMT_TruffleMole</defName>
-    <label>truffle mole</label>
-    <description>The truffle mole has specialized smell organs to easily find fungus.</description>
-    <statBases>
-      <MoveSpeed>3.8</MoveSpeed>
-      <MarketValue>100</MarketValue>
-      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-      <ComfyTemperatureMax>45</ComfyTemperatureMax>
-    </statBases>
-    <tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-    <race>
-	  <herdAnimal>false</herdAnimal>
-      <body>QuadrupedAnimalWithPawsAndTail</body>
-      <baseBodySize>0.9</baseBodySize>
-      <baseHealthScale>0.6</baseHealthScale>
-      <baseHungerRate>0.4</baseHungerRate>
-      <foodType>OmnivoreRoughAnimal</foodType>
-      <leatherDef>Leather_Plain</leatherDef>
-      <wildness>0.60</wildness>
-      <trainability>None</trainability>
-	  <petness>0.20</petness>
-	  <roamMtbDays>4</roamMtbDays>
-      <lifeExpectancy>6</lifeExpectancy>
-	  <gestationPeriodDays>6.66</gestationPeriodDays>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(1.5, 1)</li>
-          <li>(2, 0)</li>
-        </points>
-      </litterSizeCurve>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.1</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.2222</minAge>
-          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-          <soundDeath>Pawn_Rodent_Death</soundDeath>
-          <soundCall>Pawn_Rodent_Call</soundCall>
-          <soundAngry>Pawn_Rodent_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-    </race>
-    <tradeTags>
-      <li>AnimalUncommon</li>
-    </tradeTags>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BMT_TruffleMole</defName>
-    <label>truffle mole</label>
-    <race>BMT_TruffleMole</race>
-    <combatPower>35</combatPower>
-    <ecoSystemWeight>0.5</ecoSystemWeight>
-	<wildGroupSize>1~1</wildGroupSize>
-    <lifeStages>
-      <li>
-		<label>Truffle mole pup</label>
-        <labelPlural>Truffle mole pups</labelPlural>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
-          <drawSize>0.6</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-          <drawSize>0.6</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
-          <drawSize>1.15</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-          <drawSize>1.15</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
-          <drawSize>1.6</drawSize>
-          <shadowData>
-            <volume>(0.25, 0.3, 0.25)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-          <drawSize>1.6</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_TruffleMole</defName>
+		<label>truffle mole</label>
+		<description>The truffle mole has specialized smell organs to easily find fungus.\n\nThought to be related in some strange way to the truffle pigs of Earth, this mole has a specialized sense of smell, enabling it to find rare fungi.</description>
+		<statBases>
+			<MoveSpeed>3.8</MoveSpeed>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
+			<baseHungerRate>0.4</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>Leather_Plain</leatherDef>
+			<wildness>0.60</wildness>
+			<trainability>None</trainability>
+			<petness>0.20</petness>
+			<roamMtbDays>4</roamMtbDays>
+			<lifeExpectancy>6</lifeExpectancy>
+			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.5, 1)</li>
+					<li>(2, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
+					<soundWounded>Pawn_Rodent_Wounded</soundWounded>
+					<soundDeath>Pawn_Rodent_Death</soundDeath>
+					<soundCall>Pawn_Rodent_Call</soundCall>
+					<soundAngry>Pawn_Rodent_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_TruffleMole</defName>
+		<label>truffle mole</label>
+		<race>BMT_TruffleMole</race>
+		<combatPower>35</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>1~1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>Truffle mole pup</label>
+				<labelPlural>Truffle mole pups</labelPlural>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
+					<drawSize>1.15</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<drawSize>1.15</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>

@@ -20,7 +20,7 @@
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
-    <foragedFood>BMT_AbyssalGrapes</foragedFood>
+    <foragedFood>BMT_RawDulcis</foragedFood>
     <wildPlantRegrowDays>20</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
@@ -126,37 +126,47 @@
 		
 	<!-- mid sized -->
 		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
+		<BMT_BalefulBolete>0.02</BMT_BalefulBolete>
+		<BMT_VioletWimple>0.02</BMT_VioletWimple>
+		<BMT_CrimsonCap>0.02</BMT_CrimsonCap>
 		
 	<!-- trees -->
-		<BMT_GleamPlum>0.5</BMT_GleamPlum>
-		<BMT_Jellycap>0.5</BMT_Jellycap>
-		<BMT_Embrun>0.3</BMT_Embrun>
-		<BMT_Viritoll>0.3</BMT_Viritoll>
+		<BMT_GleamPlum>0.2</BMT_GleamPlum>
+		<BMT_Jellycap>0.2</BMT_Jellycap>
+		<BMT_Embrun>0.1</BMT_Embrun>
+		<BMT_Viritoll>0.1</BMT_Viritoll>
+		<BMT_Nogtyl>0.05</BMT_Nogtyl>		<!-- wood -->
 		
 	<!-- other harvestable -->
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
-		<BMT_AbyssalGrapesVine>0.005</BMT_AbyssalGrapesVine>		<!-- food -->
+		<BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>		<!-- food -->
 		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
+		<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>		<!-- Medicine -->
+		<BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>		<!-- Textiles -->
+		<BMT_Shinecap>0.003</BMT_Shinecap>		<!-- Fruit Tree -->
       
     </wildPlants>
 
     <wildAnimals>
 	<!-- herbivores -->
-		<BMT_GiantSnail>0.20</BMT_GiantSnail>
+		<BMT_GiantSnail>0.2</BMT_GiantSnail>
 		<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
 		<BMT_GlowSnail>0.05</BMT_GlowSnail>
-		<BMT_GlowSlug>0.10</BMT_GlowSlug>
+		<BMT_GlowSlug>0.1</BMT_GlowSlug>
 		<BMT_MossBeetle>0.15</BMT_MossBeetle>
 		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
-		<BMT_Xyrion>0.05</BMT_Xyrion>
-		<BMT_Yooka>0.5</BMT_Yooka>
+		<BMT_Xyrion>0.1</BMT_Xyrion>
+		<BMT_Yooka>0.2</BMT_Yooka>
 		<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
-		<BMT_GiantSlug>0.5</BMT_GiantSlug>
+		<BMT_GiantSlug>0.3</BMT_GiantSlug>
 		<BMT_CaveCricket>0.25</BMT_CaveCricket>
 		<BMT_TruffleMole>0.1</BMT_TruffleMole>
+		<BMT_Goeto>0.3</BMT_Goeto>
+		<BMT_Maxolotl>0.05</BMT_Maxolotl>
+		<BMT_Pillbug>0.2</BMT_Pillbug>
 	<!-- predators -->
-		<BMT_MossyFennec>0.10</BMT_MossyFennec>
-		<BMT_FungalFerret>0.10</BMT_FungalFerret>
+		<BMT_MossyFennec>0.1</BMT_MossyFennec>
+		<BMT_FungalFerret>0.1</BMT_FungalFerret>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
