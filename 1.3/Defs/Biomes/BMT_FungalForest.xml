@@ -147,11 +147,13 @@
 		<BMT_Shinecap>0.003</BMT_Shinecap>		<!-- Fruit Tree -->
     
 	<!-- hydrophytes -->
-		<BMT_Arpeau>0.03</BMT_Arpeau>
-		<BMT_Wrinklecap>0.5</BMT_Wrinklecap>
+		<BMT_Arpeau>0.3</BMT_Arpeau>
+		<BMT_Wrinklecap>0.4</BMT_Wrinklecap>
+		<BMT_Nuitae>0.4</BMT_Nuitae>
+		<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
 
 	<!-- special -->
-		<BMT_Poptop>0.5</BMT_Poptop>
+		<BMT_Poptop>0.2</BMT_Poptop>
 
     </wildPlants>
 
