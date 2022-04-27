@@ -6,16 +6,17 @@
 		<description>Wrinklecap.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<Flammability>1.3</Flammability>
-			<Nutrition>0.30</Nutrition>
+			<Flammability>0.15</Flammability>
+			<Nutrition>1.20</Nutrition>
 		</statBases>
+		<selectable>true</selectable>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<terrainTags>
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
-					<li>ChestDeep</li>
+					<li>Boggy</li>
 				</terrainTags>
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
@@ -30,12 +31,16 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>3</growDays>
 			<harvestWork>80</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
+			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.7~0.85</visualSizeRange>
 			<topWindExposure>0.4</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 </Defs>
