@@ -57,10 +57,15 @@
 		  </li>
 		</comps>
 		<ingestible>
-		  <preferability>RawTasty</preferability>
-		  <tasteThought></tasteThought>
-		  <foodType>VegetableOrFruit</foodType>
+			<preferability>RawTasty</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 	  </ThingDef>
 
 	
