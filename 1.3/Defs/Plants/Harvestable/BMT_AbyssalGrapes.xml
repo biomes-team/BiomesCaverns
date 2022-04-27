@@ -25,13 +25,12 @@
 			<growDays>19.5</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</immatureGraphicPath>
-			<harvestYield>12</harvestYield>
+			<harvestYield>20</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 			<harvestTag>Standard</harvestTag>
-			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<harvestedThingDef>BMT_AbyssalGrapes</harvestedThingDef>
 			<visualSizeRange>0.6~1.1</visualSizeRange>
 			<wildOrder>2</wildOrder>
@@ -53,7 +52,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>14</daysToRotStart>
+				<daysToRotStart>70</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

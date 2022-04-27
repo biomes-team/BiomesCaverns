@@ -37,7 +37,7 @@
 			<harvestAfterGrowth>0.5</harvestAfterGrowth>
 			<harvestFailable>true</harvestFailable>
 			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
-			<visualSizeRange>0.8~1.6</visualSizeRange>
+			<visualSizeRange>1.5~2.5</visualSizeRange>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

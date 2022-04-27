@@ -3,12 +3,6 @@
 	<ThingDef ParentName="PlantBase">
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<!--<terrainTags>
-					<li>Water</li>
-					<li>Fresh</li>
-					<li>Shallow</li>
-					<li>ChestDeep</li>
-				</terrainTags> -->
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
 			</li>
@@ -29,7 +23,7 @@
 		<blockWind>true</blockWind>
 		<statBases>
 			<Beauty>2</Beauty>
-			<Flammability>0.25</Flammability>
+			<Flammability>0.8</Flammability>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Nutrition>2.0</Nutrition>
 			<Mass>150</Mass>
