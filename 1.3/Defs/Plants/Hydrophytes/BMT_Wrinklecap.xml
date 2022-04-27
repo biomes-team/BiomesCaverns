@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_Wrinklecap</defName>
+		<label>wrinklecap</label>
+		<description>Wrinklecap.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.30</Nutrition>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+					<li>ChestDeep</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Wrinklecap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>80</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>
