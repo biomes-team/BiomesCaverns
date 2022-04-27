@@ -16,7 +16,6 @@
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
-					<li>Boggy</li>
 				</terrainTags>
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>

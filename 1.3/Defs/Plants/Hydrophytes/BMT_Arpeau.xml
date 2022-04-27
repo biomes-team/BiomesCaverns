@@ -8,7 +8,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 					<li>ChestDeep</li>
-					<li>Boggy</li>
 				</terrainTags>
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
