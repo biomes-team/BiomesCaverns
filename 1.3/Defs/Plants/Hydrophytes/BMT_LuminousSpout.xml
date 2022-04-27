@@ -31,7 +31,7 @@
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3.9</glowRadius>
-				<glowColor>(253,247,185,0)</glowColor>
+				<glowColor>(78, 226, 229, 0)</glowColor>
 			</li>
 		</comps>
 		<modExtensions>
@@ -40,7 +40,6 @@
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
-					<li>Boggy</li>
 				</terrainTags>
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
