@@ -8,6 +8,7 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 					<li>ChestDeep</li>
+					<li>Boggy</li>
 				</terrainTags>
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
@@ -53,16 +54,15 @@
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>
-			<mustBeWildToSow>true</mustBeWildToSow>
-			<wildClusterRadius>17</wildClusterRadius>
-			<wildClusterWeight>25</wildClusterWeight>
+			<wildClusterRadius>20</wildClusterRadius>
+			<wildClusterWeight>1</wildClusterWeight>
 			<growDays>5</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestWork>800</harvestWork>
 			<harvestYield>20</harvestYield>
 			<wildOrder>1</wildOrder>
 			<neverBlightable>true</neverBlightable>
-			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
 			<harvestMinGrowth>0.40</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
 			<blockAdjacentSow>true</blockAdjacentSow>
