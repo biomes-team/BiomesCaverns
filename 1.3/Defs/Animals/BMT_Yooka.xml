@@ -87,10 +87,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.2222</minAge>
-					<soundWounded>Pawn_Dromedary_Wounded</soundWounded>
-					<soundDeath>Pawn_Dromedary_Death</soundDeath>
-					<soundCall>Pawn_Dromedary_Call</soundCall>
-					<soundAngry>Pawn_Dromedary_Angry</soundAngry>
+					<soundWounded>Biomes_Yooka_Wounded</soundWounded>
+					<soundDeath>Biomes_Yooka_Death</soundDeath>
+					<soundCall>Biomes_Yooka_Call</soundCall>
+					<soundAngry>Biomes_Yooka_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
