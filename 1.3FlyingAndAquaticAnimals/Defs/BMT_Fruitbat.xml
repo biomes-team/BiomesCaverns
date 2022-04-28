@@ -111,10 +111,10 @@
         <li>
           <def>BMT_FruitBatAdult</def>
           <minAge>0.222</minAge>
-          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-          <soundDeath>Pawn_Rodent_Death</soundDeath>
-          <soundCall>Pawn_Rodent_Call</soundCall>
-          <soundAngry>Pawn_Rodent_Angry</soundAngry>
+          <soundWounded>Biomes_Bat_Wounded</soundWounded>
+          <soundDeath>Biomes_Bat_Death</soundDeath>
+          <soundCall>Biomes_Bat_Call</soundCall>
+          <soundAngry>Biomes_Bat_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
