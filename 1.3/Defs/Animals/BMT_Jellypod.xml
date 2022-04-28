@@ -65,10 +65,10 @@
 				<li>
 					<def>EusocialInsectLarva</def>
 					<minAge>0.2</minAge>
-					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
-					<soundDeath>Pawn_Spelopede_Death</soundDeath>
-					<soundCall>Pawn_Spelopede_Call</soundCall>
-					<soundAngry>Pawn_Spelopede_Angry</soundAngry>
+					<soundWounded>Biomes_Jellypod_Pain</soundWounded>
+					<soundDeath>Biomes_Jellypod_Death</soundDeath>
+					<soundCall>Biomes_Jellypod_Call</soundCall>
+					<soundAngry>Biomes_Jellypod_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
