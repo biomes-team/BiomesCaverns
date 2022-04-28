@@ -83,10 +83,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.2222</minAge>
-					<soundWounded>Pawn_Iguana_Wounded</soundWounded>
-					<soundDeath>Pawn_Iguana_Death</soundDeath>
-					<soundCall>Pawn_Iguana_Call</soundCall>
-					<soundAngry>Pawn_Iguana_Angry</soundAngry>
+					<soundWounded>Biomes_Xyrion_Wounded</soundWounded>
+					<soundDeath>Biomes_Xyrion_Death</soundDeath>
+					<soundCall>Biomes_Xyrion_Call</soundCall>
+					<soundAngry>Biomes_Xyrion_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
