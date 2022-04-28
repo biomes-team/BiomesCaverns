@@ -60,6 +60,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
+					<soundWounded>Biomes_GlowSnail_Wounded</soundWounded>
+					<soundDeath>Biomes_GlowSnail_Death</soundDeath>
+					<soundCall>Biomes_GlowSnail_Call</soundCall>
+					<soundAngry>Biomes_GlowSnail_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
