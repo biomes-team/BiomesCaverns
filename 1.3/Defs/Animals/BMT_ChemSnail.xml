@@ -70,6 +70,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.222</minAge>
+					<soundWounded>Biomes_ChemSnail_Wounded</soundWounded>
+					<soundDeath>Biomes_ChemSnail_Death</soundDeath>
+					<soundCall>Biomes_ChemSnail_Call</soundCall>
+					<soundAngry>Biomes_ChemSnail_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
