@@ -23,7 +23,7 @@
     <foragedFood>BMT_RawDulcis</foragedFood>
     <wildPlantRegrowDays>20</wildPlantRegrowDays>
     <soundsAmbient>
-      <li>Ambient_NightInsects_Standard</li>
+      <li>BMT_Ambient_FungalForest</li>
     </soundsAmbient>
     <diseaseMtbDays>40</diseaseMtbDays>
     <diseases>
@@ -142,9 +142,9 @@
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
 		<BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>		<!-- food -->
 		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
-		<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>		<!-- Medicine -->
-		<BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>		<!-- Textiles -->
-		<BMT_Shinecap>0.003</BMT_Shinecap>		<!-- Fruit Tree -->
+		<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>		<!-- medicine -->
+		<BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>		<!-- textiles -->
+		<BMT_Shinecap>0.003</BMT_Shinecap>		<!-- fruit tree -->
     
 	<!-- hydrophytes -->
 		<BMT_Arpeau>0.3</BMT_Arpeau>
@@ -153,7 +153,7 @@
 		<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
 
 	<!-- special -->
-		<BMT_Poptop>0.2</BMT_Poptop>
+		<BMT_Poptop>0.05</BMT_Poptop>		<!-- firepooper -->
 
     </wildPlants>
 

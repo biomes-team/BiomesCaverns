@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SongDef>
+    <clipPath>BMT_Caverns/Music/Neonothopanus</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_FungalForest</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+</Defs>
