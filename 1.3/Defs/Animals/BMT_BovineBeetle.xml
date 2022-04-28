@@ -60,10 +60,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
-					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
-					<soundDeath>Pawn_Megascarab_Death</soundDeath>
-					<soundCall>Pawn_Megascarab_Call</soundCall>
-					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+					<soundWounded>Biomes_BovineBeetle_Wounded</soundWounded>
+					<soundDeath>Biomes_BovineBeetle_Death</soundDeath>
+					<soundCall>Biomes_BovineBeetle_Call</soundCall>
+					<soundAngry>Biomes_BovineBeetle_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
