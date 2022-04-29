@@ -59,6 +59,12 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<resourceDef>BMT_XyrionTail</resourceDef>
+				<gatheringIntervalDays>6</gatheringIntervalDays>
+				<resourceAmount>40</resourceAmount>
+				<customResourceString>XyrionTails</customResourceString>
+			</li>
 		</comps>
 		<race>
 			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
@@ -175,5 +181,44 @@
 		<statBases>
 			<MarketValue>20.0</MarketValue>
 		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_XyrionTail</defName>
+		<label>xyrion tail</label>
+		<description>A xyrions tail. it is still twitching a bit.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/XyrionTail</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>5</DeteriorationRate>
+			<MarketValue>2</MarketValue>
+			<Mass>0.003</Mass>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+		</ingestible>
+		<tickerType>Rare</tickerType>
 	</ThingDef>
 </Defs>
