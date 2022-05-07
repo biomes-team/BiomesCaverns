@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>BMT_metamorphosis</defName>
+		<label>pupa</label>
+		<description>An insect in metamorphosis.</description>
+		<stages>
+			<li>
+				<label>metamorphosis</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
