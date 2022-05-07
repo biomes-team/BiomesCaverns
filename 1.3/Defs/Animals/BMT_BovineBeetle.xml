@@ -1,6 +1,266 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BaseInsect">
+	<!-- Larvae -->
+	<LifeStageDef>
+		<defName>BMT_BovineBeetleLarval1</defName>
+		<label>Grub</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>0.3</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>BMT_BovineBeetleLarval2</defName>
+		<label>Grub</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>0.6</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.5</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>BMT_BovineBeetleLarval3</defName>
+		<label>Grub</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+	</LifeStageDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_BovineBeetleLarvae</defName>
+		<label>bovine grub</label>
+		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<statBases>
+			<MoveSpeed>0.4</MoveSpeed>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicSensitivity>0</ToxicSensitivity>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.15</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_BovineBeetleLarval1</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_BovineBeetleLarval2</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_BovineBeetleLarval3</def>
+					<minAge>0.1</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+				<timeInYears>0.15</timeInYears>
+				<pawnToTurnInto>BMT_BovineBeetlePupa</pawnToTurnInto>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_BovineBeetleLarvae</defName>
+		<label>bovine grub</label>
+		<race>BMT_BovineBeetleLarvae</race>
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~3</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>bovine grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/BovineBeetleLarva</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/Dessicated_BovineBeetleLarva</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>bovine grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/BovineBeetleLarva</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/Dessicated_BovineBeetleLarva</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>bovine grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/BovineBeetleLarva</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/Dessicated_BovineBeetleLarva</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Pupa -->
+	<LifeStageDef>
+		<defName>BMT_BovineBeetlePupa</defName>
+		<label>pupa</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+	</LifeStageDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_BovineBeetlePupa</defName>
+		<label>aaroxis dendoria pupa</label>
+		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<statBases>
+			<MoveSpeed>0</MoveSpeed>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicSensitivity>0</ToxicSensitivity>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.001</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.5</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_BovineBeetlePupa</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+				<timeInYears>0.1</timeInYears>
+				<pawnToTurnInto>BMT_BovineBeetle</pawnToTurnInto>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>BMT_metamorphosis</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>Twitching</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>0</power>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_BovineBeetlePupa</defName>
+		<label>Bovine pupa</label>
+		<race>BMT_BovineBeetlePupa</race>
+		<combatPower>0</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
+					<drawSize>1</drawSize>
+					<color>(89,97,73)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Adult -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetle</defName>
 		<label>bovine beetle</label>
 		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
@@ -13,7 +273,6 @@
 			<FilthRate>4</FilthRate>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
-		<!-- <uiIconScale>2</uiIconScale> -->
 		<tools>
 			<li>
 				<label>mandibles</label>
@@ -37,6 +296,11 @@
 			</li>
 		</tools>
 		<race>
+			<hasGenders>true</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
 			<body>BeetleLike</body>
 			<baseBodySize>2.45</baseBodySize>
 			<baseHungerRate>0.50</baseHungerRate>
@@ -50,11 +314,11 @@
 			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
+					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>AnimalJuvenile</def>
+					<def>AnimalAdult</def>
 					<minAge>0.1</minAge>
 				</li>
 				<li>
@@ -70,6 +334,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
@@ -96,13 +365,12 @@
 		<ecoSystemWeight>0.15</ecoSystemWeight>
 		<lifeStages>
 			<li>
-				<label>bovine grub</label>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/BovineBeetleLarva</texPath>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/BovineBeetle</texPath>
 					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/Dessicated_BovineBeetleLarva</texPath>
+					<texPath>BMT_Caverns/Things/Animal/BovineBeetle/Dessicated_BovineBeetle</texPath>
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -132,6 +400,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- Egg -->
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggBovineBeetleFertilized</defName>
 		<label>bovine beetle egg (fert.)</label>
@@ -147,7 +416,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>9</hatcherDaystoHatch>
-				<hatcherPawn>BMT_BovineBeetle</hatcherPawn>
+				<hatcherPawn>BMT_BovineBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
@@ -165,4 +434,3 @@
 		</statBases>
 	</ThingDef>
 </Defs>
-
