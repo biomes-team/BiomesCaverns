@@ -2,7 +2,7 @@
 <Defs>
 	<!-- Larvae -->
 	<LifeStageDef>
-		<defName>BMT_AaroxisDendoriaLarvae</defName>
+		<defName>BMT_AaroxisDendoriaLarval</defName>
 		<label>Larvae</label>
 		<reproductive>false</reproductive>
 	</LifeStageDef>
@@ -24,7 +24,8 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
-			<baseBodySize>5</baseBodySize>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -39,7 +40,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_AaroxisDendoriaLarvae</def>
+					<def>BMT_AaroxisDendoriaLarval</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
@@ -109,33 +110,9 @@
 	<!-- Pupa -->
 	<LifeStageDef>
 		<defName>BMT_AaroxisDendoriaPupa</defName>
-		<label>Pupa</label>
+		<label>pupa</label>
 		<reproductive>false</reproductive>
 	</LifeStageDef>
-	<HediffDef>
-		<defName>BMT_Pupa</defName>
-		<label>pupa</label>
-		<description>Pupa</description>
-		<stages>
-			<li>
-			<label>morphing</label>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<setMax>0.1</setMax>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<setMax>0.1</setMax>
-					</li>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.1</setMax>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaPupa</defName>
 		<label>aaroxis dendoria pupa</label>
@@ -154,7 +131,8 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
-			<baseBodySize>5</baseBodySize>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.001</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -171,10 +149,6 @@
 				<li>
 					<def>BMT_AaroxisDendoriaPupa</def>
 					<minAge>0</minAge>
-					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
-					<soundDeath>Pawn_Megascarab_Death</soundDeath>
-					<soundCall>Pawn_Megascarab_Call</soundCall>
-					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 		</race>
@@ -190,7 +164,7 @@
 				<pawnToTurnInto>BMT_AaroxisDendoria</pawnToTurnInto>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
-				<hediffname>BMT_Pupa</hediffname>
+				<hediffname>BMT_metamorphosis</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
@@ -248,6 +222,7 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>
