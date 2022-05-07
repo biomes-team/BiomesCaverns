@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Shinecap</defName>
 		<label>shine cap</label>
 		<description>this large mushroom lives in symbiosis with a surprisingly tasty slime mold called Glimmerslime.</description>
@@ -27,14 +27,14 @@
 			<growDays>30</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Shinecap/ShinecapImmature</immatureGraphicPath>
-			<harvestYield>25</harvestYield>
+			<harvestYield>20</harvestYield>
 			<sowMinSkill>6</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 			<harvestWork>800</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestAfterGrowth>0.5</harvestAfterGrowth>
+			<harvestAfterGrowth>0.8</harvestAfterGrowth>
 			<harvestFailable>true</harvestFailable>
 			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
@@ -62,5 +62,10 @@
 			<preferability>RawTasty</preferability>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 	</ThingDef>
 </Defs>

@@ -10,11 +10,16 @@
 					<li>BMT_EggChemSnailFertilized</li>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[text()="RawFungus"]]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>BMT_MushroomLog</li>
-				</value>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Ideology</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[text()="RawFungus"]]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>BMT_MushroomLog</li>
+					</value>
+				</match>
 			</li>
 		</operations>
 	</Operation>

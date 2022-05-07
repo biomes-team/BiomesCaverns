@@ -53,6 +53,9 @@
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>
+			<sowTags Inherit="False">
+				<li MayRequire="vanillaexpanded.vplantsemore">VCE_Aquatic</li>
+			</sowTags>
 			<wildClusterRadius>20</wildClusterRadius>
 			<wildClusterWeight>1</wildClusterWeight>
 			<growDays>5</growDays>
@@ -67,9 +70,6 @@
 			<blockAdjacentSow>true</blockAdjacentSow>
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 			<treeCategory>Full</treeCategory>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
 			<cavePlant>true</cavePlant>

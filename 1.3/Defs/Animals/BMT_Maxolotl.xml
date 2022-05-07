@@ -61,7 +61,7 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Regeneration" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<rateInTicks>100</rateInTicks>
+				<rateInTicks>400</rateInTicks>
 			</li>
 		</comps>
 		<race>

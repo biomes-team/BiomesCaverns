@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="TreeBase">
 		<defName>BMT_Poptop</defName>
 		<label>poptop</label>
 		<description>A spongy mushroom over reacting to fire.</description>
@@ -16,13 +16,15 @@
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
-				<growingHours>0.5~0.99</growingHours>
+				<growingHours>0.01~0.99</growingHours>
 			</li>
 		</modExtensions>
 		<plant>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
 			<fertilityMin>0.05</fertilityMin>
+			<soundHarvesting>Harvest_Standard</soundHarvesting>
+			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
 			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
@@ -33,34 +35,36 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<cavePlant>true</cavePlant>
 			<interferesWithRoof>false</interferesWithRoof>
-			<!--sowResearchPrerequisites>
-				<li>Firefoam</li>
-			</sowResearchPrerequisites-->
+			<harvestTag Inherit="False" />
+			<harvestedThingDef Inherit="False" />
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<sowResearchPrerequisites Inherit="False" />
 		</plant>
-		<!--minifiedDef>MinifiedTree</minifiedDef-->
-		<!--rotatable>false</rotatable-->
+		<selectable>true</selectable>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveRadius>3.9</explosiveRadius>
 				<explosiveDamageType>Extinguish</explosiveDamageType>
-				<startWickHitPointsPercent>-1</startWickHitPointsPercent>
-				<startWickOnDamageTaken>
-					<li>Flame</li>
-				</startWickOnDamageTaken>
 				<postExplosionSpawnThingDef>Filth_Water</postExplosionSpawnThingDef>
 				<postExplosionSpawnChance>1</postExplosionSpawnChance>
 				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 				<explosionEffect>ExtinguisherExplosion</explosionEffect>
 			</li>
-			<li Class="CompProperties_UseEffect">
-				<compClass>CompUseEffect_StartWick</compClass>
-			</li>
 			<li Class="CompProperties_ProximityFuse">
 				<target>Fire</target>
 				<radius>3</radius>
 			</li>
 		</comps>
+    <tradeability>Buyable</tradeability>
+    <!--thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags-->
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
 	</ThingDef>
 </Defs>

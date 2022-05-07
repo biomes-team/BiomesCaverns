@@ -22,7 +22,7 @@
 		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
-			<growDays>19.5</growDays>
+			<growDays>14</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</immatureGraphicPath>
 			<harvestYield>20</harvestYield>
@@ -36,6 +36,8 @@
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>50</wildClusterWeight>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

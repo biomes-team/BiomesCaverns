@@ -215,9 +215,9 @@
 		<ingestible>
 			<preferability>RawBad</preferability>
 			<tasteThought>AteRawFood</tasteThought>
-			<foodType>VegetableOrFruit</foodType>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>RawVegetable_Eat</ingestSound>
+			<foodType>Meat</foodType>
+			<!--ingestEffect>EatVegetarian</ingestEffect-->
+			<ingestSound>RawMeat_Eat</ingestSound>
 		</ingestible>
 		<tickerType>Rare</tickerType>
 	</ThingDef>
