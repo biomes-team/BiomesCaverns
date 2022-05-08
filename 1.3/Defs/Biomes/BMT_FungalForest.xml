@@ -165,7 +165,8 @@
 		<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
 		<BMT_GlowSnail>0.05</BMT_GlowSnail>
 		<BMT_GlowSlug>0.1</BMT_GlowSlug>
-		<BMT_MossBeetle>0.15</BMT_MossBeetle>
+		<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+		<BMT_MossBeetle>0.075</BMT_MossBeetle>
 		<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
 		<BMT_BovineBeetle>0.05</BMT_BovineBeetle>
 		<BMT_Xyrion>0.1</BMT_Xyrion>

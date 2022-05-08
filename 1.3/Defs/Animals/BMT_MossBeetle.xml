@@ -1,9 +1,243 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BaseInsect">
+	<!-- Larvae -->
+	<LifeStageDef>
+		<defName>BMT_MossBeetleLarval1</defName>
+		<label>Grub</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>0.5</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>BMT_MossBeetleLarval2</defName>
+		<label>Grub</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+	</LifeStageDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_MossBeetleLarvae</defName>
+		<label>moss grub</label>
+		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
+		<statBases>
+			<MoveSpeed>0.3</MoveSpeed>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicSensitivity>0</ToxicSensitivity>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.15</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_MossBeetleLarval1</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_MossBeetleLarval2</def>
+					<minAge>0.1</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+				<timeInYears>0.2</timeInYears>
+				<pawnToTurnInto>BMT_MossBeetlePupa</pawnToTurnInto>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MossBeetleLarvae</defName>
+		<label>moss beetle</label>
+		<race>BMT_MossBeetleLarvae</race>
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~3</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>moss grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossGrub</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>moss grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossGrub</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Pupa -->
+	<LifeStageDef>
+		<defName>BMT_MossBeetlePupa</defName>
+		<label>pupa</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+	</LifeStageDef>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_MossBeetlePupa</defName>
+		<label>moss pupa</label>
+		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
+		<statBases>
+			<MoveSpeed>0</MoveSpeed>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicSensitivity>0</ToxicSensitivity>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.001</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.5</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_MossBeetlePupa</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+				<timeInYears>0.1</timeInYears>
+				<pawnToTurnInto>BMT_MossBeetle</pawnToTurnInto>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>BMT_metamorphosis</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>Twitching</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>0</power>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MossBeetlePupa</defName>
+		<label>moss pupa</label>
+		<race>BMT_MossBeetlePupa</race>
+		<combatPower>0</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
+					<drawSize>1</drawSize>
+					<color>(137,162,166)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Adult -->
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MossBeetle</defName>
 		<label>moss beetle</label>
-		<description>a large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
+		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
@@ -13,7 +247,6 @@
 			<FilthRate>4</FilthRate>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
-		<!-- <uiIconScale>2</uiIconScale> -->
 		<tools>
 			<li>
 				<label>mandibles</label>
@@ -37,6 +270,11 @@
 			</li>
 		</tools>
 		<race>
+			<hasGenders>true</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
 			<body>BeetleLike</body>
 			<baseBodySize>0.45</baseBodySize>
 			<baseHungerRate>0.20</baseHungerRate>
@@ -49,12 +287,8 @@
 			<lifeExpectancy>16</lifeExpectancy>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
+					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.03</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
@@ -69,6 +303,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggMossBeetleUnfertilized</eggUnfertilizedDef>
@@ -89,17 +328,6 @@
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<label>moss grub</label>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
-					<drawSize>0.65</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossGrub</texPath>
-					<drawSize>0.65</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossBeetle</texPath>
@@ -126,6 +354,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- Egg -->
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMossBeetleFertilized</defName>
 		<label>moss beetle egg (fert.)</label>
@@ -141,7 +370,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>8</hatcherDaystoHatch>
-				<hatcherPawn>BMT_MossBeetle</hatcherPawn>
+				<hatcherPawn>BMT_MossBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

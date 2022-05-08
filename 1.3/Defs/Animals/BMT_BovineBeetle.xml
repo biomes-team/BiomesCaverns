@@ -170,7 +170,7 @@
 	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetlePupa</defName>
-		<label>aaroxis dendoria pupa</label>
+		<label>bovine pupa</label>
 		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
