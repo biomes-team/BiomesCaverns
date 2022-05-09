@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<LifeStageDef>
-		<defName>BMT_AaroxisDendoriaLarval</defName>
-		<label>Larvae</label>
-		<reproductive>false</reproductive>
-	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaLarvae</defName>
 		<label>aaroxis dendoria larvae</label>
@@ -40,12 +35,20 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_AaroxisDendoriaLarval</def>
+					<def>BMT_InsectLarvalFirst</def>
 					<minAge>0</minAge>
+				<li>
+					<def>BMT_InsectLarvalSecound</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalThird</def>
+					<minAge>0.1</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
 					<soundCall>Pawn_Megascarab_Call</soundCall>
 					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
 				</li>
 			</lifeStageAges>
 		</race>
@@ -85,6 +88,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -98,6 +102,26 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -108,11 +132,6 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<LifeStageDef>
-		<defName>BMT_AaroxisDendoriaPupa</defName>
-		<label>pupa</label>
-		<reproductive>false</reproductive>
-	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaPupa</defName>
 		<label>aaroxis dendoria pupa</label>
@@ -147,7 +166,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_AaroxisDendoriaPupa</def>
+					<def>BMT_Pupa</def>
 					<minAge>0</minAge>
 				</li>
 			</lifeStageAges>
@@ -181,6 +200,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -242,10 +262,18 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
-					<soundDeath>Pawn_Megascarab_Death</soundDeath>
-					<soundCall>Pawn_Megascarab_Call</soundCall>
-					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
+					<soundWounded>Biomes_RoyalRhino_Wounded</soundWounded>
+					<soundDeath>Biomes_RoyalRhino_Death</soundDeath>
+					<soundCall>Biomes_RoyalRhino_Call</soundCall>
+					<soundAngry>Biomes_RoyalRhino_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 		</race>
@@ -294,6 +322,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -304,6 +333,26 @@
 		<ecoSystemWeight>0.70</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoria</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoria_east</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoria</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoria_east</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoria</texPath>

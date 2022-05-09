@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<LifeStageDef>
+		<defName>BMT_InsectLarvalFirst</defName>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>0.3</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>BMT_InsectLarvalSecound</defName>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>0.6</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.5</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>BMT_InsectLarvalThird</defName>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+	</LifeStageDef>
+
+
+	<LifeStageDef>
+		<defName>BMT_Pupa</defName>
+		<label>pupa</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+	</LifeStageDef>
+
+
+</Defs>

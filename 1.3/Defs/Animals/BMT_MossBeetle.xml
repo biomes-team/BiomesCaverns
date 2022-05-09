@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<LifeStageDef>
-		<defName>BMT_MossBeetleLarval1</defName>
-		<label>Grub</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>0.5</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.1</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-	<LifeStageDef>
-		<defName>BMT_MossBeetleLarval2</defName>
-		<label>Grub</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MossBeetleLarvae</defName>
 		<label>moss grub</label>
@@ -52,11 +35,15 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_MossBeetleLarval1</def>
+					<def>BMT_InsectLarvalFirst</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_MossBeetleLarval2</def>
+					<def>BMT_InsectLarvalSecound</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalThird</def>
 					<minAge>0.1</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
@@ -101,6 +88,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -112,7 +100,16 @@
 		<wildGroupSize>1~3</wildGroupSize>
 		<lifeStages>
 			<li>
-				<label>moss grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
+					<drawSize>0.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MossBeetle/Dessicated_MossGrub</texPath>
+					<drawSize>0.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
 					<drawSize>0.5</drawSize>
@@ -123,7 +120,6 @@
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
-				<label>moss grub</label>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/MossBeetle/MossGrub</texPath>
 					<drawSize>0.8</drawSize>
@@ -136,12 +132,6 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<LifeStageDef>
-		<defName>BMT_MossBeetlePupa</defName>
-		<label>pupa</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MossBeetlePupa</defName>
 		<label>moss pupa</label>
@@ -176,7 +166,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_MossBeetlePupa</def>
+					<def>BMT_Pupa</def>
 					<minAge>0</minAge>
 				</li>
 			</lifeStageAges>
@@ -210,6 +200,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -318,6 +309,7 @@
 			</li>
 		</comps>
 		<tradeTags>
+			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>

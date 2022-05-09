@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<LifeStageDef>
-		<defName>BMT_BovineBeetleLarval1</defName>
-		<label>Grub</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>0.3</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.1</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-	<LifeStageDef>
-		<defName>BMT_BovineBeetleLarval2</defName>
-		<label>Grub</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>0.6</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-	<LifeStageDef>
-		<defName>BMT_BovineBeetleLarval3</defName>
-		<label>Grub</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
 		<label>bovine grub</label>
@@ -63,15 +35,15 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BovineBeetleLarval1</def>
+					<def>BMT_InsectLarvalFirst</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_BovineBeetleLarval2</def>
+					<def>BMT_InsectLarvalSecound</def>
 					<minAge>0.05</minAge>
 				</li>
 				<li>
-					<def>BMT_BovineBeetleLarval3</def>
+					<def>BMT_InsectLarvalThird</def>
 					<minAge>0.1</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
@@ -116,6 +88,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -162,12 +135,6 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<LifeStageDef>
-		<defName>BMT_BovineBeetlePupa</defName>
-		<label>pupa</label>
-		<visible>false</visible>
-		<reproductive>false</reproductive>
-	</LifeStageDef>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetlePupa</defName>
 		<label>bovine pupa</label>
@@ -202,7 +169,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BovineBeetlePupa</def>
+					<def>BMT_Pupa</def>
 					<minAge>0</minAge>
 				</li>
 			</lifeStageAges>
@@ -236,6 +203,7 @@
 		</tools>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -354,6 +322,7 @@
 			</li>
 		</comps>
 		<tradeTags>
+			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
