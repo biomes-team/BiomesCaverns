@@ -313,7 +313,7 @@
 			<lifeExpectancy>25</lifeExpectancy>
 			<wildness>0.985</wildness>
 			<trainability>Intermediate</trainability>
-			<!--packAnimal>true</packAnimal-->
+			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BaseInsect">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Pillbug</defName>
 		<label>pillbug</label>
 		<description>This large isopod is in a way, the bottom of the cavern food chain. It feeds on virtually any filth it finds, keeping the tunnels and catacombs clean.</description>
@@ -8,10 +8,12 @@
 			<MoveSpeed>2.75</MoveSpeed>
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>
 			<FilthRate>4</FilthRate>
 			<LeatherAmount>0</LeatherAmount>
+			<ToxicSensitivity>0</ToxicSensitivity>
 		</statBases>
 		<!-- <uiIconScale>2</uiIconScale> -->
 		<tools>
@@ -43,12 +45,28 @@
 			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.45</wildness>
-			<roamMtbDays>2.5</roamMtbDays>
+			<wildness>0.30</wildness>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-			<lifeExpectancy>16</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<herdAnimal>true</herdAnimal>
+			<ageGenerationCurve>
+				<points>
+					<li>(0.0,0)</li>
+					<li>(0.1,350)</li>
+					<li>(0.9,150)</li>
+					<li>(1.5,5)</li>
+					<li>(20,4)</li>
+					<li>(65,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeExpectancy>6</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -56,7 +74,7 @@
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>0.03</minAge>
+					<minAge>0.05</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
@@ -77,7 +95,7 @@
 				<eggFertilizedDef>BMT_EggPillbugFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
+				<eggCountRange>2~4</eggCountRange>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_EatWeirdFood" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			<customThingToEat>
@@ -120,6 +138,7 @@
 			</li>
 		</comps>
 		<tradeTags>
+			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
 	</ThingDef>
@@ -128,26 +147,26 @@
 		<label>pillbug</label>
 		<race>BMT_Pillbug</race>
 		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<ecoSystemWeight>0.05</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
-					<drawSize>0.60</drawSize>
+					<drawSize>0.20</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
-					<drawSize>0.60</drawSize>
+					<drawSize>0.20</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
-					<drawSize>0.80</drawSize>
+					<drawSize>0.60</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
-					<drawSize>0.80</drawSize>
+					<drawSize>0.60</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
