@@ -14,7 +14,7 @@
 								<li>BMT_FungalForest</li>
 							</biomes>
 							<graphicPaths>
-								<li>BMT_Caverns/Things/Plant/AnimaShroom/AnimaShroom</li>
+								<li>BMT_Caverns/Things/Plant/Animushroom/Animushroom</li>
 							</graphicPaths>
 						</li>
 					</value>
@@ -44,7 +44,7 @@
 								<li>BMT_FungalForest</li>
 							</biomes>
 							<graphicPaths>
-								<li>BMT_Caverns/Things/Plant/AnimaShroom/AnimaShroomGrass</li>
+								<li>BMT_Caverns/Things/Plant/Animushroom/Animycelium</li>
 							</graphicPaths>
 						</li>
 					</value>
