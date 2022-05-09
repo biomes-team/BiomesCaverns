@@ -37,6 +37,7 @@
 				<li>
 					<def>BMT_InsectLarvalFirst</def>
 					<minAge>0</minAge>
+				</li>
 				<li>
 					<def>BMT_InsectLarvalSecound</def>
 					<minAge>0.05</minAge>
@@ -48,7 +49,6 @@
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
 					<soundCall>Pawn_Megascarab_Call</soundCall>
 					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
-				</li>
 				</li>
 			</lifeStageAges>
 		</race>
@@ -270,10 +270,6 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
-					<soundWounded>Biomes_RoyalRhino_Wounded</soundWounded>
-					<soundDeath>Biomes_RoyalRhino_Death</soundDeath>
-					<soundCall>Biomes_RoyalRhino_Call</soundCall>
-					<soundAngry>Biomes_RoyalRhino_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 		</race>
