@@ -23,7 +23,7 @@
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
@@ -273,6 +273,7 @@
 			<baseBodySize>2.45</baseBodySize>
 			<baseHungerRate>0.50</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.05</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
