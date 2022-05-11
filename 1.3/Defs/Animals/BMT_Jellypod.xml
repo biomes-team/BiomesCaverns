@@ -78,6 +78,9 @@
 		<tradeTags>
 			<li>AnimalInsect</li>
 		</tradeTags>
+		<butcherProducts>
+			<VFEI_Chitin MayRequire="oskarpotocki.vfe.insectoid">15</VFEI_Chitin>
+		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_Jellypod</defName>
@@ -128,5 +131,8 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<defaultFactionType MayRequire="oskarpotocki.vfe.insectoid">VFEI_Insect</defaultFactionType>
+		<aiAvoidCover MayRequire="oskarpotocki.vfe.insectoid">false</aiAvoidCover>
+		<defendPointRadius MayRequire="oskarpotocki.vfe.insectoid">0</defendPointRadius>
 	</PawnKindDef>
 </Defs>

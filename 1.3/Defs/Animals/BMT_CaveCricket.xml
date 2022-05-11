@@ -11,7 +11,6 @@
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
-			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -65,8 +64,10 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_GrayChitin</leatherDef>
 			<wildness>0.95</wildness>
 			<trainability>Intermediate</trainability>
+			<herdAnimal>true</herdAnimal>
 			<petness>0.5</petness>
 			<lifeExpectancy>6</lifeExpectancy>
 			<lifeStageAges>

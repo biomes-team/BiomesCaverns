@@ -48,7 +48,7 @@
 			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
 			<!-- <meatLabel>snail meat</meatLabel> -->
 			<!-- <meatColor>(62,133,215)</meatColor> -->
-			<leatherDef>BMT_Snailshell</leatherDef>
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -71,6 +71,9 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+		<butcherProducts>
+			<BMT_Snailshell>30</BMT_Snailshell>
+		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_GlowSnail</defName>

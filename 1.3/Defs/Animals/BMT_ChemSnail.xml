@@ -57,7 +57,7 @@
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<!-- <meatLabel>snail meat</meatLabel> -->
 			<!-- <meatColor>(62,133,215)</meatColor> -->
-			<leatherDef>BMT_Snailshell</leatherDef>
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -83,6 +83,9 @@
 				<BMT_FungalForest>0.25</BMT_FungalForest>
 			</wildBiomes>
 		</race>
+		<butcherProducts>
+			<BMT_Snailshell>20</BMT_Snailshell>
+		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_ChemSnail</defName>

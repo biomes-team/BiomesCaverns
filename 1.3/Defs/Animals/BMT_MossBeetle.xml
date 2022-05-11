@@ -236,7 +236,6 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<FilthRate>4</FilthRate>
-			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -272,6 +271,7 @@
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_GrayChitin</leatherDef>
 			<wildness>0.45</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>

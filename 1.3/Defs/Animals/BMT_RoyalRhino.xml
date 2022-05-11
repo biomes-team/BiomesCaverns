@@ -384,6 +384,10 @@
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HornAttackTool</bodyPartGroup>
+					<thing>BMT_RoyalRhinoHorn</thing>
+				</butcherBodyPart>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -398,6 +402,10 @@
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HornAttackTool</bodyPartGroup>
+					<thing>BMT_RoyalRhinoHorn</thing>
+				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

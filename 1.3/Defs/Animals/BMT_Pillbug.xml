@@ -12,7 +12,6 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>
 			<FilthRate>4</FilthRate>
-			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
 		</statBases>
 		<!-- <uiIconScale>2</uiIconScale> -->
@@ -50,6 +49,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_GrayChitin</leatherDef>
 			<wildness>0.30</wildness>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
@@ -66,7 +66,6 @@
 			</ageGenerationCurve>
 			<lifeExpectancy>6</lifeExpectancy>
 			<trainability>Intermediate</trainability>
-			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -98,43 +97,43 @@
 				<eggCountRange>2~4</eggCountRange>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_EatWeirdFood" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<customThingToEat>
-			<li>Filth_Blood</li>
-			<li>ForsakenBlood</li>
-			<li>Filth_Blood_Gerzee</li>
-			<li>AvaliBlood</li>
-			<li>OG_FilthBlood_Eldar</li>
-			<li>OG_FilthBlood_Orkoid</li>
-			<li>OG_FilthBlood_Tau</li>
-			<li>OG_FilthBlood_Kroot</li>
-			<li>OG_FilthBlood_Ambull</li>
-			<li>OG_FilthBlood_ClawedFiend</li>
-			<li>OG_FilthBlood_ChaosDeamon</li>
-			<li>BloodSlimePerson</li>
-			<li>RE_FilthDrellBlood</li>
-			<li>Filth_BloodNaga</li>
-			<li>OG_FilthBlood_Tyranid</li>
-			<li>Filth_BloodInsect</li>
-			<li>AA_Filth_BlueBlood</li>
-			<li>FilthCum</li>
-			<li>FilthGirlCum</li>
-			<li>FilthMixture</li>
-			<li>Filth_Vomit</li>
-			<li>Filth_CorpseBile</li>
-			<li>Filth_AnimalFilth</li>
-			<li>RG_Filth_LeavesTreeOak</li>
-			<li>RG_Filth_LeavesTreePopolar</li>
-			<li>RG_Filth_LeavesTreeBirch</li>
-			<li>PM_Filth_Slurry</li>
-			<li>Filth_Ash</li>
-			<li>Filth_AmnioticFluid</li>
-			<li>Filth_Slime</li>
-			<li>Filth_Hair</li>
-			</customThingToEat>
-			<nutrition>1</nutrition>
-			<digThingIfMapEmpty>true</digThingIfMapEmpty>
-			<fullyDestroyThing>true</fullyDestroyThing>
-			<needsWater>true</needsWater>
+				<customThingToEat>
+					<li>Filth_Blood</li>
+					<li>ForsakenBlood</li>
+					<li>Filth_Blood_Gerzee</li>
+					<li>AvaliBlood</li>
+					<li>OG_FilthBlood_Eldar</li>
+					<li>OG_FilthBlood_Orkoid</li>
+					<li>OG_FilthBlood_Tau</li>
+					<li>OG_FilthBlood_Kroot</li>
+					<li>OG_FilthBlood_Ambull</li>
+					<li>OG_FilthBlood_ClawedFiend</li>
+					<li>OG_FilthBlood_ChaosDeamon</li>
+					<li>BloodSlimePerson</li>
+					<li>RE_FilthDrellBlood</li>
+					<li>Filth_BloodNaga</li>
+					<li>OG_FilthBlood_Tyranid</li>
+					<li>Filth_BloodInsect</li>
+					<li>AA_Filth_BlueBlood</li>
+					<li>FilthCum</li>
+					<li>FilthGirlCum</li>
+					<li>FilthMixture</li>
+					<li>Filth_Vomit</li>
+					<li>Filth_CorpseBile</li>
+					<li>Filth_AnimalFilth</li>
+					<li>RG_Filth_LeavesTreeOak</li>
+					<li>RG_Filth_LeavesTreePopolar</li>
+					<li>RG_Filth_LeavesTreeBirch</li>
+					<li>PM_Filth_Slurry</li>
+					<li>Filth_Ash</li>
+					<li>Filth_AmnioticFluid</li>
+					<li>Filth_Slime</li>
+					<li>Filth_Hair</li>
+				</customThingToEat>
+				<nutrition>1</nutrition>
+				<digThingIfMapEmpty>true</digThingIfMapEmpty>
+				<fullyDestroyThing>true</fullyDestroyThing>
+				<needsWater>true</needsWater>
 			</li>
 		</comps>
 		<tradeTags>
