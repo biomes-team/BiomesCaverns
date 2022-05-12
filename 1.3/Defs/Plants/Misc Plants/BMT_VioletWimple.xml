@@ -23,13 +23,19 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<!-- <maxMeshCount>4</maxMeshCount> -->
+			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_MixedFeedingMushrooms</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
 		</plant>
 	</ThingDef>
 </Defs>

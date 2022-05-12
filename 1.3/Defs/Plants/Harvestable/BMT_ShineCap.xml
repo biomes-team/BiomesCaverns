@@ -34,7 +34,7 @@
 			</sowTags>
 			<harvestWork>800</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestAfterGrowth>0.8</harvestAfterGrowth>
+			<harvestAfterGrowth>0.7</harvestAfterGrowth>
 			<harvestFailable>true</harvestFailable>
 			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
 			<visualSizeRange>1.5~2.5</visualSizeRange>

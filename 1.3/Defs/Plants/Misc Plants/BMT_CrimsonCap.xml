@@ -23,13 +23,47 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<!-- <maxMeshCount>4</maxMeshCount> -->
+			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.6~0.7</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_MixedFeedingMushrooms</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
 		</plant>
 	</ThingDef>
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>BMT_MixedFeedingMushrooms</defName>
+    <label>mixed feeding mushrooms</label>
+    <description>Nutrient-rich Mushrooms, harvested from different fungi. good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Item/Crops/Mushroomcrop</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <allowedArchonexusCount>400</allowedArchonexusCount>
+  </ThingDef>
 </Defs>

@@ -21,6 +21,7 @@
 		<plant>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
+            <dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
@@ -34,6 +35,7 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<cavePlant>true</cavePlant>
 			<interferesWithRoof>false</interferesWithRoof>
+            <neverBlightable>true</neverBlightable>
 			<harvestTag Inherit="False" />
 			<harvestedThingDef Inherit="False" />
 			<harvestYield Inherit="False" />
@@ -60,12 +62,5 @@
 				<radius>3</radius>
 			</li>
 		</comps>
-    <!--tradeability>Buyable</tradeability-->
-    <!--thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags-->
-    <!--tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags-->
 	</ThingDef>
 </Defs>

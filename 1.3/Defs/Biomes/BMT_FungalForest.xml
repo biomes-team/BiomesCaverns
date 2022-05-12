@@ -15,13 +15,13 @@
 		</li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
-    <plantDensity>0.55</plantDensity>
+    <plantDensity>3.55</plantDensity>
     <settlementSelectionWeight>0.2</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
     <foragedFood>BMT_RawDulcis</foragedFood>
-    <wildPlantRegrowDays>20</wildPlantRegrowDays>
+    <wildPlantRegrowDays>10</wildPlantRegrowDays>
     <soundsAmbient>
       <li>BMT_Ambient_FungalForest</li>
     </soundsAmbient>

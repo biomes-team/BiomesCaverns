@@ -110,6 +110,21 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+				<customThingToDig>
+					<li>RawFungus</li>
+				</customThingToDig>
+				<customAmountToDig>
+					<li>20</li>
+				</customAmountToDig>
+				<ticksToDig>60000</ticksToDig>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+				<customThingToDig>RawFungus</customThingToDig>
+				<customAmountToDig>10</customAmountToDig>
+			</li>
+		</comps>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
