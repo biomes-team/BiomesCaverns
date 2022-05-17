@@ -20,7 +20,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<baseBodySize>1.5</baseBodySize>
+			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
@@ -151,7 +151,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<baseBodySize>3</baseBodySize>
+			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.001</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>

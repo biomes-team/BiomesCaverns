@@ -15,13 +15,13 @@
 		</li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
-    <plantDensity>3.55</plantDensity>
-    <settlementSelectionWeight>0.2</settlementSelectionWeight>
-    <movementDifficulty>0.5</movementDifficulty>
+    <plantDensity>0.90</plantDensity>
+    <settlementSelectionWeight>0.7</settlementSelectionWeight>
+    <movementDifficulty>0.2</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/FungalForest</texture>
     <forageability>1</forageability>
     <foragedFood>BMT_RawDulcis</foragedFood>
-    <wildPlantRegrowDays>10</wildPlantRegrowDays>
+    <wildPlantRegrowDays>5</wildPlantRegrowDays>
     <soundsAmbient>
       <li>BMT_Ambient_FungalForest</li>
     </soundsAmbient>
@@ -188,6 +188,8 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
 	  <li>BMT_GiantSnail</li>
+	  <li>BMT_BovineBeetle</li>
+	  <li>BMT_RoyalRhino</li>
     </allowedPackAnimals>
   </BiomeDef>
 

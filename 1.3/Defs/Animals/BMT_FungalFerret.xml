@@ -70,7 +70,7 @@
 		</tools>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<maxPreyBodySize>0.90</maxPreyBodySize>
+			<maxPreyBodySize>0.70</maxPreyBodySize>
 			<baseBodySize>0.5</baseBodySize>
 			<baseHealthScale>0.7</baseHealthScale>
 			<baseHungerRate>0.15</baseHungerRate>

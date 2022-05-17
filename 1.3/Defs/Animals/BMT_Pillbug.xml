@@ -11,7 +11,7 @@
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>
-			<FilthRate>4</FilthRate>
+			<FilthRate>0</FilthRate>
 			<ToxicSensitivity>0</ToxicSensitivity>
 		</statBases>
 		<!-- <uiIconScale>2</uiIconScale> -->
@@ -40,8 +40,8 @@
 		<race>
 			<thinkTreeMain MayRequire="oskarpotocki.vanillafactionsexpanded.core">VEF_AnimalWeirdEater</thinkTreeMain>
 			<body>BeetleLike</body>
-			<baseBodySize>0.60</baseBodySize>
-			<baseHungerRate>2</baseHungerRate>
+			<baseBodySize>0.40</baseBodySize>
+			<baseHungerRate>1</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>
@@ -131,10 +131,11 @@
 					<li>Filth_Hair</li>
 				</customThingToEat>
 				<nutrition>1</nutrition>
-				<digThingIfMapEmpty>true</digThingIfMapEmpty>
+				<digThingIfMapEmpty>false</digThingIfMapEmpty>
 				<fullyDestroyThing>true</fullyDestroyThing>
 				<needsWater>true</needsWater>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_NoFilth" MayRequire="oskarpotocki.vanillafactionsexpanded.core" />
 		</comps>
 		<tradeTags>
 			<li>AnimalUncommon</li>
@@ -151,21 +152,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
-					<drawSize>0.20</drawSize>
+					<drawSize>0.60</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
-					<drawSize>0.20</drawSize>
+					<drawSize>0.60</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
-					<drawSize>0.60</drawSize>
+					<drawSize>0.80</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
-					<drawSize>0.60</drawSize>
+					<drawSize>0.80</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>

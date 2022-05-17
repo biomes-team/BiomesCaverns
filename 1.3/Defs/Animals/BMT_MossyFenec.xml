@@ -71,7 +71,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<maxPreyBodySize>0.90</maxPreyBodySize>
-			<baseBodySize>0.55</baseBodySize>
+			<baseBodySize>0.6</baseBodySize>
 			<baseHealthScale>0.7</baseHealthScale>
 			<baseHungerRate>0.12</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
