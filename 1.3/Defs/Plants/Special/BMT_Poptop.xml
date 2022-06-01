@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="TreeBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Poptop</defName>
 		<label>poptop</label>
 		<description>A spongy mushroom overreacting to fire.</description>
@@ -11,6 +11,7 @@
 		<statBases>
 			<Nutrition>1</Nutrition>
 			<Mass>50</Mass>
+			<Flammability>0.1</Flammability>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -31,10 +32,6 @@
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
-			<interferesWithRoof>false</interferesWithRoof>
             <neverBlightable>true</neverBlightable>
 			<harvestTag Inherit="False" />
 			<harvestedThingDef Inherit="False" />

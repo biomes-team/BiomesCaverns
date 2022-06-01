@@ -156,6 +156,15 @@
 
 	<!-- special -->
 		<BMT_Poptop>0.03</BMT_Poptop>		<!-- firepooper -->
+		<BMT_Skulltop>0.005</BMT_Skulltop>		<!-- toxic -->
+
+		<Plant_TreeAnima>0.00001</Plant_TreeAnima>
+		<Plant_GrassAnima>0.00001</Plant_GrassAnima>
+
+		<Plant_Nutrifungus>0.00001</Plant_Nutrifungus>
+		<Plant_TreeGauranlen>0.00001</Plant_TreeGauranlen>
+		<Plant_MossGauranlen>0.00001</Plant_MossGauranlen>
+		<GauranlenSeed>0.00001</GauranlenSeed>
 
     </wildPlants>
 

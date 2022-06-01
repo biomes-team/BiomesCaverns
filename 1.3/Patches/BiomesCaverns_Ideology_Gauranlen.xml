@@ -14,7 +14,7 @@
 								<li>BMT_FungalForest</li>
 							</biomes>
 							<graphicPaths>
-								<li>BMT_Caverns/Things/Plant/GauranlenMushroom/GauranlenMushroomTree</li>
+								<li>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomTree</li>
 							</graphicPaths>
 						</li>
 					</value>
@@ -43,7 +43,7 @@
 								<li>BMT_FungalForest</li>
 							</biomes>
 							<graphicPaths>
-								<li>BMT_Caverns/Things/Plant/GauranlenMushroom/GauranlenMushroomCluster</li>
+								<li>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomCluster</li>
 							</graphicPaths>
 						</li>
 					</value>
@@ -73,7 +73,7 @@
 								<li>BMT_FungalForest</li>
 							</biomes>
 							<graphicPaths>
-								<li>BMT_Caverns/Things/Plant/GauranlenMushroom/GauranlenMushroomPod</li>
+								<li>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomPod</li>
 							</graphicPaths>
 						</li>
 					</value>

@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_RoyalChitin</defName>
-		<label>royal chilin</label>
+		<label>royal chitin</label>
 		<description>A legendary, royal, chitinous shell.</description>
 		<graphicData>
 			<color>(81,48,100)</color>
