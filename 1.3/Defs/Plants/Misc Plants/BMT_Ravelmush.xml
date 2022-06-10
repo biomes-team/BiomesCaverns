@@ -18,7 +18,14 @@
 				<growingHours>0.5~0.99</growingHours>
 			</li>
 		</modExtensions>
-		<ingestible/>
+		<specialDisplayRadius MayRequire="vanillaexpanded.vfecore">6</specialDisplayRadius>
+		<comps>
+			<li Class="AOMoreFurniture.CompProperties_BinClean" MayRequire="vanillaexpanded.vfecore">
+				<TimerInTicks>500</TimerInTicks>
+				<Radius>6</Radius>
+			</li>
+		</comps>
+		<!--ingestible/-->
 		<plant>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
@@ -28,13 +35,15 @@
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>3</wildOrder>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<harvestTag>Standard</harvestTag>
+			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
+			<!--harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MixedFeedingMushrooms</harvestedThingDef>
-			<harvestYield>18</harvestYield>
+			<harvestYield>18</harvestYield-->
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 		</plant>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
 	</ThingDef>
 </Defs>
