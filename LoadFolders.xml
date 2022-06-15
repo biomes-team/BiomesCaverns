@@ -4,11 +4,11 @@
 	<default>
 		<li>\</li>
 	</default>
-   <v1.3.3311>
+   <v1.3.3387>
 		<li>1.3</li>
 		<li>\</li>
         <li IfModActive="BiomesTeam.BiomesIslands">1.3FlyingAndAquaticAnimals</li>
-   </v1.3.3311>
+   </v1.3.3387>
 	<v1.3>
 		<li>1.3</li>
 		<li>\</li>

@@ -197,8 +197,6 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
 	  <li>BMT_GiantSnail</li>
-	  <li>BMT_BovineBeetle</li>
-	  <li>BMT_RoyalRhino</li>
     </allowedPackAnimals>
   </BiomeDef>
 

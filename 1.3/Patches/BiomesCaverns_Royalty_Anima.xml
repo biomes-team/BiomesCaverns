@@ -17,14 +17,10 @@
 								<li>BMT_Caverns/Things/Plant/Animu/Animushroom</li>
 							</graphicPaths>
 						</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
-					<value>
 						<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 							<allowInCave>true</allowInCave>
 							<allowInBuilding>true</allowInBuilding>
+							<allowUnroofed>true</allowUnroofed>
 						</li>
 					</value>
 				</li>
@@ -32,7 +28,6 @@
 					<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]/plant</xpath>
 					<value>
 						<interferesWithRoof>false</interferesWithRoof>
-						<cavePlant>true</cavePlant>
 						<growMinGlow>0</growMinGlow>
 					</value>
 				</li>
@@ -47,14 +42,10 @@
 								<li>BMT_Caverns/Things/Plant/Animu/Animycelium</li>
 							</graphicPaths>
 						</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
-					<value>
 						<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 							<allowInCave>true</allowInCave>
 							<allowInBuilding>true</allowInBuilding>
+							<allowUnroofed>true</allowUnroofed>
 						</li>
 					</value>
 				</li>
@@ -62,7 +53,6 @@
 					<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]/plant</xpath>
 					<value>
 						<interferesWithRoof>false</interferesWithRoof>
-						<cavePlant>true</cavePlant>
 						<growMinGlow>0</growMinGlow>
 					</value>
 				</li>
