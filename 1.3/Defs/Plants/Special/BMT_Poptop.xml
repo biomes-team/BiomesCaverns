@@ -19,6 +19,9 @@
 				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
+		<passability Inherit="False"/>
+		<pathCost>30</pathCost>
+		<blockWind>false</blockWind>
 		<plant>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
@@ -38,6 +41,7 @@
 			<harvestYield Inherit="False" />
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowResearchPrerequisites Inherit="False" />
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
@@ -53,6 +57,11 @@
 				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 				<explosionEffect>ExtinguisherExplosion</explosionEffect>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
 			</li>
 			<li Class="CompProperties_ProximityFuse">
 				<target>Fire</target>
