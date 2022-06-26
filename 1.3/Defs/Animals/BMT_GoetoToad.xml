@@ -6,7 +6,7 @@
 		<description>A large batrachian the size of a chicken, considered as pest. \n\nThe Goeto Toad is another attempt at creating a meat source for mining exportation centers and underground colonies. The project rapidly got out of hand and the specimens quickly adapted to the caves, becoming its new 'natural' habitat.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
-			<SwimSpeed MayRequire="biomesteam.biomesislands">3.6</SwimSpeed>
+			<SwimSpeed MayRequire="biomesteam.biomesislands">13.6</SwimSpeed>
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
