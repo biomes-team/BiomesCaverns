@@ -90,7 +90,7 @@
 			</wildBiomes>
 		</race>
 		<butcherProducts>
-			<BMT_Snailshell>20</BMT_Snailshell>
+			<BMT_Molluscashell>20</BMT_Molluscashell>
 		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
