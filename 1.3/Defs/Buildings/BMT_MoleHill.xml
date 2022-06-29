@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>BMT_MoleHill_Soil</defName>
+		<label>mole hill</label>
+		<description>Mole hill.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Animal/Digging/Building_BuriedThing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9,0.9)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>false</rotatable>
+		<costList>
+			<WoodLog>1</WoodLog>
+			<PileofDirt MayRequire="jamaicancastle.rf.fertilefields">1</PileofDirt>
+		</costList>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<MarketValue>50</MarketValue>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(1,1)</size>
+		<blockPlants>true</blockPlants>
+	</ThingDef>
+</Defs>

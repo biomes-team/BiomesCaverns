@@ -5,7 +5,7 @@
     <defName>BMT_FungalForest</defName>
     <label>fungal forest</label>
     <description>A damp cave system full of fungi</description>
-    <workerClass>BiomesCaverns.BiomeWorker_Test</workerClass>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isCavern>true</isCavern>
@@ -13,6 +13,20 @@
 				<li>SmallChambers</li>
 			</cavernShapes>
 		</li>
+    <li Class="BiomesKit.BiomesKitControls">
+     <spawnOnBiomes>
+      <li>TropicalRainforest</li>
+      <li>TropicalSwamp</li>
+    </spawnOnBiomes>
+    <randomizeHilliness>True</randomizeHilliness>
+    <minimumLandNeighbors>4</minimumLandNeighbors>
+    <allowOnLand>true</allowOnLand>
+    <frequency>100</frequency>
+    <minTemperature>10.5</minTemperature>
+    <maxTemperature>29.5</maxTemperature>
+    <usePerlin>true</usePerlin>
+    <perlinCulling>1.0</perlinCulling>
+  </li>
 	</modExtensions>
     <animalDensity>3.7</animalDensity>
     <plantDensity>0.90</plantDensity>
@@ -117,86 +131,89 @@
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- ground cover -->
-		<BMT_FloorMold>5.0</BMT_FloorMold>
-		<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
-		<BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-		<BMT_Sagecrust>1.0</BMT_Sagecrust>
-		<BMT_RustPuff>0.2</BMT_RustPuff>
-		<BMT_Pusmelon>0.1</BMT_Pusmelon>
+    <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
+    <BMT_FloorMold>5.0</BMT_FloorMold>
+    <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+    <BMT_Pusmelon>0.1</BMT_Pusmelon>
+    <BMT_RustPuff>0.2</BMT_RustPuff>
+    <BMT_Sagecrust>1.0</BMT_Sagecrust>
 		
 	<!-- mid sized -->
-		<BMT_BleedingTooth>0.2</BMT_BleedingTooth>
-		<BMT_BalefulBolete>0.02</BMT_BalefulBolete>
-		<BMT_VioletWimple>0.02</BMT_VioletWimple>
-		<BMT_CrimsonCap>0.02</BMT_CrimsonCap>
-		<BMT_Ravelmush>0.02</BMT_Ravelmush>
+    <BMT_BalefulBolete>0.02</BMT_BalefulBolete>
+    <BMT_BleedingTooth>0.2</BMT_BleedingTooth>
+    <BMT_CrimsonCap>0.02</BMT_CrimsonCap>
+    <BMT_Ravelmush>0.02</BMT_Ravelmush>
+    <BMT_VioletWimple>0.02</BMT_VioletWimple>
 		
 	<!-- trees -->
-		<BMT_GleamPlum>0.2</BMT_GleamPlum>
-		<BMT_Jellycap>0.2</BMT_Jellycap>
-		<BMT_Embrun>0.1</BMT_Embrun>
-		<BMT_Viritoll>0.1</BMT_Viritoll>
-		<BMT_Nogtyl>0.05</BMT_Nogtyl>		<!-- wood -->
+    <BMT_Embrun>0.1</BMT_Embrun>
+    <BMT_GleamPlum>0.2</BMT_GleamPlum>
+    <BMT_Jellycap>0.2</BMT_Jellycap>
+    <BMT_Nogtyl>0.05</BMT_Nogtyl>   <!-- wood -->
+    <BMT_Viritoll>0.1</BMT_Viritoll>
 		
 	<!-- other harvestable -->
-		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>		<!-- food -->
-		<BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>		<!-- food -->
-		<BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>		<!-- food -->
-		<BMT_KessingerPlant>0.001</BMT_KessingerPlant>		<!-- food -->
-		<BMT_Stimquill>0.005</BMT_Stimquill>		<!-- stimulant drug -->
-		<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>		<!-- medicine -->
-		<BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>		<!-- textiles -->
-		<BMT_Shinecap>0.003</BMT_Shinecap>		<!-- fruit tree -->
+    <BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>    <!-- food -->
+    <BMT_DulcisPlant>0.02</BMT_DulcisPlant>   <!-- food -->
+    <BMT_KessingerPlant>0.001</BMT_KessingerPlant>    <!-- food -->
+    <BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>    <!-- textiles -->
+    <BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>    <!-- medicine -->
+    <BMT_Shinecap>0.003</BMT_Shinecap>    <!-- fruit tree -->
+    <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>    <!-- food -->
+    <BMT_Stimquill>0.005</BMT_Stimquill>    <!-- stimulant drug -->
     
 	<!-- hydrophytes -->
-		<BMT_Arpeau>0.3</BMT_Arpeau>
-		<BMT_Wrinklecap>0.4</BMT_Wrinklecap>
-		<BMT_Nuitae>0.4</BMT_Nuitae>
-		<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
+    <BMT_Arpeau>0.3</BMT_Arpeau>
+    <BMT_LuminousSpout>0.2</BMT_LuminousSpout>
+    <BMT_Nuitae>0.4</BMT_Nuitae>
+    <BMT_Wrinklecap>0.4</BMT_Wrinklecap>
 
 	<!-- special -->
-		<BMT_Poptop>0.03</BMT_Poptop>		<!-- firepooper -->
-		<BMT_Skulltop>0.003</BMT_Skulltop>		<!-- toxic -->
+    <BMT_Poptop>0.03</BMT_Poptop>   <!-- firepooper -->
+    <BMT_Skulltop>0.003</BMT_Skulltop>    <!-- toxic -->
+    <Plant_Nutrifungus>0.00001</Plant_Nutrifungus>
 
-		<Plant_TreeAnima>0.00001</Plant_TreeAnima>
-		<Plant_GrassAnima>0.00001</Plant_GrassAnima>
+    <Plant_GrassAnima>0.00001</Plant_GrassAnima>
+    <Plant_TreeAnima>0.00001</Plant_TreeAnima>
 
-		<Plant_Nutrifungus>0.00001</Plant_Nutrifungus>
-		<Plant_TreeGauranlen>0.00001</Plant_TreeGauranlen>
-		<Plant_MossGauranlen>0.00001</Plant_MossGauranlen>
-		<GauranlenSeed>0.00001</GauranlenSeed>
+    <GauranlenSeed>0.00001</GauranlenSeed>
+    <Plant_MossGauranlen>0.00001</Plant_MossGauranlen>
+    <Plant_TreeGauranlen>0.00001</Plant_TreeGauranlen>
 
     </wildPlants>
 
     <wildAnimals>
 	<!-- herbivores -->
-		<BMT_GiantSnail>0.2</BMT_GiantSnail>
-		<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
-		<BMT_GlowSnail>0.05</BMT_GlowSnail>
-		<BMT_GlowSlug>0.1</BMT_GlowSlug>
-		<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
-		<BMT_MossBeetle>0.075</BMT_MossBeetle>
-		<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
-		<BMT_BovineBeetle>0.05</BMT_BovineBeetle>
-		<BMT_Xyrion>0.1</BMT_Xyrion>
-		<BMT_Yooka>0.2</BMT_Yooka>
-		<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
-		<BMT_GiantSlug>0.3</BMT_GiantSlug>
-		<BMT_CaveCricket>0.25</BMT_CaveCricket>
-		<BMT_TruffleMole>0.1</BMT_TruffleMole>
-		<BMT_Goeto>0.3</BMT_Goeto>
-		<BMT_Maxolotl>0.05</BMT_Maxolotl>
-		<BMT_Pillbug>0.2</BMT_Pillbug>
-		<BMT_AaroxisDendoriaLarvae>0.02</BMT_AaroxisDendoriaLarvae>
-		<BMT_AaroxisDendoria>0.01</BMT_AaroxisDendoria>
+    <BMT_AaroxisDendoria>0.01</BMT_AaroxisDendoria>
+    <BMT_AaroxisDendoriaLarvae>0.02</BMT_AaroxisDendoriaLarvae>
+    <BMT_BovineBeetle>0.05</BMT_BovineBeetle>
+    <BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
+    <BMT_CaveCricket>0.25</BMT_CaveCricket>
+    <BMT_GiantSlug>0.3</BMT_GiantSlug>
+    <BMT_GiantSnail>0.2</BMT_GiantSnail>
+    <BMT_GlowSlug>0.1</BMT_GlowSlug>
+    <BMT_GlowSnail>0.05</BMT_GlowSnail>
+    <BMT_Goeto>0.3</BMT_Goeto>
+    <BMT_Maxolotl>0.05</BMT_Maxolotl>
+    <BMT_MossBeetle>0.075</BMT_MossBeetle>
+    <BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+    <BMT_Pillbug>0.2</BMT_Pillbug>
+    <BMT_RoyalRhino>0.01</BMT_RoyalRhino>
+    <BMT_SonarRabbit>0.5</BMT_SonarRabbit>
+    <BMT_TruffleMole>0.1</BMT_TruffleMole>
+    <BMT_Xyrion>0.1</BMT_Xyrion>
+    <BMT_Yooka>0.2</BMT_Yooka>
+    <BMT_Mole>0.05</BMT_Mole>
+
 	<!-- predators -->
-		<BMT_MossyFennec>0.1</BMT_MossyFennec>
-		<BMT_FungalFerret>0.1</BMT_FungalFerret>
+    <BMT_FungalFerret>0.1</BMT_FungalFerret>
+    <BMT_MossyFennec>0.1</BMT_MossyFennec>
+
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Alpaca</li>
-	  <li>BMT_GiantSnail</li>
+	    <li>BMT_GiantSnail</li>
     </allowedPackAnimals>
   </BiomeDef>
 

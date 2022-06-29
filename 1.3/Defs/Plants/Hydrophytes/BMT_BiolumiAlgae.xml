@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BiolumiAlgaeCarnelian</defName>
+		<label>bioluminescence algae</label>
+		<description>A bioluminescence algae that grows in underground water.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/BioluminescenceAlgae/Carnelian</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(179, 27, 27, 0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.15</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.65</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>350</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BiolumiAlgaeTanzanite</defName>
+		<label>bioluminescence algae</label>
+		<description>A bioluminescence algae that grows in underground water.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/BioluminescenceAlgae/Tanzanite</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(59, 75, 127, 0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.15</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.65</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>350</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BiolumiAlgaeKunzite</defName>
+		<label>bioluminescence algae</label>
+		<description>A bioluminescence algae that grows in underground water.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/BioluminescenceAlgae/Kunzite</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(242, 175, 226, 0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.15</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.65</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>350</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BiolumiAlgaeTurquoise</defName>
+		<label>bioluminescence algae</label>
+		<description>A bioluminescence algae that grows in underground water.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(64, 224, 208, 0)</glowColor>
+			</li>
+		</comps>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/BioluminescenceAlgae/Turquoise</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.15</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.65</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>350</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BiolumiAlgaeChrysoberyl</defName>
+		<label>bioluminescence algae</label>
+		<description>A bioluminescence algae that grows in underground water.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/BioluminescenceAlgae/Chrysoberyl</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(187, 204, 153, 0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.15</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.65</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>350</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BiolumiAlgaeCitrine</defName>
+		<label>bioluminescence algae</label>
+		<description>A bioluminescence algae that grows in underground water.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/BioluminescenceAlgae/Citrine</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.9</glowRadius>
+				<glowColor>(228, 208, 10, 0)</glowColor>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+				</terrainTags>
+				<allowInCave>true</allowInCave>
+				<allowInBuilding>true</allowInBuilding>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.15</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>3.5</growDays>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.65</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>350</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>

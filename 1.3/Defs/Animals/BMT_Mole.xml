@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_TruffleMole</defName>
-		<label>truffle mole</label>
-		<description>The truffle mole has specialized smell organs to easily find fungus.\n\nThought to be related in some strange way to the truffle pigs of Earth, this mole has a specialized sense of smell, enabling it to find rare fungi.</description>
+		<defName>BMT_Mole</defName>
+		<label>mole</label>
+		<description>The mole is often found underground. It mostly diggs way faster thru soil than it runs overground</description>
 		<statBases>
-			<MoveSpeed>3.8</MoveSpeed>
-			<DiggingSpeed MayRequire="biomesteam.biomesislands">16</DiggingSpeed>
-			<!--SandDrillingSpeed MayRequire="biomesteam.biomesislands">8</SandDrillingSpeed-->
-			<MarketValue>100</MarketValue>
+			<MoveSpeed>2.2</MoveSpeed>
+			<DiggingSpeed MayRequire="biomesteam.biomesislands">9</DiggingSpeed>
+			<!--SandDrillingSpeed MayRequire="biomesteam.biomesislands">4.5</SandDrillingSpeed-->
+			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 		</statBases>
@@ -18,14 +18,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>4</power>
+				<power>1</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>5</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -35,14 +35,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>4</power>
+				<power>1</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>5</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -51,7 +51,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>6</power>
+				<power>3</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -61,7 +61,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>2</power>
+				<power>1</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -71,15 +71,15 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>0.9</baseBodySize>
-			<baseHealthScale>0.6</baseHealthScale>
+			<baseBodySize>0.4</baseBodySize>
+			<baseHealthScale>0.3</baseHealthScale>
 			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.60</wildness>
+			<wildness>0.20</wildness>
 			<trainability>None</trainability>
-			<petness>0.20</petness>
-			<roamMtbDays>4</roamMtbDays>
+			<petness>0.2</petness>
+			<roamMtbDays>2</roamMtbDays>
 			<lifeExpectancy>6</lifeExpectancy>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<litterSizeCurve>
@@ -113,18 +113,17 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
-				<customThingToDig>
-					<li>RawFungus</li>
-				</customThingToDig>
-				<customAmountToDig>
-					<li>20</li>
-				</customAmountToDig>
-				<ticksToDig>60000</ticksToDig>
-			</li>
-			<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>RawFungus</customThingToDig>
-				<customAmountToDig>10</customAmountToDig>
+			<li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+				<defOfBuilding>BMT_MoleHill_Soil</defOfBuilding>
+				<ticksToBuild>1000</ticksToBuild>
+				<maxBuildingsPerMap>20</maxBuildingsPerMap>
+				<acceptedTerrains>
+					<li>SoilRich</li>
+					<li>Soil</li>
+					<li>MossyTerrain</li>
+					<li>MarshyTerrain</li>
+					<li>Gravel</li>
+				</acceptedTerrains>
 			</li>
 		</comps>
 		<modExtensions>
@@ -133,51 +132,51 @@
 			</li>
 		</modExtensions>
 		<tradeTags>
-			<li>AnimalUncommon</li>
+			<li>AnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_TruffleMole</defName>
-		<label>truffle mole</label>
-		<race>BMT_TruffleMole</race>
-		<combatPower>35</combatPower>
-		<ecoSystemWeight>0.5</ecoSystemWeight>
-		<wildGroupSize>1~1</wildGroupSize>
+		<defName>BMT_Mole</defName>
+		<label>mole</label>
+		<race>BMT_Mole</race>
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>
 			<li>
-				<label>Truffle mole pup</label>
-				<labelPlural>Truffle mole pups</labelPlural>
+				<label>Mole pup</label>
+				<labelPlural>Mole pups</labelPlural>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Mole/Mole</texPath>
+					<drawSize>0.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Mole/Dessicated_Mole_east</texPath>
+					<drawSize>0.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Mole/Mole</texPath>
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Mole/Dessicated_Mole_east</texPath>
 					<drawSize>0.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
-					<drawSize>1.15</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-					<drawSize>1.15</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/TruffleMole/TruffleMole</texPath>
-					<drawSize>1.6</drawSize>
+					<texPath>BMT_Caverns/Things/Animal/Mole/Mole</texPath>
+					<drawSize>0.8</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,0)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-					<drawSize>1.6</drawSize>
+					<texPath>BMT_Caverns/Things/Animal/Mole/Dessicated_Mole_east</texPath>
+					<drawSize>0.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

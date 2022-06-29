@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Biomes! Islands</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/BiomeDef[defName="BMT_FungalForest"]/wildAnimals</xpath>
-					<value>
-						<BMT_FruitBat>0.3</BMT_FruitBat>
-					</value>
-				</li>
-			</operations>
-		</match>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BiomeDef[defName="BMT_FungalForest"]/wildAnimals</xpath>
+				<value>
+					<BMT_FruitBat>0.3</BMT_FruitBat>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BiomeDef[defName="BMT_ShallowCave"]/wildAnimals</xpath>
+				<value>
+					<BMT_FruitBat>0.4</BMT_FruitBat>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 </Patch>
 
