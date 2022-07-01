@@ -116,15 +116,6 @@
 		<race>BMT_Maxolotl</race>
 		<combatPower>80</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-		<alternateGraphicChance>1</alternateGraphicChance>
-		<alternateGraphics>
-			<li>
-				<texPath>BMT_Caverns/Things/Animal/Maxolotl/Maxolotl</texPath>
-			</li>
-			<li>
-				<texPath>BMT_Caverns/Things/Animal/Maxolotl/Maxolotl2</texPath>
-			</li>
-		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<label>Maxolotl Larva</label>
