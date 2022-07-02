@@ -12,6 +12,7 @@
 						<li Class="BiomesCore.DefModExtensions.Plant_GraphicPerBiome">
 							<biomes>
 								<li>BMT_FungalForest</li>
+								<li>BMT_ShallowCave</li>
 							</biomes>
 							<graphicPaths>
 								<li>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomTree</li>
@@ -36,6 +37,7 @@
 						<li Class="BiomesCore.DefModExtensions.Plant_GraphicPerBiome">
 							<biomes>
 								<li>BMT_FungalForest</li>
+								<li>BMT_ShallowCave</li>
 							</biomes>
 							<graphicPaths>
 								<li>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomCluster</li>
@@ -61,6 +63,7 @@
 						<li Class="BiomesCore.DefModExtensions.Plant_GraphicPerBiome">
 							<biomes>
 								<li>BMT_FungalForest</li>
+								<li>BMT_ShallowCave</li>
 							</biomes>
 							<graphicPaths>
 								<li>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomPod</li>

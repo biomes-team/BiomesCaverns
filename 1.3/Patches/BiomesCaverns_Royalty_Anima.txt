@@ -12,6 +12,7 @@
 						<li Class="BiomesCore.DefModExtensions.Plant_GraphicPerBiome">
 							<biomes>
 								<li>BMT_FungalForest</li>
+								<li>BMT_ShallowCave</li>
 							</biomes>
 							<graphicPaths>
 								<li>BMT_Caverns/Things/Plant/Animu/Animushroom</li>
@@ -37,6 +38,7 @@
 						<li Class="BiomesCore.DefModExtensions.Plant_GraphicPerBiome">
 							<biomes>
 								<li>BMT_FungalForest</li>
+								<li>BMT_ShallowCave</li>
 							</biomes>
 							<graphicPaths>
 								<li>BMT_Caverns/Things/Plant/Animu/Animycelium</li>
