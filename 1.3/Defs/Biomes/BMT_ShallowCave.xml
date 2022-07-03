@@ -37,7 +37,7 @@
     <foragedFood>BMT_RawDulcis</foragedFood>
     <wildPlantRegrowDays>27</wildPlantRegrowDays>
     <soundsAmbient>
-      <li>BMT_Ambient_FungalForest</li>
+      <li>BMT_Ambient_Cave_Calm</li>
     </soundsAmbient>
     <diseaseMtbDays>40</diseaseMtbDays>
     <diseases>
