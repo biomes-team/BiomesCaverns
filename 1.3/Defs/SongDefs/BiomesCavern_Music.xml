@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!--Fungal Forest-->
   <SongDef>
     <clipPath>BMT_Caverns/Music/FungalForest/Caravan</clipPath>
     <modExtensions>
@@ -91,6 +92,26 @@
     </modExtensions>
   </SongDef>
   <SongDef>
+    <clipPath>BMT_Caverns/Music/FungalForest/Purple_Sunset</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_FungalForest</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <SongDef>
+    <clipPath>BMT_Caverns/Music/FungalForest/Quiet_Finally</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_FungalForest</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <SongDef>
     <clipPath>BMT_Caverns/Music/FungalForest/Tall_Shrooms</clipPath>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
@@ -165,6 +186,50 @@
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
                 <li>BMT_FungalForest</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <!-- Cave -->
+    <SongDef>
+    <clipPath>BMT_Caverns/Music/Cave/BIOMES2</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_ShallowCave</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <SongDef>
+    <clipPath>BMT_Caverns/Music/Cave/BIOMES3</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_ShallowCave</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <SongDef>
+    <clipPath>BMT_Caverns/Music/Cave/BIOMES4</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_ShallowCave</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <!-- Tension -->
+    <SongDef>
+    <clipPath>BMT_Caverns/Music/Cave/Cave_Battle_1</clipPath>
+    <volume>1.0</volume>
+    <tense>true</tense>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_ShallowCave</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
