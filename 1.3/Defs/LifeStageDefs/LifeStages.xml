@@ -47,7 +47,7 @@
 		<meleeDamageFactor>0.5</meleeDamageFactor>
 		<statFactors>
 			<MoveSpeed>0.5</MoveSpeed>
-			<DiggingSpeed>0.5</DiggingSpeed>
+			<DiggingSpeed MayRequire="biomesteam.biomesislands">0.5</DiggingSpeed>
 			<!--SandDrillingSpeed>0.5</SandDrillingSpeed-->
 		</statFactors>
 		<modExtensions>
@@ -79,7 +79,7 @@
 		<meleeDamageFactor>0.75</meleeDamageFactor>
 		<statFactors>
 			<MoveSpeed>0.9</MoveSpeed>
-			<DiggingSpeed>0.9</DiggingSpeed>
+			<DiggingSpeed MayRequire="biomesteam.biomesislands">0.9</DiggingSpeed>
 			<!--SandDrillingSpeed>0.9</SandDrillingSpeed-->
 		</statFactors>
 		<modExtensions>

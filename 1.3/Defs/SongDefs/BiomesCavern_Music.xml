@@ -132,7 +132,7 @@
     </modExtensions>
   </SongDef>
   <SongDef>
-    <clipPath>BMT_Caverns/Music/FungalForest/You_Will_Won't</clipPath>
+    <clipPath>BMT_Caverns/Music/FungalForest/You_Will_Wont</clipPath>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
