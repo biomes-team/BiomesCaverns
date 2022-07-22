@@ -105,14 +105,7 @@
       </li>
     </terrainPatchMakers>
     <baseWeatherCommonalities>
-      <BMT_Calm>18</BMT_Calm>
-      <Fog>0</Fog>
-      <Rain>0</Rain>
-      <DryThunderstorm>0</DryThunderstorm>
-      <RainyThunderstorm>0</RainyThunderstorm>
-      <FoggyRain>0</FoggyRain>
-      <SnowGentle>0</SnowGentle>
-      <SnowHard>0</SnowHard>
+      <BMT_Calm>100</BMT_Calm>
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- ground cover -->
@@ -139,12 +132,12 @@
     <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.02</Plant_Nutrifungus>   <!-- food -->
     
 	<!-- hydrophytes -->
-    <BMT_BiolumiAlgaeCarnelian>0.5</BMT_BiolumiAlgaeCarnelian>
-    <BMT_BiolumiAlgaeTanzanite>0.5</BMT_BiolumiAlgaeTanzanite>
-    <BMT_BiolumiAlgaeKunzite>0.5</BMT_BiolumiAlgaeKunzite>
-    <BMT_BiolumiAlgaeTurquoise>0.5</BMT_BiolumiAlgaeTurquoise>
-    <BMT_BiolumiAlgaeChrysoberyl>0.5</BMT_BiolumiAlgaeChrysoberyl>
-    <BMT_BiolumiAlgaeCitrine>0.5</BMT_BiolumiAlgaeCitrine>
+    <BMT_BiolumiAlgaeCarnelian>0.2</BMT_BiolumiAlgaeCarnelian>
+    <BMT_BiolumiAlgaeTanzanite>0.2</BMT_BiolumiAlgaeTanzanite>
+    <BMT_BiolumiAlgaeKunzite>0.2</BMT_BiolumiAlgaeKunzite>
+    <BMT_BiolumiAlgaeTurquoise>0.2</BMT_BiolumiAlgaeTurquoise>
+    <BMT_BiolumiAlgaeChrysoberyl>0.2</BMT_BiolumiAlgaeChrysoberyl>
+    <BMT_BiolumiAlgaeCitrine>0.2</BMT_BiolumiAlgaeCitrine>
 
 	<!-- special -->
 

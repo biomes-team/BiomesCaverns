@@ -120,14 +120,7 @@
       </li>
     </terrainPatchMakers>
     <baseWeatherCommonalities>
-      <BMT_Calm>18</BMT_Calm>
-      <Fog>1</Fog>
-      <Rain>2</Rain>
-      <DryThunderstorm>1</DryThunderstorm>
-      <RainyThunderstorm>1</RainyThunderstorm>
-      <FoggyRain>1</FoggyRain>
-      <SnowGentle>4</SnowGentle>
-      <SnowHard>4</SnowHard>
+      <BMT_Calm>100</BMT_Calm>
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- ground cover -->

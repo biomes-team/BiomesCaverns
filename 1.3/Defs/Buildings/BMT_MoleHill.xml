@@ -23,6 +23,11 @@
 			<MarketValue>50</MarketValue>
 			<WorkToBuild>500</WorkToBuild>
 		</statBases>
+		<comps>
+	      <li Class="CompProperties_Lifespan">
+    	    <lifespanTicks>1200000</lifespanTicks>
+    	  </li>
+		</comps>
 		<fillPercent>0.5</fillPercent>
 		<destroyable>true</destroyable>
 		<useHitPoints>true</useHitPoints>
