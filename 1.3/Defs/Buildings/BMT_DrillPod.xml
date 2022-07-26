@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_DrillPod</defName>
@@ -33,7 +33,7 @@
 				<restEffectiveness>0.8</restEffectiveness>
 			</li>
 			<li Class="CompProperties_Launchable">
-				<skyfallerLeaving>DropPodLeaving</skyfallerLeaving>
+				<skyfallerLeaving>BMT_DrillPodLeaving</skyfallerLeaving>
 			</li>
 		</comps>
 		<inspectorTabs>
@@ -47,5 +47,75 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<uiIconScale>0.65</uiIconScale>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>BMT_DrillPodIncoming</defName>
+		<label>drop pod (incoming)</label>
+		<thingClass>DropPodIncoming</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSound>DropPod_Fall</anticipationSound>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<motesPerCell>0</motesPerCell>
+			<shadowSize>(0, 0)</shadowSize>
+		</skyfaller>
+		<comps>
+			<li>
+				<compClass>BiomesCaverns.CompSpawnDust</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>BMT_DrillPodLeaving</defName>
+		<label>drop pod (leaving)</label>
+		<thingClass>FlyShipLeaving</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>DropPod_Leaving</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
+			<shadowSize>(0, 0)</shadowSize>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>BMT_DrillPodActive</defName>
+		<label>drop pod</label>
+		<category>Item</category>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>BiomesCaverns.ActiveDrillPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Building/Drillpod/Drillpod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.6, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
 	</ThingDef>
 </Defs>

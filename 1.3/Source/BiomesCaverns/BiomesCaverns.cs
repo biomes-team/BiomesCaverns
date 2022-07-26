@@ -19,7 +19,5 @@ namespace BiomesCaverns
             new Harmony(Id).PatchAll();
             Log.Message("Biomes! Caverns initialized");
         }
-
-
     }
 }
