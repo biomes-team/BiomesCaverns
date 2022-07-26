@@ -16,11 +16,12 @@
 		</statBases>
 		<stuffProps>
 			<color>(81,48,100)</color>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Beauty>6</Beauty>
+			</statFactors>
 		</stuffProps>
-		<statFactors>
-			<MaxHitPoints>1.8</MaxHitPoints>
-			<Beauty>6</Beauty>
-		</statFactors>
+
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_RoyalRhinoHorn</defName>
