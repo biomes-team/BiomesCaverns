@@ -7,7 +7,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Building/Drillpod/Drillpod</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<size>(1,1)</size>
 		<rotatable>false</rotatable>
@@ -57,11 +57,11 @@
 			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutFlying</shaderType>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<skyfaller>
 			<movementType>Decelerate</movementType>
-			<anticipationSound>DropPod_Fall</anticipationSound>
+			<anticipationSound>tunnel</anticipationSound>
 			<anticipationSoundTicks>100</anticipationSoundTicks>
 			<motesPerCell>0</motesPerCell>
 			<shadowSize>(0, 0)</shadowSize>
@@ -81,12 +81,12 @@
 			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutFlying</shaderType>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<skyfaller>
 			<movementType>Decelerate</movementType>
 			<reversed>true</reversed>
-			<anticipationSound>DropPod_Leaving</anticipationSound>
+			<anticipationSound>tunnel</anticipationSound>
 			<anticipationSoundTicks>-10</anticipationSoundTicks>
 			<ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
 			<shadowSize>(0, 0)</shadowSize>
@@ -109,7 +109,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Building/Drillpod/Drillpod</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 			<shadowData>
 				<volume>(0.8, 0.6, 0.8)</volume>
 			</shadowData>
