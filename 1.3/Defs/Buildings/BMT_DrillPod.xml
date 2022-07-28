@@ -52,7 +52,7 @@
 	<ThingDef ParentName="SkyfallerBase">
 		<defName>BMT_DrillPodIncoming</defName>
 		<label>drop pod (incoming)</label>
-		<thingClass>DropPodIncoming</thingClass>
+		<thingClass>BiomesCaverns.DrillPodIncoming</thingClass>
 		<graphicData>
 			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
 			<graphicClass>Graphic_Single</graphicClass>
