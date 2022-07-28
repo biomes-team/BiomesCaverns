@@ -91,6 +91,11 @@
 			<ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
 			<shadowSize>(0, 0)</shadowSize>
 		</skyfaller>
+		<comps>
+			<li>
+				<compClass>BiomesCaverns.CompSpawnDust</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef>
@@ -118,4 +123,19 @@
 		</statBases>
 		<selectable>true</selectable>
 	</ThingDef>
+	
+	
+  <WorldObjectDef>
+    <defName>BMT_TravelingDrillPods</defName>
+    <label>drill pod</label>
+    <description>drill pod.</description>
+    <worldObjectClass>TravelingTransportPods</worldObjectClass>
+    <texture>BMT_Caverns/Things/Building/Drillpod/Drillpod</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>BMT_Caverns/Things/Building/Drillpod/Drillpod</expandingIconTexture>
+    <expandingIconPriority>60</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+  </WorldObjectDef>
 </Defs>

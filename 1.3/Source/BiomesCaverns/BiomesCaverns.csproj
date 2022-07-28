@@ -40,6 +40,11 @@
     <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="BiomesCaverns.cs" />
+    <Compile Include="ActiveDrillPod.cs" />
+    <Compile Include="BC_DefOf.cs" />
+    <Compile Include="CompSpawnDust.cs" />
+    <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
+    <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
     <Compile Include="Patches\DropPodUtility_MakeDropPodAt_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
