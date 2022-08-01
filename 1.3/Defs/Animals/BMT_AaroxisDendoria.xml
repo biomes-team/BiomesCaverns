@@ -217,7 +217,7 @@
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaPupa/AaroxisDendoriaPupa</texPath>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaPupa/Dessicated_AaroxisDendoriaPupa</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
