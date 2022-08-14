@@ -164,14 +164,16 @@
 	<!-- special -->
     <BMT_Poptop>0.03</BMT_Poptop>   <!-- firepooper -->
     <BMT_Skulltop>0.003</BMT_Skulltop>    <!-- toxic -->
-    <Plant_Nutrifungus>0.00001</Plant_Nutrifungus>
+	
+	
+    <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_Nutrifungus>
 
-    <Plant_GrassAnima>0.00001</Plant_GrassAnima>
-    <Plant_TreeAnima>0.00001</Plant_TreeAnima>
+    <Plant_GrassAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_GrassAnima>
+    <Plant_TreeAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_TreeAnima>
 
-    <GauranlenSeed>0.00001</GauranlenSeed>
-    <Plant_MossGauranlen>0.00001</Plant_MossGauranlen>
-    <Plant_TreeGauranlen>0.00001</Plant_TreeGauranlen>
+    <GauranlenSeed MayRequire="Ludeon.RimWorld.Ideology">0.00001</GauranlenSeed>
+    <Plant_MossGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_MossGauranlen>
+    <Plant_TreeGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_TreeGauranlen>
 
     </wildPlants>
 
