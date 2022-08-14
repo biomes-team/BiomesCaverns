@@ -72,7 +72,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-			<BMT_Molluscashell>45</BMT_Molluscashell>
+			<BMT_Molluskshell>45</BMT_Molluskshell>
 		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
