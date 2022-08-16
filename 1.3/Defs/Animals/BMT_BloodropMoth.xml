@@ -295,6 +295,11 @@
             <li>AnimalInsect</li>
             <li>AnimalUncommon</li>
         </tradeTags>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+                <isBloodDrinkingAnimal>true</isBloodDrinkingAnimal>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
