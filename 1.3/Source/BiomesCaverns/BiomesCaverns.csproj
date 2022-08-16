@@ -44,6 +44,7 @@
     <Compile Include="BC_DefOf.cs" />
     <Compile Include="CompSpawnDust.cs" />
     <Compile Include="DrillPodIncoming.cs" />
+    <Compile Include="CompCleanFilthAround.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />

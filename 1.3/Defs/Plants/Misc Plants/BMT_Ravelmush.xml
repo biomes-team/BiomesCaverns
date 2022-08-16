@@ -18,11 +18,11 @@
 				<growingHours>0.5~0.99</growingHours>
 			</li>
 		</modExtensions>
-		<specialDisplayRadius MayRequire="vanillaexpanded.vfecore">6</specialDisplayRadius>
+		<specialDisplayRadius>6</specialDisplayRadius>
 		<comps>
-			<li Class="AOMoreFurniture.CompProperties_BinClean" MayRequire="vanillaexpanded.vfecore">
-				<TimerInTicks>500</TimerInTicks>
-				<Radius>6</Radius>
+			<li Class="BiomesCaverns.CompProperties_CleanFilthAround">
+				<tickRate>500</tickRate>
+				<radius>6</radius>
 			</li>
 		</comps>
 		<!--ingestible/-->
