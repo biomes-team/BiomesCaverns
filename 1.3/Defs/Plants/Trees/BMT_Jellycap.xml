@@ -21,8 +21,8 @@
             <Beauty>4</Beauty>
         </statBases>
         <plant>
-            <wildClusterRadius>6</wildClusterRadius>
-			<wildClusterWeight>15</wildClusterWeight>
+            <wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
             <growDays>18</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>
