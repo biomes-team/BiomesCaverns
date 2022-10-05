@@ -53,7 +53,7 @@
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<body>BiomesCore_Snail</body>
 			<baseHungerRate>0.22</baseHungerRate>
-			<baseBodySize>0.2</baseBodySize>
+			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.75</wildness>
@@ -103,31 +103,31 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>2.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>3.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>3.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>2.4</drawSize>
+					<drawSize>4.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>2.4</drawSize>
+					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

@@ -15,7 +15,8 @@
         <plant>
 			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilityMin>0.70</fertilityMin>
-            <wildClusterRadius>3</wildClusterRadius>
+            <wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>

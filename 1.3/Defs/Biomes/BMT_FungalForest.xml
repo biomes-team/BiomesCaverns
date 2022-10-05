@@ -10,6 +10,9 @@
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isCavern>true</isCavern>
 			<cavernShapes>
+				<!-- <li>Tubes</li> -->
+				<!-- <li>Smooth</li> -->
+				<!-- <li>TunnelNetwork</li> -->
 				<li>SmallChambers</li>
 			</cavernShapes>
 		</li>
@@ -133,7 +136,7 @@
 		
 	<!-- mid sized -->
     <BMT_BalefulBolete>0.02</BMT_BalefulBolete>
-    <BMT_BleedingTooth>0.2</BMT_BleedingTooth>
+    <BMT_BleedingTooth>0.05</BMT_BleedingTooth>
     <BMT_CrimsonCap>0.02</BMT_CrimsonCap>
     <BMT_Ravelmush>0.02</BMT_Ravelmush>
     <BMT_VioletWimple>0.02</BMT_VioletWimple>
@@ -142,7 +145,9 @@
     <BMT_Embrun>0.1</BMT_Embrun>
     <BMT_GleamPlum>0.2</BMT_GleamPlum>
     <BMT_Jellycap>0.2</BMT_Jellycap>
-    <BMT_Nogtyl>0.05</BMT_Nogtyl>   <!-- wood -->
+	<!-- only by player (wood) -->
+    <!-- <BMT_Nogtyl>0.05</BMT_Nogtyl> -->
+	<!-- only by player (wood) -->
     <BMT_Viritoll>0.1</BMT_Viritoll>
 		
 	<!-- other harvestable -->
@@ -171,7 +176,9 @@
     <Plant_GrassAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_GrassAnima>
     <Plant_TreeAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_TreeAnima>
 
-    <GauranlenSeed MayRequire="Ludeon.RimWorld.Ideology">0.00001</GauranlenSeed>
+	<!-- Seeds cannot grow, buddy -->
+    <!-- <GauranlenSeed MayRequire="Ludeon.RimWorld.Ideology">0.00001</GauranlenSeed> -->
+	<Plant_PodGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_PodGauranlen>
     <Plant_MossGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_MossGauranlen>
     <Plant_TreeGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_TreeGauranlen>
 
