@@ -8,6 +8,13 @@
 		<statBases>
 			<Flammability>0.8</Flammability>
 		</statBases>
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl"> -->
+				<!-- <terrainTags> -->
+					<!-- <li>Fungal</li> -->
+				<!-- </terrainTags> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
 			<!-- <cavePlantWeight>0</cavePlantWeight>		 -->
@@ -17,6 +24,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>1.0</fertilitySensitivity>
 			<neverBlightable>true</neverBlightable>
+			<!-- <lifespanDaysPerGrowDays>30</lifespanDaysPerGrowDays> -->
 			<!-- <growMinGlow>0</growMinGlow> -->
 			<!-- <growOptimalGlow>0</growOptimalGlow> -->
 			<!-- <wildOrder>1</wildOrder> -->
@@ -54,6 +62,8 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<wildClusterRadius>7</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.1</topWindExposure>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>50</harvestWork>
@@ -129,6 +139,8 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.1</topWindExposure>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>50</harvestWork>
@@ -202,6 +214,8 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.2</topWindExposure>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<growOptimalGlow>0</growOptimalGlow>
@@ -277,6 +291,8 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.4</topWindExposure>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<growOptimalGlow>0</growOptimalGlow>
@@ -354,6 +370,8 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.3</topWindExposure>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>100</harvestWork>
@@ -428,6 +446,8 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<wildClusterRadius>1</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.2</topWindExposure>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestWork>100</harvestWork>
