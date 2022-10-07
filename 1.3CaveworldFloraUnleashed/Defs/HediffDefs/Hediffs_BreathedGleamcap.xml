@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!--=============== High on Spores ==============-->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>BMT_HediffGleamcapSmoke</defName>
+		<label>gleamcap smoke</label>
+		<description>gleamcap smoke</description>
+		<comps>
+		  <li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+		  </li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.2</minSeverity>
+				<painFactor>0.9</painFactor>
+			 </li>
+			  <li>
+				<label>moderate</label>
+				<minSeverity>0.40</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+				</capMods>
+				<painFactor>0.9</painFactor>				
+			  </li>		
+		</stages>
+	</HediffDef>
+	
+	
+</Defs>

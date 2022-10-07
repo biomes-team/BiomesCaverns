@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>BMT_RefineGleamcapSalve</defName>
+    <label>make medicine from gleamcap salve</label>
+    <description>Use advanced biochemical extraction to separate out the useful chemicals in gleamcap salve and package them in a form more useful as medicine.</description>
+    <jobString>Refining gleamcap salve into industrial medicine.</jobString>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BMT_GleamcapSalve</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>	  
+    </ingredients>
+    <products>
+      <MedicineIndustrial>1</MedicineIndustrial>
+    </products>
+  </RecipeDef>
+
+</Defs>

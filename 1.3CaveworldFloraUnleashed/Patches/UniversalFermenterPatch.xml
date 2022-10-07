@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[SYR] Universal Fermenter</li>
+    </mods>
+      <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>*/ThingDef[defName = "BMT_MushroomFermentingBarrel"]/designationCategory</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalFermenter.CompProperties_UniversalFermenter"]/processes</xpath>
+          <value>
+            <li>
+              <thingDef>BMT_MushroomWine</thingDef>
+              <ingredientFilter>
+                <thingDefs>
+                  <li>BMT_MushroomMust</li>
+                </thingDefs>
+              </ingredientFilter>
+              <processDays>3</processDays>
+              <maxCapacity>50</maxCapacity>
+              <efficiency>0.5</efficiency>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>*/WorkGiverDef[defName = "BMT_TakeMushroomWineOutOfFermentingBarrel" or defName = "BMT_FillMushroomFermentingBarrel"]</xpath>
+        </li>
+      </operations>
+      </match>
+  </Operation>
+
+</Patch>

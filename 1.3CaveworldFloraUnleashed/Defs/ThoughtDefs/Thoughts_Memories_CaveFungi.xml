@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>BMT_AteRawShimmershroom</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate raw shimmershroom</label>
+        <description>I ate a delicious shimmershroom. It was luxuriantly sweet and velvety!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>BMT_UndergrounderMushroomed</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <requiredTraits>
+      <li>Undergrounder</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>drank mushroom wine</label>
+        <description>This is real wine, why do surfacers bother with grapes? Nasty little bubbles of goo grapes.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+    <ThoughtDef>
+    <defName>BMT_BreathedGleamcapSmoke</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BMT_HediffGleamcapSmoke</hediff>
+    <stages>
+      <li>
+        <label>breathed gleamcap smoke</label>
+        <description>I breathed a strange smoke from that gleamcap. I am feeling so gooood!</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

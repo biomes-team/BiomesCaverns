@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Fungiponics -->
+  <Caveworld_Flora_Unleashed.CannotGrowTooCold>Ne peut pas pousser maintenant: trop froid.</Caveworld_Flora_Unleashed.CannotGrowTooCold>
+  <Caveworld_Flora_Unleashed.CannotGrowTooHot>Ne peut pas pousser maintenant: trop chaud.</Caveworld_Flora_Unleashed.CannotGrowTooHot>
+  <Caveworld_Flora_Unleashed.Growing>En train de pousser.</Caveworld_Flora_Unleashed.Growing>
+  <!-- Flora Plant -->
+  <Caveworld_Flora_Unleashed.InCryostasis>En cryostase</Caveworld_Flora_Unleashed.InCryostasis>
+  <Caveworld_Flora_Unleashed.Dying>Mourrant</Caveworld_Flora_Unleashed.Dying>
+  <Caveworld_Flora_Unleashed.Drying>sèche</Caveworld_Flora_Unleashed.Drying>
+  <Caveworld_Flora_Unleashed.TooDark>trop sombre</Caveworld_Flora_Unleashed.TooDark>
+  <Caveworld_Flora_Unleashed.Overlit>chevauche</Caveworld_Flora_Unleashed.Overlit>
+  <Caveworld_Flora_Unleashed.Unroofed>sans toit</Caveworld_Flora_Unleashed.Unroofed>
+  <Caveworld_Flora_Unleashed.UnadaptedSoil>sol non adapté</Caveworld_Flora_Unleashed.UnadaptedSoil>
+  <Caveworld_Flora_Unleashed.TooFarFromRock>trop loin de la roche</Caveworld_Flora_Unleashed.TooFarFromRock>
+  <Caveworld_Flora_Unleashed.MyceliumRootRemoved>mycélium enlevé</Caveworld_Flora_Unleashed.MyceliumRootRemoved>
+  <Caveworld_Flora_Unleashed.Cryostasis>cryostase</Caveworld_Flora_Unleashed.Cryostasis>
+</LanguageData>

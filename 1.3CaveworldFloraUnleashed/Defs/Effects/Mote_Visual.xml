@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!--=============== Puffs ==============-->
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_GleamcapSmoke</defName>
+		<graphicData>
+			<texPath>Things/Mote/BMT_Spores</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>2</fadeInTime>
+			<solidTime>3</solidTime>
+			<fadeOutTime>2</fadeOutTime>
+			<growthRate>0.005</growthRate>
+		</mote>
+	</ThingDef>
+	
+	
+</Defs>

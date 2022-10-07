@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<defName>ItW_MushroomWine</defName>
+	<ItW_MushroomWine.label>Vin de champignons</ItW_MushroomWine.label>
+	<ItW_MushroomWine.description>Une boisson alcoolisée fermentée par des champignons n'est pas exactement la même chose qu'un vin ordinaire. C'est une saveur qui a été ajoutée plus tard, avec un soupçon d'agar.</ItW_MushroomWine.description>
+
+	<ItW_MakeMushroomMust.label>Faire du jus de champignon</ItW_MakeMushroomMust.label>
+	<ItW_MakeMushroomMust.description>Utilisez des champignons pour faire du jus de champignon pour la vinification.</ItW_MakeMushroomMust.description>
+	<ItW_MakeMushroomMust.jobString>Préparez du jus de champignon.</ItW_MakeMushroomMust.jobString>
+
+	<ItW_MushroomMust.label>Jus de champignons</ItW_MushroomMust.label>
+	<ItW_MushroomMust.description>Vin de champignon non fermenté. Cette substance doit être fermentée dans la cuve de fermentation des champignons avant de la boire.</ItW_MushroomMust.description>
+	
+</LanguageData>

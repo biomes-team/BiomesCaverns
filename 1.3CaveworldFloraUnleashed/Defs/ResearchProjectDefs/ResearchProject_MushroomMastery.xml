@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!--=============== Cultivating Fungi ==============-->
+	<ResearchProjectDef>
+		<defName>BMT_ResearchMushrooms</defName>
+		<label>mushroom mastery</label>
+		<description>Research how to grow delicate cave fungi, and how to use their products.</description>
+		<techLevel>Neolithic</techLevel>
+		<baseCost>1200</baseCost>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.7</researchViewY>
+	</ResearchProjectDef>
+	
+	
+</Defs>

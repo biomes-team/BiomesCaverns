@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Garden Drinks UF</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+					<!-- SHIMMERSMOOTHIE -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="SweetSodaBase">
+							<defName>BMT_BlendShimmersmoothie</defName>
+							<label>blend shimmersmoothie</label>
+							<description>Blend a simple smoothie from shimmershrooms.</description>
+							<jobString>Blending smoothie.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BMT_RawShimmershroom</li>
+										</thingDefs>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BMT_RawShimmershroom</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BMT_Shimmersmoothie>10</BMT_Shimmersmoothie>
+							</products>
+						</RecipeDef>	
+					</value>
+				</li>				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="MealBase">
+							<defName>BMT_Shimmersmoothie</defName>
+							<label>shimmersmoothie</label>
+							<description>Making a smoothie out of shimmershroom doesn't ruin its subtle tase, and results in a drink that sparkles like glitter. Fun!</description>
+							<graphicData>
+								<texPath>Things/Item/Drink/BMT_Shimmersmoothie</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Buyable</tradeability>
+							<stackLimit>75</stackLimit>
+							<statBases>
+								<MarketValue>3.0</MarketValue>
+								<WorkToMake>400</WorkToMake>
+								<Nutrition>0.1</Nutrition>
+							</statBases>
+							<thingCategories>
+								<li>VBE_DrinksNonAlcoholic</li>
+							</thingCategories>
+							<rotatable>false</rotatable>
+							<ingestible>
+								<preferability>RawTasty</preferability>			
+								<ingestSound>Ingest_Beer</ingestSound>
+								<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+								<joy>0.016</joy>
+								<joyKind>Gluttonous</joyKind>
+								<specialThoughtDirect>BMT_AteRawShimmershroom</specialThoughtDirect>			
+							</ingestible>	
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

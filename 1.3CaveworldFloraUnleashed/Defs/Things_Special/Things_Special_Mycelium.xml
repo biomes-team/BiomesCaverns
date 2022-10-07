@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>BMT_Mycelium</defName>
+    <label>mycelium</label>
+    <description>An extensive mesh of fungal hyphae. Unlike roots which are only one part of a plant, the mycelium is the main body of the fungus, the mushrooms people are familiar with are just the reproductive structures. This network is usually hidden underground but in caves with little soil it has adapted to creep over the surface of the rock.</description>
+    <thingClass>Caveworld_Flora_Unleashed.Mycelium</thingClass>
+    <category>Plant</category>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Beauty>5</Beauty>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tickerType>Long</tickerType>
+    <neverMultiSelect>True</neverMultiSelect>
+    <drawerType>MapMeshOnly</drawerType>
+    <pathCost>10</pathCost>
+    <graphicData>
+      <texPath>Things/Plant/BMT_Mycelium</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <shaderType>CutoutPlant</shaderType>
+	  <drawOffset>(0,-2,-2)</drawOffset>
+	  <drawSize>(2,2)</drawSize> 
+    </graphicData>
+    <hideAtSnowDepth>0.2</hideAtSnowDepth>
+    <plant>
+      <soundHarvesting>Harvest_Standard</soundHarvesting>
+      <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+	  <harvestedThingDef>BMT_MycelialBlocks</harvestedThingDef>
+   	  <harvestTag>Standard</harvestTag>
+	  <harvestYield>5</harvestYield>	  
+      <sowWork>3000</sowWork>
+      <harvestWork>30</harvestWork>
+      <topWindExposure>0.0</topWindExposure>
+      <growDays>20</growDays>
+    </plant>
+    <thingCategories>
+      <li>Plants</li>
+    </thingCategories>	
+  </ThingDef>
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>BMT_FungalGardenGravel</defName>
+    <label>fungal garden gravel</label>
+    <description>A visually attractive substrate for growing fungal crops underground. The live mycelium feeds on detritus and readily absorbs animal filth.</description>
+    <texturePath>Terrain/Surfaces/BMT_FungalGardenGravel</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>320</renderPrecedence>
+    <pathCost>2</pathCost>
+    <fertility>0.7</fertility>
+    <placeWorkers>
+      <li>Placeworker_OnlyUnderThickRoof</li>
+    </placeWorkers>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+      <FilthMultiplier>0.1</FilthMultiplier>	  
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <costList>
+      <BMT_MycelialBlocks>1</BMT_MycelialBlocks>
+    </costList>	
+    <designationHotKey>Misc6</designationHotKey>
+    <researchPrerequisites>
+      <li>BMT_ResearchMushrooms</li>
+    </researchPrerequisites>	
+  </TerrainDef>
+
+</Defs>

@@ -32,6 +32,9 @@
     <li>BiomesTeam.BiomesCore</li>
 	<li>BiomesTeam.BiomesIslands</li>
   </loadAfter>
+	<incompatibleWith>
+		<li>fluffysminion.itw.caveworldfloraunleashed</li>
+	</incompatibleWith>
   <description>
 The caverns module for the Biomes! mods. Requires Biomes! Core loaded before it.
   </description>

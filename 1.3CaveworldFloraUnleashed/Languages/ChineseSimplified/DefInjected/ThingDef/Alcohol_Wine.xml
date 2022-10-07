@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<defName>ItW_MushroomWine</defName>
+	<ItW_MushroomWine.label>蘑菇酒</ItW_MushroomWine.label>
+	<ItW_MushroomWine.description>一种由真菌发酵成的酒精饮料，与普通的酒并不完全相同。这是一种后来添加的口味，带有一点琼脂的味道。</ItW_MushroomWine.description>
+
+	<ItW_MakeMushroomMust.label>制作蘑菇汁</ItW_MakeMushroomMust.label>
+	<ItW_MakeMushroomMust.description>用蘑菇制作用于酿酒的蘑菇汁。</ItW_MakeMushroomMust.description>
+	<ItW_MakeMushroomMust.jobString>制作蘑菇汁。</ItW_MakeMushroomMust.jobString>
+
+	<ItW_MushroomMust.label>蘑菇汁</ItW_MushroomMust.label>
+	<ItW_MushroomMust.description>未发酵的蘑菇酒。这种物质需要在蘑菇发酵桶中发酵后才能饮用。</ItW_MushroomMust.description>
+	
+</LanguageData>

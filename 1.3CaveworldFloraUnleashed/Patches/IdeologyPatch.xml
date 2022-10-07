@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+		<success>Always</success>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="DarktorchFungus"]/comps/li/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>BMT_RawShimmershroom</li>
+						<li>BMT_RawGlowbulb</li>
+						<li>BMT_RawGreyfields</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]</xpath>
+					<value>
+						<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+							<defName>Plant_Nutrifungus</defName>
+							<label>nutrifungus</label>
+							<description>A meaty bioengineered mushroom grown for its nutritious value. It can grow on fungal gravel, but only in darkness - exposing it to any kind of light, including darklights, will kill it.</description>
+							<statBases>
+							  <MaxHitPoints>85</MaxHitPoints>
+							  <Nutrition>0.25</Nutrition>
+							</statBases>
+							<graphicData>
+							  <texPath>Things/Plant/Nutrifungus</texPath>
+							  <graphicClass>Graphic_Random</graphicClass>
+							  <shadowData>
+								<volume>(0.2, 0.3, 0.13)</volume>
+								<offset>(-0.03,0,-0.44)</offset>
+							  </shadowData>
+							</graphicData>
+							<selectable>true</selectable>
+							<pathCost>14</pathCost>
+							<ingestible />
+							<plant>
+							  <fertilityMin>0.3</fertilityMin>
+							  <fertilitySensitivity>0.15</fertilitySensitivity>
+							  <harvestTag>Standard</harvestTag>
+							  <harvestedThingDef>RawFungus</harvestedThingDef>
+							  <harvestYield>11</harvestYield>
+							  <sowTags>
+								<li>Ground</li>
+								<li>BMT_Fungiponics</li>
+							  </sowTags>
+							  <topWindExposure>0</topWindExposure>
+							  <growDays>12</growDays>
+							  <cavePlantWeight>0</cavePlantWeight>
+							  <visualSizeRange>0.3~0.65</visualSizeRange>
+							  <purpose>Food</purpose>
+							  <humanFoodPlant>true</humanFoodPlant>
+							  <maxMeshCount>9</maxMeshCount>
+							</plant>
+							<minGrowTemperature>5</minGrowTemperature>
+							<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
+							<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
+							<maxGrowTemperature>40</maxGrowTemperature>
+							<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
+							<growOnlyUndeRoof>true</growOnlyUndeRoof>
+							<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
+							<minFertility>0.0</minFertility>
+							<maxFertility>999.0</maxFertility>
+							<minLight>0.0</minLight>
+							<maxLight>0.6</maxLight>
+							<MyceliumAbundance>0</MyceliumAbundance>
+							<MyceliumSizeRange>
+								<min>4</min>
+								<max>7</max>
+							</MyceliumSizeRange>
+							<MyceliumSpawnRadius>2.0</MyceliumSpawnRadius>
+							<MyceliumExclusivityRadiusOffset>5</MyceliumExclusivityRadiusOffset>
+							<MyceliumExclusivityRadiusFactor>2</MyceliumExclusivityRadiusFactor>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

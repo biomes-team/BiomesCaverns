@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defname="BMT_RawRoyalBracket"]</xpath>
+					<success>Always</success>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+										<!-- ROYAL BRACKET -->
+									<!-- Mushroom that can be made into sauce -->
+									<ThingDef ParentName="PlantFoodRawBase">
+										<defName>BMT_RawRoyalBracket</defName>
+										<label>raw royal bracket</label>
+										<description>Raw royal bracket, ready to be cooked into food or processed into royal sauce.</description>
+										<graphicData>
+											<texPath>Things/Item/Resource/PlantFoodRaw/BMT_RawRoyalBracket</texPath>
+											<graphicClass>Graphic_Single</graphicClass>
+										</graphicData>
+										<statBases>
+											<MarketValue>2.0</MarketValue>
+											<Mass>0.03</Mass>
+										</statBases>
+										<ingestible>
+											<foodType>Fungus</foodType>
+											<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+										</ingestible>
+										<ingredient>
+										  <mergeCompatibilityTags>
+											<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+										  </mergeCompatibilityTags>
+										</ingredient>
+										<comps>
+											<li Class="CompProperties_Rottable">
+												<daysToRotStart>10</daysToRotStart>
+											</li>
+										</comps>
+									</ThingDef> 
+								</value>
+							</li>
+							
+							<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="BMT_RoyalBracket"]/plant/harvestedThingDef</xpath>
+								<value>
+									<harvestedThingDef>BMT_RawRoyalBracket</harvestedThingDef>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+									<!-- ROYAL SAUCE -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="RoughPlantBase">
+							<defName>BMT_RoyalSauce</defName>
+							<label>royal sauce</label>
+							<description>An intensely savoury sauce made from stewing fronds of royal bracket. Helps counter the effects of living in the dark.</description>
+							<graphicData>
+								<texPath>Things/Item/Condiment/BMT_RoyalSauce</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>1.21</MarketValue>
+								<Nutrition>1</Nutrition>
+								<Flammability>1.3</Flammability>
+							</statBases>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>120</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>VCE_Condiments</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>NeverForNutrition</preferability>
+								<specialThoughtAsIngredient>BMT_ConsumedRoyalSauce</specialThoughtAsIngredient>
+								<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+							</ingestible>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef>
+							<defName>BMT_RoyalSauce</defName>
+							<label>make royal sauce</label>
+							<description>Create royal sauce from royal bracket mushrooms. An intensely savoury sauce made from stewing fronds of royal bracket.</description>
+							<jobString>Making royal sauce.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<workAmount>200</workAmount>
+							<recipeUsers>
+								<li>VCE_CondimentPrepTable</li>	  
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BMT_RawRoyalBracket</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BMT_RawRoyalBracket</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BMT_RoyalSauce>10</BMT_RoyalSauce>
+							</products>
+							<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+						</RecipeDef>
+					</value>
+				</li>
+
+					<!-- EFFECTS -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<ThoughtDef>	
+							<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+							<defName>BMT_ConsumedRoyalSauce</defName>
+							<durationDays>0.5</durationDays>
+							<stages>
+								<li>
+									<label>consumed royal sauce</label>
+									<description>Rich, salty umami.</description>
+									<baseMoodEffect>3</baseMoodEffect>
+								</li>
+							</stages>	
+							<modExtensions>
+								<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+									<hediffToAffect>VCE_Cholesterol</hediffToAffect>
+									<partToAffect>Heart</partToAffect>
+									<percentage>0.02</percentage>
+								</li>
+							</modExtensions>
+						</ThoughtDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef>
+							<defName>BMT_ConsumedRoyalSauce</defName>
+							<label>consumed royal sauce (from meal)</label>
+							<makesSickThought>false</makesSickThought>
+							<description>Royal sauce is an intensely savoury sauce made from stewing fronds of royal bracket that helps counter the effects of living in the dark.</description>
+							<tendable>false</tendable>
+							<isBad>false</isBad>
+							<defaultLabelColor>(92,62,198)</defaultLabelColor>
+							<hediffClass>HediffWithComps</hediffClass>
+							<initialSeverity>1.0</initialSeverity>
+							<maxSeverity>1.0</maxSeverity>
+							<comps>
+								<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+									<thoughtDefs>
+										<li>BMT_ConsumedRoyalSauce</li>
+									</thoughtDefs>
+								</li>
+							</comps>
+							<stages>
+								<li>
+									<capMods>
+										<li>
+											<capacity>Sight</capacity>
+											<offset>0.02</offset>
+										</li>
+										<li>
+											<capacity>Moving</capacity>
+											<offset>0.02</offset>
+										</li>
+									</capMods>
+								</li>
+							</stages>
+						</HediffDef>
+					</value>
+				</li>
+				
+			<!-- Dessert Meal Base -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="VCE_CookDessertMealBase" or @Name="VCE_CookComplexDessertMealBase" or @Name="VCE_CookGourmetDessertMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>BMT_RawShimmershroom</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="VCE_CookDessertMealBase" or @Name="VCE_CookComplexDessertMealBase" or @Name="VCE_CookGourmetDessertMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>BMT_RawShimmershroom</li>
+					</value>
+				</li>
+
+			<!-- Dessert Meal -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="VCE_CookDessertSimple" or defName="VCE_CookDessertFine" or defName="VCE_CookDessertLavish" or defName="VCE_CookDessertGourmet"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>BMT_RawShimmershroom</li>
+					</value>
+				</li>
+
+			<!-- Dessert Meal Bulk -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="VCE_CookDessertSimpleBulk" or defName="VCE_CookDessertFineBulk" or defName="VCE_CookDessertLavishBulk"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>BMT_RawShimmershroom</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
