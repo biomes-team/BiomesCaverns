@@ -4,16 +4,22 @@
 	<default>
 		<li>\</li>
 	</default>
-   <v1.3.3387>
+	<v1.3.3387>
 		<li>1.3</li>
 		<li>\</li>
         <li>1.3CaveworldFloraUnleashed</li>
         <li IfModActive="BiomesTeam.BiomesIslands">1.3FlyingAndAquaticAnimals</li>
-   </v1.3.3387>
+	</v1.3.3387>
 	<v1.3>
 		<li>1.3</li>
 		<li>\</li>
         <li>1.3CaveworldFloraUnleashed</li>
         <li IfModActive="BiomesTeam.BiomesIslands">1.3FlyingAndAquaticAnimals</li>
-	 </v1.3>
+	</v1.3>
+	<v1.4>
+		<li>1.4</li>
+		<li>\</li>
+		<li>1.4CaveworldFloraUnleashed</li>
+		<li IfModActive="BiomesTeam.BiomesIslands">1.4FlyingAndAquaticAnimals</li>
+	</v1.4>
 </loadFolders>
