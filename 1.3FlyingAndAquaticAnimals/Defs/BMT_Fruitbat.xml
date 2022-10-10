@@ -12,6 +12,13 @@
     </statFactors>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FruitBat/Bat_Hanging</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/FruitBat/BatFlying</texPath>
@@ -37,6 +44,13 @@
     </statFactors>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FruitBat/Bat_Hanging</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/FruitBat/BatFlying</texPath>
@@ -55,13 +69,19 @@
     <shearable>true</shearable>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FruitBat/Bat_Hanging</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/FruitBat/BatFlying</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
-      </li>
-    </modExtensions>
+      </li>    </modExtensions>
   </LifeStageDef>
   
   <ThingDef ParentName="AnimalThingBase">
@@ -69,9 +89,10 @@
     <label>fruit bat</label>
     <description>.</description>
     <statBases>
+      <BiomesCore_SleepSpeed>99</BiomesCore_SleepSpeed>
       <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
       <SwimSpeed>0.5</SwimSpeed>
-	  <MoveSpeed>0.8</MoveSpeed>
+	    <MoveSpeed>0.8</MoveSpeed>
       <MarketValue>95</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
