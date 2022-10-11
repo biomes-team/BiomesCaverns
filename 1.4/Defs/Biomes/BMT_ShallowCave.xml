@@ -76,41 +76,41 @@
       </li>
     </diseases>
 	<terrainsByFertility>
-      <!-- <li> -->
-        <!-- <terrain>Soil</terrain> -->
-        <!-- <min>-999</min> -->
-        <!-- <max>0.87</max> -->
-      <!-- </li> -->
-      <!-- <li> -->
-        <!-- <terrain>SoilRich</terrain> -->
-        <!-- <min>0.87</min> -->
-        <!-- <max>999</max> -->
-      <!-- </li> -->
       <li>
-        <terrain>BMT_FungalCaveGravel_Poor</terrain>
+        <terrain>Soil</terrain>
         <min>-999</min>
         <max>0.87</max>
       </li>
       <li>
-        <terrain>BMT_FungalCaveGravel_Rich</terrain>
+        <terrain>SoilRich</terrain>
         <min>0.87</min>
         <max>999</max>
       </li>
+      <!-- <li> -->
+        <!-- <terrain>BMT_FungalCaveGravel_Poor</terrain> -->
+        <!-- <min>-999</min> -->
+        <!-- <max>0.87</max> -->
+      <!-- </li> -->
+      <!-- <li> -->
+        <!-- <terrain>BMT_FungalCaveGravel_Rich</terrain> -->
+        <!-- <min>0.87</min> -->
+        <!-- <max>999</max> -->
+      <!-- </li> -->
     </terrainsByFertility>
     <terrainPatchMakers>
       <li>
         <perlinFrequency>0.035</perlinFrequency>
         <thresholds>
-          <li>
-            <terrain>BMT_FungalCaveGravel_Rich</terrain>
-            <min>0.63</min>
-            <max>0.83</max>
-          </li>
           <!-- <li> -->
-            <!-- <terrain>SoilRich</terrain> -->
+            <!-- <terrain>BMT_FungalCaveGravel_Rich</terrain> -->
             <!-- <min>0.63</min> -->
             <!-- <max>0.83</max> -->
           <!-- </li> -->
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>0.63</min>
+            <max>0.83</max>
+          </li>
           <li>
             <terrain>WaterShallow</terrain>
             <min>0.83</min>
