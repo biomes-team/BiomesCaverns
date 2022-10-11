@@ -59,7 +59,7 @@
         </ingredient>
         <uiIconScale>1.5</uiIconScale>
         <comps>
-            <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Metamorphosis">
                 <timeInYears>0.2</timeInYears>
                 <pawnToTurnInto>BMT_BloodropPupa</pawnToTurnInto>
             </li>
@@ -178,11 +178,11 @@
         </ingredient>
         <uiIconScale>1.5</uiIconScale>
         <comps>
-            <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Metamorphosis">
                 <timeInYears>0.1</timeInYears>
                 <pawnToTurnInto>BMT_BloodropMoth</pawnToTurnInto>
             </li>
-            <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
                 <hediffname>BMT_metamorphosis</hediffname>
                 <hediffseverity>1</hediffseverity>
             </li>

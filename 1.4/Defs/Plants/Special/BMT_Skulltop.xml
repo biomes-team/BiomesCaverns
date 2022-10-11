@@ -82,19 +82,19 @@
 			</li-->
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="BaseGas">
-		<defName>BMT_SkulltopSpore</defName>
-		<label>poisonous spores</label>
-		<graphicData>
-			<texPath>Things/Gas/Puff</texPath>
-			<drawSize>2.2</drawSize>
-			<color>(132,51,170,0.5)</color>
-		</graphicData>
-		<gas>
-			<expireSeconds>10~15</expireSeconds>
-			<blockTurretTracking>true</blockTurretTracking>
-			<accuracyPenalty>0.7</accuracyPenalty>
-			<rotationSpeed>10</rotationSpeed>
-		</gas>
-	</ThingDef>
+	<!-- <ThingDef ParentName="BaseGas"> -->
+		<!-- <defName>BMT_SkulltopSpore</defName> -->
+		<!-- <label>poisonous spores</label> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Gas/Puff</texPath> -->
+			<!-- <drawSize>2.2</drawSize> -->
+			<!-- <color>(132,51,170,0.5)</color> -->
+		<!-- </graphicData> -->
+		<!-- <gas> -->
+			<!-- <expireSeconds>10~15</expireSeconds> -->
+			<!-- <blockTurretTracking>true</blockTurretTracking> -->
+			<!-- <accuracyPenalty>0.7</accuracyPenalty> -->
+			<!-- <rotationSpeed>10</rotationSpeed> -->
+		<!-- </gas> -->
+	<!-- </ThingDef> -->
 </Defs>

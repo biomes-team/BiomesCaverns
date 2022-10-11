@@ -28,7 +28,7 @@
 				<spawnCount>1</spawnCount>
 				<spawnIntervalRange>2000~4000</spawnIntervalRange>
 			</li-->
-			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_FilthProducer">
 				<filthType>Filth_BMT_FuelTrail</filthType> 
 				<rate>0.2</rate> 
 				<radius>1</radius> 

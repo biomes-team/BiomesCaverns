@@ -113,7 +113,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_BuildPeriodically">
 				<defOfBuilding>BMT_MoleHill_Soil</defOfBuilding>
 				<ticksToBuild>1000</ticksToBuild>
 				<maxBuildingsPerMap>20</maxBuildingsPerMap>

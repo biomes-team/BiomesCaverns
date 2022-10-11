@@ -113,7 +113,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
 				<customThingToDig>
 					<li>RawFungus</li>
 				</customThingToDig>
@@ -122,7 +122,7 @@
 				</customAmountToDig>
 				<ticksToDig>60000</ticksToDig>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
 				<customThingToDig>RawFungus</customThingToDig>
 				<customAmountToDig>10</customAmountToDig>
 			</li>
