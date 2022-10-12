@@ -38,7 +38,6 @@
 			</li>
 		</tools>
 		<race>
-			<thinkTreeMain MayRequire="oskarpotocki.vanillafactionsexpanded.core">VEF_AnimalWeirdEater</thinkTreeMain>
 			<body>BeetleLike</body>
 			<baseBodySize>0.40</baseBodySize>
 			<baseHungerRate>1</baseHungerRate>
@@ -88,6 +87,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+                <isCustomThingEater>true</isCustomThingEater>
+            </li>
+        </modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggPillbugUnfertilized</eggUnfertilizedDef>
@@ -96,46 +100,42 @@
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggCountRange>2~4</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_EatWeirdFood" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<customThingToEat>
-					<li>Filth_Blood</li>
-					<li>ForsakenBlood</li>
-					<li>Filth_Blood_Gerzee</li>
-					<li>AvaliBlood</li>
-					<li>OG_FilthBlood_Eldar</li>
-					<li>OG_FilthBlood_Orkoid</li>
-					<li>OG_FilthBlood_Tau</li>
-					<li>OG_FilthBlood_Kroot</li>
-					<li>OG_FilthBlood_Ambull</li>
-					<li>OG_FilthBlood_ClawedFiend</li>
-					<li>OG_FilthBlood_ChaosDeamon</li>
-					<li>BloodSlimePerson</li>
-					<li>RE_FilthDrellBlood</li>
-					<li>Filth_BloodNaga</li>
-					<li>OG_FilthBlood_Tyranid</li>
-					<li>Filth_BloodInsect</li>
-					<li>AA_Filth_BlueBlood</li>
-					<li>FilthCum</li>
-					<li>FilthGirlCum</li>
-					<li>FilthMixture</li>
-					<li>Filth_Vomit</li>
-					<li>Filth_CorpseBile</li>
-					<li>Filth_AnimalFilth</li>
-					<li>RG_Filth_LeavesTreeOak</li>
-					<li>RG_Filth_LeavesTreePopolar</li>
-					<li>RG_Filth_LeavesTreeBirch</li>
-					<li>PM_Filth_Slurry</li>
-					<li>Filth_Ash</li>
-					<li>Filth_AmnioticFluid</li>
-					<li>Filth_Slime</li>
-					<li>Filth_Hair</li>
-				</customThingToEat>
-				<nutrition>1</nutrition>
-				<digThingIfMapEmpty>false</digThingIfMapEmpty>
-				<fullyDestroyThing>true</fullyDestroyThing>
-				<needsWater>true</needsWater>
+			<li Class="BiomesCore.CompCustomThingEater">
+				<thingsToNutritionMapper>
+					<li>Filth_Blood~0.3</li>
+					<li>ForsakenBlood~0.3</li>
+					<li>Filth_Blood_Gerzee~0.3</li>
+					<li>AvaliBlood~0.3</li>
+					<li>OG_FilthBlood_Eldar~0.3</li>
+					<li>OG_FilthBlood_Orkoid~0.3</li>
+					<li>OG_FilthBlood_Tau~0.3</li>
+					<li>OG_FilthBlood_Kroot~0.3</li>
+					<li>OG_FilthBlood_Ambull~0.3</li>
+					<li>OG_FilthBlood_ClawedFiend~0.3</li>
+					<li>OG_FilthBlood_ChaosDeamon~0.3</li>
+					<li>BloodSlimePerson~0.3</li>
+					<li>RE_FilthDrellBlood~0.3</li>
+					<li>Filth_BloodNaga~0.3</li>
+					<li>OG_FilthBlood_Tyranid~0.3</li>
+					<li>Filth_BloodInsect~0.3</li>
+					<li>AA_Filth_BlueBlood~0.3</li>
+					<li>FilthCum~0.3</li>
+					<li>FilthGirlCum~0.3</li>
+					<li>FilthMixture~0.3</li>
+					<li>Filth_Vomit~0.3</li>
+					<li>Filth_CorpseBile~0.3</li>
+					<li>Filth_AnimalFilth~0.3</li>
+					<li>RG_Filth_LeavesTreeOak~0.3</li>
+					<li>RG_Filth_LeavesTreePopolar~0.3</li>
+					<li>RG_Filth_LeavesTreeBirch~0.3</li>
+					<li>PM_Filth_Slurry~0.3</li>
+					<li>Filth_Ash~0.3</li>
+					<li>Filth_AmnioticFluid~0.3</li>
+					<li>Filth_Slime~0.3</li>
+					<li>Filth_Hair~0.3</li>
+				</thingsToNutritionMapper>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_NoFilth" MayRequire="oskarpotocki.vanillafactionsexpanded.core" />
+			<!--li Class="AnimalBehaviours.CompProperties_NoFilth" MayRequire="oskarpotocki.vanillafactionsexpanded.core" /-->
 		</comps>
 		<tradeTags>
 			<li>AnimalUncommon</li>

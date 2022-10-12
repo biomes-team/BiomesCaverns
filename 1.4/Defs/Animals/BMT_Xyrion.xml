@@ -59,11 +59,10 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<resourceDef>BMT_XyrionTail</resourceDef>
-				<gatheringIntervalDays>6</gatheringIntervalDays>
-				<resourceAmount>40</resourceAmount>
-				<customResourceString>XyrionTails</customResourceString>
+			<li Class="CompProperties_Shearable">
+				<woolDef>BMT_XyrionTail</woolDef>
+				<shearIntervalDays>6</shearIntervalDays>
+				<woolAmount>40</woolAmount>
 			</li>
 		</comps>
 		<race>
@@ -185,7 +184,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_XyrionTail</defName>
 		<label>xyrion tail</label>
-		<description>A xyrions tail. it is still twitching a bit.</description>
+		<description>A xyrions tail. It is still twitching a bit.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/XyrionTail</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

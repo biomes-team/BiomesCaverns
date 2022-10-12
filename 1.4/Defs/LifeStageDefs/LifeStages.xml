@@ -26,6 +26,11 @@
 		<visible>false</visible>
 		<reproductive>false</reproductive>
 	</LifeStageDef>
+	<LifeStageDef>
+		<defName>BMT_InsectLarvalThirdPlus</defName>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+	</LifeStageDef>
 	<!--Pupa-->
 	<LifeStageDef>
 		<defName>BMT_Pupa</defName>
