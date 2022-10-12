@@ -100,7 +100,7 @@
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggCountRange>2~4</eggCountRange>
 			</li>
-			<li Class="BiomesCore.CompCustomThingEater">
+			<li Class="BiomesCore.CompProperties_CustomThingEater">
 				<thingsToNutritionMapper>
 					<li>Filth_Blood~0.3</li>
 					<li>ForsakenBlood~0.3</li>
