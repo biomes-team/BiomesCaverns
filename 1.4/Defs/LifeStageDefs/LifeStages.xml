@@ -59,7 +59,7 @@
 			<li Class="TerrainMovement.TerrainMovementPawnKindGraphics" MayRequire="biomesteam.biomesislands">
 				<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Digging/BuriedThing</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Digging/Burrowed</texPath>
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -91,7 +91,7 @@
 			<li Class="TerrainMovement.TerrainMovementPawnKindGraphics" MayRequire="biomesteam.biomesislands">
 				<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Digging/BuriedThing</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Digging/Burrowed</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 			</li>
@@ -115,7 +115,7 @@
 			<li Class="TerrainMovement.TerrainMovementPawnKindGraphics" MayRequire="biomesteam.biomesislands">
 				<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Digging/BuriedThing</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Digging/Burrowed</texPath>
 					<drawSize>1.0</drawSize>
 				</bodyGraphicData>
 			</li>
