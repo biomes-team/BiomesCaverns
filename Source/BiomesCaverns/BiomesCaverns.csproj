@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6F666FE-8891-4BBF-BE7F-AE5B1A6D1D37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BiomesCaverns</RootNamespace>
+    <AssemblyName>BiomesCaverns</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\1.4\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BiomesCore">
+      <HintPath>..\..\..\BiomesCore\1.4\Assemblies\BiomesCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiomeWorker_NoTest.cs" />
+    <Compile Include="BiomeWorker_Test.cs" />
+    <Compile Include="BiomesCaverns.cs" />
+    <Compile Include="ActiveDrillPod.cs" />
+    <Compile Include="BC_DefOf.cs" />
+    <Compile Include="CompSpawnDust.cs" />
+    <Compile Include="DrillPodIncoming.cs" />
+    <Compile Include="CompCleanFilthAround.cs" />
+    <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
+    <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
+    <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
+    <Compile Include="Patches\DropCellFinder_RandomDropSpot_Patch.cs" />
+    <Compile Include="Patches\DropPodUtility_MakeDropPodAt_Patch.cs" />
+    <Compile Include="Patches\TravelingTransportPods_Arrived_Patch.cs" />
+    <Compile Include="Patches\TravelingTransportPods_TraveledPctStepPerTick_Patch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="Krafs.Publicizer">
+      <Version>1.0.2</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.4.3510-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.1.1</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Publicize Include="Assembly-CSharp;AllowTool" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

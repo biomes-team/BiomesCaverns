@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BiomeDef>
+    <defName>BMT_ShallowCave</defName>
+    <label>shallow cave</label>
+    <description>A shallow cave system</description>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isCavern>true</isCavern>
+			<cavernShapes>
+				<li>TunnelNetwork</li>
+			</cavernShapes>
+		</li>
+    <li Class="BiomesKit.BiomesKitControls">
+     <spawnOnBiomes>
+      <li>TemperateForest</li>
+      <li>TemperateSwamp</li>
+    </spawnOnBiomes>
+    <randomizeHilliness>True</randomizeHilliness>
+    <minimumLandNeighbors>4</minimumLandNeighbors>
+    <allowOnLand>true</allowOnLand>
+    <frequency>100</frequency>
+    <minTemperature>-14.5</minTemperature>
+    <maxTemperature>19.5</maxTemperature>
+    <usePerlin>true</usePerlin>
+    <perlinCulling>1.0</perlinCulling>
+  </li>
+	</modExtensions>
+    <animalDensity>1.8</animalDensity>
+    <plantDensity>0.3</plantDensity>
+    <settlementSelectionWeight>0.8</settlementSelectionWeight>
+    <movementDifficulty>0.5</movementDifficulty>
+    <texture>BMT_Caverns/World/Biomes/SurfaceCavern</texture>
+    <forageability>0.5</forageability>
+    <foragedFood>BMT_RawDulcis</foragedFood>
+    <wildPlantRegrowDays>27</wildPlantRegrowDays>
+    <soundsAmbient>
+      <li>BMT_Ambient_Cave_Calm</li>
+    </soundsAmbient>
+    <diseaseMtbDays>40</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+	<terrainsByFertility>
+      <li>
+        <terrain>Soil</terrain>
+        <min>-999</min>
+        <max>0.87</max>
+      </li>
+      <li>
+        <terrain>SoilRich</terrain>
+        <min>0.87</min>
+        <max>999</max>
+      </li>
+      <!-- <li> -->
+        <!-- <terrain>BMT_FungalCaveGravel_Poor</terrain> -->
+        <!-- <min>-999</min> -->
+        <!-- <max>0.87</max> -->
+      <!-- </li> -->
+      <!-- <li> -->
+        <!-- <terrain>BMT_FungalCaveGravel_Rich</terrain> -->
+        <!-- <min>0.87</min> -->
+        <!-- <max>999</max> -->
+      <!-- </li> -->
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.035</perlinFrequency>
+        <thresholds>
+          <!-- <li> -->
+            <!-- <terrain>BMT_FungalCaveGravel_Rich</terrain> -->
+            <!-- <min>0.63</min> -->
+            <!-- <max>0.83</max> -->
+          <!-- </li> -->
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>0.63</min>
+            <max>0.83</max>
+          </li>
+          <li>
+            <terrain>WaterShallow</terrain>
+            <min>0.83</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <baseWeatherCommonalities>
+      <BMT_Calm>100</BMT_Calm>
+    </baseWeatherCommonalities>
+    <wildPlants>
+		<!-- ground cover -->
+		<BMT_FloorMold>1.0</BMT_FloorMold>
+		<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+		<BMT_RustPuff>0.2</BMT_RustPuff>
+		<BMT_Sagecrust>1.5</BMT_Sagecrust>
+		<Bryolux>1.5</Bryolux>
+		<Plant_Moss>1.0</Plant_Moss>
+			
+		<!-- mid sized -->
+		<Agarilux>0.02</Agarilux>
+		<BMT_BleedingTooth>0.05</BMT_BleedingTooth>
+		<BMT_Ravelmush>0.02</BMT_Ravelmush>
+		<Glowstool>0.02</Glowstool>
+
+		<!-- trees -->
+			<Plant_Timbershroom MayRequire="Ludeon.RimWorld.Ideology">0.05</Plant_Timbershroom>		<!-- wood -->
+			
+		<!-- other harvestable -->
+		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>   <!-- food -->
+		<BMT_KessingerPlant>0.001</BMT_KessingerPlant>    <!-- food -->
+		<BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>    <!-- food -->
+		<Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.02</Plant_Nutrifungus>   <!-- food -->
+		
+		<!-- hydrophytes -->
+		<BMT_BiolumiAlgaeCarnelian>0.2</BMT_BiolumiAlgaeCarnelian>
+		<BMT_BiolumiAlgaeTanzanite>0.2</BMT_BiolumiAlgaeTanzanite>
+		<BMT_BiolumiAlgaeKunzite>0.2</BMT_BiolumiAlgaeKunzite>
+		<BMT_BiolumiAlgaeTurquoise>0.2</BMT_BiolumiAlgaeTurquoise>
+		<BMT_BiolumiAlgaeChrysoberyl>0.2</BMT_BiolumiAlgaeChrysoberyl>
+		<BMT_BiolumiAlgaeCitrine>0.2</BMT_BiolumiAlgaeCitrine>
+
+		<!-- special -->
+		<BMT_Shimmershroom>0.25</BMT_Shimmershroom>
+		<BMT_Glowbulb>0.3</BMT_Glowbulb>
+		<BMT_Greyfields>0.4</BMT_Greyfields>
+		<BMT_RoyalBracket>0.2</BMT_RoyalBracket>
+		<BMT_Gleamcap>0.1</BMT_Gleamcap>
+		<BMT_Brightbells>0.5</BMT_Brightbells>
+
+    </wildPlants>
+
+    <wildAnimals>
+		<!-- herbivores -->
+		<BMT_CaveCricket>0.25</BMT_CaveCricket>
+		<BMT_GlowSlug>0.1</BMT_GlowSlug>
+		<BMT_GlowSnail>0.05</BMT_GlowSnail>
+		<BMT_Goeto>0.3</BMT_Goeto>
+		<BMT_MossBeetle>0.075</BMT_MossBeetle>
+		<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+		<BMT_Pillbug>0.2</BMT_Pillbug>
+		<BMT_TruffleMole>0.1</BMT_TruffleMole>
+		<BMT_Xyrion>0.1</BMT_Xyrion>
+		<Boomrat>0.5</Boomrat>
+		<Hare>1.3</Hare>
+		<Megasloth>0.1</Megasloth>
+		<Rat>1.3</Rat>
+		<BMT_Mole>0.2</BMT_Mole>
+
+		<!-- predators -->
+		<Cougar>0.15</Cougar>
+		<Fox_Fennec>0.15</Fox_Fennec>
+
+    </wildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+      <li>Alpaca</li>
+	  <li>BMT_GiantSnail</li>
+    </allowedPackAnimals>
+  </BiomeDef>
+
+</Defs>
