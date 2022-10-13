@@ -23,17 +23,10 @@
 				<milkAmount>4</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
-			<!--li Class="CompProperties_Spawner">
-				<thingToSpawn>Filth_BMT_FuelTrail</thingToSpawn>
-				<spawnCount>1</spawnCount>
-				<spawnIntervalRange>2000~4000</spawnIntervalRange>
-			</li-->
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_FilthProducer">
-				<filthType>Filth_BMT_FuelTrail</filthType> 
-				<rate>0.2</rate> 
-				<radius>1</radius> 
-				<ticksToCreateFilth>3000</ticksToCreateFilth>
-			</li>
+            <li Class="BiomesCore.CompProperties_MakeFilthTrail">
+                <filthDef>Filth_FuelTrail</filthDef>
+                <cooldown>2</cooldown>
+            </li>
 		</comps>
 		<tools>
 			<li>
@@ -168,7 +161,7 @@
 	</ThingDef>
 	<!--filth / trail -->
 	<ThingDef ParentName="BaseFilth">
-		<defName>Filth_BMT_FuelTrail</defName>
+		<defName>Filth_FuelTrail</defName>
 		<label>chemfuel trail</label>
 		<description>A trail of hardend flammable chemslime left from a chem snail.</description>
 		<useHitPoints>true</useHitPoints>

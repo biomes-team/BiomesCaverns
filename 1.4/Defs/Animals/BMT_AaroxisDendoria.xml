@@ -14,7 +14,7 @@
 			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -43,8 +43,8 @@
 					<minAge>0.05</minAge>
 				</li>
 				<li>
-					<def>BMT_InsectLarvalThird</def>
-					<minAge>0.1</minAge>
+					<def>BMT_InsectLarvalThirdPlus</def>
+					<minAge>0.2</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
 					<soundCall>Pawn_Megascarab_Call</soundCall>
@@ -57,11 +57,19 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
 			</mergeCompatibilityTags>
 		</ingredient>
-		<uiIconScale>1.5</uiIconScale>
+		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Metamorphosis">
-				<timeInYears>0.333</timeInYears>
-				<pawnToTurnInto>BMT_AaroxisDendoriaPupa</pawnToTurnInto>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggAaroxisDendoriaUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggAaroxisDendoriaFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>3</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>30</ageInDays>
+				<evolveIntoPawnKindDef>BMT_AaroxisDendoriaPupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -145,6 +153,8 @@
 			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
+			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
+			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
@@ -153,8 +163,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.001</baseHungerRate>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<foodType>None</foodType>
 			<wildness>1</wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -176,15 +185,11 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
 			</mergeCompatibilityTags>
 		</ingredient>
-		<uiIconScale>1.5</uiIconScale>
+		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Metamorphosis">
-				<timeInYears>0.1</timeInYears>
-				<pawnToTurnInto>BMT_AaroxisDendoria</pawnToTurnInto>
-			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
-				<hediffname>BMT_metamorphosis</hediffname>
-				<hediffseverity>1</hediffseverity>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>1</ageInDays>
+				<evolveIntoPawnKindDef>BMT_AaroxisDendoria</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -193,7 +198,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>0</power>
+				<power>0.1</power>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -208,16 +213,16 @@
 		<label>aaroxis dendoria pupa</label>
 		<race>BMT_AaroxisDendoriaPupa</race>
 		<combatPower>0</combatPower>
-		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<ecoSystemWeight>0.01</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaPupa/AaroxisDendoriaPupa</texPath>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/AaroxisDendoriaPupa</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaPupa/Dessicated_AaroxisDendoriaPupa</texPath>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_AaroxisDendoriaPupa</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -237,7 +242,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<race>
-			<hasGenders>true</hasGenders>
+			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -278,16 +283,8 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
 			</mergeCompatibilityTags>
 		</ingredient>
-		<uiIconScale>1.5</uiIconScale>
+		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggAaroxisDendoriaUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>BMT_EggAaroxisDendoriaFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>3</eggFertilizationCountMax>
-				<eggLayIntervalDays>5</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1</eggCountRange>
-			</li>
 			<li Class="CompProperties_Shearable">
 				<woolDef>Cloth</woolDef>
 				<shearIntervalDays>10</shearIntervalDays>
@@ -391,7 +388,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>61</MarketValue>
+			<MarketValue>5</MarketValue>
 		</statBases>
 	</ThingDef>
 </Defs>

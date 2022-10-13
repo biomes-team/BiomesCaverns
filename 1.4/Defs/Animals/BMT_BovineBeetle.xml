@@ -59,9 +59,9 @@
 		</ingredient>
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Metamorphosis">
-				<timeInYears>0.15</timeInYears>
-				<pawnToTurnInto>BMT_BovineBeetlePupa</pawnToTurnInto>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>1</ageInDays>
+				<evolveIntoPawnKindDef>BMT_BovineBeetlePupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -148,6 +148,8 @@
 			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
+			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
+			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
@@ -156,8 +158,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.001</baseHungerRate>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<foodType>None</foodType>
 			<wildness>1</wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -181,13 +182,9 @@
 		</ingredient>
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Metamorphosis">
-				<timeInYears>0.1</timeInYears>
-				<pawnToTurnInto>BMT_BovineBeetle</pawnToTurnInto>
-			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
-				<hediffname>BMT_metamorphosis</hediffname>
-				<hediffseverity>1</hediffseverity>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>1</ageInDays>
+				<evolveIntoPawnKindDef>BMT_BovineBeetle</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -313,6 +310,7 @@
 				<milkDef>Milk</milkDef>
 				<milkIntervalDays>3</milkIntervalDays>
 				<milkAmount>16</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggBovineBeetleUnfertilized</eggUnfertilizedDef>

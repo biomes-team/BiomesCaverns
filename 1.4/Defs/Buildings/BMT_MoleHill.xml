@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BuildingBase">
+	<!--ThingDef ParentName="BuildingBase">
 		<defName>BMT_MoleHill_Soil</defName>
 		<label>mole hill</label>
 		<description>Mole hill.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Animal/Digging/Building_BuriedThing</texPath>
+			<texPath>BMT_Caverns/Things/Animal/Digging/Burrowed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.9,0.9)</drawSize>
 		</graphicData>
@@ -35,5 +35,5 @@
 		<selectable>true</selectable>
 		<size>(1,1)</size>
 		<blockPlants>true</blockPlants>
-	</ThingDef>
+	</ThingDef-->
 </Defs>
