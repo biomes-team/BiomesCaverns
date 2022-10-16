@@ -7,7 +7,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/SonarRabbit_Wounded</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/Wounded</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -25,7 +25,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/SonarRabbit_Death</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/Death</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -42,7 +42,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/SonarRabbit_Call</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/Call</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>20~28</volumeRange>
@@ -59,7 +59,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/SonarRabbit_Angry</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/SonarRabbit/Angry</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>

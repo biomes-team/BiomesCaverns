@@ -7,7 +7,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Bat/Bat_Angry</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Bat/Angry</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -24,7 +24,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Bat/Bat_Call</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Bat/Call</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>20~28</volumeRange>
@@ -41,7 +41,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Bat/Bat_Death</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Bat/Death</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -58,7 +58,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Bat/Bat_Wounded</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Bat/Wounded</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>

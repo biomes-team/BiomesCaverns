@@ -7,7 +7,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Yooka/Yooka_Wounded</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Yooka/Wounded</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -25,7 +25,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Yooka/Yooka_Death</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Yooka/Death</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -42,7 +42,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Yooka/Yooka_Call</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Yooka/Call</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>20~28</volumeRange>
@@ -59,7 +59,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Yooka/Yooka_Angry</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Yooka/Angry</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>

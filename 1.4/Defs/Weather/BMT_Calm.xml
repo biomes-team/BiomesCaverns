@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
   <WeatherDef>
     <defName>BMT_Calm</defName>
     <label>calm</label>
@@ -37,8 +36,4 @@
       <saturation>0.9</saturation>
      </skyColorsNightMid> 
   </WeatherDef>
-
-  
-  
-  
 </Defs>

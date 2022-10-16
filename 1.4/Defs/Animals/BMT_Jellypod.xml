@@ -65,7 +65,7 @@
 				<li>
 					<def>EusocialInsectLarva</def>
 					<minAge>0.2</minAge>
-					<soundWounded>Biomes_Jellypod_Pain</soundWounded>
+					<soundWounded>Biomes_Jellypod_Wounded</soundWounded>
 					<soundDeath>Biomes_Jellypod_Death</soundDeath>
 					<soundCall>Biomes_Jellypod_Call</soundCall>
 					<soundAngry>Biomes_Jellypod_Angry</soundAngry>
