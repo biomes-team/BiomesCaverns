@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+  <DamageDef ParentName="Bomb">
+	<defName>BMT_Crystalope_SharpBomb</defName>
+	<label>crystal bomb</label>
+	<defaultDamage>20</defaultDamage>
+	<defaultArmorPenetration>0.9</defaultArmorPenetration>
+  </DamageDef>
+
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_Crystalope</defName>
 	<label>crystalope</label>
-	<description>Engineered for chemicals production, the crystalope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce chemfuel - very carefully.</description>
+	<description>Engineered for crystal production, the crystalope grows a large crystals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce crystals - very carefully.</description>
 	<statBases>
 	  <MoveSpeed>3.4</MoveSpeed>
 	  <MarketValue>350</MarketValue>
