@@ -138,11 +138,20 @@
     </wildPlants>
 
     <wildAnimals>
-	<!-- herbivores -->
+		<!-- herbivores -->
 		<!-- <Rat>1.3</Rat> -->
 		<BMT_Crystalope>0.8</BMT_Crystalope>
+		
+		<!-- onmnivore -->
+		<BMT_CrystalCrab_Sandstone>0.08</BMT_CrystalCrab_Sandstone>
+		<BMT_CrystalCrab_Granite>0.08</BMT_CrystalCrab_Granite>
+		<BMT_CrystalCrab_Limestone>0.08</BMT_CrystalCrab_Limestone>
+		<BMT_CrystalCrab_Slate>0.08</BMT_CrystalCrab_Slate>
+		<BMT_CrystalCrab_Marble>0.08</BMT_CrystalCrab_Marble>
+		<BMT_CrystalCrab_Jade>0.01</BMT_CrystalCrab_Jade>
+		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.06</BMT_CrystalCrab_Coral>
 	
-	<!-- predators -->
+		<!-- predators -->
 	
     </wildAnimals>
     <allowedPackAnimals>

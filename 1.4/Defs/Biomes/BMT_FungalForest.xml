@@ -185,31 +185,40 @@
     </wildPlants>
 
     <wildAnimals>
-	<!-- herbivores -->
-    <BMT_AaroxisDendoria>0.01</BMT_AaroxisDendoria>
-    <BMT_AaroxisDendoriaLarvae>0.02</BMT_AaroxisDendoriaLarvae>
-    <BMT_BovineBeetle>0.05</BMT_BovineBeetle>
-    <BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
-    <BMT_CaveCricket>0.25</BMT_CaveCricket>
-    <BMT_GiantSlug>0.3</BMT_GiantSlug>
-    <BMT_GiantSnail>0.2</BMT_GiantSnail>
-    <BMT_GlowSlug>0.1</BMT_GlowSlug>
-    <BMT_GlowSnail>0.05</BMT_GlowSnail>
-    <BMT_Goeto>0.3</BMT_Goeto>
-    <BMT_Maxolotl>0.05</BMT_Maxolotl>
-    <BMT_MossBeetle>0.075</BMT_MossBeetle>
-    <BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
-    <BMT_Pillbug>0.2</BMT_Pillbug>
-    <BMT_RoyalRhino>0.01</BMT_RoyalRhino>
-    <BMT_SonarRabbit>0.5</BMT_SonarRabbit>
-    <BMT_TruffleMole>0.1</BMT_TruffleMole>
-    <BMT_Xyrion>0.1</BMT_Xyrion>
-    <BMT_Yooka>0.2</BMT_Yooka>
-    <BMT_Mole>0.05</BMT_Mole>
+		<!-- herbivores -->
+		<BMT_AaroxisDendoria>0.01</BMT_AaroxisDendoria>
+		<BMT_AaroxisDendoriaLarvae>0.02</BMT_AaroxisDendoriaLarvae>
+		<BMT_BovineBeetle>0.05</BMT_BovineBeetle>
+		<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
+		<BMT_CaveCricket>0.25</BMT_CaveCricket>
+		<BMT_GiantSlug>0.3</BMT_GiantSlug>
+		<BMT_GiantSnail>0.2</BMT_GiantSnail>
+		<BMT_GlowSlug>0.1</BMT_GlowSlug>
+		<BMT_GlowSnail>0.05</BMT_GlowSnail>
+		<BMT_Goeto>0.3</BMT_Goeto>
+		<BMT_Maxolotl>0.05</BMT_Maxolotl>
+		<BMT_MossBeetle>0.075</BMT_MossBeetle>
+		<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+		<BMT_Pillbug>0.2</BMT_Pillbug>
+		<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
+		<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
+		<BMT_TruffleMole>0.1</BMT_TruffleMole>
+		<BMT_Xyrion>0.1</BMT_Xyrion>
+		<BMT_Yooka>0.2</BMT_Yooka>
+		<BMT_Mole>0.05</BMT_Mole>
 
-	<!-- predators -->
-    <BMT_FungalFerret>0.1</BMT_FungalFerret>
-    <BMT_MossyFennec>0.1</BMT_MossyFennec>
+		<!-- predators -->
+		<BMT_FungalFerret>0.1</BMT_FungalFerret>
+		<BMT_MossyFennec>0.1</BMT_MossyFennec>
+			
+		<!-- onmnivore -->
+		<BMT_CrystalCrab_Sandstone>0.01</BMT_CrystalCrab_Sandstone>
+		<BMT_CrystalCrab_Granite>0.01</BMT_CrystalCrab_Granite>
+		<BMT_CrystalCrab_Limestone>0.01</BMT_CrystalCrab_Limestone>
+		<BMT_CrystalCrab_Slate>0.01</BMT_CrystalCrab_Slate>
+		<BMT_CrystalCrab_Marble>0.01</BMT_CrystalCrab_Marble>
+		<BMT_CrystalCrab_Jade>0.002</BMT_CrystalCrab_Jade>
+		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.01</BMT_CrystalCrab_Coral>
 
     </wildAnimals>
     <allowedPackAnimals>
