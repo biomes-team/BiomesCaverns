@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+	<defName>BMT_Crystalope</defName>
+	<label>crystalope</label>
+	<description>Engineered for chemicals production, the crystalope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce chemfuel - very carefully.</description>
+	<statBases>
+	  <MoveSpeed>3.4</MoveSpeed>
+	  <MarketValue>350</MarketValue>
+	  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+	  <FilthRate>16</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+	</statBases>
+	<comps>
+	  <!-- <li Class="CompProperties_Milkable"> -->
+		<!-- <milkDef>Chemfuel</milkDef> -->
+		<!-- <milkIntervalDays>1</milkIntervalDays> -->
+		<!-- <milkAmount>11</milkAmount> -->
+		<!-- <milkFemaleOnly>false</milkFemaleOnly> -->
+	  <!-- </li> -->
+	</comps>
+	<race>
+	  <body>QuadrupedAnimalWithHoovesAndHump</body>
+	  <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+	  <executionRange>6</executionRange>
+	  <herdAnimal>true</herdAnimal>
+	  <baseBodySize>2.0</baseBodySize>
+	  <baseHungerRate>0.535</baseHungerRate>
+	  <baseHealthScale>0.65</baseHealthScale>
+	  <foodType>VegetarianRoughAnimal</foodType>
+	  <leatherDef>Leather_Plain</leatherDef>
+	  <wildness>0.6</wildness>
+	  <roamMtbDays>2</roamMtbDays>
+	  <canBePredatorPrey>false</canBePredatorPrey>
+	  <gestationPeriodDays>6.66</gestationPeriodDays>
+	  <trainability>None</trainability>
+	  <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+	  <lifeExpectancy>15</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.2</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.3333</minAge>
+		  <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+		  <soundDeath>Pawn_Muffalo_Death</soundDeath>
+		  <soundCall>Pawn_Muffalo_Call</soundCall>
+		  <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.22)</li>
+		<li>(0.38, 0, 0.01)</li>
+		<li>(0.0, 0, -0.165)</li>
+		<li>(-0.38, 0, 0.01)</li>
+	  </headPosPerRotation>
+	</race>
+	<tradeTags>
+	  <li>AnimalUncommon</li>
+	  <li>AnimalFighter</li>
+	</tradeTags>
+	<tools>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>7</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	  <li>
+		<label>left hoof</label>
+		<capacities>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>9</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>right hoof</label>
+		<capacities>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>9</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>10</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+	  </li>
+	</tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_Crystalope</defName>
+	<label>crystalope</label>
+	<race>BMT_Crystalope</race>
+	<combatPower>80</combatPower>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<wildGroupSize>3~6</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<label>crystalope calf</label>
+		<labelPlural>crystalope calves</labelPlural>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Crystalope/Crystalope</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.0</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.4, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+		<corpseGraphicData>
+		  <texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+		  <drawSize>1.0</drawSize>
+		</corpseGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Crystalope/Crystalope</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.4</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+		  <drawSize>1.4</drawSize>
+		</dessicatedBodyGraphicData>
+		<corpseGraphicData>
+		  <texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+		  <drawSize>1.4</drawSize>
+		</corpseGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Crystalope/Crystalope</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.8</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Boomalope/Dessicated_Boomalope</texPath>
+		  <drawSize>1.8</drawSize>
+		</dessicatedBodyGraphicData>
+		<corpseGraphicData>
+		  <texPath>Things/Pawn/Animal/Boomalope/Corpse_Boomalope</texPath>
+		  <drawSize>1.8</drawSize>
+		</corpseGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>
