@@ -22,7 +22,7 @@
 	</comps>
 	<race>
 	  <body>QuadrupedAnimalWithHoovesAndHump</body>
-	  <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+	  <deathActionWorkerClass>BMT.DeathActionWorker_SharpExplosion</deathActionWorkerClass>
 	  <executionRange>6</executionRange>
 	  <herdAnimal>true</herdAnimal>
 	  <baseBodySize>2.0</baseBodySize>
