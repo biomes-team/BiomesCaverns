@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="TreeBase" Name="BMT_Crystal_Base" Abstract="True">
+	<!-- <defName>BMT_Crystal_Blue</defName> -->
+	<label>blue crystal</label>
+	<description>crystal.</description>
+	<thingClass>Plant</thingClass>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Crystals/White</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <shaderType>CutoutPlant</shaderType>
+	  <shadowData>
+		<volume>(0.12, 0.08, 0.1)</volume>
+		<offset>(0,0,-0.25)</offset>
+	  </shadowData>
+	</graphicData>
+	<category>Plant</category>
+	<!-- <altitudeLayer>LowPlant</altitudeLayer> -->
+	<useHitPoints>True</useHitPoints>
+	<tickerType>Long</tickerType>
+	<neverMultiSelect>false</neverMultiSelect>
+	<drawerType>MapMeshOnly</drawerType>
+	<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+	<minifiedDef IsNull="True" />
+	<altitudeLayer>Building</altitudeLayer>
+	<selectable>true</selectable>
+	<fillPercent>0.25</fillPercent>
+	<rotatable>false</rotatable>
+	<passability>PassThroughOnly</passability>
+	<pathCost>42</pathCost>
+	<blockWind>true</blockWind>
+	<statBases>
+	  <!-- <MaxHitPoints>200</MaxHitPoints> -->
+	  <!-- <Flammability>0.8</Flammability> -->
+	  <!-- <Nutrition>2.0</Nutrition> -->
+	  <!-- <Mass>150</Mass> -->
+	  <Nutrition>0.0</Nutrition>
+	  <Beauty>5</Beauty>
+	  <BeautyOutdoors>5</BeautyOutdoors>
+	  <Flammability>0</Flammability>
+	  <MaxHitPoints>250</MaxHitPoints>
+	</statBases>
+	<ingestible>
+	  <foodType>Tree</foodType>
+	  <preferability>NeverForNutrition</preferability>
+	</ingestible>
+	<!-- <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn> -->
+	<plant>
+	  <!-- <minSpacingBetweenSamePlant>4.9</minSpacingBetweenSamePlant> -->
+	  <growDays>240</growDays>
+	  <dieIfNoSunlight>False</dieIfNoSunlight>
+	  <dieFromToxicFallout>False</dieFromToxicFallout>
+	  <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+	  <fertilityMin>0.0</fertilityMin>
+	  <fertilitySensitivity>0</fertilitySensitivity>
+	  <allowAutoCut>false</allowAutoCut>
+	  <warnIfMarkedForCut>true</warnIfMarkedForCut>
+	  <!-- = -->
+	  <sowWork>4000</sowWork>
+	  <sowMinSkill>6</sowMinSkill>
+	  <sowResearchPrerequisites>
+		<!-- <li>TreeSowing</li> -->
+	  </sowResearchPrerequisites>
+	  <mustBeWildToSow>true</mustBeWildToSow>
+	  <harvestWork>800</harvestWork>
+	  <harvestedThingDef>WoodLog</harvestedThingDef>
+	  <harvestYield>25</harvestYield>
+	  <harvestTag>Wood</harvestTag>
+	  <harvestMinGrowth>0.10</harvestMinGrowth>
+	  <harvestFailable>false</harvestFailable>
+	  <blockAdjacentSow>true</blockAdjacentSow>
+	  <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+	  <dieIfLeafless>false</dieIfLeafless>
+	  <!-- <treeCategory>Full</treeCategory> -->
+	  <!-- <immatureGraphicPath>Things/Plant/CornPlant_Immature</immatureGraphicPath> -->
+	  <sowTags>
+		<li>Ground</li>
+	  </sowTags>
+	  <visualSizeRange>0.5~1.0</visualSizeRange>
+	  <topWindExposure>0.0</topWindExposure>
+	  <!-- <wildClusterRadius>4</wildClusterRadius> -->
+	  <!-- <wildClusterWeight>1420</wildClusterWeight> -->
+	  <wildOrder>3</wildOrder>
+	  <interferesWithRoof>false</interferesWithRoof>
+	  <pollution>Any</pollution>
+	  <neverBlightable>true</neverBlightable>
+	  <growMinGlow>0</growMinGlow>
+	  <!-- <growOptimalGlow>0</growOptimalGlow> -->
+	  <cavePlant>true</cavePlant>
+	</plant>
+	<comps>
+	  <!-- <li Class="CompProperties_Glower"> -->
+		<!-- <glowRadius>3.75</glowRadius> -->
+		<!-- <glowColor>(110,116,125,0)</glowColor> -->
+	  <!-- </li> -->
+	</comps>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<allowInCave>true</allowInCave>
+			<allowInBuilding>true</allowInBuilding>
+			<!-- <allowUnroofed>true</allowUnroofed> -->
+		</li>
+	</modExtensions>
+  </ThingDef>
+  
+</Defs>

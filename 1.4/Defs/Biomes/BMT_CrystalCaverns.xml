@@ -122,18 +122,33 @@
       <BMT_Calm>100</BMT_Calm>
     </baseWeatherCommonalities>
     <wildPlants>
-	<!-- ground cover -->
-		<!-- <BMT_FloorMold>1.0</BMT_FloorMold> -->
-		
-	<!-- mid sized -->
+		<!-- ground cover -->
+		<BMT_FloorMold>1.0</BMT_FloorMold>
+			
+		<!-- mid sized -->
 
-	<!-- trees -->
+		<!-- trees -->
+			
+		<!-- other harvestable -->
 		
-	<!-- other harvestable -->
-    
-	<!-- hydrophytes -->
+		<!-- hydrophytes -->
 
-	<!-- special -->
+		<!-- special -->
+		<BMT_Crystal_WhiteSmall>0.1</BMT_Crystal_WhiteSmall>
+		<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
+		<BMT_Crystal_RedSmall>0.1</BMT_Crystal_RedSmall>
+		<!-- = -->
+		<BMT_Crystal_WhiteMedium>0.08</BMT_Crystal_WhiteMedium>
+		<BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium>
+		<BMT_Crystal_RedMedium>0.08</BMT_Crystal_RedMedium>
+		<!-- = -->
+		<BMT_Crystal_WhiteLarge>0.04</BMT_Crystal_WhiteLarge>
+		<BMT_Crystal_BlueLarge>0.04</BMT_Crystal_BlueLarge>
+		<BMT_Crystal_RedLarge>0.04</BMT_Crystal_RedLarge>
+		<!-- = -->
+		<BMT_Crystal_WhiteHuge>0.01</BMT_Crystal_WhiteHuge>
+		<BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge>
+		<BMT_Crystal_RedHuge>0.01</BMT_Crystal_RedHuge>
 
     </wildPlants>
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BMT_Crystal_Base" Name="BMT_Crystal_Medium" Abstract="True">
+	<plant>
+	  <!-- <wildClusterRadius>2</wildClusterRadius> -->
+	  <visualSizeRange>0.3~0.5</visualSizeRange>
+	</plant>
+  </ThingDef>
+
+  <!-- ====================================================== -->
+
+  <ThingDef ParentName="BMT_Crystal_Medium">
+	<defName>BMT_Crystal_WhiteMedium</defName>
+	<label>white crystal</label>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Crystals/WhiteMedium</texPath>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>2.75</glowRadius>
+		<glowColor>(90,90,90,0)</glowColor>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_Crystal_Medium">
+	<defName>BMT_Crystal_BlueMedium</defName>
+	<label>blue crystal</label>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Crystals/BlueMedium</texPath>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>2.75</glowRadius>
+		<glowColor>(40,40,90,0)</glowColor>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_Crystal_Medium">
+	<defName>BMT_Crystal_RedMedium</defName>
+	<label>red crystal</label>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Crystals/RedMedium</texPath>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>2.75</glowRadius>
+		<glowColor>(90,40,40,0)</glowColor>
+	  </li>
+	</comps>
+  </ThingDef>
+  
+</Defs>
