@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_WeakChitin</defName>
-		<label>weak chitin</label>
+		<label>brittle chitin</label>
 		<!-- small chitin t1 -->
 		<description>Chitin of a giant insect.</description>
 		<graphicData>
@@ -17,7 +17,7 @@
 			<StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-			<color>(81,48,100)</color>
+			<color>(61,48,70)</color>
 			<statFactors>
 				<MaxHitPoints>1.0</MaxHitPoints>
 				<Beauty>1</Beauty>
@@ -28,7 +28,7 @@
 	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_MediumChitin</defName>
 		<!-- medium chitin t2 -->
-		<label>medium chitin</label>
+		<label>tough chitin</label>
 		<description>Chitin of a giant insect.</description>
 		<graphicData>
 			<color>(61,48,100)</color>
@@ -41,7 +41,7 @@
 			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-			<color>(81,48,100)</color>
+			<color>(61,48,100)</color>
 			<statFactors>
 				<MaxHitPoints>1.2</MaxHitPoints>
 				<Beauty>3</Beauty>
@@ -51,7 +51,7 @@
 
 	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_RoyalChitin</defName>
-		<!-- big chitin t3 -->
+		<!-- large chitin t3 -->
 		<label>royal chitin</label>
 		<description>A legendary, royal, chitinous shell.</description>
 		<graphicData>
