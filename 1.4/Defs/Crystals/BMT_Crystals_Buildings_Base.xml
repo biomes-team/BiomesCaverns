@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase" Name="BMT_Crystal_Building_Base" Abstract="True">
+	<category>Building</category>
+	<thingClass>Building</thingClass>
+	<graphicData>
+	  <!-- <texPath>Things/Building/Ruins/AncientConcreteBarrier</texPath> -->
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<thingCategories Inherit="False"/>
+	<building>
+	  <deconstructible>true</deconstructible>
+	  <claimable>false</claimable>
+	</building>
+	<costList>
+	  <!-- <Steel>15</Steel> -->
+	</costList>
+  </ThingDef>
+
+</Defs>

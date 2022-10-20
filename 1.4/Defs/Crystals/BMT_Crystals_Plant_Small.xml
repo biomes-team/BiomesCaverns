@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BMT_Crystal_Plant_Base" Name="BMT_Crystal_Small" Abstract="True">
+	<tickerType>Rare</tickerType>
+	<plant>
+	  <!-- <wildClusterRadius>1</wildClusterRadius> -->
+	  <visualSizeRange>0.2~0.3</visualSizeRange>
+	  <maxMeshCount>4</maxMeshCount>
+	</plant>
+	<statBases>
+	  <MaxHitPoints>140</MaxHitPoints>
+	</statBases>
+  </ThingDef>
+
+  <!-- ====================================================== -->
+
+  <ThingDef ParentName="BMT_Crystal_Small">
+	<defName>BMT_Crystal_BlueSmall</defName>
+	<label>blue crystal</label>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Crystals/BlueSmall</texPath>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>1.75</glowRadius>
+		<glowColor>(40,40,90,0)</glowColor>
+	  </li>
+	  <li Class="BMT.CompProperties_ThingDefReplacer">
+		<evolveIntoThingDef>BMT_Crystal_BlueMedium</evolveIntoThingDef>
+		<spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange>
+	  </li>
+	</comps>
+  </ThingDef>
+  
+</Defs>

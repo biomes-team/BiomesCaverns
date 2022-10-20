@@ -29,7 +29,7 @@
 			<perlinCulling>1.0</perlinCulling>
 		</li>
 	</modExtensions>
-    <animalDensity>1.8</animalDensity>
+    <animalDensity>0.8</animalDensity>
     <plantDensity>0.3</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
@@ -122,18 +122,25 @@
       <BMT_Calm>100</BMT_Calm>
     </baseWeatherCommonalities>
     <wildPlants>
-	<!-- ground cover -->
-		<!-- <BMT_FloorMold>1.0</BMT_FloorMold> -->
-		
-	<!-- mid sized -->
+		<!-- ground cover -->
+		<BMT_FloorMold>1.0</BMT_FloorMold>
+			
+		<!-- mid sized -->
 
-	<!-- trees -->
+		<!-- trees -->
+			
+		<!-- other harvestable -->
 		
-	<!-- other harvestable -->
-    
-	<!-- hydrophytes -->
+		<!-- hydrophytes -->
 
-	<!-- special -->
+		<!-- special -->
+		<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
+		<!-- = -->
+		<BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium>
+		<!-- = -->
+		<BMT_Crystal_BlueLarge>0.04</BMT_Crystal_BlueLarge>
+		<!-- = -->
+		<BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge>
 
     </wildPlants>
 
