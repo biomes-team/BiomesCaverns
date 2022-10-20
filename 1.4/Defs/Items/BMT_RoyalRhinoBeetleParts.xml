@@ -1,28 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BiomesCore_ChitinBase">
-		<defName>BMT_RoyalChitin</defName>
-		<label>royal chitin</label>
-		<description>A legendary, royal, chitinous shell.</description>
-		<graphicData>
-			<color>(81,48,100)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>10.0</MarketValue>
-			<StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
-			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
-		</statBases>
-		<stuffProps>
-			<color>(81,48,100)</color>
-			<statFactors>
-				<MaxHitPoints>1.8</MaxHitPoints>
-				<Beauty>6</Beauty>
-			</statFactors>
-		</stuffProps>
-
-	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_RoyalRhinoHorn</defName>
 		<label>royal rhino beetle horn</label>
