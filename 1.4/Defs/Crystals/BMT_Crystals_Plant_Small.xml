@@ -26,9 +26,9 @@
 		<glowRadius>1.75</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
-	  <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+	  <li Class="BMT.CompProperties_ThingDefReplacer">
 		<evolveIntoThingDef>BMT_Crystal_BlueMedium</evolveIntoThingDef>
-		<ageInDays>1</ageInDays>
+		<spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange>
 	  </li>
 	</comps>
   </ThingDef>
