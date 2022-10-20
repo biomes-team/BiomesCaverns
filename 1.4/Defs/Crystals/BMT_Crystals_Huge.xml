@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   
-  <ThingDef ParentName="BMT_Crystal_Base" Name="BMT_Crystal_Huge" Abstract="True">
-	<plant>
-	  <!-- <wildClusterRadius>3</wildClusterRadius> -->
-	  <visualSizeRange>0.8~1.2</visualSizeRange>
-	</plant>
+  <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Huge" Abstract="True">
+	<tickerType>Rare</tickerType>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<statBases>
+	  <MaxHitPoints>420</MaxHitPoints>
+	  <Mass>70</Mass>
+	</statBases>
+	<building>
+	  <deconstructible>true</deconstructible>
+	  <claimable>true</claimable>
+	</building>
+	<thingCategories>
+	  <li>BuildingsSpecial</li>
+	</thingCategories>
+	<minifiedDef>MinifiedThing</minifiedDef>
   </ThingDef>
 
   <!-- ====================================================== -->
-
-  <ThingDef ParentName="BMT_Crystal_Huge">
-	<defName>BMT_Crystal_WhiteHuge</defName>
-	<label>white crystal</label>
-	<graphicData>
-	  <texPath>BMT_Caverns/Things/Crystals/WhiteHuge</texPath>
-	</graphicData>
-	<comps>
-	  <li Class="CompProperties_Glower">
-		<glowRadius>3.75</glowRadius>
-		<glowColor>(90,90,90,0)</glowColor>
-	  </li>
-	</comps>
-  </ThingDef>
 
   <ThingDef ParentName="BMT_Crystal_Huge">
 	<defName>BMT_Crystal_BlueHuge</defName>
 	<label>blue crystal</label>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueHuge</texPath>
+	  <drawSize>(1.2,1.2)</drawSize>
 	</graphicData>
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>3.75</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
-	</comps>
-  </ThingDef>
-
-  <ThingDef ParentName="BMT_Crystal_Huge">
-	<defName>BMT_Crystal_RedHuge</defName>
-	<label>red crystal</label>
-	<graphicData>
-	  <texPath>BMT_Caverns/Things/Crystals/RedHuge</texPath>
-	</graphicData>
-	<comps>
-	  <li Class="CompProperties_Glower">
-		<glowRadius>3.75</glowRadius>
-		<glowColor>(90,40,40,0)</glowColor>
+	  <li Class="CompProperties_Spawner">
+		<thingToSpawn>BMT_Crystal_BlueMedium</thingToSpawn>
+		<spawnCount>1</spawnCount>
+		<spawnIntervalRange><min>300000</min><max>420000</max></spawnIntervalRange>
+		<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+		<showMessageIfOwned>false</showMessageIfOwned>
 	  </li>
 	</comps>
   </ThingDef>

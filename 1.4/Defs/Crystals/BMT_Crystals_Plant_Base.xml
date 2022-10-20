@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   
-  <ThingDef ParentName="TreeBase" Name="BMT_Crystal_Base" Abstract="True">
+  <ThingDef ParentName="PlantBaseNonEdible" Name="BMT_Crystal_Plant_Base" Abstract="True">
 	<!-- <defName>BMT_Crystal_Blue</defName> -->
 	<label>blue crystal</label>
 	<description>crystal.</description>
@@ -27,8 +27,8 @@
 	<selectable>true</selectable>
 	<fillPercent>0.25</fillPercent>
 	<rotatable>false</rotatable>
-	<passability>PassThroughOnly</passability>
-	<pathCost>42</pathCost>
+	<!-- <passability>PassThroughOnly</passability> -->
+	<!-- <pathCost>42</pathCost> -->
 	<blockWind>true</blockWind>
 	<statBases>
 	  <!-- <MaxHitPoints>200</MaxHitPoints> -->
@@ -42,45 +42,45 @@
 	  <MaxHitPoints>250</MaxHitPoints>
 	</statBases>
 	<ingestible>
-	  <foodType>Tree</foodType>
+	  <foodType>Plant</foodType>
 	  <preferability>NeverForNutrition</preferability>
 	</ingestible>
 	<!-- <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn> -->
 	<plant>
 	  <!-- <minSpacingBetweenSamePlant>4.9</minSpacingBetweenSamePlant> -->
-	  <growDays>240</growDays>
+	  <growDays>60</growDays>
 	  <dieIfNoSunlight>False</dieIfNoSunlight>
 	  <dieFromToxicFallout>False</dieFromToxicFallout>
 	  <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
 	  <fertilityMin>0.0</fertilityMin>
 	  <fertilitySensitivity>0</fertilitySensitivity>
-	  <allowAutoCut>false</allowAutoCut>
-	  <warnIfMarkedForCut>true</warnIfMarkedForCut>
+	  <allowAutoCut>true</allowAutoCut>
+	  <warnIfMarkedForCut>false</warnIfMarkedForCut>
 	  <!-- = -->
-	  <sowWork>4000</sowWork>
-	  <sowMinSkill>6</sowMinSkill>
-	  <sowResearchPrerequisites>
+	  <!-- <sowWork>4000</sowWork> -->
+	  <!-- <sowMinSkill>6</sowMinSkill> -->
+	  <!-- <sowResearchPrerequisites> -->
 		<!-- <li>TreeSowing</li> -->
-	  </sowResearchPrerequisites>
+	  <!-- </sowResearchPrerequisites> -->
 	  <mustBeWildToSow>true</mustBeWildToSow>
-	  <harvestWork>800</harvestWork>
-	  <harvestedThingDef>WoodLog</harvestedThingDef>
-	  <harvestYield>25</harvestYield>
-	  <harvestTag>Wood</harvestTag>
-	  <harvestMinGrowth>0.10</harvestMinGrowth>
-	  <harvestFailable>false</harvestFailable>
+	  <!-- <harvestWork>800</harvestWork> -->
+	  <!-- <harvestedThingDef>WoodLog</harvestedThingDef> -->
+	  <!-- <harvestYield>0</harvestYield> -->
+	  <!-- <harvestTag>Wood</harvestTag> -->
+	  <!-- <harvestMinGrowth>0.10</harvestMinGrowth> -->
+	  <!-- <harvestFailable>false</harvestFailable> -->
 	  <blockAdjacentSow>true</blockAdjacentSow>
 	  <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 	  <dieIfLeafless>false</dieIfLeafless>
 	  <!-- <treeCategory>Full</treeCategory> -->
 	  <!-- <immatureGraphicPath>Things/Plant/CornPlant_Immature</immatureGraphicPath> -->
-	  <sowTags>
-		<li>Ground</li>
-	  </sowTags>
+	  <!-- <sowTags> -->
+		<!-- <li>Ground</li> -->
+	  <!-- </sowTags> -->
 	  <visualSizeRange>0.5~1.0</visualSizeRange>
 	  <topWindExposure>0.0</topWindExposure>
-	  <!-- <wildClusterRadius>4</wildClusterRadius> -->
-	  <!-- <wildClusterWeight>1420</wildClusterWeight> -->
+	  <wildClusterRadius>4</wildClusterRadius>
+	  <wildClusterWeight>1900</wildClusterWeight>
 	  <wildOrder>3</wildOrder>
 	  <interferesWithRoof>false</interferesWithRoof>
 	  <pollution>Any</pollution>
