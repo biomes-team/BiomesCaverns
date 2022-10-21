@@ -136,11 +136,11 @@
 		<!-- special -->
 		<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
 		<!-- = -->
-		<BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium>
+		<!-- <BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium> -->
 		<!-- = -->
-		<BMT_Crystal_BlueLarge>0.04</BMT_Crystal_BlueLarge>
+		<!-- <BMT_Crystal_BlueLarge>0.04</BMT_Crystal_BlueLarge> -->
 		<!-- = -->
-		<BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge>
+		<!-- <BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge> -->
 
     </wildPlants>
 

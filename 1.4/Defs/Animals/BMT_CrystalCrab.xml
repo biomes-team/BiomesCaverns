@@ -55,7 +55,7 @@
 	</tools>
 	<butcherProducts>
 	  <!-- crystal resource -->
-	  <!-- <Sandstone>3</Sandstone> -->
+	  <BMT_ResourceBlueCrystal>78</BMT_ResourceBlueCrystal>
 	  <!-- <Sandstone>3</Sandstone> -->
 	</butcherProducts>
   </ThingDef>

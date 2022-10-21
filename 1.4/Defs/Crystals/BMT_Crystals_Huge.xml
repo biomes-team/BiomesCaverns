@@ -6,7 +6,8 @@
 	<passability>PassThroughOnly</passability>
 	<pathCost>50</pathCost>
 	<statBases>
-	  <MaxHitPoints>420</MaxHitPoints>
+	  <Beauty>15</Beauty>
+	  <MaxHitPoints>120</MaxHitPoints>
 	  <Mass>70</Mass>
 	</statBases>
 	<building>
@@ -23,11 +24,13 @@
 
   <ThingDef ParentName="BMT_Crystal_Huge">
 	<defName>BMT_Crystal_BlueHuge</defName>
-	<label>blue crystal</label>
+	<label>huge blue crystal</label>
+	<description>A blue crystal from the depths of the crystal cave. This crystal is large enough that a smaller crystal could break off from it.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueHuge</texPath>
 	  <drawSize>(1.2,1.2)</drawSize>
 	</graphicData>
+	<tickerType>Normal</tickerType>
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>3.75</glowRadius>
@@ -40,7 +43,16 @@
 		<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 		<showMessageIfOwned>false</showMessageIfOwned>
 	  </li>
+	  <li Class="CompProperties_Explosive">
+		<wickTicks>240</wickTicks>
+		<explosiveRadius>3.9</explosiveRadius>
+		<explosiveDamageType>Bomb</explosiveDamageType>
+		<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+	  </li>
 	</comps>
+	<costList>
+	  <BMT_ResourceBlueCrystal>34</BMT_ResourceBlueCrystal>
+	</costList>
   </ThingDef>
   
 </Defs>

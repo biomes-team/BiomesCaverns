@@ -3,8 +3,8 @@
   
   <ThingDef ParentName="PlantBaseNonEdible" Name="BMT_Crystal_Plant_Base" Abstract="True">
 	<!-- <defName>BMT_Crystal_Blue</defName> -->
-	<label>blue crystal</label>
-	<description>crystal.</description>
+	<label>small blue crystal</label>
+	<description>A blue crystal from the depths of the crystal cave.</description>
 	<thingClass>Plant</thingClass>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/White</texPath>

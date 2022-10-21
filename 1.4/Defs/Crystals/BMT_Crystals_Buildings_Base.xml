@@ -9,9 +9,16 @@
 	  <graphicClass>Graphic_Random</graphicClass>
 	</graphicData>
 	<thingCategories Inherit="False"/>
+	<rotatable>false</rotatable>
+	<statBases>
+	  <Beauty>5</Beauty>
+	  <BeautyOutdoors>5</BeautyOutdoors>
+	  <Flammability>0</Flammability>
+	</statBases>
 	<building>
 	  <deconstructible>true</deconstructible>
-	  <claimable>false</claimable>
+	  <!-- <claimable>false</claimable> -->
+	  <claimable>true</claimable>
 	</building>
 	<costList>
 	  <!-- <Steel>15</Steel> -->

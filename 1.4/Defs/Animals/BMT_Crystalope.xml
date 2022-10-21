@@ -21,12 +21,12 @@
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 	</statBases>
 	<comps>
-	  <!-- <li Class="CompProperties_Milkable"> -->
-		<!-- <milkDef>Chemfuel</milkDef> -->
-		<!-- <milkIntervalDays>1</milkIntervalDays> -->
-		<!-- <milkAmount>11</milkAmount> -->
-		<!-- <milkFemaleOnly>false</milkFemaleOnly> -->
-	  <!-- </li> -->
+	  <li Class="CompProperties_Milkable">
+		<milkDef>BMT_ResourceBlueCrystal</milkDef>
+		<milkIntervalDays>1</milkIntervalDays>
+		<milkAmount>6</milkAmount>
+		<milkFemaleOnly>false</milkFemaleOnly>
+	  </li>
 	</comps>
 	<race>
 	  <body>QuadrupedAnimalWithHoovesAndHump</body>

@@ -6,7 +6,8 @@
 	<passability>PassThroughOnly</passability>
 	<pathCost>42</pathCost>
 	<statBases>
-	  <MaxHitPoints>310</MaxHitPoints>
+	  <Beauty>12</Beauty>
+	  <MaxHitPoints>90</MaxHitPoints>
 	</statBases>
   </ThingDef>
 
@@ -14,10 +15,11 @@
 
   <ThingDef ParentName="BMT_Crystal_Large">
 	<defName>BMT_Crystal_BlueLarge</defName>
-	<label>blue crystal</label>
+	<label>large blue crystal</label>
+	<description>A blue crystal from the depths of the crystal cave.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueLarge</texPath>
-	  <drawSize>(0.8,0.8)</drawSize>
+	  <drawSize>(1.0,1.0)</drawSize>
 	</graphicData>
 	<comps>
 	  <li Class="CompProperties_Glower">
@@ -29,6 +31,9 @@
 		<spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange>
 	  </li>
 	</comps>
+	<costList>
+	  <BMT_ResourceBlueCrystal>14</BMT_ResourceBlueCrystal>
+	</costList>
   </ThingDef>
   
 </Defs>
