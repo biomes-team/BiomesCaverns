@@ -23,6 +23,12 @@
 	<!-- <thingSetMakerTags> -->
 	  <!-- <li>RewardStandardHighFreq</li> -->
 	<!-- </thingSetMakerTags> -->
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>1.75</glowRadius>
+		<glowColor>(40,40,90,0)</glowColor>
+	  </li>
+	</comps>
   </ThingDef>
   
 </Defs>
