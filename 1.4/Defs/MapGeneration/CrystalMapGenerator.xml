@@ -4,7 +4,7 @@
   <GenStepDef>
 	<order>320</order>
 	<defName>BMT_CrystalsGenerator</defName>
-	<!-- Checks for the presence of the word "Crystal" in the biome name -->
+	<!-- Checks for the presence of the word "Crystal" in the biome defName -->
 	<genStep Class="BMT.GenStep_ScatterCrystals">
 	  <allowInWaterBiome>false</allowInWaterBiome>
 	  <minSpacing>5</minSpacing>
@@ -55,6 +55,57 @@
 		  <!-- <filthDef>Filth_MachineBits</filthDef> -->
 		  <!-- <filthExpandBy>1</filthExpandBy> -->
 		  <!-- <filthChance>0.4</filthChance> -->
+		  <clusterRectRadius>4~5</clusterRectRadius>
+		</li>
+	  </groups>
+	</genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+	<order>320</order>
+	<defName>BMT_ScatterStalagmiteGenerator</defName>
+	<!-- Checks for the presence of the word ("BMT_CrystalCaverns" or "BMT_ShallowCave" or "BMT_FungalForest") in the biome defName -->
+	<genStep Class="BMT.GenStep_ScatterStalagmite">
+	  <allowInWaterBiome>false</allowInWaterBiome>
+	  <minSpacing>5</minSpacing>
+	  <countPer10kCellsRange>10.0~15.0</countPer10kCellsRange>
+	  <spotMustBeStandable>true</spotMustBeStandable>
+	  <allowRoofed>true</allowRoofed>
+	  <validators>
+		<li Class="ScattererValidator_Buildable">
+		  <radius>5</radius>
+		  <affordance>Heavy</affordance>
+		</li>
+	  </validators>
+	  <groups>
+		<li>
+		  <things>
+			<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
+			<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
+			<BMT_NaturalBuildings_Stalagmites_Large>0.00833</BMT_NaturalBuildings_Stalagmites_Large>
+		  </things>
+		  <indoorRuin>false</indoorRuin>
+		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+		  <clusterRectRadius>3~5</clusterRectRadius>
+		</li>
+		<li>
+		  <things>
+			<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
+			<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
+			<BMT_NaturalBuildings_Stalagmites_Large>0.01</BMT_NaturalBuildings_Stalagmites_Large>
+		  </things>
+		  <indoorRuin>false</indoorRuin>
+		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+		  <clusterRectRadius>4~5</clusterRectRadius>
+		</li>
+		<li>
+		  <things>
+			<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
+			<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
+			<!-- <BMT_Crystal_BlueHuge>0.0833</BMT_Crystal_BlueHuge> -->
+		  </things>
+		  <indoorRuin>false</indoorRuin>
+		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
 		  <clusterRectRadius>4~5</clusterRectRadius>
 		</li>
 	  </groups>

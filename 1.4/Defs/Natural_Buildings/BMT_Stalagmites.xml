@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Stalagmites" Abstract="True">
+	<label>stalagmite</label>
+	<description>A stalagmite is a type of rock formation that rises from the floor of a cave due to the accumulation of material deposited on the floor from ceiling.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Natural/Stalagmite</texPath>
+	  <drawSize>(1.0,1.0)</drawSize>
+	</graphicData>
+	<tickerType>Never</tickerType>
+	<passability>PassThroughOnly</passability>
+	<pathCost>34</pathCost>
+	<statBases>
+	  <Beauty>9</Beauty>
+	  <MaxHitPoints>50</MaxHitPoints>
+	</statBases>
+  </ThingDef>
+
+  <!-- ====================================================== -->
+
+  <ThingDef ParentName="BMT_Stalagmites">
+	<defName>BMT_NaturalBuildings_Stalagmites_Small</defName>
+	<graphicData>
+	  <drawSize>(0.6,0.6)</drawSize>
+	</graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_Stalagmites">
+	<defName>BMT_NaturalBuildings_Stalagmites_Medium</defName>
+	<graphicData>
+	  <drawSize>(1.0,1.0)</drawSize>
+	</graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_Stalagmites">
+	<defName>BMT_NaturalBuildings_Stalagmites_Large</defName>
+	<graphicData>
+	  <drawSize>(1.2,1.2)</drawSize>
+	</graphicData>
+  </ThingDef>
+  
+</Defs>

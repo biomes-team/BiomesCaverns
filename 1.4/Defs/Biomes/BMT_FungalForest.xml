@@ -212,13 +212,13 @@
 		<BMT_MossyFennec>0.1</BMT_MossyFennec>
 			
 		<!-- onmnivore -->
-		<BMT_CrystalCrab_Sandstone>0.01</BMT_CrystalCrab_Sandstone>
-		<BMT_CrystalCrab_Granite>0.01</BMT_CrystalCrab_Granite>
-		<BMT_CrystalCrab_Limestone>0.01</BMT_CrystalCrab_Limestone>
-		<BMT_CrystalCrab_Slate>0.01</BMT_CrystalCrab_Slate>
-		<BMT_CrystalCrab_Marble>0.01</BMT_CrystalCrab_Marble>
-		<BMT_CrystalCrab_Jade>0.002</BMT_CrystalCrab_Jade>
-		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.01</BMT_CrystalCrab_Coral>
+		<BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>
+		<BMT_CrystalCrab_Granite>0.001</BMT_CrystalCrab_Granite>
+		<BMT_CrystalCrab_Limestone>0.001</BMT_CrystalCrab_Limestone>
+		<BMT_CrystalCrab_Slate>0.001</BMT_CrystalCrab_Slate>
+		<BMT_CrystalCrab_Marble>0.001</BMT_CrystalCrab_Marble>
+		<BMT_CrystalCrab_Jade>0.0002</BMT_CrystalCrab_Jade>
+		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
 
     </wildAnimals>
     <allowedPackAnimals>

@@ -10,6 +10,7 @@
 	</graphicData>
 	<thingCategories Inherit="False"/>
 	<rotatable>false</rotatable>
+	<fillPercent>0.35</fillPercent>
 	<statBases>
 	  <Beauty>5</Beauty>
 	  <BeautyOutdoors>5</BeautyOutdoors>
