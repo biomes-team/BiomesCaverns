@@ -7,6 +7,7 @@
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Natural/Stalagmite</texPath>
 	  <drawSize>(1.0,1.0)</drawSize>
+	  <color>(126,104,94)</color>
 	</graphicData>
 	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>
