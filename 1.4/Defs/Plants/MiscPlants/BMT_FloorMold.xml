@@ -24,7 +24,7 @@
 			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0.0</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
+			<wildClusterWeight>700</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
