@@ -2,7 +2,7 @@
 <Defs>
 
   <LifeStageDef ParentName="AnimalBaby">
-    <defName>BMT_FruitBatBabyTiny</defName>
+    <defName>BMT_GlowbatBabyTiny</defName>
 	<label>pup</label>
     <bodySizeFactor>0.1</bodySizeFactor>
     <foodMaxFactor>4</foodMaxFactor>
@@ -14,14 +14,14 @@
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/Bat_Hanging</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
       </li>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/BatFlying</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
       </li>
@@ -29,7 +29,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>BMT_FruitBatJuvenile</defName>
+    <defName>BMT_GlowbatJuvenile</defName>
     <label>juvenile</label>
     <voxPitch>1.2</voxPitch>
     <bodySizeFactor>0.5</bodySizeFactor>
@@ -46,14 +46,14 @@
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/Bat_Hanging</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
           <drawSize>1.0</drawSize>
         </bodyGraphicData>
       </li>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/BatFlying</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
           <drawSize>1.0</drawSize>
         </bodyGraphicData>
       </li>
@@ -61,7 +61,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>BMT_FruitBatAdult</defName>
+    <defName>BMT_GlowbatAdult</defName>
     <label>adult</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
@@ -71,21 +71,21 @@
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/Bat_Hanging</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/BatFlying</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>    </modExtensions>
   </LifeStageDef>
   
   <ThingDef ParentName="AnimalThingBase">
-    <defName>BMT_FruitBat</defName>
+    <defName>BMT_Glowbat</defName>
     <label>fruit bat</label>
     <description>.</description>
     <statBases>
@@ -122,15 +122,15 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>BMT_FruitBatBabyTiny</def>
+          <def>BMT_GlowbatBabyTiny</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>BMT_FruitBatJuvenile</def>
+          <def>BMT_GlowbatJuvenile</def>
           <minAge>0.11</minAge>
         </li>
         <li>
-          <def>BMT_FruitBatAdult</def>
+          <def>BMT_GlowbatAdult</def>
           <minAge>0.222</minAge>
           <soundWounded>Biomes_Bat_Wounded</soundWounded>
           <soundDeath>Biomes_Bat_Death</soundDeath>
@@ -213,9 +213,9 @@
   </ThingDef>
 
   <PawnKindDef ParentName="BigBirdKindBase">
-    <defName>BMT_FruitBat</defName>
+    <defName>BMT_Glowbat</defName>
     <label>fruit bat</label>
-    <race>BMT_FruitBat</race>
+    <race>BMT_Glowbat</race>
 	<combatPower>45</combatPower>
 	<ecoSystemWeight>0.30</ecoSystemWeight>
 	<wildGroupSize>5~10</wildGroupSize>
@@ -224,31 +224,31 @@
 	  <label>fruit bat pup</label>
 	  <labelPlural>fruit bat pups</labelPlural>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/BatSitting</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/FruitBat/Dessicated_Bat</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
           <drawSize>0.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/FruitBat/BatSitting</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
           <drawSize>1.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/Dessicated_Bat</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
           <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/BatSitting</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/FruitBat/Dessicated_Bat</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
