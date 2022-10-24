@@ -2,7 +2,7 @@
 <Defs>
 
   <LifeStageDef ParentName="AnimalBaby">
-    <defName>BMT_GlowbatBabyTiny</defName>
+    <defName>BMT_FruitBatBabyTiny</defName>
 	<label>pup</label>
     <bodySizeFactor>0.1</bodySizeFactor>
     <foodMaxFactor>4</foodMaxFactor>
@@ -29,7 +29,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>BMT_GlowbatJuvenile</defName>
+    <defName>BMT_FruitBatJuvenile</defName>
     <label>juvenile</label>
     <voxPitch>1.2</voxPitch>
     <bodySizeFactor>0.5</bodySizeFactor>
@@ -61,7 +61,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>BMT_GlowbatAdult</defName>
+    <defName>BMT_FruitBatAdult</defName>
     <label>adult</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
@@ -85,7 +85,7 @@
   </LifeStageDef>
   
   <ThingDef ParentName="AnimalThingBase">
-    <defName>BMT_Glowbat</defName>
+    <defName>BMT_FruitBat</defName>
     <label>fruit bat</label>
     <description>.</description>
     <statBases>
@@ -122,15 +122,15 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>BMT_GlowbatBabyTiny</def>
+          <def>BMT_FruitBatBabyTiny</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>BMT_GlowbatJuvenile</def>
+          <def>BMT_FruitBatJuvenile</def>
           <minAge>0.11</minAge>
         </li>
         <li>
-          <def>BMT_GlowbatAdult</def>
+          <def>BMT_FruitBatAdult</def>
           <minAge>0.222</minAge>
           <soundWounded>Biomes_Bat_Wounded</soundWounded>
           <soundDeath>Biomes_Bat_Death</soundDeath>
@@ -213,9 +213,9 @@
   </ThingDef>
 
   <PawnKindDef ParentName="BigBirdKindBase">
-    <defName>BMT_Glowbat</defName>
+    <defName>BMT_FruitBat</defName>
     <label>fruit bat</label>
-    <race>BMT_Glowbat</race>
+    <race>BMT_FruitBat</race>
 	<combatPower>45</combatPower>
 	<ecoSystemWeight>0.30</ecoSystemWeight>
 	<wildGroupSize>5~10</wildGroupSize>
