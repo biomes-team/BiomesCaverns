@@ -95,7 +95,7 @@
 	  <lifeExpectancy>20</lifeExpectancy>
 	  <trainability>Advanced</trainability>
 	  <packAnimal>false</packAnimal>
-	  <nuzzleMtbHours>6</nuzzleMtbHours>
+	  <nuzzleMtbHours>12</nuzzleMtbHours>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
