@@ -7,26 +7,26 @@
     <description>A shallow cave system</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+		<li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isCavern>true</isCavern>
 			<cavernShapes>
 				<li>TunnelNetwork</li>
 			</cavernShapes>
 		</li>
-    <li Class="BiomesKit.BiomesKitControls">
-     <spawnOnBiomes>
-      <li>TemperateForest</li>
-      <li>TemperateSwamp</li>
-    </spawnOnBiomes>
-    <randomizeHilliness>True</randomizeHilliness>
-    <minimumLandNeighbors>4</minimumLandNeighbors>
-    <allowOnLand>true</allowOnLand>
-    <frequency>100</frequency>
-    <minTemperature>-14.5</minTemperature>
-    <maxTemperature>19.5</maxTemperature>
-    <usePerlin>true</usePerlin>
-    <perlinCulling>1.0</perlinCulling>
-  </li>
+		<li Class="BiomesKit.BiomesKitControls">
+			<spawnOnBiomes>
+				<li>TemperateForest</li>
+				<li>TemperateSwamp</li>
+			</spawnOnBiomes>
+			<randomizeHilliness>True</randomizeHilliness>
+			<minimumLandNeighbors>4</minimumLandNeighbors>
+			<allowOnLand>true</allowOnLand>
+			<frequency>100</frequency>
+			<minTemperature>-14.5</minTemperature>
+			<maxTemperature>19.5</maxTemperature>
+			<usePerlin>true</usePerlin>
+			<perlinCulling>1.0</perlinCulling>
+		</li>
 	</modExtensions>
     <animalDensity>1.8</animalDensity>
     <plantDensity>0.3</plantDensity>
@@ -180,6 +180,7 @@
 		<Megasloth>0.1</Megasloth>
 		<Rat>1.3</Rat>
 		<BMT_Mole>0.2</BMT_Mole>
+		<BMT_DarkAxolotl>0.3</BMT_DarkAxolotl>
 
 		<!-- predators -->
 		<Cougar>0.15</Cougar>
