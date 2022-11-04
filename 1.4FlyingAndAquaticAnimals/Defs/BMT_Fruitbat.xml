@@ -16,6 +16,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
           <drawSize>0.8</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
@@ -23,6 +24,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
           <drawSize>0.8</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>
     </modExtensions>
@@ -48,6 +50,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
           <drawSize>1.0</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
@@ -55,6 +58,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
           <drawSize>1.0</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>
     </modExtensions>
@@ -73,6 +77,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
           <drawSize>1.2</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
@@ -80,6 +85,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
           <drawSize>1.2</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>    </modExtensions>
   </LifeStageDef>
@@ -226,6 +232,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
           <drawSize>0.8</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
@@ -236,6 +243,7 @@
         <bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
           <drawSize>1.0</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
@@ -246,6 +254,7 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
           <drawSize>1.2</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
