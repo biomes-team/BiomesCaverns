@@ -50,8 +50,32 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BiomesCore_ChitinBase">
-		<defName>BMT_RoyalChitin</defName>
+		<defName>BMT_CrystalChitin</defName>
 		<!-- large chitin t3 -->
+		<label>crystal carapace</label>
+		<description>A crystallized carapace that is commonly part of crystal-based insectoids.</description>
+		<graphicData>
+			<color>(21,244,238)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.5</MarketValue>
+			<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(21,244,238)</color>
+			<statFactors>
+				<MaxHitPoints>1.4</MaxHitPoints>
+				<Beauty>4</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="BiomesCore_ChitinBase">
+		<defName>BMT_RoyalChitin</defName>
+		<!-- large chitin t4 -->
 		<label>royal chitin</label>
 		<description>A legendary, royal, chitinous shell.</description>
 		<graphicData>
