@@ -9,6 +9,7 @@
 	  <drawSize>(1.0,1.0)</drawSize>
 	  <color>(126,104,94)</color>
 	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
 	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>
 	<pathCost>34</pathCost>
@@ -16,6 +17,23 @@
 	  <Beauty>9</Beauty>
 	  <MaxHitPoints>50</MaxHitPoints>
 	</statBases>
+	<!-- <stuffCategories> -->
+	  <!-- <li>Stony</li> -->
+	<!-- </stuffCategories> -->
+	<!-- <costStuffCount>1</costStuffCount> -->
+	<!-- <useStuffTerrainAffordance>true</useStuffTerrainAffordance> -->
+	<!-- <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> -->
+	<!-- <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled> -->
+	<!-- <damageMultipliers> -->
+	  <!-- <li> -->
+		<!-- <damageDef>Bomb</damageDef> -->
+		<!-- <multiplier>2</multiplier> -->
+	  <!-- </li> -->
+	  <!-- <li> -->
+		<!-- <damageDef>Thump</damageDef> -->
+		<!-- <multiplier>2</multiplier> -->
+	  <!-- </li> -->
+	<!-- </damageMultipliers> -->
   </ThingDef>
 
   <!-- ====================================================== -->
