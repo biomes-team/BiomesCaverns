@@ -26,9 +26,16 @@
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
-		  <!-- <filthDef>Filth_MachineBits</filthDef> -->
-		  <!-- <filthExpandBy>1</filthExpandBy> -->
-		  <!-- <filthChance>0.4</filthChance> -->
+		  <clusterRectRadius>3~5</clusterRectRadius>
+		</li>
+		<li>
+		  <things>
+			<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
+			<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
+			<BMT_Crystal_BlueHuge>0.00433</BMT_Crystal_BlueHuge>
+		  </things>
+		  <indoorRuin>false</indoorRuin>
+		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
 		  <clusterRectRadius>3~5</clusterRectRadius>
 		</li>
 		<li>
@@ -39,22 +46,15 @@
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
-		  <!-- <filthDef>Filth_MachineBits</filthDef> -->
-		  <!-- <filthExpandBy>1</filthExpandBy> -->
-		  <!-- <filthChance>0.4</filthChance> -->
 		  <clusterRectRadius>4~5</clusterRectRadius>
 		</li>
 		<li>
 		  <things>
 			<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
 			<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
-			<!-- <BMT_Crystal_BlueHuge>0.0833</BMT_Crystal_BlueHuge> -->
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
-		  <!-- <filthDef>Filth_MachineBits</filthDef> -->
-		  <!-- <filthExpandBy>1</filthExpandBy> -->
-		  <!-- <filthChance>0.4</filthChance> -->
 		  <clusterRectRadius>4~5</clusterRectRadius>
 		</li>
 	  </groups>
