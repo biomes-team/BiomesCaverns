@@ -11,6 +11,7 @@
 	<thingCategories Inherit="False"/>
 	<rotatable>false</rotatable>
 	<fillPercent>0.35</fillPercent>
+	<altitudeLayer>Building</altitudeLayer>
 	<statBases>
 	  <Beauty>5</Beauty>
 	  <BeautyOutdoors>5</BeautyOutdoors>
@@ -20,10 +21,22 @@
 	  <deconstructible>true</deconstructible>
 	  <!-- <claimable>false</claimable> -->
 	  <claimable>true</claimable>
+	  <!-- <isNaturalRock>true</isNaturalRock> -->
+	  <!-- <isEdifice>false</isEdifice> -->
 	</building>
 	<costList>
 	  <!-- <Steel>15</Steel> -->
 	</costList>
+	<damageMultipliers>
+	  <li>
+		<damageDef>Bomb</damageDef>
+		<multiplier>2</multiplier>
+	  </li>
+	  <li>
+		<damageDef>Thump</damageDef>
+		<multiplier>2</multiplier>
+	  </li>
+	</damageMultipliers>
   </ThingDef>
 
 </Defs>
