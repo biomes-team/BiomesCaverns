@@ -111,7 +111,7 @@
       <foodType>VegetableOrFruit</foodType>
 	  <leatherDef>Leather_Light</leatherDef>
       <wildness>0.95</wildness>
-      <trainability>None</trainability>
+      <trainability>Advanced</trainability>
 	  <nuzzleMtbHours>24</nuzzleMtbHours>
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
