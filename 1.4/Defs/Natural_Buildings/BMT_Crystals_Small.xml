@@ -4,6 +4,7 @@
   <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Small" Abstract="True">
 	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>
+	<blockLight>false</blockLight>
 	<pathCost>5</pathCost>
 	<statBases>
 	  <Beauty>6</Beauty>

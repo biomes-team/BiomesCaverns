@@ -4,6 +4,7 @@
   <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Huge" Abstract="True">
 	<tickerType>Rare</tickerType>
 	<passability>Impassable</passability>
+	<blockLight>false</blockLight>
 	<pathCost>50</pathCost>
 	<statBases>
 	  <Beauty>15</Beauty>
