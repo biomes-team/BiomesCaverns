@@ -25,7 +25,7 @@
 	<size>(2,2)</size>
 	<comps>
 	  <li Class="CompProperties_Glower">
-		<glowRadius>2.75</glowRadius>
+		<glowRadius>3</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
 	  <!-- <li Class="BMT.CompProperties_ThingDefReplacer"> -->

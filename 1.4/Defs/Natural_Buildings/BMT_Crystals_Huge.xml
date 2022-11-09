@@ -35,7 +35,7 @@
 	<tickerType>Normal</tickerType>
 	<comps>
 	  <li Class="CompProperties_Glower">
-		<glowRadius>3.75</glowRadius>
+		<glowRadius>4</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
 	  <!-- <li Class="CompProperties_Spawner"> -->
