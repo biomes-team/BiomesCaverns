@@ -134,7 +134,8 @@
 		<!-- hydrophytes -->
 
 		<!-- special -->
-		<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
+		<BMT_Crystal_BlueSowable>0.1</BMT_Crystal_BlueSowable>
+		<!-- <BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall> -->
 		<!-- = -->
 		<!-- <BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium> -->
 		<!-- = -->

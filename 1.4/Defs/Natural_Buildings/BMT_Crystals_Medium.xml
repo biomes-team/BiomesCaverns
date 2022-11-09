@@ -2,7 +2,7 @@
 <Defs>
   
   <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Medium" Abstract="True">
-	<tickerType>Rare</tickerType>
+	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>
 	<pathCost>5</pathCost>
 	<statBases>
@@ -19,20 +19,20 @@
 	<description>A blue crystal from the depths of the crystal cave.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueMedium</texPath>
-	  <drawSize>(0.5,0.5)</drawSize>
+	  <drawSize>(1.0,1.0)</drawSize>
 	</graphicData>
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>2.75</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
-	  <li Class="BMT.CompProperties_ThingDefReplacer">
-		<evolveIntoThingDef>BMT_Crystal_BlueLarge</evolveIntoThingDef>
-		<spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange>
-	  </li>
+	  <!-- <li Class="BMT.CompProperties_ThingDefReplacer"> -->
+		<!-- <evolveIntoThingDef>BMT_Crystal_BlueLarge</evolveIntoThingDef> -->
+		<!-- <spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange> -->
+	  <!-- </li> -->
 	</comps>
 	<costList>
-	  <BMT_ResourceBlueCrystal>7</BMT_ResourceBlueCrystal>
+	  <BMT_ResourceBlueCrystal>42</BMT_ResourceBlueCrystal>
 	</costList>
   </ThingDef>
   

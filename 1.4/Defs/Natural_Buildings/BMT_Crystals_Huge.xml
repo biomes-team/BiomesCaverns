@@ -3,7 +3,7 @@
   
   <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Huge" Abstract="True">
 	<tickerType>Rare</tickerType>
-	<passability>PassThroughOnly</passability>
+	<passability>Impassable</passability>
 	<pathCost>50</pathCost>
 	<statBases>
 	  <Beauty>15</Beauty>
@@ -11,8 +11,8 @@
 	  <Mass>70</Mass>
 	</statBases>
 	<building>
-	  <deconstructible>true</deconstructible>
-	  <claimable>true</claimable>
+	  <deconstructible>false</deconstructible>
+	  <claimable>false</claimable>
 	</building>
 	<thingCategories>
 	  <li>BuildingsSpecial</li>
@@ -28,21 +28,22 @@
 	<description>A blue crystal from the depths of the crystal cave. This crystal is large enough that a smaller crystal could break off from it.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueHuge</texPath>
-	  <drawSize>(1.2,1.2)</drawSize>
+	  <drawSize>(3.0,3.0)</drawSize>
 	</graphicData>
+	<size>(3,3)</size>
 	<tickerType>Normal</tickerType>
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>3.75</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
-	  <li Class="CompProperties_Spawner">
-		<thingToSpawn>BMT_Crystal_BlueMedium</thingToSpawn>
-		<spawnCount>1</spawnCount>
-		<spawnIntervalRange><min>300000</min><max>420000</max></spawnIntervalRange>
-		<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
-		<showMessageIfOwned>false</showMessageIfOwned>
-	  </li>
+	  <!-- <li Class="CompProperties_Spawner"> -->
+		<!-- <thingToSpawn>BMT_Crystal_BlueMedium</thingToSpawn> -->
+		<!-- <spawnCount>1</spawnCount> -->
+		<!-- <spawnIntervalRange><min>300000</min><max>420000</max></spawnIntervalRange> -->
+		<!-- <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn> -->
+		<!-- <showMessageIfOwned>false</showMessageIfOwned> -->
+	  <!-- </li> -->
 	  <li Class="CompProperties_Explosive">
 		<wickTicks>240</wickTicks>
 		<explosiveRadius>3.9</explosiveRadius>
@@ -51,7 +52,7 @@
 	  </li>
 	</comps>
 	<costList>
-	  <BMT_ResourceBlueCrystal>34</BMT_ResourceBlueCrystal>
+	  <BMT_ResourceBlueCrystal>340</BMT_ResourceBlueCrystal>
 	</costList>
   </ThingDef>
   

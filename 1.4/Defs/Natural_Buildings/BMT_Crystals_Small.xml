@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Small" Abstract="True">
+	<tickerType>Never</tickerType>
+	<passability>PassThroughOnly</passability>
+	<pathCost>5</pathCost>
+	<statBases>
+	  <Beauty>6</Beauty>
+	  <MaxHitPoints>20</MaxHitPoints>
+	</statBases>
+  </ThingDef>
+
+  <!-- ====================================================== -->
+
+  <ThingDef ParentName="BMT_Crystal_Small">
+	<defName>BMT_Crystal_BlueSmall</defName>
+	<label>small blue crystal</label>
+	<description>A blue crystal from the depths of the crystal cave.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Crystals/BlueSmall</texPath>
+	  <drawSize>(1.0,1.0)</drawSize>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>1.75</glowRadius>
+		<glowColor>(40,40,90,0)</glowColor>
+	  </li>
+	</comps>
+	<costList>
+	  <BMT_ResourceBlueCrystal>21</BMT_ResourceBlueCrystal>
+	</costList>
+  </ThingDef>
+  
+</Defs>

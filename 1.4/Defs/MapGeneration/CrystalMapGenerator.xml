@@ -20,7 +20,7 @@
 	  <groups>
 		<li>
 		  <things>
-			<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
+			<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
 			<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
 			<BMT_Crystal_BlueHuge>0.00833</BMT_Crystal_BlueHuge>
 		  </things>
@@ -30,7 +30,7 @@
 		</li>
 		<li>
 		  <things>
-			<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
+			<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
 			<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
 			<BMT_Crystal_BlueHuge>0.00433</BMT_Crystal_BlueHuge>
 		  </things>
@@ -52,6 +52,7 @@
 		  <things>
 			<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
 			<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
+			<BMT_Crystal_BlueHuge>0.05</BMT_Crystal_BlueHuge>
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>

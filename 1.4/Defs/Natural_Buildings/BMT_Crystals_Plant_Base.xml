@@ -62,14 +62,15 @@
 	  <!-- <sowResearchPrerequisites> -->
 		<!-- <li>TreeSowing</li> -->
 	  <!-- </sowResearchPrerequisites> -->
-	  <mustBeWildToSow>true</mustBeWildToSow>
+	  <!-- <mustBeWildToSow>true</mustBeWildToSow> -->
+	  <mustBeWildToSow>false</mustBeWildToSow>
 	  <!-- <harvestWork>800</harvestWork> -->
 	  <!-- <harvestedThingDef>WoodLog</harvestedThingDef> -->
 	  <!-- <harvestYield>0</harvestYield> -->
 	  <!-- <harvestTag>Wood</harvestTag> -->
 	  <!-- <harvestMinGrowth>0.10</harvestMinGrowth> -->
 	  <!-- <harvestFailable>false</harvestFailable> -->
-	  <blockAdjacentSow>true</blockAdjacentSow>
+	  <blockAdjacentSow>false</blockAdjacentSow>
 	  <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 	  <dieIfLeafless>false</dieIfLeafless>
 	  <!-- <treeCategory>Full</treeCategory> -->
@@ -86,8 +87,8 @@
 	  <pollution>Any</pollution>
 	  <neverBlightable>true</neverBlightable>
 	  <growMinGlow>0</growMinGlow>
-	  <!-- <growOptimalGlow>0</growOptimalGlow> -->
-	  <cavePlant>true</cavePlant>
+	  <growOptimalGlow>0</growOptimalGlow>
+	  <cavePlant>false</cavePlant>
 	</plant>
 	<comps>
 	  <!-- <li Class="CompProperties_Glower"> -->

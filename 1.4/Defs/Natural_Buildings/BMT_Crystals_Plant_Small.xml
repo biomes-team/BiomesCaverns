@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
-  <ThingDef ParentName="BMT_Crystal_Plant_Base" Name="BMT_Crystal_Small" Abstract="True">
-	<tickerType>Rare</tickerType>
-	<plant>
-	  <!-- <wildClusterRadius>1</wildClusterRadius> -->
-	  <visualSizeRange>0.2~0.3</visualSizeRange>
-	  <maxMeshCount>4</maxMeshCount>
-	</plant>
-	<statBases>
-	  <MaxHitPoints>20</MaxHitPoints>
-	</statBases>
-  </ThingDef>
 
-  <!-- ====================================================== -->
-
-  <ThingDef ParentName="BMT_Crystal_Small">
-	<defName>BMT_Crystal_BlueSmall</defName>
+  <ThingDef ParentName="BMT_Crystal_Plant_Base">
+	<defName>BMT_Crystal_BlueSowable</defName>
 	<label>blue crystal</label>
 	<description>A blue crystal from the depths of the crystal cave.</description>
 	<graphicData>
-	  <texPath>BMT_Caverns/Things/Crystals/BlueSmall</texPath>
+	  <texPath>BMT_Caverns/Things/Crystals/BlueMedium</texPath>
 	</graphicData>
+	<tickerType>Long</tickerType>
+	<pathCost>14</pathCost>
+	<statBases>
+	  <MaxHitPoints>20</MaxHitPoints>
+	</statBases>
+	<plant>
+	  <maxMeshCount>4</maxMeshCount>
+	  <immatureGraphicPath>BMT_Caverns/Things/Crystals/BlueSmall</immatureGraphicPath>
+	  <visualSizeRange>0.4~0.8</visualSizeRange>
+	  <harvestedThingDef>BMT_ResourceBlueCrystal</harvestedThingDef>
+	  <harvestYield>6</harvestYield>
+	  <sowTags>
+		<li>Ground</li>
+	  </sowTags>
+	  <growDays>33.3</growDays>
+	  <harvestTag>Standard</harvestTag>
+	  <fertilityMin>0.0</fertilityMin>
+	  <sowMinSkill>7</sowMinSkill>
+	  <!-- <wildClusterRadius>0</wildClusterRadius> -->
+	</plant>
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>1.75</glowRadius>
 		<glowColor>(40,40,90,0)</glowColor>
 	  </li>
-	  <li Class="BMT.CompProperties_ThingDefReplacer">
-		<evolveIntoThingDef>BMT_Crystal_BlueMedium</evolveIntoThingDef>
-		<spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange>
-	  </li>
+	  <!-- <li Class="BMT.CompProperties_ThingDefReplacer"> -->
+		<!-- <evolveIntoThingDef>BMT_Crystal_BlueMedium</evolveIntoThingDef> -->
+		<!-- <spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange> -->
+	  <!-- </li> -->
 	</comps>
   </ThingDef>
   
