@@ -94,7 +94,7 @@
         <perlinFrequency>0.035</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>Gravel</terrain>
+            <terrain>BMT_VolcanAsh</terrain>
             <min>0.63</min>
             <max>0.83</max>
           </li>
@@ -126,7 +126,7 @@
 
     <wildAnimals>
 		<!-- herbivores -->
-		
+		<BMT_FireSalamander>0.5</BMT_FireSalamander>
 		<!-- onmnivore -->
 	
 		<!-- predators -->
