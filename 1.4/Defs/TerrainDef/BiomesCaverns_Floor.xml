@@ -50,4 +50,43 @@
 		<destroyEffect>Bridge_Collapse</destroyEffect>
 		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
 	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_VolcanAsh</defName>
+		<label>vulcan ash</label>
+		<texturePath>BMT_Caverns/Terrains/VolcanAsh</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/VolcanAsh</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Ash</generatedFilth>
+		<fertility>1.4</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>ash</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
+
 </Defs>
