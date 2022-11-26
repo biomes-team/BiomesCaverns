@@ -62,10 +62,31 @@
 	</genStep>
   </GenStepDef>
 
+  <!-- Checks for the presence of the word "BMT_EarthenDepths" in the biome defName -->
+  <!-- <GenStepDef> -->
+	<!-- <order>320</order> -->
+	<!-- <defName>BMT_RedCrystalsGenerator</defName> -->
+	<!-- <genStep Class="BMT.GenStep_ScatterRedCrystals"> -->
+	  <!-- <allowInWaterBiome>false</allowInWaterBiome> -->
+	  <!-- <minSpacing>5</minSpacing> -->
+	  <!-- <countPer10kCellsRange>15.0~30.0</countPer10kCellsRange> -->
+	  <!-- <spotMustBeStandable>true</spotMustBeStandable> -->
+	  <!-- <allowRoofed>true</allowRoofed> -->
+	  <!-- <validators> -->
+		<!-- <li Class="ScattererValidator_Buildable"> -->
+		  <!-- <radius>5</radius> -->
+		  <!-- <affordance>Heavy</affordance> -->
+		<!-- </li> -->
+	  <!-- </validators> -->
+	  <!-- <groups> -->
+	  <!-- </groups> -->
+	<!-- </genStep> -->
+  <!-- </GenStepDef> -->
+
   <GenStepDef>
 	<order>320</order>
 	<defName>BMT_ScatterStalagmiteGenerator</defName>
-	<!-- Checks for the presence of the word ("BMT_CrystalCaverns" or "BMT_ShallowCave" or "BMT_FungalForest") in the biome defName -->
+	<!-- Checks for the presence of the word ("BMT_CrystalCaverns" or "BMT_ShallowCave" or "BMT_FungalForest" or "BMT_EarthenDepths") in the biome defName -->
 	<genStep Class="BMT.GenStep_ScatterStalagmite">
 	  <allowInWaterBiome>false</allowInWaterBiome>
 	  <minSpacing>5</minSpacing>
