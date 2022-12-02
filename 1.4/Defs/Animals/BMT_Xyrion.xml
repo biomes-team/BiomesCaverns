@@ -59,10 +59,11 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>BMT_XyrionTail</woolDef>
-				<shearIntervalDays>6</shearIntervalDays>
-				<woolAmount>40</woolAmount>
+			<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
+				<thingDef>BMT_XyrionTail</thingDef>
+				<harvestIntervalDays>6</harvestIntervalDays>
+				<baseResourceAmount>40</baseResourceAmount>
+				<resourceGrowthReportString>BMT_XyrionTail</resourceGrowthReportString>
 			</li>
 		</comps>
 		<race>
