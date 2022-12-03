@@ -81,7 +81,6 @@
       </li>
     </tools>
     <tickerType>Rare</tickerType>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <socialPropernessMatters>true</socialPropernessMatters>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <allowedArchonexusCount>200</allowedArchonexusCount>

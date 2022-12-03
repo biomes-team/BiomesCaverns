@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <WeatherDef>
     <defName>BMT_Calm</defName>
     <label>calm</label>
@@ -36,6 +37,7 @@
       <saturation>0.9</saturation>
      </skyColorsNightMid> 
   </WeatherDef>
+
   <WeatherDef>
     <defName>BMT_FungalCavern</defName>
     <label>Cavern</label>
@@ -47,7 +49,6 @@
       <li>BMT_Ambient_Cave_Calm</li>
     </ambientSounds>   
     <!-- Colors are dark, and don't change throughout the day -->
-    <skyColorsDay>
     <label>Cavern</label>
     <skyColorsDay>
       <sky>(1,1,1)</sky>
@@ -74,4 +75,5 @@
       <saturation>1.25</saturation>
      </skyColorsNightMid> 
   </WeatherDef>
+
 </Defs>

@@ -31,8 +31,8 @@
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>BMT_MixedFeedingMushrooms</harvestedThingDef>
-			<harvestYield>18</harvestYield>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+			<harvestYield>2</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
