@@ -11,7 +11,6 @@
     <ambientSounds>
       <li>BMT_Ambient_Cave_Calm</li>
     </ambientSounds>   
-    <!-- Colors are dark, and don't change throughout the day -->
     <skyColorsDay>
       <sky>(0.65,0.70,0.75)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
@@ -48,8 +47,6 @@
     <ambientSounds>
       <li>BMT_Ambient_Cave_Calm</li>
     </ambientSounds>   
-    <!-- Colors are dark, and don't change throughout the day -->
-    <label>Cavern</label>
     <skyColorsDay>
       <sky>(1,1,1)</sky>
       <shadow>(0.718,0.745,0.757)</shadow>
