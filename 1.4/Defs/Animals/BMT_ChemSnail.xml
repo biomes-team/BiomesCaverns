@@ -144,6 +144,10 @@
 				<hatcherPawn>BMT_ChemSnail</hatcherPawn>
 			</li>
 		</comps>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
 	</ThingDef>
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggChemSnailUnfertilized</defName>
@@ -158,6 +162,10 @@
 			<MarketValue>20.0</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
 	</ThingDef>
 	<!--filth / trail -->
 	<ThingDef ParentName="BaseFilth">

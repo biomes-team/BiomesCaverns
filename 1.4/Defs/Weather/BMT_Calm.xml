@@ -36,4 +36,42 @@
       <saturation>0.9</saturation>
      </skyColorsNightMid> 
   </WeatherDef>
+  <WeatherDef>
+    <defName>BMT_FungalCavern</defName>
+    <label>Cavern</label>
+    <description>The ground is calm and undisturbed. No penalties or modifiers.</description>
+    <repeatable>true</repeatable>
+    <favorability>Good</favorability>
+    <perceivePriority>0</perceivePriority>
+    <ambientSounds>
+      <li>BMT_Ambient_Cave_Calm</li>
+    </ambientSounds>   
+    <!-- Colors are dark, and don't change throughout the day -->
+    <skyColorsDay>
+    <label>Cavern</label>
+    <skyColorsDay>
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDay>
+     <skyColorsDusk> 
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+     </skyColorsDusk> 
+     <skyColorsNightEdge> 
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+     </skyColorsNightEdge> 
+     <skyColorsNightMid> 
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+     </skyColorsNightMid> 
+  </WeatherDef>
 </Defs>
