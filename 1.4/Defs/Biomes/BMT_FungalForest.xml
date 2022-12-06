@@ -123,7 +123,7 @@
       </li>
     </terrainPatchMakers>
     <baseWeatherCommonalities>
-      <BMT_Calm>100</BMT_Calm>
+      <BMT_FungalCavern>100</BMT_FungalCavern>
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- ground cover -->
@@ -138,27 +138,31 @@
     <BMT_BalefulBolete>0.02</BMT_BalefulBolete>
     <BMT_BleedingTooth>0.05</BMT_BleedingTooth>
     <BMT_CrimsonCap>0.02</BMT_CrimsonCap>
-    <BMT_Ravelmush>0.02</BMT_Ravelmush>
+    
     <BMT_VioletWimple>0.02</BMT_VioletWimple>
 		
 	<!-- trees -->
     <BMT_Embrun>0.1</BMT_Embrun>
     <BMT_GleamPlum>0.2</BMT_GleamPlum>
     <BMT_Jellycap>0.2</BMT_Jellycap>
-	<!-- only by player (wood) -->
-    <!-- <BMT_Nogtyl>0.05</BMT_Nogtyl> -->
-	<!-- only by player (wood) -->
     <BMT_Viritoll>0.1</BMT_Viritoll>
+	<!-- only by player (wood) -->
+    <BMT_Nogtyl>0.000001</BMT_Nogtyl>
 		
 	<!-- other harvestable -->
-    <BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>    <!-- food -->
-    <BMT_DulcisPlant>0.02</BMT_DulcisPlant>   <!-- food -->
-    <BMT_KessingerPlant>0.001</BMT_KessingerPlant>    <!-- food -->
-    <BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>    <!-- textiles -->
-    <BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>    <!-- medicine -->
-    <BMT_Shinecap>0.003</BMT_Shinecap>    <!-- fruit tree -->
-    <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>    <!-- food -->
-    <BMT_Stimquill>0.005</BMT_Stimquill>    <!-- stimulant drug -->
+    <!-- food -->
+    <BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>    
+    <BMT_DulcisPlant>0.02</BMT_DulcisPlant>
+    <BMT_KessingerPlant>0.001</BMT_KessingerPlant>
+    <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>
+    <!-- fruit tree -->
+    <BMT_Shinecap>0.003</BMT_Shinecap>
+    <!-- textiles -->
+    <BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>
+    <!-- medicine -->
+    <BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>
+    <!-- stimulant drug -->
+    <BMT_Stimquill>0.005</BMT_Stimquill>
     
 	<!-- hydrophytes -->
     <BMT_Arpeau>0.3</BMT_Arpeau>
@@ -167,20 +171,24 @@
     <BMT_Wrinklecap>0.4</BMT_Wrinklecap>
 
 	<!-- special -->
-    <BMT_Poptop>0.03</BMT_Poptop>   <!-- firepooper -->
-    <BMT_Skulltop>0.003</BMT_Skulltop>    <!-- toxic -->
+    <!-- firepooper -->
+    <BMT_Poptop_Sprout>0.03</BMT_Poptop_Sprout>
+    <!-- cleener -->
+    <BMT_Ravelmush>0.02</BMT_Ravelmush>
+    <!--<BMT_Skulltop>0.003</BMT_Skulltop>-->    <!-- toxic -->
 	
-	
+	<!--
     <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_Nutrifungus>
 
     <Plant_GrassAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_GrassAnima>
     <Plant_TreeAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_TreeAnima>
+  -->
 
 	<!-- Seeds cannot grow, buddy -->
-    <!-- <GauranlenSeed MayRequire="Ludeon.RimWorld.Ideology">0.00001</GauranlenSeed> -->
-	<Plant_PodGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_PodGauranlen>
+    <!-- <GauranlenSeed MayRequire="Ludeon.RimWorld.Ideology">0.00001</GauranlenSeed>
+	  <Plant_PodGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_PodGauranlen>
     <Plant_MossGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_MossGauranlen>
-    <Plant_TreeGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_TreeGauranlen>
+    <Plant_TreeGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_TreeGauranlen> -->
 
     </wildPlants>
 

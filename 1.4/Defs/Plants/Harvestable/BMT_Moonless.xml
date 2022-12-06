@@ -35,7 +35,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_MoonlessSilk</defName>
 		<label>moonless silk</label>
-		<description>.</description>
+		<description>Tanned, dried, scraped mushroom layers. A good underground material for making clothes and bags.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Crops/MoonlessSilk</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -57,7 +57,7 @@
 		<minRewardCount>30</minRewardCount>
 		<stuffProps>
 			<categories>
-				<li>Fabric</li>
+				<li>Leathery</li>
 			</categories>
 			<commonality>0.20</commonality>
 			<statFactors>
@@ -67,7 +67,7 @@
 			</statFactors>
 		</stuffProps>
 		<thingCategories>
-			<li>Textiles</li>
+			<li>Leathers</li>
 		</thingCategories>
 	</ThingDef>
 </Defs>

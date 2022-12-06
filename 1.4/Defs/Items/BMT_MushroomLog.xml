@@ -2,10 +2,10 @@
 <Defs>
   
  
-  <ThingDef ParentName="ResourceVerbBase">
+  <ThingDef ParentName="ResourceVerbBase"> <!--RoughPlantBase-->
     <defName>BMT_MushroomLog</defName>
     <label>mushroom log</label>
-    <description>Material from large mushrooms or other fibrous fungi. Useful for building structures and weapons.</description>
+    <description>Material from large mushrooms or other fibrous fungi. Useful for building structures and weapons. Good animal feed, but inedible for humans.</description>
     <graphicData>
       <texPath>BMT_Caverns/Things/Item/MushroomLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -14,10 +14,12 @@
     <soundInteract>Wood_Drop</soundInteract>
     <soundDrop>Wood_Drop</soundDrop>
     <statBases>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
       <MarketValue>1.1</MarketValue>
       <MaxHitPoints>130</MaxHitPoints>
       <Mass>0.4</Mass> 
-      <Flammability>1.0</Flammability>
+      <Flammability>0.3</Flammability>
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
@@ -27,6 +29,13 @@
       <SharpDamageMultiplier>0.40</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
+    <ingestible>
+      <foodType>Plant</foodType>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
     <burnableByRecipe>true</burnableByRecipe>
     <healthAffectsPrice>false</healthAffectsPrice>
     <minRewardCount>10</minRewardCount>
@@ -54,6 +63,7 @@
     </stuffProps>
     <thingCategories>
       <li>ResourcesRaw</li>
+      <li>PlantFoodRaw</li>
     </thingCategories>
     <weaponClasses>
       <li>Melee</li>
@@ -70,8 +80,10 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <allowedArchonexusCount>150</allowedArchonexusCount>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
   </ThingDef>
 
 

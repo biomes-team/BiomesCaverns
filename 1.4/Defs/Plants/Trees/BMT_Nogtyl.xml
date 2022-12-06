@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_CaveTreeBase">
+	<ThingDef ParentName="TreeBase">
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
@@ -56,7 +56,7 @@
 			<harvestYield>20</harvestYield>
 			<wildOrder>1</wildOrder>
 			<neverBlightable>true</neverBlightable>
-			<harvestedThingDef Inherit="False">WoodLog</harvestedThingDef>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
 			<harvestMinGrowth>0.40</harvestMinGrowth>
 			<harvestFailable>false</harvestFailable>
 			<blockAdjacentSow>true</blockAdjacentSow>
