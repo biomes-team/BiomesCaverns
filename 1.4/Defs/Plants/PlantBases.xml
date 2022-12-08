@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
 	<ThingDef ParentName="TreeBase" Name="BMT_CaveTreeBase" Abstract="True">
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Flammability>0.25</Flammability>
 		</statBases>
@@ -22,13 +17,8 @@
 			<choppedThingDef>BMT_FloorMold</choppedThingDef>
 		</plant>
 	</ThingDef>
+
 	<ThingDef ParentName="PlantBase" Name="BMT_CavePlantBase" Abstract="True">
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-			</li>
-		</modExtensions>
 		<statBases>
 			<Nutrition>0.20</Nutrition>
 			<Flammability>0.35</Flammability>
@@ -40,6 +30,7 @@
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
+
 	<ThingDef ParentName="BMT_CavePlantBase" Name="BMT_CaveBushBase" Abstract="True">
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -66,4 +57,45 @@
 			</shadowData>
 		</graphicData>
 	</ThingDef>
+
+	<ThingDef ParentName="PlantBase" Name="BMT_MyceliumBase" Abstract="True">
+		<label>mycelium</label>
+		<description>Mycelium.</description>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<thingClass>BiomesCore.Plant_ShootGrowth</thingClass>
+		<useHitPoints>True</useHitPoints>
+		<category>Plant</category>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Mycelium</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.0~0.9</growingHours>
+			</li>
+		</modExtensions>
+		<comps />
+		<statBases>
+			<Nutrition>0.20</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>14</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.0</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+		</plant>
+	</ThingDef>
+
 </Defs>

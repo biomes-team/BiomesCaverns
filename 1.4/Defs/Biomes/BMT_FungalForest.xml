@@ -128,7 +128,6 @@
     <wildPlants>
 	<!-- ground cover -->
     <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-    <BMT_FloorMold>5.0</BMT_FloorMold>
     <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
     <BMT_Pusmelon>0.1</BMT_Pusmelon>
     <BMT_RustPuff>0.2</BMT_RustPuff>
@@ -142,12 +141,17 @@
     <BMT_VioletWimple>0.02</BMT_VioletWimple>
 		
 	<!-- trees -->
-    <BMT_Embrun>0.1</BMT_Embrun>
-    <BMT_GleamPlum>0.2</BMT_GleamPlum>
-    <BMT_Jellycap>0.2</BMT_Jellycap>
-    <BMT_Viritoll>0.1</BMT_Viritoll>
+    <BMT_Mycelium_Embrun>0.9</BMT_Mycelium_Embrun>
+    <BMT_Mycelium_GleamPlum>0.9</BMT_Mycelium_GleamPlum>
+    <BMT_Mycelium_Jellycap>0.9</BMT_Mycelium_Jellycap>
+    <BMT_Mycelium_Viritoll>0.9</BMT_Mycelium_Viritoll>
+    <BMT_Embrun>0.00001</BMT_Embrun>
+    <BMT_GleamPlum>0.00002</BMT_GleamPlum>
+    <BMT_Jellycap>0.00002</BMT_Jellycap>
+    <BMT_Viritoll>0.00001</BMT_Viritoll>
 	<!-- only by player (wood) -->
-    <BMT_Nogtyl>0.000001</BMT_Nogtyl>
+    <BMT_Mycelium_Nogtyl>0.9</BMT_Mycelium_Nogtyl>
+    <BMT_Nogtyl>0.00001</BMT_Nogtyl>
 		
 	<!-- other harvestable -->
     <!-- food -->
@@ -165,7 +169,8 @@
     <BMT_Stimquill>0.005</BMT_Stimquill>
     
 	<!-- hydrophytes -->
-    <BMT_Arpeau>0.3</BMT_Arpeau>
+    <BMT_Mycelium_Arpeau>0.3</BMT_Mycelium_Arpeau>
+    <BMT_Arpeau>0.1</BMT_Arpeau>
     <BMT_LuminousSpout>0.2</BMT_LuminousSpout>
     <BMT_Nuitae>0.4</BMT_Nuitae>
     <BMT_Wrinklecap>0.4</BMT_Wrinklecap>

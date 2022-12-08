@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>	
-	
-	
-    <ThingDef ParentName="BMT_CaveTreeBase">
-        <defName>BMT_GleamPlum</defName>
-        <label>gleamplum</label>
-        <description>A strong yellow mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
-        <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/Gleamplum</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-        </graphicData>
-        <statBases>
-            <Beauty>4</Beauty>
-        </statBases>
-        <plant>
-            <wildClusterRadius>3</wildClusterRadius>
+
+	<ThingDef ParentName="BMT_MyceliumBase">
+		<defName>BMT_Mycelium_GleamPlum</defName>
+		<label>mycelium</label>
+		<description>Mycelium.</description>
+		<comps>
+			<li Class="BiomesCore.CompProperties_ShootGrowth">
+				<shootGrowthThingDef>BMT_GleamPlum</shootGrowthThingDef>
+			</li>
+		</comps>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
-            <growDays>30</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestWork>1000</harvestWork>
-            <harvestYield>40</harvestYield>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_GleamPlum</defName>
+		<label>gleamplum</label>
+		<description>A strong yellow mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Gleamplum</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+			<growDays>30</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>1000</harvestWork>
+			<harvestYield>40</harvestYield>
 			<wildOrder>3</wildOrder>
-            <neverBlightable>true</neverBlightable>
-        </plant>
-    </ThingDef>
+			<neverBlightable>true</neverBlightable>
+			<smashedThingDef>BMT_Mycelium_GleamPlum</smashedThingDef>
+			<choppedThingDef>BMT_Mycelium_GleamPlum</choppedThingDef>
+		</plant>
+	</ThingDef>
+
 </Defs>

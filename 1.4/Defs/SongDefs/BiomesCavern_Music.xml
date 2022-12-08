@@ -191,8 +191,8 @@
     </modExtensions>
   </SongDef>
   <!-- Cave -->
-    <SongDef>
-    <clipPath>BMT_Caverns/Music/Cave/BIOMES2</clipPath>
+  <SongDef>
+    <clipPath>BMT_Caverns/Music/Cave/Indoor_Garden</clipPath>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
@@ -202,7 +202,7 @@
     </modExtensions>
   </SongDef>
   <SongDef>
-    <clipPath>BMT_Caverns/Music/Cave/BIOMES3</clipPath>
+    <clipPath>BMT_Caverns/Music/Cave/Essence_Of_The_Underground</clipPath>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
@@ -212,7 +212,17 @@
     </modExtensions>
   </SongDef>
   <SongDef>
-    <clipPath>BMT_Caverns/Music/Cave/BIOMES4</clipPath>
+    <clipPath>BMT_Caverns/Music/Cave/Cavern_Chill</clipPath>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BMT_ShallowCave</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  <SongDef>
+    <clipPath>BMT_Caverns/Music/Cave/That_Which_Glimmers</clipPath>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
@@ -223,7 +233,7 @@
   </SongDef>
   <!-- Tension -->
     <SongDef>
-    <clipPath>BMT_Caverns/Music/Cave/Cave_Battle_1</clipPath>
+    <clipPath>BMT_Caverns/Music/Cave/Cave_Battle</clipPath>
     <volume>1.0</volume>
     <tense>true</tense>
     <modExtensions>
