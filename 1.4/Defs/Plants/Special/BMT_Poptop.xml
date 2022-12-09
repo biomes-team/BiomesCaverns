@@ -4,7 +4,7 @@
 		<defName>BMT_Poptop_Sprout</defName>
 		<label>poptop</label>
 		<description>A spongy mushroom sprout, if grown, overreacting to fire.</description>
-		<thingClass>BiomesCore.Plant_ShootGrowth</thingClass>
+		<!--thingClass>BiomesCore.Plant_ShootGrowth</thingClass-->
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -53,7 +53,7 @@
 		<defName>BMT_Poptop_Grown</defName>
 		<label>poptop</label>
 		<description>A spongy mushroom sprout, if grown, overreacting to fire.</description>
-		<thingClass>BiomesCore.Plant_ShootGrowth</thingClass>
+		<!--thingClass>BiomesCore.Plant_ShootGrowth</thingClass-->
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

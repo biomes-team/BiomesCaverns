@@ -14,7 +14,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<defName>BMT_Mycelium_Nogtyl</defName>
+		<defName>BMT_Nogtyl_Mycelium</defName>
 		<label>mycelium</label>
 		<description>Mycelium.</description>
 		<comps>
@@ -106,8 +106,8 @@
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
-			<smashedThingDef>BMT_Mycelium_Nogtyl</smashedThingDef>
-			<choppedThingDef>BMT_Mycelium_Nogtyl</choppedThingDef>
+			<smashedThingDef>BMT_Nogtyl_Mycelium</smashedThingDef>
+			<choppedThingDef>BMT_Nogtyl_Mycelium</choppedThingDef>
 		</plant>
 	</ThingDef>
 

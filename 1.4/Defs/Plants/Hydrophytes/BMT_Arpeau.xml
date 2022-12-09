@@ -12,7 +12,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<defName>BMT_Mycelium_Arpeau</defName>
+		<defName>BMT_Arpeau_Mycelium</defName>
 		<label>mycelium</label>
 		<description>Mycelium.</description>
 		<comps>
@@ -101,8 +101,8 @@
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
-			<smashedThingDef>BMT_Mycelium_Arpeau</smashedThingDef>
-			<choppedThingDef>BMT_Mycelium_Arpeau</choppedThingDef>
+			<smashedThingDef>BMT_Arpeau_Mycelium</smashedThingDef>
+			<choppedThingDef>BMT_Arpeau_Mycelium</choppedThingDef>
 		</plant>
 	</ThingDef>
 

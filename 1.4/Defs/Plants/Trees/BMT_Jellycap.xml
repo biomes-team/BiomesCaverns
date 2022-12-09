@@ -2,7 +2,7 @@
 <Defs>	
 
 	<ThingDef ParentName="BMT_MyceliumBase">
-		<defName>BMT_Mycelium_Jellycap</defName>
+		<defName>BMT_Jellycap_Mycelium</defName>
 		<label>mycelium</label>
 		<description>Mycelium.</description>
 		<comps>
@@ -41,8 +41,8 @@
 			<harvestYield>30</harvestYield>
 			<wildOrder>3</wildOrder>
 			<neverBlightable>true</neverBlightable>
-			<smashedThingDef>BMT_Mycelium_Jellycap</smashedThingDef>
-			<choppedThingDef>BMT_Mycelium_Jellycap</choppedThingDef>
+			<smashedThingDef>BMT_Jellycap_Mycelium</smashedThingDef>
+			<choppedThingDef>BMT_Jellycap_Mycelium</choppedThingDef>
 		</plant>
 	</ThingDef>
 </Defs>
