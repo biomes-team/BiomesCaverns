@@ -196,7 +196,7 @@
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
-                <li>BMT_ShallowCave</li>
+                <li>BMT_FungalForest</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -206,7 +206,7 @@
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
-                <li>BMT_ShallowCave</li>
+                <li>BMT_FungalForest</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -216,7 +216,7 @@
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
-                <li>BMT_ShallowCave</li>
+                <li>BMT_FungalForest</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -229,7 +229,7 @@
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
             <biomeDefNameRestrictions>
-                <li>BMT_ShallowCave</li>
+                <li>BMT_FungalForest</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>

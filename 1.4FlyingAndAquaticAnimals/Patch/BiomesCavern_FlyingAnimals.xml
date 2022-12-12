@@ -9,7 +9,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BiomeDef[defName="BMT_ShallowCave"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeVariantDef[defName="BMT_ShallowCave"]/layers/li/wildAnimals</xpath>
 				<value>
 					<BMT_FruitBat>0.4</BMT_FruitBat>
 				</value>
