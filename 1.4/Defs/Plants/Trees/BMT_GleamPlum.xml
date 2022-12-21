@@ -6,7 +6,7 @@
 		<label>mycelium</label>
 		<description>Mycelium.</description>
 		<comps>
-			<li Class="BiomesCore.CompProperties_ShootGrowth">
+			<li Class="BiomesCore.CompProperties_ClassShootGrowthxxx">
 				<shootGrowthThingDef>BMT_GleamPlum</shootGrowthThingDef>
 			</li>
 		</comps>

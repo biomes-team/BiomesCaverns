@@ -58,11 +58,11 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_CaveTreeBase" Name="BMT_MyceliumBase" Abstract="True">
+	<ThingDef ParentName="BMT_CavePlantBase" Name="BMT_MyceliumBase" Abstract="True">
 		<label>mycelium</label>
 		<description>Mycelium.</description>
 		<altitudeLayer>LowPlant</altitudeLayer>
-		<!--thingClass>BiomesCore.Plant_ShootGrowth</thingClass-->
+		<thingClass>BiomesCore.Plant_ClassShootGrowthxxx</thingClass>
 		<useHitPoints>True</useHitPoints>
 		<category>Plant</category>
 		<graphicData>

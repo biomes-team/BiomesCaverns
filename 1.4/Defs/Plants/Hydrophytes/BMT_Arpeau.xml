@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BMT_MyceliumBase">
+	<!--ThingDef ParentName="BMT_MyceliumBase">
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<terrainTags>
@@ -24,7 +24,7 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
 		</plant>
-	</ThingDef>
+	</ThingDef-->
 
 	<ThingDef ParentName="PlantBase">
 		<modExtensions>

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- Mycelium -->
+	<ThingDef ParentName="BMT_MyceliumBase">
+		<defName>BMT_Shinecap_Mycelium</defName>
+		<label>mycelium</label>
+		<description>Mycelium.</description>
+		<comps>
+			<li Class="BiomesCore.CompProperties_ClassShootGrowthxxx">
+				<shootGrowthThingDef>BMT_Shinecap</shootGrowthThingDef>
+			</li>
+		</comps>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+		</plant>
+	</ThingDef>
 	<!-- plant -->
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Shinecap</defName>
@@ -38,6 +53,8 @@
 			<harvestFailable>true</harvestFailable>
 			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
+			<smashedThingDef>BMT_Shinecap_Mycelium</smashedThingDef>
+			<choppedThingDef>BMT_Shinecap_Mycelium</choppedThingDef>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

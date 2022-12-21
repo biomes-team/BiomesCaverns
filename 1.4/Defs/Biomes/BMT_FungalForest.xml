@@ -127,53 +127,53 @@
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- ground cover -->
-    <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
+    <!--BMT_Dewshrooms>0.02</BMT_Dewshrooms>
     <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
     <BMT_Pusmelon>0.1</BMT_Pusmelon>
     <BMT_RustPuff>0.2</BMT_RustPuff>
-    <BMT_Sagecrust>1.0</BMT_Sagecrust>
+    <BMT_Sagecrust>1.0</BMT_Sagecrust-->
 		
 	<!-- mid sized -->
-    <BMT_BalefulBolete>0.02</BMT_BalefulBolete>
+    <!--BMT_BalefulBolete>0.02</BMT_BalefulBolete>
     <BMT_BleedingTooth>0.05</BMT_BleedingTooth>
     <BMT_CrimsonCap>0.02</BMT_CrimsonCap>
-    
-    <BMT_VioletWimple>0.02</BMT_VioletWimple>
+    <BMT_VioletWimple>0.02</BMT_VioletWimple-->
 		
 	<!-- trees -->
-    <BMT_Embrun_Mycelium>0.9</BMT_Embrun_Mycelium>
-    <BMT_GleamPlum_Mycelium>0.9</BMT_GleamPlum_Mycelium>
-    <BMT_Jellycap_Mycelium>0.9</BMT_Jellycap_Mycelium>
-    <BMT_Viritoll_Mycelium>0.9</BMT_Viritoll_Mycelium>
+    <BMT_Embrun_Mycelium>3</BMT_Embrun_Mycelium>
+    <BMT_GleamPlum_Mycelium>3</BMT_GleamPlum_Mycelium>
+    <BMT_Jellycap_Mycelium>3</BMT_Jellycap_Mycelium>
+    <BMT_Viritoll_Mycelium>3</BMT_Viritoll_Mycelium>
     <BMT_Embrun>0.00001</BMT_Embrun>
     <BMT_GleamPlum>0.00002</BMT_GleamPlum>
     <BMT_Jellycap>0.00002</BMT_Jellycap>
     <BMT_Viritoll>0.00001</BMT_Viritoll>
 	<!-- only by player (wood) -->
-    <BMT_Nogtyl_Mycelium>0.9</BMT_Nogtyl_Mycelium>
+    <!--BMT_Nogtyl_Mycelium>0.9</BMT_Nogtyl_Mycelium-->
     <BMT_Nogtyl>0.00001</BMT_Nogtyl>
 		
 	<!-- other harvestable -->
     <!-- food -->
-    <BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>    
+    <!--BMT_AbyssalGrapesVine>0.007</BMT_AbyssalGrapesVine>    
     <BMT_DulcisPlant>0.02</BMT_DulcisPlant>
     <BMT_KessingerPlant>0.001</BMT_KessingerPlant>
-    <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>
+    <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant-->
     <!-- fruit tree -->
-    <BMT_Shinecap>0.003</BMT_Shinecap>
+    <BMT_Shinecap_Mycelium>0.003</BMT_Shinecap_Mycelium>
+    <BMT_Shinecap>0.00001</BMT_Shinecap>
     <!-- textiles -->
-    <BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant>
+    <!--BMT_MoonlessStripesPlant>0.005</BMT_MoonlessStripesPlant-->
     <!-- medicine -->
-    <BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>
+    <!--BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant-->
     <!-- stimulant drug -->
-    <BMT_Stimquill>0.005</BMT_Stimquill>
+    <!--BMT_Stimquill>0.005</BMT_Stimquill-->
     
 	<!-- hydrophytes -->
-    <BMT_Arpeau_Mycelium>0.3</BMT_Arpeau_Mycelium>
-    <BMT_Arpeau>0.1</BMT_Arpeau>
+    <!--BMT_Arpeau_Mycelium>0.3</BMT_Arpeau_Mycelium-->
+    <!--BMT_Arpeau>0.1</BMT_Arpeau>
     <BMT_LuminousSpout>0.2</BMT_LuminousSpout>
     <BMT_Nuitae>0.4</BMT_Nuitae>
-    <BMT_Wrinklecap>0.4</BMT_Wrinklecap>
+    <BMT_Wrinklecap>0.4</BMT_Wrinklecap-->
 
 	<!-- special -->
     <!-- firepooper -->

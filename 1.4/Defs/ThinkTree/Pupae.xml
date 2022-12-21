@@ -14,14 +14,14 @@
         <li Class="ThinkNode_Subtree">
           <treeDef>Downed</treeDef>
         </li>
-        <li Class="ThinkNode_Subtree">
+        <!--li Class="ThinkNode_Subtree">
           <treeDef>BurningResponse</treeDef>
         </li>
         <li Class="ThinkNode_Subtree">
           <treeDef>MentalStateCritical</treeDef>
-        </li>
+        </li-->
         <!-- Lay eggs you need to -->
-        <li Class="JobGiver_LayEgg" />
+        <!--li Class="JobGiver_LayEgg" /-->
         <!-- Tame animal -->
         <li Class="ThinkNode_ConditionalOfPlayerFaction">
           <subNodes>
@@ -29,7 +29,7 @@
           </subNodes>
         </li>
         <!-- Nuzzle randoms -->
-        <li Class="ThinkNode_ChancePerHour_Nuzzle">
+        <!--li Class="ThinkNode_ChancePerHour_Nuzzle">
           <subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>Misc</tagToGive>
@@ -38,7 +38,7 @@
               </subNodes>
             </li>
           </subNodes>
-        </li>
+        </li-->
         <!-- Insertion hook for modders -->
         <li Class="ThinkNode_SubtreesByTag">
           <insertTag>Animal_PreWander</insertTag>
