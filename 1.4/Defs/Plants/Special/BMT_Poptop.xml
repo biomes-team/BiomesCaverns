@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BMT_CaveTreeBase">
-		<defName>BMT_Poptop_Sprout</defName>
+		<defName>BMT_Poptop</defName>
 		<label>poptop</label>
 		<description>A spongy mushroom sprout, if grown, overreacting to fire.</description>
 		<graphicData>
@@ -41,39 +41,6 @@
 		<neverMultiSelect>false</neverMultiSelect>
 		<minifiedDef>MinifiedTree</minifiedDef>
 		<rotatable>false</rotatable>
-		<tickerType>Rare</tickerType>
-		<comps>
-			<li Class="BiomesCore.CompProperties_ShootGrowth">
-				<shootGrowthThingDef>BMT_Poptop_Grown</shootGrowthThingDef>
-				<growthProgress>99</growthProgress>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>BMT_Poptop_Grown</defName>
-		<label>poptop</label>
-		<description>A spongy mushroom overreacting to fire.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<statBases>
-			<Mass>50</Mass>
-			<Flammability>0.1</Flammability>
-		</statBases>
-		<thingClass>Building</thingClass>
-		<!-- minifiedDef>MinifiedTree</minifiedDef -->
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>30</pathCost>
-		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
-		<selectable>true</selectable>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<blockWind>false</blockWind>
-		<neverMultiSelect>false</neverMultiSelect>
-		<rotatable>false</rotatable>
-		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.9</explosiveRadius>
@@ -93,9 +60,7 @@
 				<target>Fire</target>
 				<radius>3</radius>
 			</li>
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>900000</lifespanTicks>
-			</li>
 		</comps>
 	</ThingDef>
+
 </Defs>
