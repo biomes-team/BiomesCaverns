@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-  <DamageDef ParentName="Bomb">
-	<defName>BMT_Crystalope_SharpBomb</defName>
-	<label>crystal bomb</label>
-	<defaultDamage>20</defaultDamage>
-	<defaultArmorPenetration>0.9</defaultArmorPenetration>
-  </DamageDef>
-
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_Crystalope</defName>
 	<label>crystalope</label>
