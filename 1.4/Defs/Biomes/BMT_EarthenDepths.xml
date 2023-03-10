@@ -5,28 +5,53 @@
     <defName>BMT_EarthenDepths</defName>
     <label>earthen depths</label>
     <description>A deep cave system</description>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
-    <!-- <workerClass>BiomesCaverns.BiomeWorker_NoTest</workerClass> -->
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isCavern>true</isCavern>
-			<cavernShapes>
-				<li>TunnelNetwork</li>
-			</cavernShapes>
-		</li>
-		<li Class="BiomesKit.BiomesKitControls">
-			<spawnOnBiomes>
-			</spawnOnBiomes>
-			<randomizeHilliness>True</randomizeHilliness>
-			<minimumLandNeighbors>4</minimumLandNeighbors>
-			<allowOnLand>true</allowOnLand>
-			<frequency>50</frequency>
-			<minTemperature>-60</minTemperature>
-			<maxTemperature>60</maxTemperature>
-			<usePerlin>true</usePerlin>
-			<perlinCulling>1.0</perlinCulling>
-		</li>
-	</modExtensions>
+    <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.BiomesMap">
+        <isCavern>true</isCavern>
+        <cavernShapes>
+          <li>TunnelNetwork</li>
+        </cavernShapes>
+      </li>
+      <li Class="GeologicalLandforms.BiomeProperties">
+        <applyToCaves>true</applyToCaves>
+        <allowLandforms>false</allowLandforms>
+        <allowBiomeTransitions>false</allowBiomeTransitions>
+        <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+        <worldTileGraphicAtlas>
+          <texture>BMT_Caverns/World/Biomes/Atlas/EarthenDepths</texture>
+          <drawMode>HexAdjacencyCaves</drawMode>
+          <atlasSize>(4,4)</atlasSize>
+        </worldTileGraphicAtlas>
+      </li>
+      <li Class="GeologicalLandforms.BiomeWorkerConfig">
+        <score>
+          <value>100</value>
+          <conditions>
+            <anyOf>
+              <depthInCaveSystem>
+                <min>3</min>
+              </depthInCaveSystem>
+              <allOf>
+                <depthInCaveSystem>2</depthInCaveSystem>
+                <valueInRange>
+                  <value supplier="randomValueWorld">
+                    <seedMask>CaveDepthFlag</seedMask>
+                  </value>
+                  <min>0.5</min>
+                </valueInRange>
+              </allOf>
+            </anyOf>
+            <temperature>
+              <min>0</min>
+            </temperature>
+            <rainfall>
+              <max>750</max>
+            </rainfall>
+          </conditions>
+        </score>
+      </li>
+    </modExtensions>
     <animalDensity>0.8</animalDensity>
     <plantDensity>0.3</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>

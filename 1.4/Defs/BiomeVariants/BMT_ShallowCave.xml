@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <BiomeVariantDef>
+
+    <defName>BMT_ShallowCave</defName>
+
+    <label>shallow cave</label>
+
+    <biomeLabel operation="prependPar">shallow cave</biomeLabel>
+    <biomeDescription operation="replace">A shallow cave system.</biomeDescription>
+
+    <worldTileGraphicAtlas>
+      <texture>BMT_Caverns/World/Biomes/Atlas/ShallowCave</texture>
+      <drawMode>HexAdjacencyCaves</drawMode>
+      <atlasSize>(4,4)</atlasSize>
+    </worldTileGraphicAtlas>
+
+    <worldTileConditions>
+      <anyOf>
+        <landform>CaveEntrance</landform>
+        <landform>SurfaceCave</landform>
+      </anyOf>
+      <noneOf>
+        <biome>Desert</biome>
+        <biome>ExtremeDesert</biome>
+        <biome>IceSheet</biome>
+      </noneOf>
+    </worldTileConditions>
+
+    <layers>
+      <li>
+
+        <mapGridConditions>
+          <roof>RoofRockThick</roof>
+        </mapGridConditions>
+
+        <applyToCaves>true</applyToCaves>
+
+        <animalDensity>3</animalDensity>
+        <plantDensity>1</plantDensity>
+        <wildPlantRegrowDays>27</wildPlantRegrowDays>
+
+        <wildPlants operation="replace">
+
+          <!-- ground cover -->
+          <BMT_FloorMold>3.0</BMT_FloorMold>
+          <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+          <BMT_RustPuff>0.2</BMT_RustPuff>
+          <BMT_Sagecrust>1.5</BMT_Sagecrust>
+          <Bryolux>1.5</Bryolux>
+          <Plant_Moss>1.0</Plant_Moss>
+
+          <!-- mid sized -->
+          <Agarilux>0.02</Agarilux>
+          <BMT_BleedingTooth>0.05</BMT_BleedingTooth>
+          <BMT_Ravelmush>0.02</BMT_Ravelmush>
+          <Glowstool>0.02</Glowstool>
+
+          <!-- trees -->
+          <Plant_Timbershroom MayRequire="Ludeon.RimWorld.Ideology">0.05</Plant_Timbershroom>
+
+          <!-- other harvestable -->
+          <BMT_DulcisPlant>0.02</BMT_DulcisPlant>
+          <BMT_KessingerPlant>0.001</BMT_KessingerPlant>
+          <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>
+          <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.02</Plant_Nutrifungus>
+
+          <!-- hydrophytes -->
+          <BMT_BiolumiAlgaeCarnelian>0.2</BMT_BiolumiAlgaeCarnelian>
+          <BMT_BiolumiAlgaeTanzanite>0.2</BMT_BiolumiAlgaeTanzanite>
+          <BMT_BiolumiAlgaeKunzite>0.2</BMT_BiolumiAlgaeKunzite>
+          <BMT_BiolumiAlgaeTurquoise>0.2</BMT_BiolumiAlgaeTurquoise>
+          <BMT_BiolumiAlgaeChrysoberyl>0.2</BMT_BiolumiAlgaeChrysoberyl>
+          <BMT_BiolumiAlgaeCitrine>0.2</BMT_BiolumiAlgaeCitrine>
+
+          <!-- special -->
+          <BMT_Shimmershroom>0.25</BMT_Shimmershroom>
+          <BMT_Glowbulb>0.3</BMT_Glowbulb>
+          <BMT_Greyfields>0.4</BMT_Greyfields>
+          <BMT_RoyalBracket>0.2</BMT_RoyalBracket>
+          <BMT_Gleamcap>0.1</BMT_Gleamcap>
+          <BMT_Brightbells>0.5</BMT_Brightbells>
+
+        </wildPlants>
+
+        <wildAnimals operation="replace">
+
+          <!-- herbivores -->
+          <BMT_CaveCricket>0.25</BMT_CaveCricket>
+          <BMT_GlowSlug>0.1</BMT_GlowSlug>
+          <BMT_GlowSnail>0.05</BMT_GlowSnail>
+          <BMT_Goeto>0.3</BMT_Goeto>
+          <BMT_MossBeetle>0.075</BMT_MossBeetle>
+          <BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+          <BMT_Pillbug>0.2</BMT_Pillbug>
+          <BMT_TruffleMole>0.1</BMT_TruffleMole>
+          <BMT_Xyrion>0.1</BMT_Xyrion>
+          <Boomrat>0.3</Boomrat>
+          <Hare>0.2</Hare>
+          <Megasloth>0.1</Megasloth>
+          <Rat>0.3</Rat>
+          <BMT_Mole>0.2</BMT_Mole>
+          <BMT_DarkAxolotl>0.3</BMT_DarkAxolotl>
+
+          <!-- predators -->
+          <BMT_Owlbear>0.15</BMT_Owlbear>
+
+          <!-- omnivore -->
+          <BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>
+          <BMT_CrystalCrab_Granite>0.001</BMT_CrystalCrab_Granite>
+          <BMT_CrystalCrab_Limestone>0.001</BMT_CrystalCrab_Limestone>
+          <BMT_CrystalCrab_Slate>0.001</BMT_CrystalCrab_Slate>
+          <BMT_CrystalCrab_Marble>0.001</BMT_CrystalCrab_Marble>
+          <BMT_CrystalCrab_Jade>0.0002</BMT_CrystalCrab_Jade>
+          <BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
+
+        </wildAnimals>
+
+      </li>
+    </layers>
+
+  </BiomeVariantDef>
+</Defs>

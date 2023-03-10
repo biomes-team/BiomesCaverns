@@ -5,35 +5,56 @@
     <defName>BMT_CrystalCaverns</defName>
     <label>crystal caverns</label>
     <description>A crystal cave system</description>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
-    <!-- <workerClass>BiomesCaverns.BiomeWorker_NoTest</workerClass> -->
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isCavern>true</isCavern>
-			<cavernShapes>
-				<li>Smooth</li>
-			</cavernShapes>
-		</li>
-		<li Class="BiomesKit.BiomesKitControls">
-			<spawnOnBiomes>
-			  <li>BorealForest</li>
-			  <li>Tundra</li>
-			</spawnOnBiomes>
-			<randomizeHilliness>True</randomizeHilliness>
-			<minimumLandNeighbors>4</minimumLandNeighbors>
-			<allowOnLand>true</allowOnLand>
-			<frequency>100</frequency>
-			<minTemperature>-44.5</minTemperature>
-			<maxTemperature>5.5</maxTemperature>
-			<usePerlin>true</usePerlin>
-			<perlinCulling>1.0</perlinCulling>
-		</li>
-	</modExtensions>
+    <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.BiomesMap">
+        <isCavern>true</isCavern>
+        <cavernShapes>
+          <li>Smooth</li>
+        </cavernShapes>
+      </li>
+      <li Class="GeologicalLandforms.BiomeProperties">
+        <applyToCaves>true</applyToCaves>
+        <allowLandforms>false</allowLandforms>
+        <allowBiomeTransitions>false</allowBiomeTransitions>
+        <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+        <worldTileGraphicAtlas>
+          <texture>BMT_Caverns/World/Biomes/Atlas/CrystalCaverns</texture>
+          <drawMode>HexAdjacencyCaves</drawMode>
+          <atlasSize>(4,4)</atlasSize>
+        </worldTileGraphicAtlas>
+      </li>
+      <li Class="GeologicalLandforms.BiomeWorkerConfig">
+        <score>
+          <value>100</value>
+          <conditions>
+            <anyOf>
+              <depthInCaveSystem>
+                <min>3</min>
+              </depthInCaveSystem>
+              <allOf>
+                <depthInCaveSystem>2</depthInCaveSystem>
+                <valueInRange>
+                  <value supplier="randomValueWorld">
+                    <seedMask>CaveDepthFlag</seedMask>
+                  </value>
+                  <min>0.5</min>
+                </valueInRange>
+              </allOf>
+            </anyOf>
+            <temperature>
+              <max>0</max>
+              <min>-15</min>
+            </temperature>
+          </conditions>
+        </score>
+      </li>
+    </modExtensions>
     <animalDensity>0.8</animalDensity>
     <plantDensity>0.3</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
-    <texture>BMT_Caverns/World/Biomes/CrystalCavern</texture>
+    <texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>
     <forageability>0.5</forageability>
     <foragedFood>BMT_RawDulcis</foragedFood>
     <wildPlantRegrowDays>27</wildPlantRegrowDays>

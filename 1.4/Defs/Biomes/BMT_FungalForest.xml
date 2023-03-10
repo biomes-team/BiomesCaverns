@@ -4,33 +4,54 @@
   <BiomeDef>
     <defName>BMT_FungalForest</defName>
     <label>fungal forest</label>
-    <description>A damp cave system full of fungi</description>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isCavern>true</isCavern>
-			<cavernShapes>
-				<!-- <li>Tubes</li> -->
-				<!-- <li>Smooth</li> -->
-				<!-- <li>TunnelNetwork</li> -->
-				<li>SmallChambers</li>
-			</cavernShapes>
-		</li>
-    <li Class="BiomesKit.BiomesKitControls">
-     <spawnOnBiomes>
-      <li>TropicalRainforest</li>
-      <li>TropicalSwamp</li>
-    </spawnOnBiomes>
-    <randomizeHilliness>True</randomizeHilliness>
-    <minimumLandNeighbors>4</minimumLandNeighbors>
-    <allowOnLand>true</allowOnLand>
-    <frequency>100</frequency>
-    <minTemperature>10.5</minTemperature>
-    <maxTemperature>29.5</maxTemperature>
-    <usePerlin>true</usePerlin>
-    <perlinCulling>1.0</perlinCulling>
-  </li>
-	</modExtensions>
+    <description>A damp cave system full of fungi.</description>
+    <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.BiomesMap">
+        <isCavern>true</isCavern>
+        <cavernShapes>
+          <li>SmallChambers</li>
+        </cavernShapes>
+      </li>
+      <li Class="GeologicalLandforms.BiomeProperties">
+        <applyToCaves>true</applyToCaves>
+        <allowLandforms>false</allowLandforms>
+        <allowBiomeTransitions>false</allowBiomeTransitions>
+        <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+        <worldTileGraphicAtlas>
+          <texture>BMT_Caverns/World/Biomes/Atlas/FungalForest</texture>
+          <drawMode>HexAdjacencyCaves</drawMode>
+          <atlasSize>(4,4)</atlasSize>
+        </worldTileGraphicAtlas>
+      </li>
+      <li Class="GeologicalLandforms.BiomeWorkerConfig">
+        <score>
+          <value>100</value>
+          <conditions>
+            <anyOf>
+              <depthInCaveSystem>
+                <min>3</min>
+              </depthInCaveSystem>
+              <allOf>
+                <depthInCaveSystem>2</depthInCaveSystem>
+                <valueInRange>
+                  <value supplier="randomValueWorld">
+                    <seedMask>CaveDepthFlag</seedMask>
+                  </value>
+                  <min>0.5</min>
+                </valueInRange>
+              </allOf>
+            </anyOf>
+            <temperature>
+              <min>0</min>
+            </temperature>
+            <rainfall>
+              <min>750</min>
+            </rainfall>
+          </conditions>
+        </score>
+      </li>
+    </modExtensions>
     <animalDensity>3.7</animalDensity>
     <plantDensity>0.90</plantDensity>
     <settlementSelectionWeight>0.7</settlementSelectionWeight>
