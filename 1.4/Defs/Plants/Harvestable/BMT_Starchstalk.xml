@@ -41,6 +41,7 @@
 			<wildClusterWeight>24</wildClusterWeight>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

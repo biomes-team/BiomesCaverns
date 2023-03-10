@@ -43,7 +43,7 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -90,7 +90,7 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -137,7 +137,7 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -184,7 +184,7 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -231,7 +231,7 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -278,7 +278,7 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

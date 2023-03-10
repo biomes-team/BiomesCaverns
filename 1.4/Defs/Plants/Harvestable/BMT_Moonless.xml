@@ -30,6 +30,7 @@
 			<wildOrder>2</wildOrder>
 			<neverBlightable>false</neverBlightable>
 			<visualSizeRange>0.3~1.0</visualSizeRange>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">

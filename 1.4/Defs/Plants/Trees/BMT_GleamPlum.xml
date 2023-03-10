@@ -22,6 +22,7 @@
             <harvestYield>40</harvestYield>
 			<wildOrder>3</wildOrder>
             <neverBlightable>true</neverBlightable>
+            <cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
         </plant>
     </ThingDef>
 </Defs>

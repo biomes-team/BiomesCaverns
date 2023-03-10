@@ -27,6 +27,7 @@
 			<!-- <wildClusterWeight>700</wildClusterWeight> -->
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
 		</plant>
 	</ThingDef>
 

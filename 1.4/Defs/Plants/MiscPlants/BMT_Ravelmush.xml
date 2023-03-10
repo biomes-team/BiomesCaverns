@@ -42,6 +42,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>

@@ -36,12 +36,15 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowResearchPrerequisites Inherit="False" />
 			<interferesWithRoof>false</interferesWithRoof>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<minifiedDef>MinifiedTree</minifiedDef>
 		<rotatable>false</rotatable>
 		<comps>
+			<!-- disabled for now to prevent error
+			
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.9</explosiveRadius>
 				<explosiveDamageType>Extinguish</explosiveDamageType>
@@ -60,6 +63,8 @@
 				<target>Fire</target>
 				<radius>3</radius>
 			</li>
+			
+			-->
 		</comps>
 	</ThingDef>
 

@@ -72,7 +72,7 @@
 			<treeCategory>Full</treeCategory>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>

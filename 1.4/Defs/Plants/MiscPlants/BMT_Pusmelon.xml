@@ -29,6 +29,7 @@
 			<wildClusterWeight>20</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+					<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
         </plant>
     </ThingDef>
 </Defs>

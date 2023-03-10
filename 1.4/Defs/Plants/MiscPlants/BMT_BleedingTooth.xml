@@ -10,6 +10,9 @@
             <texPath>BMT_Caverns/Things/Plant/BleedingTooth</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
+      <plant>
+        <cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
+      </plant>
         <modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>

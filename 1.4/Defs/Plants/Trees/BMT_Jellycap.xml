@@ -29,6 +29,7 @@
             <harvestYield>30</harvestYield>
 			<wildOrder>3</wildOrder>
             <neverBlightable>true</neverBlightable>
+          <cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
         </plant>
     </ThingDef>
 </Defs>

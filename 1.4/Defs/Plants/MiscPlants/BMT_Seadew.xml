@@ -21,6 +21,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+					<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
         </plant>
 		<comps>
 		  <li Class="CompProperties_Glower">

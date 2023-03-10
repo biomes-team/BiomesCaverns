@@ -21,6 +21,7 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+          <cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
         </plant>
     </ThingDef>
 </Defs>

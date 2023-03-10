@@ -36,6 +36,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 	</ThingDef>
   <!--<ThingDef ParentName="RoughPlantBase">

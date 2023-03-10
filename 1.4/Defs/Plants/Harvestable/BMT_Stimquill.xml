@@ -25,7 +25,8 @@
 			 <!-- <topWindExposure>0.2</topWindExposure>  -->
 			 <wildClusterRadius>6</wildClusterRadius> 
 			 <wildClusterWeight>200</wildClusterWeight> 
-			 <wildOrder>2</wildOrder> 
+			 <wildOrder>2</wildOrder>
+           <cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
          </plant> 
     </ThingDef>
 	

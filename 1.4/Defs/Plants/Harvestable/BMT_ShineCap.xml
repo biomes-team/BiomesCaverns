@@ -38,6 +38,7 @@
 			<harvestFailable>true</harvestFailable>
 			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

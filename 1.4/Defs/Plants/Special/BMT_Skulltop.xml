@@ -44,6 +44,7 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowResearchPrerequisites Inherit="False"/>
 			<interferesWithRoof>false</interferesWithRoof>
+			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 		<!--building>
 			<isTrap>true</isTrap>
