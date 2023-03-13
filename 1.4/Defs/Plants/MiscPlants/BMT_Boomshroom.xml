@@ -23,19 +23,19 @@
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomImmature</immatureGraphicPath>
 			<growMinGlow>0.5</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
-			<fertilityMin>1.4</fertilityMin>
-			<fertilitySensitivity>1.0</fertilitySensitivity>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>0.5~0.7</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
-			<harvestYield>1</harvestYield>
+			<harvestedThingDef>BMT_BoomSpore</harvestedThingDef>
+			<harvestYield>4</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
@@ -50,6 +50,7 @@
 			<texPath>BMT_Caverns/Things/Item/BoomSpore</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		<tickerType>Normal</tickerType>
 		<stackLimit>75</stackLimit>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -62,6 +63,18 @@
 			<li>ResourcesRaw</li>
 		</thingCategories>
 		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
 		</comps>
 	</ThingDef>
 	<RecipeDef>
