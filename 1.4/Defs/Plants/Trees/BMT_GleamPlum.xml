@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
-	
+<Defs>
     <ThingDef ParentName="BMT_CaveTreeBase">
         <defName>BMT_GleamPlum</defName>
         <label>gleamplum</label>
@@ -22,7 +20,6 @@
             <harvestYield>40</harvestYield>
 			<wildOrder>3</wildOrder>
             <neverBlightable>true</neverBlightable>
-            <cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
         </plant>
     </ThingDef>
 </Defs>

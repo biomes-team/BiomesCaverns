@@ -3,8 +3,12 @@
 	<ThingDef ParentName="TreeBase">
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
+				<terrainTags>
+					<li>Water</li>
+					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
+				</terrainTags>
 			</li>
 		</modExtensions>
 		<defName>BMT_Nogtyl</defName>
@@ -39,7 +43,8 @@
 		</ingestible>
 		<plant>
 			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
 			<sowWork>4000</sowWork>
@@ -47,7 +52,6 @@
 			<sowResearchPrerequisites>
 				<li>TreeSowing</li>
 			</sowResearchPrerequisites>
-			<mustBeWildToSow>true</mustBeWildToSow>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<growDays>7</growDays>
@@ -62,12 +66,11 @@
 			<blockAdjacentSow>true</blockAdjacentSow>
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 			<treeCategory>Full</treeCategory>
-			<sowTags>
-				<li>Ground</li>
+			<sowTags Inherit="False">
+				<li MayRequire="vanillaexpanded.vplantsemore">VCE_Aquatic</li>
 			</sowTags>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>

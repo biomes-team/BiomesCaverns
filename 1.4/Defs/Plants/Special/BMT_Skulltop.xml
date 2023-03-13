@@ -15,12 +15,6 @@
 			<!--TrapSpringChance>1.0</TrapSpringChance-->
 			<!---->
 		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-			</li>
-		</modExtensions>
 		<passability Inherit="False"/>
 		<pathCost>30</pathCost>
 		<blockWind>false</blockWind>
@@ -44,7 +38,6 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowResearchPrerequisites Inherit="False"/>
 			<interferesWithRoof>false</interferesWithRoof>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 		<!--building>
 			<isTrap>true</isTrap>

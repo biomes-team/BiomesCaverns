@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BMT_KessingerPlant</defName>
 		<label>kessinger</label>
 		<description>.</description>
@@ -21,6 +21,8 @@
 		<pathCost>18</pathCost>
 		<ingestible/>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<fertilityMin>0.1</fertilityMin>
 			<growDays>3</growDays>
@@ -40,7 +42,7 @@
 			<wildClusterWeight>5</wildClusterWeight>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

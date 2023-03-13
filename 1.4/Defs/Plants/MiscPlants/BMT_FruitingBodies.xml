@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
-	
-    <ThingDef ParentName="BMT_CavePlantBase">
+<Defs>
+    <ThingDef ParentName="PlantBase">
         <defName>BMT_FruitingBodies</defName>
         <label>mold fruiting bodies</label>
         <description>Mold fruiting bodies.</description>
@@ -10,9 +8,15 @@
             <texPath>BMT_Caverns/Things/Plant/FruitingBodies</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
-        
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
         <plant>
-             <fertilitySensitivity>0.0</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>4.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>25</maxMeshCount>
@@ -21,7 +25,7 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<wildOrder>1</wildOrder>
-          <cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
+			<interferesWithRoof>false</interferesWithRoof>
         </plant>
     </ThingDef>
 </Defs>

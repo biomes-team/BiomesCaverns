@@ -86,6 +86,63 @@
     <allowedArchonexusCount>200</allowedArchonexusCount>
   </ThingDef>
 
+  <ThingDef ParentName="LeatherBase">
+    <defName>BMT_Leather_Mushroom</defName>
+    <label>mushroom leather</label>
+    <description>A squishy damp fabric, not realy leather.</description>
+    <graphicData>
+      <color>(195,195,195)</color>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>4</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>0.2</Flammability>
+      <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.8</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>9</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(195,195,195)</color>
+      <commonality>0.002</commonality>
+    </stuffProps>
+  </ThingDef>
 
-  
+  <RecipeDef>
+    <defName>BMT_Make_Mushroomleather</defName>
+    <label>make mushroom leather</label>
+    <description>Skin a mushroom logs to create weak mushroom leather.</description>
+    <jobString>Making mushroom leather.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BMT_MushroomLog</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BMT_MushroomLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BMT_Leather_Mushroom>50</BMT_Leather_Mushroom>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>0</displayPriority>
+  </RecipeDef>
+
 </Defs>

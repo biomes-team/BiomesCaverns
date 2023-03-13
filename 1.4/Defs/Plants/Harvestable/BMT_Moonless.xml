@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BMT_MoonlessStripesPlant</defName>
 		<label>moonless stripes</label>
 		<description>.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
 		</statBases>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/MoonlessStripes</texPath>
@@ -15,6 +16,8 @@
 		<neverMultiSelect>false</neverMultiSelect>
 		<pathCost>14</pathCost>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilityMin>0.70</fertilityMin>
 			<wildClusterRadius>3</wildClusterRadius>
 			<growDays>8</growDays>
@@ -30,7 +33,7 @@
 			<wildOrder>2</wildOrder>
 			<neverBlightable>false</neverBlightable>
 			<visualSizeRange>0.3~1.0</visualSizeRange>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">

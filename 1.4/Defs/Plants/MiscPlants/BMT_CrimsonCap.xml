@@ -1,70 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_CaveBushBase">
-		<defName>BMT_CrimsonCap</defName>
-		<label>crimson cap</label>
-		<description>A big Crimson capped mushroom.\n\n sometimes mistakenly identified as Dulcis by inexperienced mushroom pickers.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/CrimsonCap</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<statBases>
-			<Nutrition>1.25</Nutrition>
-		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-				<growingHours>0.5~0.99</growingHours>
-			</li>
-		</modExtensions>
-		<ingestible/>
-		<plant>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
-			<growDays>5</growDays>
-			<fertilityMin>0.05</fertilityMin>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.6~0.7</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
-			<wildClusterRadius>8</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildOrder>3</wildOrder>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
-			<harvestYield>2</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
-		</plant>
-	</ThingDef>
-  <!--<ThingDef ParentName="RoughPlantBase">
-    <defName>BMT_MixedFeedingMushrooms</defName>
-    <label>mixed feeding mushrooms</label>
-    <description>Nutrient-rich Mushrooms, harvested from different fungi. good animal feed, but inedible for humans.</description>
-    <stackLimit>200</stackLimit>
-    <graphicData>
-      <texPath>BMT_Caverns/Things/Item/Crops/Mushroomcrop</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>0.4</MarketValue>
-      <Mass>0.05</Mass>
-      <Flammability>0.3</Flammability>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>30</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <thingCategories>
-      <li>Foods</li>
-    </thingCategories>
-    <ingestible>
-      <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
-    </ingestible>
-    <allowedArchonexusCount>400</allowedArchonexusCount>
-  </ThingDef>-->
+    <ThingDef ParentName="PlantBase">
+        <defName>BMT_CrimsonCap</defName>
+        <label>crimson cap</label>
+        <description>A big Crimson capped mushroom.\n\n sometimes mistakenly identified as Dulcis by inexperienced mushroom pickers.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Plant/CrimsonCap</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <statBases>
+            <Nutrition>1.25</Nutrition>
+            <Flammability>0.35</Flammability>
+        </statBases>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+                <growingHours>0.5~0.99</growingHours>
+            </li>
+        </modExtensions>
+        <ingestible/>
+        <selectable>true</selectable>
+        <plant>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+            <growDays>5</growDays>
+            <fertilityMin>0.05</fertilityMin>
+            <maxMeshCount>4</maxMeshCount>
+            <visualSizeRange>0.6~0.7</visualSizeRange>
+            <topWindExposure>0.2</topWindExposure>
+            <wildClusterRadius>8</wildClusterRadius>
+            <wildClusterWeight>8</wildClusterWeight>
+            <wildOrder>3</wildOrder>
+            <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+            <harvestYield>2</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <interferesWithRoof>false</interferesWithRoof>
+        </plant>
+    </ThingDef>
 </Defs>

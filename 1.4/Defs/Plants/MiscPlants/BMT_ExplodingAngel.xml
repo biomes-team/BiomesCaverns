@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_VioletWimple</defName>
-		<label>violet wimple</label>
-		<description>A big violet capped mushroom.</description>
+		<defName>BMT_ExplodingAngel</defName>
+		<label>exploding angel</label>
+		<description>A red capped mushroom.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/VioletWimple</texPath>
+			<texPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Nutrition>1.25</Nutrition>
-			<Flammability>0.35</Flammability>
+			<Flammability>0.0</Flammability>
+			<Nutrition>2</Nutrition>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -20,13 +20,14 @@
 		<ingestible/>
 		<selectable>true</selectable>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelImmature</immatureGraphicPath>
+			<growMinGlow>0.5</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
+			<fertilityMin>1.4</fertilityMin>
+			<fertilitySensitivity>1.0</fertilitySensitivity>
 			<growDays>5</growDays>
-			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
@@ -34,7 +35,7 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
-			<harvestYield>2</harvestYield>
+			<harvestYield>1</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_VioletWimple</defName>
-		<label>violet wimple</label>
-		<description>A big violet capped mushroom.</description>
+		<defName>BMT_FireLavender</defName>
+		<label>fire lavender</label>
+		<description>Fire Lavender.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/VioletWimple</texPath>
+			<texPath>BMT_Caverns/Things/Plant/FireLavender</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Nutrition>1.25</Nutrition>
-			<Flammability>0.35</Flammability>
+			<Nutrition>1.0</Nutrition>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -18,10 +17,9 @@
 			</li>
 		</modExtensions>
 		<ingestible/>
-		<selectable>true</selectable>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<growMinGlow>0.5</growMinGlow>
+			<growOptimalGlow>1</growOptimalGlow>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
@@ -40,5 +38,11 @@
 			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+    </comps>
 	</ThingDef>
 </Defs>
