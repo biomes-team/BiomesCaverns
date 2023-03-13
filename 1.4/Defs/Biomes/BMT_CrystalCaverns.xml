@@ -114,15 +114,25 @@
       <li>
         <terrain>Gravel</terrain>
         <min>-999</min>
-        <max>0.87</max>
+        <max>0.5</max>
       </li>
       <li>
         <terrain>Sand</terrain>
-        <min>0.87</min>
+        <min>0.5</min>
         <max>999</max>
       </li>
     </terrainsByFertility>
     <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.1</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>BMT_Crystal</terrain>
+            <min>0.4</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
       <li>
         <perlinFrequency>0.035</perlinFrequency>
         <thresholds>

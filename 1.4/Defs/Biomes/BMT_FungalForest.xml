@@ -132,12 +132,32 @@
           </li>
         </thresholds>
       </li>
-	  <li>
-        <perlinFrequency>0.03</perlinFrequency>
+      <li>
+        <perlinFrequency>0.0005</perlinFrequency>
         <thresholds>
           <li>
             <terrain>MarshyTerrain</terrain>
-            <min>0.52</min>
+            <min>0.70</min>
+            <max>0.80</max>
+          </li>
+          <li>
+            <terrain>Mud</terrain>
+            <min>0.80</min>
+            <max>0.84</max>
+          </li>
+          <li>
+            <terrain>Marsh</terrain>
+            <min>0.84</min>
+            <max>0.94</max>
+          </li>
+          <li>
+            <terrain>Mud</terrain>
+            <min>0.94</min>
+            <max>0.98</max>
+          </li>
+          <li>
+            <terrain>MarshyTerrain</terrain>
+            <min>0.98</min>
             <max>999</max>
           </li>
         </thresholds>
@@ -147,11 +167,12 @@
       <BMT_FungalCavern>100</BMT_FungalCavern>
     </baseWeatherCommonalities>
     <wildPlants>
+
 	<!-- ground cover -->
     <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
     <BMT_FloorMold>5.0</BMT_FloorMold>
     <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
-    <BMT_Pusmelon>0.1</BMT_Pusmelon>
+    <BMT_Pusmelon>0.3</BMT_Pusmelon>
     <BMT_RustPuff>0.2</BMT_RustPuff>
     <BMT_Sagecrust>1.0</BMT_Sagecrust>
 		
@@ -159,7 +180,6 @@
     <BMT_BalefulBolete>0.02</BMT_BalefulBolete>
     <BMT_BleedingTooth>0.05</BMT_BleedingTooth>
     <BMT_CrimsonCap>0.02</BMT_CrimsonCap>
-    
     <BMT_VioletWimple>0.02</BMT_VioletWimple>
 		
 	<!-- trees -->
@@ -167,8 +187,6 @@
     <BMT_GleamPlum>0.2</BMT_GleamPlum>
     <BMT_Jellycap>0.2</BMT_Jellycap>
     <BMT_Viritoll>0.1</BMT_Viritoll>
-	<!-- only by player (wood) -->
-    <BMT_Nogtyl>0.000001</BMT_Nogtyl>
 		
 	<!-- other harvestable -->
     <!-- food -->
@@ -191,25 +209,13 @@
     <BMT_Nuitae>0.4</BMT_Nuitae>
     <BMT_Wrinklecap>0.4</BMT_Wrinklecap>
 
+    <BMT_Nogtyl>0.1</BMT_Nogtyl>
+
 	<!-- special -->
     <!-- firepooper -->
     <BMT_Poptop>0.03</BMT_Poptop>
     <!-- cleener -->
     <BMT_Ravelmush>0.02</BMT_Ravelmush>
-    <!--<BMT_Skulltop>0.003</BMT_Skulltop>-->    <!-- toxic -->
-	
-	<!--
-    <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_Nutrifungus>
-
-    <Plant_GrassAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_GrassAnima>
-    <Plant_TreeAnima MayRequire="Ludeon.RimWorld.Royalty">0.00001</Plant_TreeAnima>
-  -->
-
-	<!-- Seeds cannot grow, buddy -->
-    <!-- <GauranlenSeed MayRequire="Ludeon.RimWorld.Ideology">0.00001</GauranlenSeed>
-	  <Plant_PodGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_PodGauranlen>
-    <Plant_MossGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_MossGauranlen>
-    <Plant_TreeGauranlen MayRequire="Ludeon.RimWorld.Ideology">0.00001</Plant_TreeGauranlen> -->
 
     </wildPlants>
 
