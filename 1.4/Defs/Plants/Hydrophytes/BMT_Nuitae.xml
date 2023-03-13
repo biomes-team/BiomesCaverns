@@ -17,8 +17,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -38,7 +36,6 @@
 			<wildOrder>1</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

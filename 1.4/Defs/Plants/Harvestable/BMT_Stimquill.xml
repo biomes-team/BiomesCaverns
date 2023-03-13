@@ -1,141 +1,131 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
-	
+<Defs>
 	<!-- plant -->
-    <ThingDef ParentName="BMT_CaveBushBase">
-        <defName>BMT_Stimquill</defName>
-        <label>stimquill</label>
-        <description>Known for its stimulant properties, this plant is found deep underground.</description>
-        <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/Stimquill</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-        </graphicData>
-        
-        <neverMultiSelect>false</neverMultiSelect>
-         <plant> 
-             <fertilitySensitivity>0.5</fertilitySensitivity> 
-			 <growDays>5.5</growDays> 
-			 <fertilityMin>0.05</fertilityMin> 
-			  <harvestedThingDef>BMT_StimquillDrug</harvestedThingDef>
-      <harvestYield>4</harvestYield>
-      <harvestTag>Standard</harvestTag>
-			 <!-- <maxMeshCount>4</maxMeshCount>  -->
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_Stimquill</defName>
+		<label>stimquill</label>
+		<description>Known for its stimulant properties, this plant is found deep underground.</description>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Stimquill</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.5</fertilitySensitivity> 
+			<growDays>5.5</growDays> 
+			<fertilityMin>0.05</fertilityMin> 
+			<harvestedThingDef>BMT_StimquillDrug</harvestedThingDef>
+			<harvestYield>4</harvestYield>
+			<harvestTag>Standard</harvestTag>
 			<visualSizeRange>0.7~1.5</visualSizeRange>
-			 <!-- <topWindExposure>0.2</topWindExposure>  -->
-			 <wildClusterRadius>6</wildClusterRadius> 
-			 <wildClusterWeight>200</wildClusterWeight> 
-			 <wildOrder>2</wildOrder>
-           <cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
-         </plant> 
-    </ThingDef>
-	
+			<wildClusterRadius>6</wildClusterRadius> 
+			<wildClusterWeight>200</wildClusterWeight> 
+			<wildOrder>2</wildOrder>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant> 
+	</ThingDef>
 	<!-- drug -->
 	<ThingDef ParentName="DrugBase">
-    <defName>BMT_StimquillDrug</defName>
-    <label>stimquill</label>
-    <description>A drug that is both stimulating and calming.</description>
-    <descriptionHyperlinks>
-      <HediffDef>BMT_StimquillHigh</HediffDef>
-    </descriptionHyperlinks>
-    <tradeability>Sellable</tradeability>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <tickerType>Rare</tickerType>
-    <graphicData>
-      <texPath>BMT_Caverns/Things/Item/Drug/Stimquill</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>15</MarketValue>
-      <Mass>0.1</Mass>
-      <DeteriorationRate>4</DeteriorationRate>
-      <Nutrition>0.2</Nutrition>
-    </statBases>
-    <techLevel>Neolithic</techLevel>
-    <ingestible>
-      <baseIngestTicks>80</baseIngestTicks>
-      <chairSearchRadius>4</chairSearchRadius>
-      <preferability>DesperateOnly</preferability>
-      <tasteThought></tasteThought>
-      <foodType>VegetableOrFruit</foodType>
-      <joyKind>Chemical</joyKind>
-      <joy>0.5</joy>
-      <nurseable>true</nurseable>
-      <drugCategory>Social</drugCategory>
-      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>BMT_StimquillHigh</hediffDef>
-          <severity>0.50</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>30</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-      <li Class="CompProperties_Drug">
-        <addictiveness>0</addictiveness>
-      </li>
-     
-    </comps>
-    <allowedArchonexusCount>20</allowedArchonexusCount>
-  </ThingDef>
-
-	
-	<!-- hediff -->
-  <HediffDef>
-    <defName>BMT_StimquillHigh</defName>
-    <label>stimquill high</label>
-    <description>Recently ingested stimquill. Feels stimulating, yet calming at the same time.</description>
-    <hediffClass>Hediff_High</hediffClass>
-    <defaultLabelColor>(0,0.7,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-          <socialFightChanceFactor>0.7</socialFightChanceFactor>
-		  <statOffsets>
-            <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
-          </statOffsets>
-		  <capMods>
-			<li>
-			  <capacity>Moving</capacity>
-			  <offset>0.1</offset>
+		<defName>BMT_StimquillDrug</defName>
+		<label>stimquill</label>
+		<description>A drug that is both stimulating and calming.</description>
+		<descriptionHyperlinks>
+			<HediffDef>BMT_StimquillHigh</HediffDef>
+		</descriptionHyperlinks>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Drug/Stimquill</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>4</DeteriorationRate>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<baseIngestTicks>80</baseIngestTicks>
+			<chairSearchRadius>4</chairSearchRadius>
+			<preferability>DesperateOnly</preferability>
+			<tasteThought></tasteThought>
+			<foodType>VegetableOrFruit</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.5</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BMT_StimquillHigh</hediffDef>
+					<severity>0.50</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
-		  </capMods>
-			
-	  </li>
-    </stages>
-  </HediffDef>
-  
-  
-  <!-- thought-->
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+	<!-- hediff -->
+	<HediffDef>
+		<defName>BMT_StimquillHigh</defName>
+		<label>stimquill high</label>
+		<description>Recently ingested stimquill. Feels stimulating, yet calming at the same time.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(0,0.7,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<socialFightChanceFactor>0.7</socialFightChanceFactor>
+				<statOffsets>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
 
-  <ThoughtDef>
-    <defName>BMT_StimquillThought</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>BMT_StimquillHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>stimquill high</label>
-        <description>Stimquill makes me feel calmer, and gives me energy at the same time.</description>
-        <baseMoodEffect>5</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
- 
-	
-	
-	
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- thought-->
+	<ThoughtDef>
+		<defName>BMT_StimquillThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>BMT_StimquillHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>stimquill high</label>
+				<description>Stimquill makes me feel calmer, and gives me energy at the same time.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

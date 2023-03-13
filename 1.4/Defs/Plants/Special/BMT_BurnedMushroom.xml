@@ -2,8 +2,8 @@
 <Defs>
 	<ThingDef>
 		<defName>BMT_BurnedMushroom</defName>
-		<label>burned tree</label>
-		<description>A burned tree stump. It's ugly and yields very little usable wood.</description>
+		<label>burned shroom</label>
+		<description>A burned mushroom stump. It's ugly and yields very little usable logs.</description>
 		<category>Plant</category>
 		<thingClass>DeadPlant</thingClass>
 		<altitudeLayer>Building</altitudeLayer>

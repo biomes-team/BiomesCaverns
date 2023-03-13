@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BMT_CaveTreeBase">
+	<ThingDef ParentName="TreeBase">
 		<defName>BMT_Shinecap</defName>
 		<label>shine cap</label>
 		<description>this large mushroom lives in symbiosis with a surprisingly tasty slime mold called Glimmerslime.</description>
@@ -10,6 +10,7 @@
 			<Nutrition>1.25</Nutrition>
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
+			<Flammability>0.35</Flammability>
 		</statBases>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Shinecap/ShinecapGrown</texPath>
@@ -23,6 +24,8 @@
 		<pathCost>10</pathCost>
 		<ingestible/>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<growDays>30</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
@@ -38,7 +41,7 @@
 			<harvestFailable>true</harvestFailable>
 			<harvestedThingDef>BMT_Glimmerslime</harvestedThingDef>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

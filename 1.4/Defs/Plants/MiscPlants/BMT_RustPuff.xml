@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
-	
-    <ThingDef ParentName="BMT_CavePlantBase">
-        <defName>BMT_RustPuff</defName>
-        <label>rustpuff</label>
-        <description>A large puffball mushroom with flaky, rust-colored spores.</description>
-        <graphicData>
-            <texPath>BMT_Caverns/Things/Plant/RustPuff</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-        </graphicData>
-        
-        <modExtensions>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_RustPuff</defName>
+		<label>rustpuff</label>
+		<description>A large puffball mushroom with flaky, rust-colored spores.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/RustPuff</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 				<growingHours>0.9~0.6</growingHours>
+				<terrainTags>
+					<li>Muddy</li>
+				</terrainTags>
 			</li>
 		</modExtensions>
-		
-        <plant>
-            <fertilitySensitivity>0.5</fertilitySensitivity>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>5.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
@@ -29,7 +33,7 @@
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>2</wildClusterWeight>
 			<wildOrder>1</wildOrder>
-					<cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
-        </plant>
-    </ThingDef>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
 </Defs>

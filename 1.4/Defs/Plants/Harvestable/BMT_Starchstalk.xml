@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BMT_StarchstalkPlant</defName>
 		<label>starchstalk</label>
 		<description>Essentially a potato-like root that has grown upwards, it is farmed by cave-dwelling tribes due to the ease in which it grows even on the worst soil.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
+			<Flammability>1</Flammability>
 		</statBases>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Starchstalk</texPath>
@@ -21,6 +22,8 @@
 		<pathCost>14</pathCost>
 		<ingestible/>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<fertilityMin>0.5</fertilityMin>
 			<growDays>5.8</growDays>
@@ -41,7 +44,7 @@
 			<wildClusterWeight>24</wildClusterWeight>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning -->
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->

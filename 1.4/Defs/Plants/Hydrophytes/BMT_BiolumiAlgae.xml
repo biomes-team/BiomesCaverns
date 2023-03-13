@@ -27,8 +27,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -43,7 +41,6 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -74,8 +71,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -90,7 +85,6 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -121,8 +115,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -137,7 +129,6 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -168,8 +159,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -184,7 +173,6 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -215,8 +203,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -231,7 +217,6 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -262,8 +247,6 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 				</terrainTags>
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -278,7 +261,6 @@
 			<wildOrder>2</wildOrder>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Shallow Cave -->
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

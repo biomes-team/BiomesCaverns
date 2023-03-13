@@ -116,16 +116,21 @@
     </terrainsByFertility>
     <terrainPatchMakers>
       <li>
-        <perlinFrequency>0.035</perlinFrequency>
+        <perlinFrequency>0.045</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>BMT_VolcanAsh</terrain>
-            <min>0.63</min>
-            <max>0.83</max>
+            <terrain>BMT_VolcanicAsh</terrain>
+            <min>0.33</min>
+            <max>0.53</max>
+          </li>
+          <li>
+            <terrain>BMT_MagmaAsh</terrain>
+            <min>0.53</min>
+            <max>0.73</max>
           </li>
           <li>
             <terrain>BiomeCore_Lava</terrain>
-            <min>0.83</min>
+            <min>0.73</min>
             <max>999</max>
           </li>
         </thresholds>
@@ -136,16 +141,21 @@
     </baseWeatherCommonalities>
     <wildPlants>
 		<!-- ground cover -->
+    <BMT_FireLavender>1</BMT_FireLavender>
 			
 		<!-- mid sized -->
+    <BMT_ExplodingAngel>0.5</BMT_ExplodingAngel>
+    <BMT_Boomshroom>0.4</BMT_Boomshroom>
 
 		<!-- trees -->
+		<BMT_Candlesnuff>0.5</BMT_Candlesnuff>
 			
 		<!-- other harvestable -->
 		
 		<!-- hydrophytes -->
 
 		<!-- special -->
+		<BMT_HeatsinkFungus>0.05</BMT_HeatsinkFungus>
 
     </wildPlants>
 

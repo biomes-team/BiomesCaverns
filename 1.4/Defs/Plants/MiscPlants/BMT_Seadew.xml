@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
-	
-    <ThingDef ParentName="BMT_CavePlantBase">
+<Defs>
+    <ThingDef ParentName="PlantBase">
         <defName>BMT_Dewshrooms</defName>
         <label>dewshrooms</label>
         <description>Sewdew light up to attract small prey, which becomes trapped in it's sticky gills.</description>
@@ -10,8 +8,14 @@
             <texPath>BMT_Caverns/Things/Plant/Seadew</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
-        
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
         <plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
             <fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>3.5</growDays>
 			<fertilityMin>0.05</fertilityMin>
@@ -21,7 +25,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
-					<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
+			<interferesWithRoof>false</interferesWithRoof>
         </plant>
 		<comps>
 		  <li Class="CompProperties_Glower">
@@ -29,11 +33,8 @@
 			<glowColor>(15,104,106,0)</glowColor>
 		  </li>
 		</comps>
-		
         <modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 				<growingHours>0.75~0.25</growingHours>
 			</li>
 		</modExtensions>

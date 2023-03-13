@@ -11,12 +11,14 @@
 		<statBases>
 			<Nutrition>1</Nutrition>
 			<Mass>50</Mass>
-			<Flammability>0.1</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<passability Inherit="False"/>
 		<pathCost>30</pathCost>
 		<blockWind>false</blockWind>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
             <dieIfLeafless>false</dieIfLeafless>
@@ -36,7 +38,6 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowResearchPrerequisites Inherit="False" />
 			<interferesWithRoof>false</interferesWithRoof>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
@@ -55,6 +56,7 @@
 				<explosionEffect>ExtinguisherExplosion</explosionEffect>
 				<startWickOnDamageTaken>
 					<li>Bullet</li>
+					<li>Flame</li>
 					<li>Arrow</li>
 					<li>ArrowHighVelocity</li>
 				</startWickOnDamageTaken>

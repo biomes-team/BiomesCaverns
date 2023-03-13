@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BMT_MortalMorelPlant</defName>
 		<label>mortal morel</label>
 		<description>A slow-growing mushroom which yields fungal medicine when harvested. Sowing and harvesting mortal morel are both very labor-intensive tasks because of its delicate shoots.\n\nMortal morel !!NEED SOME BACKSTORY!!.</description>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/MortalMorel</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
-			<!-- mustBeWildToSow>true</mustBeWildToSow -->
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilityMin>1.0</fertilityMin>
 			<wildClusterRadius>4</wildClusterRadius>
 			<growDays>10</growDays>
@@ -29,7 +35,7 @@
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.3~1.0</visualSizeRange>
 			<purpose>Health</purpose>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="MedicineBase">

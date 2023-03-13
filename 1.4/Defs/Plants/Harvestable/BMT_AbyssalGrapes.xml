@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="BushBase">
 		<defName>BMT_AbyssalGrapesVine</defName>
 		<label>abyssal grapes</label>
 		<description>A medium-sized vine that yields abyssal grapes when harvested. tastes nice when eaten raw.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.2</Nutrition>
+			<Nutrition>0.20</Nutrition>
+			<Flammability>1</Flammability>
 		</statBases>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/AbyssalGrapes</texPath>
@@ -21,6 +22,8 @@
 		<pathCost>10</pathCost>
 		<ingestible/>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<growDays>14</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -38,7 +41,7 @@
 			<wildClusterWeight>50</wildClusterWeight>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
-			<cavePlant>false</cavePlant> <!-- false because biome specific spawning in: Fungal Forest -->
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 	<!-- fruit -->
