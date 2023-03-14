@@ -45,14 +45,12 @@
           <!-- ground cover -->
           <BMT_FloorMold>3.0</BMT_FloorMold>
           <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
-          <BMT_RustPuff>0.2</BMT_RustPuff>
           <BMT_Sagecrust>1.5</BMT_Sagecrust>
           <Bryolux>1.5</Bryolux>
           <Plant_Moss>1.0</Plant_Moss>
 
           <!-- mid sized -->
           <Agarilux>0.02</Agarilux>
-          <BMT_BleedingTooth>0.05</BMT_BleedingTooth>
           <BMT_Ravelmush>0.02</BMT_Ravelmush>
           <Glowstool>0.02</Glowstool>
 

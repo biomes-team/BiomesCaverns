@@ -170,7 +170,7 @@
 
 	<!-- ground cover -->
     <BMT_Dewshrooms>0.02</BMT_Dewshrooms>
-    <BMT_FloorMold>5.0</BMT_FloorMold>
+    <BMT_CavernMycelium>5.0</BMT_CavernMycelium>
     <BMT_FruitingBodies>0.5</BMT_FruitingBodies>
     <BMT_Pusmelon>0.3</BMT_Pusmelon>
     <BMT_RustPuff>0.2</BMT_RustPuff>
@@ -183,10 +183,10 @@
     <BMT_VioletWimple>0.02</BMT_VioletWimple>
 		
 	<!-- trees -->
-    <BMT_Embrun>0.1</BMT_Embrun>
-    <BMT_GleamPlum>0.2</BMT_GleamPlum>
-    <BMT_Jellycap>0.2</BMT_Jellycap>
-    <BMT_Viritoll>0.1</BMT_Viritoll>
+    <BMT_Embrun>0.2</BMT_Embrun>
+    <BMT_GleamPlum>0.4</BMT_GleamPlum>
+    <BMT_Jellycap>0.4</BMT_Jellycap>
+    <BMT_Viritoll>0.2</BMT_Viritoll>
 		
 	<!-- other harvestable -->
     <!-- food -->

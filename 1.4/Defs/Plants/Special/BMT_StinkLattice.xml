@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Skulltop</defName>
-		<label>skulltop</label>
-		<description>A poisonous mushroom.</description>
+		<defName>BMT_StinkLattice</defName>
+		<label>stink lattice</label>
+		<description>This mushroom smells like a rotten corpse.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/Skulltop/Skulltop</texPath>
+			<texPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
@@ -16,6 +16,7 @@
 		<pathCost>30</pathCost>
 		<blockWind>false</blockWind>
 		<plant>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeImmature</immatureGraphicPath>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
 			<dieIfLeafless>false</dieIfLeafless>

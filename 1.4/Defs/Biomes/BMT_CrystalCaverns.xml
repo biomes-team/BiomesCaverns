@@ -154,11 +154,15 @@
     </baseWeatherCommonalities>
     <wildPlants>
 		<!-- ground cover -->
-		<BMT_FloorMold>1.0</BMT_FloorMold>
+		<BMT_Gleamtip>1.0</BMT_Gleamtip>
 			
 		<!-- mid sized -->
+    <BMT_Fungusfern>0.5</BMT_Fungusfern>
+    <BMT_CrystaltipBrambles>0.3</BMT_CrystaltipBrambles>
+    <BMT_YumBulbs>0.3</BMT_YumBulbs>
 
 		<!-- trees -->
+    <BMT_Crystalcap>0.5</BMT_Crystalcap>
 			
 		<!-- other harvestable -->
 		

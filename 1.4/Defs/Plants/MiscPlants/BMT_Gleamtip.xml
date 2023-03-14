@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_FloorMold</defName>
-		<label>FloorMold</label>
-		<description>Floormold.</description>
+		<defName>BMT_Gleamtip</defName>
+		<label>gleamtip</label>
+		<description>Gleamtip.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/FloorMold</texPath>
+			<texPath>BMT_Caverns/Things/Plant/Gleamtip</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<modExtensions>
@@ -29,7 +29,6 @@
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<topWindExposure>0.0</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
-			<!-- <wildClusterWeight>700</wildClusterWeight> -->
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<interferesWithRoof>false</interferesWithRoof>
