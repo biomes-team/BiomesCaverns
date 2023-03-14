@@ -241,6 +241,7 @@
 		<BMT_Xyrion>0.1</BMT_Xyrion>
 		<BMT_Yooka>0.2</BMT_Yooka>
 		<BMT_Mole>0.05</BMT_Mole>
+		<BMT_FungalWeevil>0.2</BMT_FungalWeevil>
 
 		<!-- predators -->
 		<BMT_FungalFerret>0.1</BMT_FungalFerret>
