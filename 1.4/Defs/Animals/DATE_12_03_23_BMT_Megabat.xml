@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Muffalo sized. -->
+<!-- What does it eat? (is it a predator?) Predatory carnivore. -->
+<!-- Where does it live? The Earthen Depths. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Tough leather. Cannot "fly" but instead walks on its wings and uses them in stunning attacks. -->
+
+  <ThingDef ParentName="AnimalThingBase">
+	<defName>BMT_Megabat</defName>
+	<label>megabat</label>
+	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<statBases>
+	  <!-- <BiomesCore_SleepSpeed>99</BiomesCore_SleepSpeed> -->
+	  <!-- <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed> -->
+	  <!-- <SwimSpeed>0.5</SwimSpeed> -->
+	  <MoveSpeed>3.8</MoveSpeed>
+	  <MarketValue>95</MarketValue>
+	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+	</statBases>
+	<race>
+	  <predator>true</predator>
+	  <baseBodySize>2.2</baseBodySize>
+	  <baseHealthScale>3.0</baseHealthScale>
+	  <baseHungerRate>0.125</baseHungerRate>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Heavy</leatherDef>
+	  <wildness>0.95</wildness>
+	  <trainability>Advanced</trainability>
+	  <!-- <nuzzleMtbHours>24</nuzzleMtbHours> -->
+	  <lifeExpectancy>9</lifeExpectancy>
+	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.7</manhunterOnDamageChance>
+	  <body>Monkey</body>
+	  <gestationPeriodDays>6.66</gestationPeriodDays>
+	  <litterSizeCurve>
+		<points>
+		  <li>(0.5, 0)</li>
+		  <li>(1, 1)</li>
+		  <li>(1.8, 1)</li>
+		  <li>(2.4, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.22</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.5</minAge>
+		  <soundWounded>Biomes_Bat_Wounded</soundWounded>
+		  <soundDeath>Biomes_Bat_Death</soundDeath>
+		  <soundCall>Biomes_Bat_Call</soundCall>
+		  <soundAngry>Biomes_Bat_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	</race>
+	<tools>
+	  <li>
+		<label>wing</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>24</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>wing</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>24</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>25</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.7</chanceFactor>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>22</power>
+		<cooldownTime>1.8</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+	<tradeTags>
+	  <li>AnimalUncommon</li>
+	  <li>AnimalFighter</li>
+	</tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_Megabat</defName>
+	<label>megabat</label>
+	<race>BMT_Megabat</race>
+	<combatPower>80</combatPower>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<wildGroupSize>1</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Megabat/Megabat</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.0</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.4, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Megabat/Dessicated_batboi</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Megabat/Megabat</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.8</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Megabat/Dessicated_batboi</texPath>
+		  <drawSize>1.8</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Megabat/Megabat</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>2.6</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Megabat/Dessicated_batboi</texPath>
+		  <drawSize>2.6</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>

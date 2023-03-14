@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Little bigger than a husky -->
+<!-- What does it eat? (is it a predator?) Herbivore. -->
+<!-- Where does it live? Fungal Forest -->
+<!-- Does it spawn in packs? Packs of 2-3 -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weak chitin. Gives fungus as well as meat when butchered. -->
+
+
+  <ThingDef ParentName="BaseInsect">
+	<defName>BMT_FungalWeevil</defName>
+	<label>fungal weevil</label>
+	<description>One of the representatives of the inhabitants of fungal forest..</description>
+	<statBases>
+	  <MoveSpeed>3.75</MoveSpeed>
+	  <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	  <MarketValue>100</MarketValue>
+	  <LeatherAmount>25</LeatherAmount>
+	</statBases>
+	<uiIconScale>2</uiIconScale>
+	<tools>
+	  <li>
+		<label>mandibles</label>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>4</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.1</chanceFactor>
+	  </li>
+	</tools>
+	<race>
+	  <body>BeetleLike</body>
+	  <baseBodySize>0.5</baseBodySize>
+	  <baseHungerRate>0.10</baseHungerRate>
+	  <baseHealthScale>0.8</baseHealthScale>
+	  <useMeatFrom>Megaspider</useMeatFrom>
+	  <lifeExpectancy>10</lifeExpectancy>
+	  <wildness>0.2</wildness>
+	  <trainability>Intermediate</trainability>
+	  <leatherDef>BMT_WeakChitin</leatherDef>
+	  <lifeStageAges>
+		<li>
+		  <def>EusocialInsectLarva</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>EusocialInsectJuvenile</def>
+		  <minAge>0.03</minAge>
+		</li>
+		<li>
+		  <def>EusocialInsectAdult</def>
+		  <minAge>0.4</minAge>
+		  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+		  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+		  <soundCall>Pawn_Megascarab_Call</soundCall>
+		  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.12)</li>
+		<li>(0.07, 0, -0.05)</li>
+		<li>(0.0, 0, -0.08)</li>
+		<li>(-0.07, 0, -0.05)</li>
+	  </headPosPerRotation>
+	</race>
+	<tradeTags>
+	  <li>AnimalUncommon</li>
+	</tradeTags>
+	<butcherProducts>
+		<RawFungus>12</RawFungus>
+	</butcherProducts>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_FungalWeevil</defName>
+	<label>fungal weevil</label>
+	<race>BMT_FungalWeevil</race>
+	<combatPower>80</combatPower>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<wildGroupSize>2~3</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FungalWeevil/FungalWeevil</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.0</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.4, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FungalWeevil/Dessicated_FungalWeevil</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FungalWeevil/FungalWeevil</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.4</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FungalWeevil/Dessicated_FungalWeevil</texPath>
+		  <drawSize>1.4</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FungalWeevil/FungalWeevil</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.8</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FungalWeevil/Dessicated_FungalWeevil</texPath>
+		  <drawSize>1.8</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>
