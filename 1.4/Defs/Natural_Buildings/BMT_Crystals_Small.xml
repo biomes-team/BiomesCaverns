@@ -5,7 +5,7 @@
 	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>
 	<blockLight>false</blockLight>
-	<pathCost>5</pathCost>
+	<pathCost>1</pathCost>
 	<statBases>
 	  <Beauty>6</Beauty>
 	  <MaxHitPoints>20</MaxHitPoints>

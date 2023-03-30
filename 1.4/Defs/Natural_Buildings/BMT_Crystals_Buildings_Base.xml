@@ -12,6 +12,7 @@
 	<rotatable>false</rotatable>
 	<fillPercent>0.35</fillPercent>
 	<altitudeLayer>Building</altitudeLayer>
+	<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
 	<statBases>
 	  <Beauty>5</Beauty>
 	  <BeautyOutdoors>5</BeautyOutdoors>

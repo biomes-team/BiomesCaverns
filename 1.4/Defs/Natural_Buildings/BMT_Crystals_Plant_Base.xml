@@ -28,7 +28,7 @@
 	<fillPercent>0.25</fillPercent>
 	<rotatable>false</rotatable>
 	<!-- <passability>PassThroughOnly</passability> -->
-	<!-- <pathCost>42</pathCost> -->
+	<pathCost>1</pathCost>
 	<blockWind>true</blockWind>
 	<statBases>
 	  <!-- <MaxHitPoints>200</MaxHitPoints> -->

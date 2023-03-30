@@ -9,7 +9,7 @@
 	  <texPath>BMT_Caverns/Things/Crystals/BlueMedium</texPath>
 	</graphicData>
 	<tickerType>Long</tickerType>
-	<pathCost>14</pathCost>
+	<pathCost>1</pathCost>
 	<statBases>
 	  <MaxHitPoints>20</MaxHitPoints>
 	</statBases>

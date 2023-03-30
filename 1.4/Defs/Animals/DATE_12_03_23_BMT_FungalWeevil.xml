@@ -20,7 +20,7 @@
 	  <MarketValue>100</MarketValue>
 	  <LeatherAmount>25</LeatherAmount>
 	</statBases>
-	<uiIconScale>2</uiIconScale>
+	<!-- <uiIconScale>1</uiIconScale> -->
 	<tools>
 	  <li>
 		<label>mandibles</label>
