@@ -21,7 +21,7 @@
 	<tickerType>Long</tickerType>
 	<neverMultiSelect>false</neverMultiSelect>
 	<drawerType>MapMeshOnly</drawerType>
-	<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+	<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
 	<minifiedDef IsNull="True" />
 	<altitudeLayer>Building</altitudeLayer>
 	<selectable>true</selectable>

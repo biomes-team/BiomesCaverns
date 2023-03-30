@@ -5,7 +5,7 @@
 	<tickerType>Rare</tickerType>
 	<passability>Impassable</passability>
 	<blockLight>false</blockLight>
-	<pathCost>12</pathCost>
+	<pathCost>42</pathCost>
 	<statBases>
 	  <Beauty>15</Beauty>
 	  <MaxHitPoints>120</MaxHitPoints>
