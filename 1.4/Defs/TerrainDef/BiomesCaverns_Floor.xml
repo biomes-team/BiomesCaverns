@@ -151,7 +151,7 @@
 		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>335</renderPrecedence>
-		<pathCost>300</pathCost>
+		<pathCost>3</pathCost>
 		<statBases>
 		</statBases>
 		<affordances>
