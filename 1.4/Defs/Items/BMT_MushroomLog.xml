@@ -40,7 +40,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <minRewardCount>10</minRewardCount>
     <stuffProps>
-      <stuffAdjective>wooden</stuffAdjective>
+      <stuffAdjective>fungal</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
@@ -89,7 +89,7 @@
   <ThingDef ParentName="LeatherBase">
     <defName>BMT_Leather_Mushroom</defName>
     <label>mushroom leather</label>
-    <description>A squishy damp fabric, not realy leather.</description>
+    <description>A squishy damp fabric, not really leather.</description>
     <graphicData>
       <color>(195,195,195)</color>
     </graphicData>
@@ -112,7 +112,7 @@
   <RecipeDef>
     <defName>BMT_Make_Mushroomleather</defName>
     <label>make mushroom leather</label>
-    <description>Skin a mushroom logs to create weak mushroom leather.</description>
+    <description>Skin mushroom logs to create weak mushroom leather.</description>
     <jobString>Making mushroom leather.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Tailor</effectWorking>

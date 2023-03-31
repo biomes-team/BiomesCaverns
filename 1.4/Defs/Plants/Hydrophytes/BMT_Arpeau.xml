@@ -13,7 +13,7 @@
 		</modExtensions>
 		<defName>BMT_Arpeau</defName>
 		<label>arpeau</label>
-		<description>Fast-growing, but doesn't yeild much usable material. Aquatic fungus.</description>
+		<description>Fast-growing, but doesn't yield much usable material. Aquatic fungus.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Arpeau</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

@@ -8,7 +8,7 @@
     </modExtensions>
     <defName>BMT_Viritoll</defName>
     <label>viritoll</label>
-    <description>A strong green mushroom tree. Fast-growing, but doesn't yeild much usable material.</description>
+    <description>A strong green mushroom tree. Fast-growing, but doesn't yield much usable material.</description>
     <graphicData>
         <texPath>BMT_Caverns/Things/Plant/Viritoll</texPath>
         <graphicClass>Graphic_Random</graphicClass>

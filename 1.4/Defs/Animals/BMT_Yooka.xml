@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Yooka</defName>
 		<label>yooka</label>
-		<description>a towering hunchbacked mammal, closely related to camels and llamas.\n\nWith little to no natural predators, it grazes among the taller fungi with an unconcerned grace.</description>
+		<description>A towering hunchbacked mammal, closely related to camels and llamas.\n\nWith little to no natural predators, it grazes among the taller fungi with an unconcerned grace.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<MarketValue>350</MarketValue>
