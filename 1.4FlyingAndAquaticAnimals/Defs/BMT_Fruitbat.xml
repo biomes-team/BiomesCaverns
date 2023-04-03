@@ -93,7 +93,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_FruitBat</defName>
     <label>fruit bat</label>
-    <description>.</description>
+    <description>Feasting on the bioluminescent plants and fungi within the caverns has caused this bat to adapt a similar trait. It's a flappy herbivorous mammal.</description>
     <statBases>
       <BiomesCore_SleepSpeed>99</BiomesCore_SleepSpeed>
       <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
