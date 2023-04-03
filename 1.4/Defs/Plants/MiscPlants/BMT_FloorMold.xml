@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_FloorMold</defName>
 		<label>FloorMold</label>
-		<description>Floormold.</description>
+		<description>A wiggly looking mold that grows underground.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/FloorMold</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

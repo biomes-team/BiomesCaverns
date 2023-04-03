@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_CavernMycelium</defName>
 		<label>mycelium</label>
-		<description>Mycelium.</description>
+		<description>Extremely wide spread mycelium of many different species that have spread throughout the caverns of the Rim.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Mycelium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

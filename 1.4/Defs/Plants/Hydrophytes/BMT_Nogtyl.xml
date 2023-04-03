@@ -13,7 +13,7 @@
 		</modExtensions>
 		<defName>BMT_Nogtyl</defName>
 		<label>nogtyl</label>
-		<description>A strong wooden mushroom tree. Fast-growing, but doesn't yield much usable material.</description>
+		<description>A strong wood-like mushroom. Fast-growing, but doesn't yield much usable material.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Nogtyl</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

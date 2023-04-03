@@ -3,7 +3,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_Jewelbug</defName>
         <label>jewelbug</label>
-        <description>This isopod is smaller than it's Jewelbug cousin and is found commonly in crystal caverns.</description>
+        <description>This isopod is smaller than it's pillbug cousin and is found commonly in crystal caverns.</description>
         <statBases>
             <MoveSpeed>2.75</MoveSpeed>
             <ArmorRating_Blunt>0.115</ArmorRating_Blunt>

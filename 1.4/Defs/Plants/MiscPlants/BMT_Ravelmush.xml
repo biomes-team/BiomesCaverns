@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_Ravelmush</defName>
 		<label>ravelmush</label>
-		<description>The Ravelmush is a strange mushroom...</description>
+		<description>The Ravelmush is a strange mushroom that spreads its mycelium wide, digesting filth to fuel its own growth.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Ravelmush</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

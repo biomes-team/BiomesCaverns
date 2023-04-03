@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_Boomshroom</defName>
 		<label>boomshroom</label>
-		<description>A mushroom used as fuel.</description>
+		<description>A fungus that while dangerous is grown by cavern dwelling populace for its volatile pods which can be refined into chemfuel.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

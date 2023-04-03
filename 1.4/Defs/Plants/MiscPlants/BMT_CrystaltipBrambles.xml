@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_CrystaltipBrambles</defName>
 		<label>crystaltip brambles</label>
-		<description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them.</description>
+		<description>Tangled, thorny, crystaline shoots covered with leaves. Crystaltip brambles grow in clusters, and slow down anyone moving over them.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.50</Nutrition>

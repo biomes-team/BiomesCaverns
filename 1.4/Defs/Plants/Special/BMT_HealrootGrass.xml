@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_HealrootGrass</defName>
 		<label>healroot grass</label>
-		<description>healroot grass.</description>
+		<description>Grass that produces healing stalks similar to healroot.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/HealrootGrass</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

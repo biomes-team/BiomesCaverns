@@ -3,7 +3,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>BMT_FruitingBodies</defName>
         <label>mold fruiting bodies</label>
-        <description>Mold fruiting bodies.</description>
+        <description>The fruiting bodies of a mold that grows in caverns.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/FruitingBodies</texPath>
             <graphicClass>Graphic_Random</graphicClass>

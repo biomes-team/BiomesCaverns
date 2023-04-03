@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_YumBulbs</defName>
 		<label>yum bulbs</label>
-		<description>Fire Lavender.</description>
+		<description>With brightly glowing tips, this fungus attracts animals to eat it and unwittingly spread its durable spores after they pass through the digestive tract.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/YumBulbs</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaLarvae</defName>
 		<label>aaroxis dendoria larvae</label>
-		<description>Uniquely engineered for life in an underground environment, this moth has been altered to produce silk even in adulthood, at the cost of remaining wingless.</description>
+		<description>A unique species of moth larva with a spiraling body pattern rather than segmented like normal. It is thought to be a genetic anomaly from its engineered creation.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
@@ -143,7 +143,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaPupa</defName>
 		<label>aaroxis dendoria pupa</label>
-		<description>Uniquely engineered for life in an underground environment, this moth has been altered to produce silk even in adulthood, at the cost of remaining wingless.</description>
+		<description>Even in their pupal stage, their red abdomen can be seen as they metamorphose. They are almost entirely immobile in this stage.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>

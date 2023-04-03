@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_BalefulBolete</defName>
 		<label>baleful bolete</label>
-		<description>A big blue capped mushroom.</description>
+		<description>A big blue capped mushroom that grows to roughly the size of a bush.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/BalefulBolete</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

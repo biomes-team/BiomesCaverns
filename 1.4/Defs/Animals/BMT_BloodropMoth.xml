@@ -4,7 +4,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_BloodropLarvae</defName>
         <label>bloodrop larvae</label>
-        <description>.</description>
+        <description>The larval form of the bloodrop moth. It gains its necessary nutrients for growth by feeding on the blood of any creature large enough to feed off of. A small group of them can drain a large animal to death in minutes.</description>
         <statBases>
             <MoveSpeed>0.3</MoveSpeed>
             <LeatherAmount>0</LeatherAmount>
@@ -140,7 +140,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_BloodropPupa</defName>
         <label>bloodrop pupa</label>
-        <description>.</description>
+        <description>The pupal stage of the bloodrop moth. It uses the nutrients it gained from blood as a larvae to survive, which also causes its deep red color. While quite vulnerable in this life stage, they are not entirely defenseless, as their pupa exterior is quite hardened.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <MarketValue>100</MarketValue>
@@ -230,7 +230,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_BloodropMoth</defName>
         <label>bloodrop moth</label>
-        <description>.</description>
+        <description>The adult form of this species. It flies near silently through cave systems in search of blood it can drain from prey using its razor sharp proboscis. Even a small group of them can drain a large animal to death in mere minutes.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
             <BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">5</BiomesCore_FlySpeed>
@@ -356,7 +356,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>BMT_CrimsonSilk</defName>
         <label>crimson silk</label>
-        <description>.</description>
+        <description>A blood red silk produced by a species of subterranean moth. It is luxuriously soft.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Item/CrimsonSilk</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

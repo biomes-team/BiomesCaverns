@@ -3,7 +3,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>BMT_CrimsonCap</defName>
         <label>crimson cap</label>
-        <description>A big Crimson capped mushroom.\n\n sometimes mistakenly identified as Dulcis by inexperienced mushroom pickers.</description>
+        <description>A big crimson-capped mushroom. It is sometimes mistakenly identified as Dulcis by inexperienced mushroom pickers.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/CrimsonCap</texPath>
             <graphicClass>Graphic_Random</graphicClass>

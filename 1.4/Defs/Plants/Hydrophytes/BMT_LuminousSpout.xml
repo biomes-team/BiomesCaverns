@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_LuminousSpout</defName>
 		<label>luminous spout</label>
-		<description>luminous spout.</description>
+		<description>Aquatic fungus that grows in the shape of an upside down cone. It visibly glows in the dark.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/LuminousSpout</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
