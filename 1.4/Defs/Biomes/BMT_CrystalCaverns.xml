@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>BMT_CrystalCaverns</defName>
     <label>crystal caverns</label>
-    <description>A crystal cave system</description>
+    <description>A crystal cave system.</description>
     <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">

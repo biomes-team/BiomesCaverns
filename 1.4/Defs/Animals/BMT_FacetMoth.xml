@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMothLarvae</defName>
 		<label>facet larvae</label>
-		<description>Larva of the giant moth. One day she will become a beautiful butterfly.</description>
+		<description>Larva of the giant moth. One day it will become a beautiful butterfly.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
@@ -332,7 +332,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_FacetMothEggFertilized</defName>
 		<label>facet moth egg (fert.)</label>
-		<description>A fertilized facet moth egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized facet moth egg. If all goes well, it should hatch into a facet larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<color>(230,212,193)</color>
 			<drawSize>0.8</drawSize>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BushBase">
 		<defName>BMT_AbyssalGrapesVine</defName>
 		<label>abyssal grapes</label>
-		<description>A medium-sized vine that yields abyssal grapes when harvested. tastes nice when eaten raw.</description>
+		<description>A medium-sized vine that yields abyssal grapes when harvested. Tastes nice when eaten raw.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.20</Nutrition>

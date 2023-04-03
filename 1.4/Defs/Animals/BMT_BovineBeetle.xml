@@ -372,7 +372,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggBovineBeetleFertilized</defName>
 		<label>bovine beetle egg (fert.)</label>
-		<description>A bovine beetle egg. If all goes well, it should hatch into a baby bovine beetle. It can be eaten raw, but it's much better cooked.</description>
+		<description>A bovine beetle egg. If all goes well, it should hatch into a bovine grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(228,236,213)</color>

@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>BMT_EarthenDepths</defName>
     <label>earthen depths</label>
-    <description>A deep cave system</description>
+    <description>A deep cave system.</description>
     <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">

@@ -348,7 +348,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMossBeetleFertilized</defName>
 		<label>moss beetle egg (fert.)</label>
-		<description>A moss beetle egg. If all goes well, it should hatch into a baby moss beetle. It can be eaten raw, but it's much better cooked.</description>
+		<description>A moss beetle egg. If all goes well, it should hatch into a moss grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(118,135,137)</color>

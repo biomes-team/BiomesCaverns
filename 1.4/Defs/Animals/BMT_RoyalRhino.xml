@@ -410,7 +410,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggRoyalRhinoFertilized</defName>
 		<label>royal rhino beetle egg (fert.)</label>
-		<description>A royal rhino beetle egg. If all goes well, it should hatch into a baby royal rhino beetle. It can be eaten raw, but it's much better cooked.</description>
+		<description>A royal rhino beetle egg. If all goes well, it should hatch into a royal rhino grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(74, 51, 87)</color>

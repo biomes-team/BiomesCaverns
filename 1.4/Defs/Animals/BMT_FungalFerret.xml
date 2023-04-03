@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FungalFerret</defName>
 		<label>fungal ferret</label>
-		<description>the fungus growing on the back of this small mammal has formed a mutual bond with its host, living primarily within and on its fur.</description>
+		<description>The fungus growing on the back of this small mammal has formed a mutual bond with its host, living primarily within and on its fur.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>120</MarketValue>

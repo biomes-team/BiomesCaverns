@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_DrillPod</defName>
 		<label>drill pod</label>
-		<description>A launchable sub-teranian cargo pod capable of carrying people, items, or animals. Can be used for sending gifts, transporting people or supplies, surprise attacks, or reinforcing battles.</description>
+		<description>A launchable subterranean cargo pod capable of carrying people, items, or animals. Can be used for sending gifts, transporting people or supplies, surprise attacks, or reinforcing battles.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Building/Drillpod/Drillpod</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

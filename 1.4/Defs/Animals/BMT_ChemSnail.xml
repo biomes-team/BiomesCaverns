@@ -128,7 +128,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggChemSnailFertilized</defName>
 		<label>chem snail egg (fert.)</label>
-		<description>A fertilized chem snail egg. If all goes well, it should hatch into a baby snail. It can be used as fuel.</description>
+		<description>A fertilized chem snail egg. If all goes well, it should hatch into a baby chemsnail. It can be used as fuel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(149,92,90)</color>
