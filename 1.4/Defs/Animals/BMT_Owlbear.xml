@@ -4,7 +4,7 @@
     <ThingDef ParentName="BaseBear">
         <defName>BMT_Owlbear</defName>
         <label>Owlbear</label>
-        <description>A strange hybrid of a of bear and an owl that generally is found in surface caverns.</description>
+        <description>Originally created by scientists enamored with a tabletop game from Earth, it was released into the wild and has found a home within surface level caverns, able to come and go as it pleases.</description>
         <statBases>
             <MoveSpeed>4.8</MoveSpeed>
             <ComfyTemperatureMin>-30</ComfyTemperatureMin>

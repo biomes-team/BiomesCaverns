@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GiantSnail</defName>
 		<label>giant snail</label>
-		<description>A huge snail, found deep underground. These snails are large enough to carry a pack.\n\nA gigantic herd snail, used as a pack animal by many cavern-dwelling societies. Its ability to adhere to and climb virtually any surface makes it invaluable for any traders or travelers underground.</description>
+		<description>A gigantic herd snail, used as a pack animal by many cavern-dwelling societies. Its ability to adhere to and climb virtually any surface makes it invaluable for any traders or travelers underground.</description>
 		<statBases>
 			<MoveSpeed>2.6</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

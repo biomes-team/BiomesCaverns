@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_TruffleMole</defName>
 		<label>truffle mole</label>
-		<description>The truffle mole has specialized smell organs to easily find fungus.\n\nThought to be related in some strange way to the truffle pigs of Earth, this mole has a specialized sense of smell, enabling it to find rare fungi.</description>
+		<description>Thought to be related in some strange way to the truffle pigs of Earth, this mole has a specialized sense of smell, enabling it to find rare fungi.</description>
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
 			<DiggingSpeed MayRequire="biomesteam.biomesislands">16</DiggingSpeed>

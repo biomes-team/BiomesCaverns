@@ -10,7 +10,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_WoolySpider</defName>
 	<label>wooly spider</label>
-	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<description>Small and fluffy, these spiders have become a popular pet amongst the cavern dwelling populace. It can be easily fed from meaty table scraps.</description>
 	<statBases>
 	  <MoveSpeed>4.4</MoveSpeed>
 	  <MarketValue>100</MarketValue>

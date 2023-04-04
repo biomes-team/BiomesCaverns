@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GlowSlug</defName>
 		<label>glowslug</label>
-		<description>A bioluminescent slug, found deep underground.\n\nThis bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that it has survived this long, let alone to the large size it is.</description>
+		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that it has survived this long, let alone to the large size it is.</description>
 		<statBases>
 			<MoveSpeed>1.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

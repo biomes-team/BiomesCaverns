@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_Boomapillar</defName>
 	<label>boomapillar</label>
-	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<description>Borne out of the same genetic engineering research as the boomalope and boomasaurolophus, the boomapillar is just as explosive but much more buggy.</description>
 	<statBases>
 	  <MoveSpeed>3.4</MoveSpeed>
 	  <MarketValue>350</MarketValue>

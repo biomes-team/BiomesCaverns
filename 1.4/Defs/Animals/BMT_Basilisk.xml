@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_Basilisk</defName>
 	<label>basilisk</label>
-	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<description>Six-legged and with eyes that enrapture their prey should they gaze into them, the basilisk is both designed and named after its mythological predecessor.</description>
 	<statBases>
 	  <MoveSpeed>4.6</MoveSpeed>
 	  <MarketValue>980</MarketValue>

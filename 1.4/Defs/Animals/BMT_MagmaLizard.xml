@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_MagmaLizard</defName>
 	<label>magma lizard</label>
-	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<description>The patterning on its skin resembles that of both cooled and hot magma, seemingly to blend in with the volatile environment within the depths of the cavern systems.</description>
 	<statBases>
 	  <MoveSpeed>0.6</MoveSpeed>
 	  <MarketValue>980</MarketValue>

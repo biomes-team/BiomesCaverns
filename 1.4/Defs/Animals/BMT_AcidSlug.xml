@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_AcidSlug</defName>
 	<label>acid slug</label>
-	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<description>Originally designed for combat, the acid slug is one of the most dangerous predators in the earthen depths due to their highly acidic slime and flesh. The bodies of their prey are often found melted down to the bone within their bodies.</description>
 	<statBases>
 	  <MoveSpeed>1.5</MoveSpeed>
 	  <LeatherAmount>16</LeatherAmount>

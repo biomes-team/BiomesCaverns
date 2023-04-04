@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_ShatterjawBeetle</defName>
 	<label>shatterjaw beetle</label>
-	<description>One of the most dangerous inhabitants of the crystal caves, the shatterjaw usually hunt with their large claws. They can carry a lot of things.</description>
+	<description>One of the most dangerous inhabitants of the crystal caves, the shatterjaw hunt with their large mandibles, crushing and cutting prey to pieces before feeding.</description>
 	<statBases>
 	  <MoveSpeed>3.60</MoveSpeed>
 	  <ComfyTemperatureMin>-40</ComfyTemperatureMin>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMothLarvae</defName>
 		<label>facet larvae</label>
-		<description>Larva of the giant moth. One day it will become a beautiful butterfly.</description>
+		<description>The larval form of the facet moth. While its body may look spiky and hard, it's actually a form of natural mimicry to deter predators.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
@@ -135,7 +135,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMothPupa</defName>
 		<label>facet pupa</label>
-		<description>Giant moth pupa.</description>
+		<description>The pupal form of the facet moth. While immobile, its hard shell protects it from most predators.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
 			<MarketValue>100</MarketValue>
@@ -224,7 +224,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMoth</defName>
 		<label>facet moth</label>
-		<description>Huge and very friendly moth. Dwells deep in crystal caves.</description>
+		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty.</description>
 		<statBases>
 			<MoveSpeed>12</MoveSpeed>
 			<BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">12</BiomesCore_FlySpeed>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Mole</defName>
 		<label>mole</label>
-		<description>The mole is often found underground. It mostly diggs way faster thru soil than it runs overground.</description>
+		<description>The mole is usually found within shallower caverns, digging through terrain faster than it otherwise walks.</description>
 		<statBases>
 			<MoveSpeed>2.2</MoveSpeed>
 			<DiggingSpeed MayRequire="biomesteam.biomesislands">9</DiggingSpeed>

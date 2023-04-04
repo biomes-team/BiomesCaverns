@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_RoyalRhinoLarvae</defName>
 		<label>royal rhino grub</label>
-		<description>A vary large, extremely dangerous, subterranean beetle.\n\nA gigantic type of rare beetle that is revered by certain underground cultures for its rarity and power. While its royal purple chitin is beautiful, it is also extremely durable. Its extremely sharp horn fetches a high price. While normally gentle by nature, it is extremely dangerous when enraged.</description>
+		<description>A gigantic type of rare beetle that is revered by certain underground cultures for its rarity and power. While its royal purple chitin is beautiful, it is also extremely durable. Its extremely sharp horn fetches a high price. While normally gentle by nature, it is extremely dangerous when enraged.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>

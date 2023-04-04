@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_FoundryBeetle</defName>
 	<label>foundry beetle</label>
-	<description>One of the representatives of the inhabitants of earthen depths..</description>
+	<description>While herbivorous, this beetle is no easy prey. It uses its massive mandibles to crush both rival mates and anything that tries to hunt it. These beetles are often bred as war bugs by the more vicious cave dwellers.</description>
 	<statBases>
 	  <MoveSpeed>4.5</MoveSpeed>
 	  <MarketValue>300</MarketValue>

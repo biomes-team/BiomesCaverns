@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MossyFennec</defName>
 		<label>mossy fennec</label>
-		<description>a fennec covered in moss.\n\nAn example of unique symbiosis in a strange environment, this fox species has formed a mutual bond with a type of moss, providing it with a way to move and access water and nutrients it otherwise wouldn’t have, while getting some energy from the moss in turn.</description>
+		<description>An example of unique symbiosis in a strange environment, this fox species has formed a mutual bond with a type of moss, providing it with a way to move and access water and nutrients it otherwise wouldn’t have, while getting some energy from the moss in turn.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<MarketValue>200</MarketValue>

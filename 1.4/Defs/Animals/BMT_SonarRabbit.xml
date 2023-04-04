@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_SonarRabbit</defName>
 		<label>sonar rabbit</label>
-		<description>In the underground, the ability of echolocation has ensured the survival of this rabbit.\n\nThe echolocation ability of this rabbit has enabled it to survive even in pitch-black environments. It tends to both feed on and make its home within the smaller fungi of the underground.</description>
+		<description>The echolocation ability of this rabbit has enabled it to survive even in pitch-black environments. It tends to both feed on and make its home within the smaller fungi of the underground.</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<MarketValue>240</MarketValue>

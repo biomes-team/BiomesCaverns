@@ -4,7 +4,7 @@
   <ThingDef ParentName="BiomesCore_CrabThingBase" Name="BMT_CrystalCrab_Base" Abstract="True">
 	<!-- <defName>BMT_CrystalCrab</defName> -->
 	<label>crystal crab</label>
-	<description>A large sized crab species related to the rimcrab. It is native to cold and temperate caves.</description>
+	<description>A large and powerful crab species related to the rimcrab and the decorator crab. It has formed a kind of symbiosis with the cavern crystals, with them growing from the minerals on the crab's rocky shell. It is unknown as to why the crab hauls around such a heavy shell despite its own strong exoskeleton.</description>
 	<statBases>
 	  <MoveSpeed>3.5</MoveSpeed>
 	  <MarketValue>2300</MarketValue>
