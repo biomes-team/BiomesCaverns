@@ -259,7 +259,7 @@
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
 			<body>BeetleLike</body>
 			<gestationPeriodDays>5</gestationPeriodDays>
-			<roamMtbDays>30</roamMtbDays>
+			<roamMtbDays>4</roamMtbDays>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>

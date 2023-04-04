@@ -44,6 +44,7 @@
 			<wildness>0.75</wildness>
 			<lifeExpectancy>35</lifeExpectancy>
 			<trainability>None</trainability>
+			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
 			<!-- <meatLabel>snail meat</meatLabel> -->

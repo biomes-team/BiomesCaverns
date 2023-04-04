@@ -69,7 +69,7 @@
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>Leather_Heavy</leatherDef>
 	  <nameOnTameChance>1</nameOnTameChance>
-	  <trainability>Advanced</trainability>
+	  <trainability>None</trainability>
 	  <wildness>0</wildness>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>
 	  <gestationPeriodDays>10</gestationPeriodDays>

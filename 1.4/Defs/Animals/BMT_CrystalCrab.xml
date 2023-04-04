@@ -26,6 +26,7 @@
 	  <baseBodySize>2.4</baseBodySize>
 	  <baseHealthScale>1.75</baseHealthScale>
 	  <leatherDef>BMT_RoyalChitin</leatherDef>
+	  <trainability>Intermediate</trainability>
 	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 	  <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 	</race>

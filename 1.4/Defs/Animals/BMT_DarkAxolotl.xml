@@ -94,7 +94,8 @@
 	  <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <lifeExpectancy>20</lifeExpectancy>
-	  <trainability>Advanced</trainability>
+	  <trainability>None</trainability>
+	  <petness>0.3</petness>
 	  <packAnimal>false</packAnimal>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>
 	  <lifeStageAges>

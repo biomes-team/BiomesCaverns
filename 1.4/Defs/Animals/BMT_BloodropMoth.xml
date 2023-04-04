@@ -4,7 +4,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_BloodropLarvae</defName>
         <label>bloodrop larvae</label>
-        <description>The larval form of the bloodrop moth. It gains its necessary nutrients for growth by feeding on the blood of any creature large enough to feed off of. A small group of them can drain a large animal to death in minutes.</description>
+        <description>The larval form of the bloodrop moth. It gains its necessary nutrients for growth by feeding on the blood of any creature large enough. A small group of them can drain a large animal to death in minutes.</description>
         <statBases>
             <MoveSpeed>0.3</MoveSpeed>
             <LeatherAmount>0</LeatherAmount>
@@ -250,7 +250,7 @@
             <predator>true</predator>
             <maxPreyBodySize>0.80</maxPreyBodySize>
             <wildness>0.55</wildness>
-            <roamMtbDays>3</roamMtbDays>
+			<petness>0.1</petness>
             <lifeExpectancy>10</lifeExpectancy>
             <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>

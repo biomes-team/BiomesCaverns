@@ -53,7 +53,8 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>6</lifeExpectancy>
 			<wildness>0.3</wildness>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
+			<roamMtbDays>7</roamMtbDays>
 			<lifeStageAges>
 				<li>
 					<def>EusocialInsectLarva</def>

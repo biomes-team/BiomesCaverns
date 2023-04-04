@@ -75,7 +75,7 @@
 			<leatherDef>Leather_Lizard</leatherDef>
 			<useMeatFrom>Iguana</useMeatFrom>
 			<wildness>0.75</wildness>
-			<trainability>Intermediate</trainability>
+			<trainability>None</trainability>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>

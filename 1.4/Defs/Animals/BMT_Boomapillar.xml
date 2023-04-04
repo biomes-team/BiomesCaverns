@@ -36,6 +36,7 @@
 		<baseBodySize>0.4</baseBodySize>
 		<baseHealthScale>0.4</baseHealthScale>
 		<trainability>None</trainability>
+		<roamMtbDays>3</roamMtbDays>
 		<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>0</manhunterOnDamageChance>
 		<!-- <meatLabel>snail meat</meatLabel> -->

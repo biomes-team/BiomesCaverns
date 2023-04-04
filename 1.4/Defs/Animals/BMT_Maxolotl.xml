@@ -74,6 +74,7 @@
 			<useMeatFrom>Iguana</useMeatFrom>
 			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
+			<petness>0.05</petness>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>

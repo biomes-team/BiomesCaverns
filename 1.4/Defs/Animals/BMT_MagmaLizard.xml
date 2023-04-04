@@ -77,7 +77,6 @@
 	  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
 	  <predator>false</predator>
 	  <maxPreyBodySize>2.3</maxPreyBodySize>
-	  <!-- <petness>0.1</petness> -->
 	  <baseBodySize>2.1</baseBodySize>
 	  <baseHungerRate>0.3</baseHungerRate>
 	  <baseHealthScale>1.2</baseHealthScale>

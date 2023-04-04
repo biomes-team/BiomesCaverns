@@ -28,7 +28,7 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
-			<trainability>None</trainability>
+			<trainability>Advanced</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
@@ -304,7 +304,6 @@
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
 			</willNeverEat>
-			<roamMtbDays>1.5</roamMtbDays>
 			<manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 			<lifeExpectancy>25</lifeExpectancy>

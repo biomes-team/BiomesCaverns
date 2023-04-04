@@ -27,7 +27,7 @@
 	  <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <leatherDef>Leather_Light</leatherDef>
 	  <wildness>0</wildness>
-	  <petness>1</petness>
+	  <petness>0.8</petness>
 	  <trainability>None</trainability>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>
 	  <gestationPeriodDays>10</gestationPeriodDays>

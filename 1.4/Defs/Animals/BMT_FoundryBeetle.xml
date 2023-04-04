@@ -36,7 +36,6 @@
 	  <wildness>0.6</wildness>
 	  <trainability>Advanced</trainability>
 	  <lifeExpectancy>15</lifeExpectancy>
-	  <petness>1</petness>
 	  <nuzzleMtbHours>36</nuzzleMtbHours>
 	  <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
 	  <nameOnTameChance>0.2</nameOnTameChance>

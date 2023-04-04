@@ -70,7 +70,7 @@
 			<leatherDef>Leather_Lizard</leatherDef>
 			<wildness>0</wildness>
 			<trainability>None</trainability>
-			<roamMtbDays>7</roamMtbDays>
+			<roamMtbDays>5</roamMtbDays>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>

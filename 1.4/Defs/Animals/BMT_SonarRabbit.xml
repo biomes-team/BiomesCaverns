@@ -40,7 +40,7 @@
 			<leatherDef>Leather_Light</leatherDef>
 			<wildness>0.75</wildness>
 			<trainability>None</trainability>
-			<petness>0.08</petness>
+			<petness>0.4</petness>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>

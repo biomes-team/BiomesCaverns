@@ -244,12 +244,12 @@
 			<predator>false</predator>
 			<!-- <maxPreyBodySize>0.80</maxPreyBodySize> -->
 			<wildness>0.55</wildness>
-			<roamMtbDays>3</roamMtbDays>
 			<lifeExpectancy>10</lifeExpectancy>
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<trainability>None</trainability>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<petness>0.5</petness>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<lifeStageAges>
 				<li>
