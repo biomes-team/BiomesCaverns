@@ -46,6 +46,8 @@
     <Compile Include="CompSpawnDust.cs" />
     <Compile Include="DrillPodIncoming.cs" />
     <Compile Include="CompCleanFilthAround.cs" />
+    <Compile Include="IncidentWorkers\AmbrosyxSprout.cs" />
+    <Compile Include="IncidentWorkers\PlantSprout.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
@@ -55,7 +57,6 @@
     <Compile Include="Patches\TravelingTransportPods_TraveledPctStepPerTick_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
       <Version>1.0.2</Version>

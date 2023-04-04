@@ -11,5 +11,6 @@ namespace BiomesCaverns
         public static ThingDef BMT_DrillPodActive;
         public static ThingDef BMT_DrillPod;
         public static WorldObjectDef BMT_TravelingDrillPods;
+        public static ThingDef BMT_AmbrosyxFungus;
     }
 }

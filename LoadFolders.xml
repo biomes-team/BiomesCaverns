@@ -10,5 +10,7 @@
 		<li>1.4CaveworldFloraUnleashed</li>
 		<li IfModActive="BiomesTeam.BiomesIslands">1.4FlyingAndAquaticAnimals</li>
 		<!--<li IfModActive="musicexpanded.framework">MusicExpandedPatch</li>-->
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/DLC/Royalty</li>
+		<li IfModActive="VanillaExpanded.VBrewE">1.4/Mods/VanillaBrewingExpanded</li>
 	</v1.4>
 </loadFolders>
