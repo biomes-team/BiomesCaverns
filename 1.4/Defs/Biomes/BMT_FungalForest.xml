@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>BMT_FungalForest</defName>
     <label>fungal forest</label>
-    <description>A damp cave system full of fungi.</description>
+    <description>Underground wetlands formed by subterranean water sources leeching into the stone have provided ample surfaces for a plethora of fungi both dangerous and benign to flourish. The combination of wet, soggy terrain and narrow caves make building here difficult. The unceasing dark and damp makes illness and fungal infections common.</description>
     <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">

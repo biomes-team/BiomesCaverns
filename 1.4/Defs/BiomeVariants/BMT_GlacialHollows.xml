@@ -7,7 +7,7 @@
     <label>glacial hollows</label>
 
     <biomeLabel operation="replace">glacial hollows</biomeLabel>
-    <biomeDescription operation="replace">A shallow cave system below the frozen ground.</biomeDescription>
+    <biomeDescription operation="replace">Sitting within the sometimes kilometers thick ice of permanently frozen regions, these hollows have never seen warmth. Nearly every surface is made of solid ice, so dense and cold that they are impervious to heat, with any warmth quickly drawn away. Little life can survive here, but what does is unsurprisingly quite hardy.</biomeDescription>
 
     <worldTileGraphicAtlas>
       <texture>BMT_Caverns/World/Biomes/Atlas/GlacialHollows</texture>

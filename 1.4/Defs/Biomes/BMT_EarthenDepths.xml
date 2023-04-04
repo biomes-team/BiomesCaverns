@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>BMT_EarthenDepths</defName>
     <label>earthen depths</label>
-    <description>A deep cave system.</description>
+    <description>Deep within the depths of the planet's crust lie the most inhospitable of environments, forged of the rock and magma near the mantle layer. The molten rock and extreme depth make it both dangerous and difficult to survive here, but those that do survive have a greater chance of finding earthen resources, from ore to gems.</description>
     <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">

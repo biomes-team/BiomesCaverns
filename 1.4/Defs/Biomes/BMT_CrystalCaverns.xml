@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>BMT_CrystalCaverns</defName>
     <label>crystal caverns</label>
-    <description>A crystal cave system.</description>
+    <description>It is uncertain what led to the formation of the bright blue crystals that dot some caverns, but their presence has led to a variety of new life forms adapting and being engineered to survive. The mysterious crystals are used for a variety of functions by cave dwelling societies.</description>
     <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">

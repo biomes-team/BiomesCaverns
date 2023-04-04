@@ -7,7 +7,7 @@
     <label>desert shallows</label>
 
     <biomeLabel operation="replace">desert shallows</biomeLabel>
-    <biomeDescription operation="replace">A shallow cave system below the desert.</biomeDescription>
+    <biomeDescription operation="replace">Water and weathering have carved out branching networks of caverns beneath the sand and stone of the desert. With the searing hot sun unable to reach, the subterranean nature of this environment lends itself to cooler living for anything within.</biomeDescription>
 
     <worldTileGraphicAtlas>
       <texture>BMT_Caverns/World/Biomes/Atlas/DesertShallows</texture>

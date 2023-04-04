@@ -7,7 +7,7 @@
     <label>shallow cave</label>
 
     <biomeLabel operation="prependPar">shallow cave</biomeLabel>
-    <biomeDescription operation="replace">A shallow cave system.</biomeDescription>
+    <biomeDescription operation="replace">A shallow system of caves close to or connecting to the surface world. This proximity to the surface has led to a fascinating mix of life from both the surface and the UnderRim. While these caverns sometimes connect safely via tunnels, they are occasionally only accessible via sinkhole or crevasse.</biomeDescription>
 
     <worldTileGraphicAtlas>
       <texture>BMT_Caverns/World/Biomes/Atlas/ShallowCave</texture>
