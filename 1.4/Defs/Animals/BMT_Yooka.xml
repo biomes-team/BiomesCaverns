@@ -8,7 +8,7 @@
 			<MoveSpeed>4.3</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">

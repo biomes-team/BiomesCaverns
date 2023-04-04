@@ -15,6 +15,7 @@
 	  <MoveSpeed>4.4</MoveSpeed>
 	  <MarketValue>100</MarketValue>
 	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>20</ComfyTemperatureMax>
 	</statBases>
 	<race>
 	  <body>BeetleLikeWithClaw</body>

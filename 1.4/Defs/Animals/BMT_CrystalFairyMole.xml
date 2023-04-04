@@ -16,6 +16,7 @@
 	  <MarketValue>250</MarketValue>
 	  <DiggingSpeed MayRequire="biomesteam.biomesislands">9</DiggingSpeed>
 	  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
 	  <LeatherAmount>12</LeatherAmount>
 	</statBases>
 	<tools>

@@ -8,6 +8,7 @@
 	<statBases>
 	  <MoveSpeed>4.60</MoveSpeed>
 	  <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <FilthRate>1</FilthRate>
 	  <MarketValue>350</MarketValue>
 	  <!-- <CarryingCapacity>125</CarryingCapacity> -->

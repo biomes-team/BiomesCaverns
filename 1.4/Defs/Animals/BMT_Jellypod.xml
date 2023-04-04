@@ -7,6 +7,7 @@
 		<statBases>
 			<MoveSpeed>1.65</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
