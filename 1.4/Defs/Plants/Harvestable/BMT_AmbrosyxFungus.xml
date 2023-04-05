@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_AmbrosyxFungus</defName>
 		<label>ambrosyx fungus</label>
 		<description>A rare wild fungus which yields ambrosyx shrooms. Similar to ambrosia, this shroom is delicious and produces a drug-like mood boost. This fungus cannot be farmed, which makes it very valuable.</description>

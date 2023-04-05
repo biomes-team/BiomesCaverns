@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Candlesnuff</defName>
 		<label>candlesnuff</label>
-		<description>A ash pale mushroom tree. Slow-growing, but this woody fungus is very strong.</description>
+		<description>An ash pale mushroom tree. Slow-growing, but this woody fungus is very strong.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Candlesnuff/CandlesnuffGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

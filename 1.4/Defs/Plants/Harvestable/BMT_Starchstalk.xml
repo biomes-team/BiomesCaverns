@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_StarchstalkPlant</defName>
 		<label>starchstalk</label>
 		<description>Essentially a potato-like root that has grown upwards, it is farmed by cave-dwelling tribes due to the ease in which it grows even on the worst soil.</description>

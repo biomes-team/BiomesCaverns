@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_Stimquill</defName>
 		<label>stimquill</label>
 		<description>Known for its stimulant properties, this plant is found deep underground.</description>

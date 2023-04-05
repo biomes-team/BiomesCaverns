@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_KessingerPlant</defName>
 		<label>kessinger</label>
 		<description>Nutrient-rich fungal body, harvested and compacted for storage. Kessinger is good animal feed, but inedible for humans.</description>

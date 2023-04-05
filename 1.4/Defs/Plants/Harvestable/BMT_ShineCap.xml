@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="TreeBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Shinecap</defName>
 		<label>shine cap</label>
 		<description>This large mushroom lives in symbiosis with a surprisingly tasty slime mold called Glimmerslime.</description>

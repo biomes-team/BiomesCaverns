@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>	
-    <ThingDef ParentName="BushBase">
+    <ThingDef ParentName="BMT_CaveBushBase">
         <defName>BMT_DulcisPlant</defName>
         <label>dulcis</label>
         <description>An oddly sweet mushroom grown by cave dwellers in place of berries.</description>

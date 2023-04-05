@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BushBase">
+	<ThingDef ParentName="BMT_CaveBushBase">
 		<defName>BMT_AbyssalGrapesVine</defName>
 		<label>abyssal grapes</label>
 		<description>A medium-sized vine that yields abyssal grapes when harvested. Tastes nice when eaten raw.</description>
