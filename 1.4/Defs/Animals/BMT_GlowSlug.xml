@@ -74,6 +74,7 @@
 				<li>AnimalPet</li>
 				<li>AnimalFarm</li>
 				<li>AnimalUncommon</li>
+				<li>AnimalInsect</li>
 			</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

@@ -86,6 +86,7 @@
 	</race>
 	<tradeTags>
 	  <li>AnimalUncommon</li>
+	  <li>AnimalInsect</li>
 	</tradeTags>
 	<butcherProducts>
 		<Steel>16</Steel>

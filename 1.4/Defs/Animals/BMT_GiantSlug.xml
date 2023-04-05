@@ -38,6 +38,7 @@
 			<tradeTags>
 				<li>AnimalFarm</li>
 				<li>AnimalUncommon</li>
+				<li>AnimalInsect</li>
 			</tradeTags>
 			<herdAnimal>false</herdAnimal>
 			<body>BiomesCore_Slug</body>
