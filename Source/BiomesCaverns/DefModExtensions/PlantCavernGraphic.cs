@@ -8,6 +8,7 @@ namespace BiomesCaverns.DefModExtensions
 	{
 		public string texPath;
 
+		[Unsaved]
 		private Graphic graphic;
 
 		public override IEnumerable<string> ConfigErrors()

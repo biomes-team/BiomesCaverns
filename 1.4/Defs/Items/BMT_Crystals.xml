@@ -1,34 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef ParentName="ResourceBase">
-	<defName>BMT_ResourceBlueCrystal</defName>
-	<label>blue crystal</label>
-	<description>Blue crystal mined from crystal caves.</description>
-	<graphicData>
-	  <texPath>BMT_Caverns/Things/Item/BlueCrystal</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<stackLimit>275</stackLimit>
-	<statBases>
-	  <MaxHitPoints>75</MaxHitPoints>
-	  <MarketValue>45</MarketValue>
-	  <Mass>2</Mass>
-	  <Flammability>0.0</Flammability>
-	  <DeteriorationRate>0.0</DeteriorationRate>
-	</statBases>
-	<thingCategories>
-	  <li>ItemsMisc</li>
-	</thingCategories>
-	<!-- <thingSetMakerTags> -->
-	  <!-- <li>RewardStandardHighFreq</li> -->
-	<!-- </thingSetMakerTags> -->
-	<comps>
-	  <li Class="CompProperties_Glower">
-		<glowRadius>1.75</glowRadius>
-		<glowColor>(40,40,90,0)</glowColor>
-	  </li>
-	</comps>
-  </ThingDef>
-  
+	<StuffAppearanceDef>
+		<defName>BMT_AppearanceCrystal</defName>
+	</StuffAppearanceDef>
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>BMT_ResourceBlueCrystal</defName>
+		<label>blue crystal</label>
+		<description>Blue crystal mined from crystal caves.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/BlueCrystal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+			<Beauty>4</Beauty>
+			<ConstructionSpeedFactor>0.7</ConstructionSpeedFactor>
+			<Mass>1</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stuffProps>
+			<color>(106,173,222)</color>
+			<commonality>0</commonality>
+			<appearance>BMT_AppearanceCrystal</appearance>
+			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<stuffAdjective>crystalline</stuffAdjective>
+			<statFactors>
+				<Beauty>1.25</Beauty>
+				<MarketValue>0.6</MarketValue>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToBuild>6.5</WorkToBuild>
+				<WorkToMake>1.4</WorkToMake>
+				<DoorOpenSpeed>0.6</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>1.20</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+		</stuffProps>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.75</glowRadius>
+				<glowColor>(40,40,90,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
