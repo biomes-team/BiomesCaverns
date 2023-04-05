@@ -97,7 +97,7 @@
 	  <trainability>None</trainability>
 	  <petness>0.3</petness>
 	  <packAnimal>false</packAnimal>
-	  <nuzzleMtbHours>12</nuzzleMtbHours>
+	  <nuzzleMtbHours>15</nuzzleMtbHours>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
@@ -121,8 +121,8 @@
 	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 	</race>
 	<tradeTags>
-	  <li>AnimalUncommon</li>
-	  <!-- <li>AnimalFighter</li> -->
+		<li>AnimalPet</li>
+		<li>AnimalUncommon</li>
 	</tradeTags>
   </ThingDef>
 

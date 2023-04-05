@@ -41,6 +41,7 @@
 			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<petness>0.4</petness>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
@@ -75,7 +76,8 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>AnimalCommon</li>
+			<li>AnimalUncommon</li>
+			<li>AnimalPet</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

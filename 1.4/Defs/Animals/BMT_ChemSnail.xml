@@ -83,6 +83,11 @@
 				<BMT_FungalForest>0.25</BMT_FungalForest>
 			</wildBiomes>
 		</race>
+		<tradeTags>
+			<li>AnimalFarm</li>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+
 		<butcherProducts>
 			<BMT_Molluskshell>20</BMT_Molluskshell>
 		</butcherProducts>

@@ -31,9 +31,10 @@
 	  <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 	</race>
 	<tradeTags>
-	  <!-- <li>AnimalCommon</li> -->
-	  <!-- <li>AnimalFarm</li> -->
+		<li>AnimalFighter</li>
+		<li>AnimalExotic</li> 
 	</tradeTags>
+
 	<tools>
 		<li>
 			<label>claw</label>

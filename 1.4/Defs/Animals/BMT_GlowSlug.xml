@@ -70,6 +70,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+			<tradeTags>
+				<li>AnimalPet</li>
+				<li>AnimalFarm</li>
+				<li>AnimalUncommon</li>
+			</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_GlowSlug</defName>

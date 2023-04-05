@@ -75,6 +75,7 @@
 			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<petness>0.05</petness>
+			<nuzzleMtbHours>48</nuzzleMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>
@@ -109,6 +110,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

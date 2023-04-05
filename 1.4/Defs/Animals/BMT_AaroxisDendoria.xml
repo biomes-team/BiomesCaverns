@@ -316,6 +316,7 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
+			<li>AnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

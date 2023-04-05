@@ -79,6 +79,7 @@
 			<wildness>0.60</wildness>
 			<trainability>None</trainability>
 			<petness>0.20</petness>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<roamMtbDays>4</roamMtbDays>
 			<lifeExpectancy>6</lifeExpectancy>
 			<gestationPeriodDays>6.66</gestationPeriodDays>

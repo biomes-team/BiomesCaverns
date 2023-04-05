@@ -86,6 +86,10 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+			<tradeTags>
+				<li>AnimalUncommon</li>
+				<li>AnimalInsect</li>
+			</tradeTags>
         <modExtensions>
             <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
                 <isCustomThingEater>true</isCustomThingEater>

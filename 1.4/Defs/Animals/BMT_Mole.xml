@@ -79,6 +79,7 @@
 			<wildness>0.20</wildness>
 			<trainability>None</trainability>
 			<petness>0.2</petness>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<roamMtbDays>2</roamMtbDays>
 			<lifeExpectancy>6</lifeExpectancy>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
@@ -132,7 +133,7 @@
 			</li>
 		</modExtensions>
 		<tradeTags>
-			<li>AnimalCommon</li>
+			<li>AnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

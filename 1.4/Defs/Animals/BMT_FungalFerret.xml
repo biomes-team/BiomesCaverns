@@ -80,7 +80,7 @@
 			<wildness>0.4</wildness>
 			<trainability>Intermediate</trainability>
 			<petness>0.8</petness>
-			<nuzzleMtbHours>30</nuzzleMtbHours>
+			<nuzzleMtbHours>10</nuzzleMtbHours>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<lifeExpectancy>10</lifeExpectancy>
 			<litterSizeCurve>
@@ -116,7 +116,8 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>AnimalExotic</li>
+			<li>AnimalPet</li>
+			<li>AnimalExotic</li> 
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

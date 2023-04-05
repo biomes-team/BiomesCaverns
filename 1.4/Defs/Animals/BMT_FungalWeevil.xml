@@ -85,6 +85,8 @@
 	</race>
 	<tradeTags>
 	  <li>AnimalUncommon</li>
+	  <li>AnimalFarm</li>
+	  <li>AnimalInsect</li>
 	</tradeTags>
 	<butcherProducts>
 		<RawFungus>12</RawFungus>

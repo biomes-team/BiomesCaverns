@@ -72,6 +72,10 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+			<tradeTags>
+				<li>AnimalFarm</li>
+				<li>AnimalUncommon</li>
+			</tradeTags>
 		<butcherProducts>
 			<BMT_Molluskshell>30</BMT_Molluskshell>
 		</butcherProducts>

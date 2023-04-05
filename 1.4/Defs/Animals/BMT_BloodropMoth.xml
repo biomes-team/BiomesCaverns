@@ -251,6 +251,7 @@
             <maxPreyBodySize>0.80</maxPreyBodySize>
             <wildness>0.55</wildness>
 			<petness>0.1</petness>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
             <lifeExpectancy>10</lifeExpectancy>
             <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>

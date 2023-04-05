@@ -19,6 +19,10 @@
             <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.40</manhunterOnDamageChance>
         </race>
+		<tradeTags>
+			<li>AnimalFighter</li>
+			<li>AnimalUncommon</li>
+		</tradeTags>
         <tools>
             <li>
                 <label>left claw</label>

@@ -82,6 +82,7 @@
 	<tradeTags>
 	  <li>AnimalUncommon</li>
 	  <li>AnimalFighter</li>
+	  <li>AnimalInsect</li>
 	</tradeTags>
   </ThingDef>
 

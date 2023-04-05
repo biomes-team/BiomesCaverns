@@ -99,6 +99,7 @@
 		</ingredient>
 		<tradeTags>
 			<li>AnimalInsect</li>
+			<li>AnimalFarm</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

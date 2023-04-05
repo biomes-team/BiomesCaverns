@@ -28,6 +28,7 @@
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<petness>0.5</petness>
+			<nuzzleMtbHours>32</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
 			<body>BeetleLike</body>

@@ -75,6 +75,9 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
 			</willNeverEat>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

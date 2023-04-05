@@ -53,6 +53,11 @@
 				</li>
 			</lifeStageAges>
 		</race>
+	<tradeTags>
+		<li>AnimalPet</li>
+		<li>AnimalExotic</li> 
+		<li>AnimalInsect</li>
+	</tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
@@ -172,6 +177,11 @@
 				</li>
 			</lifeStageAges>
 		</race>
+			<tradeTags>
+				<li>AnimalPet</li>
+				<li>AnimalExotic</li> 
+				<li>AnimalInsect</li>
+			</tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
@@ -265,6 +275,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+			<tradeTags>
+				<li>AnimalPet</li>
+				<li>AnimalExotic</li> 
+				<li>AnimalInsect</li>
+			</tradeTags>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_FacetMoth</eggFertilizedDef>
