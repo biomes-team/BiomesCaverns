@@ -9,7 +9,7 @@
 	  <MoveSpeed>1.5</MoveSpeed>
 	  <LeatherAmount>16</LeatherAmount>
 	  <MarketValue>4000</MarketValue>
-	  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>0.80</ArmorRating_Blunt>

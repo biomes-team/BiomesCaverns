@@ -13,7 +13,7 @@
 	<description>Adapted or engineered to survive the considerable heat and volatility near the molten layer, the metallosnail has gained the ability to grow metal to form its shell as well as producing thin plates of it to protect its softer bits.</description>
 	<statBases>
 		<MoveSpeed>2.6</MoveSpeed>
-		<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 		<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 		<MarketValue>100</MarketValue>
 		<ArmorRating_Blunt>0.35</ArmorRating_Blunt>

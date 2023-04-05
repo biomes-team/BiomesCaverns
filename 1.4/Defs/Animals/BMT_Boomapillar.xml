@@ -8,7 +8,7 @@
 	<statBases>
 	  <MoveSpeed>3.4</MoveSpeed>
 	  <MarketValue>350</MarketValue>
-	  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 	  <FilthRate>16</FilthRate>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
