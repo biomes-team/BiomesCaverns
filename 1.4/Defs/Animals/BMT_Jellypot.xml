@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BaseInsect">
-		<defName>BMT_Jellypod</defName>
-		<label>jellypod</label>
-		<description>Named the “Jellypod” for its ability to produce insect jelly in its large thorax sac, this rare animal is almost exclusively found in insectoid hives, being farmed much like ants do with aphids.</description>
+		<defName>BMT_Jellypot</defName>
+		<label>jellypot</label>
+		<description>Named the jellypot for its ability to produce insect jelly in its large thorax sac, this rare animal is almost exclusively found near insectoid hives, being farmed much like ants do with aphids.</description>
 		<statBases>
 			<MoveSpeed>1.65</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -67,10 +67,10 @@
 				<li>
 					<def>EusocialInsectLarva</def>
 					<minAge>0.2</minAge>
-					<soundWounded>Biomes_Jellypod_Wounded</soundWounded>
-					<soundDeath>Biomes_Jellypod_Death</soundDeath>
-					<soundCall>Biomes_Jellypod_Call</soundCall>
-					<soundAngry>Biomes_Jellypod_Angry</soundAngry>
+					<soundWounded>Biomes_Jellypot_Wounded</soundWounded>
+					<soundDeath>Biomes_Jellypot_Death</soundDeath>
+					<soundCall>Biomes_Jellypot_Call</soundCall>
+					<soundAngry>Biomes_Jellypot_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -85,9 +85,9 @@
 		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Jellypod</defName>
-		<label>jellypod</label>
-		<race>BMT_Jellypod</race>
+		<defName>BMT_Jellypot</defName>
+		<label>jellypot</label>
+		<race>BMT_Jellypot</race>
 		<combatPower>15</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.20</ecoSystemWeight>

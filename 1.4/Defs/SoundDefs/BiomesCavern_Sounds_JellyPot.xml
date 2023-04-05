@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<SoundDef>
-		<defName>Biomes_Jellypod_Wounded</defName>
+		<defName>Biomes_Jellypot_Wounded</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Jellypod/Wounded</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Jellypot/Wounded</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -19,13 +19,13 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Biomes_Jellypod_Death</defName>
+		<defName>Biomes_Jellypot_Death</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Jellypod/Death</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Jellypot/Death</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>
@@ -36,13 +36,13 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Biomes_Jellypod_Call</defName>
+		<defName>Biomes_Jellypot_Call</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Jellypod/Call</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Jellypot/Call</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>20~28</volumeRange>
@@ -53,13 +53,13 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>Biomes_Jellypod_Angry</defName>
+		<defName>Biomes_Jellypot_Angry</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>BMT_Caverns/Animals/Jellypod/Angry</clipFolderPath>
+						<clipFolderPath>BMT_Caverns/Animals/Jellypot/Angry</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>25~35</volumeRange>

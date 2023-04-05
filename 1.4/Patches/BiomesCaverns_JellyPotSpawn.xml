@@ -5,7 +5,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
 				<value>
-					<li>BMT_Jellypod</li>
+					<li>BMT_Jellypot</li>
 				</value>
 			</li>
 		</operations>
