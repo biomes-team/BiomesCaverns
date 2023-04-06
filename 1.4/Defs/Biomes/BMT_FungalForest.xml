@@ -52,7 +52,7 @@
         </score>
       </li>
     </modExtensions>
-    <animalDensity>3.7</animalDensity>
+    <animalDensity>4.25</animalDensity>
     <plantDensity>0.90</plantDensity>
     <settlementSelectionWeight>0.7</settlementSelectionWeight>
     <movementDifficulty>0.2</movementDifficulty>

@@ -14,7 +14,6 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggGlowSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggGlowSnailFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>6</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -142,19 +141,5 @@
 				<hatcherPawn>BMT_GlowSnail</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggGlowSnailUnfertilized</defName>
-		<label>glowsnail egg (unfert.)</label>
-		<description>An unfertilized glowsnail egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(62,227,227)</color>
-			<drawSize>0.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>23.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
 	</ThingDef>
 </Defs>

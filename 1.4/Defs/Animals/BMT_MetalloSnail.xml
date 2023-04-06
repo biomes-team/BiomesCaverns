@@ -21,7 +21,6 @@
 	</statBases>
 	<comps>
 		<li Class="CompProperties_EggLayer">
-			<eggUnfertilizedDef>BMT_EggMetalloSnailUnfertilized</eggUnfertilizedDef>
 			<eggFertilizedDef>BMT_EggMetalloSnailFertilized</eggFertilizedDef>
 			<eggLayIntervalDays>12</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -160,19 +159,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggMetalloSnailUnfertilized</defName>
-		<label>metallo snail egg (unfert.)</label>
-		<description>An unfertilized giant snail egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(102,84,49)</color>
-			<drawSize>1.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
-	</ThingDef>
-
 </Defs>

@@ -339,7 +339,6 @@
 		</ingredient>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggRoyalRhinoUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggRoyalRhinoFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
@@ -426,20 +425,5 @@
 				<hatcherPawn>BMT_RoyalRhinoLarvae</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggRoyalRhinoUnfertilized</defName>
-		<label>royal rhino beetle egg (unfert.)</label>
-		<description>An unfertilized royal rhino beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(74, 51, 87)</color>
-			<drawSize>1.3</drawSize>
-		</graphicData>
-		<statBases>
-			<Mass>0.50</Mass>
-			<MarketValue>70.0</MarketValue>
-			<MaxHitPoints>60</MaxHitPoints>
-		</statBases>
 	</ThingDef>
 </Defs>

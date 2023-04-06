@@ -60,7 +60,6 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggAaroxisDendoriaUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggAaroxisDendoriaFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>3</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>

@@ -50,8 +50,8 @@
         </score>
       </li>
     </modExtensions>
-    <animalDensity>0.8</animalDensity>
-    <plantDensity>0.3</plantDensity>
+    <animalDensity>3.2</animalDensity>
+    <plantDensity>0.6</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>

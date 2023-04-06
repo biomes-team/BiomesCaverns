@@ -94,7 +94,6 @@
         </modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggPillbugUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggPillbugFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
@@ -170,19 +169,6 @@
 				<hatcherPawn>BMT_Pillbug</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggPillbugUnfertilized</defName>
-		<label>pillbug egg (unfert.)</label>
-		<description>An unfertilized pillbug egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(71,71,70)</color>
-			<drawSize>0.8</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>10.0</MarketValue>
-		</statBases>
 	</ThingDef>
 </Defs>
 

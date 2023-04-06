@@ -15,7 +15,6 @@
 	</statBases>
 	<comps>
 	  <li Class="CompProperties_EggLayer">
-		<eggUnfertilizedDef>BMT_BoomapillarUnfertilized</eggUnfertilizedDef>
 		<eggFertilizedDef>BMT_BoomapillarFertilized</eggFertilizedDef>
 		<eggLayIntervalDays>2</eggLayIntervalDays>
 		<eggCountRange>1~3</eggCountRange>
@@ -158,24 +157,6 @@
 				<hatcherPawn>BMT_Boomapillar</hatcherPawn>
 			</li>
 		</comps>
-		<ingestible>
-			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-			<preferability>DesperateOnly</preferability>
-		</ingestible>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_BoomapillarUnfertilized</defName>
-		<label>boomapillar egg (unfert.)</label>
-		<description>An unfertilized boomapillar egg. It can be eaten raw, but it's much, much better cooked. It can be used as fuel.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(149,92,90)</color>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
 		<ingestible>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 			<preferability>DesperateOnly</preferability>
