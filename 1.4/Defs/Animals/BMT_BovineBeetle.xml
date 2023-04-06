@@ -4,11 +4,11 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
 		<label>bovine grub</label>
-		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<description>A large grub originally from Caveworlds, this bug is often kept in farms for its milk-like substance they produce as an adult.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
-			<MarketValue>100</MarketValue>
+			<LeatherAmount>3</LeatherAmount>
+			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
@@ -19,6 +19,7 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>

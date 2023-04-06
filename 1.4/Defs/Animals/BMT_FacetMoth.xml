@@ -53,11 +53,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-	<tradeTags>
-		<li>AnimalPet</li>
-		<li>AnimalExotic</li> 
-		<li>AnimalInsect</li>
-	</tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
@@ -205,10 +200,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_FacetMothPupa</defName>
@@ -275,11 +266,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-			<tradeTags>
-				<li>AnimalPet</li>
-				<li>AnimalExotic</li> 
-				<li>AnimalInsect</li>
-			</tradeTags>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_FacetMoth</eggFertilizedDef>
@@ -313,10 +299,11 @@
 				<chanceFactor>0.85</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalUncommon</li>
-		</tradeTags>
+			<tradeTags>
+				<li>AnimalPet</li>
+				<li>AnimalExotic</li> 
+				<li>AnimalInsect</li>
+			</tradeTags>
 		<!-- <modExtensions> -->
 			<!-- <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl"> -->
 				<!-- <isBloodDrinkingAnimal>true</isBloodDrinkingAnimal> -->
