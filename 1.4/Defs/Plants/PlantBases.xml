@@ -24,6 +24,7 @@
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
 			<cavePlant>true</cavePlant>
+			<cavePlantWeight>0.0</cavePlantWeight>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

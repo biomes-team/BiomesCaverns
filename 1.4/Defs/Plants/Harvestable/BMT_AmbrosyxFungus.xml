@@ -7,7 +7,6 @@
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.5</Nutrition>
-			<Flammability>0.35</Flammability>
 		</statBases>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Ambrosyx</texPath>
@@ -19,15 +18,10 @@
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<pathCost>14</pathCost>
+		<ingestible/>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
-			<cavePlant>true</cavePlant>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<interferesWithRoof>false</interferesWithRoof>
 			<growDays>6</growDays>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>5</wildClusterWeight>
 			<leaflessGraphicPath>BMT_Caverns/Things/Plant/Ambrosyx</leaflessGraphicPath>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Ambrosyx</immatureGraphicPath>
 			<harvestYield>4</harvestYield>
@@ -39,6 +33,11 @@
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<allowAutoCut>false</allowAutoCut>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<interferesWithRoof>false</interferesWithRoof>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
 		</plant>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
