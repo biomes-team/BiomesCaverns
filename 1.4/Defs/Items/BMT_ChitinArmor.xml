@@ -12,12 +12,13 @@
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.2</generateCommonality>
 		<costList>
+			<Steel>10</Steel>
 			<BMT_RoyalChitin>30</BMT_RoyalChitin>
 		</costList>
 		<stuffCategories>
-			<li>Leathery</li>
+			<li>BMT_ChitinStuff</li>
 		</stuffCategories>
-		<costStuffCount>140</costStuffCount>
+		<costStuffCount>120</costStuffCount>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
 			<WorkToMake>18000</WorkToMake>
@@ -88,7 +89,7 @@
 		</costList>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
-			<li>Leathery</li>
+			<li>BMT_ChitinStuff</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
