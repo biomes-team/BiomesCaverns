@@ -35,11 +35,6 @@
 			</li>
 		</tools>
 		<race>
-			<tradeTags>
-				<li>AnimalFarm</li>
-				<li>AnimalUncommon</li>
-				<li>AnimalInsect</li>
-			</tradeTags>
 			<herdAnimal>false</herdAnimal>
 			<body>BiomesCore_Slug</body>
 			<baseHungerRate>0.8</baseHungerRate>
@@ -77,6 +72,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+			<tradeTags>
+				<li>AnimalFarm</li>
+				<li>AnimalUncommon</li>
+				<li>AnimalInsect</li>
+			</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_GiantSlug</defName>

@@ -63,7 +63,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>1</ageInDays>
-				<evolveIntoPawnKindDef>BMT_CrystalbackBeetlePupa</evolveIntoPawnKindDef>
+				<evolveIntoPawnKindDef>BMT_CrystalBeetlePupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -88,16 +88,11 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalPet</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CrystalBeetleLarvae</defName>
 		<label>crystalback grub</label>
-		<race>BMT_BovineBeetleLarvae</race>
+		<race>BMT_CrystalBeetleLarvae</race>
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
@@ -139,7 +134,7 @@
 	</PawnKindDef>
 	<!-- Pupa -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_CrystalbackBeetlePupa</defName>
+		<defName>BMT_CrystalBeetlePupa</defName>
 		<label>crystalback pupa</label>
 		<description>The pupal form of the crystalback beetle. Its body has largely liquified as it metamorphoses within.</description>
 		<statBases>
@@ -187,7 +182,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>1</ageInDays>
-				<evolveIntoPawnKindDef>BMT_BovineBeetle</evolveIntoPawnKindDef>
+				<evolveIntoPawnKindDef>BMT_CrystalBeetle</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -201,11 +196,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalPet</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CrystalBeetlePupa</defName>
@@ -282,7 +272,6 @@
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<lifeExpectancy>16</lifeExpectancy>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
-			<packAnimal>true</packAnimal>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
@@ -318,11 +307,6 @@
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalPet</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CrystalBeetle</defName>
