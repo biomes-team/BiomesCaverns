@@ -373,7 +373,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
 				<hatcherPawn>BMT_AaroxisDendoriaLarvae</hatcherPawn>
 			</li>
 		</comps>

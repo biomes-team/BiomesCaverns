@@ -3,9 +3,9 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GlowSlug</defName>
 		<label>glowslug</label>
-		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that it has survived this long, let alone to the large size it is.</description>
+		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that its species has survived this long, let alone to the large size it is.</description>
 		<statBases>
-			<MoveSpeed>1.1</MoveSpeed>
+			<MoveSpeed>0.8</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MarketValue>240</MarketValue>
@@ -17,7 +17,7 @@
 				<eggFertilizedDef>BMT_EggGlowSlugFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>6</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1~1</eggCountRange>
+				<eggCountRange>1~2</eggCountRange>
 			</li>
 		</comps>
 		<tools>
@@ -134,7 +134,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
 				<hatcherPawn>BMT_GlowSlug</hatcherPawn>
 			</li>
 		</comps>

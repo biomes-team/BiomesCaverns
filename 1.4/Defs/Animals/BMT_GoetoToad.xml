@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Goeto</defName>
 		<label>goeto toad</label>
-		<description>The Goeto Toad is another attempt at creating a meat source for mining exportation centers and underground colonies. The project rapidly got out of hand and the specimens quickly adapted to the caves, becoming its new 'natural' habitat.</description>
+		<description>The Goeto Toad is another attempt at creating a meat and egg source for mining exportation centers and underground colonies. The project rapidly got out of hand and the specimens quickly adapted to the caves, becoming its new 'natural' habitat.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<SwimSpeed MayRequire="biomesteam.biomesislands">13.6</SwimSpeed>
@@ -56,9 +56,9 @@
 				<eggUnfertilizedDef>BMT_EggGoetoUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggGoetoFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>1</eggLayIntervalDays>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1~3</eggCountRange>
+				<eggCountRange>5~6</eggCountRange>
 			</li>
 		</comps>
 		<race>

@@ -44,7 +44,7 @@
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
-			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(1.0, 0)</li>

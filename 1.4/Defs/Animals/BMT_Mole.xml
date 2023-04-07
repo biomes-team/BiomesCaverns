@@ -82,7 +82,7 @@
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<roamMtbDays>2</roamMtbDays>
 			<lifeExpectancy>6</lifeExpectancy>
-			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<gestationPeriodDays>7</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

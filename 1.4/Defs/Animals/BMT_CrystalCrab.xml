@@ -4,7 +4,7 @@
   <ThingDef ParentName="BiomesCore_CrabThingBase" Name="BMT_CrystalCrab_Base" Abstract="True">
 	<!-- <defName>BMT_CrystalCrab</defName> -->
 	<label>crystal crab</label>
-	<description>A large and powerful crab species related to the rimcrab and the decorator crab. It has formed a kind of symbiosis with the cavern crystals, with them growing from the minerals on the crab's rocky shell. It is unknown as to why the crab hauls around such a heavy shell despite its own strong exoskeleton.</description>
+	<description>A large and powerful crab species related to the decorator crab. It has formed a kind of symbiosis with the cavern crystals, growing from the minerals on the crab's rocky shell. It is unknown as to why the crab hauls around such a heavy shell despite its own strong exoskeleton.</description>
 	<statBases>
 	  <MoveSpeed>3.5</MoveSpeed>
 	  <MarketValue>2300</MarketValue>
@@ -55,9 +55,21 @@
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		</li>
 	</tools>
+			<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggCrystalcrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>18</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<rateInTicks>400</rateInTicks>
+			</li>
+		</comps>
 	<butcherProducts>
 	  <!-- crystal resource -->
-	  <BMT_ResourceBlueCrystal>78</BMT_ResourceBlueCrystal>
+	  <BMT_ResourceBlueCrystal>75</BMT_ResourceBlueCrystal>
 	  <!-- <Sandstone>3</Sandstone> -->
 	</butcherProducts>
   </ThingDef>
@@ -832,5 +844,25 @@
 	  </li>
 	</lifeStages>
   </PawnKindDef>
+  <ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggCrystalcrabFertilizedFertilized</defName>
+		<label>crystal crab egg (fert.)</label>
+		<description>A fertilized crystal crab egg. If all goes well, it should hatch into a crystal crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.50</Mass>
+			<MarketValue>24.0</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_CrystalCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>

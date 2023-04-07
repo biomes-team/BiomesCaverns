@@ -303,7 +303,7 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggMossBeetleFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>4.5</eggLayIntervalDays>
+				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>

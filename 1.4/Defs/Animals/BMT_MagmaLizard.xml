@@ -57,7 +57,7 @@
 	  <li Class="CompProperties_EggLayer">
 		<eggFertilizedDef>BMT_MagmaLizardEggFertilized</eggFertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
-		<eggLayIntervalDays>5.661</eggLayIntervalDays>
+		<eggLayIntervalDays>5.5</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 		<eggCountRange>1~2</eggCountRange>
 	  </li>

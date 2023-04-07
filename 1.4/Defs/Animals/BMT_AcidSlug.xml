@@ -4,11 +4,11 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_AcidSlug</defName>
 	<label>acid slug</label>
-	<description>Originally designed for combat, the acid slug is one of the most dangerous predators in the earthen depths due to their highly acidic slime and flesh. The bodies of their prey are often found melted down to the bone within their bodies.</description>
+	<description>Originally designed for combat, the acid slug is one of the most dangerous predators in the earthen depths due to their highly acidic slime and flesh. The bodies of their prey are often found melted down to the bone within their gelatinous flesh.</description>
 	<statBases>
 	  <MoveSpeed>1.5</MoveSpeed>
 	  <LeatherAmount>16</LeatherAmount>
-	  <MarketValue>4000</MarketValue>
+	  <MarketValue>3500</MarketValue>
 	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
@@ -27,6 +27,11 @@
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>1~1</eggCountRange>
 		</li>
+		<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>30</minSafeTemperature>
+				<maxSafeTemperature>400</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
 	</comps>
 	<tools>
 		<li>

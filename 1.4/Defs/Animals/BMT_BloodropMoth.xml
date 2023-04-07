@@ -275,9 +275,9 @@
             <li Class="CompProperties_EggLayer">
                 <eggFertilizedDef>BMT_BloodropMoth</eggFertilizedDef>
                 <eggFertilizationCountMax>20</eggFertilizationCountMax>
-                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggLayIntervalDays>15</eggLayIntervalDays>
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-                <eggCountRange>5~20</eggCountRange>
+                <eggCountRange>5~10</eggCountRange>
             </li>
 			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			</li>

@@ -48,10 +48,10 @@
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggCaveCricketUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggCaveCricketFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>10</eggLayIntervalDays>
+				<eggFertilizationCountMax>6</eggFertilizationCountMax>
+				<eggLayIntervalDays>6</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1~6</eggCountRange>
+				<eggCountRange>4~6</eggCountRange>
 			</li>
 		</comps>
 		<race>
@@ -190,7 +190,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherDaystoHatch>7</hatcherDaystoHatch>
 				<hatcherPawn>BMT_CaveCricket</hatcherPawn>
 			</li>
 		</comps>

@@ -55,10 +55,9 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggFireSalamanderUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggFireSalamanderFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>8</eggLayIntervalDays>
+				<eggLayIntervalDays>6.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>

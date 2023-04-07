@@ -67,9 +67,6 @@
 		<tools>
 			<li>
 				<label>proboscis</label>
-				<capacities>
-					<li>BMT_BloodSuck</li>
-				</capacities>
 				<power>4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
@@ -225,7 +222,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMoth</defName>
 		<label>facet moth</label>
-		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty.</description>
+		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty. The females are capable of producing multiple batches of fertilized eggs from one mating period.</description>
 		<statBases>
 			<MoveSpeed>12</MoveSpeed>
 			<BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">12</BiomesCore_FlySpeed>
@@ -270,9 +267,9 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_FacetMoth</eggFertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
-				<eggLayIntervalDays>20</eggLayIntervalDays>
+				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>5~20</eggCountRange>
+				<eggCountRange>5~10</eggCountRange>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			</li>
