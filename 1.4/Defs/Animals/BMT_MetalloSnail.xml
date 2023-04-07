@@ -26,10 +26,11 @@
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>1~2</eggCountRange>
 		</li>
-		<li Class="CompProperties_Milkable">
-			<milkDef>Steel</milkDef>
-			<milkIntervalDays>1</milkIntervalDays>
-			<milkAmount>14</milkAmount>
+		<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
+			<harvestIntervalDays>2</harvestIntervalDays>
+			<baseResourceAmount>10</baseResourceAmount>
+			<thingDef>Steel</thingDef>
+			<resourceGrowthReportString>BMT_MetalloSnailShellGrowth</resourceGrowthReportString>
 		</li>
 	</comps>
 	<tools>

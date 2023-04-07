@@ -62,7 +62,7 @@
 				<thingDef>BMT_XyrionTail</thingDef>
 				<harvestIntervalDays>6</harvestIntervalDays>
 				<baseResourceAmount>40</baseResourceAmount>
-				<resourceGrowthReportString>BMT_XyrionTail</resourceGrowthReportString>
+				<resourceGrowthReportString>BMT_XyrionTailGrowth</resourceGrowthReportString>
 			</li>
 		</comps>
 		<race>
