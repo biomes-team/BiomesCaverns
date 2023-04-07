@@ -19,7 +19,7 @@
 		</allowedBiomes>
 	</IncidentDef>
 
-	<PlantSproutIncidentDef>
+	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
 		<defName>BMT_SkulltopSprout</defName>
 		<label>skulltop sprout</label>
 		<category>Misc</category>
@@ -30,14 +30,17 @@
 		<baseChance>0.5</baseChance>
 		<letterLabel>Skulltop sprout</letterLabel>
 		<letterText>A grove of the mysterious skulltop mushrooms has sprouted nearby! Fully grown, they can get dangerous.</letterText>
-		<letterDef>NagativEvent</letterDef>
+		<letterDef>NegativeEvent</letterDef>
 		<allowedBiomes>
+			<li>BMT_EarthenDepths</li>
 			<li>BMT_FungalForest</li>
+			<li>BMT_CrystalCaverns</li>
 		</allowedBiomes>
 		<plant>BMT_Skulltop</plant>
 		<amount>30~50</amount>
 		<ignoreSeason>true</ignoreSeason>
-	</PlantSproutIncidentDef>
+		<allowIndoors>true</allowIndoors>
+	</IncidentDef>
 
 	<IncidentDef>
 		<defName>CaveIn</defName>
