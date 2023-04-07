@@ -28,8 +28,8 @@
 		</li>
 		<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
 			<harvestIntervalDays>2</harvestIntervalDays>
-			<baseResourceAmount>10</baseResourceAmount>
-			<thingDef>Steel</thingDef>
+			<baseResourceAmount>1</baseResourceAmount>
+			<thingDef>ChunkSlagSteel</thingDef>
 			<resourceGrowthReportString>BMT_MetalloSnailShellGrowth</resourceGrowthReportString>
 		</li>
 	</comps>
