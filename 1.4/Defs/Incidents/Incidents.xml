@@ -1,13 +1,13 @@
 <Defs>
 
-	<IncidentDef>
+	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
 		<defName>BMT_AmbrosyxSprout</defName>
 		<label>ambrosyx sprout</label>
 		<category>Misc</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>BiomesCaverns.IncidentWorkers.AmbrosyxSprout</workerClass>
+		<workerClass>BiomesCore.IncidentWorker_PlantSprout</workerClass>
 		<baseChance>1.0</baseChance>
 		<letterLabel>Ambrosyx sprout</letterLabel>
 		<letterText>A grove of the mysterious fungi mushroom has sprouted nearby! If you wait for the fungi to grow, you'll be able to harvest the delicious, pleasurable, and slightly addictive mushroom.</letterText>
@@ -17,6 +17,10 @@
 			<li>BMT_FungalForest</li>
 			<li>BMT_CrystalCaverns</li>
 		</allowedBiomes>
+		<plant>BMT_AmbrosyxFungus</plant>
+		<amount>10~20</amount>
+		<ignoreSeason>true</ignoreSeason>
+		<allowIndoors>true</allowIndoors>
 	</IncidentDef>
 
 	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
