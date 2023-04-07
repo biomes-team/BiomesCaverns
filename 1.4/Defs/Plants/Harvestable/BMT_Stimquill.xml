@@ -14,6 +14,7 @@
 			<texPath>BMT_Caverns/Things/Plant/Stimquill</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
 			<growMinGlow>0</growMinGlow>

@@ -44,6 +44,15 @@
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 		</li>
 	</tools>
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>ChunkSlagSteel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>600~1200</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+		</comps>
 	<race>
 		<herdAnimal>false</herdAnimal>
 		<body>BiomesCore_Snail</body>
@@ -91,6 +100,7 @@
 		<Steel>16</Steel>
 	</butcherProducts>
   </ThingDef>
+  
   
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_MetalloSnail</defName>

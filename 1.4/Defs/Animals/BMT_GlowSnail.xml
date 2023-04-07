@@ -112,12 +112,12 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>1.9</drawSize>
 					<shaderType>TransparentPostLight</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>1.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

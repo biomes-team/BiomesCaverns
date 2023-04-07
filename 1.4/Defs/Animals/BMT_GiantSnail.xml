@@ -33,7 +33,7 @@
 			</li>
 		</tools>
 		<race>
-			<herdAnimal>false</herdAnimal>
+			<herdAnimal>true</herdAnimal>
 			<body>BiomesCore_Snail</body>
 			<baseHungerRate>0.605</baseHungerRate>
 			<baseBodySize>2.6</baseBodySize>
@@ -85,6 +85,7 @@
 		<label>giant snail</label>
 		<race>BMT_GiantSnail</race>
 		<combatPower>75</combatPower>
+		<wildGroupSize>3~4</wildGroupSize>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>

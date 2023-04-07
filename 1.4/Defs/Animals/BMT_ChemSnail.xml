@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_ChemSnail</defName>
 		<label>chem snail</label>
-		<description>An underground snail producing chemfuel and their eggs are also used as fuel.\n\nEngineered much like the Boomalope of the surface, this snail produces volatile chemicals within its shell. Even the strongest predators of the caverns have learned to avoid targeting it, as it produces an explosion upon death. Its slime can be carefully harvested for chemfuel.</description>
+		<description>Engineered much like the Boomalope of the surface, this snail produces volatile chemicals within its shell. Even the strongest predators of the caverns have learned to avoid targeting it, as it produces an explosion upon death. Its slime can be carefully harvested for chemfuel.</description>
 		<statBases>
 			<MoveSpeed>1.2</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -12,8 +12,10 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggChemSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggChemSnailFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>2</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~3</eggCountRange>
 			</li>
 			<li Class="CompProperties_Milkable">
@@ -111,21 +113,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>3.6</drawSize>
+					<drawSize>3.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>3.6</drawSize>
+					<drawSize>3.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
-					<drawSize>4.8</drawSize>
+					<drawSize>4.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
-					<drawSize>4.8</drawSize>
+					<drawSize>4.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -154,11 +156,29 @@
 			<preferability>DesperateOnly</preferability>
 		</ingestible>
 	</ThingDef>
+-	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggChemSnailUnfertilized</defName>
+		<label>chem snail egg (unfert.)</label>
+		<description>An unfertilized chem snail egg. It can be eaten raw, but it's much, much better cooked. It can be used as fuel.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(149,92,90)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+	</ThingDef>
 	<!--filth / trail -->
 	<ThingDef ParentName="BaseFilth">
 		<defName>Filth_FuelTrail</defName>
 		<label>chemfuel trail</label>
-		<description>A trail of hardend flammable chemslime left from a chem snail.</description>
+		<description>A trail of hardened flammable chemslime left from a chem snail.</description>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<Beauty>-3</Beauty>
