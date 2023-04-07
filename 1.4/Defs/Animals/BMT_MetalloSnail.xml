@@ -44,15 +44,6 @@
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 		</li>
 	</tools>
-		<comps>
-			<li Class="CompProperties_Spawner">
-				<thingToSpawn>ChunkSlagSteel</thingToSpawn>
-				<spawnCount>1</spawnCount>
-				<spawnIntervalRange>600~1200</spawnIntervalRange>
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
-				<saveKeysPrefix>jelly</saveKeysPrefix>
-			</li>
-		</comps>
 	<race>
 		<herdAnimal>false</herdAnimal>
 		<body>BiomesCore_Snail</body>
@@ -166,6 +157,13 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>8</hatcherDaystoHatch>
 				<hatcherPawn>BMT_GiantSnail</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>ChunkSlagSteel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>6~12</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<saveKeysPrefix>slag</saveKeysPrefix>
 			</li>
 		</comps>
 	</ThingDef>

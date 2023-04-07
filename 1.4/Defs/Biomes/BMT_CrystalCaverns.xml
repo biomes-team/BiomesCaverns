@@ -201,7 +201,6 @@
 		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.06</BMT_CrystalCrab_Coral>
 	
 		<!-- predators -->
-	    <BMT_BrownBat>0.9<BMT_BrownBat>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
