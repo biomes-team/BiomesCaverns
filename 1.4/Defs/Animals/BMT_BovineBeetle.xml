@@ -12,7 +12,6 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
-			<CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -240,6 +239,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<FilthRate>4</FilthRate>
+			<CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
 		</statBases>
 		<tools>
 			<li>

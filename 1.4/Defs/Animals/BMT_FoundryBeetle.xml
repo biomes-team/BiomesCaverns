@@ -25,7 +25,6 @@
 	  </li>
 	</comps>
 	<race>
-	  <packAnimal>false</packAnimal>
 	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <bloodDef>Filth_BloodInsect</bloodDef>
 	  <body>BeetleLikeWithClaw</body>

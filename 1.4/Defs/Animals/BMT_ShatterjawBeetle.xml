@@ -68,7 +68,7 @@
 		  <minAge>0.03</minAge>
 		</li>
 		<li>
-		  <def>EusocialInsectAdult</def>
+		  <def>BMT_RideableEusocialInsectAdult</def>
 		  <minAge>0.2</minAge>
 		  <soundWounded>Pawn_BigInsect_Pain</soundWounded>
 		  <soundDeath>Pawn_BigInsect_Death</soundDeath>
