@@ -62,7 +62,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_MossBeetlePupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -182,7 +182,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>20</ageInDays>
 				<evolveIntoPawnKindDef>BMT_MossBeetle</evolveIntoPawnKindDef>
 			</li>
 		</comps>

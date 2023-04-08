@@ -65,7 +65,7 @@
 				<woolAmount>30</woolAmount>
 			</li>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>20</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_AaroxisDendoriaPupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -185,7 +185,7 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>12</ageInDays>
+				<ageInDays>20</ageInDays>
 				<evolveIntoPawnKindDef>BMT_AaroxisDendoria</evolveIntoPawnKindDef>
 			</li>
 		</comps>
