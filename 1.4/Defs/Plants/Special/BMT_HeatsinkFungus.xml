@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_HeatsinkFungus</defName>
 		<label>heatsink fungus</label>
 		<description>Using a complex mix of chemical reactions, this fungus draws in heat to help fuel its growth. Deep-dwelling troglodytes use its heat-drawing ability to cool off their homes.</description>
@@ -34,7 +34,13 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<interferesWithRoof>false</interferesWithRoof>
+			<harvestTag Inherit="False"/>
+			<harvestedThingDef Inherit="False"/>
+			<harvestYield Inherit="False"/>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 		<comps>
 			<li Class="CompProperties_HeatPusher">

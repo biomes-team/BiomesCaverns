@@ -156,6 +156,7 @@
 
 		<!-- special -->
 		<BMT_HeatsinkFungus>0.05</BMT_HeatsinkFungus>
+    <BMT_StinkLattice>0.05</BMT_StinkLattice>
 
     </wildPlants>
 

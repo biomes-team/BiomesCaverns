@@ -30,11 +30,14 @@
 			<neverBlightable>true</neverBlightable>
 			<dieIfNoSunlight>false</dieIfNoSunlight>
 			<growMinGlow>0</growMinGlow>
+			<neverBlightable>true</neverBlightable>
 			<harvestTag Inherit="False"/>
 			<harvestedThingDef Inherit="False"/>
 			<harvestYield Inherit="False"/>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-			<interferesWithRoof>false</interferesWithRoof>
 			<dieFromToxicFallout>False</dieFromToxicFallout>
 		</plant>
 		<selectable>true</selectable>

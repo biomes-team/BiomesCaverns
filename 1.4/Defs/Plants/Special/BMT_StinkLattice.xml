@@ -17,12 +17,12 @@
 		<plant>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeImmature</immatureGraphicPath>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>1</growDays>
+			<growDays>4</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>500</wildClusterWeight>
@@ -32,8 +32,10 @@
 			<harvestTag Inherit="False"/>
 			<harvestedThingDef Inherit="False"/>
 			<harvestYield Inherit="False"/>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
@@ -42,9 +44,9 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
 				<gasType>RotStink</gasType>
-				<cellsToFill>4</cellsToFill>
+				<cellsToFill>3</cellsToFill>
 				<effecterReleasing>GasReleasing</effecterReleasing>
-				<growthProgress>1</growthProgress>
+				<growthProgress>0.6</growthProgress>
 			</li>
 		</comps>
 		<modExtensions>
