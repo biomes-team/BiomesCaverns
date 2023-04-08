@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Maxolotl</defName>
@@ -144,7 +145,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Maxolotl/Maxolotl</texPath>
-					<drawSize>2.7</drawSize>
+					<drawSize>3.2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,0)</offset>
@@ -152,7 +153,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Maxolotl/Dessicated_Salamander</texPath>
-					<drawSize>2.7</drawSize>
+					<drawSize>3.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
