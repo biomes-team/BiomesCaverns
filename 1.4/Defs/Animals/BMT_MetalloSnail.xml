@@ -32,6 +32,10 @@
 			<thingDef>ChunkSlagSteel</thingDef>
 			<resourceGrowthReportString>BMT_MetalloSnailShellGrowth</resourceGrowthReportString>
 		</li>
+		<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+			<filthDef>Filth_FireFoam</filthDef>
+			<cooldown>60000</cooldown>
+		</li>
 	</comps>
 	<tools>
 		<li>

@@ -21,6 +21,10 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~3</eggCountRange>
 			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>Filth_Slime</filthDef>
+				<cooldown>8</cooldown>
+			</li>
 		</comps>
 		<tools>
 			<li>

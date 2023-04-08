@@ -24,10 +24,10 @@
 				<milkAmount>4</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
-            <li Class="BiomesCore.CompProperties_MakeFilthTrail">
-                <filthDef>Filth_FuelTrail</filthDef>
-                <cooldown>2</cooldown>
-            </li>
+				<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+					<filthDef>Filth_FuelTrail</filthDef>
+					<cooldown>4</cooldown>
+				</li>
 		</comps>
 		<tools>
 			<li>
@@ -179,6 +179,7 @@
 		<defName>Filth_FuelTrail</defName>
 		<label>chemfuel trail</label>
 		<description>A trail of hardened flammable chemslime left from a chem snail.</description>
+		<thingClass>LiquidFuel</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<Beauty>-3</Beauty>
