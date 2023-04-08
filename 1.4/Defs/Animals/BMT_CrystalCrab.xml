@@ -11,6 +11,7 @@
 	  <ComfyTemperatureMin>-55</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <FilthRate>16</FilthRate>
+	  <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 	  <SwimSpeed MayRequire="biomesteam.biomesislands">4</SwimSpeed>
 	</statBases>
 	<uiIconScale>1.35</uiIconScale>

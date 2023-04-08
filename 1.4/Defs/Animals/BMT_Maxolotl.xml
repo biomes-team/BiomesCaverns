@@ -11,6 +11,7 @@
 			<MarketValue>900</MarketValue>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		</statBases>
 		<tools>
 			<li>
@@ -78,6 +79,7 @@
 			<nuzzleMtbHours>48</nuzzleMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<packAnimal>true</packAnimal>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

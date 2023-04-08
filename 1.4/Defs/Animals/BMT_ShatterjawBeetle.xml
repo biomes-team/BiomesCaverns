@@ -12,6 +12,7 @@
 	  <FilthRate>2</FilthRate>
 	  <MarketValue>550</MarketValue>
 	  <CarryingCapacity>125</CarryingCapacity>
+	  <CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
 	</statBases>
 	<uiIconScale>1.15</uiIconScale>
 	<tools>
