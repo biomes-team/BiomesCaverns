@@ -71,7 +71,7 @@
         </comps>
         <tools>
             <li>
-                <label>proboscis</label>
+                <label>mandibles</label>
                 <capacities>
                     <li>BMT_BloodSuck</li>
                 </capacities>
@@ -195,7 +195,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>0</power>
+                <power>1</power>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
             </li>
@@ -288,7 +288,7 @@
                 <capacities>
                     <li>BMT_BloodSuck</li>
                 </capacities>
-                <power>6</power>
+                <power>14</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
             </li>
@@ -297,8 +297,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>5</power>
-                <cooldownTime>2</cooldownTime>
+                <power>8</power>
+                <cooldownTime>4</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.85</chanceFactor>

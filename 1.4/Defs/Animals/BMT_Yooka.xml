@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Yooka</defName>
 		<label>yooka</label>
-		<description>A towering hunchbacked mammal, closely related to camels and llamas.\n\nWith little to no natural predators, it grazes among the taller fungi with an unconcerned grace.</description>
+		<description>A towering hunchbacked mammal, closely related to camels and llamas. With little to no natural predators, it grazes among the taller fungi with an unconcerned grace.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<MarketValue>350</MarketValue>
@@ -25,7 +25,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>12</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
@@ -35,7 +35,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>12</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
@@ -44,7 +44,7 @@
 					<li>Bite</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>5</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
 			</li>
@@ -54,7 +54,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>14</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>

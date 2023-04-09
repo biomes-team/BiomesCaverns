@@ -31,7 +31,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>13</power>
+				<power>14</power>
 				<cooldownTime>2.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

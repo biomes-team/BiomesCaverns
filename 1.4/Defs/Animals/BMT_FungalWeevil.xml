@@ -36,7 +36,7 @@
 		<capacities>
 		  <li>Bite</li>
 		</capacities>
-		<power>5</power>
+		<power>7</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 	  </li>
@@ -45,7 +45,7 @@
 		<capacities>
 		  <li>Blunt</li>
 		</capacities>
-		<power>4</power>
+		<power>6</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

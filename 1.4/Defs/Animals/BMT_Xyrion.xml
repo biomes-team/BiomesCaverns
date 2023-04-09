@@ -16,7 +16,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>3</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
 			</li>
@@ -25,7 +25,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>3</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
 			</li>
@@ -33,7 +33,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>12</power>
+				<power>6</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -43,7 +43,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>6</power>
+				<power>4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

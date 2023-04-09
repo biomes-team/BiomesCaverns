@@ -196,7 +196,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>0</power>
+				<power>1</power>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -247,8 +247,8 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>6</power>
-				<cooldownTime>2</cooldownTime>
+				<power>13</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -256,7 +256,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>5.2</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

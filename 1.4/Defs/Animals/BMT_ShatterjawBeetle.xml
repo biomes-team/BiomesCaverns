@@ -17,12 +17,12 @@
 	<uiIconScale>1.15</uiIconScale>
 	<tools>
 	  <li>
-		<label>head claw</label>
+		<label>mandibles</label>
 		<capacities>
 		  <li>Cut</li>
 		</capacities>
 		<power>22</power>
-		<cooldownTime>2.6</cooldownTime>
+		<cooldownTime>2.25</cooldownTime>
 		<armorPenetration>0.9</armorPenetration>
 		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 	  </li>
@@ -32,7 +32,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>12</power>
-		<cooldownTime>2</cooldownTime>
+		<cooldownTime>5</cooldownTime>
 		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 		<chanceFactor>0.2</chanceFactor>

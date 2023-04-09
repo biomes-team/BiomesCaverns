@@ -74,15 +74,15 @@
 					<li>Bite</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>5</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>head</label>
+				<label>horn</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>4</power>
+				<power>25</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

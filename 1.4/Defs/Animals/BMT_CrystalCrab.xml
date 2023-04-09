@@ -42,8 +42,8 @@
 			<capacities>
 				<li>Cut</li>
 			</capacities>
-			<power>29</power>
-			<cooldownTime>2.2</cooldownTime>
+			<power>30</power>
+			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 		</li>
 		<li>
@@ -51,8 +51,8 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>24</power>
-			<cooldownTime>1.65</cooldownTime>
+			<power>25</power>
+			<cooldownTime>4</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		</li>
 	</tools>

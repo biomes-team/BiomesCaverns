@@ -68,11 +68,11 @@
 	</tradeTags>
 	<tools>
 	  <li>
-		<label>head claw</label>
+		<label>mandibles</label>
 		<capacities>
 		  <li>Cut</li>
 		</capacities>
-		<power>22</power>
+		<power>14</power>
 		<cooldownTime>2.6</cooldownTime>
 		<armorPenetration>0.9</armorPenetration>
 		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
