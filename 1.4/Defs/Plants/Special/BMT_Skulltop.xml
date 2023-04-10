@@ -16,6 +16,7 @@
 		<blockWind>false</blockWind>
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>1</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
 			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
@@ -30,7 +31,6 @@
 			<neverBlightable>true</neverBlightable>
 			<dieIfNoSunlight>false</dieIfNoSunlight>
 			<growMinGlow>0</growMinGlow>
-			<neverBlightable>true</neverBlightable>
 			<harvestTag Inherit="False"/>
 			<harvestedThingDef Inherit="False"/>
 			<harvestYield Inherit="False"/>
@@ -39,18 +39,23 @@
 			<choppedThingDef Inherit="False"/>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<pollution>Any</pollution>
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<minifiedDef>MinifiedTree</minifiedDef>
 		<rotatable>false</rotatable>
 		<comps>
-			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="BiomesCore.CompProperties_PlantPolluteOverTime">
+				<cellsToPollutePerDay>6</cellsToPollutePerDay>
+				<growthProgress>1</growthProgress>
+			</li>
+			<!--li Class="BiomesCore.CompProperties_PlantGasOnDestroy">
 				<gasType>ToxGas</gasType>
 				<cellsToFill>1</cellsToFill>
 				<effecterReleasing>GasReleasing</effecterReleasing>
-				<growthProgress>1</growthProgress>
-			</li>
+				<growthProgress>0.4</growthProgress>
+			</li-->
 		</comps>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
