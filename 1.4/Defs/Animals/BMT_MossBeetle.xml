@@ -95,7 +95,7 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MossBeetleLarvae</defName>
-		<label>moss beetle</label>
+		<label>moss larva</label>
 		<race>BMT_MossBeetleLarvae</race>
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>

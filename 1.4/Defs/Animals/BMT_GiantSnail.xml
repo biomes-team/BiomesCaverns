@@ -16,9 +16,10 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGiantSnailFertilized</eggFertilizedDef>
-				<eggLayIntervalDays>10</eggLayIntervalDays>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
 			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
 				<filthDef>Filth_Slime</filthDef>
@@ -38,6 +39,8 @@
 			</li>
 		</tools>
 		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
 			<herdAnimal>true</herdAnimal>
 			<body>BiomesCore_Snail</body>
 			<baseHungerRate>0.605</baseHungerRate>

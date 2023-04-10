@@ -14,9 +14,10 @@
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggChemSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggChemSnailFertilized</eggFertilizedDef>
-				<eggLayIntervalDays>7</eggLayIntervalDays>
+				<eggLayIntervalDays>14</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~3</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Chemfuel</milkDef>
@@ -42,6 +43,8 @@
 			</li>
 		</tools>
 		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
 			<herdAnimal>false</herdAnimal>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<canBePredatorPrey>false</canBePredatorPrey>

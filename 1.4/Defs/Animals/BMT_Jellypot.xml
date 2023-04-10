@@ -37,12 +37,11 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_Spawner">
+			<li Class="BiomesCore.ThingComponents.CompProperties_AnimalThingSpawner">
 				<thingToSpawn>InsectJelly</thingToSpawn>
 				<spawnCount>6</spawnCount>
 				<spawnIntervalRange>60000~120000</spawnIntervalRange>
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
-				<saveKeysPrefix>jelly</saveKeysPrefix>
+				<saveKeysPrefix>JellySpawn</saveKeysPrefix>
 			</li>
 		</comps>
 		<race>
