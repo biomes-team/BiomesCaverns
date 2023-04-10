@@ -22,7 +22,7 @@
 	<comps>
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggAcidSlugFertilized</eggFertilizedDef>
-			<eggLayIntervalDays>18</eggLayIntervalDays>
+			<eggLayIntervalDays>36</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>1~1</eggCountRange>
 			<eggLayFemaleOnly>false</eggLayFemaleOnly>
