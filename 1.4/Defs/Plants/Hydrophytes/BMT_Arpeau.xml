@@ -75,5 +75,11 @@
 			<visualSizeRange>1.5~2.5</visualSizeRange>
 			<topWindExposure>0.25</topWindExposure>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

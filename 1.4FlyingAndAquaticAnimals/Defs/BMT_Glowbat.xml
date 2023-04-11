@@ -108,7 +108,7 @@
       <baseBodySize>0.25</baseBodySize>
       <baseHealthScale>0.35</baseHealthScale>
       <baseHungerRate>0.125</baseHungerRate>
-      <foodType>VegetableOrFruit</foodType>
+      <foodType>VegetableOrFruit, VegetarianRoughAnimal</foodType>
 	  <leatherDef>Leather_Light</leatherDef>
       <wildness>0.95</wildness>
       <trainability>Advanced</trainability>

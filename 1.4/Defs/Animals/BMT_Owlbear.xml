@@ -87,6 +87,15 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+		<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>BMT_OwlbearEggFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>10</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	</comps>
     </ThingDef>
 
     <PawnKindDef ParentName="BearBase">
@@ -144,5 +153,22 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-    
+    	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_OwlbearEggFertilized</defName>
+		<label>owlbear egg (fert.)</label>
+		<description>A fertilized owlbear egg. If all goes well, it should hatch into a baby owlbear. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(255,246,232)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Owlbear</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

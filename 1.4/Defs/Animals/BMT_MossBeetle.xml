@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MossBeetleLarvae</defName>
 		<label>moss grub</label>
-		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
+		<description>A large beetle, commonly found in dark, damp places. It feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
@@ -294,19 +294,20 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggMossBeetleFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>

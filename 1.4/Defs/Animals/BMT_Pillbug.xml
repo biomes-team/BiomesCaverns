@@ -87,11 +87,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-        <modExtensions>
-            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
-                <isCustomThingEater>true</isCustomThingEater>
-            </li>
-        </modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggPillbugFertilized</eggFertilizedDef>
@@ -103,6 +98,11 @@
 				<filthNutrition>0.3</filthNutrition>
 			</li>
 		</comps>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+                <isCustomThingEater>true</isCustomThingEater>
+            </li>
+        </modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
