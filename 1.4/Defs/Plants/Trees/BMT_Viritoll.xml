@@ -19,6 +19,7 @@
     <plant>
         <wildClusterRadius>3</wildClusterRadius>
         <wildClusterWeight>1000</wildClusterWeight>
+        <pollution>Any</pollution>
         <growDays>7</growDays>
         <dieIfLeafless>false</dieIfLeafless>
         <harvestWork>500</harvestWork>

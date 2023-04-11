@@ -20,6 +20,7 @@
 			<growDays>4</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
+			<pollution>Any</pollution>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
 			<visualSizeRange>0.5~1.2</visualSizeRange>

@@ -26,6 +26,7 @@
 		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<pollution>Any</pollution>
 			<growDays>3</growDays>
 			<harvestWork>80</harvestWork>
 			<maxMeshCount>4</maxMeshCount>
