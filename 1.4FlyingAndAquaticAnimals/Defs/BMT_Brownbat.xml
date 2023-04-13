@@ -12,13 +12,6 @@
     </statFactors>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-        <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
-          <drawSize>0.8</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
@@ -44,14 +37,6 @@
     </statFactors>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-        <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
-          <drawSize>1.0</drawSize>
-		  <shaderType>TransparentPostLight</shaderType>
-        </bodyGraphicData>
-      </li>
-      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
@@ -71,13 +56,6 @@
     <shearable>true</shearable>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-        <pawnSpeedStat>BiomesCore_SleepSpeed</pawnSpeedStat>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
-          <drawSize>1.2</drawSize>
-        </bodyGraphicData>
-      </li>
-      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
@@ -91,7 +69,6 @@
     <label>brown bat</label>
     <description>It's a flappy herbivorous mammal. These bats flit around within the dark, using their sense of echolocation to locate prey, often small insects or mammals.</description>
     <statBases>
-      <BiomesCore_SleepSpeed>99</BiomesCore_SleepSpeed>
       <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
       <SwimSpeed>0.5</SwimSpeed>
 	    <MoveSpeed>0.8</MoveSpeed>
@@ -208,6 +185,28 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+    <comps>
+      <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+        <roofedOnly>true</roofedOnly>
+        <sleepGraphicData>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+            <drawSize>0.8</drawSize>
+          </li>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+            <drawSize>1.0</drawSize>
+          </li>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+            <drawSize>1.2</drawSize>
+          </li>
+        </sleepGraphicData>
+      </li>
+    </comps>
     <tradeTags>
       <li>AnimalUncommon</li>
       <li>AnimalPet</li>
