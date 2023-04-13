@@ -152,7 +152,7 @@
 		  <drawSize>1.1</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/DarkAxolotl</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/Dessicated_Salamander</texPath>
 		  <drawSize>1.1</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -166,7 +166,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/DarkAxolotl</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/Dessicated_Salamander</texPath>
 		  <drawSize>1.4</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -180,7 +180,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/DarkAxolotl</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/Dessicated_Salamander</texPath>
 		  <drawSize>2.18</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>

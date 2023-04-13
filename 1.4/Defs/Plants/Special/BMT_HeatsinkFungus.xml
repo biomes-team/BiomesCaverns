@@ -10,7 +10,7 @@
 		</graphicData>
 		<statBases>
 			<Nutrition>1</Nutrition>
-			<Flammability>0.1</Flammability>
+			<Flammability>0.0</Flammability>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">

@@ -141,11 +141,12 @@
     </baseWeatherCommonalities>
     <wildPlants>
 		<!-- ground cover -->
+	<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
     <BMT_FireLavender>1</BMT_FireLavender>
 			
 		<!-- mid sized -->
     <BMT_ExplodingAngel>0.5</BMT_ExplodingAngel>
-    <BMT_Boomshroom>0.4</BMT_Boomshroom>
+    <BMT_Boomshroom>0.2</BMT_Boomshroom>
 
 		<!-- trees -->
 		<BMT_Candlesnuff>0.5</BMT_Candlesnuff>

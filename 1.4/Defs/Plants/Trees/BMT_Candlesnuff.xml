@@ -10,7 +10,7 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Flammability>0.1</Flammability>
+			<Flammability>0.0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
 		<plant>

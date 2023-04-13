@@ -10,7 +10,7 @@
 		</graphicData>
 		<statBases>
 			<Nutrition>0.1</Nutrition>
-			<Flammability>0.35</Flammability>
+			<Flammability>0.0</Flammability>
 		</statBases>
 		<pathCost>60</pathCost>
 		<blockWind>false</blockWind>
