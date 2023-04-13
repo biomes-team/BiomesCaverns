@@ -25,6 +25,25 @@
 				<filthDef>Filth_Slime</filthDef>
 				<cooldown>8</cooldown>
 			</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GiantSnail/SnailSleeping</texPath>
+        <drawSize>1.45</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GiantSnail/SnailSleeping</texPath>
+        <drawSize>2.1</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GiantSnail/SnailSleeping</texPath>
+        <drawSize>2.85</drawSize>
+      </li>
+    </sleepGraphicData>
+  </li>
 		</comps>
 		<tools>
 			<li>

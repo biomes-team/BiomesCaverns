@@ -37,6 +37,23 @@
 			<filthDef>Filth_FireFoam</filthDef>
 			<cooldown>60000</cooldown>
 		</li>
+	<sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
+        <drawSize>0.4</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
+        <drawSize>1.0</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
+        <drawSize>1.4</drawSize>
+      </li>
+    </sleepGraphicData>
 	</comps>
 	<tools>
 		<li>

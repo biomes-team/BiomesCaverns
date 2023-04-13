@@ -29,6 +29,25 @@
 					<filthDef>Filth_FuelTrail</filthDef>
 					<cooldown>4</cooldown>
 				</li>
+			  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell</texPath>
+        <drawSize>2.2</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell</texPath>
+        <drawSize>3.2</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell</texPath>
+        <drawSize>4.0</drawSize>
+      </li>
+    </sleepGraphicData>
+  </li>
 		</comps>
 		<tools>
 			<li>
