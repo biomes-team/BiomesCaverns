@@ -67,7 +67,7 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggCaveSpiderFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
-				<eggLayIntervalDays>1</eggLayIntervalDays>
+				<eggLayIntervalDays>18</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
