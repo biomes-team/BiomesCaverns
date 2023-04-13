@@ -37,7 +37,8 @@
 			<filthDef>Filth_FireFoam</filthDef>
 			<cooldown>60000</cooldown>
 		</li>
-	<sleepGraphicData>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
         <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
@@ -54,6 +55,7 @@
         <drawSize>1.4</drawSize>
       </li>
     </sleepGraphicData>
+  </li>
 	</comps>
 	<tools>
 		<li>
