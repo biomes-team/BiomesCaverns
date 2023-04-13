@@ -146,7 +146,7 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -244,7 +244,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>500</MarketValue>
 			<FilthRate>4</FilthRate>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>5</LeatherAmount>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>

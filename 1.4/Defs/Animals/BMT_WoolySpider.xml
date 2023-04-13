@@ -10,7 +10,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_WoolySpider</defName>
 	<label>wooly spider</label>
-	<description>Small and fluffy, these spiders have become a popular pet amongst the cavern dwelling populace. It can be easily fed from meaty table scraps.</description>
+	<description>Small and fluffy, these spiders have become a popular pet amongst the cavern dwelling populace. It can be easily fed from whatever food falls onto the ground.</description>
 	<statBases>
 	  <MoveSpeed>4.4</MoveSpeed>
 	  <MarketValue>100</MarketValue>
@@ -30,17 +30,7 @@
 	  <petness>0.8</petness>
 	  <trainability>None</trainability>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>
-	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <nameOnTameChance>1</nameOnTameChance>
-	  <litterSizeCurve>
-		<points>
-		  <li>(0.5, 0)</li>
-		  <li>(1, 1)</li>
-		  <li>(2, 1.7)</li>
-		  <li>(3, 0.7)</li>
-		  <li>(3.5, 0)</li>
-		</points>
-	  </litterSizeCurve>
 	  <lifeExpectancy>10</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
