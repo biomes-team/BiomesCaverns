@@ -5,7 +5,7 @@
   <ThingDef ParentName="ResourceVerbBase"> <!--RoughPlantBase-->
     <defName>BMT_MushroomLog</defName>
     <label>mushroom log</label>
-    <description>Material from large mushrooms or other fibrous fungi. Useful for building structures and weapons. Good animal feed, but inedible for humans.</description>
+    <description>Material from large fibrous fungi. Useful for building structures and weapons. Good animal feed, but inedible for humans. /n/nDoes not burn easily and can not be used as fuel.</description>
     <graphicData>
       <texPath>BMT_Caverns/Things/Item/MushroomLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
