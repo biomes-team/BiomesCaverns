@@ -25,7 +25,7 @@
 			<fertilityMin>0.05</fertilityMin>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
@@ -45,15 +45,16 @@
 		<rotatable>false</rotatable>
 		<comps>			
 			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
-				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Extinguish</explosiveDamageType>
 				<postExplosionSpawnThingDef>Filth_Water</postExplosionSpawnThingDef>
 				<postExplosionSpawnChance>1</postExplosionSpawnChance>
 				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 				<explosionEffect>ExtinguisherExplosion</explosionEffect>
+				<explosionSound>BMT_WaterSplash</explosionSound>
 				<Proxitarget>Fire</Proxitarget>
-				<Proxiradius>3.9</Proxiradius>
+				<Proxiradius>4.9</Proxiradius>
 				<growthProgress>0.6</growthProgress>
 				<growthAfterExplosion>0.4</growthAfterExplosion>
 			</li>
