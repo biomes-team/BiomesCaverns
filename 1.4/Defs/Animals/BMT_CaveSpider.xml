@@ -137,7 +137,7 @@
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/CaveSpider/CaveSpider</texPath>
 		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>1.75</drawSize>
+		  <drawSize>1.5</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		  <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -146,14 +146,14 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/CaveSpider/Dessicated_CaveSpider</texPath>
-          <drawSize>1.75</drawSize>
+          <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/CaveSpider/CaveSpider</texPath>
 		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>2.5</drawSize>
+		  <drawSize>2.25</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		  <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -162,14 +162,14 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/CaveSpider/Dessicated_CaveSpider</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>2.25</drawSize>
         </dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/CaveSpider/CaveSpider</texPath>
 		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>3.5</drawSize>
+		  <drawSize>3.25</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		  <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -178,7 +178,7 @@
 		</bodyGraphicData>
 		 <dessicatedBodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/CaveSpider/Dessicated_CaveSpider</texPath>
-          <drawSize>3.5</drawSize>
+          <drawSize>3.25</drawSize>
         </dessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>

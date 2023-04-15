@@ -103,6 +103,7 @@
 
           <!-- predators -->
           <BMT_Owlbear>0.15</BMT_Owlbear>
+		  <BMT_Megabat>0.1</BMT_Megabat>
 
           <!-- omnivore -->
           <BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>

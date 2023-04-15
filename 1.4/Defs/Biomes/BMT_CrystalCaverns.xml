@@ -114,11 +114,6 @@
       <li>
         <terrain>Gravel</terrain>
         <min>-999</min>
-        <max>0.5</max>
-      </li>
-      <li>
-        <terrain>Sand</terrain>
-        <min>0.5</min>
         <max>999</max>
       </li>
     </terrainsByFertility>
@@ -162,11 +157,18 @@
     <BMT_YumBulbs>0.3</BMT_YumBulbs>
 
 		<!-- trees -->
+
     <BMT_Crystalcap>0.5</BMT_Crystalcap>
 			
 		<!-- other harvestable -->
 		
 		<!-- hydrophytes -->
+	<BMT_Arpeau>0.05</BMT_Arpeau>
+	<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
+	<BMT_Nuitae>0.4</BMT_Nuitae>
+	<BMT_Wrinklecap>0.4</BMT_Wrinklecap>
+
+	<BMT_Nogtyl>0.1</BMT_Nogtyl>
 
 		<!-- special -->
 		<BMT_Crystal_BlueSowable>0.1</BMT_Crystal_BlueSowable>
@@ -182,14 +184,19 @@
 
     <wildAnimals>
 		<!-- herbivores -->
-		<BMT_Jewelbug>0.2</BMT_Jewelbug>
-		<BMT_Megapleura>0.2</BMT_Megapleura>
+		<BMT_CrystalBeetleLarvae>0.5</BMT_CrystalBeetleLarvae>
+		<BMT_CrystalBeetle>0.4</BMT_CrystalBeetle>
+		<BMT_Jewelbug>0.3</BMT_Jewelbug>
+		<BMT_Megapleura>0.4</BMT_Megapleura>
 		<!-- <Rat>1.3</Rat> -->
-		<BMT_Crystalope>0.8</BMT_Crystalope>
-		<BMT_ShatterjawBeetle>0.7</BMT_ShatterjawBeetle>
+		<BMT_Crystalope>0.52</BMT_Crystalope>
+		<BMT_ShatterjawBeetle>0.35</BMT_ShatterjawBeetle>
 		<BMT_FacetMothLarvae>0.2</BMT_FacetMothLarvae>
-		<BMT_FacetMoth>0.9</BMT_FacetMoth>
-		<BMT_CrystalFairyMole>0.9</BMT_CrystalFairyMole>
+		<BMT_FacetMoth>0.4</BMT_FacetMoth>
+		<BMT_CrystalFairyMole>0.3</BMT_CrystalFairyMole>
+		<BMT_MossBeetle>0.075</BMT_MossBeetle>
+		<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+		<BMT_GlowBat MayRequire="biomesteam.biomesislands">1</BMT_GlowBat>
 		
 		<!-- onmnivore -->
 		<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>
@@ -198,16 +205,29 @@
 		<BMT_CrystalCrab_Slate>0.008</BMT_CrystalCrab_Slate>
 		<BMT_CrystalCrab_Marble>0.008</BMT_CrystalCrab_Marble>
 		<BMT_CrystalCrab_Jade>0.001</BMT_CrystalCrab_Jade>
-		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.06</BMT_CrystalCrab_Coral>
+		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
 	
 		<!-- predators -->
-		<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
+		<BMT_CrystalMantis>0.4</BMT_CrystalMantis>
     </wildAnimals>
-    <allowedPackAnimals>
-      <li>Muffalo</li>
-      <li>Alpaca</li>
-	  <li>BMT_GiantSnail</li>
-    </allowedPackAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Alpaca</li>
+			<li>BMT_GiantSnail</li>
+			<li>BMT_RoyalRhino</li>
+			<li>BMT_Maxolotl</li>
+			<li>BMT_BovineBeetle</li>
+			<li>BMT_FoundryBeetle</li>
+			<li>BMT_CaveSpider</li>
+			<li>BMT_ShatterjawBeetle</li>
+			<li>BMT_CrystalCrab_Sandstone</li>
+			<li>BMT_CrystalCrab_Granite</li>
+			<li>BMT_CrystalCrab_Granite</li>
+			<li>BMT_CrystalCrab_Slate</li>
+			<li>BMT_CrystalCrab_Marble</li>
+			<li>BMT_CrystalCrab_Jade</li>
+			<li>BMT_CrystalCrab_Coral</li>
+		</allowedPackAnimals>
   </BiomeDef>
 
 </Defs>

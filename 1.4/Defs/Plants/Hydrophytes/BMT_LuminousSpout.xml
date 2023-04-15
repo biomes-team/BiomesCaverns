@@ -39,6 +39,8 @@
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
 				</terrainTags>
 				<growingHours>0.75~0.25</growingHours>
 			</li>

@@ -186,7 +186,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>22</ageInDays>
+				<ageInDays>11</ageInDays>
 				<evolveIntoPawnKindDef>BMT_BovineBeetle</evolveIntoPawnKindDef>
 			</li>
 		</comps>

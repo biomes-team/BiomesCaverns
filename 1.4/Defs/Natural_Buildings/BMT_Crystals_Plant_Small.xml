@@ -14,7 +14,6 @@
 	  <MaxHitPoints>20</MaxHitPoints>
 	</statBases>
 	<plant>
-	  <maxMeshCount>4</maxMeshCount>
 	  <immatureGraphicPath>BMT_Caverns/Things/Crystals/BlueSmall</immatureGraphicPath>
 	  <visualSizeRange>0.4~0.8</visualSizeRange>
 	  <harvestedThingDef>BMT_ResourceBlueCrystal</harvestedThingDef>

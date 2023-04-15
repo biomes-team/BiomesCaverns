@@ -16,6 +16,8 @@
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
 				</terrainTags>
 			</li>
 		</modExtensions>

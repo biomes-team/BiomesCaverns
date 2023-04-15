@@ -115,6 +115,16 @@
 				<min>0.87</min>
 				<max>999</max>
 			</li>
+			<li>
+				<terrain>Marsh</terrain>
+				<min>0.84</min>
+				<max>0.94</max>
+			</li>
+			<li>
+				<terrain>MarshyTerrain</terrain>
+				<min>0.98</min>
+				<max>999</max>
+			</li>
 		</terrainsByFertility>
 		<terrainPatchMakers>
 			<li>
@@ -124,11 +134,6 @@
 						<terrain>SoilRich</terrain>
 						<min>0.63</min>
 						<max>0.83</max>
-					</li>
-					<li>
-						<terrain>WaterShallow</terrain>
-						<min>0.83</min>
-						<max>999</max>
 					</li>
 				</thresholds>
 			</li>
@@ -220,33 +225,32 @@
 
 		<wildAnimals>
 			<!-- herbivores -->
-			<BMT_AaroxisDendoria>0.01</BMT_AaroxisDendoria>
-			<BMT_AaroxisDendoriaLarvae>0.02</BMT_AaroxisDendoriaLarvae>
-			<BMT_BovineBeetle>0.05</BMT_BovineBeetle>
-			<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
+			<BMT_AaroxisDendoria>0.1</BMT_AaroxisDendoria>
+			<BMT_AaroxisDendoriaLarvae>0.1</BMT_AaroxisDendoriaLarvae>
+			<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
+			<BMT_BovineBeetleLarvae>0.1</BMT_BovineBeetleLarvae>
 			<BMT_CaveCricket>0.25</BMT_CaveCricket>
 			<BMT_GiantSlug>0.3</BMT_GiantSlug>
 			<BMT_GiantSnail>0.2</BMT_GiantSnail>
 			<BMT_GlowSlug>0.1</BMT_GlowSlug>
 			<BMT_GlowSnail>0.05</BMT_GlowSnail>
 			<BMT_Goeto>0.3</BMT_Goeto>
-			<BMT_Maxolotl>0.05</BMT_Maxolotl>
 			<BMT_MossBeetle>0.075</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
-			<BMT_Pillbug>0.2</BMT_Pillbug>
+			<BMT_Pillbug>0.3</BMT_Pillbug>
 			<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
-			<BMT_SonarRabbit>0.5</BMT_SonarRabbit>
+			<BMT_SonarRabbit>0.2</BMT_SonarRabbit>
 			<BMT_TruffleMole>0.1</BMT_TruffleMole>
 			<BMT_Xyrion>0.1</BMT_Xyrion>
-			<BMT_Yooka>0.2</BMT_Yooka>
+			<BMT_Yooka>0.07</BMT_Yooka>
 			<BMT_Mole>0.05</BMT_Mole>
 			<BMT_FungalWeevil>0.2</BMT_FungalWeevil>
-			<BMT_BrownBat MayRequire="biomesteam.biomesislands">0.3</BMT_BrownBat>
 
 			<!-- predators -->
 			<BMT_FungalFerret>0.1</BMT_FungalFerret>
 			<BMT_MossyFennec>0.1</BMT_MossyFennec>
-			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.24</BMT_GlowBat>
+			<BMT_Maxolotl>0.05</BMT_Maxolotl>
+			<BMT_GlowBat MayRequire="biomesteam.biomesislands">1</BMT_GlowBat>
 			
 			<!-- onmnivore -->
 			<BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>
@@ -262,6 +266,19 @@
 			<li>Muffalo</li>
 			<li>Alpaca</li>
 			<li>BMT_GiantSnail</li>
+			<li>BMT_RoyalRhino</li>
+			<li>BMT_Maxolotl</li>
+			<li>BMT_BovineBeetle</li>
+			<li>BMT_FoundryBeetle</li>
+			<li>BMT_CaveSpider</li>
+			<li>BMT_ShatterjawBeetle</li>
+			<li>BMT_CrystalCrab_Sandstone</li>
+			<li>BMT_CrystalCrab_Granite</li>
+			<li>BMT_CrystalCrab_Granite</li>
+			<li>BMT_CrystalCrab_Slate</li>
+			<li>BMT_CrystalCrab_Marble</li>
+			<li>BMT_CrystalCrab_Jade</li>
+			<li>BMT_CrystalCrab_Coral</li>
 		</allowedPackAnimals>
 	</BiomeDef>
 

@@ -65,7 +65,7 @@
         </modExtensions>
         <comps>
             <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-                <ageInDays>15</ageInDays>
+                <ageInDays>7.5</ageInDays>
                 <evolveIntoPawnKindDef>BMT_BloodropPupa</evolveIntoPawnKindDef>
             </li>
         </comps>
@@ -185,7 +185,7 @@
         <!--uiIconScale>1.5</uiIconScale-->
         <comps>
             <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-                <ageInDays>20</ageInDays>
+                <ageInDays>10</ageInDays>
                 <evolveIntoPawnKindDef>BMT_BloodropMoth</evolveIntoPawnKindDef>
             </li>
         </comps>

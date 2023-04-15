@@ -8,6 +8,8 @@
 					<li>Fresh</li>
 					<li>Shallow</li>
 					<li>ChestDeep</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
 				</terrainTags>
 			</li>
 		</modExtensions>

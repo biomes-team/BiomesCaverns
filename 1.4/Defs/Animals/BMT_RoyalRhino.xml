@@ -188,7 +188,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>35</ageInDays>
+				<ageInDays>17.5</ageInDays>
 				<evolveIntoPawnKindDef>BMT_RoyalRhino</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -411,7 +411,7 @@
 		<description>A royal rhino beetle egg. If all goes well, it should hatch into a royal rhino grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(74, 51, 87)</color>
+			<color>(170, 109, 159)</color>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>

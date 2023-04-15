@@ -118,27 +118,27 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
-					<drawSize>0.4</drawSize>
+					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Dessicated_Jewelbug</texPath>
-					<drawSize>0.4</drawSize>
+					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Dessicated_Jewelbug</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
@@ -146,7 +146,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Dessicated_Jewelbug</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
