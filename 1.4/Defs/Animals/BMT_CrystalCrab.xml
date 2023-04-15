@@ -71,31 +71,31 @@
   <ThingDef ParentName="BMT_CrystalCrab_Base">
 	<defName>BMT_CrystalCrab_Sandstone</defName>
 	<butcherProducts>
-	  <Sandstone>3</Sandstone>
+	  <ChunkSandstone>3</ChunkSandstone>
 	</butcherProducts>
   </ThingDef>
   <ThingDef ParentName="BMT_CrystalCrab_Base">
 	<defName>BMT_CrystalCrab_Granite</defName>
 	<butcherProducts>
-	  <Granite>3</Granite>
+	  <ChunkGranite>3</ChunkGranite>
 	</butcherProducts>
   </ThingDef>
   <ThingDef ParentName="BMT_CrystalCrab_Base">
 	<defName>BMT_CrystalCrab_Limestone</defName>
 	<butcherProducts>
-	  <Limestone>3</Limestone>
+	  <ChunkLimestone>3</ChunkLimestone>
 	</butcherProducts>
   </ThingDef>
   <ThingDef ParentName="BMT_CrystalCrab_Base">
 	<defName>BMT_CrystalCrab_Slate</defName>
 	<butcherProducts>
-	  <Slate>3</Slate>
+	  <ChunkSlate>3</ChunkSlate>
 	</butcherProducts>
   </ThingDef>
   <ThingDef ParentName="BMT_CrystalCrab_Base">
 	<defName>BMT_CrystalCrab_Marble</defName>
 	<butcherProducts>
-	  <Marble>3</Marble>
+	  <ChunkMarble>3</ChunkMarble>
 	</butcherProducts>
   </ThingDef>
   <ThingDef ParentName="BMT_CrystalCrab_Base">
