@@ -181,8 +181,8 @@
 		<label>giant snail egg (fert.)</label>
 		<description>A fertilized giant snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(102,84,49)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(167,198,153)</color>
 			<drawSize>1.7</drawSize>
 		</graphicData>
 		<statBases>

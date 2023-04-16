@@ -171,6 +171,7 @@
 		<label>basilisk egg (fert.)</label>
 		<description>A fertilized basilisk egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(230,212,193)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>

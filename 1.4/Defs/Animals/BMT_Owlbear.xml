@@ -158,6 +158,7 @@
 		<label>owlbear egg (fert.)</label>
 		<description>A fertilized owlbear egg. If all goes well, it should hatch into a baby owlbear. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OwlbearEggs</texPath>
 			<color>(255,246,232)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>

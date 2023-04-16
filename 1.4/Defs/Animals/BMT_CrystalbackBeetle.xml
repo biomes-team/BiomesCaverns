@@ -357,8 +357,8 @@
 		<label>crystalback beetle egg (fert.)</label>
 		<description>A fertilized crystalback beetle egg. If all goes well, it should hatch into a crystalback beetle larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(221,246,255)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(105,171,220)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>

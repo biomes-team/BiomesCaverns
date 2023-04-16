@@ -410,7 +410,7 @@
 		<label>royal rhino beetle egg (fert.)</label>
 		<description>A royal rhino beetle egg. If all goes well, it should hatch into a royal rhino grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
 			<color>(170, 109, 159)</color>
 			<drawSize>2</drawSize>
 		</graphicData>
