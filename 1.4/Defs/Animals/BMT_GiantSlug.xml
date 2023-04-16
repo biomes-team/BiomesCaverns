@@ -130,7 +130,7 @@
 		<label>giant slug egg (fert.)</label>
 		<description>A fertilized giant slug egg. If all goes well, it should hatch into a baby slug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(109,137,70)</color>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -150,7 +150,7 @@
 		<label>giant slug egg (unfert.)</label>
 		<description>An unfertilized giant slug egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(102,84,49)</color>
 			<drawSize>1</drawSize>
 		</graphicData>

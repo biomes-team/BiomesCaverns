@@ -198,7 +198,7 @@
 		<label>crystal mimic mantis egg (fert.)</label>
 		<description>A fertilized crystal mantis egg. If all goes well, it should hatch into a mantis larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-		<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+		<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(135,198,245)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>

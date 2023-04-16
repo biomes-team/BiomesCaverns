@@ -362,7 +362,7 @@
 		<label>aaroxis dendoria egg (fert.)</label>
 		<description>A fertilized aaroxis dendoria egg. If all goes well, it should hatch into an aaroxis dendoria larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(127,73,73)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>

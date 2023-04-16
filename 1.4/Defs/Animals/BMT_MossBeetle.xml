@@ -352,7 +352,7 @@
 		<label>moss beetle egg (fert.)</label>
 		<description>A moss beetle egg. If all goes well, it should hatch into a moss grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(118,135,137)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>

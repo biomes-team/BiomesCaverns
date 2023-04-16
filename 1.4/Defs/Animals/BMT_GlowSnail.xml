@@ -153,7 +153,7 @@
 		<label>glowsnail egg (fert.)</label>
 		<description>A fertilized glowsnail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(138,226,226)</color>
 			<drawSize>0.7</drawSize>
 		</graphicData>

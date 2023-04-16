@@ -340,7 +340,7 @@
         <label>bloodrop moth egg (fert.)</label>
         <description>A fertilized bloodrop moth egg. If all goes well, it should hatch into a bloodrop larva. It can be eaten raw, but it's much better cooked.</description>
         <graphicData>
-			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
             <color>(198,151,151)</color>
             <drawSize>0.8</drawSize>
         </graphicData>
