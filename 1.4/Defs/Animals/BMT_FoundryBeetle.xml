@@ -12,7 +12,6 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<Flammability>0.0</Flammability>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
@@ -148,7 +147,6 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<Flammability>0.0</Flammability>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>

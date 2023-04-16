@@ -12,7 +12,6 @@
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
             <MarketValue>250</MarketValue>
             <FilthRate>0</FilthRate>
-            <ToxicResistance>1</ToxicResistance>
         </statBases>
         <tools>
             <li>
