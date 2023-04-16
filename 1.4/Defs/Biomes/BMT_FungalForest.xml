@@ -225,32 +225,32 @@
 
 		<wildAnimals>
 			<!-- herbivores -->
-			<BMT_AaroxisDendoria>0.1</BMT_AaroxisDendoria>
-			<BMT_AaroxisDendoriaLarvae>0.1</BMT_AaroxisDendoriaLarvae>
-			<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
-			<BMT_BovineBeetleLarvae>0.1</BMT_BovineBeetleLarvae>
-			<BMT_CaveCricket>0.25</BMT_CaveCricket>
-			<BMT_GiantSlug>0.3</BMT_GiantSlug>
-			<BMT_GiantSnail>0.2</BMT_GiantSnail>
+			<BMT_AaroxisDendoria>0.2</BMT_AaroxisDendoria>
+			<BMT_AaroxisDendoriaLarvae>0.2</BMT_AaroxisDendoriaLarvae>
+			<BMT_BovineBeetle>0.10</BMT_BovineBeetle>
+			<BMT_BovineBeetleLarvae>0.8</BMT_BovineBeetleLarvae>
+			<BMT_CaveCricket>0.10</BMT_CaveCricket>
+			<BMT_GiantSlug>0.25</BMT_GiantSlug>
+			<BMT_GiantSnail>0.30</BMT_GiantSnail>
 			<BMT_GlowSlug>0.1</BMT_GlowSlug>
-			<BMT_GlowSnail>0.05</BMT_GlowSnail>
-			<BMT_Goeto>0.3</BMT_Goeto>
-			<BMT_MossBeetle>0.075</BMT_MossBeetle>
-			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
-			<BMT_Pillbug>0.3</BMT_Pillbug>
-			<BMT_RoyalRhino>0.01</BMT_RoyalRhino>
-			<BMT_SonarRabbit>0.2</BMT_SonarRabbit>
+			<BMT_GlowSnail>0.1</BMT_GlowSnail>
+			<BMT_Goeto>0.05</BMT_Goeto>
+			<BMT_MossBeetle>0.2</BMT_MossBeetle>
+			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
+			<BMT_Pillbug>0.4</BMT_Pillbug>
+			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
+			<BMT_SonarRabbit>0.1</BMT_SonarRabbit>
 			<BMT_TruffleMole>0.1</BMT_TruffleMole>
-			<BMT_Xyrion>0.1</BMT_Xyrion>
-			<BMT_Yooka>0.07</BMT_Yooka>
-			<BMT_Mole>0.05</BMT_Mole>
-			<BMT_FungalWeevil>0.2</BMT_FungalWeevil>
+			<BMT_Xyrion>0.15</BMT_Xyrion>
+			<BMT_Yooka>0.025</BMT_Yooka>
+			<BMT_Mole>0.15</BMT_Mole>
+			<BMT_FungalWeevil>0.10</BMT_FungalWeevil>
 
 			<!-- predators -->
-			<BMT_FungalFerret>0.1</BMT_FungalFerret>
-			<BMT_MossyFennec>0.1</BMT_MossyFennec>
-			<BMT_Maxolotl>0.05</BMT_Maxolotl>
-			<BMT_GlowBat MayRequire="biomesteam.biomesislands">1</BMT_GlowBat>
+			<BMT_FungalFerret>0.025/BMT_FungalFerret>
+			<BMT_MossyFennec>0.10</BMT_MossyFennec>
+			<BMT_Maxolotl>0.5</BMT_Maxolotl>
+			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.75</BMT_GlowBat>
 			
 			<!-- onmnivore -->
 			<BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>

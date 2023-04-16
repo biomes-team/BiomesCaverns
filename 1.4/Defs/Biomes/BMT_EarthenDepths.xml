@@ -163,9 +163,9 @@
 
     <wildAnimals>
 		<!-- herbivores -->
-		<BMT_Boomapillar>0.2</BMT_Boomapillar>
-		<BMT_FoundryBeetle>0.5</BMT_FoundryBeetle>
-		<BMT_FireSalamander>0.5</BMT_FireSalamander>
+		<BMT_Boomapillar>0.1</BMT_Boomapillar>
+		<BMT_FoundryBeetle>0.2</BMT_FoundryBeetle>
+		<BMT_FireSalamander>0.1</BMT_FireSalamander>
 		<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
 		<BMT_MetalloSnail>0.5</BMT_MetalloSnail>
 		<!-- <BMT_MetalloSnail>0.5</BMT_MetalloSnail> -->

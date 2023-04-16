@@ -184,19 +184,23 @@
 
     <wildAnimals>
 		<!-- herbivores -->
-		<BMT_CrystalBeetleLarvae>0.5</BMT_CrystalBeetleLarvae>
-		<BMT_CrystalBeetle>0.4</BMT_CrystalBeetle>
-		<BMT_Jewelbug>0.3</BMT_Jewelbug>
-		<BMT_Megapleura>0.4</BMT_Megapleura>
+		<BMT_AaroxisDendoria>0.05</BMT_AaroxisDendoria>
+		<BMT_AaroxisDendoriaLarvae>0.05</BMT_AaroxisDendoriaLarvae>
+		<BMT_CrystalBeetleLarvae>0.05</BMT_CrystalBeetleLarvae>
+		<BMT_CrystalBeetle>0.05</BMT_CrystalBeetle>
+		<BMT_Jewelbug>0.1</BMT_Jewelbug>
+		<BMT_GlowSlug>0.1</BMT_GlowSlug>
+		<BMT_GlowSnail>0.1</BMT_GlowSnail>
+		<BMT_Megapleura>0.1</BMT_Megapleura>
 		<!-- <Rat>1.3</Rat> -->
-		<BMT_Crystalope>0.52</BMT_Crystalope>
-		<BMT_ShatterjawBeetle>0.35</BMT_ShatterjawBeetle>
-		<BMT_FacetMothLarvae>0.2</BMT_FacetMothLarvae>
-		<BMT_FacetMoth>0.4</BMT_FacetMoth>
-		<BMT_CrystalFairyMole>0.3</BMT_CrystalFairyMole>
-		<BMT_MossBeetle>0.075</BMT_MossBeetle>
-		<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
-		<BMT_GlowBat MayRequire="biomesteam.biomesislands">1</BMT_GlowBat>
+		<BMT_Crystalope>0.2</BMT_Crystalope>
+		<BMT_ShatterjawBeetle>1</BMT_ShatterjawBeetle>
+		<BMT_FacetMothLarvae>0.05</BMT_FacetMothLarvae>
+		<BMT_FacetMoth>0.05</BMT_FacetMoth>
+		<BMT_CrystalFairyMole>0.025</BMT_CrystalFairyMole>
+		<BMT_MossBeetle>0.1</BMT_MossBeetle>
+		<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
+		<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.5</BMT_GlowBat>
 		
 		<!-- onmnivore -->
 		<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>
@@ -208,7 +212,7 @@
 		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
 	
 		<!-- predators -->
-		<BMT_CrystalMantis>0.4</BMT_CrystalMantis>
+		<BMT_CrystalMantis>0.05</BMT_CrystalMantis>
     </wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
