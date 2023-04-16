@@ -247,7 +247,7 @@
 			<BMT_FungalWeevil>0.10</BMT_FungalWeevil>
 
 			<!-- predators -->
-			<BMT_FungalFerret>0.025/BMT_FungalFerret>
+			<BMT_FungalFerret>0.025</BMT_FungalFerret>
 			<BMT_MossyFennec>0.10</BMT_MossyFennec>
 			<BMT_Maxolotl>0.5</BMT_Maxolotl>
 			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.75</BMT_GlowBat>
