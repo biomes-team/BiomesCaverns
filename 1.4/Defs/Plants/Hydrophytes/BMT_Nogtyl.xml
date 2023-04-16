@@ -8,6 +8,7 @@
 					<li>Shallow</li>
 					<li>Boggy</li>
 					<li>Marshy</li>
+					<li>Marsh</li>
 				</terrainTags>
 			</li>
 		</modExtensions>
@@ -43,7 +44,7 @@
 		</ingestible>
 		<plant>
 			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
-			<fertilityMin>0.5</fertilityMin>
+			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<pollution>Any</pollution>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>

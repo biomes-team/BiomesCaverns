@@ -27,6 +27,7 @@
 		</graphicData>
 		<ingestible/>
 		<plant>
+			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>3</growDays>
 			<harvestWork>80</harvestWork>
@@ -40,5 +41,11 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>3.9</glowRadius>
+			<glowColor>(126, 108, 155, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

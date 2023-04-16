@@ -27,6 +27,7 @@
 		</graphicData>
 		<ingestible/>
 		<plant>
+			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<pollution>Any</pollution>
 			<growDays>3</growDays>

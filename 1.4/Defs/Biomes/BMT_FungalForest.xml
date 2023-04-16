@@ -74,10 +74,6 @@
 				<commonality>100</commonality>
 			</li>
 			<li>
-				<diseaseInc>Disease_Malaria</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
 				<diseaseInc>Disease_GutWorms</diseaseInc>
 				<commonality>50</commonality>
 			</li>
@@ -104,70 +100,50 @@
 				<commonality>100</commonality>
 			</li>
 		</diseases>
-		<terrainsByFertility>
-			<li>
-				<terrain>Soil</terrain>
-				<min>-999</min>
-				<max>0.87</max>
-			</li>
-			<li>
-				<terrain>SoilRich</terrain>
-				<min>0.87</min>
-				<max>999</max>
-			</li>
-			<li>
-				<terrain>Marsh</terrain>
-				<min>0.84</min>
-				<max>0.94</max>
-			</li>
-			<li>
-				<terrain>MarshyTerrain</terrain>
-				<min>0.98</min>
-				<max>999</max>
-			</li>
-		</terrainsByFertility>
-		<terrainPatchMakers>
-			<li>
-				<perlinFrequency>0.035</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>SoilRich</terrain>
-						<min>0.63</min>
-						<max>0.83</max>
-					</li>
-				</thresholds>
-			</li>
-			<li>
-				<perlinFrequency>0.0005</perlinFrequency>
-				<thresholds>
-					<li>
-						<terrain>MarshyTerrain</terrain>
-						<min>0.70</min>
-						<max>0.80</max>
-					</li>
-					<li>
-						<terrain>Mud</terrain>
-						<min>0.80</min>
-						<max>0.84</max>
-					</li>
-					<li>
-						<terrain>Marsh</terrain>
-						<min>0.84</min>
-						<max>0.94</max>
-					</li>
-					<li>
-						<terrain>Mud</terrain>
-						<min>0.94</min>
-						<max>0.98</max>
-					</li>
-					<li>
-						<terrain>MarshyTerrain</terrain>
-						<min>0.98</min>
-						<max>999</max>
-					</li>
-				</thresholds>
-			</li>
-		</terrainPatchMakers>
+    <terrainsByFertility>
+      <li>
+        <terrain>Soil</terrain>
+        <min>-999</min>
+        <max>0.87</max>
+      </li>
+      <li>
+        <terrain>SoilRich</terrain>
+        <min>0.87</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.04</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>MarshyTerrain</terrain>
+            <min>0.32</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.027</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>-0.12</min>
+            <max>0.32</max>
+          </li>
+          <li>
+            <terrain>Mud</terrain>
+            <min>0.32</min>
+            <max>0.6</max>
+          </li>
+          <li>
+            <terrain>Marsh</terrain>
+            <min>0.6</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_FungalCavern>100</BMT_FungalCavern>
 		</baseWeatherCommonalities>
@@ -208,8 +184,6 @@
 			<BMT_Stimquill>0.005</BMT_Stimquill>
 			
 			<!-- hydrophytes -->
-			<BMT_Arpeau>0.3</BMT_Arpeau>
-			<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
 			<BMT_Nuitae>0.4</BMT_Nuitae>
 			<BMT_Wrinklecap>0.4</BMT_Wrinklecap>
 
