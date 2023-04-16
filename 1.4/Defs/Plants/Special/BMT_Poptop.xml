@@ -43,7 +43,7 @@
 		<neverMultiSelect>false</neverMultiSelect>
 		<minifiedDef>MinifiedTree</minifiedDef>
 		<rotatable>false</rotatable>
-		<comps>			
+		<comps>
 			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Extinguish</explosiveDamageType>
@@ -53,8 +53,8 @@
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 				<explosionEffect>ExtinguisherExplosion</explosionEffect>
 				<explosionSound>BMT_WaterSplash</explosionSound>
-				<Proxitarget>Fire</Proxitarget>
-				<Proxiradius>4.9</Proxiradius>
+				<proxiTarget>Fire</proxiTarget>
+				<proxiRadius>4.9</proxiRadius>
 				<growthProgress>0.6</growthProgress>
 				<growthAfterExplosion>0.4</growthAfterExplosion>
 			</li>

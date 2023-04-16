@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_ExplodingAngel</defName>
 		<label>exploding angel</label>
-		<description>A mushroom filled with volatile natural chemicals. This volatility makes it explode when impacted. </description>
+		<description>A mushroom filled with volatile natural chemicals. This volatility makes it explode when impacted.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -12,17 +12,12 @@
 			<Flammability>0.0</Flammability>
 			<Nutrition>2</Nutrition>
 		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.5~0.99</growingHours>
-			</li>
-		</modExtensions>
 		<ingestible/>
 		<selectable>true</selectable>
 		<plant>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelImmature</immatureGraphicPath>
 			<growMinGlow>0.5</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilityMin>1.4</fertilityMin>
 			<fertilitySensitivity>1.0</fertilitySensitivity>
 			<growDays>5</growDays>
@@ -41,5 +36,31 @@
 			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
+		<comps>
+			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
+				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<postExplosionSpawnThingDef>BMT_ExplodingAngel</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+				<proxiGroup>Pawn</proxiGroup>
+				<minBodySize>0.5</minBodySize>
+				<proxiRadius>4.9</proxiRadius>
+				<growthProgress>0.6</growthProgress>
+				<growthAfterExplosion>0.4</growthAfterExplosion>
+				<explodeOnKilled>true</explodeOnKilled>
+				<chanceToStartFire>0.5</chanceToStartFire>
+				<detonateOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</detonateOnDamageTaken>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>
