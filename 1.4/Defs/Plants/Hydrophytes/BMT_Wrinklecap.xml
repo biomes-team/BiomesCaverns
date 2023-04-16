@@ -40,5 +40,11 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>3.9</glowRadius>
+			<glowColor>(126, 108, 155, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>
