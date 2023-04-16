@@ -35,7 +35,13 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
+		<value>
+			<comps/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]/comps</xpath>
 		<value>
 			<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
 				<graphicsPerBiome>
@@ -52,7 +58,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
 		<value>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
