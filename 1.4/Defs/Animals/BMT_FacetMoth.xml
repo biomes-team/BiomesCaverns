@@ -182,7 +182,7 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>7.5</ageInDays>
+				<ageInDays>7</ageInDays>
 				<evolveIntoPawnKindDef>BMT_FacetMoth</evolveIntoPawnKindDef>
 			</li>
 		</comps>

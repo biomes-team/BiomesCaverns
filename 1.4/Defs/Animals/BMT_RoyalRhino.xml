@@ -188,7 +188,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>17.5</ageInDays>
+				<ageInDays>17</ageInDays>
 				<evolveIntoPawnKindDef>BMT_RoyalRhino</evolveIntoPawnKindDef>
 			</li>
 		</comps>

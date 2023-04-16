@@ -14,6 +14,13 @@
 			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
 		</statBases>
 		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_GiantSnailDefense</li>
+				</hediffs>
+				<graphicSuffix>Shell</graphicSuffix>
+				<duration>300</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGiantSnailFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
@@ -147,6 +154,28 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_GiantSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggGiantSnailFertilized</defName>
 		<label>giant snail egg (fert.)</label>

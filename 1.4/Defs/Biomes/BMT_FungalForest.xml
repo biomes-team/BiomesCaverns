@@ -278,7 +278,7 @@
 			<li>BMT_CrystalCrab_Slate</li>
 			<li>BMT_CrystalCrab_Marble</li>
 			<li>BMT_CrystalCrab_Jade</li>
-			<li>BMT_CrystalCrab_Coral</li>
+			<li MayRequire="biomesteam.biomesislands">BMT_CrystalCrab_Coral</li>
 		</allowedPackAnimals>
 	</BiomeDef>
 

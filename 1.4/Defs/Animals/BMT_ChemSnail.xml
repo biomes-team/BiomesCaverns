@@ -11,6 +11,13 @@
 			<MarketValue>100</MarketValue>
 		</statBases>
 		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_ChemSnailDefense</li>
+				</hediffs>
+				<graphicSuffix>Shell</graphicSuffix>
+				<duration>300</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggChemSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggChemSnailFertilized</eggFertilizedDef>
@@ -154,6 +161,28 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_ChemSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggChemSnailFertilized</defName>
 		<label>chem snail egg (fert.)</label>
