@@ -183,8 +183,8 @@
 		<label>chem snail egg (unfert.)</label>
 		<description>An unfertilized chem snail egg. It can be eaten raw, but it's much, much better cooked. It can be used as fuel.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(149,92,90)</color>
+			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<color>(175,70,0)</color>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>

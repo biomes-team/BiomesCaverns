@@ -157,8 +157,8 @@
 		<label>jewelbug egg (fert.)</label>
 		<description>A jewel egg. If all goes well, it should hatch into a baby jewelbug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(21,244,238)</color>
+			<texPath>BMT_Caverns\Things\Item\Eggs\OvoidBugEggs</texPath>
+			<color>(193,249,255)</color>
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<statBases>

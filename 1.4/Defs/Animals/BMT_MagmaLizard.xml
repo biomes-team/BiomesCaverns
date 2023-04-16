@@ -156,7 +156,7 @@
 		<label>magma lizard egg (fert.)</label>
 		<description>A fertilized magma lizard egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<color>(230,212,193)</color>
+			<color>(160,70,29)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
 		<statBases>
