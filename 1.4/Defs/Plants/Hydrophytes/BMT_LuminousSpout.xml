@@ -10,7 +10,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
-			<Flammability>0.15</Flammability>
+			<Flammability>0.0</Flammability>
 			<Nutrition>0.30</Nutrition>
 		</statBases>
 		<plant>

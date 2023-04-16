@@ -28,7 +28,7 @@
 		<blockWind>true</blockWind>
 		<statBases>
 			<Beauty>2</Beauty>
-			<Flammability>0.8</Flammability>
+			<Flammability>0.0</Flammability>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Nutrition>2.0</Nutrition>
 			<Mass>150</Mass>

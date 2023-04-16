@@ -6,7 +6,7 @@
 		<description>A subterranean fungus that grows in damp environments, it is often eaten by fungivores.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<Flammability>0.15</Flammability>
+			<Flammability>0.0</Flammability>
 			<Nutrition>1.20</Nutrition>
 		</statBases>
 		<selectable>true</selectable>

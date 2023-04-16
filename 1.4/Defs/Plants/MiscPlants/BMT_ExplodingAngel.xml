@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_ExplodingAngel</defName>
 		<label>exploding angel</label>
-		<description>A red capped mushroom.</description>
+		<description>A mushroom filled with volatile natural chemicals. This volatility makes it explode when impacted. </description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

@@ -6,7 +6,7 @@
 		<description>While its cap's exterior is largely dark in color, its underside glows brightly. It grows most often in water or extremely wet environments.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<Flammability>0.15</Flammability>
+			<Flammability>0.0</Flammability>
 			<Nutrition>0.60</Nutrition>
 		</statBases>
 		<selectable>true</selectable>

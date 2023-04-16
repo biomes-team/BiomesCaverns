@@ -9,6 +9,7 @@
 			<Nutrition>0.5</Nutrition>
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
+			<Flammability>0.0</Flammability>
 		</statBases>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
