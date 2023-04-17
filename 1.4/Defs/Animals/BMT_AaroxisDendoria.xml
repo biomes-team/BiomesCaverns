@@ -7,7 +7,7 @@
 		<description>A unique species of moth larva with a spiraling body pattern rather than the normal segmented. It is thought to be a genetic anomaly from its engineered creation. The crimson-colored silk it produces is luxuriously soft.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -19,6 +19,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
@@ -142,7 +143,9 @@
 		<description>Even in their pupal stage, their red abdomen can be seen as they metamorphose. They are almost entirely immobile in this stage.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -242,6 +245,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_GrayChitin</leatherDef>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>

@@ -143,6 +143,8 @@
 		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -232,8 +234,8 @@
 		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
 		<statBases>
 			<MoveSpeed>3.1</MoveSpeed>
-			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.27</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<FilthRate>4</FilthRate>

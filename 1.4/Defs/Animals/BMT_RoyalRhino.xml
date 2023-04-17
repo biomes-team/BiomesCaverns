@@ -10,7 +10,7 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>5</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -22,6 +22,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>

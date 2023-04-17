@@ -7,7 +7,7 @@
 		<description>A large beetle, commonly found in dark, damp places. It feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -19,6 +19,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
@@ -139,6 +140,8 @@
 		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

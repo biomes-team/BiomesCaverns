@@ -6,8 +6,8 @@
         <description>This isopod is smaller than it's pillbug cousin and is found commonly in crystal caverns.</description>
         <statBases>
             <MoveSpeed>2.75</MoveSpeed>
-            <ArmorRating_Blunt>0.115</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.325</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
             <MarketValue>250</MarketValue>

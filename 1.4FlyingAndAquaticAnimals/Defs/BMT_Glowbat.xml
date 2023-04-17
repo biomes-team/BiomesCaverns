@@ -90,7 +90,7 @@
 	  <nuzzleMtbHours>24</nuzzleMtbHours>
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+      <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
 	  <body>Monkey</body>
       <gestationPeriodDays>6.66</gestationPeriodDays>
       <litterSizeCurve>

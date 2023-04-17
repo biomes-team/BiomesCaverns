@@ -6,8 +6,8 @@
 		<description>This large isopod is in a way, the bottom of the cavern food chain. It feeds on virtually any filth it finds, keeping the tunnels and catacombs clean.</description>
 		<statBases>
 			<MoveSpeed>2.75</MoveSpeed>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>

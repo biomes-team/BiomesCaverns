@@ -7,6 +7,8 @@
 	<description>A relative of the trilobite beetle that has grown to massive proportions while living deep within the crust of the Rim. While odd in appearance, it is largely harmless.</description>
 	<statBases>
 	  <MoveSpeed>7.5</MoveSpeed>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 	  <MarketValue>300</MarketValue>
 	  <ComfyTemperatureMin>-55</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>

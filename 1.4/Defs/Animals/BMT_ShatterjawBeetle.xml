@@ -138,9 +138,8 @@
 		<description>The pupal form of the shatterjaw beetle. Its body has largely liquified as it metamorphoses within. It has perhaps the most durable exterior out of all known pupae.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
