@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GiantSnail</defName>
 		<label>giant snail</label>
-		<description>A gigantic herd snail, used as a pack animal by many cavern-dwelling societies. Its ability to adhere to and climb virtually any surface makes it invaluable for any traders or travelers underground.</description>
+		<description>A gigantic herd snail used as a pack animal by many cavern-dwelling societies. Its ability to adhere to and climb virtually any surface makes it invaluable for traders or travelers underground.</description>
 		<statBases>
 			<MoveSpeed>2.6</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -19,7 +19,7 @@
 					<li>BMT_GiantSnailDefense</li>
 				</hediffs>
 				<graphicSuffix>Shell</graphicSuffix>
-				<duration>300</duration>
+				<duration>750</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGiantSnailFertilized</eggFertilizedDef>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaLarvae</defName>
 		<label>aaroxis dendoria larvae</label>
-		<description>A unique species of moth larva with a spiraling body pattern rather than segmented like normal. It is thought to be a genetic anomaly from its engineered creation. The crimson-colored silk it produces is luxuriously soft.</description>
+		<description>A unique species of moth larva with a spiraling body pattern rather than the normal segmented. It is thought to be a genetic anomaly from its engineered creation. The crimson-colored silk it produces is luxuriously soft.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
@@ -106,16 +106,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
-					<drawSize>0.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
-					<drawSize>0.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -131,6 +121,16 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
 					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
+					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -214,11 +214,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/AaroxisDendoriaPupa</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_AaroxisDendoriaPupa</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -236,7 +236,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<race>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>

@@ -34,7 +34,7 @@
 			<wildOrder>2</wildOrder>
 			<neverBlightable>false</neverBlightable>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.3~1.0</visualSizeRange>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
 			<purpose>Health</purpose>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>

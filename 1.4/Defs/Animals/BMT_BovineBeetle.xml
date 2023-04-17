@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
 		<label>bovine grub</label>
-		<description>A large grub originally from Caveworlds, this bug is often kept in farms for its milk-like substance they produce as an adult.</description>
+		<description>A large grub originally from Caveworlds, this bug is often kept in farms for the milk-like substance it produces as an adult.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
 			<LeatherAmount>3</LeatherAmount>

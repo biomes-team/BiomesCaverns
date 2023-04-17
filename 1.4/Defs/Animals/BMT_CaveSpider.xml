@@ -10,7 +10,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_CaveSpider</defName>
 	<label>cave spider</label>
-	<description>Huge and horrifying, these spiders are one of the most dangerous predators in the UnderRim. They are fiercely territorial and intelligent, with a tendency to lay claim to commonly traveled tunnels for their easy prey, which unfortunately includes humanoids. Their powerful bite injects potent toxic venom into their victims.</description>
+	<description>Huge and horrifying, these spiders are one of the most dangerous predators in the UnderRim. They are fiercely territorial and intelligent, with a tendency to lay claim to commonly traveled tunnels for easy prey, including humanoids. Their powerful bite injects potent venom into their victims.</description>
 	<statBases>
 	  <MoveSpeed>5.5</MoveSpeed>
 	  <MarketValue>4000</MarketValue>

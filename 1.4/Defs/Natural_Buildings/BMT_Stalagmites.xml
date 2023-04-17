@@ -6,7 +6,7 @@
 	<description>A stalagmite is a type of rock formation that rises from the floor of a cave due to the accumulation of material deposited on the floor from ceiling.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Natural/Stalagmite</texPath>
-	  <drawSize>(1.0,1.0)</drawSize>
+	  <drawSize>(4.0,4.5)</drawSize>
 	  <color>(126,104,94)</color>
 	</graphicData>
 	<altitudeLayer>Building</altitudeLayer>

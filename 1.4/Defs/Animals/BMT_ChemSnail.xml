@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_ChemSnail</defName>
 		<label>chem snail</label>
-		<description>Engineered much like the Boomalope of the surface, this snail produces volatile chemicals within its shell. Even the strongest predators of the caverns have learned to avoid targeting it, as it produces an explosion upon death. Its slime can be carefully harvested for chemfuel.</description>
+		<description>Engineered much like the surface-dwelling Boomalope, this snail produces volatile chemicals within its shell. Even the strongest predators of the caverns have learned to avoid it, as the chemsnail explodes upon death. Its slime can be carefully harvested for chemfuel.</description>
 		<statBases>
 			<MoveSpeed>1.2</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

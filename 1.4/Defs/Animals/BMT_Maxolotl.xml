@@ -77,16 +77,7 @@
 			<petness>0.05</petness>
 			<nuzzleMtbHours>48</nuzzleMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
-			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<packAnimal>true</packAnimal>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.8, 1)</li>
-					<li>(2.4, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -119,7 +110,7 @@
 		<label>maxolotl</label>
 		<race>BMT_Maxolotl</race>
 		<combatPower>80</combatPower>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<label>Maxolotl Larva</label>

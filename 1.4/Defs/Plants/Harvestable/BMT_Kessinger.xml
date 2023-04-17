@@ -36,7 +36,7 @@
 			</sowTags>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_Kessinger</harvestedThingDef>
-			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<visualSizeRange>0.7~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>5</wildClusterWeight>

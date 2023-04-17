@@ -25,7 +25,7 @@
 				<li>BMT_MetalloSnailDefense</li>
 			</hediffs>
 			<graphicSuffix>Shell</graphicSuffix>
-			<duration>300</duration>
+			<duration>750</duration>
 		</li>
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggMetalloSnailFertilized</eggFertilizedDef>

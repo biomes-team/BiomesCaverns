@@ -39,7 +39,7 @@
 			</sowTags>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_Starchstalk</harvestedThingDef>
-			<visualSizeRange>0.4~1</visualSizeRange>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>24</wildClusterWeight>

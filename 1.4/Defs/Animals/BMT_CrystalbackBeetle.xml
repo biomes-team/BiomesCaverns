@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_CrystalBeetleLarvae</defName>
 		<label>crystalback grub</label>
-		<description>A small, relatively slow and chubby grub that hides among crystals to avoid predators. Its main defense is spewing sticky goo at the eyes of attacking predators.</description>
+		<description>Small and relatively slow, this chubby grub hides among crystals to avoid predators. Its main defense is spewing sticky goo at their eyes.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
