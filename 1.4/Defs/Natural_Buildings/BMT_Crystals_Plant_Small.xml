@@ -18,9 +18,6 @@
 	  <visualSizeRange>0.4~0.8</visualSizeRange>
 	  <harvestedThingDef>BMT_ResourceBlueCrystal</harvestedThingDef>
 	  <harvestYield>6</harvestYield>
-	  <sowTags>
-		<li>Ground</li>
-	  </sowTags>
 	  <growDays>33.3</growDays>
 	  <harvestTag>Standard</harvestTag>
 	  <fertilityMin>0.0</fertilityMin>
