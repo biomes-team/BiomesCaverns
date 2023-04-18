@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_JadeGlintsCrop</defName>
 		<label>jade glint fungus</label>
-		<description>A weird yet strangely beautiful fungus, firstly engineered as a decorative mushroom it was then later found its real psychite-like proprieties. Cooking and crystalizing the fluid into a powerful drug known as Glitter, well used in illegal mining companies to keep their assets working on extra shifts.</description>
+		<description>A weird yet strangely beautiful fungus capable of surviving most anywhere dark. First engineered as a decorative mushroom it was then later found its real psychite-like proprieties. While it can be eaten raw for a tiny high, its fluids are more often refined and crystalized into a powerful drug known as Glitter, well used in illegal mining companies to keep their assets working on extra shifts.</description>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -16,19 +16,28 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
 		<plant>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<fertilitySensitivity>0.5</fertilitySensitivity> 
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<pollution>Any</pollution>			
 			<growDays>8</growDays> 
+			<dieIfLeafless>true</dieIfLeafless>
 			<fertilityMin>0.25</fertilityMin> 
+			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_JadeGlints</harvestedThingDef>
 			<harvestYield>5</harvestYield>
-			<harvestTag>Standard</harvestTag>
-			<visualSizeRange>0.1~1.5</visualSizeRange>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<visualSizeRange>0.5~1.0</visualSizeRange>
 			<wildClusterRadius>6</wildClusterRadius> 
-			<wildClusterWeight>200</wildClusterWeight> 
+			<wildClusterWeight>25</wildClusterWeight> 
 			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant> 
 	</ThingDef>
@@ -36,7 +45,7 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>BMT_JadeGlints</defName>
 		<label>jade glints</label>
-		<description>A harvested form of the jade glint fungus. In its base form, it can give a tiny but non-addictive bodily high.</description>
+		<description>A harvested form of the jade glint fungus. In its base form, it can give a tiny but non-addictive bodily high. It can be refined into a drug known as Glitter.</description>
 		<descriptionHyperlinks>
 			<HediffDef>BMT_GlintHigh</HediffDef>
 		</descriptionHyperlinks>
@@ -44,7 +53,7 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<tickerType>Rare</tickerType>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Crops/JadeGlints</texPath>
+			<texPath>BMT_Caverns/Things/Item/Crops/JadeGlints/JadeGlints</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -167,8 +176,8 @@
     </comps>
     <allowedArchonexusCount>200</allowedArchonexusCount>
   </ThingDef>
-
-<HediffDef>
+  
+  <HediffDef>
 		<defName>BMT_GlintHigh</defName>
 		<label>glint high</label>
 		<labelNoun>a glint high</labelNoun>
@@ -235,7 +244,8 @@
 		</stages>
 	</HediffDef>
 	<!-- thought-->
-	<ThoughtDef>
+	
+		<ThoughtDef>
 		<defName>BMT_GlintThought</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>BMT_GlintHigh</hediff>
