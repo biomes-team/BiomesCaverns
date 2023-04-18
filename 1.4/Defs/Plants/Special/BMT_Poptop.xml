@@ -26,7 +26,7 @@
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
 			<visualSizeRange>0.5~1.2</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>

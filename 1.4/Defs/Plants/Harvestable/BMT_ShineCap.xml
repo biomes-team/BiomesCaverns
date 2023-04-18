@@ -35,6 +35,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<topWindExposure>0</topWindExposure>
 			<harvestWork>800</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<harvestAfterGrowth>0.7</harvestAfterGrowth>

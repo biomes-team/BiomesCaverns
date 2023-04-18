@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Candlesnuff</defName>
 		<label>candlesnuff</label>
-		<description>An ash pale mushroom tree. Slow-growing, but this woody fungus is very strong.</description>
+		<description>An ash pale mushroom tree. It is slow-growing but can survive the intense heat of the nearby magma.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Candlesnuff/CandlesnuffGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -22,6 +22,7 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
 			<growDays>12</growDays>
+			<topWindExposure>0</topWindExposure>
 			<dieIfLeafless>false</dieIfLeafless>
 			<harvestWork>700</harvestWork>
 			<harvestYield>12</harvestYield>

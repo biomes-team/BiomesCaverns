@@ -22,6 +22,7 @@
         <pollution>Any</pollution>
         <growDays>7</growDays>
         <dieIfLeafless>false</dieIfLeafless>
+		<topWindExposure>0</topWindExposure>
         <harvestWork>500</harvestWork>
         <harvestYield>16</harvestYield>
         <wildOrder>3</wildOrder>

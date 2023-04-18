@@ -149,12 +149,27 @@
 		<label>crystal</label>
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
 		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
+		<isPaintable>false</isPaintable>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>3</pathCost>
 		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<CleaningTimeFactor>0.75</CleaningTimeFactor>
+			<Cleanliness>0</Cleanliness>
 		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<costList>
+			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+		</costList>
 		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
 		</affordances>
 		<fertility>0</fertility>
 		<filthAcceptanceMask>
@@ -164,6 +179,7 @@
 		<tags>
 			<li>BMT_Crystal</li>
 		</tags>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
 
 </Defs>

@@ -29,7 +29,7 @@
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.25~0.6</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>2</wildClusterWeight>
 			<wildOrder>1</wildOrder>

@@ -20,6 +20,7 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
 			<growDays>12</growDays>
+			<topWindExposure>0</topWindExposure>
 			<dieIfLeafless>false</dieIfLeafless>
 			<harvestWork>700</harvestWork>
 			<harvestYield>25</harvestYield>

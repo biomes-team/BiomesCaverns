@@ -41,21 +41,21 @@
   <ThingDef ParentName="BMT_Stalagmites">
 	<defName>BMT_NaturalBuildings_Stalagmites_Small</defName>
 	<graphicData>
-	  <drawSize>(1,1)</drawSize>
+	  <drawSize>(2,2)</drawSize>
 	</graphicData>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
 	<defName>BMT_NaturalBuildings_Stalagmites_Medium</defName>
 	<graphicData>
-	  <drawSize>(2,2)</drawSize>
+	  <drawSize>(2.1,2.1)</drawSize>
 	</graphicData>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
 	<defName>BMT_NaturalBuildings_Stalagmites_Large</defName>
 	<graphicData>
-	  <drawSize>(2.5,2.5)</drawSize>
+	  <drawSize>(2.25,2.25)</drawSize>
 	</graphicData>
   </ThingDef>
   

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BMT_CaveTreeBase">
+       <modExtensions>
+         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+            <growingHours>0.0~0.5</growingHours>
+        </li>
+    </modExtensions>
+    <defName>BMT_Shimbershroom</defName>
+    <label>shimbershroom</label>
+    <description>A lanky mushroom tree that produces bioluminescence from its cap.</description>
+    <graphicData>
+        <texPath>BMT_Caverns/Things/Plant/Shimbershroom/ShimbershroomGrown</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+        <Beauty>4</Beauty>
+    </statBases>
+    <plant>
+        <wildClusterRadius>3</wildClusterRadius>
+        <wildClusterWeight>1000</wildClusterWeight>
+        <growDays>10</growDays>
+		<fertilitySensitivity>0.5</fertilitySensitivity>
+		<fertilityMin>0.05</fertilityMin>
+        <dieIfLeafless>false</dieIfLeafless>
+        <harvestWork>1000</harvestWork>
+        <harvestYield>30</harvestYield>
+        <wildOrder>3</wildOrder>
+        <neverBlightable>true</neverBlightable>
+		<topWindExposure>0</topWindExposure>
+		<immatureGraphicPath>BMT_Caverns/Things/Plant/Shimbershroom/ShimbershroomImmature</immatureGraphicPath>
+    </plant>
+	 <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(61,140,217,0)</glowColor>
+      </li>
+    </comps>
+</ThingDef>
+</Defs>

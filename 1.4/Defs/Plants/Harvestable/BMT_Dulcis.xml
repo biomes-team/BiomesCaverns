@@ -31,7 +31,9 @@
 			 <sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>BMT_Fungiponics</li>
 			  </sowTags>
+			<topWindExposure>0</topWindExposure>
 			<wildOrder>2</wildOrder>
             <neverBlightable>false</neverBlightable>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisImmature</immatureGraphicPath>

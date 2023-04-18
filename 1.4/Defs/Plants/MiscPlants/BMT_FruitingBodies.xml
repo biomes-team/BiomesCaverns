@@ -22,7 +22,7 @@
 			<pollution>Any</pollution>
 			<maxMeshCount>25</maxMeshCount>
 			<visualSizeRange>0.3~0.5</visualSizeRange>
-			<topWindExposure>0.3</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<wildOrder>1</wildOrder>

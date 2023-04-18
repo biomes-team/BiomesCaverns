@@ -13,6 +13,7 @@
             <growOptimalGlow>0</growOptimalGlow>
             <interferesWithRoof>false</interferesWithRoof>
             <pollution>Any</pollution>
+			<topWindExposure>0.0</topWindExposure>
         </plant>
         <selectable>true</selectable>
         <modExtensions>

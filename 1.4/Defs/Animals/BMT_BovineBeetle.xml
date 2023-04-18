@@ -217,12 +217,12 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>2</drawSize>
 					<color>(89,97,73)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

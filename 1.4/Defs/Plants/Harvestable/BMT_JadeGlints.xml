@@ -32,6 +32,7 @@
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
+			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>0.5~1.0</visualSizeRange>
 			<wildClusterRadius>6</wildClusterRadius> 
 			<wildClusterWeight>25</wildClusterWeight> 

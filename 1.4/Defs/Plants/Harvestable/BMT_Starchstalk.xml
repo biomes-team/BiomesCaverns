@@ -30,7 +30,7 @@
 			<growDays>6</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Starchstalk</immatureGraphicPath>
-			<topWindExposure>0.1</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestYield>11</harvestYield>
 			<sowTags>

@@ -9,6 +9,9 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Beauty>12</Beauty>
+			<BeautyOutdoors>14</BeautyOutdoors>
 			<Nutrition>1.0</Nutrition>
 		</statBases>
 		<modExtensions>
@@ -16,7 +19,7 @@
 				<growingHours>0.5~0.99</growingHours>
 			</li>
 		</modExtensions>
-		<ingestible/>
+		<selectable>true</selectable>
 		<plant>
 			<growMinGlow>0.5</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>

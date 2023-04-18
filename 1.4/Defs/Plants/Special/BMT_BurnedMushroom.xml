@@ -44,7 +44,7 @@
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
-			<topWindExposure>0.05</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<blockAdjacentSow>true</blockAdjacentSow>
 			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
 			<harvestFailable>false</harvestFailable>

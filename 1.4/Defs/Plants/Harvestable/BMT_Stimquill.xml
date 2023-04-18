@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_Stimquill</defName>
 		<label>stimquill</label>
-		<description>Known for its stimulant properties, this plant is found deep underground.</description>
+		<description>Known for its stimulant properties, this plant is found wild deep underground. It does not grow well in captivity but flourishes in the wild.</description>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -25,6 +25,7 @@
 			<harvestedThingDef>BMT_StimquillDrug</harvestedThingDef>
 			<harvestYield>4</harvestYield>
 			<harvestTag>Standard</harvestTag>
+			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>0.7~1.5</visualSizeRange>
 			<wildClusterRadius>6</wildClusterRadius> 
 			<wildClusterWeight>200</wildClusterWeight> 

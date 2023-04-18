@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Xyrion</defName>
 		<label>xyrion</label>
-		<description>These large reptiles were first brought to Rimworlds as a strange pet due to its ability to lose its tail without harm, much like some geckos. Years after some were released or escaped into their preferred habit of underground caverns, it was discovered that they can be raised and farmed for their surprisingly nutritious tails.</description>
+		<description>These large reptiles were first brought to Rimworlds as a strange pet due to its ability to lose its tail without harm, much like some geckos. Years after some were released or escaped into their preferred habit of underground caverns, it was discovered that they can be raised and farmed for their surprisingly nutritious tails. Their tails begin to grow back immedately after being removed, but take days to regrow completely.</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<MarketValue>240</MarketValue>

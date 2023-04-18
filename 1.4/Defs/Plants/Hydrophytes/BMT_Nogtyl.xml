@@ -76,7 +76,7 @@
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
-			<topWindExposure>0.25</topWindExposure>
+			<topWindExposure>0.05</topWindExposure>
 		</plant>
 	</ThingDef>
 </Defs>

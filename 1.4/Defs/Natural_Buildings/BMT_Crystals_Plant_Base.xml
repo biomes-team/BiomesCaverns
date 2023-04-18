@@ -93,7 +93,7 @@
 	<comps>
 	  <!-- <li Class="CompProperties_Glower"> -->
 		<!-- <glowRadius>3.75</glowRadius> -->
-		<!-- <glowColor>(110,116,125,0)</glowColor> -->
+		<!-- <<glowColor>(119,189,239,0)</glowColor> -->
 	  <!-- </li> -->
 	</comps>
 	<modExtensions>

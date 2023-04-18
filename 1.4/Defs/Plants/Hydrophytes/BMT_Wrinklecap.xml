@@ -33,7 +33,7 @@
 			<harvestWork>80</harvestWork>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.7~0.85</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
+			<topWindExposure>0.05</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>1</wildOrder>

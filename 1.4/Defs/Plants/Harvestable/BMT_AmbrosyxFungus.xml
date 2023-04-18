@@ -29,7 +29,7 @@
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<harvestedThingDef>BMT_AmbrosyxShroom</harvestedThingDef>
 			<visualSizeRange>0.6~1.1</visualSizeRange>
-			<topWindExposure>0.1</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<allowAutoCut>false</allowAutoCut>

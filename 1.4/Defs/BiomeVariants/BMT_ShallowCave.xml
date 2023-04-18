@@ -53,8 +53,13 @@
           <Agarilux>0.02</Agarilux>
           <BMT_Ravelmush>0.02</BMT_Ravelmush>
           <Glowstool>0.02</Glowstool>
+		  <BMT_BlackLily>0.02</BMT_BlackLily>
+		  <BMT_Brightbell>0.3</BMT_Brightbell>
+		  <BMT_CoralClub>0.25</BMT_CoralClub>
+		  <BMT_Greatbulb>0.3</BMT_Greatbulb>
 
           <!-- trees -->
+		  <BMT_Shimbershroom>0.5</BMT_Shimbershroom>
           <Plant_Timbershroom MayRequire="Ludeon.RimWorld.Ideology">0.05</Plant_Timbershroom>
 
           <!-- other harvestable -->
