@@ -36,6 +36,7 @@
       <harvestedThingDef>Dye</harvestedThingDef>
       <harvestYield>1</harvestYield>
       <harvestTag>Standard</harvestTag>
+	  <visualSizeRange>0.8~1.0</visualSizeRange>
       <purpose>Misc</purpose>
       <sowTags>
         <li>Ground</li>

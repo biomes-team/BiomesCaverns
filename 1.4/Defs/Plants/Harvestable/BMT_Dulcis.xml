@@ -38,7 +38,7 @@
             <neverBlightable>false</neverBlightable>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisImmature</immatureGraphicPath>
 			<leaflessGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisHarvested</leaflessGraphicPath>
-			<visualSizeRange>0.7~1.3</visualSizeRange>
+			<visualSizeRange>0.9~1.3</visualSizeRange>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 			<interferesWithRoof>false</interferesWithRoof>
