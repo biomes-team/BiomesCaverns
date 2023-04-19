@@ -154,6 +154,36 @@
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>3</pathCost>
 		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<CleaningTimeFactor>0.75</CleaningTimeFactor>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<fertility>0</fertility>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<takeFootprints>false</takeFootprints>
+		<tags>
+			<li>BMT_Crystal</li>
+		</tags>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_CrystalManMade</defName>
+		<label>crystal</label>
+		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
+		<isPaintable>false</isPaintable>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>3</pathCost>
+		<statBases>
 			<WorkToBuild>1100</WorkToBuild>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
@@ -181,5 +211,4 @@
 		</tags>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
-
 </Defs>
