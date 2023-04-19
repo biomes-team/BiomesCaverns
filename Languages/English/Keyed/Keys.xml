@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+  
   <BMT_XyrionTailGrowth>Tail regrown</BMT_XyrionTailGrowth>
   <BMT_MetalloSnailShellGrowth>Metal shell regrown</BMT_MetalloSnailShellGrowth>
+  
+  <GeologicalLandforms.Landform.BMT_FungalForest>fungal forest</GeologicalLandforms.Landform.BMT_FungalForest>
+  <GeologicalLandforms.Landform.BMT_CrystalCaverns>crystal caverns</GeologicalLandforms.Landform.BMT_CrystalCaverns>
+  <GeologicalLandforms.Landform.BMT_EarthenDepths>earthen depths</GeologicalLandforms.Landform.BMT_EarthenDepths>
+  <GeologicalLandforms.Landform.BMT_Mineshaft>mineshaft</GeologicalLandforms.Landform.BMT_Mineshaft>
+  <GeologicalLandforms.Landform.BMT_Aquifer>aquifer</GeologicalLandforms.Landform.BMT_Aquifer>
+
 </LanguageData>

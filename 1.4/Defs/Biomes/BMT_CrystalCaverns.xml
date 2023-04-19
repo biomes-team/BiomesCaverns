@@ -15,7 +15,9 @@
       </li>
       <li Class="GeologicalLandforms.BiomeProperties">
         <applyToCaves>true</applyToCaves>
-        <allowLandforms>false</allowLandforms>
+        <overrideLandforms>
+          <li>BMT_CrystalCaverns</li>
+        </overrideLandforms>
         <allowBiomeTransitions>false</allowBiomeTransitions>
         <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
         <worldTileGraphicAtlas>
@@ -101,16 +103,6 @@
 	  </li>
 	</diseases>
 	<terrainsByFertility>
-      <!-- <li> -->
-        <!-- <terrain>Soil</terrain> -->
-        <!-- <min>-999</min> -->
-        <!-- <max>0.87</max> -->
-      <!-- </li> -->
-      <!-- <li> -->
-        <!-- <terrain>SoilRich</terrain> -->
-        <!-- <min>0.87</min> -->
-        <!-- <max>999</max> -->
-      <!-- </li> -->
       <li>
         <terrain>Gravel</terrain>
         <min>-999</min>

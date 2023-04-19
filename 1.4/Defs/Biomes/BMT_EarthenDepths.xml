@@ -15,9 +15,20 @@
       </li>
       <li Class="GeologicalLandforms.BiomeProperties">
         <applyToCaves>true</applyToCaves>
-        <allowLandforms>false</allowLandforms>
+        <overrideLandforms>
+          <li>BMT_EarthenDepths</li>
+        </overrideLandforms>
         <allowBiomeTransitions>false</allowBiomeTransitions>
         <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+        <worldTileOverrides>
+          <temperature>
+            <value supplier="randomValueWorld">
+              <seedMask>TempED</seedMask>
+              <min>50</min>
+              <max>90</max>
+            </value>
+          </temperature>
+        </worldTileOverrides>
         <worldTileGraphicAtlas>
           <texture>BMT_Caverns/World/Biomes/Atlas/EarthenDepths</texture>
           <drawMode>HexAdjacencyCaves</drawMode>
@@ -104,13 +115,13 @@
 	</diseases>
 	<terrainsByFertility>
       <li>
-        <terrain>Gravel</terrain>
+        <terrain>BMT_VolcanicAsh</terrain>
         <min>-999</min>
-        <max>0.87</max>
+        <max>0.8</max>
       </li>
       <li>
-        <terrain>Sand</terrain>
-        <min>0.87</min>
+        <terrain>BMT_MagmaAsh</terrain>
+        <min>0.25</min>
         <max>999</max>
       </li>
     </terrainsByFertility>
@@ -119,13 +130,8 @@
         <perlinFrequency>0.045</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>BMT_VolcanicAsh</terrain>
+            <terrain>Slate_Rough</terrain>
             <min>0.33</min>
-            <max>0.53</max>
-          </li>
-          <li>
-            <terrain>BMT_MagmaAsh</terrain>
-            <min>0.53</min>
             <max>0.73</max>
           </li>
           <li>

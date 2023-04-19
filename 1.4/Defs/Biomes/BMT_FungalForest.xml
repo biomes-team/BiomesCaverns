@@ -15,7 +15,9 @@
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
 				<applyToCaves>true</applyToCaves>
-				<allowLandforms>false</allowLandforms>
+				<overrideLandforms>
+					<li>BMT_FungalForest</li>
+				</overrideLandforms>
 				<allowBiomeTransitions>false</allowBiomeTransitions>
 				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
 				<worldTileGraphicAtlas>
