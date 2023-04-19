@@ -29,6 +29,7 @@
         <neverBlightable>true</neverBlightable>
 		<topWindExposure>0</topWindExposure>
 		<immatureGraphicPath>BMT_Caverns/Things/Plant/Shimbershroom/ShimbershroomImmature</immatureGraphicPath>
+		<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
     </plant>
 	 <comps>
       <li Class="CompProperties_Glower">

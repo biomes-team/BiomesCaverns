@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_StinkLattice</defName>
 		<label>stink lattice</label>
-		<description>This latice-like fungus smells like a rotting corpse.</description>
+		<description>The gasses from this latice-like fungus smells like a rotting corpse.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -45,7 +45,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
 				<gasType>RotStink</gasType>
-				<cellsToFill>3</cellsToFill>
+				<cellsToFill>1</cellsToFill>
 				<effecterReleasing>GasReleasing</effecterReleasing>
 				<growthProgress>0.6</growthProgress>
 			</li>

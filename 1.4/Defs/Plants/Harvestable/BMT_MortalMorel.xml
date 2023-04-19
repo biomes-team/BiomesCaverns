@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_MortalMorelPlant</defName>
 		<label>mortal morel</label>
-		<description>A slow-growing mushroom which yields fungal medicine when harvested. Sowing and harvesting this fungus is both very labor-intensive tasks because of its delicate stalks.</description>
+		<description>A slow-growing mushroom which yields fungal medicine when harvested. Sowing and harvesting this fungus is both very labor-intensive tasks because of its delicate structure.</description>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>

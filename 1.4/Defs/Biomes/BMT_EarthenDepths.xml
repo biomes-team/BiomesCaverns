@@ -24,7 +24,7 @@
           <temperature>
             <value supplier="randomValueWorld">
               <seedMask>TempED</seedMask>
-              <min>50</min>
+              <min>10</min>
               <max>90</max>
             </value>
           </temperature>
@@ -155,14 +155,14 @@
     <BMT_Boomshroom>0.2</BMT_Boomshroom>
 
 		<!-- trees -->
-		<BMT_Candlesnuff>0.5</BMT_Candlesnuff>
+		<BMT_Candlesnuff>0.7</BMT_Candlesnuff>
 			
 		<!-- other harvestable -->
 		
 		<!-- hydrophytes -->
 
 		<!-- special -->
-		<BMT_HeatsinkFungus>0.05</BMT_HeatsinkFungus>
+		<BMT_HeatsinkFungus>0.1</BMT_HeatsinkFungus>
     <BMT_StinkLattice>0.05</BMT_StinkLattice>
 
     </wildPlants>

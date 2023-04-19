@@ -45,15 +45,15 @@
               </allOf>
             </anyOf>
             <temperature>
-              <max>0</max>
+              <max>10</max>
               <min>-15</min>
             </temperature>
           </conditions>
         </score>
       </li>
     </modExtensions>
-    <animalDensity>3.2</animalDensity>
-    <plantDensity>0.6</plantDensity>
+    <animalDensity>3.5</animalDensity>
+    <plantDensity>0.75</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>
@@ -63,23 +63,11 @@
     <soundsAmbient>
       <li>BMT_Ambient_FungalForest</li>
     </soundsAmbient>
-    <diseaseMtbDays>40</diseaseMtbDays>
+    <diseaseMtbDays>20</diseaseMtbDays>
 	<diseases>
 	  <li>
 		<diseaseInc>Disease_Flu</diseaseInc>
 		<commonality>100</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_Plague</diseaseInc>
-		<commonality>100</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_Malaria</diseaseInc>
-		<commonality>100</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_GutWorms</diseaseInc>
-		<commonality>50</commonality>
 	  </li>
 	  <li>
 		<diseaseInc>Disease_FibrousMechanites</diseaseInc>

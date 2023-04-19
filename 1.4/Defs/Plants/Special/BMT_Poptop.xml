@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Poptop</defName>
 		<label>poptop</label>
-		<description>A spongy mushroom sprout that releases goo-covered spores when exposed to fire. These spores act much like firefoam.</description>
+		<description>A spongy mushroom sprout that releases water-ladden spores when exposed to fire. These spores snuff out nearby fires quickly.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

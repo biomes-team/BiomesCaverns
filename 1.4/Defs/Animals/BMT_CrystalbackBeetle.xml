@@ -210,7 +210,7 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
 					<drawSize>1</drawSize>
-					<color>(89,97,73)</color>
+					<color>(53,85,91)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
