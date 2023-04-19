@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Ravelmush</defName>
 		<label>ravelmush</label>
 		<description>The Ravelmush is a strange mushroom that spreads its mycelium wide, digesting filth to fuel its own growth.</description>
@@ -26,8 +26,6 @@
 		</comps>
 		<ingestible/>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
@@ -37,10 +35,10 @@
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
-			<interferesWithRoof>false</interferesWithRoof>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
+			<sowResearchPrerequisites  Inherit="False" />
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>

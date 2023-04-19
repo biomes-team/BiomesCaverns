@@ -19,8 +19,6 @@
 		</modExtensions>
 		<ingestible/>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
@@ -34,12 +32,12 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<harvestTag Inherit="False"/>
 			<harvestedThingDef Inherit="False"/>
 			<harvestYield Inherit="False"/>
 			<burnedThingDef Inherit="False"/>
 			<smashedThingDef Inherit="False"/>
 			<choppedThingDef Inherit="False"/>
+			<sowResearchPrerequisites Inherit="False" />
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 		<comps>

@@ -3,46 +3,33 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Poptop</defName>
 		<label>poptop</label>
-		<description>A spongy mushroom sprout that releases water-ladden spores when exposed to fire. These spores snuff out nearby fires quickly.</description>
+		<description>A spongy mushroom sprout that releases goo-covered spores when exposed to fire. These spores act much like firefoam.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Nutrition>1</Nutrition>
-			<Mass>50</Mass>
 			<Flammability>0</Flammability>
 		</statBases>
-		<passability Inherit="False"/>
-		<pathCost>30</pathCost>
 		<blockWind>false</blockWind>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
             <dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
-			<soundHarvesting>Harvest_Standard</soundHarvesting>
-			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
 			<visualSizeRange>0.5~1.2</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
-            <neverBlightable>true</neverBlightable>
-			<harvestTag Inherit="False" />
+			<pollution>Any</pollution>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<blockAdjacentSow>false</blockAdjacentSow>
 			<harvestedThingDef Inherit="False" />
 			<harvestYield Inherit="False" />
-			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-			<sowResearchPrerequisites Inherit="False" />
-			<interferesWithRoof>false</interferesWithRoof>
+			<sowResearchPrerequisites  Inherit="False" />
 		</plant>
-		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
-		<minifiedDef>MinifiedTree</minifiedDef>
-		<rotatable>false</rotatable>
+		<specialDisplayRadius>5</specialDisplayRadius>
 		<comps>
 			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
 				<explosiveRadius>4.9</explosiveRadius>

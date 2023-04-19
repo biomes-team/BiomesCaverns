@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_ExplodingAngel</defName>
 		<label>exploding angel</label>
 		<description>A mushroom filled with volatile natural chemicals. This volatility makes it explode when impacted.</description>
@@ -14,6 +14,7 @@
 		</statBases>
 		<ingestible/>
 		<selectable>true</selectable>
+		<specialDisplayRadius>4</specialDisplayRadius>
 		<plant>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelImmature</immatureGraphicPath>
 			<growMinGlow>0.5</growMinGlow>
@@ -28,13 +29,12 @@
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<harvestYield>7</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
-			<interferesWithRoof>false</interferesWithRoof>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
+			<sowResearchPrerequisites  Inherit="False" />
 		</plant>
 		<comps>
 			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
