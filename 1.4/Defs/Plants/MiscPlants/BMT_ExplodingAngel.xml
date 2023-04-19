@@ -38,7 +38,7 @@
 		</plant>
 		<comps>
 			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
-				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveRadius>3.9</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<postExplosionSpawnThingDef>BMT_ExplodingAngel</postExplosionSpawnThingDef>
 				<postExplosionSpawnChance>0.5</postExplosionSpawnChance>
