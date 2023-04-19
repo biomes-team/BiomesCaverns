@@ -66,6 +66,7 @@
           <BMT_DulcisPlant>0.02</BMT_DulcisPlant>
           <BMT_KessingerPlant>0.001</BMT_KessingerPlant>
           <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>
+          <BMT_GiantLeaf>0.1</BMT_GiantLeaf>
           <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.02</Plant_Nutrifungus>
 
           <!-- hydrophytes -->
