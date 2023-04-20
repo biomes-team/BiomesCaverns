@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_ThrumbungusShroom</defName>
+		<label>Thrumbungus mushroom</label>
+		<description>The spore filled mushroom of a thrumbungus. Pieces of it can be lobbed as weapons, spreading toxic spores.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/ThrumbungusShroom/ThrumbungusShroom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<techLevel>Neolithic</techLevel>
+		<equipmentType>Primary</equipmentType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+			<SellPriceFactor>0.10</SellPriceFactor>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>GrenadeTox</li>
+		</weaponTags>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>Grenades</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<verbs>
+			<li>
+				<label>throw shroom</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>13</range>
+				<forcedMissRadius>1</forcedMissRadius>
+				<warmupTime>1</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_BMT_ThrumbungusShroom</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>ToxGas</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+				<postExplosionGasType>ToxGas</postExplosionGasType>
+				<explosiveExpandPerStackcount>0.025</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>70~150</wickTicks>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+
+	  <ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_BMT_ThrumbungusShroom</defName>
+		<label>thrumbungus mushroom</label>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/ShroomThrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ToxGas</damageDef>
+			<explosionDelay>100</explosionDelay>
+			<explosionRadius>1</explosionRadius>
+			<explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+			<screenShakeFactor>0.5</screenShakeFactor>
+		</projectile>
+	</ThingDef>
+</Defs>

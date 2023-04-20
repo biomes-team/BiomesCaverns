@@ -104,6 +104,15 @@
                 <li>
                   <def>Nose</def>
                   <coverage>0.1</coverage>
+				  <parts>
+                    <li>
+                      <def>Horn</def>
+                      <coverage>0.85</coverage>
+                      <groups>
+                        <li>HeadAttackTool</li>
+                      </groups>
+                    </li>
+                  </parts>
                 </li>
                 <li>
                   <def>AnimalJaw</def>

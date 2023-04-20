@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<Defs>
-
-
   <ThingDef ParentName="AnimalThingBase">
-    <defName>Thrumbo</defName>
-    <label>thrumbo</label>
-    <devNote>misc</devNote>
-    <description>A gigantic, graceful creature of unknown origin. The thrumbo is gentle by nature, but extremely dangerous when enraged. While its long fur is exceptionally beautiful, its hide is also incredibly resistant to damage. Its razor-sharp horn fetches a huge price.\n\nLegends say that an old thrumbo is the wisest creature in the universe - it simply chooses not to speak.</description>
+    <defName>Thrumbungus</defName>
+    <label>thrumbungus</label>
+    <description>A gigantic, fungal amalgam creature. Rumor in the UnderRim has it that it was created from a mix of a genetics experiment creature and the fungi that feasted on its corpse.\n\nWhile gentle by nature, it is extremely dangerous when enraged. The strange hide that covers much of it is exceptionally beautiful and incredibly resistant to damage.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <MarketValue>4000</MarketValue>
@@ -17,24 +13,24 @@
       <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
       <ArmorRating_Heat>0.30</ArmorRating_Heat>
+	  <MeatAmount>0</MeatAmount>
       <FilthRate>8</FilthRate>
       <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
     </statBases>
     <uiIconScale>1.75</uiIconScale>
     <tools>
       <li>
-        <label>horn</label>
+        <label>mushrooms</label>
         <capacities>
-          <li>Scratch</li>
-          <li>Stab</li>
+          <li>ToxicBite</li>
         </capacities>
         <power>23</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
       </li>
       <li>
         <capacities>
-          <li>Bite</li>
+          <li>ToxicBite</li>
         </capacities>
         <power>28</power>
         <cooldownTime>2.6</cooldownTime>
@@ -42,13 +38,13 @@
         <chanceFactor>0.7</chanceFactor>
       </li>
       <li>
-        <label>left foot</label>
+        <label>left paw</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
         <power>19</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <cooldownTime>6</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
       </li>
       <li>
         <label>right foot</label>
@@ -56,8 +52,8 @@
           <li>Blunt</li>
         </capacities>
         <power>19</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <cooldownTime>6</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
       </li>
       <li>
         <label>head</label>
@@ -65,7 +61,7 @@
           <li>Blunt</li>
         </capacities>
         <power>17</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>6</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
@@ -77,10 +73,9 @@
       <baseBodySize>4</baseBodySize>
       <baseHungerRate>1.75</baseHungerRate>
       <baseHealthScale>8.0</baseHealthScale>
-      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal, CarnivoreAnimal, OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Thrumbo</leatherDef>
       <trainability>Advanced</trainability>
-      <gestationPeriodDays>20</gestationPeriodDays>
       <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
       <wildness>0.985</wildness>
       <lifeExpectancy>220</lifeExpectancy>
@@ -116,24 +111,27 @@
         <li>(-0.11, 0, 0.29)</li>
       </headPosPerRotation>
     </race>
+	<butcherProducts Inherit="false">
+	<RawFungus>455</RawFungus>
+	</butcherProducts>
     <tradeTags>
       <li>AnimalExotic</li>
     </tradeTags>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Thrumbo</defName>
-    <label>thrumbo</label>
-    <race>Thrumbo</race>
+    <defName>Thrumbungus</defName>
+    <label>thrumbungus</label>
+    <race>Thrumbungus</race>
     <combatPower>500</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>1</ecoSystemWeight>
     <lifeStages>
       <li>
-        <label>thrumbo calf</label>
-        <labelPlural>thrumbo calves</labelPlural>
+        <label>thrumbungus fruiting body</label>
+        <labelPlural>thrumbungus fruiting body</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -141,13 +139,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Thrumbo/Dessicated_Thrumbo</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
           <drawSize>4.0</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -155,13 +153,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Thrumbo/Dessicated_Thrumbo</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
           <drawSize>4.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
           <drawSize>4.8</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -169,12 +167,12 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Thrumbo/Dessicated_Thrumbo</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
           <drawSize>4.8</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
-          <bodyPartGroup>HornAttackTool</bodyPartGroup>
-          <thing>ThrumboHorn</thing>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>BMT_ThrumbungusShroom</thing>
         </butcherBodyPart>
       </li>
     </lifeStages>

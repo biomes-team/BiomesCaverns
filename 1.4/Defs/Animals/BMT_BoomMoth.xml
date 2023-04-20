@@ -49,7 +49,7 @@
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <wildness>0.6</wildness>
 	  <gestationPeriodDays>6.66</gestationPeriodDays>
-	  <lifeExpectancy>15</lifeExpectancy>
+	  <lifeExpectancy>0.5</lifeExpectancy>
             <lifeStageAges>
                 <li>
                     <def>BMT_InsectLarvalFirst</def>
