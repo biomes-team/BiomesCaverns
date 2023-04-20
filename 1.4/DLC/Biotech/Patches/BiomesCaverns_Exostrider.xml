@@ -6,4 +6,10 @@
 			<allowRoofed>true</allowRoofed>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GenStepDef[defName="AncientExostriderRemains"]/genStep/allowFoggedPositions</xpath>
+		<value>
+			<allowFoggedPositions>true</allowFoggedPositions>
+		</value>
+	</Operation>
 </Patch>
