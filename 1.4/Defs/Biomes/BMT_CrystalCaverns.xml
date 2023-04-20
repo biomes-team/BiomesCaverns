@@ -28,7 +28,7 @@
       </li>
       <li Class="GeologicalLandforms.BiomeWorkerConfig">
         <score>
-          <value>100</value>
+          <value>110</value>
           <conditions>
             <anyOf>
               <depthInCaveSystem>
@@ -45,7 +45,7 @@
               </allOf>
             </anyOf>
             <temperature>
-              <max>10</max>
+              <max>5</max>
               <min>-15</min>
             </temperature>
           </conditions>

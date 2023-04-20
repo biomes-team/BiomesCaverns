@@ -45,7 +45,7 @@
 							</allOf>
 						</anyOf>
 						<temperature>
-							<min>0</min>
+							<min>5</min>
 						</temperature>
 						<rainfall>
 							<min>750</min>

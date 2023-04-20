@@ -24,7 +24,7 @@
           <temperature>
             <value supplier="randomValueWorld">
               <seedMask>TempED</seedMask>
-              <min>10</min>
+              <min>50</min>
               <max>90</max>
             </value>
           </temperature>
@@ -37,7 +37,7 @@
       </li>
       <li Class="GeologicalLandforms.BiomeWorkerConfig">
         <score>
-          <value>100</value>
+          <value>120</value>
           <conditions>
             <anyOf>
               <depthInCaveSystem>
