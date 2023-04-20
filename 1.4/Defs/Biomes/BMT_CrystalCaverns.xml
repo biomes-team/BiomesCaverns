@@ -52,7 +52,7 @@
         </score>
       </li>
     </modExtensions>
-    <animalDensity>3.5</animalDensity>
+    <animalDensity>4.5</animalDensity>
     <plantDensity>0.75</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
@@ -171,7 +171,7 @@
 		<BMT_Megapleura>0.1</BMT_Megapleura>
 		<!-- <Rat>1.3</Rat> -->
 		<BMT_Crystalope>0.2</BMT_Crystalope>
-		<BMT_ShatterjawBeetle>1</BMT_ShatterjawBeetle>
+		<BMT_ShatterjawBeetle>0.1</BMT_ShatterjawBeetle>
 		<BMT_FacetMothLarvae>0.05</BMT_FacetMothLarvae>
 		<BMT_FacetMoth>0.05</BMT_FacetMoth>
 		<BMT_CrystalFairyMole>0.025</BMT_CrystalFairyMole>

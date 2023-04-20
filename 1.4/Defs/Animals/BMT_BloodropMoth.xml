@@ -253,7 +253,7 @@
             <lifeExpectancy>10</lifeExpectancy>
             <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
-            <trainability>None</trainability>
+            <trainability>Intermediate</trainability>
             <useMeatFrom>Megaspider</useMeatFrom>
             <lifeStageAges>
                 <li>

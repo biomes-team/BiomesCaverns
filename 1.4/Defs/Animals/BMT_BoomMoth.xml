@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseInsect">
+	<defName>BMT_Boomapillar</defName>
+	<label>boomapillar</label>
+	<description>Born out of the same genetic engineering research as the boomalope and boomasaurolophus, the boomapillar, though more buggy, is just as explosive. It takes a long time to mature, but produces volatile chemicals while young.</description>
+	<statBases>
+	  <MoveSpeed>3.4</MoveSpeed>
+	  <MarketValue>350</MarketValue>
+	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+	  <FilthRate>16</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+	</statBases>
+	<comps>
+	  <li Class="CompProperties_Milkable">
+		<milkDef>Chemfuel</milkDef>
+		<milkIntervalDays>1</milkIntervalDays>
+		<milkAmount>6</milkAmount>
+		<milkFemaleOnly>false</milkFemaleOnly>
+	  </li>
+	  <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+        <ageInDays>14</ageInDays>
+        <evolveIntoPawnKindDef>BMT_BoomPupa</evolveIntoPawnKindDef>
+      </li>
+	</comps>
+	<race>
+		<!-- = -->
+		<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+		<executionRange>6</executionRange>
+		<canBePredatorPrey>false</canBePredatorPrey>
+		<body>BeetleLike</body>
+		<baseHungerRate>0.535</baseHungerRate>
+		<baseBodySize>1</baseBodySize>
+		<baseHealthScale>0.65</baseHealthScale>
+		<trainability>None</trainability>
+		<roamMtbDays>2</roamMtbDays>
+		<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+		<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		<!-- <meatLabel>snail meat</meatLabel> -->
+		<!-- <meatColor>(62,133,215)</meatColor> -->
+		<leatherDef>BMT_WeakChitin</leatherDef>
+		<!-- = -->
+	  <useMeatFrom>Megaspider</useMeatFrom>
+	  <bloodDef>Filth_BloodInsect</bloodDef>
+	  <herdAnimal>false</herdAnimal>
+	  <packAnimal>false</packAnimal>
+	  <foodType>VegetarianRoughAnimal</foodType>
+	  <wildness>0.6</wildness>
+	  <gestationPeriodDays>6.66</gestationPeriodDays>
+	  <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>BMT_InsectLarvalFirst</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>BMT_InsectLarvalSecound</def>
+                    <minAge>0.05</minAge>
+                </li>
+                <li>
+                    <def>BMT_InsectLarvalThird</def>
+                    <minAge>0.1</minAge>
+			<soundWounded>Biomes_ChemSnail_Wounded</soundWounded>
+			<soundDeath>Biomes_ChemSnail_Death</soundDeath>
+			<soundCall>Biomes_ChemSnail_Call</soundCall>
+			<soundAngry>Biomes_ChemSnail_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	</race>
+	<tradeTags>
+	  <li>AnimalUncommon</li>
+	  <li>AnimalInsect</li>
+	</tradeTags>
+	<tools>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2.5</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		</li>
+	</tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_Boomapillar</defName>
+	<label>boomapillar</label>
+	<race>BMT_Boomapillar</race>
+	<combatPower>80</combatPower>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<wildGroupSize>1</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/BoomMoth/Boomapillar</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.0</drawSize>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <shadowData>
+			<volume>(0.4, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/BoomMoth/Boomapillar</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.4</drawSize>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/BoomMoth/Boomapillar</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.8</drawSize>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>BMT_BoomPupa</defName>
+        <label>boom pupa</label>
+        <description>The pupal stage of the boom moth. The chemicals contained within its shell while it metamorphoses are quite volatile, leading to deadly explosions if killed. Unlike most other pupa, it is actually quite weak and depends on its explosivity to deter predators. It explodes violently when the adult form hatches.</description>
+        <statBases>
+            <MoveSpeed>0</MoveSpeed>
+            <MarketValue>100</MarketValue>
+            <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
+            <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+        </statBases>
+        <race>
+			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+			<executionRange>4</executionRange>
+            <leatherDef>BMT_WeakChitin</leatherDef>
+            <thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
+            <needsRest>false</needsRest>
+            <hasGenders>false</hasGenders>
+            <fleshType>Insectoid</fleshType>
+            <bloodDef>Filth_BloodInsect</bloodDef>
+            <meatColor>(160,168,139)</meatColor>
+            <meatMarketValue>0.5</meatMarketValue>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <baseBodySize>1</baseBodySize>
+            <baseHealthScale>0.8</baseHealthScale>
+            <foodType>None</foodType>
+            <wildness>1</wildness>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <trainability>None</trainability>
+            <lifeExpectancy>0.5</lifeExpectancy>
+            <body>BeetleLike</body>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <lifeStageAges>
+                <li>
+                    <def>BMT_Pupa</def>
+                    <minAge>0</minAge>
+                </li>
+            </lifeStageAges>
+        </race>
+        <ingredient>
+            <mergeCompatibilityTags>
+                <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+            </mergeCompatibilityTags>
+        </ingredient>
+        <!--uiIconScale>1.5</uiIconScale-->
+        <comps>
+            <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+                <ageInDays>10</ageInDays>
+                <evolveIntoPawnKindDef>BMT_BoomMoth</evolveIntoPawnKindDef>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>Twitching</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>1</power>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+        </tools>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalInsect</li>
+        </tradeTags>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BMT_BoomPupa</defName>
+        <label>boom pupa</label>
+        <race>BMT_BoomPupa</race>
+        <combatPower>0</combatPower>
+        <ecoSystemWeight>1.1</ecoSystemWeight>
+        <wildGroupSize>1</wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BMT_Caverns/Things/Animal/BeetlePupae/BoomPupa</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BMT_Caverns/Things/Animal/BeetlePupae/BoomPupa</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+	 </PawnKindDef>
+		
+		<ThingDef ParentName="AnimalThingBase">
+        <defName>BMT_BoomMoth</defName>
+        <label>boom moth</label>
+        <description>The adult form of the boomapillar. Despite being flightless and less volatile than its larval state it is still dangerous as its body continues to refine dangerous chemicals. It excretes these chemicals as waste.</description>
+        <statBases>
+            <MoveSpeed>3.4</MoveSpeed>
+            <MarketValue>350</MarketValue>
+			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
+			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+            <FilthRate>19</FilthRate>
+        </statBases>
+        <race>
+			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+			<executionRange>3</executionRange>
+            <body>BeetleLike</body>
+            <leatherDef>BMT_WeakChitin</leatherDef>
+            <herdAnimal>false</herdAnimal>
+			<baseHungerRate>0.535</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.65</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <predator>false</predator>
+            <wildness>0.60</wildness>
+            <lifeExpectancy>10</lifeExpectancy>
+            <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
+            <trainability>None</trainability>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+                    <soundDeath>Pawn_Megascarab_Death</soundDeath>
+                    <soundCall>Pawn_Megascarab_Call</soundCall>
+                    <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+		<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
+			<harvestIntervalDays>2</harvestIntervalDays>
+			<baseResourceAmount>5</baseResourceAmount>
+			<thingDef>BMT_BoomSpore</thingDef>
+			<resourceGrowthReportString>BMT_BoomSporeGrowth</resourceGrowthReportString>
+		</li>	
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>BMT_EggBoomapillarFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>10</eggFertilizationCountMax>
+                <eggLayIntervalDays>23.64</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>3~4</eggCountRange>
+            </li>
+			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			</li>
+        </comps>
+        <tools>
+            <li>
+				<label>proboscis</label>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>4</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.85</chanceFactor>
+            </li>
+        </tools>
+        <tradeTags>
+            <li>AnimalInsect</li>
+            <li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BMT_BoomMoth</defName>
+        <label>boom moth</label>
+        <race>BMT_BoomMoth</race>
+        <combatPower>70</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+        <wildGroupSize>1</wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BMT_Caverns/Things/Animal/BoomMoth/BoomMoth</texPath>
+                    <drawSize>1.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BMT_Caverns/Things/Animal/BoomMoth/BoomMoth</texPath>
+                    <drawSize>1.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+		
+<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggBoomapillarFertilized</defName>
+		<label>boomapillar egg (fert.)</label>
+		<description>A fertilized boomapillar egg. If all goes well, it should hatch into a baby boomapillar.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(255,225,165)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>30.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Boomapillar</hatcherPawn>
+			</li>
+		</comps>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+	</ThingDef>
+</Defs>

@@ -26,8 +26,8 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.5~0.8</visualSizeRange>
+			<maxMeshCount>2</maxMeshCount>
+			<visualSizeRange>0.9~1.2</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>

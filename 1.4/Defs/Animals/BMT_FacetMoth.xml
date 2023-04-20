@@ -7,7 +7,7 @@
 		<description>The larval form of the facet moth. While its body may look spiky and hard, it's actually a form of natural mimicry to deter predators.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -15,7 +15,7 @@
 		<race>
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
-			<leatherDef>BMT_WeakChitin</leatherDef>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
@@ -136,6 +136,7 @@
 		<description>The pupal form of the facet moth. While immobile, its hard shell protects it from most predators.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
+			<LeatherAmount>5</LeatherAmount>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<MarketValue>100</MarketValue>
@@ -143,7 +144,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<race>
-			<leatherDef>BMT_WeakChitin</leatherDef>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
@@ -235,7 +236,7 @@
 		</statBases>
 		<race>
 			<body>BeetleLike</body>
-			<leatherDef>BMT_WeakChitin</leatherDef>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>0.77</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
