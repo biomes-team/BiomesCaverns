@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="AnimalThingBase">
-    <defName>Thrumbungus</defName>
+    <defName>BMT_Thrumbungus</defName>
     <label>thrumbungus</label>
     <description>A gigantic, fungal amalgam creature. Rumor in the UnderRim has it that it was created from a mix of a genetics experiment creature and the fungi that feasted on its corpse.\n\nWhile gentle by nature, it is extremely dangerous when enraged. The strange hide that covers much of it is exceptionally beautiful and incredibly resistant to damage.</description>
     <statBases>
@@ -120,9 +120,9 @@
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Thrumbungus</defName>
+    <defName>BMT_Thrumbungus</defName>
     <label>thrumbungus</label>
-    <race>Thrumbungus</race>
+    <race>BMT_Thrumbungus</race>
     <combatPower>500</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>1</ecoSystemWeight>
