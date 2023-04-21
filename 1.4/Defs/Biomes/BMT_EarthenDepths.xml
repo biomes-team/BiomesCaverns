@@ -12,6 +12,10 @@
         <cavernShapes>
           <li>TunnelNetwork</li>
         </cavernShapes>
+				<extraCarriers>
+					<BMT_FoundryBeetle>1</BMT_FoundryBeetle>
+				</extraCarriers>
+				<extraCarriersRelativeWeight>100</extraCarriersRelativeWeight>
       </li>
       <li Class="GeologicalLandforms.BiomeProperties">
         <applyToCaves>true</applyToCaves>
