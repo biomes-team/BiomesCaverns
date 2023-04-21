@@ -102,8 +102,8 @@
 	<ecoSystemWeight>1</ecoSystemWeight>
 	<lifeStages>
 	  <li>
-		<label>thrumbo calf</label>
-		<labelPlural>thrumbo calves</labelPlural>
+		<label>acid slug larva</label>
+		<labelPlural>acid slug larvae</labelPlural>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/AcidSlug/AcidSlug</texPath>
 		  <drawSize>2.5</drawSize>
