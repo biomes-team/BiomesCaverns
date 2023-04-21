@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BC_PawnDefOf.cs" />
     <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="BiomesCaverns.cs" />
@@ -46,6 +47,7 @@
     <Compile Include="CompSpawnDust.cs" />
     <Compile Include="DrillPodIncoming.cs" />
     <Compile Include="CompCleanFilthAround.cs" />
+    <Compile Include="IncidentWorker_ThrumbungusPasses.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
