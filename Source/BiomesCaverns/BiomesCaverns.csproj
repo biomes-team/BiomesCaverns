@@ -53,6 +53,7 @@
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_RandomDropSpot_Patch.cs" />
     <Compile Include="Patches\DropPodUtility_MakeDropPodAt_Patch.cs" />
+    <Compile Include="Patches\ThrumboEvent.cs" />
     <Compile Include="Patches\TravelingTransportPods_Arrived_Patch.cs" />
     <Compile Include="Patches\TravelingTransportPods_TraveledPctStepPerTick_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
