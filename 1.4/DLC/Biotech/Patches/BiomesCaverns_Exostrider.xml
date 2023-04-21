@@ -12,4 +12,10 @@
 			<allowFoggedPositions>true</allowFoggedPositions>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GenStepDef[defName="AncientExostriderRemains"]/genStep</xpath>
+		<value>
+			<spotMustBeStandable>true</spotMustBeStandable>
+		</value>
+	</Operation>
 </Patch>
