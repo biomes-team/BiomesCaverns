@@ -1,11 +1,23 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using Verse;
 
 namespace BiomesCaverns.Patches
 {
+	// GenStep_ScatterGroup.CanSpawn uses an internal type to access the current map. This makes postfixing
+	// it a complicated issue. Instead, we store a reference to the map when the parent method is called.
+	[HarmonyPatch(typeof(GenStep_ScatterGroup), "CalculateScatterInformation")]
+	internal static class GenStep_ScatterGroup_CalculateScatterInformation
+	{
+		public static Map currentMap;
+
+		internal static void Prefix(IntVec3 loc, Map map)
+		{
+			currentMap = map;
+		}
+	}
+
 	[HarmonyPatch]
 	internal static class GenStep_ScatterGroup_CanSpawn
 	{
@@ -31,14 +43,12 @@ namespace BiomesCaverns.Patches
 
 		internal static void Postfix(ref bool __result, ThingDef def, IntVec3 cell)
 		{
-			/*
 			if (__result == false || !StalagmiteDefs.Contains(def))
 			{
 				return;
 			}
 
-			__result = cell.GetTerrain(__instance.map).smoothedTerrain != null;
-			*/
+			__result = cell.GetTerrain(GenStep_ScatterGroup_CalculateScatterInformation.currentMap).smoothedTerrain != null;
 		}
 	}
 }
