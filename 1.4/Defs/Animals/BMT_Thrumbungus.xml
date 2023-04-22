@@ -139,7 +139,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Dessicated_Thrumbungus</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -153,7 +153,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Dessicated_Thrumbungus</texPath>
           <drawSize>4.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -167,7 +167,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Thrumbungus</texPath>
+          <texPath>BMT_Caverns/Things/Animal/Thrumbungus/Dessicated_Thrumbungus</texPath>
           <drawSize>4.8</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>

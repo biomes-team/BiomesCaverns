@@ -31,21 +31,13 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>2</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<visualSizeRange>0.3~1.5</visualSizeRange>
+			<visualSizeRange>0.5~1.5</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<purpose>Beauty</purpose>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
-			<harvestYield>2</harvestYield>
-			<sowWork>750</sowWork>
-			<sowTags>
-				<li>Ground</li>
-				<li>Decorative</li>
-			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

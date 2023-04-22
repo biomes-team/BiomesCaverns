@@ -26,8 +26,8 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<maxMeshCount>2</maxMeshCount>
-			<visualSizeRange>0.9~1.2</visualSizeRange>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.7~0.9</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
@@ -36,10 +36,6 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<harvestYield>5</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-				<li>Decorative</li>
-			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	<comps>

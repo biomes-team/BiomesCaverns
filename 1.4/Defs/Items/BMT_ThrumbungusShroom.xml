@@ -64,7 +64,7 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="CompProperties_Explosive">
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_Explosive">
 				<explosiveRadius>1.1</explosiveRadius>
 				<explosiveDamageType>ToxGas</explosiveDamageType>
 				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>

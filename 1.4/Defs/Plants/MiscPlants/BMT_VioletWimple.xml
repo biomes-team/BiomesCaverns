@@ -34,10 +34,7 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawFungus</harvestedThingDef>
-			<harvestYield>2</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
+			<harvestYield>4</harvestYield>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

@@ -50,6 +50,43 @@
 		<destroyEffect>Bridge_Collapse</destroyEffect>
 		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
 	</TerrainDef>
+	
+		<TerrainDef>
+		<defName>BMT_HeavyBridgeMushroom</defName>
+		<label>heavy mushroom bridge</label>
+		<description>A flat mushroom surface on extra-strong supportive beams which can be built over water. You can build heavy structures on this bridge, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
+		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/HeavyMushroomBridge_MenuIcon</uiIconPath>
+		<layerable>true</layerable>
+		<bridge>true</bridge>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<designationCategory>Structure</designationCategory>
+		<fertility>0</fertility>
+		<constructEffect>ConstructWood</constructEffect>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>400</renderPrecedence>
+		<autoRebuildable>true</autoRebuildable>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>12</BMT_MushroomLog>
+			<Steel>5</Steel>
+		</costList>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+		<destroyEffect>Bridge_Collapse</destroyEffect>
+		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+	</TerrainDef>
 
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>BMT_MagmaAsh</defName>

@@ -37,9 +37,6 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<harvestYield>2</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

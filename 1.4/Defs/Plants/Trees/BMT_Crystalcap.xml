@@ -21,6 +21,7 @@
             <harvestYield>40</harvestYield>
 			<wildOrder>3</wildOrder>
             <neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
         </plant>
     </ThingDef>
 </Defs>

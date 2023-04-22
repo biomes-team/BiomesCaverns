@@ -35,6 +35,7 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<sowTags>
 				<li>Ground</li>
+				<li>Decorative</li>
 			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>

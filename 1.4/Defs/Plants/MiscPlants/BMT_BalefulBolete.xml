@@ -3,12 +3,13 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_BalefulBolete</defName>
 		<label>baleful bolete</label>
-		<description>A big blue capped mushroom that grows to roughly the size of a bush.</description>
+		<description>A big blue capped mushroom that grows to roughly the size of a bush. It's often used as growable decor.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/BalefulBolete</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
+			<Beauty>12</Beauty>
 			<Nutrition>1.25</Nutrition>
 			<Flammability>0.35</Flammability>
 		</statBases>
@@ -36,6 +37,7 @@
 			<harvestYield>2</harvestYield>
 			<sowTags>
 				<li>Ground</li>
+				<li>Decorative</li>
 			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>

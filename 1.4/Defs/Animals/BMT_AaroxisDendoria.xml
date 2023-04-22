@@ -3,7 +3,7 @@
 	<!-- Larvae -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaLarvae</defName>
-		<label>aaroxis dendoria larvae</label>
+		<label>cinnabar caterpillar</label>
 		<description>A unique species of moth larva with a spiraling body pattern rather than the normal segmented. It is thought to be a genetic anomaly from its engineered creation. The crimson-colored silk it produces is luxuriously soft.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
