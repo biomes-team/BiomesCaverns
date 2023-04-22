@@ -63,6 +63,11 @@
 			<li Class="AnimalBehaviours.CompProperties_Regeneration" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<rateInTicks>400</rateInTicks>
 			</li>
+			<li Class="BiomesCore.CompProperties_BottomFeeder">
+				<feedingTerrainTag>Water</feedingTerrainTag>
+				<consumingFoodReportString>Fishing.</consumingFoodReportString>
+				<effecterDef>EatFish</effecterDef>
+			</li>
 		</comps>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
