@@ -86,15 +86,14 @@
   <GenStepDef>
 	<order>320</order>
 	<defName>BMT_ScatterStalagmiteGenerator</defName>
-	<!-- Checks for the presence of the word ("BMT_CrystalCaverns" or "BMT_ShallowCave" or "BMT_FungalForest" or "BMT_EarthenDepths") in the biome defName -->
 	<genStep Class="BMT.GenStep_ScatterStalagmite">
 	  <allowInWaterBiome>false</allowInWaterBiome>
 	  <minSpacing>5</minSpacing>
-	  <countPer10kCellsRange>10.0~15.0</countPer10kCellsRange>
+	  <countPer10kCellsRange>8.0~12.0</countPer10kCellsRange>
 	  <spotMustBeStandable>true</spotMustBeStandable>
 	  <allowRoofed>true</allowRoofed>
 	  <validators>
-		<li Class="ScattererValidator_Buildable">
+		  <li Class="BiomesCaverns.GenSteps.ScattererValidator_RoughRockBuildable">
 		  <radius>5</radius>
 		  <affordance>Heavy</affordance>
 		</li>
@@ -108,7 +107,7 @@
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
-		  <clusterRectRadius>3~5</clusterRectRadius>
+		  <clusterRectRadius>2~4</clusterRectRadius>
 		</li>
 		<li>
 		  <things>
@@ -118,17 +117,16 @@
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
-		  <clusterRectRadius>4~5</clusterRectRadius>
+		  <clusterRectRadius>3~4</clusterRectRadius>
 		</li>
 		<li>
 		  <things>
 			<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
 			<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
-			<!-- <BMT_Crystal_BlueHuge>0.0833</BMT_Crystal_BlueHuge> -->
 		  </things>
 		  <indoorRuin>false</indoorRuin>
 		  <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
-		  <clusterRectRadius>4~5</clusterRectRadius>
+		  <clusterRectRadius>3~4</clusterRectRadius>
 		</li>
 	  </groups>
 	</genStep>
