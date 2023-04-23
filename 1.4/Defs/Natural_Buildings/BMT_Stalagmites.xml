@@ -20,6 +20,8 @@
 	  <Beauty>9</Beauty>
 	  <MaxHitPoints>50</MaxHitPoints>
 	</statBases>
+	  <neverOverlapFloors>true</neverOverlapFloors>
+	  <blockPlants>true</blockPlants>
 	<building>
 		<alwaysDeconstructible>true</alwaysDeconstructible>
 	  <claimable>false</claimable>
