@@ -192,11 +192,12 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>BMT_MagmaStone</defName>
 		<label>tachylite</label>
-		<texturePath>BMT_Caverns/Terrains/MagmaStone_2</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/MagmaStone_2</pollutedTexturePath>
+		<texturePath>BMT_Caverns/Terrains/MagmaStone</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/MagmaStone</pollutedTexturePath>
 		<edgeType>Fade</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>16</pathCost>
+		<extraNonDraftedPerceivedPathCost>50</extraNonDraftedPerceivedPathCost>
 		<statBases>
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
