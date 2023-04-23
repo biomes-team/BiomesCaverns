@@ -36,7 +36,7 @@
 						<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
 					</value>
 				</li>
-				<li Class="PatchOperationAddModExtension">
+				<!--li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/TerrainDef[defName="BMT_BridgeMushroom"]</xpath>
 					<value>
 						<li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
@@ -44,7 +44,7 @@
 							<rightPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightPath>
 						</li>
 					</value>
-				</li>
+				</li-->
 			</operations>
 		</match>
 	</Operation>
