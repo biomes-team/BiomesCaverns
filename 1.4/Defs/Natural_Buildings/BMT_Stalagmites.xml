@@ -24,6 +24,12 @@
 	  <deconstructible>true</deconstructible>
 	  <claimable>false</claimable>
 	</building>
+	<comps>
+		<li>
+			<compClass>CompColorable</compClass>
+		</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompTerrainRecolor" />
+	</comps>
 	<!-- <stuffCategories> -->
 	  <!-- <li>Stony</li> -->
 	<!-- </stuffCategories> -->
