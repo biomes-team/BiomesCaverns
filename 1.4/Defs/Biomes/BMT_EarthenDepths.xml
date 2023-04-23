@@ -9,6 +9,7 @@
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">
         <isCavern>true</isCavern>
+        <alwaysGrowthSeason>true</alwaysGrowthSeason>
         <cavernShapes>
           <li>TunnelNetwork</li>
         </cavernShapes>
@@ -22,6 +23,7 @@
         <overrideLandforms>
           <li>BMT_EarthenDepths</li>
         </overrideLandforms>
+        <allowLandforms>false</allowLandforms>
         <allowBiomeTransitions>false</allowBiomeTransitions>
         <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
         <worldTileOverrides>

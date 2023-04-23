@@ -18,6 +18,7 @@
 				<overrideLandforms>
 					<li>BMT_FungalForest</li>
 				</overrideLandforms>
+				<allowLandforms>false</allowLandforms>
 				<allowBiomeTransitions>false</allowBiomeTransitions>
 				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
 				<worldTileGraphicAtlas>
