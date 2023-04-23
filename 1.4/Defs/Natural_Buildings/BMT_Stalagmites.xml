@@ -21,7 +21,7 @@
 	  <MaxHitPoints>50</MaxHitPoints>
 	</statBases>
 	<building>
-	  <deconstructible>true</deconstructible>
+		<alwaysDeconstructible>true</alwaysDeconstructible>
 	  <claimable>false</claimable>
 	</building>
 	<comps>
@@ -30,23 +30,6 @@
 		</li>
 		<li Class="BiomesCore.ThingComponents.CompProperties_CompTerrainRecolor" />
 	</comps>
-	<!-- <stuffCategories> -->
-	  <!-- <li>Stony</li> -->
-	<!-- </stuffCategories> -->
-	<!-- <costStuffCount>1</costStuffCount> -->
-	<!-- <useStuffTerrainAffordance>true</useStuffTerrainAffordance> -->
-	<!-- <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> -->
-	<!-- <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled> -->
-	<!-- <damageMultipliers> -->
-	  <!-- <li> -->
-		<!-- <damageDef>Bomb</damageDef> -->
-		<!-- <multiplier>2</multiplier> -->
-	  <!-- </li> -->
-	  <!-- <li> -->
-		<!-- <damageDef>Thump</damageDef> -->
-		<!-- <multiplier>2</multiplier> -->
-	  <!-- </li> -->
-	<!-- </damageMultipliers> -->
   </ThingDef>
 
   <!-- ====================================================== -->
@@ -56,6 +39,11 @@
 	<graphicData>
 	  <drawSize>(2,2)</drawSize>
 	</graphicData>
+	<comps>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompChunksOnKilled">
+			<chunkCountRange>0~1</chunkCountRange>
+		</li>
+	</comps>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
@@ -63,6 +51,11 @@
 	<graphicData>
 	  <drawSize>(2.1,2.1)</drawSize>
 	</graphicData>
+	<comps>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompChunksOnKilled">
+			<chunkCountRange>0~2</chunkCountRange>
+		</li>
+	</comps>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
@@ -70,6 +63,11 @@
 	<graphicData>
 	  <drawSize>(2.25,2.25)</drawSize>
 	</graphicData>
+	<comps>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompChunksOnKilled">
+			<chunkCountRange>1~2</chunkCountRange>
+		</li>
+	</comps>
   </ThingDef>
   
 </Defs>
