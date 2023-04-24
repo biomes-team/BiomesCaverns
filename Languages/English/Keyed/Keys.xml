@@ -11,4 +11,7 @@
   <GeologicalLandforms.Landform.BMT_Mineshaft>mineshaft</GeologicalLandforms.Landform.BMT_Mineshaft>
   <GeologicalLandforms.Landform.BMT_Aquifer>aquifer</GeologicalLandforms.Landform.BMT_Aquifer>
 
+  <MustBeOnLava>must be build on lava or magma.</MustBeOnLava>
+  <LavaGeneratoor_lavaUsedTwice>Flow reduced: Turbulence from other lava generator</LavaGeneratoor_lavaUsedTwice>
+
 </LanguageData>

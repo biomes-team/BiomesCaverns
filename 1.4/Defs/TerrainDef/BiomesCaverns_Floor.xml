@@ -189,7 +189,7 @@
 		</modExtensions>
 	</TerrainDef>
 
-	<TerrainDef ParentName="NaturalTerrainBase">
+	<!--TerrainDef ParentName="NaturalTerrainBase">
 		<defName>BMT_MagmaStone</defName>
 		<label>tachylite</label>
 		<texturePath>BMT_Caverns/Terrains/MagmaStone</texturePath>
@@ -221,7 +221,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-	</TerrainDef>
+	</TerrainDef-->
 
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>BMT_Crystal</defName>
