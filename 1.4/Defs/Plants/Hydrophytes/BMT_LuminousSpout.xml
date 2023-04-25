@@ -10,7 +10,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
-			<Flammability>0.15</Flammability>
+			<Flammability>0.0</Flammability>
 			<Nutrition>0.30</Nutrition>
 		</statBases>
 		<plant>
@@ -19,7 +19,7 @@
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>9</maxMeshCount>
 			<visualSizeRange>0.3~0.5</visualSizeRange>
-			<topWindExposure>0.3</topWindExposure>
+			<topWindExposure>0.05</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
@@ -39,6 +39,8 @@
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
 				</terrainTags>
 				<growingHours>0.75~0.25</growingHours>
 			</li>

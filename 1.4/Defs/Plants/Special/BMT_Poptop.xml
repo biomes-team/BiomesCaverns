@@ -9,64 +9,42 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Nutrition>1</Nutrition>
-			<Mass>50</Mass>
 			<Flammability>0</Flammability>
 		</statBases>
-		<passability Inherit="False"/>
-		<pathCost>30</pathCost>
 		<blockWind>false</blockWind>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>1</growDays>
             <dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
-			<soundHarvesting>Harvest_Standard</soundHarvesting>
-			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
-            <neverBlightable>true</neverBlightable>
-			<harvestTag Inherit="False" />
+			<pollution>Any</pollution>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<blockAdjacentSow>false</blockAdjacentSow>
 			<harvestedThingDef Inherit="False" />
 			<harvestYield Inherit="False" />
-			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-			<sowResearchPrerequisites Inherit="False" />
-			<interferesWithRoof>false</interferesWithRoof>
+			<sowResearchPrerequisites  Inherit="False" />
 		</plant>
-		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
-		<minifiedDef>MinifiedTree</minifiedDef>
-		<rotatable>false</rotatable>
+		<specialDisplayRadius>5</specialDisplayRadius>
 		<comps>
-			<!-- disabled for now to prevent error
-			
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>3.9</explosiveRadius>
+			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
+				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Extinguish</explosiveDamageType>
 				<postExplosionSpawnThingDef>Filth_Water</postExplosionSpawnThingDef>
 				<postExplosionSpawnChance>1</postExplosionSpawnChance>
 				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 				<explosionEffect>ExtinguisherExplosion</explosionEffect>
-				<startWickOnDamageTaken>
-					<li>Bullet</li>
-					<li>Flame</li>
-					<li>Arrow</li>
-					<li>ArrowHighVelocity</li>
-				</startWickOnDamageTaken>
+				<explosionSound>BMT_WaterSplash</explosionSound>
+				<proxiTarget>Fire</proxiTarget>
+				<proxiRadius>4.9</proxiRadius>
+				<growthProgress>0.6</growthProgress>
+				<growthAfterExplosion>0.4</growthAfterExplosion>
 			</li>
-			<li Class="CompProperties_ProximityFuse">
-				<target>Fire</target>
-				<radius>3</radius>
-			</li>
-			
-			-->
 		</comps>
 	</ThingDef>
 

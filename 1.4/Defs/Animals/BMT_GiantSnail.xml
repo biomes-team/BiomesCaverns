@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GiantSnail</defName>
 		<label>giant snail</label>
-		<description>A gigantic herd snail, used as a pack animal by many cavern-dwelling societies. Its ability to adhere to and climb virtually any surface makes it invaluable for any traders or travelers underground.</description>
+		<description>A gigantic herd snail used as a pack animal by many cavern-dwelling societies. Its ability to adhere to and climb virtually any surface makes it invaluable for traders or travelers underground.</description>
 		<statBases>
 			<MoveSpeed>2.6</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -11,15 +11,46 @@
 			<MarketValue>100</MarketValue>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
 		</statBases>
 		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_GiantSnailDefense</li>
+				</hediffs>
+				<graphicSuffix>Shell</graphicSuffix>
+				<duration>750</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggGiantSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggGiantSnailFertilized</eggFertilizedDef>
-				<eggLayIntervalDays>12</eggLayIntervalDays>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>Filth_Slime</filthDef>
+				<cooldown>8</cooldown>
+			</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GiantSnail/SnailSleeping</texPath>
+        <drawSize>1.45</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GiantSnail/SnailSleeping</texPath>
+        <drawSize>2.1</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GiantSnail/SnailSleeping</texPath>
+        <drawSize>2.85</drawSize>
+      </li>
+    </sleepGraphicData>
+  </li>
 		</comps>
 		<tools>
 			<li>
@@ -27,14 +58,16 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>13</power>
+				<power>14</power>
 				<cooldownTime>2.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
 		<race>
-			<herdAnimal>false</herdAnimal>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
+			<herdAnimal>true</herdAnimal>
 			<body>BiomesCore_Snail</body>
 			<baseHungerRate>0.605</baseHungerRate>
 			<baseBodySize>2.6</baseBodySize>
@@ -86,6 +119,7 @@
 		<label>giant snail</label>
 		<race>BMT_GiantSnail</race>
 		<combatPower>75</combatPower>
+		<wildGroupSize>3~4</wildGroupSize>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
@@ -120,13 +154,35 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_GiantSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggGiantSnailFertilized</defName>
 		<label>giant snail egg (fert.)</label>
 		<description>A fertilized giant snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(102,84,49)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(167,198,153)</color>
 			<drawSize>1.7</drawSize>
 		</graphicData>
 		<statBases>
@@ -139,19 +195,5 @@
 				<hatcherPawn>BMT_GiantSnail</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggGiantSnailUnfertilized</defName>
-		<label>giant snail egg (unfert.)</label>
-		<description>An unfertilized giant snail egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(102,84,49)</color>
-			<drawSize>1.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
 	</ThingDef>
 </Defs>

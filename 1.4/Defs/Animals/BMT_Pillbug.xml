@@ -6,13 +6,12 @@
 		<description>This large isopod is in a way, the bottom of the cavern food chain. It feeds on virtually any filth it finds, keeping the tunnels and catacombs clean.</description>
 		<statBases>
 			<MoveSpeed>2.75</MoveSpeed>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>
 			<FilthRate>0</FilthRate>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<!-- <uiIconScale>2</uiIconScale> -->
 		<tools>
@@ -87,23 +86,30 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-        <modExtensions>
-            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
-                <isCustomThingEater>true</isCustomThingEater>
-            </li>
-        </modExtensions>
 		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_PillbugDefense</li>
+				</hediffs>
+				<graphicSuffix>Rolled</graphicSuffix>
+				<duration>750</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggPillbugUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggPillbugFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>2~4</eggCountRange>
 			</li>
 			<li Class="BiomesCore.CompProperties_CustomThingEater">
 				<filthNutrition>0.3</filthNutrition>
 			</li>
 		</comps>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+                <isCustomThingEater>true</isCustomThingEater>
+            </li>
+        </modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
@@ -129,17 +135,17 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
-					<drawSize>0.80</drawSize>
+					<drawSize>0.90</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
-					<drawSize>0.80</drawSize>
+					<drawSize>0.90</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Pillbug</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>2.0</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
@@ -147,17 +153,39 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Pillbug/Dessicated_Pillbug</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_PillbugDefense</defName>
+		<label>rolled up</label>
+		<description>Rolled up for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggPillbugFertilized</defName>
 		<label>pillbug egg (fert.)</label>
 		<description>A pillbug egg. If all goes well, it should hatch into a baby pillbug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(71,71,70)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -170,19 +198,6 @@
 				<hatcherPawn>BMT_Pillbug</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggPillbugUnfertilized</defName>
-		<label>pillbug egg (unfert.)</label>
-		<description>An unfertilized pillbug egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(71,71,70)</color>
-			<drawSize>0.8</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>10.0</MarketValue>
-		</statBases>
 	</ThingDef>
 </Defs>
 

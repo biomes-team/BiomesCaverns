@@ -13,13 +13,43 @@
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 		</statBases>
 		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_GlowSnailDefense</li>
+				</hediffs>
+				<graphicSuffix>Shell</graphicSuffix>
+				<duration>750</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggGlowSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggGlowSnailFertilized</eggFertilizedDef>
-				<eggLayIntervalDays>6</eggLayIntervalDays>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>Filth_Slime</filthDef>
+				<cooldown>8</cooldown>
+			</li>
+		  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailSleeping</texPath>
+        <drawSize>0.95</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailSleeping</texPath>
+        <drawSize>1.3</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailSleeping</texPath>
+        <drawSize>1.9</drawSize>
+      </li>
+    </sleepGraphicData>
+  </li>
 		</comps>
 		<tools>
 			<li>
@@ -27,13 +57,15 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>7</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
 		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
 			<herdAnimal>false</herdAnimal>
 			<body>BiomesCore_Snail</body>
 			<baseHungerRate>0.12</baseHungerRate>
@@ -113,23 +145,45 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnail</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>1.9</drawSize>
 					<shaderType>TransparentPostLight</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/GlowSnail/Dessicated_GlowSnail</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>1.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_GlowSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggGlowSnailFertilized</defName>
 		<label>glowsnail egg (fert.)</label>
 		<description>A fertilized glowsnail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(62,227,227)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(138,226,226)</color>
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<statBases>
@@ -138,23 +192,9 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherDaystoHatch>7</hatcherDaystoHatch>
 				<hatcherPawn>BMT_GlowSnail</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggGlowSnailUnfertilized</defName>
-		<label>glowsnail egg (unfert.)</label>
-		<description>An unfertilized glowsnail egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(62,227,227)</color>
-			<drawSize>0.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>23.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
 	</ThingDef>
 </Defs>

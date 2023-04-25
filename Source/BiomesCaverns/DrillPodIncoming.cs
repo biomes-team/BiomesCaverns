@@ -13,7 +13,7 @@ namespace BiomesCaverns
             set => ((ActiveDropPod)innerContainer.GetAt(0)).Contents = value;
         }
 
-        public override void SpawnThings()
+        protected override void SpawnThings()
         {
             if (!Contents.spawnWipeMode.HasValue)
             {
@@ -26,12 +26,7 @@ namespace BiomesCaverns
             }
         }
 
-        public override void HitRoof()
-        {
-
-        }
-
-        public override void Impact()
+        protected override void Impact()
         {
             if (def.skyfaller.CausesExplosion)
             {

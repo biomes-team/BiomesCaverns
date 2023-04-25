@@ -10,22 +10,26 @@
 		</graphicData>
 		<statBases>
 			<Nutrition>1.0</Nutrition>
+			<Flammability>0.0</Flammability>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.5~0.99</growingHours>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
 		</modExtensions>
 		<ingestible/>
 		<plant>
 			<growMinGlow>0.5</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>0.3~0.7</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
+			<visualSizeRange>0.5~0.9</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>

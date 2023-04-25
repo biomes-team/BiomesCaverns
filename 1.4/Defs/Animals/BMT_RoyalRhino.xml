@@ -10,11 +10,10 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>5</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
@@ -23,6 +22,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
@@ -63,7 +63,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_RoyalRhinoPupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -74,15 +74,15 @@
 					<li>Bite</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>5</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>head</label>
+				<label>horn</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>4</power>
+				<power>25</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -146,11 +146,10 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -188,7 +187,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>17</ageInDays>
 				<evolveIntoPawnKindDef>BMT_RoyalRhino</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -244,7 +243,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>500</MarketValue>
 			<FilthRate>4</FilthRate>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>5</LeatherAmount>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>
@@ -339,10 +338,9 @@
 		</ingredient>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggRoyalRhinoUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggRoyalRhinoFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>10</eggLayIntervalDays>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
@@ -364,21 +362,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>1.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>2.4</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>HornAttackTool</bodyPartGroup>
@@ -388,7 +386,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/RoyalRhino</texPath>
-					<drawSize>2.2</drawSize>
+					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
@@ -396,7 +394,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/RoyalRhinoBeetle/Dessicated_RoyalRhino</texPath>
-					<drawSize>2.2</drawSize>
+					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>HornAttackTool</bodyPartGroup>
@@ -411,8 +409,8 @@
 		<label>royal rhino beetle egg (fert.)</label>
 		<description>A royal rhino beetle egg. If all goes well, it should hatch into a royal rhino grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(74, 51, 87)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(170, 109, 159)</color>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>
@@ -422,24 +420,9 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_RoyalRhinoLarvae</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggRoyalRhinoUnfertilized</defName>
-		<label>royal rhino beetle egg (unfert.)</label>
-		<description>An unfertilized royal rhino beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(74, 51, 87)</color>
-			<drawSize>1.3</drawSize>
-		</graphicData>
-		<statBases>
-			<Mass>0.50</Mass>
-			<MarketValue>70.0</MarketValue>
-			<MaxHitPoints>60</MaxHitPoints>
-		</statBases>
 	</ThingDef>
 </Defs>

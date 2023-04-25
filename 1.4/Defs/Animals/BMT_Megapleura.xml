@@ -7,6 +7,8 @@
 	<description>A relative of the trilobite beetle that has grown to massive proportions while living deep within the crust of the Rim. While odd in appearance, it is largely harmless.</description>
 	<statBases>
 	  <MoveSpeed>7.5</MoveSpeed>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 	  <MarketValue>300</MarketValue>
 	  <ComfyTemperatureMin>-55</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -68,11 +70,11 @@
 	</tradeTags>
 	<tools>
 	  <li>
-		<label>head claw</label>
+		<label>mandibles</label>
 		<capacities>
 		  <li>Cut</li>
 		</capacities>
-		<power>22</power>
+		<power>14</power>
 		<cooldownTime>2.6</cooldownTime>
 		<armorPenetration>0.9</armorPenetration>
 		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
@@ -102,7 +104,7 @@
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/Megapleura/Megapleura</texPath>
-		  <drawSize>1.5</drawSize>
+		  <drawSize>1.25</drawSize>
 		  <shadowData>
 			<volume>(0.4, 0.3, 0.3)</volume>
 			<offset>(0,0,-0.2)</offset>
@@ -112,7 +114,7 @@
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/Megapleura/Megapleura</texPath>
-		  <drawSize>2.25</drawSize>
+		  <drawSize>2</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
 			<offset>(0,0,-0.25)</offset>
@@ -122,7 +124,7 @@
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/Megapleura/Megapleura</texPath>
-		  <drawSize>3</drawSize>
+		  <drawSize>2.5</drawSize>
 		  <shadowData>
 			<volume>(0.8, 0.6, 0.6)</volume>
 			<offset>(0,0,-0.3)</offset>
@@ -137,7 +139,8 @@
 		<label>megapleura egg (fert.)</label>
 		<description>A fertilized megapleura egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<color>(230,212,193)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(114,178,151)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
 		<statBases>

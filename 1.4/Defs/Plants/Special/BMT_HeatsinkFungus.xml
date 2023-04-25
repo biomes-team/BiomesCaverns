@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_HeatsinkFungus</defName>
 		<label>heatsink fungus</label>
 		<description>Using a complex mix of chemical reactions, this fungus draws in heat to help fuel its growth. Deep-dwelling troglodytes use its heat-drawing ability to cool off their homes.</description>
@@ -10,23 +10,22 @@
 		</graphicData>
 		<statBases>
 			<Nutrition>1</Nutrition>
-			<Flammability>0.1</Flammability>
+			<Flammability>0.0</Flammability>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.01~0.99</growingHours>
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
 			</li>
 		</modExtensions>
 		<ingestible/>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<maxMeshCount>1</maxMeshCount>
 			<visualSizeRange>0.3~0.7</visualSizeRange>
-			<topWindExposure>0.2</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>1</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>3</wildOrder>
@@ -34,7 +33,13 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<interferesWithRoof>false</interferesWithRoof>
+			<harvestedThingDef Inherit="False"/>
+			<harvestYield Inherit="False"/>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
+			<sowResearchPrerequisites Inherit="False" />
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 		<comps>
 			<li Class="CompProperties_HeatPusher">

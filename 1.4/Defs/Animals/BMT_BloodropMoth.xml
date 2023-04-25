@@ -4,14 +4,13 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_BloodropLarvae</defName>
         <label>bloodrop larvae</label>
-        <description>The larval form of the bloodrop moth. It gains its necessary nutrients for growth by feeding on the blood of any creature large enough. A small group of them can drain a large animal to death in minutes.</description>
+        <description>The larval form of the bloodrop moth. It gains nutrients for growth by feeding on the blood of any large creature. A small group of them can drain even an elephant to death in minutes.</description>
         <statBases>
             <MoveSpeed>0.3</MoveSpeed>
             <LeatherAmount>0</LeatherAmount>
             <MarketValue>100</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
-            <ToxicResistance>1</ToxicResistance>
         </statBases>
         <race>
             <hasGenders>false</hasGenders>
@@ -65,13 +64,13 @@
         </modExtensions>
         <comps>
             <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-                <ageInDays>15</ageInDays>
+                <ageInDays>7</ageInDays>
                 <evolveIntoPawnKindDef>BMT_BloodropPupa</evolveIntoPawnKindDef>
             </li>
         </comps>
         <tools>
             <li>
-                <label>proboscis</label>
+                <label>mandibles</label>
                 <capacities>
                     <li>BMT_BloodSuck</li>
                 </capacities>
@@ -146,7 +145,6 @@
             <MarketValue>100</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
-            <ToxicResistance>1</ToxicResistance>
         </statBases>
         <race>
             <leatherDef>BMT_CrimsonSilk</leatherDef>
@@ -185,7 +183,7 @@
         <!--uiIconScale>1.5</uiIconScale-->
         <comps>
             <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-                <ageInDays>5</ageInDays>
+                <ageInDays>10</ageInDays>
                 <evolveIntoPawnKindDef>BMT_BloodropMoth</evolveIntoPawnKindDef>
             </li>
         </comps>
@@ -195,7 +193,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>0</power>
+                <power>1</power>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
             </li>
@@ -255,7 +253,7 @@
             <lifeExpectancy>10</lifeExpectancy>
             <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
-            <trainability>None</trainability>
+            <trainability>Intermediate</trainability>
             <useMeatFrom>Megaspider</useMeatFrom>
             <lifeStageAges>
                 <li>
@@ -275,9 +273,9 @@
             <li Class="CompProperties_EggLayer">
                 <eggFertilizedDef>BMT_BloodropMoth</eggFertilizedDef>
                 <eggFertilizationCountMax>20</eggFertilizationCountMax>
-                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggLayIntervalDays>15</eggLayIntervalDays>
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-                <eggCountRange>5~20</eggCountRange>
+                <eggCountRange>5~10</eggCountRange>
             </li>
 			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			</li>
@@ -288,7 +286,7 @@
                 <capacities>
                     <li>BMT_BloodSuck</li>
                 </capacities>
-                <power>6</power>
+                <power>14</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
             </li>
@@ -297,8 +295,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>5</power>
-                <cooldownTime>2</cooldownTime>
+                <power>8</power>
+                <cooldownTime>4</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.85</chanceFactor>
@@ -340,7 +338,8 @@
         <label>bloodrop moth egg (fert.)</label>
         <description>A fertilized bloodrop moth egg. If all goes well, it should hatch into a bloodrop larva. It can be eaten raw, but it's much better cooked.</description>
         <graphicData>
-            <color>(230,212,193)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+            <color>(198,151,151)</color>
             <drawSize>0.8</drawSize>
         </graphicData>
         <statBases>
@@ -352,45 +351,6 @@
                 <hatcherPawn>BMT_BloodropMoth</hatcherPawn>
             </li>
         </comps>
-    </ThingDef>
-
-    <ThingDef ParentName="ResourceBase">
-        <defName>BMT_CrimsonSilk</defName>
-        <label>crimson silk</label>
-        <description>A blood red silk produced by a species of subterranean moth. It is luxuriously soft.</description>
-        <graphicData>
-            <texPath>BMT_Caverns/Things/Item/CrimsonSilk</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>
-        <statBases>
-            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-            <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>5</MarketValue>
-            <Mass>0.01</Mass>
-            <Flammability>1.2</Flammability>
-            <DeteriorationRate>4</DeteriorationRate>
-        </statBases>
-        <burnableByRecipe>true</burnableByRecipe>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <minRewardCount>30</minRewardCount>
-        <stuffProps>
-            <categories>
-                <li>Fabric</li>
-            </categories>
-            <commonality>0.20</commonality>
-            <statFactors>
-                <Flammability>0.4</Flammability>
-                <MaxHitPoints>1.3</MaxHitPoints>
-                <Beauty>6</Beauty>
-            </statFactors>
-        </stuffProps>
-        <thingCategories>
-            <li>Wools</li>
-        </thingCategories>
     </ThingDef>
 
 </Defs>

@@ -14,14 +14,10 @@
 	  <MaxHitPoints>20</MaxHitPoints>
 	</statBases>
 	<plant>
-	  <maxMeshCount>4</maxMeshCount>
 	  <immatureGraphicPath>BMT_Caverns/Things/Crystals/BlueSmall</immatureGraphicPath>
 	  <visualSizeRange>0.4~0.8</visualSizeRange>
 	  <harvestedThingDef>BMT_ResourceBlueCrystal</harvestedThingDef>
 	  <harvestYield>6</harvestYield>
-	  <sowTags>
-		<li>Ground</li>
-	  </sowTags>
 	  <growDays>33.3</growDays>
 	  <harvestTag>Standard</harvestTag>
 	  <fertilityMin>0.0</fertilityMin>
@@ -31,7 +27,7 @@
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>1.75</glowRadius>
-		<glowColor>(40,40,90,0)</glowColor>
+		<glowColor>(119,189,239,0)</glowColor>
 	  </li>
 	  <!-- <li Class="BMT.CompProperties_ThingDefReplacer"> -->
 		<!-- <evolveIntoThingDef>BMT_Crystal_BlueMedium</evolveIntoThingDef> -->

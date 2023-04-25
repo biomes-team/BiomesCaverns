@@ -36,6 +36,7 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_AbyssalGrapes</harvestedThingDef>
 			<visualSizeRange>0.6~1.1</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>50</wildClusterWeight>

@@ -10,7 +10,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_CrystalFairyMole</defName>
 	<label>crystal fairy mole</label>
-	<description>Protective crystal plating covers the back of this mole species, allowing for greater protection from predators and hunters.</description>
+	<description>Crystal plating covers the back of this mole species, offering protection from predators and hunters.</description>
 	<statBases>
 	  <MoveSpeed>3.0</MoveSpeed>
 	  <MarketValue>250</MarketValue>
@@ -25,7 +25,7 @@
 		<capacities>
 		  <li>Scratch</li>
 		</capacities>
-		<power>9.7</power>
+		<power>7.5</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 	  </li>
@@ -34,7 +34,7 @@
 		<capacities>
 		  <li>Scratch</li>
 		</capacities>
-		<power>9.7</power>
+		<power>7.5</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 	  </li>
@@ -42,7 +42,7 @@
 		<capacities>
 		  <li>Bite</li>
 		</capacities>
-		<power>14.2</power>
+		<power>10</power>
 		<cooldownTime>2.6</cooldownTime>
 		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 		<chanceFactor>0.7</chanceFactor>
@@ -72,7 +72,7 @@
 	  <trainability>None</trainability>
 	  <wildness>0</wildness>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>
-	  <gestationPeriodDays>10</gestationPeriodDays>
+	  <gestationPeriodDays>11</gestationPeriodDays>
 	  <litterSizeCurve>
 		<points>
 		  <li>(0.5, 0)</li>

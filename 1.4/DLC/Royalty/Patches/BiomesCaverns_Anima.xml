@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]/comps</xpath>
+		<value>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
+				<graphicsPerBiome>
+					<li Class="BiomesCore.ThingComponents.BiomeGraphics">
+						<biomes>
+							<li>BMT_CrystalCaverns</li>
+							<li>BMT_FungalForest</li>
+							<li>BMT_EarthenDepths</li>
+						</biomes>
+						<graphicPath>BMT_Caverns/Things/Plant/Animu/Animushroom</graphicPath>
+					</li>
+				</graphicsPerBiome>
+			</li>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
 		<value>
-			<li Class="BiomesCaverns.DefModExtensions.PlantCavernGraphic">
-				<texPath>BMT_Caverns/Things/Plant/Animu/Animushroom</texPath>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
@@ -20,12 +34,32 @@
 			<growMinGlow>0</growMinGlow>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
+		<value>
+			<comps/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]/comps</xpath>
+		<value>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
+				<graphicsPerBiome>
+					<li Class="BiomesCore.ThingComponents.BiomeGraphics">
+						<biomes>
+							<li>BMT_CrystalCaverns</li>
+							<li>BMT_FungalForest</li>
+							<li>BMT_EarthenDepths</li>
+						</biomes>
+						<graphicPath>BMT_Caverns/Things/Plant/Animu/Animycelium</graphicPath>
+					</li>
+				</graphicsPerBiome>
+			</li>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
 		<value>
-			<li Class="BiomesCaverns.DefModExtensions.PlantCavernGraphic">
-				<texPath>BMT_Caverns/Things/Plant/Animu/Animycelium</texPath>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>

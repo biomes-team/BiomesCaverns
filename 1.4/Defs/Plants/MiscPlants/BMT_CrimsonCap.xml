@@ -26,8 +26,8 @@
             <growDays>5</growDays>
             <fertilityMin>0.05</fertilityMin>
             <maxMeshCount>4</maxMeshCount>
-            <visualSizeRange>0.6~0.7</visualSizeRange>
-            <topWindExposure>0.2</topWindExposure>
+            <visualSizeRange>0.8~1</visualSizeRange>
+            <topWindExposure>0</topWindExposure>
             <wildClusterRadius>8</wildClusterRadius>
             <wildClusterWeight>8</wildClusterWeight>
             <wildOrder>3</wildOrder>

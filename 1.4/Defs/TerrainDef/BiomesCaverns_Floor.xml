@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<TerrainDef ParentName="FloorBase">
 		<defName>BMT_WoodPlankFloorMushroom</defName>
 		<label>mushroom floor</label>
@@ -17,17 +18,23 @@
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
 	</TerrainDef>
-	<TerrainDef>
-		<defName>BMT_BridgeMushroom</defName>
+
+	<TerrainDef Abstract="True" Name="BMT_BridgeMushroomBase">
 		<label>mushroom bridge</label>
 		<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
 		<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
 		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
 		<layerable>true</layerable>
-		<bridge>true</bridge>
+		<!--bridge>true</bridge-->
 		<affordances>
 			<li>Light</li>
 		</affordances>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge">
+				<loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath>
+				<rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath>
+			</li>
+		</modExtensions>
 		<designationCategory>Structure</designationCategory>
 		<fertility>0</fertility>
 		<constructEffect>ConstructWood</constructEffect>
@@ -37,10 +44,9 @@
 		<autoRebuildable>true</autoRebuildable>
 		<statBases>
 			<WorkToBuild>1500</WorkToBuild>
-			<Flammability>0.8</Flammability>
+			<Flammability>0.25</Flammability>
 		</statBases>
 		<costList>
-			<BMT_MushroomLog>12</BMT_MushroomLog>
 		</costList>
 		<tags>
 			<li>Floor</li>
@@ -49,6 +55,45 @@
 		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
 		<destroyEffect>Bridge_Collapse</destroyEffect>
 		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+	</TerrainDef>
+
+	<TerrainDef ParentName="BMT_BridgeMushroomBase">
+		<defName>BMT_BridgeMushroom</defName>
+		<label>mushroom bridge</label>
+		<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
+		<affordances>
+			<li>Light</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0.25</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>12</BMT_MushroomLog>
+		</costList>
+		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="BMT_BridgeMushroomBase">
+		<defName>BMT_HeavyBridgeMushroom</defName>
+		<label>heavy mushroom bridge</label>
+		<description>A flat mushroom surface on extra-strong supportive beams which can be built over water. You can build heavy structures on this bridge, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/HeavyMushroomBridge_MenuIcon</uiIconPath>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.20</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>12</BMT_MushroomLog>
+			<Steel>5</Steel>
+		</costList>
+		<destroyOnBombDamageThreshold>55</destroyOnBombDamageThreshold>
 	</TerrainDef>
 
 	<TerrainDef ParentName="NaturalTerrainBase">
@@ -144,17 +189,59 @@
 		</modExtensions>
 	</TerrainDef>
 
+	<!--TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_MagmaStone</defName>
+		<label>tachylite</label>
+		<texturePath>BMT_Caverns/Terrains/MagmaStone</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/MagmaStone</pollutedTexturePath>
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>16</pathCost>
+		<extraNonDraftedPerceivedPathCost>180</extraNonDraftedPerceivedPathCost>
+		<extraDraftedPerceivedPathCost>18</extraDraftedPerceivedPathCost>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<fertility>0</fertility>
+		<takeFootprints>false</takeFootprints>
+		<tags>
+			<li>Glass</li>
+		</tags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Glass</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+	</TerrainDef-->
+
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>BMT_Crystal</defName>
 		<label>crystal</label>
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
 		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
+		<isPaintable>false</isPaintable>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>3</pathCost>
 		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<CleaningTimeFactor>0.75</CleaningTimeFactor>
+			<Cleanliness>0</Cleanliness>
 		</statBases>
 		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
 		</affordances>
 		<fertility>0</fertility>
 		<filthAcceptanceMask>
@@ -164,6 +251,44 @@
 		<tags>
 			<li>BMT_Crystal</li>
 		</tags>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_CrystalManMade</defName>
+		<label>crystal</label>
+		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
+		<isPaintable>false</isPaintable>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>3</pathCost>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<CleaningTimeFactor>0.75</CleaningTimeFactor>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<costList>
+			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+		</costList>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<fertility>0</fertility>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<takeFootprints>false</takeFootprints>
+		<tags>
+			<li>BMT_Crystal</li>
+		</tags>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
 
 </Defs>

@@ -5,7 +5,7 @@
 		<defName>BMT_WeakChitin</defName>
 		<label>brittle chitin</label>
 		<!-- small chitin t1 -->
-		<description>Chitin of a giant insect.</description>
+		<description>Chitin of a giant insect. It doesn't protect very well.</description>
 		<graphicData>
 			<color>(61,48,70)</color>
 		</graphicData>
@@ -29,7 +29,7 @@
 		<defName>BMT_MediumChitin</defName>
 		<!-- medium chitin t2 -->
 		<label>tough chitin</label>
-		<description>Chitin of a giant insect.</description>
+		<description>Chitin of a giant insect. It's quite durable.</description>
 		<graphicData>
 			<color>(61,48,100)</color>
 		</graphicData>
@@ -77,7 +77,7 @@
 		<defName>BMT_RoyalChitin</defName>
 		<!-- large chitin t4 -->
 		<label>royal chitin</label>
-		<description>A legendary, royal, chitinous shell.</description>
+		<description>A legendary, royal, chitinous shell. It is only found on the strongest and or rarest creatures from within the bowels of the earth.</description>
 		<graphicData>
 			<color>(81,48,100)</color>
 		</graphicData>

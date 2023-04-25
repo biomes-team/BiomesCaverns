@@ -6,7 +6,7 @@
 		<description>A subterranean fungus that grows in damp environments, it is often eaten by fungivores.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<Flammability>0.15</Flammability>
+			<Flammability>0.0</Flammability>
 			<Nutrition>1.20</Nutrition>
 		</statBases>
 		<selectable>true</selectable>
@@ -16,6 +16,8 @@
 					<li>Water</li>
 					<li>Fresh</li>
 					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
 				</terrainTags>
 			</li>
 		</modExtensions>
@@ -25,12 +27,13 @@
 		</graphicData>
 		<ingestible/>
 		<plant>
+			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>3</growDays>
 			<harvestWork>80</harvestWork>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.7~0.85</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
+			<topWindExposure>0.05</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>1</wildOrder>
@@ -38,5 +41,11 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>3.9</glowRadius>
+			<glowColor>(126, 108, 155, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

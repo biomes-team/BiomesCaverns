@@ -1,6 +1,224 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_ShatterjawBeetleLarvae</defName>
+		<label>shatterjaw grub</label>
+		<description>A small, squishy grub with weak bite force. While its adult form can bite a man in half, this grub is incapable of such a task.</description>
+		<statBases>
+			<MoveSpeed>0.3</MoveSpeed>
+			<LeatherAmount>2</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<leatherDef>BMT_WeakChitin</leatherDef>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.50</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<nuzzleMtbHours>6</nuzzleMtbHours>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_InsectLarvalFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalSecound</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalThird</def>
+					<minAge>0.1</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>7</ageInDays>
+				<evolveIntoPawnKindDef>BMT_ShatterjawBeetlePupa</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_ShatterjawBeetleLarvae</defName>
+		<label>shatterjaw grub</label>
+		<race>BMT_ShatterjawBeetleLarvae</race>
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>shatterjaw grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ShatterjawBeetle/ShatterGrub</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ShatterjawBeetle/Dessicated_ShatterGrub</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>shatterjaw grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ShatterjawBeetle/ShatterGrub</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ShatterjawBeetle/Dessicated_ShatterGrub</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>shatterjaw grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ShatterjawBeetle/ShatterGrub</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ShatterjawBeetle/Dessicated_ShatterGrub</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Pupa -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_ShatterjawBeetlePupa</defName>
+		<label>shatterjaw pupa</label>
+		<description>The pupal form of the shatterjaw beetle. Its body has largely liquified as it metamorphoses within. It has perhaps the most durable exterior out of all known pupae.</description>
+		<statBases>
+			<MoveSpeed>0</MoveSpeed>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<meatColor>(160,168,139)</meatColor>
+			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>None</foodType>
+			<wildness>1</wildness>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_Pupa</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>7</ageInDays>
+				<evolveIntoPawnKindDef>BMT_ShatterjawBeetle</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>Twitching</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>0</power>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_ShatterjawBeetlePupa</defName>
+		<label>shatterjaw pupa</label>
+		<race>BMT_ShatterjawBeetlePupa</race>
+		<combatPower>0</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
+					<drawSize>1</drawSize>
+					<color>(81,73,81)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_ShatterjawBeetle</defName>
 	<label>shatterjaw beetle</label>
@@ -12,16 +230,17 @@
 	  <FilthRate>2</FilthRate>
 	  <MarketValue>550</MarketValue>
 	  <CarryingCapacity>125</CarryingCapacity>
+	  <CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
 	</statBases>
 	<uiIconScale>1.15</uiIconScale>
 	<tools>
 	  <li>
-		<label>head claw</label>
+		<label>mandibles</label>
 		<capacities>
 		  <li>Cut</li>
 		</capacities>
 		<power>22</power>
-		<cooldownTime>2.6</cooldownTime>
+		<cooldownTime>2.25</cooldownTime>
 		<armorPenetration>0.9</armorPenetration>
 		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 	  </li>
@@ -31,7 +250,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>12</power>
-		<cooldownTime>2</cooldownTime>
+		<cooldownTime>5</cooldownTime>
 		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 		<chanceFactor>0.2</chanceFactor>
@@ -53,7 +272,6 @@
 	  <wildness>0.80</wildness>
 	  <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <lifeExpectancy>13</lifeExpectancy>
 	  <trainability>Advanced</trainability>
 	  <packAnimal>true</packAnimal>
@@ -67,7 +285,7 @@
 		  <minAge>0.03</minAge>
 		</li>
 		<li>
-		  <def>EusocialInsectAdult</def>
+		  <def>BMT_RideableEusocialInsectAdult</def>
 		  <minAge>0.2</minAge>
 		  <soundWounded>Pawn_BigInsect_Pain</soundWounded>
 		  <soundDeath>Pawn_BigInsect_Death</soundDeath>
@@ -79,6 +297,20 @@
 	  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 	</race>
+			<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggShatterjawFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>3</eggFertilizationCountMax>
+				<eggLayIntervalDays>10</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
 	<tradeTags>
 	  <li>AnimalUncommon</li>
 	  <li>AnimalFighter</li>
@@ -137,6 +369,26 @@
   </PawnKindDef>
 
   <!--===============================================-->
-
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggShatterjawFertilized</defName>
+		<label>shatterjaw beetle egg (fert.)</label>
+		<description>A shatterjaw beetle egg. If all goes well, it should hatch into a shatter grub. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(74, 51, 87)</color>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.50</Mass>
+			<MarketValue>70.0</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_ShatterjawBeetleLarvae</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>

@@ -53,14 +53,20 @@
           <Agarilux>0.02</Agarilux>
           <BMT_Ravelmush>0.02</BMT_Ravelmush>
           <Glowstool>0.02</Glowstool>
+		  <BMT_BlackLily>0.02</BMT_BlackLily>
+		  <BMT_Brightbell>0.3</BMT_Brightbell>
+		  <BMT_CoralClub>0.25</BMT_CoralClub>
+		  <BMT_Greatbulb>0.3</BMT_Greatbulb>
 
           <!-- trees -->
+		  <BMT_Shimbershroom>0.5</BMT_Shimbershroom>
           <Plant_Timbershroom MayRequire="Ludeon.RimWorld.Ideology">0.05</Plant_Timbershroom>
 
           <!-- other harvestable -->
           <BMT_DulcisPlant>0.02</BMT_DulcisPlant>
           <BMT_KessingerPlant>0.001</BMT_KessingerPlant>
           <BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>
+          <BMT_GiantLeaf>0.1</BMT_GiantLeaf>
           <Plant_Nutrifungus MayRequire="Ludeon.RimWorld.Ideology">0.02</Plant_Nutrifungus>
 
           <!-- hydrophytes -->
@@ -72,12 +78,6 @@
           <BMT_BiolumiAlgaeCitrine>0.2</BMT_BiolumiAlgaeCitrine>
 
           <!-- special -->
-          <BMT_Shimmershroom>0.25</BMT_Shimmershroom>
-          <BMT_Glowbulb>0.3</BMT_Glowbulb>
-          <BMT_Greyfields>0.4</BMT_Greyfields>
-          <BMT_RoyalBracket>0.2</BMT_RoyalBracket>
-          <BMT_Gleamcap>0.1</BMT_Gleamcap>
-          <BMT_Brightbells>0.5</BMT_Brightbells>
 
         </wildPlants>
 
@@ -99,9 +99,11 @@
           <Rat>0.3</Rat>
           <BMT_Mole>0.2</BMT_Mole>
           <BMT_DarkAxolotl>0.3</BMT_DarkAxolotl>
+          <BMT_BrownBat MayRequire="biomesteam.biomesislands">0.4</BMT_BrownBat>
 
           <!-- predators -->
           <BMT_Owlbear>0.15</BMT_Owlbear>
+		  <BMT_Megabat>0.1</BMT_Megabat>
 
           <!-- omnivore -->
           <BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>

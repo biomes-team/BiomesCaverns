@@ -4,21 +4,22 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
 		<label>bovine grub</label>
-		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<description>A large grub originally from Caveworlds, this bug is often kept in farms for the milk-like substance it produces as an adult. It is the larval form of the bovine beetle.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
-			<MarketValue>100</MarketValue>
+			<LeatherAmount>3</LeatherAmount>
+			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
+			<herdAnimal>true</herdAnimal>
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -60,7 +61,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_BovineBeetlePupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -94,11 +95,11 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
-		<label>bovine grub</label>
+		<label>bovine beetle grub</label>
 		<race>BMT_BovineBeetleLarvae</race>
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<wildGroupSize>1~3</wildGroupSize>
+		<wildGroupSize>3~4</wildGroupSize>
 		<lifeStages>
 			<li>
 				<label>bovine grub</label>
@@ -142,11 +143,12 @@
 		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -184,7 +186,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>11</ageInDays>
 				<evolveIntoPawnKindDef>BMT_BovineBeetle</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -194,7 +196,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>0</power>
+				<power>1</power>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -215,12 +217,12 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>2</drawSize>
 					<color>(89,97,73)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -232,11 +234,12 @@
 		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
 		<statBases>
 			<MoveSpeed>3.1</MoveSpeed>
-			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.27</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<FilthRate>4</FilthRate>
+			<CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
 		</statBases>
 		<tools>
 			<li>
@@ -244,8 +247,8 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>6</power>
-				<cooldownTime>2</cooldownTime>
+				<power>13</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -253,7 +256,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>5.2</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -314,11 +317,11 @@
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggBovineBeetleUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggBovineBeetleFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>4.5</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
 			</li>
 		</comps>
 		<tradeTags>
@@ -332,6 +335,7 @@
 		<race>BMT_BovineBeetle</race>
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<wildGroupSize>3~4</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -375,8 +379,8 @@
 		<label>bovine beetle egg (fert.)</label>
 		<description>A bovine beetle egg. If all goes well, it should hatch into a bovine grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(228,236,213)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(223,232,204)</color>
 			<drawSize>1.3</drawSize>
 		</graphicData>
 		<statBases>
@@ -384,22 +388,9 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_BovineBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggBovineBeetleUnfertilized</defName>
-		<label>bovine beetle egg (unfert.)</label>
-		<description>An unfertilized bovine beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(228,236,213)</color>
-			<drawSize>1.3</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>40.0</MarketValue>
-		</statBases>
 	</ThingDef>
 </Defs>

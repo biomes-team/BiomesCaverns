@@ -3,9 +3,9 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GlowSlug</defName>
 		<label>glowslug</label>
-		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that it has survived this long, let alone to the large size it is.</description>
+		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that its species has survived this long, let alone to the large size it is.</description>
 		<statBases>
-			<MoveSpeed>1.1</MoveSpeed>
+			<MoveSpeed>0.8</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MarketValue>240</MarketValue>
@@ -14,11 +14,15 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggGlowSlugUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggGlowSlugFertilized</eggFertilizedDef>
-				<eggLayIntervalDays>6</eggLayIntervalDays>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1~1</eggCountRange>
+				<eggCountRange>1~2</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>Filth_Slime</filthDef>
+				<cooldown>8</cooldown>
 			</li>
 		</comps>
 		<tools>
@@ -34,6 +38,8 @@
 			</li>
 		</tools>
 		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
 			<herdAnimal>true</herdAnimal>
 			<body>BiomesCore_Slug</body>
 			<baseHungerRate>0.1</baseHungerRate>
@@ -125,8 +131,8 @@
 		<label>glowslug egg (fert.)</label>
 		<description>A fertilized glowslug egg. If all goes well, it should hatch into a baby slug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(62,227,227)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(137,227,227)</color>
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<statBases>
@@ -135,23 +141,9 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
 				<hatcherPawn>BMT_GlowSlug</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggGlowSlugUnfertilized</defName>
-		<label>glowslug egg (unfert.)</label>
-		<description>An unfertilized glowslug egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(62,227,227)</color>
-			<drawSize>0.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>23.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
 	</ThingDef>
 </Defs>

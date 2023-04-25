@@ -3,15 +3,14 @@
 	<!-- Larvae -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_AaroxisDendoriaLarvae</defName>
-		<label>aaroxis dendoria larvae</label>
-		<description>A unique species of moth larva with a spiraling body pattern rather than segmented like normal. It is thought to be a genetic anomaly from its engineered creation.</description>
+		<label>cinnabar caterpillar</label>
+		<description>A unique species of moth larva with a spiraling body pattern rather than the normal segmented. It is thought to be a genetic anomaly from its engineered creation. The crimson-colored silk it produces is luxuriously soft.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<hasGenders>true</hasGenders>
@@ -20,6 +19,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
@@ -59,16 +59,13 @@
 		</ingredient>
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggAaroxisDendoriaUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>BMT_EggAaroxisDendoriaFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>3</eggFertilizationCountMax>
-				<eggLayIntervalDays>5</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1</eggCountRange>
+			<li Class="CompProperties_Shearable">
+				<woolDef>BMT_CrimsonSilk</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>30</woolAmount>
 			</li>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>30</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_AaroxisDendoriaPupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -78,7 +75,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>4</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
@@ -87,7 +84,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>3.5</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -110,16 +107,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
-					<drawSize>0.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
-					<drawSize>0.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -135,6 +122,16 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
 					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/AaroxisDendoriaLarvae</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AaroxisDendoria/Dessicated_AaroxisDendoriaLarvae_east</texPath>
+					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -146,11 +143,12 @@
 		<description>Even in their pupal stage, their red abdomen can be seen as they metamorphose. They are almost entirely immobile in this stage.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -188,7 +186,7 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>10</ageInDays>
 				<evolveIntoPawnKindDef>BMT_AaroxisDendoria</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -219,11 +217,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/AaroxisDendoriaPupa</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_AaroxisDendoriaPupa</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -236,18 +234,18 @@
 		<statBases>
 			<MoveSpeed>0.8</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
-			<ToxicResistance>1</ToxicResistance>
 			<MarketValue>110</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<race>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_GrayChitin</leatherDef>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>
@@ -286,7 +284,7 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="CompProperties_Shearable">
-				<woolDef>Cloth</woolDef>
+				<woolDef>BMT_CrimsonSilk</woolDef>
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>30</woolAmount>
 			</li>
@@ -363,10 +361,10 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggAaroxisDendoriaFertilized</defName>
 		<label>aaroxis dendoria egg (fert.)</label>
-		<description>A fertilized aaroxis dendoria egg. If all goes well, it should hatch into a aaroxis dendoria larvae. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized aaroxis dendoria egg. If all goes well, it should hatch into an aaroxis dendoria larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(152,95,81)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(127,73,73)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
@@ -374,22 +372,47 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
 				<hatcherPawn>BMT_AaroxisDendoriaLarvae</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggAaroxisDendoriaUnfertilized</defName>
-		<label>aaroxis dendoria egg (unfert.)</label>
-		<description>An unfertilized aaroxis dendoria egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(152,95,81)</color>
-			<drawSize>1.2</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>5</MarketValue>
-		</statBases>
-	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+        <defName>BMT_CrimsonSilk</defName>
+        <label>crimson silk</label>
+        <description>A blood red silk produced by a species of subterranean moth. It is luxuriously soft.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Item/CrimsonSilk</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>5</MarketValue>
+            <Mass>0.01</Mass>
+            <Flammability>1.2</Flammability>
+            <DeteriorationRate>4</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <commonality>0.20</commonality>
+            <statFactors>
+                <Flammability>0.4</Flammability>
+                <MaxHitPoints>1.3</MaxHitPoints>
+                <Beauty>6</Beauty>
+            </statFactors>
+        </stuffProps>
+        <thingCategories>
+            <li>Wools</li>
+        </thingCategories>
+    </ThingDef>
 </Defs>

@@ -4,11 +4,11 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_AcidSlug</defName>
 	<label>acid slug</label>
-	<description>Originally designed for combat, the acid slug is one of the most dangerous predators in the earthen depths due to their highly acidic slime and flesh. The bodies of their prey are often found melted down to the bone within their bodies.</description>
+	<description>Originally designed for combat, the acid slug is one of the most dangerous predators in the earthen depths due to its highly acidic slime and flesh. The bodies of its prey are melted down to the bone within its gelatinous flesh.</description>
 	<statBases>
 	  <MoveSpeed>1.5</MoveSpeed>
 	  <LeatherAmount>16</LeatherAmount>
-	  <MarketValue>4000</MarketValue>
+	  <MarketValue>3500</MarketValue>
 	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
@@ -19,6 +19,19 @@
 	  <InjuryHealingFactor>5.0</InjuryHealingFactor>
 	</statBases>
 	<!-- <uiIconScale>1.75</uiIconScale> -->
+	<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggAcidSlugFertilized</eggFertilizedDef>
+			<eggLayIntervalDays>36</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~1</eggCountRange>
+			<eggLayFemaleOnly>false</eggLayFemaleOnly>
+		</li>
+		<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+			<filthDef>BMT_Filth_Acidic_Slime</filthDef>
+			<cooldown>8</cooldown>
+		</li>
+	</comps>
 	<tools>
 		<li>
 			<label>head</label>
@@ -32,6 +45,8 @@
 		</li>
 	</tools>
 	<race>
+		<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+		<hasGenders>false</hasGenders>
 		<herdAnimal>false</herdAnimal>
 		<useMeatFrom>Megaspider</useMeatFrom>
 		<bloodDef>Filth_BloodInsect</bloodDef>
@@ -87,8 +102,8 @@
 	<ecoSystemWeight>1</ecoSystemWeight>
 	<lifeStages>
 	  <li>
-		<label>thrumbo calf</label>
-		<labelPlural>thrumbo calves</labelPlural>
+		<label>acid slug larva</label>
+		<labelPlural>acid slug larvae</labelPlural>
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/AcidSlug/AcidSlug</texPath>
 		  <drawSize>2.5</drawSize>
@@ -120,5 +135,49 @@
 	  </li>
 	</lifeStages>
   </PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggAcidSlugFertilized</defName>
+		<label>acid slug egg (fert.)</label>
+		<description>A fertilized acid slug egg. If all goes well, it should hatch into a baby acid slug. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(255,188,190)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_AcidSlug</hatcherPawn>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>30</minSafeTemperature>
+				<maxSafeTemperature>400</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+		</comps>
+	</ThingDef>
 
+	<ThingDef ParentName="BaseFilth">
+		<defName>BMT_Filth_Acidic_Slime</defName>
+		<label>acidic slime</label>
+		<statBases>
+			<Beauty>-25</Beauty>
+			<Cleanliness>-15</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(170, 182, 120, 170)</color>
+		</graphicData>
+		<filth>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
 </Defs>

@@ -3,24 +3,25 @@
 	<!-- Larvae -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMothLarvae</defName>
-		<label>facet larvae</label>
+		<label>crystalline caterpillar</label>
 		<description>The larval form of the facet moth. While its body may look spiky and hard, it's actually a form of natural mimicry to deter predators.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
-			<leatherDef>BMT_WeakChitin</leatherDef>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<nuzzleMtbHours>6</nuzzleMtbHours>
+			<petness>0.5</petness>
 			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>2.5</baseHungerRate>
@@ -53,11 +54,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-	<tradeTags>
-		<li>AnimalPet</li>
-		<li>AnimalExotic</li> 
-		<li>AnimalInsect</li>
-	</tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
@@ -65,16 +61,13 @@
 		</ingredient>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>15</ageInDays>
+				<ageInDays>10</ageInDays>
 				<evolveIntoPawnKindDef>BMT_FacetMothPupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
 			<li>
 				<label>proboscis</label>
-				<capacities>
-					<li>BMT_BloodSuck</li>
-				</capacities>
 				<power>4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
@@ -143,13 +136,15 @@
 		<description>The pupal form of the facet moth. While immobile, its hard shell protects it from most predators.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
+			<LeatherAmount>5</LeatherAmount>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
-			<leatherDef>BMT_WeakChitin</leatherDef>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
@@ -190,7 +185,7 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>5</ageInDays>
+				<ageInDays>7</ageInDays>
 				<evolveIntoPawnKindDef>BMT_FacetMoth</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -205,10 +200,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_FacetMothPupa</defName>
@@ -234,7 +225,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMoth</defName>
 		<label>facet moth</label>
-		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty.</description>
+		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty. The females are capable of producing multiple batches of fertilized eggs from one mating period.</description>
 		<statBases>
 			<MoveSpeed>12</MoveSpeed>
 			<BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">12</BiomesCore_FlySpeed>
@@ -245,7 +236,7 @@
 		</statBases>
 		<race>
 			<body>BeetleLike</body>
-			<leatherDef>BMT_WeakChitin</leatherDef>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>0.77</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
@@ -275,18 +266,13 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-			<tradeTags>
-				<li>AnimalPet</li>
-				<li>AnimalExotic</li> 
-				<li>AnimalInsect</li>
-			</tradeTags>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_FacetMoth</eggFertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
-				<eggLayIntervalDays>20</eggLayIntervalDays>
+				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>5~20</eggCountRange>
+				<eggCountRange>5~10</eggCountRange>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			</li>
@@ -313,10 +299,11 @@
 				<chanceFactor>0.85</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalUncommon</li>
-		</tradeTags>
+			<tradeTags>
+				<li>AnimalPet</li>
+				<li>AnimalExotic</li> 
+				<li>AnimalInsect</li>
+			</tradeTags>
 		<!-- <modExtensions> -->
 			<!-- <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl"> -->
 				<!-- <isBloodDrinkingAnimal>true</isBloodDrinkingAnimal> -->
@@ -349,6 +336,7 @@
 		<label>facet moth egg (fert.)</label>
 		<description>A fertilized facet moth egg. If all goes well, it should hatch into a facet larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
+		<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(230,212,193)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>

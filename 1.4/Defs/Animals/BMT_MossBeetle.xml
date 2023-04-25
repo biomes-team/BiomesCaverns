@@ -4,14 +4,13 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MossBeetleLarvae</defName>
 		<label>moss grub</label>
-		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
+		<description>A large beetle, commonly found in dark, damp places. It feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
@@ -20,6 +19,7 @@
 			<meatColor>(160,168,139)</meatColor>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
@@ -62,7 +62,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_MossBeetlePupa</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -95,7 +95,7 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MossBeetleLarvae</defName>
-		<label>moss beetle</label>
+		<label>moss larva</label>
 		<race>BMT_MossBeetleLarvae</race>
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
@@ -140,11 +140,12 @@
 		<description>A large beetle, commonly found in dark, damp places.\n\nIt feeds off low underbrush in fungal forests and while not the best source of meat, it works when little else is available.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -182,7 +183,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>1</ageInDays>
+				<ageInDays>10</ageInDays>
 				<evolveIntoPawnKindDef>BMT_MossBeetle</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -294,20 +295,20 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggMossBeetleFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
 			</mergeCompatibilityTags>
 		</ingredient>
-		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggMossBeetleUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>BMT_EggMossBeetleFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>4.5</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
-		</comps>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
@@ -352,7 +353,7 @@
 		<label>moss beetle egg (fert.)</label>
 		<description>A moss beetle egg. If all goes well, it should hatch into a moss grub. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(118,135,137)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -365,19 +366,6 @@
 				<hatcherPawn>BMT_MossBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggMossBeetleUnfertilized</defName>
-		<label>moss beetle egg (unfert.)</label>
-		<description>An unfertilized moss beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(118,135,137)</color>
-			<drawSize>0.8</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>10.0</MarketValue>
-		</statBases>
 	</ThingDef>
 </Defs>
 

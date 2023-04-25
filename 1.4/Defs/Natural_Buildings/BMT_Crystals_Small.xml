@@ -22,10 +22,18 @@
 	  <texPath>BMT_Caverns/Things/Crystals/BlueSmall</texPath>
 	  <drawSize>(1.0,1.0)</drawSize>
 	</graphicData>
+	<tickerType>Normal</tickerType>
 	<comps>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>2</glowRadius>
-		<glowColor>(40,40,90,0)</glowColor>
+		<glowColor>(119,189,239,0)</glowColor>
+	  </li>
+	  <li Class="CompProperties_Explosive">
+	  
+		<wickTicks>240</wickTicks>
+		<explosiveRadius>1.5</explosiveRadius>
+		<explosiveDamageType>Bomb</explosiveDamageType>
+		<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
 	  </li>
 	</comps>
 	<costList>

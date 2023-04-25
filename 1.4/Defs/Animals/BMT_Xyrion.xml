@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Xyrion</defName>
 		<label>xyrion</label>
-		<description>These large reptiles were first brought to Rimworlds as a strange pet due to its ability to lose its tail without harm, much like some geckos. Years after some were released or escaped into their preferred habit of underground caverns, it was discovered that they can be raised and farmed for their surprisingly nutritious tails.</description>
+		<description>These large reptiles were first brought to Rimworlds as a strange pet due to its ability to lose its tail without harm, much like some geckos. Years after some were released or escaped into their preferred habit of underground caverns, it was discovered that they can be raised and farmed for their surprisingly nutritious tails. Their tails begin to grow back immedately after being removed, but take days to regrow completely.</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<MarketValue>240</MarketValue>
@@ -16,7 +16,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>3</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
 			</li>
@@ -25,7 +25,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>3</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
 			</li>
@@ -33,7 +33,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>12</power>
+				<power>6</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -43,7 +43,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>6</power>
+				<power>4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -52,18 +52,17 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggXyrionUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggXyrionFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.661</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1~2</eggCountRange>
+				<eggCountRange>2~3</eggCountRange>
 			</li>
 			<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
 				<thingDef>BMT_XyrionTail</thingDef>
 				<harvestIntervalDays>6</harvestIntervalDays>
 				<baseResourceAmount>40</baseResourceAmount>
-				<resourceGrowthReportString>BMT_XyrionTail</resourceGrowthReportString>
+				<resourceGrowthReportString>BMT_XyrionTailGrowth</resourceGrowthReportString>
 			</li>
 		</comps>
 		<race>
@@ -170,19 +169,6 @@
 				<hatcherPawn>BMT_Xyrion</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggXyrionUnfertilized</defName>
-		<label>xyrion egg (unfert.)</label>
-		<description>An unfertilized xyrion egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(237,231,228)</color>
-			<drawSize>1.3</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20.0</MarketValue>
-		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_XyrionTail</defName>

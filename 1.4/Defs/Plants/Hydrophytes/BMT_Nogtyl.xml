@@ -8,6 +8,7 @@
 					<li>Shallow</li>
 					<li>Boggy</li>
 					<li>Marshy</li>
+					<li>Marsh</li>
 				</terrainTags>
 			</li>
 		</modExtensions>
@@ -27,7 +28,7 @@
 		<blockWind>true</blockWind>
 		<statBases>
 			<Beauty>2</Beauty>
-			<Flammability>0.8</Flammability>
+			<Flammability>0.0</Flammability>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Nutrition>2.0</Nutrition>
 			<Mass>150</Mass>
@@ -43,8 +44,9 @@
 		</ingestible>
 		<plant>
 			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
-			<fertilityMin>0.5</fertilityMin>
+			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<pollution>Any</pollution>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
 			<sowWork>4000</sowWork>
@@ -74,7 +76,7 @@
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
-			<topWindExposure>0.25</topWindExposure>
+			<topWindExposure>0.05</topWindExposure>
 		</plant>
 	</ThingDef>
 </Defs>

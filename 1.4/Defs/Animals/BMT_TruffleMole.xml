@@ -81,8 +81,8 @@
 			<petness>0.20</petness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<roamMtbDays>4</roamMtbDays>
-			<lifeExpectancy>6</lifeExpectancy>
-			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<lifeExpectancy>8</lifeExpectancy>
+			<gestationPeriodDays>5.5</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

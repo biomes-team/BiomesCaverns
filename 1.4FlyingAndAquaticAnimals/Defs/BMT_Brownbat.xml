@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LifeStageDef ParentName="AnimalBaby">
+    <defName>BMT_BrownBatBabyTiny</defName>
+	<label>pup</label>
+    <bodySizeFactor>0.1</bodySizeFactor>
+    <foodMaxFactor>4</foodMaxFactor>
+    <statFactors>
+      <MoveSpeed>0.5</MoveSpeed>
+      <BiomesCore_FlySpeed>0.01</BiomesCore_FlySpeed>
+    </statFactors>
+    <modExtensions>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </modExtensions>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>BMT_BrownBatJuvenile</defName>
+    <label>juvenile</label>
+    <voxPitch>1.2</voxPitch>
+    <bodySizeFactor>0.5</bodySizeFactor>
+    <foodMaxFactor>1.5</foodMaxFactor>
+    <healthScaleFactor>0.6</healthScaleFactor>
+    <hungerRateFactor>0.75</hungerRateFactor>
+    <marketValueFactor>0.75</marketValueFactor>
+    <meleeDamageFactor>0.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.9</MoveSpeed>
+      <BiomesCore_FlySpeed>0.9</BiomesCore_FlySpeed>
+    </statFactors>
+    <modExtensions>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
+          <drawSize>1.0</drawSize>
+		  <shaderType>TransparentPostLight</shaderType>
+        </bodyGraphicData>
+      </li>
+    </modExtensions>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>BMT_BrownBatAdult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
+    <modExtensions>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+      </li>    </modExtensions>
+  </LifeStageDef>
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BMT_BrownBat</defName>
+    <label>brown bat</label>
+    <description>It's a flappy herbivorous mammal. These bats flit around within the dark, using their sense of echolocation to locate prey, often small insects or mammals.</description>
+    <statBases>
+      <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
+      <SwimSpeed>0.5</SwimSpeed>
+	    <MoveSpeed>0.8</MoveSpeed>
+      <MarketValue>95</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>0.25</baseBodySize>
+      <baseHealthScale>0.35</baseHealthScale>
+      <baseHungerRate>0.125</baseHungerRate>
+      <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Light</leatherDef>
+      <wildness>0.95</wildness>
+      <trainability>Advanced</trainability>
+	  <nuzzleMtbHours>24</nuzzleMtbHours>
+      <lifeExpectancy>9</lifeExpectancy>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+	  <body>Monkey</body>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.8, 1)</li>
+          <li>(2.4, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>BMT_BrownBatBabyTiny</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>BMT_BrownBatJuvenile</def>
+          <minAge>0.11</minAge>
+        </li>
+        <li>
+          <def>BMT_BrownBatAdult</def>
+          <minAge>0.222</minAge>
+          <soundWounded>Biomes_Bat_Wounded</soundWounded>
+          <soundDeath>Biomes_Bat_Death</soundDeath>
+          <soundCall>Biomes_Bat_Call</soundCall>
+          <soundAngry>Biomes_Bat_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+        <roofedOnly>true</roofedOnly>
+        <sleepGraphicData>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+            <drawSize>0.8</drawSize>
+          </li>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+            <drawSize>1.0</drawSize>
+          </li>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+            <drawSize>1.2</drawSize>
+          </li>
+        </sleepGraphicData>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigBirdKindBase">
+    <defName>BMT_BrownBat</defName>
+    <label>brown bat</label>
+    <race>BMT_BrownBat</race>
+	<combatPower>45</combatPower>
+	<ecoSystemWeight>0.30</ecoSystemWeight>
+	<wildGroupSize>5~10</wildGroupSize>
+	<lifeStages>
+      <li>
+	  <label>brown bat pup</label>
+	  <labelPlural>brown bat pups</labelPlural>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Sitting</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Brownbat/Dessicated_Bat</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Sitting</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Dessicated_Bat</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Sitting</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Brownbat/Dessicated_Bat</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

@@ -12,7 +12,7 @@
 	<label>metallo snail</label>
 	<description>Adapted or engineered to survive the considerable heat and volatility near the molten layer, the metallosnail has gained the ability to grow metal to form its shell as well as producing thin plates of it to protect its softer bits.</description>
 	<statBases>
-		<MoveSpeed>2.6</MoveSpeed>
+		<MoveSpeed>2</MoveSpeed>
 		<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 		<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 		<MarketValue>100</MarketValue>
@@ -20,18 +20,49 @@
 		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 	</statBases>
 	<comps>
+		<li Class="BiomesCore.CompProperties_DefensiveReaction">
+			<hediffs>
+				<li>BMT_MetalloSnailDefense</li>
+			</hediffs>
+			<graphicSuffix>Shell</graphicSuffix>
+			<duration>750</duration>
+		</li>
 		<li Class="CompProperties_EggLayer">
-			<eggUnfertilizedDef>BMT_EggMetalloSnailUnfertilized</eggUnfertilizedDef>
 			<eggFertilizedDef>BMT_EggMetalloSnailFertilized</eggFertilizedDef>
 			<eggLayIntervalDays>12</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>1~2</eggCountRange>
+			<eggLayFemaleOnly>false</eggLayFemaleOnly>
 		</li>
-		<li Class="CompProperties_Milkable">
-			<milkDef>Steel</milkDef>
-			<milkIntervalDays>1</milkIntervalDays>
-			<milkAmount>14</milkAmount>
+		<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
+			<harvestIntervalDays>2</harvestIntervalDays>
+			<baseResourceAmount>1</baseResourceAmount>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<resourceGrowthReportString>BMT_MetalloSnailShellGrowth</resourceGrowthReportString>
 		</li>
+		<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+			<filthDef>Filth_FireFoam</filthDef>
+			<cooldown>60000</cooldown>
+		</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
+        <drawSize>0.4</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
+        <drawSize>1.0</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailSleeping</texPath>
+        <drawSize>1.4</drawSize>
+      </li>
+    </sleepGraphicData>
+  </li>
 	</comps>
 	<tools>
 		<li>
@@ -39,13 +70,15 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>13</power>
+			<power>12.5</power>
 			<cooldownTime>2.5</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 		</li>
 	</tools>
 	<race>
+		<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+		<hasGenders>false</hasGenders>
 		<herdAnimal>false</herdAnimal>
 		<body>BiomesCore_Snail</body>
 		<baseHungerRate>0.605</baseHungerRate>
@@ -92,6 +125,7 @@
 		<Steel>16</Steel>
 	</butcherProducts>
   </ThingDef>
+  
   
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_MetalloSnail</defName>
@@ -140,12 +174,35 @@
 	</lifeStages>
   </PawnKindDef>
 
+	<HediffDef>
+		<defName>BMT_MetalloSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMetalloSnailFertilized</defName>
 		<label>metallo snail egg (fert.)</label>
 		<description>A fertilized giant snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
 			<color>(102,84,49)</color>
 			<drawSize>1.7</drawSize>
 		</graphicData>
@@ -158,21 +215,13 @@
 				<hatcherDaystoHatch>8</hatcherDaystoHatch>
 				<hatcherPawn>BMT_GiantSnail</hatcherPawn>
 			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>ChunkSlagSteel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>6~12</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<saveKeysPrefix>slag</saveKeysPrefix>
+			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggMetalloSnailUnfertilized</defName>
-		<label>metallo snail egg (unfert.)</label>
-		<description>An unfertilized giant snail egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(102,84,49)</color>
-			<drawSize>1.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20.0</MarketValue>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
-	</ThingDef>
-
 </Defs>

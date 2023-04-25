@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Cat sized. -->
+<!-- What does it eat? (is it a predator?) Predatory carnivore that can eat raw meat. -->
+<!-- Where does it live? Surface Caverns. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weaker leather. Not very strong. High nuzzle chance. -->
+
+  <ThingDef ParentName="BaseInsect">
+	<defName>BMT_CaveSpider</defName>
+	<label>cave spider</label>
+	<description>Huge and horrifying, these spiders are one of the most dangerous predators in the UnderRim. They are fiercely territorial and intelligent, with a tendency to lay claim to commonly traveled tunnels for easy prey, including humanoids. Their powerful bite injects potent venom into their victims.</description>
+	<statBases>
+	  <MoveSpeed>5.5</MoveSpeed>
+	  <MarketValue>4000</MarketValue>
+	  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <FilthRate>0.01</FilthRate>
+	</statBases>
+	<race>
+	  <body>BMT_GiantSpider</body>
+	  <predator>true</predator>
+	  <baseBodySize>4</baseBodySize>
+	  <maxPreyBodySize>4</maxPreyBodySize>
+	  <baseHungerRate>0.05</baseHungerRate>
+	  <baseHealthScale>0.80</baseHealthScale>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>BMT_RoyalChitin</leatherDef>
+	  <wildness>0.99</wildness>
+	  <petness>0.8</petness>
+	  <trainability>Advanced</trainability>
+	  <nameOnTameChance>1</nameOnTameChance>
+	  <lifeExpectancy>220</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.15</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.4</minAge>
+		  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+		  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+		  <soundCall>Pawn_Megascarab_Call</soundCall>
+		  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.02, 0, 0.23)</li>
+		<li>(0.35, 0, 0.05)</li>
+		<li>(0.0, 0, -0.185)</li>
+		<li>(-0.35, 0, 0.05)</li>
+	  </headPosPerRotation>
+	</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggCaveSpiderFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>20</eggFertilizationCountMax>
+				<eggLayIntervalDays>18</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+	<tradeTags>
+	  <li>AnimalExotic</li>
+	  <li>AnimalInsect</li>
+	</tradeTags>
+	<tools>
+	  <li>
+		<label>venom-fangs</label>
+		<capacities>
+		  <li>ToxicBite</li>
+		</capacities>
+		<power>28</power>
+		<cooldownTime>2.0</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.8</chanceFactor>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>27</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.02</chanceFactor>
+	  </li>
+	  <li>
+		<label>legs</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>23</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	  <li>
+		<label>legs</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>23</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_CaveSpider</defName>
+	<label>cave spider</label>
+	<race>BMT_CaveSpider</race>
+	<combatPower>500</combatPower>
+	<canArriveManhunter>true</canArriveManhunter>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<wildGroupSize>1</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/CaveSpider/CaveSpider</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.5</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/CaveSpider/Dessicated_CaveSpider</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/CaveSpider/CaveSpider</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>2.25</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+            <volume>(0.7, 0.6, 0.4)</volume>
+            <offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/CaveSpider/Dessicated_CaveSpider</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/CaveSpider/CaveSpider</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>3.25</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		 <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/CaveSpider/Dessicated_CaveSpider</texPath>
+          <drawSize>3.25</drawSize>
+        </dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggCaveSpiderFertilized</defName>
+		<label>cave spider egg (fert.)</label>
+		<description>A cave spider egg. If all goes well, it should hatch into a horrifying baby spider. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_CaveSpider</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

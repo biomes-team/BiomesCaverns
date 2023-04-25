@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_KessingerPlant</defName>
 		<label>kessinger</label>
-		<description>Nutrient-rich fungal body, harvested and compacted for storage. Kessinger is good animal feed, but inedible for humans.</description>
+		<description>A very tough frill-like fungus. It is largely inedible to humans, but its tough fruiting body can be eaten by animals.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.15</Nutrition>
@@ -28,7 +28,7 @@
 			<growDays>3</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Kessinger</immatureGraphicPath>
-			<topWindExposure>0.1</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<harvestYield>6</harvestYield>
 			<sowTags>
 				<li>Ground</li>
@@ -36,7 +36,7 @@
 			</sowTags>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_Kessinger</harvestedThingDef>
-			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<visualSizeRange>0.7~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>5</wildClusterWeight>
@@ -49,7 +49,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_Kessinger</defName>
 		<label>kessinger</label>
-		<description>.</description>
+		<description>Nutrient-rich fungal body, harvested and compacted for storage. Kessinger is good animal feed, but inedible for humans.</description>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
 		<graphicData>

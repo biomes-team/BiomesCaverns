@@ -11,8 +11,8 @@
 			<harvestTag>Wood</harvestTag>
 			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
 			<burnedThingDef>BMT_BurnedMushroom</burnedThingDef>
-			<smashedThingDef>BMT_FloorMold</smashedThingDef>
-			<choppedThingDef>BMT_FloorMold</choppedThingDef>
+			<smashedThingDef>BMT_CavernMycelium</smashedThingDef>
+			<choppedThingDef>BMT_CavernMycelium</choppedThingDef>
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase" Name="BMT_CavePlantBase" Abstract="True">

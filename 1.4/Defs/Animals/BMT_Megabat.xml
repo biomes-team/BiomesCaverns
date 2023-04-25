@@ -34,7 +34,7 @@
 	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.7</manhunterOnDamageChance>
 	  <body>Monkey</body>
-	  <gestationPeriodDays>6.66</gestationPeriodDays>
+	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <litterSizeCurve>
 		<points>
 		  <li>(0.5, 0)</li>

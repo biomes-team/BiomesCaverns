@@ -25,7 +25,7 @@
 			<!--leaflessGraphicPath>BMT_Caverns/Things/Plant/CrystaltipBrambles/CrystaltipBramblesLeafless</leaflessGraphicPath-->
 			<!--pollutedGraphicPath>BMT_Caverns/Things/Plant/CrystaltipBrambles/CrystaltipBramblesPolluted</pollutedGraphicPath-->
 			<visualSizeRange>0.7~0.85</visualSizeRange>
-			<topWindExposure>0.15</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>200</wildClusterWeight>
 			<wildOrder>1</wildOrder>

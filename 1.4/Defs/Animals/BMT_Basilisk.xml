@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_Basilisk</defName>
 	<label>basilisk</label>
-	<description>Six-legged and with eyes that enrapture their prey should they gaze into them, the basilisk is both designed and named after its mythological predecessor.</description>
+	<description>With eyes that enrapture its prey should they gaze into them, the six-legged basilisk is both designed and named after its mythological predecessor.</description>
 	<statBases>
 	  <MoveSpeed>4.6</MoveSpeed>
 	  <MarketValue>980</MarketValue>
@@ -80,7 +80,7 @@
 	  <li Class="CompProperties_EggLayer">
 		<eggFertilizedDef>BMT_BasiliskEggFertilized</eggFertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
-		<eggLayIntervalDays>5.661</eggLayIntervalDays>
+		<eggLayIntervalDays>10</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 		<eggCountRange>1~2</eggCountRange>
 	  </li>
@@ -171,6 +171,7 @@
 		<label>basilisk egg (fert.)</label>
 		<description>A fertilized basilisk egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(230,212,193)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -179,7 +180,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_Basilisk</hatcherPawn>
 			</li>
 		</comps>

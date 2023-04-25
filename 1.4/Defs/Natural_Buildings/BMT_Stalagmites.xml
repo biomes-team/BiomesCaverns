@@ -6,9 +6,12 @@
 	<description>A stalagmite is a type of rock formation that rises from the floor of a cave due to the accumulation of material deposited on the floor from ceiling.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Natural/Stalagmite</texPath>
-	  <drawSize>(1.0,1.0)</drawSize>
+	  <drawSize>(4.0,4.5)</drawSize>
 	  <color>(126,104,94)</color>
 	</graphicData>
+	<killedLeavings>
+		<ChunkSandstone>5</ChunkSandstone>
+	</killedLeavings>
 	<altitudeLayer>Building</altitudeLayer>
 	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>
@@ -17,23 +20,18 @@
 	  <Beauty>9</Beauty>
 	  <MaxHitPoints>50</MaxHitPoints>
 	</statBases>
-	<!-- <stuffCategories> -->
-	  <!-- <li>Stony</li> -->
-	<!-- </stuffCategories> -->
-	<!-- <costStuffCount>1</costStuffCount> -->
-	<!-- <useStuffTerrainAffordance>true</useStuffTerrainAffordance> -->
-	<!-- <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> -->
-	<!-- <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled> -->
-	<!-- <damageMultipliers> -->
-	  <!-- <li> -->
-		<!-- <damageDef>Bomb</damageDef> -->
-		<!-- <multiplier>2</multiplier> -->
-	  <!-- </li> -->
-	  <!-- <li> -->
-		<!-- <damageDef>Thump</damageDef> -->
-		<!-- <multiplier>2</multiplier> -->
-	  <!-- </li> -->
-	<!-- </damageMultipliers> -->
+	  <neverOverlapFloors>true</neverOverlapFloors>
+	  <blockPlants>true</blockPlants>
+	<building>
+		<alwaysDeconstructible>true</alwaysDeconstructible>
+	  <claimable>false</claimable>
+	</building>
+	<comps>
+		<li>
+			<compClass>CompColorable</compClass>
+		</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_CompTerrainRecolor" />
+	</comps>
   </ThingDef>
 
   <!-- ====================================================== -->
@@ -41,22 +39,37 @@
   <ThingDef ParentName="BMT_Stalagmites">
 	<defName>BMT_NaturalBuildings_Stalagmites_Small</defName>
 	<graphicData>
-	  <drawSize>(0.6,0.6)</drawSize>
+	  <drawSize>(2,2)</drawSize>
 	</graphicData>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.DropChunksWhenDestroyed">
+			<chunkCountRange>0~1</chunkCountRange>
+		</li>
+	</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
 	<defName>BMT_NaturalBuildings_Stalagmites_Medium</defName>
 	<graphicData>
-	  <drawSize>(1.0,1.0)</drawSize>
+	  <drawSize>(2.1,2.1)</drawSize>
 	</graphicData>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.DropChunksWhenDestroyed">
+			<chunkCountRange>0~2</chunkCountRange>
+		</li>
+	</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
 	<defName>BMT_NaturalBuildings_Stalagmites_Large</defName>
 	<graphicData>
-	  <drawSize>(1.2,1.2)</drawSize>
+	  <drawSize>(2.25,2.25)</drawSize>
 	</graphicData>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.DropChunksWhenDestroyed">
+			<chunkCountRange>1~2</chunkCountRange>
+		</li>
+	</modExtensions>
   </ThingDef>
   
 </Defs>

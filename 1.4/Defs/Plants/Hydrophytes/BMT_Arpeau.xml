@@ -27,7 +27,7 @@
 		<blockWind>true</blockWind>
 		<statBases>
 			<Beauty>2</Beauty>
-			<Flammability>0.10</Flammability>
+			<Flammability>0.0</Flammability>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Nutrition>2.0</Nutrition>
 			<Mass>150</Mass>
@@ -73,7 +73,96 @@
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>
-			<topWindExposure>0.25</topWindExposure>
+			<topWindExposure>0.05</topWindExposure>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+					<li>ChestDeep</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+		<defName>BMT_GreenArpeau</defName>
+		<label>arpeau</label>
+		<description>Fast-growing, but doesn't yield much usable material. Aquatic fungus.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/ArpeauGreen</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(0,0,-0.42)</offset>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Flammability>0.0</Flammability>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>2.0</Nutrition>
+			<Mass>150</Mass>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.25</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<sowWork>4000</sowWork>
+			<sowMinSkill>6</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<sowTags Inherit="False">
+				<li MayRequire="vanillaexpanded.vplantsemore">VCE_Aquatic</li>
+			</sowTags>
+			<wildClusterRadius>20</wildClusterRadius>
+			<wildClusterWeight>1</wildClusterWeight>
+			<growDays>5</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>800</harvestWork>
+			<harvestYield>20</harvestYield>
+			<wildOrder>1</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+			<harvestMinGrowth>0.40</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<treeCategory>Full</treeCategory>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<interferesWithRoof>false</interferesWithRoof>
+			<harvestTag>Wood</harvestTag>
+			<visualSizeRange>1.5~2.5</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

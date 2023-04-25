@@ -24,12 +24,13 @@
 		<plant>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<fertilitySensitivity>0.4</fertilitySensitivity>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<fertilityMin>0.5</fertilityMin>
-			<growDays>5.8</growDays>
+			<pollution>Any</pollution>
+			<growDays>6</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Starchstalk</immatureGraphicPath>
-			<topWindExposure>0.1</topWindExposure>
+			<topWindExposure>0</topWindExposure>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestYield>11</harvestYield>
 			<sowTags>
@@ -38,7 +39,7 @@
 			</sowTags>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_Starchstalk</harvestedThingDef>
-			<visualSizeRange>0.4~1</visualSizeRange>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>24</wildClusterWeight>

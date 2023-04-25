@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseInsect">
 		<defName>BMT_Jellypot</defName>
 		<label>jellypot</label>
-		<description>Named the jellypot for its ability to produce insect jelly in its large thorax sac, this rare animal is almost exclusively found near insectoid hives, being farmed much like ants do with aphids.</description>
+		<description>Named the jellypot for its ability to produce insect jelly in its large thorax sac, this rare animal is almost exclusively found near insectoid hives, being farmed much like ants do with aphids. It does not seem capable of breeding in captivity.</description>
 		<statBases>
 			<MoveSpeed>1.65</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -16,7 +16,7 @@
 		<uiIconScale>1.1</uiIconScale>
 		<tools>
 			<li>
-				<label>head claw</label>
+				<label>mandibles</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
@@ -37,12 +37,11 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_Spawner">
+			<li Class="BiomesCore.ThingComponents.CompProperties_AnimalThingSpawner">
 				<thingToSpawn>InsectJelly</thingToSpawn>
 				<spawnCount>6</spawnCount>
 				<spawnIntervalRange>60000~120000</spawnIntervalRange>
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
-				<saveKeysPrefix>jelly</saveKeysPrefix>
+				<saveKeysPrefix>JellySpawn</saveKeysPrefix>
 			</li>
 		</comps>
 		<race>
@@ -96,8 +95,6 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jellypot/Jellypot</texPath>
 					<drawSize>0.5</drawSize>
-					<color>(156,148,125)</color>
-					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
@@ -108,8 +105,6 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jellypot/Jellypot</texPath>
 					<drawSize>0.75</drawSize>
-					<color>(156,148,125)</color>
-					<shaderType>CutoutComplex</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
@@ -120,8 +115,6 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jellypot/Jellypot</texPath>
 					<drawSize>1</drawSize>
-					<color>(156,148,125)</color>
-					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
 						<offset>(0,0,-0.15)</offset>

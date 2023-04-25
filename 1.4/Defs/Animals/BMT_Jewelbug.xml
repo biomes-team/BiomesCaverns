@@ -6,13 +6,12 @@
         <description>This isopod is smaller than it's pillbug cousin and is found commonly in crystal caverns.</description>
         <statBases>
             <MoveSpeed>2.75</MoveSpeed>
-            <ArmorRating_Blunt>0.115</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.325</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
             <MarketValue>250</MarketValue>
             <FilthRate>0</FilthRate>
-            <ToxicResistance>1</ToxicResistance>
         </statBases>
         <tools>
             <li>
@@ -96,10 +95,16 @@
             </li>
         </modExtensions>
         <comps>
+					<li Class="BiomesCore.CompProperties_DefensiveReaction">
+						<hediffs>
+							<li>BMT_JewelbugDefense</li>
+						</hediffs>
+						<graphicSuffix>Rolled</graphicSuffix>
+						<duration>300</duration>
+					</li>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggJewelbugUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggJewelbugFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggCountRange>2~4</eggCountRange>
 			</li>
@@ -119,27 +124,27 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
-					<drawSize>0.4</drawSize>
+					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Dessicated_Jewelbug</texPath>
-					<drawSize>0.4</drawSize>
+					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Dessicated_Jewelbug</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
@@ -147,19 +152,42 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Dessicated_Jewelbug</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+
+	<HediffDef>
+		<defName>BMT_JewelbugDefense</defName>
+		<label>rolled up</label>
+		<description>Rolled up for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggJewelbugFertilized</defName>
 		<label>jewelbug egg (fert.)</label>
 		<description>A jewel egg. If all goes well, it should hatch into a baby jewelbug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(21,244,238)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(193,249,255)</color>
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<statBases>
@@ -172,19 +200,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggJewelbugUnfertilized</defName>
-		<label>jewelbug egg (unfert.)</label>
-		<description>An unfertilized jewelbug egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(21,244,238)</color>
-			<drawSize>0.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>10.0</MarketValue>
-		</statBases>
-	</ThingDef>
-
 </Defs>

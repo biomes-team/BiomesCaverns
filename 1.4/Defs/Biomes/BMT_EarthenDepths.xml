@@ -9,15 +9,32 @@
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.BiomesMap">
         <isCavern>true</isCavern>
+        <alwaysGrowthSeason>true</alwaysGrowthSeason>
         <cavernShapes>
           <li>TunnelNetwork</li>
         </cavernShapes>
+				<extraCarriers>
+					<BMT_FoundryBeetle>1</BMT_FoundryBeetle>
+				</extraCarriers>
+				<extraCarriersRelativeWeight>100</extraCarriersRelativeWeight>
       </li>
       <li Class="GeologicalLandforms.BiomeProperties">
         <applyToCaves>true</applyToCaves>
+        <overrideLandforms>
+          <li>BMT_EarthenDepths</li>
+        </overrideLandforms>
         <allowLandforms>false</allowLandforms>
         <allowBiomeTransitions>false</allowBiomeTransitions>
         <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+        <worldTileOverrides>
+          <temperature>
+            <value supplier="randomValueWorld">
+              <seedMask>TempED</seedMask>
+              <min>50</min>
+              <max>90</max>
+            </value>
+          </temperature>
+        </worldTileOverrides>
         <worldTileGraphicAtlas>
           <texture>BMT_Caverns/World/Biomes/Atlas/EarthenDepths</texture>
           <drawMode>HexAdjacencyCaves</drawMode>
@@ -26,7 +43,7 @@
       </li>
       <li Class="GeologicalLandforms.BiomeWorkerConfig">
         <score>
-          <value>100</value>
+          <value>120</value>
           <conditions>
             <anyOf>
               <depthInCaveSystem>
@@ -52,7 +69,7 @@
         </score>
       </li>
     </modExtensions>
-    <animalDensity>0.8</animalDensity>
+    <animalDensity>3</animalDensity>
     <plantDensity>0.3</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
@@ -104,13 +121,13 @@
 	</diseases>
 	<terrainsByFertility>
       <li>
-        <terrain>Gravel</terrain>
+        <terrain>BMT_VolcanicAsh</terrain>
         <min>-999</min>
-        <max>0.87</max>
+        <max>0.8</max>
       </li>
       <li>
-        <terrain>Sand</terrain>
-        <min>0.87</min>
+        <terrain>BMT_MagmaAsh</terrain>
+        <min>0.25</min>
         <max>999</max>
       </li>
     </terrainsByFertility>
@@ -119,13 +136,9 @@
         <perlinFrequency>0.045</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>BMT_VolcanicAsh</terrain>
+            <terrain>BMT_MagmaStone</terrain>
+            <!--terrain>Slate_Rough</terrain-->
             <min>0.33</min>
-            <max>0.53</max>
-          </li>
-          <li>
-            <terrain>BMT_MagmaAsh</terrain>
-            <min>0.53</min>
             <max>0.73</max>
           </li>
           <li>
@@ -141,39 +154,41 @@
     </baseWeatherCommonalities>
     <wildPlants>
 		<!-- ground cover -->
+	<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
     <BMT_FireLavender>1</BMT_FireLavender>
 			
 		<!-- mid sized -->
     <BMT_ExplodingAngel>0.5</BMT_ExplodingAngel>
-    <BMT_Boomshroom>0.4</BMT_Boomshroom>
+    <BMT_Boomshroom>0.2</BMT_Boomshroom>
 
 		<!-- trees -->
-		<BMT_Candlesnuff>0.5</BMT_Candlesnuff>
+		<BMT_Candlesnuff>0.7</BMT_Candlesnuff>
 			
 		<!-- other harvestable -->
+		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
 		
 		<!-- hydrophytes -->
 
 		<!-- special -->
-		<BMT_HeatsinkFungus>0.05</BMT_HeatsinkFungus>
+		<BMT_HeatsinkFungus>0.1</BMT_HeatsinkFungus>
+		<BMT_StinkLattice>0.05</BMT_StinkLattice>
 
     </wildPlants>
 
     <wildAnimals>
 		<!-- herbivores -->
 		<BMT_Boomapillar>0.2</BMT_Boomapillar>
+		<BMT_BoomMoth>0.2</BMT_BoomMoth>
 		<BMT_FoundryBeetle>0.2</BMT_FoundryBeetle>
-		<BMT_FireSalamander>0.5</BMT_FireSalamander>
+		<BMT_FireSalamander>0.2</BMT_FireSalamander>
 		<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
-		<BMT_WoolySpider>2.5</BMT_WoolySpider>
-		<BMT_MetalloSnail>0.5</BMT_MetalloSnail>
-		<BMT_Megabat>0.1</BMT_Megabat>
+		<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
 		<!-- <BMT_MetalloSnail>0.5</BMT_MetalloSnail> -->
 
 		<!-- onmnivore -->
 	
 		<!-- predators -->
-		<BMT_AcidSlug>0.001</BMT_AcidSlug>
+		<BMT_AcidSlug>0.01</BMT_AcidSlug>
 		<BMT_Basilisk>0.2</BMT_Basilisk>
 			
 		<!-- onmnivore -->
@@ -187,9 +202,7 @@
 	
     </wildAnimals>
     <allowedPackAnimals>
-      <li>Muffalo</li>
-      <li>Alpaca</li>
-	  <li>BMT_GiantSnail</li>
+	  <li>BMT_FoundryBeetle</li>
     </allowedPackAnimals>
   </BiomeDef>
 

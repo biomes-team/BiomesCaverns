@@ -81,7 +81,7 @@
 			<trainability>Intermediate</trainability>
 			<petness>0.8</petness>
 			<nuzzleMtbHours>10</nuzzleMtbHours>
-			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<gestationPeriodDays>5.7</gestationPeriodDays>
 			<lifeExpectancy>10</lifeExpectancy>
 			<litterSizeCurve>
 				<points>

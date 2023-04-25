@@ -16,10 +16,14 @@
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>BMT_EggGiantSlugUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggGiantSlugFertilized</eggFertilizedDef>
-				<!-- xeye: should be hermaphroditic, if posible -->
 				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~3</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>Filth_Slime</filthDef>
+				<cooldown>8</cooldown>
 			</li>
 		</comps>
 		<tools>
@@ -28,18 +32,15 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>13</power>
+				<power>10</power>
 				<cooldownTime>2.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
 		<race>
-			<tradeTags>
-				<li>AnimalFarm</li>
-				<li>AnimalUncommon</li>
-				<li>AnimalInsect</li>
-			</tradeTags>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
 			<herdAnimal>false</herdAnimal>
 			<body>BiomesCore_Slug</body>
 			<baseHungerRate>0.8</baseHungerRate>
@@ -77,6 +78,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+			<tradeTags>
+				<li>AnimalFarm</li>
+				<li>AnimalUncommon</li>
+				<li>AnimalInsect</li>
+			</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_GiantSlug</defName>
@@ -124,8 +130,8 @@
 		<label>giant slug egg (fert.)</label>
 		<description>A fertilized giant slug egg. If all goes well, it should hatch into a baby slug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(102,84,49)</color>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(109,137,70)</color>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
@@ -144,7 +150,7 @@
 		<label>giant slug egg (unfert.)</label>
 		<description>An unfertilized giant slug egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(102,84,49)</color>
 			<drawSize>1</drawSize>
 		</graphicData>

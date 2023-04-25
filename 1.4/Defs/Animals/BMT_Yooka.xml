@@ -3,12 +3,13 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Yooka</defName>
 		<label>yooka</label>
-		<description>A towering hunchbacked mammal, closely related to camels and llamas.\n\nWith little to no natural predators, it grazes among the taller fungi with an unconcerned grace.</description>
+		<description>A towering hunchbacked mammal, closely related to camels and llamas. With little to no natural predators, it grazes among the taller fungi with an unconcerned grace.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -24,7 +25,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>12</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
@@ -34,7 +35,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>12</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
@@ -43,7 +44,7 @@
 					<li>Bite</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>5</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
 			</li>
@@ -53,7 +54,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>14</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -74,10 +75,7 @@
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
 			</willNeverEat>
-			<gestationPeriodDays>6.66</gestationPeriodDays>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-		</tradeTags>
+			<gestationPeriodDays>6.75</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -101,7 +99,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>AnimalCommon</li>
+			<li>AnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

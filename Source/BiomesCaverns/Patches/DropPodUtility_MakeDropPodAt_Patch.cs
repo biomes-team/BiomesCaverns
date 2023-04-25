@@ -1,9 +1,8 @@
-﻿using BiomesCore.DefModExtensions;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
-using System.Collections.Generic;
 using System.Linq;
+using BiomesCore;
 using Verse;
 
 namespace BiomesCaverns
@@ -13,29 +12,29 @@ namespace BiomesCaverns
     {
         public static bool Prefix(IntVec3 c, Map map, ActiveDropPodInfo info)
         {
-            if (map.Biome.HasModExtension<BiomesMap>())
+            if (map.roofGrid.RoofAt(c) == BiomesCoreDefOf.BMT_RockRoofStable)
             {
-                BiomesMap biome = map.Biome.GetModExtension<BiomesMap>();
-                if (biome.isCavern)
-                {
-                    MakeDrillPod(c, map, info);
-                    return false;
-                }
+                MakeDrillPod(c, map, info);
+                return false;
             }
+            
             if (info.innerContainer.Any(x => x.def == BC_DefOf.BMT_DrillPod))
             {
                 MakeDrillPod(c, map, info);
                 return false;
             }
+            
             return true;
         }
 
         private static void MakeDrillPod(IntVec3 c, Map map, ActiveDropPodInfo info)
         {
-            ActiveDropPod activeDropPod = (ActiveDrillPod)ThingMaker.MakeThing(BC_DefOf.BMT_DrillPodActive);
+            ActiveDropPod activeDropPod = (ActiveDrillPod) ThingMaker.MakeThing(BC_DefOf.BMT_DrillPodActive);
             activeDropPod.Contents = info;
+            
             SkyfallerMaker.SpawnSkyfaller(BC_DefOf.BMT_DrillPodIncoming, activeDropPod, c, map);
-            foreach (Thing item in (IEnumerable<Thing>)activeDropPod.Contents.innerContainer)
+            
+            foreach (var item in activeDropPod.Contents.innerContainer)
             {
                 Pawn pawn;
                 if ((pawn = item as Pawn) != null && pawn.IsWorldPawn())

@@ -4,7 +4,7 @@
     <ThingDef ParentName="BaseBear">
         <defName>BMT_Owlbear</defName>
         <label>Owlbear</label>
-        <description>Originally created by scientists enamored with a tabletop game from Earth, it was released into the wild and has found a home within surface level caverns, able to come and go as it pleases.</description>
+        <description>Originally created by scientists enamored with a tabletop game from Earth, it was released into the wild and has found a home within caverns near the surface, able to come and go as it pleases.</description>
         <statBases>
             <MoveSpeed>4.8</MoveSpeed>
             <ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -87,6 +87,15 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+		<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>BMT_OwlbearEggFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>10</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	</comps>
     </ThingDef>
 
     <PawnKindDef ParentName="BearBase">
@@ -144,5 +153,23 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-    
+    	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_OwlbearEggFertilized</defName>
+		<label>owlbear egg (fert.)</label>
+		<description>A fertilized owlbear egg. If all goes well, it should hatch into a baby owlbear. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OwlbearEggs</texPath>
+			<color>(255,246,232)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Owlbear</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

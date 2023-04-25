@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_DarkAxolotl</defName>
 	<label>dark axolotl</label>
-	<description>Pretty peaceful inhabitant of a shallow cave, hunting only small animals. A good pet, though weak in combat.</description>
+	<description>A large yet peaceful inhabitant of the shallow caves, hunting only small animals. A good pet, though weak in combat.</description>
 	<statBases>
 	  <MoveSpeed>4.60</MoveSpeed>
 	  <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -20,7 +20,7 @@
 		<capacities>
 		  <li>Scratch</li>
 		</capacities>
-		<power>13</power>
+		<power>7</power>
 		<cooldownTime>2.0</cooldownTime>
 		<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 		<surpriseAttack>
@@ -37,7 +37,7 @@
 		<capacities>
 		  <li>Scratch</li>
 		</capacities>
-		<power>13</power>
+		<power>7</power>
 		<cooldownTime>2.0</cooldownTime>
 		<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 		<surpriseAttack>
@@ -54,7 +54,7 @@
 		<capacities>
 		  <li>Bite</li>
 		</capacities>
-		<power>15</power>
+		<power>9</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 		<chanceFactor>0.9</chanceFactor>
@@ -79,6 +79,23 @@
 		<chanceFactor>0.2</chanceFactor>
 	  </li>
 	</tools>
+	<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggDarkAxolotlFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>10</eggFertilizationCountMax>
+			<eggLayIntervalDays>8</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~2</eggCountRange>
+		</li>
+		<li Class="AnimalBehaviours.CompProperties_Regeneration" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<rateInTicks>400</rateInTicks>
+		</li>
+			<li Class="BiomesCore.CompProperties_BottomFeeder">
+				<feedingTerrainTag>Water</feedingTerrainTag>
+				<consumingFoodReportString>Fishing.</consumingFoodReportString>
+				<effecterDef>EatFish</effecterDef>
+			</li>
+	</comps>
 	<race>
 	  <body>QuadrupedAnimalWithPawsAndTail</body>
 	  <herdAnimal>false</herdAnimal>
@@ -92,7 +109,6 @@
 	  <wildness>0.10</wildness>
 	  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
-	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <lifeExpectancy>20</lifeExpectancy>
 	  <trainability>None</trainability>
 	  <petness>0.3</petness>
@@ -141,7 +157,7 @@
 		  <drawSize>1.1</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/DarkAxolotl</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/Dessicated_Salamander</texPath>
 		  <drawSize>1.1</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -155,7 +171,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/DarkAxolotl</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/Dessicated_Salamander</texPath>
 		  <drawSize>1.4</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -169,12 +185,32 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/DarkAxolotl</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/DarkAxolotl/Dessicated_Salamander</texPath>
 		  <drawSize>2.18</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>
   </PawnKindDef>
+  <ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggDarkAxolotlFertilized</defName>
+		<label>dark axolotl egg (fert.)</label>
+		<description>A fertilized dark axolotl egg. If all goes well, it should hatch into an axolotl. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/SalamanderEggs</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.50</Mass>
+			<MarketValue>24.0</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_DarkAxolotl</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
   <!--===============================================-->
 
