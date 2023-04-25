@@ -4,13 +4,13 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_LavaGenerator</defName>
 		<label>lava generator</label>
-		<description>Produces electricity from lava or magma. Must be placed with its tubes in lava. If lava generators are placed to close together, the turbulence they generate will interfere and reduce power generation.</description>
+		<description>Produces electricity from the intense heat of lava and magma. It pipes must be placed within the molten rock to function. If lava generators are placed too close together, the turbulence they generate will interfere and reduce power generation.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Building/LavaGen/LavaGen</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(6,6)</drawSize>
+			<drawSize>(4,4)</drawSize>
 			<shadowData>
 				<volume>(2.6,1,2.16)</volume>
 				<offset>(-0.20,0,0)</offset>
@@ -22,7 +22,7 @@
 				<rectW>(1.25,0.2,3.5,4.7)</rectW>
 			</damageData>
 		</graphicData>
-		<size>(5,5)</size>
+		<size>(3,4)</size>
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<altitudeLayer>Building</altitudeLayer>
@@ -30,23 +30,24 @@
 		<blockWind>true</blockWind>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
 		<fillPercent>1</fillPercent>
-		<blockLight>false</blockLight>
+		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToBuild>4000</WorkToBuild>
 			<Flammability>0.0</Flammability>
 			<Beauty>-20</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<costList>
-			<Steel>400</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<Steel>300</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>BiomesCore.CompPowerPlantLava</compClass>
-				<basePowerConsumption>-1500</basePowerConsumption>
+				<basePowerConsumption>-2000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower></soundAmbientProducingPower>
 			</li>
@@ -64,7 +65,7 @@
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
 		<!--researchPrerequisites><li></li></researchPrerequisites-->
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
 
 </Defs>

@@ -12,13 +12,10 @@
 			<Flammability>0.0</Flammability>
 			<Nutrition>2</Nutrition>
 		</statBases>
-		<ingestible/>
 		<selectable>true</selectable>
 		<specialDisplayRadius>4</specialDisplayRadius>
 		<plant>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelImmature</immatureGraphicPath>
-			<growMinGlow>0.5</growMinGlow>
-			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilityMin>0.75</fertilityMin>
 			<fertilitySensitivity>0.75</fertilitySensitivity>
 			<growDays>5</growDays>
@@ -59,7 +56,7 @@
 		</comps>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
 			</li>
 		</modExtensions>
 	</ThingDef>

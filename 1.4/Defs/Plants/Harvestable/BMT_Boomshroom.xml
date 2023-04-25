@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantBase">
+    <ThingDef ParentName="BMT_CaveBushBase">
 		<defName>BMT_Boomshroom</defName>
-		<label>boomshroom</label>
+		<label>boomspore shroom</label>
 		<description>A fungus that while dangerous is grown by cavern dwelling populace for its volatile pods which can be refined into chemfuel.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomGrown</texPath>
@@ -15,14 +15,14 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
 			</li>
 		</modExtensions>
 		<ingestible/>
 		<selectable>true</selectable>
 		<plant>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomImmature</immatureGraphicPath>
-			<growMinGlow>0.5</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growMinGlow>0</growMinGlow>
 			<fertilityMin>0.7</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>

@@ -3,15 +3,20 @@
     <ThingDef ParentName="BMT_CaveBushBase">
         <defName>BMT_DulcisPlant</defName>
         <label>dulcis</label>
-        <description>An oddly sweet mushroom grown by cave dwellers in place of berries.</description>
+        <description>An oddly sweet mushroom grown by cave dwellers in place of berries. It can survive in a wide range of temperatures.</description>
         <graphicData>
             <texPath>BMT_Caverns/Things/Plant/Dulcis/DulcisGrown</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
 		<statBases>
 			<Nutrition>0.20</Nutrition>
-			<Flammability>0.35</Flammability>
+			<Flammability>0.1</Flammability>
 		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<optimalTemperature>0~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
         <neverMultiSelect>false</neverMultiSelect>
         <plant>
 			<growMinGlow>0</growMinGlow>

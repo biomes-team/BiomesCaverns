@@ -13,6 +13,9 @@
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.7~0.3</growingHours>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>0~352.222</optimalTemperature>
+			</li>
 		</modExtensions>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>

@@ -165,12 +165,13 @@
 		<BMT_Candlesnuff>0.7</BMT_Candlesnuff>
 			
 		<!-- other harvestable -->
+		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
 		
 		<!-- hydrophytes -->
 
 		<!-- special -->
 		<BMT_HeatsinkFungus>0.1</BMT_HeatsinkFungus>
-    <BMT_StinkLattice>0.05</BMT_StinkLattice>
+		<BMT_StinkLattice>0.05</BMT_StinkLattice>
 
     </wildPlants>
 
