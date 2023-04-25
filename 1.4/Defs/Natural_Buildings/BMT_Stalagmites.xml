@@ -41,11 +41,11 @@
 	<graphicData>
 	  <drawSize>(2,2)</drawSize>
 	</graphicData>
-	<comps>
-		<li Class="BiomesCore.ThingComponents.CompProperties_CompChunksOnKilled">
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.DropChunksWhenDestroyed">
 			<chunkCountRange>0~1</chunkCountRange>
 		</li>
-	</comps>
+	</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
@@ -53,11 +53,11 @@
 	<graphicData>
 	  <drawSize>(2.1,2.1)</drawSize>
 	</graphicData>
-	<comps>
-		<li Class="BiomesCore.ThingComponents.CompProperties_CompChunksOnKilled">
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.DropChunksWhenDestroyed">
 			<chunkCountRange>0~2</chunkCountRange>
 		</li>
-	</comps>
+	</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BMT_Stalagmites">
@@ -65,11 +65,11 @@
 	<graphicData>
 	  <drawSize>(2.25,2.25)</drawSize>
 	</graphicData>
-	<comps>
-		<li Class="BiomesCore.ThingComponents.CompProperties_CompChunksOnKilled">
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.DropChunksWhenDestroyed">
 			<chunkCountRange>1~2</chunkCountRange>
 		</li>
-	</comps>
+	</modExtensions>
   </ThingDef>
   
 </Defs>
