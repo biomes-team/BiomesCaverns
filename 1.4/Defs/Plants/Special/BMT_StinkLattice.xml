@@ -5,7 +5,7 @@
 		<label>stink lattice</label>
 		<description>The gasses from this latice-like fungus smell like a rotting corpse.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeGrown</texPath>
+			<texPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeImmature</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
@@ -15,7 +15,6 @@
 		<pathCost>60</pathCost>
 		<blockWind>false</blockWind>
 		<plant>
-			<immatureGraphicPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeImmature</immatureGraphicPath>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>4</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
@@ -48,6 +47,9 @@
 				<cellsToFill>1</cellsToFill>
 				<effecterReleasing>GasReleasing</effecterReleasing>
 				<growthProgress>0.6</growthProgress>
+			</li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGrownGraphic">
+					<grownGraphicPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeGrown</grownGraphicPath>
 			</li>
 		</comps>
 		<modExtensions>
