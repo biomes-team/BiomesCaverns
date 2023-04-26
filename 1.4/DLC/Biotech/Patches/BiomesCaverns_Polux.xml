@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_TreePolux"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_TreePolux"]</xpath>
 		<value>
-			<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
+			<thingClass>BMT.BiomesPlant</thingClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Plant_TreePolux"]</xpath>
+		<value>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
 				<graphicsPerBiome>
-					<li Class="BiomesCore.ThingComponents.BiomeGraphics">
+					<li Class="BiomesCore.DefModExtensions.BiomeGraphics">
 						<biomes>
 							<li>BMT_CrystalCaverns</li>
 							<li>BMT_FungalForest</li>
 							<li>BMT_EarthenDepths</li>
 						</biomes>
 						<graphicPath>BMT_Caverns/Things/Plant/PoluxShroom</graphicPath>
-
 					</li>
 				</graphicsPerBiome>
 			</li>

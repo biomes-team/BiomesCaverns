@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]</xpath>
 		<value>
-			<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
+			<thingClass>BMT.BiomesPlant</thingClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]</xpath>
+		<value>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
 				<graphicsPerBiome>
-					<li Class="BiomesCore.ThingComponents.BiomeGraphics">
+					<li Class="BiomesCore.DefModExtensions.BiomeGraphics">
 						<biomes>
 							<li>BMT_CrystalCaverns</li>
 							<li>BMT_FungalForest</li>
@@ -36,20 +42,24 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Plant_MossGauranlen"]</xpath>
 		<value>
-			<comps>
-				<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
-					<graphicsPerBiome>
-						<li Class="BiomesCore.ThingComponents.BiomeGraphics">
-							<biomes>
-								<li>BMT_CrystalCaverns</li>
-								<li>BMT_FungalForest</li>
-								<li>BMT_EarthenDepths</li>
-							</biomes>
-							<graphicPath>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomCluster</graphicPath>
-						</li>
-					</graphicsPerBiome>
-				</li>
-			</comps>
+			<thingClass>BMT.BiomesPlant</thingClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Plant_MossGauranlen"]</xpath>
+		<value>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
+				<graphicsPerBiome>
+					<li Class="BiomesCore.DefModExtensions.BiomeGraphics">
+						<biomes>
+							<li>BMT_CrystalCaverns</li>
+							<li>BMT_FungalForest</li>
+							<li>BMT_EarthenDepths</li>
+						</biomes>
+						<graphicPath>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomCluster</graphicPath>
+					</li>
+				</graphicsPerBiome>
+			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
@@ -72,20 +82,24 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Plant_PodGauranlen"]</xpath>
 		<value>
-			<comps>
-				<li Class="BiomesCore.ThingComponents.CompProperties_CompPlantGraphicPerBiome">
-					<graphicsPerBiome>
-						<li Class="BiomesCore.ThingComponents.BiomeGraphics">
-							<biomes>
-								<li>BMT_CrystalCaverns</li>
-								<li>BMT_FungalForest</li>
-								<li>BMT_EarthenDepths</li>
-							</biomes>
-							<graphicPath>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomPod</graphicPath>
-						</li>
-					</graphicsPerBiome>
-				</li>
-			</comps>
+			<thingClass>BMT.BiomesPlant</thingClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Plant_PodGauranlen"]</xpath>
+		<value>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
+				<graphicsPerBiome>
+					<li Class="BiomesCore.DefModExtensions.BiomeGraphics">
+						<biomes>
+							<li>BMT_CrystalCaverns</li>
+							<li>BMT_FungalForest</li>
+							<li>BMT_EarthenDepths</li>
+						</biomes>
+						<graphicPath>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomPod</graphicPath>
+					</li>
+				</graphicsPerBiome>
+			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
