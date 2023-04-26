@@ -13,6 +13,12 @@
 						<li>BMT_CrystalCaverns</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
+					<value>
+						<li>BMT_EarthenDepths</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
