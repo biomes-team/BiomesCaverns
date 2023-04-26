@@ -37,6 +37,5 @@ namespace Caveworld_Flora_Unleashed
         public float MyceliumExclusivityRadiusOffset = 1f;
 
         public float MyceliumExclusivityRadiusFactor = 0f;
-
     }
 }
