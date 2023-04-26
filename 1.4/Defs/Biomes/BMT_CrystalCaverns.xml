@@ -165,11 +165,13 @@
 		<!-- herbivores -->
 		<BMT_AaroxisDendoria>0.05</BMT_AaroxisDendoria>
 		<BMT_AaroxisDendoriaLarvae>0.05</BMT_AaroxisDendoriaLarvae>
+		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
+		<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
 		<BMT_CrystalBeetleLarvae>0.05</BMT_CrystalBeetleLarvae>
 		<BMT_CrystalBeetle>0.05</BMT_CrystalBeetle>
 		<BMT_Jewelbug>0.1</BMT_Jewelbug>
-		<BMT_GlowSlug>0.1</BMT_GlowSlug>
-		<BMT_GlowSnail>0.1</BMT_GlowSnail>
+		<BMT_GlowSlug>0.2</BMT_GlowSlug>
+		<BMT_GlowSnail>0.2</BMT_GlowSnail>
 		<BMT_Megapleura>0.1</BMT_Megapleura>
 		<!-- <Rat>1.3</Rat> -->
 		<BMT_Crystalope>0.2</BMT_Crystalope>
@@ -191,7 +193,10 @@
 		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
 	
 		<!-- predators -->
-		<BMT_CrystalMantis>0.08</BMT_CrystalMantis>
+		<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
+		<BMT_BloodropLarvae>0.15</BMT_BloodropLarvae>
+		<BMT_BloodropMoth>0.25</BMT_BloodropMoth>		
+		
     </wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>

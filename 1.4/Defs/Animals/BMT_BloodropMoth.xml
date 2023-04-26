@@ -11,10 +11,12 @@
             <MarketValue>100</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>8</FilthRate>
         </statBases>
         <race>
             <hasGenders>false</hasGenders>
             <fleshType>Insectoid</fleshType>
+			<herdAnimal>true</herdAnimal>
             <bloodDef>Filth_BloodInsect</bloodDef>
             <meatColor>(160,168,139)</meatColor>
             <meatMarketValue>0.5</meatMarketValue>
@@ -228,19 +230,19 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>BMT_BloodropMoth</defName>
         <label>bloodrop moth</label>
-        <description>The adult form of this species. It flies near silently through cave systems in search of blood it can drain from prey using its razor sharp proboscis. Even a small group of them can drain a large animal to death in mere minutes.</description>
+        <description>The adult form of this species. It flies near silently through cave systems in search of blood it can drain from prey using its razor sharp proboscis. Much like bats, they live in large groups.\n\nEven a small group of them can drain a large animal to death in mere minutes.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
             <BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">5</BiomesCore_FlySpeed>
             <MarketValue>350</MarketValue>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>57</ComfyTemperatureMax>
-            <FilthRate>19</FilthRate>
+            <FilthRate>8</FilthRate>
         </statBases>
         <race>
             <body>BeetleLike</body>
             <leatherDef>BMT_GrayChitin</leatherDef>
-            <herdAnimal>false</herdAnimal>
+            <herdAnimal>true</herdAnimal>
             <baseBodySize>0.77</baseBodySize>
             <baseHealthScale>1</baseHealthScale>
             <baseHungerRate>0.35</baseHungerRate>

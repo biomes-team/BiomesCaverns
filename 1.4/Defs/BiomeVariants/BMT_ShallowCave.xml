@@ -85,13 +85,13 @@
 
           <!-- herbivores -->
           <BMT_CaveCricket>0.25</BMT_CaveCricket>
-          <BMT_GlowSlug>0.1</BMT_GlowSlug>
-          <BMT_GlowSnail>0.05</BMT_GlowSnail>
+          <BMT_GiantSlug>0.1</BMT_GiantSlug>
+          <BMT_GiantSnail>0.2</BMT_GiantSnail>
           <BMT_Goeto>0.3</BMT_Goeto>
-          <BMT_MossBeetle>0.075</BMT_MossBeetle>
-          <BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+		  <BMT_MossBeetle>0.2</BMT_MossBeetle>
+		  <BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
           <BMT_Pillbug>0.2</BMT_Pillbug>
-          <BMT_TruffleMole>0.1</BMT_TruffleMole>
+          <BMT_TruffleMole>0.07</BMT_TruffleMole>
           <BMT_Xyrion>0.1</BMT_Xyrion>
           <Boomrat>0.3</Boomrat>
           <Hare>0.2</Hare>
