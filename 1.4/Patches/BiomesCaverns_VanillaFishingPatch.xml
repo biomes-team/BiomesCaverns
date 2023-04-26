@@ -10,6 +10,7 @@
 					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
 					<value>
 						<li>BMT_FungalForest</li>
+						<li>BMT_CrystalCaverns</li>
 					</value>
 				</li>
 			</operations>
