@@ -47,7 +47,7 @@
 			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
 				<gasType>RotStink</gasType>
 				<cellsToFill>1</cellsToFill>
-				<effecterReleasing>GasReleasing</effecterReleasing>
+				<effecterReleasing MayRequire="Ludeon.RimWorld.Biotech">GasReleasing</effecterReleasing>
 				<growthProgress>0.6</growthProgress>
 			</li>
 		</comps>
