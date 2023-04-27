@@ -97,4 +97,31 @@
 		</stuffProps>
 	</ThingDef>
 
+	<ThingDef ParentName="BiomesCore_ChitinBase">
+		<defName>BMT_DeepChitin</defName>
+		<!-- large chitin t5 -->
+		<label>deep chitin</label>
+		<description>A nearly inflammable and heat-proof chitin. It is only found on the creatures from the deepest and hottest environments within the UnderRim.</description>
+		<graphicData>
+			<color>(142,142,142)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>8.5</MarketValue>
+			<Flammability>0.05</Flammability>
+			<StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>6</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>50</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(142,142,142)</color>
+			<statFactors>
+				<Flammability>0</Flammability>
+				<MaxHitPoints>1.1</MaxHitPoints>
+				<Beauty>2</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
 </Defs>

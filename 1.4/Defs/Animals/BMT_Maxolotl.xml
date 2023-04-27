@@ -75,8 +75,8 @@
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
-			<leatherDef>Leather_Lizard</leatherDef>
-			<useMeatFrom>Iguana</useMeatFrom>
+			<leatherDef>BMT_Leather_Amphibian</leatherDef>
+			<meatLabel>amphibian meat</meatLabel>
 			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<petness>0.05</petness>

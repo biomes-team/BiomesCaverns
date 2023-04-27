@@ -67,7 +67,8 @@
 			<baseHealthScale>0.35</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<leatherDef>Leather_Lizard</leatherDef>
+			<leatherDef>BMT_Leather_Amphibian</leatherDef>
+			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
 			<wildness>0</wildness>
 			<trainability>None</trainability>
 			<roamMtbDays>5</roamMtbDays>

@@ -15,7 +15,7 @@
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.1</drawSize>
 		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>

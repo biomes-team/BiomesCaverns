@@ -48,7 +48,6 @@
 		<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
 		<hasGenders>false</hasGenders>
 		<herdAnimal>false</herdAnimal>
-		<useMeatFrom>Megaspider</useMeatFrom>
 		<bloodDef>Filth_BloodInsect</bloodDef>
 		<body>BiomesCore_Slug</body>
 		<baseHungerRate>0.8</baseHungerRate>

@@ -71,8 +71,8 @@
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
-			<leatherDef>Leather_Lizard</leatherDef>
-			<useMeatFrom>Iguana</useMeatFrom>
+			<leatherDef>BMT_Leather_Amphibian</leatherDef>
+			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
 			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>11</lifeExpectancy>

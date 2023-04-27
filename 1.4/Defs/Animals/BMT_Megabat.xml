@@ -147,7 +147,7 @@
 		<bodyGraphicData>
 		  <texPath>BMT_Caverns/Things/Animal/Megabat/Megabat</texPath>
 		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>1.0</drawSize>
+		  <drawSize>1.5</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		  <shadowData>
 			<volume>(0.4, 0.3, 0.3)</volume>
