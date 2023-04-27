@@ -83,7 +83,7 @@
 		</comps>
 	</ThingDef>
 
-	  <ThingDef ParentName="BaseGrenadeProjectile">
+	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Proj_BMT_ThrumbungusShroom</defName>
 		<label>thrumbungus mushroom</label>
 		<graphicData>
@@ -91,11 +91,14 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>ToxGas</damageDef>
+			<damageDef>ScratchToxic</damageDef>
+			<damageAmountBase>8</damageAmountBase>
 			<explosionDelay>100</explosionDelay>
 			<explosionRadius>1</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_Smoke</soundExplode>
 			<explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
-			<postExplosionGasType>ToxGas</postExplosionGasType>
+			<postExplosionGasType>RotStink</postExplosionGasType>
 			<screenShakeFactor>0.5</screenShakeFactor>
 		</projectile>
 	</ThingDef>
