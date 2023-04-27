@@ -7,18 +7,21 @@ namespace Caveworld_Flora_Unleashed
     {
         public override string GetInspectString()
         {
-            float temperatureForCell = GenTemperature.GetTemperatureForCell(Position, Map);
-            var thingDef_FruitingBody = GetPlantDefToGrow() as ThingDef_FruitingBody;
-            if (temperatureForCell < thingDef_FruitingBody.minGrowTemperature)
+            if (GetPlantDefToGrow() is ThingDef_FruitingBody thingDef)
             {
-                return "Caveworld_Flora_Unleashed.CannotGrowTooCold".Translate();
-            }
+                float temperatureForCell = GenTemperature.GetTemperatureForCell(Position, Map);
+            
+                if (temperatureForCell < thingDef.minGrowTemperature)
+                {
+                    return "Caveworld_Flora_Unleashed.CannotGrowTooCold".Translate();
+                }
 
-            if (temperatureForCell > thingDef_FruitingBody.maxGrowTemperature)
-            {
-                return "Caveworld_Flora_Unleashed.CannotGrowTooHot".Translate();
+                if (temperatureForCell > thingDef.maxGrowTemperature)
+                {
+                    return "Caveworld_Flora_Unleashed.CannotGrowTooHot".Translate();
+                }
             }
-
+            
             return "Caveworld_Flora_Unleashed.Growing".Translate();
         }
     }
