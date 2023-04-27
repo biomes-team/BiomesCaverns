@@ -34,7 +34,7 @@
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<harvestedThingDef>BMT_RawGlowbulb</harvestedThingDef>
 			<harvestYield>5</harvestYield>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>

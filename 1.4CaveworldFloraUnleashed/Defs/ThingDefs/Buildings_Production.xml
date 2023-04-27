@@ -96,15 +96,14 @@
 			<Cleanliness>-10</Cleanliness>
 		</statBases>
 		<costList>
-			<WoodLog>20</WoodLog>
-			<BMT_MycelialBlocks>10</BMT_MycelialBlocks>
+			<BMT_MushroomLog>40</BMT_MushroomLog>
 		</costList>
 		<fertility>1.0</fertility>
 		<building>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/BMT_Fungiponics_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
-			<defaultPlantToGrow>BMT_Greyfields</defaultPlantToGrow>
+			<defaultPlantToGrow>BMT_DulcisPlant</defaultPlantToGrow>
 			<sowTag>BMT_Fungiponics</sowTag>
 		</building>
 		<tickerType>Rare</tickerType>
