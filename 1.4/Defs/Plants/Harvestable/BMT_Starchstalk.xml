@@ -35,7 +35,7 @@
 			<harvestYield>11</harvestYield>
 			<sowTags>
 				<li>Ground</li>
-				<li>Hydroponic</li>
+				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_Starchstalk</harvestedThingDef>

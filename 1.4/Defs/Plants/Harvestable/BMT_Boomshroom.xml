@@ -38,6 +38,7 @@
 			<harvestYield>4</harvestYield>
 			<sowTags>
 				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>

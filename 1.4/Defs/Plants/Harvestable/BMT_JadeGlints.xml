@@ -30,7 +30,7 @@
 			<harvestYield>5</harvestYield>
 			<sowTags>
 				<li>Ground</li>
-				<li>Hydroponic</li>
+				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<topWindExposure>0</topWindExposure>
 			<visualSizeRange>0.5~1.0</visualSizeRange>
