@@ -14,5 +14,6 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/DLC/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/DLC/Biotech</li>
 		<li IfModActive="VanillaExpanded.VBrewE">1.4/Mods/VanillaBrewingExpanded</li>
+		<li IfModActive="vanillaexpanded.backgrounds">1.4/Mods/VBgE</li>
 	</v1.4>
 </loadFolders>
