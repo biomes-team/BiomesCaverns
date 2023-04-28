@@ -29,8 +29,8 @@
 			<eggLayFemaleOnly>false</eggLayFemaleOnly>
 		</li>
 		<li Class="BiomesCore.CompProperties_MakeFilthTrail">
-			<filthDef>BMT_Filth_Acidic_Slime</filthDef>
-			<cooldown>8</cooldown>
+			<filthDef>BMT_Filth_Acidic_Snail_Slime</filthDef>
+			<cooldown>20</cooldown>
 		</li>
 	</comps>
 	<tools>
@@ -162,7 +162,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseFilth">
-		<defName>BMT_Filth_Acidic_Slime</defName>
+		<defName>BMT_Filth_Acidic_Snail_Slime</defName>
 		<label>acidic slime</label>
 		<statBases>
 			<Beauty>-25</Beauty>
@@ -173,7 +173,7 @@
 			<color>(170, 182, 120, 170)</color>
 		</graphicData>
 		<filth>
-			<disappearsInDays>35~40</disappearsInDays>
+			<disappearsInDays>0.01~0.02</disappearsInDays>
 			<rainWashes>true</rainWashes>
 			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
 			<canFilthAttach>true</canFilthAttach>

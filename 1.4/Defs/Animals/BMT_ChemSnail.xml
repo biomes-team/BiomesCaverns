@@ -33,8 +33,8 @@
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 				<li Class="BiomesCore.CompProperties_MakeFilthTrail">
-					<filthDef>Filth_FuelTrail</filthDef>
-					<cooldown>4</cooldown>
+					<filthDef>BMT_Filth_Snail_FuelTrail</filthDef>
+					<cooldown>20</cooldown>
 				</li>
 			  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
     <sleepGraphicData>
@@ -227,7 +227,7 @@
 	</ThingDef>
 	<!--filth / trail -->
 	<ThingDef ParentName="BaseFilth">
-		<defName>Filth_FuelTrail</defName>
+		<defName>BMT_Filth_Snail_FuelTrail</defName>
 		<label>chemfuel trail</label>
 		<description>A trail of hardened flammable chemslime left from a chem snail.</description>
 		<thingClass>LiquidFuel</thingClass>
@@ -243,7 +243,7 @@
 		</graphicData>
 		<filth>
 			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-			<disappearsInDays>0.3~0.6</disappearsInDays>
+			<disappearsInDays>0.1~0.2</disappearsInDays>
 			<rainWashes>true</rainWashes>
 			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
 			<canFilthAttach>false</canFilthAttach>

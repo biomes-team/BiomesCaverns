@@ -42,8 +42,8 @@
 			<resourceGrowthReportString>BMT_MetalloSnailShellGrowth</resourceGrowthReportString>
 		</li>
 		<li Class="BiomesCore.CompProperties_MakeFilthTrail">
-			<filthDef>Filth_FireFoam</filthDef>
-			<cooldown>60000</cooldown>
+			<filthDef>BMT_Filth_Snail_FireFoam</filthDef>
+			<cooldown>20</cooldown>
 		</li>
 		<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
     <sleepGraphicData>
@@ -224,5 +224,27 @@
 				<saveKeysPrefix>slag</saveKeysPrefix>
 			</li>
 		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>BMT_Filth_Snail_FireFoam</defName>
+		<label>firefoam</label>
+		<statBases>
+			<Beauty>-25</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/FireFoam</texPath>
+			<drawSize>1.75</drawSize>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>0.1~0.2</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<allowsFire>false</allowsFire>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
 	</ThingDef>
 </Defs>

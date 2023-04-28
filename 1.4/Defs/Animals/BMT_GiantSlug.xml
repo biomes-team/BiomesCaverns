@@ -22,8 +22,8 @@
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
 			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
-				<filthDef>Filth_Slime</filthDef>
-				<cooldown>8</cooldown>
+				<filthDef>BMT_Filth_Snail_Slime</filthDef>
+				<cooldown>20</cooldown>
 			</li>
 		</comps>
 		<tools>
@@ -158,5 +158,24 @@
 			<MarketValue>20.0</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="BaseFilth">
+		<defName>BMT_Filth_Snail_Slime</defName>
+		<label>slime</label>
+		<statBases>
+			<Beauty>-25</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(130, 142, 120, 170)</color>
+		</graphicData>
+		<filth>
+			<disappearsInDays>0.01~0.02</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
 	</ThingDef>
 </Defs>
