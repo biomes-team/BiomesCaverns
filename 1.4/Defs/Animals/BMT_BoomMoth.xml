@@ -33,7 +33,7 @@
 		<canBePredatorPrey>false</canBePredatorPrey>
 		<body>BeetleLike</body>
 		<baseHungerRate>0.535</baseHungerRate>
-		<baseBodySize>1</baseBodySize>
+		<baseBodySize>0.8</baseBodySize>
 		<baseHealthScale>0.65</baseHealthScale>
 		<trainability>None</trainability>
 		<roamMtbDays>2</roamMtbDays>
@@ -161,7 +161,7 @@
             <meatColor>(160,168,139)</meatColor>
             <meatMarketValue>0.5</meatMarketValue>
             <useMeatFrom>Megaspider</useMeatFrom>
-            <baseBodySize>1</baseBodySize>
+            <baseBodySize>0.8</baseBodySize>
             <baseHealthScale>0.8</baseHealthScale>
             <foodType>None</foodType>
             <wildness>1</wildness>
@@ -248,7 +248,7 @@
             <leatherDef>BMT_WeakChitin</leatherDef>
             <herdAnimal>false</herdAnimal>
 			<baseHungerRate>0.535</baseHungerRate>
-			<baseBodySize>1</baseBodySize>
+			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.65</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
             <predator>false</predator>

@@ -41,7 +41,7 @@
 				<postExplosionSpawnChance>0.5</postExplosionSpawnChance>
 				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 				<proxiGroup>Pawn</proxiGroup>
-				<minBodySize>0.5</minBodySize>
+				<minBodySize>0.9</minBodySize>
 				<proxiRadius>4.9</proxiRadius>
 				<growthProgress>0.6</growthProgress>
 				<growthAfterExplosion>0.4</growthAfterExplosion>

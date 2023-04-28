@@ -67,7 +67,7 @@
 		</comps>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>2.4</baseBodySize>
+			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
