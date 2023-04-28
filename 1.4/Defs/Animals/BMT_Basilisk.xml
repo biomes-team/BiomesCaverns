@@ -11,6 +11,7 @@
 	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 	  <FilthRate>2</FilthRate>
+	  <Flammability>0.0</Flammability>
 	</statBases>
 	<tools>
 	  <li>

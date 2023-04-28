@@ -17,6 +17,7 @@
 	  <FilthRate>8</FilthRate>
 	  <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
 	  <InjuryHealingFactor>5.0</InjuryHealingFactor>
+	  <Flammability>0.0</Flammability>
 	</statBases>
 	<!-- <uiIconScale>1.75</uiIconScale> -->
 	<comps>

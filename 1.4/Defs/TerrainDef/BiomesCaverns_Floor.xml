@@ -7,6 +7,7 @@
 		<renderPrecedence>250</renderPrecedence>
 		<description>Mushroom plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
 		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<isPaintable>true</isPaintable>
 		<burnedDef>BurnedWoodPlankFloor</burnedDef>
 		<color>(195,195,195)</color>
 		<statBases>
@@ -25,6 +26,7 @@
 		<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
 		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
 		<layerable>true</layerable>
+		<isPaintable>true</isPaintable>
 		<!--bridge>true</bridge-->
 		<affordances>
 			<li>Light</li>
@@ -80,6 +82,7 @@
 		<label>heavy mushroom bridge</label>
 		<description>A flat mushroom surface on extra-strong supportive beams which can be built over water. You can build heavy structures on this bridge, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
 		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/HeavyMushroomBridge_MenuIcon</uiIconPath>
+		<isPaintable>true</isPaintable>
 		<affordances>
 			<li>Light</li>
 			<li>Medium</li>
@@ -117,7 +120,7 @@
 			<li>Diggable</li>
 		</affordances>
 		<generatedFilth>Filth_Ash</generatedFilth>
-		<fertility>1.4</fertility>
+		<fertility>1</fertility>
 		<takeFootprints>true</takeFootprints>
 		<tools>
 			<li>
@@ -164,7 +167,7 @@
 			<li>Diggable</li>
 		</affordances>
 		<generatedFilth>Filth_Ash</generatedFilth>
-		<fertility>1.0</fertility>
+		<fertility>1.1</fertility>
 		<takeFootprints>true</takeFootprints>
 		<tools>
 			<li>

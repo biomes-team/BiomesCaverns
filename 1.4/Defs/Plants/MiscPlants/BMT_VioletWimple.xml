@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_VioletWimple</defName>
 		<label>violet wimple</label>
-		<description>A big violet capped mushroom.</description>
+		<description>A big violet capped mushroom. While not very productive, it does produce edible fungus.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/VioletWimple</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

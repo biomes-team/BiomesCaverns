@@ -70,7 +70,7 @@
       </li>
     </modExtensions>
     <animalDensity>3</animalDensity>
-    <plantDensity>0.3</plantDensity>
+    <plantDensity>0.5</plantDensity>
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>0.5</movementDifficulty>
     <texture>BMT_Caverns/World/Biomes/EarthenDepths</texture>
@@ -166,6 +166,7 @@
 			
 		<!-- other harvestable -->
 		<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
+		<BMT_MoonlessStripesPlant>0.1</BMT_MoonlessStripesPlant>
 		
 		<!-- hydrophytes -->
 

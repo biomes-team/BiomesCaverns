@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_Wrinklecap</defName>
 		<label>wrinklecap</label>
-		<description>A subterranean fungus that grows in damp environments, it is often eaten by fungivores.</description>
+		<description>A subterranean fungus that grows in damp environments. It is often eaten by fungivores.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>0.0</Flammability>
