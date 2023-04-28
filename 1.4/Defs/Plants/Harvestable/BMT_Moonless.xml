@@ -58,6 +58,7 @@
 			<StuffPower_Armor_Heat>0.95</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>90</StuffPower_Insulation_Heat>
+			<BC_StuffPower_FlammabilityOffset>-0.4</BC_StuffPower_FlammabilityOffset>
 			<MaxHitPoints>80</MaxHitPoints>
 			<MarketValue>1.5</MarketValue>
 			<Mass>0.026</Mass>
