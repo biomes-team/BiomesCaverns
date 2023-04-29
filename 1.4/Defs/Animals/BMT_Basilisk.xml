@@ -90,7 +90,7 @@
 	  <!-- <animalType>Canine</animalType> -->
 	  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
 	  <predator>true</predator>
-	  <maxPreyBodySize>2.3</maxPreyBodySize>
+	  <maxPreyBodySize>0.8</maxPreyBodySize>
 	  <!-- <petness>0.1</petness> -->
 	  <baseBodySize>1.5</baseBodySize>
 	  <baseHungerRate>0.3</baseHungerRate>
