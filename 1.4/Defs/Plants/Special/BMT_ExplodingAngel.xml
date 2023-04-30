@@ -14,6 +14,7 @@
 		</statBases>
 		<selectable>true</selectable>
 		<specialDisplayRadius>4</specialDisplayRadius>
+		<tickerType>Normal</tickerType>
 		<plant>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelImmature</immatureGraphicPath>
 			<fertilityMin>0.75</fertilityMin>
@@ -42,7 +43,7 @@
 				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 				<proxiGroup>Pawn</proxiGroup>
 				<minBodySize>0.9</minBodySize>
-				<proxiRadius>4.9</proxiRadius>
+				<proxiRadius>3.9</proxiRadius>
 				<growthProgress>0.6</growthProgress>
 				<growthAfterExplosion>0.4</growthAfterExplosion>
 				<explodeOnKilled>true</explodeOnKilled>
