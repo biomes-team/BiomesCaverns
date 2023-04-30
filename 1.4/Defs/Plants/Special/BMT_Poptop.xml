@@ -12,9 +12,10 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<blockWind>false</blockWind>
+		<tickerType>Normal</tickerType>
 		<plant>
 			<growDays>1</growDays>
-            <dieIfLeafless>false</dieIfLeafless>
+			<dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
 			<visualSizeRange>0.5~1.2</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
