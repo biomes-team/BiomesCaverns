@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_MoonlessStripesPlant</defName>
 		<label>moonless stripes</label>
-		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth.</description>
+		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown elsewhere, it requires high heat to do so properly.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -12,7 +12,7 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.5~0.99</growingHours>
-				<optimalTemperature>0~352.222</optimalTemperature>
+				<optimalTemperature>50~352.222</optimalTemperature>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -54,7 +54,7 @@
 		</graphicData>
 		<statBases>
 			<StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>0.95</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>90</StuffPower_Insulation_Heat>
@@ -74,7 +74,7 @@
 			</categories>
 			<commonality>0.20</commonality>
 			<statFactors>
-				<Flammability>0</Flammability>
+				<Flammability>0.05</Flammability>
 				<MaxHitPoints>1.3</MaxHitPoints>
 				<Beauty>3.2</Beauty>
 			</statFactors>

@@ -9,9 +9,6 @@
 	  <drawSize>(4.0,4.5)</drawSize>
 	  <color>(126,104,94)</color>
 	</graphicData>
-	<killedLeavings>
-		<ChunkSandstone>5</ChunkSandstone>
-	</killedLeavings>
 	<altitudeLayer>Building</altitudeLayer>
 	<tickerType>Never</tickerType>
 	<passability>PassThroughOnly</passability>

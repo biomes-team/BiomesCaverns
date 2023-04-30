@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_HeatsinkFungus</defName>
 		<label>heatsink fungus</label>
-		<description>Using a complex mix of chemical reactions, this fungus draws in heat to help fuel its growth. Deep-dwelling troglodytes use its heat-drawing ability to cool off their homes.</description>
+		<description>Using a complex mix of chemical reactions, this fungus draws in heat to help fuel its growth. Deep-dwelling troglodytes use its heat-drawing ability to cool off their homes, often by building around it or moving it indoors.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/HeatsinkFungus</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
