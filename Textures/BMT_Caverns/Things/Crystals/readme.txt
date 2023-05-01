@@ -1,1 +1,0 @@
-All are in their own folder so that you can freely add new types of crystals without changing the code.

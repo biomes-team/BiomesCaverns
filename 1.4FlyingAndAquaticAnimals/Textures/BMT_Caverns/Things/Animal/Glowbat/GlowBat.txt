@@ -1,5 +1,0 @@
-How big is it? Same size as other bat.
-What does it eat? (is it a predator?) Predatory carnivore of small animals.
-Where does it live? Surface caverns. 
-Does it spawn in packs? Yes.
-Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. Texture should be unaffected by light level. They should attack just fine in darkness.
