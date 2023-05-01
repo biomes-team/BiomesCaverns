@@ -40,7 +40,7 @@
 				<Flammability>0</Flammability>
 				<WorkToBuild>6.5</WorkToBuild>
 				<WorkToMake>1.4</WorkToMake>
-				<DoorOpenSpeed>0.6</DoorOpenSpeed>
+				<DoorOpenSpeed>0.5</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>1.20</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 			<statOffsets>

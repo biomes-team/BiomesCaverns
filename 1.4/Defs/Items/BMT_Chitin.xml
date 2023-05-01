@@ -55,7 +55,7 @@
 		<defName>BMT_CrystalChitin</defName>
 		<!-- large chitin t3 -->
 		<label>crystal carapace</label>
-		<description>A crystallized carapace that is commonly part of crystal-based insectoids.</description>
+		<description>A crystallized carapace that is commonly found on arthropods in crystal-heavy caverns.</description>
 		<graphicData>
 			<color>(21,244,238)</color>
 		</graphicData>

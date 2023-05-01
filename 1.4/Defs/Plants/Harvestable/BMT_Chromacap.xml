@@ -3,7 +3,7 @@
   <ThingDef ParentName="PlantBaseNonEdible">
     <defName>BMT_Chromacap</defName>
     <label>chromacap</label>
-    <description>A genetically-engineered mushroom-like crop reminescent of Tinctoria which secretes a self-altering dye. This dye can be coaxed into different colors and used to change the color of walls, buildings, and more.</description>
+    <description>A genetically engineered mushroom-like crop reminescent of Tinctoria. It secretes a self-altering dye which can be coaxed into different colors and used to change the color of walls, buildings, and more.</description>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Beauty>1</Beauty>

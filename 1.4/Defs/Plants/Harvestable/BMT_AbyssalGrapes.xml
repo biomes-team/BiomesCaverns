@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_CaveBushBase">
 		<defName>BMT_AbyssalGrapesVine</defName>
 		<label>abyssal grapes</label>
-		<description>A medium-sized vine that yields abyssal grapes when harvested. Tastes nice when eaten raw.</description>
+		<description>Although not actually forming grapes, the abyssal grapes are an attempt at creating the perfect nutrient for travelers and mining expeditions. Almost as big as a melon, the fruit is known for having longer lifespans and almost never rotting away when harvested.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.20</Nutrition>
@@ -26,7 +26,7 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<growDays>14</growDays>
-			<dieIfLeafless>true</dieIfLeafless>
+			<dieIfLeafless>false</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</immatureGraphicPath>
 			<harvestYield>20</harvestYield>
 			<sowMinSkill>5</sowMinSkill>
@@ -49,7 +49,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_AbyssalGrapes</defName>
 		<label>abyssal grapes</label>
-		<description>Raw grapes. Nice to eat, even when raw.</description>
+		<description>Raw abyssal grapes. Nice to eat, even when raw.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Crops/AbyssalGrapes/AbyssalGrapes</texPath>
 		</graphicData>
@@ -59,7 +59,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>70</daysToRotStart>
+				<daysToRotStart>75</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

@@ -3,7 +3,7 @@
     <ThingDef ParentName="BMT_CaveBushBase">
 		<defName>BMT_Boomshroom</defName>
 		<label>boomspore shroom</label>
-		<description>A fungus that while dangerous is grown by cavern dwelling populace for its volatile pods which can be refined into chemfuel.</description>
+		<description>A fungus grown by cavern dwelling populace for its dangerously volatile pods which can be refined into chemfuel.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -47,7 +47,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_BoomSpore</defName>
 		<label>boom spore sac</label>
-		<description>The spore sac of a boomshroom. It is a good fuel for campfires and generators, and can be refined into chemfuel.</description>
+		<description>The spore sac of a boomspore shroom. It's a good fuel for campfires and generators, and can be refined into chemfuel.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/BoomSpore</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
