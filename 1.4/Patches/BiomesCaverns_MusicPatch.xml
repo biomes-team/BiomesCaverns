@@ -409,7 +409,7 @@
 						<MusicExpanded.ThemeDef>
 							<defName>BMT_Caverns_FungalForest</defName>
 							<label>Biomes! Caverns - FungalForest</label>
-							<iconPath>BMT_Core/UI/Icon/Biomes!Palm</iconPath>
+							<iconPath>BMT_Core/UI/Icon/Cavern</iconPath>
 							<description>Echo.</description>
 							<tracks>
 								<li MayRequire="musicexpanded.core">ME_Shared_ManInBlack</li>
@@ -443,8 +443,8 @@
 						<MusicExpanded.ThemeDef>
 							<defName>BMT_Caverns</defName>
 							<label>Biomes! Caverns</label>
-							<iconPath>BMT_Core/UI/Icon/Biomes!Palm</iconPath>
-							<description>Echo.</description>
+							<iconPath>BMT_Core/UI/Icon/Cavern</iconPath>
+							<description>Echo. (additional)</description>
 							<tracks>
 								<li MayRequire="musicexpanded.core">ME_Shared_ManInBlack</li>
 								<li>BMT_Caverns_Cavern_Chill</li>

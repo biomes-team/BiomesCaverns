@@ -64,7 +64,9 @@
 			<ai_chillDestination>false</ai_chillDestination>
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
-		<!--researchPrerequisites><li></li></researchPrerequisites-->
+		<researchPrerequisites>
+			<li>GeothermalPower</li>
+		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
 
