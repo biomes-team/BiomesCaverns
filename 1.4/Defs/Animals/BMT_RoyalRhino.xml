@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_RoyalRhinoLarvae</defName>
 		<label>royal rhino grub</label>
-		<description>A gigantic rare beetle that is revered by certain underground cultures for its legendary status and power. While its royal purple chitin is beautiful, it is also extremely durable. Its extremely sharp horn fetches a high price. While normally gentle by nature, it is extremely dangerous when enraged.</description>
+		<description>A gigantic larva of the royal rhino beetle. It is much weaker than its adult form, often remaining reclusive until fully grown.</description>
 		<statBases>
 			<MoveSpeed>0.4</MoveSpeed>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -140,12 +140,12 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_RoyalRhinoPupa</defName>
 		<label>royal rhino pupa</label>
-		<description>A vary large, extremely dangerous, subterranean beetle.\n\nA gigantic type of rare beetle that is revered by certain underground cultures for its rarity and power. While its royal purple chitin is beautiful, it is also extremely durable. Its extremely sharp horn fetches a high price. While normally gentle by nature, it is extremely dangerous when enraged.</description>
+		<description>A vary large and highly durable pupa. While immobile, its shell protects it from most harm.</description>
 		<statBases>
 			<MoveSpeed>0</MoveSpeed>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -234,7 +234,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_RoyalRhino</defName>
 		<label>royal rhino beetle</label>
-		<description>A vary large, extremely dangerous, subterranean beetle.\n\nA gigantic type of rare beetle that is revered by certain underground cultures for its rarity and power. While its royal purple chitin is beautiful, it is also extremely durable. Its extremely sharp horn fetches a high price. While normally gentle by nature, it is extremely dangerous when enraged.</description>
+		<description>A gigantic type of rare beetle that is revered by certain underground cultures for its rarity and power. While its royal purple chitin is beautiful, it is also extremely durable. The extremely sharp horn gracing their head fetches a high price. While normally gentle by nature, it is extremely dangerous when enraged.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>

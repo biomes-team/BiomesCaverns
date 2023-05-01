@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_Megapleura</defName>
 	<label>megapleura</label>
-	<description>A relative of the trilobite beetle that has grown to massive proportions while living deep within the crust of the Rim. While odd in appearance, it is largely harmless.</description>
+	<description>A relative of the trilobite beetle, the megapleura has grown to massive proportions while living deep within the Rim's crust. While odd in appearance, it is largely harmless.</description>
 	<statBases>
 	  <MoveSpeed>7.5</MoveSpeed>
 	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>

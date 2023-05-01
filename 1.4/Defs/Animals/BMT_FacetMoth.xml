@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FacetMothLarvae</defName>
 		<label>crystalline caterpillar</label>
-		<description>The larval form of the facet moth. While its body may look spiky and hard, it's actually a form of natural mimicry to deter predators.</description>
+		<description>The larval form of the facet moth. To deter predators, its body appears spiky and hard through a form of natural mimicry.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>

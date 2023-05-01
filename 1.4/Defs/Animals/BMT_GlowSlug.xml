@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_GlowSlug</defName>
 		<label>glowslug</label>
-		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder that its species has survived this long, let alone to the large size it is.</description>
+		<description>This bioluminescent slug is easily spotted in any dark environment, both by its own species and by predators. It is a wonder how they have survived this long, let alone to such a large size.</description>
 		<statBases>
 			<MoveSpeed>0.8</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

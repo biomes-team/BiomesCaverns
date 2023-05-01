@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_DarkAxolotl</defName>
 	<label>dark axolotl</label>
-	<description>A large yet peaceful inhabitant of the shallow caves, hunting only small animals. A good pet, though weak in combat.</description>
+	<description>A large yet peaceful inhabitant of the shallow caves. Hunts only small animals. A good pet, though weak in combat.</description>
 	<statBases>
 	  <MoveSpeed>4.60</MoveSpeed>
 	  <ComfyTemperatureMin>-40</ComfyTemperatureMin>

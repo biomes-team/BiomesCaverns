@@ -11,7 +11,7 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_FungalWeevil</defName>
 	<label>fungal weevil</label>
-	<description>Unlike normal fungal infestations within insects, this infestation has somehow grown into a healthy symbiosis. The insect's movements help to spread the fungal spores and its body gives its fungus a place, while the fungus helps its host hide within the fungal growths of the biome.</description>
+	<description>Unlike normal fungal infestations within insects, this infestation has somehow grown into a healthy symbiosis. The insect's movements help to spread the fungal spores while its body provides the fungus a home. In return, the fungus helps its host hide within the fungal growths of the biome.</description>
 	<statBases>
 	  <MoveSpeed>3.75</MoveSpeed>
 	  <ArmorRating_Blunt>0.18</ArmorRating_Blunt>

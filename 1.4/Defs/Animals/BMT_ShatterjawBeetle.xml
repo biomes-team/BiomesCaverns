@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_ShatterjawBeetleLarvae</defName>
 		<label>shatterjaw grub</label>
-		<description>A small, squishy grub with weak bite force. While its adult form can bite a man in half, this grub is incapable of such a task.</description>
+		<description>While its adult form can bite a man in half, this weak, squishy grub is incapable of such a task.</description>
 		<statBases>
 			<MoveSpeed>0.3</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_Thrumbungus</defName>
     <label>thrumbungus</label>
-    <description>A gigantic, fungal amalgam creature. Rumor in the UnderRim has it that it was created from a mix of a genetics experiment creature and the fungi that feasted on its corpse.\n\nWhile gentle by nature, it is extremely dangerous when enraged. The strange hide that covers much of it is exceptionally beautiful and incredibly resistant to damage.</description>
+    <description>A gigantic, fungal amalgam creature. Rumor in the UnderRim says it was created from a mix of a failed genetics experiment and the fungi that feasted on its corpse.\n\nWhile gentle by nature, it is dangerous when enraged. The strange hide that covers much of it is extremely beautiful and incredibly resistant to damage.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <MarketValue>4000</MarketValue>

@@ -4,7 +4,7 @@
     <ThingDef ParentName="BaseBear">
         <defName>BMT_Owlbear</defName>
         <label>Owlbear</label>
-        <description>Originally created by scientists enamored with a tabletop game from Earth, it was released into the wild and has found a home within caverns near the surface, able to come and go as it pleases.</description>
+        <description>Originally created by scientists enamored with a tabletop game from Earth, it was released into the wild and has found a home within caverns near the surface. It comes and goes as it pleases.</description>
         <statBases>
             <MoveSpeed>4.8</MoveSpeed>
             <ComfyTemperatureMin>-30</ComfyTemperatureMin>

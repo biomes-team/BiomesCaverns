@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FireSalamander</defName>
 		<label>fire salamander</label>
-		<description>While it is commonly called a salamander, it is actually more closely related to reptiles than amphibians. Its luminous skin is reminiscent of hot lava, meant to deter predators. Unfortunately, predators in its environment are ignorant of this due to poor vision.</description>
+		<description>Though commonly called a salamander, it is more closely related to reptiles than amphibians. Its luminous skin is reminiscent of hot lava. Normally this would deter its natural predators if it weren't for their poor vision.</description>
 		<statBases>
 			<MoveSpeed>5.1</MoveSpeed>
 			<MarketValue>900</MarketValue>

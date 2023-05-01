@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseInsect">
 		<defName>BMT_Jellypot</defName>
 		<label>jellypot</label>
-		<description>Named the jellypot for its ability to produce insect jelly in its large thorax sac, this rare animal is almost exclusively found near insectoid hives, being farmed much like ants do with aphids. It does not seem capable of breeding in captivity.</description>
+		<description>Named the jellypot for its ability to produce insect jelly in its large thoracic sac, this rare animal is almost exclusively found near insectoid hives. Despite being farmed much like ants do with aphids, it does not seem capable of breeding in captivity.</description>
 		<statBases>
 			<MoveSpeed>1.65</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
