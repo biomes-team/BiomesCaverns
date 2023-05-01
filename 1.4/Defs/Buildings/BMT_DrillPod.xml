@@ -61,8 +61,8 @@
 		</graphicData>
 		<skyfaller>
 			<movementType>Decelerate</movementType>
-			<anticipationSound>tunnel</anticipationSound>
-			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>BMT_DrillPod</anticipationSound>
+			<anticipationSoundTicks>1000</anticipationSoundTicks>
 			<motesPerCell>0</motesPerCell>
 			<shadowSize>(0, 0)</shadowSize>
 		</skyfaller>
@@ -86,7 +86,7 @@
 		<skyfaller>
 			<movementType>Decelerate</movementType>
 			<reversed>true</reversed>
-			<anticipationSound>tunnel</anticipationSound>
+			<anticipationSound>BMT_DrillPod</anticipationSound>
 			<anticipationSoundTicks>-10</anticipationSoundTicks>
 			<ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
 			<shadowSize>(0, 0)</shadowSize>
@@ -124,7 +124,6 @@
 		<selectable>true</selectable>
 	</ThingDef>
 	
-	
   <WorldObjectDef>
     <defName>BMT_TravelingDrillPods</defName>
     <label>drill pod</label>
@@ -138,4 +137,5 @@
     <expandMore>true</expandMore>
     <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
   </WorldObjectDef>
+
 </Defs>
