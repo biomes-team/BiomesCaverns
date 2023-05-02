@@ -412,7 +412,7 @@
             </statFactors>
         </stuffProps>
         <thingCategories>
-            <li>Wool</li>
+            <li>Wools</li>
         </thingCategories>
     </ThingDef>
 </Defs>

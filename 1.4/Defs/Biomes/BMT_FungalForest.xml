@@ -103,50 +103,50 @@
 				<commonality>100</commonality>
 			</li>
 		</diseases>
-    <terrainsByFertility>
-      <li>
-        <terrain>Soil</terrain>
-        <min>-999</min>
-        <max>0.87</max>
-      </li>
-      <li>
-        <terrain>SoilRich</terrain>
-        <min>0.87</min>
-        <max>999</max>
-      </li>
-    </terrainsByFertility>
-    <terrainPatchMakers>
-      <li>
-        <perlinFrequency>0.04</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>MarshyTerrain</terrain>
-            <min>0.32</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-      </li>
-      <li>
-        <perlinFrequency>0.027</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>SoilRich</terrain>
-            <min>-0.12</min>
-            <max>0.32</max>
-          </li>
-          <li>
-            <terrain>Mud</terrain>
-            <min>0.32</min>
-            <max>0.6</max>
-          </li>
-          <li>
-            <terrain>Marsh</terrain>
-            <min>0.6</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-      </li>
-    </terrainPatchMakers>
+		<terrainsByFertility>
+			<li>
+				<terrain>Soil</terrain>
+				<min>-999</min>
+				<max>0.87</max>
+			</li>
+			<li>
+				<terrain>SoilRich</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>MarshyTerrain</terrain>
+						<min>0.32</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.027</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>SoilRich</terrain>
+						<min>-0.12</min>
+						<max>0.32</max>
+					</li>
+					<li>
+						<terrain>Mud</terrain>
+						<min>0.32</min>
+						<max>0.6</max>
+					</li>
+					<li>
+						<terrain>Marsh</terrain>
+						<min>0.6</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_FungalCavern>100</BMT_FungalCavern>
 		</baseWeatherCommonalities>
@@ -214,7 +214,7 @@
 			<BMT_GlowSnail>0.1</BMT_GlowSnail>
 			<BMT_Goeto>0.05</BMT_Goeto>
 			<BMT_MossBeetle>0.075</BMT_MossBeetle>
-            <BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
+			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
 			<BMT_Pillbug>0.4</BMT_Pillbug>
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 			<BMT_SonarRabbit>0.1</BMT_SonarRabbit>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Animals Expanded — Caves</li>
@@ -9,42 +8,52 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveCrawler" or defName="VAECaves_CaveBear"]/race/wildBiomes</xpath>
+					<xpath>Defs/BiomeDef[defName="BMT_FungalForest"]/wildAnimals</xpath>
 					<value>
-						<BMT_FungalForest>0.03</BMT_FungalForest>
+						<VAECaves_CaveCrawler>0.02</VAECaves_CaveCrawler>
+						<VAECaves_CaveBear>0.03</VAECaves_CaveBear>
+						<VAECaves_AncientGiantSpider>0.0025</VAECaves_AncientGiantSpider>
+						<VAECaves_GiantSpider>0.01</VAECaves_GiantSpider>
+						<VAECaves_Wyrm>0.005</VAECaves_Wyrm>
+						<VAECaves_BlindSalamander>0.05</VAECaves_BlindSalamander>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "VAECaves_AncientGiantSpider"]/race/wildBiomes</xpath>
+					<xpath>Defs/BiomeDef[defName="BMT_CrystalCaverns"]/wildAnimals</xpath>
 					<value>
-						<BMT_FungalForest>0.0025</BMT_FungalForest>
+						<VAECaves_CaveCrawler>0.01</VAECaves_CaveCrawler>
+						<VAECaves_CaveBear>0.03</VAECaves_CaveBear>
+						<VAECaves_AncientGiantSpider>0.0025</VAECaves_AncientGiantSpider>
+						<VAECaves_GiantSpider>0.03</VAECaves_GiantSpider>
+						<VAECaves_Wyrm>0.03</VAECaves_Wyrm>
+						<VAECaves_BlindSalamander>0.005</VAECaves_BlindSalamander>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "VAECaves_GiantSpider"]/race/wildBiomes</xpath>
+					<xpath>Defs/BiomeDef[defName="BMT_EarthenDepths"]/wildAnimals</xpath>
 					<value>
-						<BMT_FungalForest>0.01</BMT_FungalForest>
+						<VAECaves_CaveCrawler>0.1</VAECaves_CaveCrawler>
+						<VAECaves_AncientGiantSpider>0.0025</VAECaves_AncientGiantSpider>
+						<VAECaves_GiantSpider>0.01</VAECaves_GiantSpider>
+						<VAECaves_Wyrm>0.01</VAECaves_Wyrm>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "VAECaves_Wyrm"]/race/wildBiomes</xpath>
+					<xpath>Defs/BiomeVariantDef[defName = "BMT_ShallowCave"]/layers/li/wildAnimals</xpath>
 					<value>
-						<BMT_FungalForest>0.02</BMT_FungalForest>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "VAECaves_BlindSalamander"]/race/wildBiomes</xpath>
-					<value>
-						<BMT_FungalForest>0.05</BMT_FungalForest>
+						<VAECaves_CaveCrawler>0.02</VAECaves_CaveCrawler>
+						<VAECaves_CaveBear>0.05</VAECaves_CaveBear>
+						<VAECaves_AncientGiantSpider>0.0025</VAECaves_AncientGiantSpider>
+						<VAECaves_GiantSpider>0.03</VAECaves_GiantSpider>
+						<VAECaves_Wyrm>0.005</VAECaves_Wyrm>
+						<VAECaves_BlindSalamander>0.05</VAECaves_BlindSalamander>
 					</value>
 				</li>
 
 			</operations>
 		</match>
 	</Operation>
-
 </Patch>

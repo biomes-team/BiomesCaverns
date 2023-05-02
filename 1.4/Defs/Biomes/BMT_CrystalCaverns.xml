@@ -1,204 +1,204 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <BiomeDef>
-    <defName>BMT_CrystalCaverns</defName>
-    <label>crystalline caverns</label>
-    <description>It is uncertain what led to the formation of the bright blue crystals that dot some caverns, but their presence has led to a variety of new life forms adapting and being engineered to survive. The mysterious crystals are used for a variety of functions by cave dwelling societies.</description>
-    <workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
-    <modExtensions>
-      <li Class="BiomesCore.DefModExtensions.BiomesMap">
-        <isCavern>true</isCavern>
-        <cavernShapes>
-          <li>Smooth</li>
-        </cavernShapes>
-      </li>
-      <li Class="GeologicalLandforms.BiomeProperties">
-        <applyToCaves>true</applyToCaves>
-        <overrideLandforms>
-          <li>BMT_CrystalCaverns</li>
-        </overrideLandforms>
-        <allowLandforms>false</allowLandforms>
-        <allowBiomeTransitions>false</allowBiomeTransitions>
-        <allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
-        <worldTileGraphicAtlas>
-          <texture>BMT_Caverns/World/Biomes/Atlas/CrystalCaverns</texture>
-          <drawMode>HexAdjacencyCaves</drawMode>
-          <atlasSize>(4,4)</atlasSize>
-        </worldTileGraphicAtlas>
-      </li>
-      <li Class="GeologicalLandforms.BiomeWorkerConfig">
-        <score>
-          <value>110</value>
-          <conditions>
-            <anyOf>
-              <depthInCaveSystem>
-                <min>3</min>
-              </depthInCaveSystem>
-              <allOf>
-                <depthInCaveSystem>2</depthInCaveSystem>
-                <valueInRange>
-                  <value supplier="randomValueWorld">
-                    <seedMask>CaveDepthFlag</seedMask>
-                  </value>
-                  <min>0.5</min>
-                </valueInRange>
-              </allOf>
-            </anyOf>
-            <temperature>
-              <max>5</max>
-              <min>-15</min>
-            </temperature>
-          </conditions>
-        </score>
-      </li>
-    </modExtensions>
-    <animalDensity>4.5</animalDensity>
-    <plantDensity>0.75</plantDensity>
-    <settlementSelectionWeight>0.8</settlementSelectionWeight>
-    <movementDifficulty>0.5</movementDifficulty>
-    <texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>
-    <forageability>0.5</forageability>
-    <foragedFood>BMT_RawDulcis</foragedFood>
-    <wildPlantRegrowDays>27</wildPlantRegrowDays>
-    <soundsAmbient>
-      <li>BMT_Ambient_FungalForest</li>
-    </soundsAmbient>
-    <diseaseMtbDays>20</diseaseMtbDays>
-	<diseases>
-	  <li>
-		<diseaseInc>Disease_Flu</diseaseInc>
-		<commonality>100</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_FibrousMechanites</diseaseInc>
-		<commonality>30</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_SensoryMechanites</diseaseInc>
-		<commonality>30</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_MuscleParasites</diseaseInc>
-		<commonality>50</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_AnimalFlu</diseaseInc>
-		<commonality>100</commonality>
-	  </li>
-	  <li>
-		<diseaseInc>Disease_AnimalPlague</diseaseInc>
-		<commonality>100</commonality>
-	  </li>
-	</diseases>
-	<terrainsByFertility>
-      <li>
-        <terrain>Gravel</terrain>
-        <min>-999</min>
-        <max>999</max>
-      </li>
-    </terrainsByFertility>
-    <terrainPatchMakers>
-      <li>
-        <perlinFrequency>0.1</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>BMT_Crystal</terrain>
-            <min>0.4</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-      </li>
-      <li>
-        <perlinFrequency>0.035</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>Soil</terrain>
-            <min>0.63</min>
-            <max>0.83</max>
-          </li>
-          <li>
-            <terrain>WaterShallow</terrain>
-            <min>0.83</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-      </li>
-    </terrainPatchMakers>
-    <baseWeatherCommonalities>
-      <BMT_Calm>100</BMT_Calm>
-    </baseWeatherCommonalities>
-    <wildPlants>
-		<!-- ground cover -->
-		<BMT_Gleamtip>1.0</BMT_Gleamtip>
+	<BiomeDef>
+		<defName>BMT_CrystalCaverns</defName>
+		<label>crystalline caverns</label>
+		<description>It is uncertain what led to the formation of the bright blue crystals that dot some caverns, but their presence has led to a variety of new life forms adapting and being engineered to survive. The mysterious crystals are used for a variety of functions by cave dwelling societies.</description>
+		<workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.BiomesMap">
+				<isCavern>true</isCavern>
+				<cavernShapes>
+					<li>Smooth</li>
+				</cavernShapes>
+			</li>
+			<li Class="GeologicalLandforms.BiomeProperties">
+				<applyToCaves>true</applyToCaves>
+				<overrideLandforms>
+					<li>BMT_CrystalCaverns</li>
+				</overrideLandforms>
+				<allowLandforms>false</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>
+				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+				<worldTileGraphicAtlas>
+					<texture>BMT_Caverns/World/Biomes/Atlas/CrystalCaverns</texture>
+					<drawMode>HexAdjacencyCaves</drawMode>
+					<atlasSize>(4,4)</atlasSize>
+				</worldTileGraphicAtlas>
+			</li>
+			<li Class="GeologicalLandforms.BiomeWorkerConfig">
+				<score>
+					<value>110</value>
+					<conditions>
+						<anyOf>
+							<depthInCaveSystem>
+								<min>3</min>
+							</depthInCaveSystem>
+							<allOf>
+								<depthInCaveSystem>2</depthInCaveSystem>
+								<valueInRange>
+									<value supplier="randomValueWorld">
+										<seedMask>CaveDepthFlag</seedMask>
+									</value>
+									<min>0.5</min>
+								</valueInRange>
+							</allOf>
+						</anyOf>
+						<temperature>
+							<max>5</max>
+							<min>-15</min>
+						</temperature>
+					</conditions>
+				</score>
+			</li>
+		</modExtensions>
+		<animalDensity>4.5</animalDensity>
+		<plantDensity>0.75</plantDensity>
+		<settlementSelectionWeight>0.8</settlementSelectionWeight>
+		<movementDifficulty>0.5</movementDifficulty>
+		<texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>
+		<forageability>0.5</forageability>
+		<foragedFood>BMT_RawDulcis</foragedFood>
+		<wildPlantRegrowDays>27</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>BMT_Ambient_FungalForest</li>
+		</soundsAmbient>
+		<diseaseMtbDays>20</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>Gravel</terrain>
+				<min>-999</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.1</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>BMT_Crystal</terrain>
+						<min>0.4</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>Soil</terrain>
+						<min>0.63</min>
+						<max>0.83</max>
+					</li>
+					<li>
+						<terrain>WaterShallow</terrain>
+						<min>0.83</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<BMT_Calm>100</BMT_Calm>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- ground cover -->
+			<BMT_Gleamtip>1.0</BMT_Gleamtip>
 			
-		<!-- mid sized -->
-    <BMT_Fungusfern>0.5</BMT_Fungusfern>
-    <BMT_CrystaltipBrambles>0.3</BMT_CrystaltipBrambles>
-    <BMT_YumBulbs>0.3</BMT_YumBulbs>
-	<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
+			<!-- mid sized -->
+			<BMT_Fungusfern>0.5</BMT_Fungusfern>
+			<BMT_CrystaltipBrambles>0.3</BMT_CrystaltipBrambles>
+			<BMT_YumBulbs>0.3</BMT_YumBulbs>
+			<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
 
-		<!-- trees -->
+			<!-- trees -->
 
-    <BMT_Crystalcap>0.5</BMT_Crystalcap>
+			<BMT_Crystalcap>0.5</BMT_Crystalcap>
 			
-		<!-- other harvestable -->
-		
-		<!-- hydrophytes -->
-	<BMT_Arpeau>0.05</BMT_Arpeau>
-	<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
-	<BMT_Nuitae>0.4</BMT_Nuitae>
+			<!-- other harvestable -->
+			
+			<!-- hydrophytes -->
+			<BMT_Arpeau>0.05</BMT_Arpeau>
+			<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
+			<BMT_Nuitae>0.4</BMT_Nuitae>
 
-		<!-- special -->
-		<BMT_Crystal_BlueSowable>0.1</BMT_Crystal_BlueSowable>
-		<!-- <BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall> -->
-		<!-- = -->
-		<!-- <BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium> -->
-		<!-- = -->
-		<!-- <BMT_Crystal_BlueLarge>0.04</BMT_Crystal_BlueLarge> -->
-		<!-- = -->
-		<!-- <BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge> -->
+			<!-- special -->
+			<BMT_Crystal_BlueSowable>0.1</BMT_Crystal_BlueSowable>
+			<!-- <BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall> -->
+			<!-- = -->
+			<!-- <BMT_Crystal_BlueMedium>0.08</BMT_Crystal_BlueMedium> -->
+			<!-- = -->
+			<!-- <BMT_Crystal_BlueLarge>0.04</BMT_Crystal_BlueLarge> -->
+			<!-- = -->
+			<!-- <BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge> -->
 
-    </wildPlants>
+		</wildPlants>
 
-    <wildAnimals>
-		<!-- herbivores -->
-		<BMT_AaroxisDendoria>0.05</BMT_AaroxisDendoria>
-		<BMT_AaroxisDendoriaLarvae>0.05</BMT_AaroxisDendoriaLarvae>
-		<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
-		<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
-		<BMT_CrystalBeetleLarvae>0.05</BMT_CrystalBeetleLarvae>
-		<BMT_CrystalBeetle>0.05</BMT_CrystalBeetle>
-		<BMT_Jewelbug>0.1</BMT_Jewelbug>
-		<BMT_GlowSlug>0.2</BMT_GlowSlug>
-		<BMT_GlowSnail>0.2</BMT_GlowSnail>
-		<BMT_Megapleura>0.1</BMT_Megapleura>
-		<BMT_Xyrion>0.15</BMT_Xyrion>
-		<!-- <Rat>1.3</Rat> -->
-		<BMT_Crystalope>0.2</BMT_Crystalope>
-		<BMT_ShatterjawBeetle>0.1</BMT_ShatterjawBeetle>
-		<BMT_FacetMothLarvae>0.05</BMT_FacetMothLarvae>
-		<BMT_FacetMoth>0.05</BMT_FacetMoth>
-		<BMT_CrystalFairyMole>0.025</BMT_CrystalFairyMole>
-		<BMT_MossBeetle>0.1</BMT_MossBeetle>
-		<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
-		<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.5</BMT_GlowBat>
-		
-		<!-- onmnivore -->
-		<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>
-		<BMT_CrystalCrab_Granite>0.008</BMT_CrystalCrab_Granite>
-		<BMT_CrystalCrab_Limestone>0.008</BMT_CrystalCrab_Limestone>
-		<BMT_CrystalCrab_Slate>0.008</BMT_CrystalCrab_Slate>
-		<BMT_CrystalCrab_Marble>0.008</BMT_CrystalCrab_Marble>
-		<BMT_CrystalCrab_Jade>0.001</BMT_CrystalCrab_Jade>
-		<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
-	
-		<!-- predators -->
-		<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
-		<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
-		<BMT_BloodropMoth>0.25</BMT_BloodropMoth>		
-		
-    </wildAnimals>
+		<wildAnimals>
+			<!-- herbivores -->
+			<BMT_AaroxisDendoria>0.05</BMT_AaroxisDendoria>
+			<BMT_AaroxisDendoriaLarvae>0.05</BMT_AaroxisDendoriaLarvae>
+			<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
+			<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
+			<BMT_CrystalBeetleLarvae>0.05</BMT_CrystalBeetleLarvae>
+			<BMT_CrystalBeetle>0.05</BMT_CrystalBeetle>
+			<BMT_Jewelbug>0.1</BMT_Jewelbug>
+			<BMT_GlowSlug>0.2</BMT_GlowSlug>
+			<BMT_GlowSnail>0.2</BMT_GlowSnail>
+			<BMT_Megapleura>0.1</BMT_Megapleura>
+			<BMT_Xyrion>0.15</BMT_Xyrion>
+			<!-- <Rat>1.3</Rat> -->
+			<BMT_Crystalope>0.2</BMT_Crystalope>
+			<BMT_ShatterjawBeetle>0.1</BMT_ShatterjawBeetle>
+			<BMT_FacetMothLarvae>0.05</BMT_FacetMothLarvae>
+			<BMT_FacetMoth>0.05</BMT_FacetMoth>
+			<BMT_CrystalFairyMole>0.025</BMT_CrystalFairyMole>
+			<BMT_MossBeetle>0.1</BMT_MossBeetle>
+			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
+			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.5</BMT_GlowBat>
+			
+			<!-- onmnivore -->
+			<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>
+			<BMT_CrystalCrab_Granite>0.008</BMT_CrystalCrab_Granite>
+			<BMT_CrystalCrab_Limestone>0.008</BMT_CrystalCrab_Limestone>
+			<BMT_CrystalCrab_Slate>0.008</BMT_CrystalCrab_Slate>
+			<BMT_CrystalCrab_Marble>0.008</BMT_CrystalCrab_Marble>
+			<BMT_CrystalCrab_Jade>0.001</BMT_CrystalCrab_Jade>
+			<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
+			
+			<!-- predators -->
+			<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
+			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
+			<BMT_BloodropMoth>0.25</BMT_BloodropMoth>		
+			
+		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
 			<li>Alpaca</li>
@@ -215,8 +215,8 @@
 			<li>BMT_CrystalCrab_Slate</li>
 			<li>BMT_CrystalCrab_Marble</li>
 			<li>BMT_CrystalCrab_Jade</li>
-      <li MayRequire="biomesteam.biomesislands">BMT_CrystalCrab_Coral</li>
+			<li MayRequire="biomesteam.biomesislands">BMT_CrystalCrab_Coral</li>
 		</allowedPackAnimals>
-  </BiomeDef>
+	</BiomeDef>
 
 </Defs>
