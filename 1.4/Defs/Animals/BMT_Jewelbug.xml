@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="AnimalThingBase">
-        <defName>BMT_Jewelbug</defName>
-        <label>jewelbug</label>
-        <description>Commonly found in crystal caverns, this isopod is smaller than its pillbug cousin.</description>
-        <statBases>
-            <MoveSpeed>2.75</MoveSpeed>
-            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
-            <ComfyTemperatureMax>60</ComfyTemperatureMax>
-            <MarketValue>250</MarketValue>
-            <FilthRate>0</FilthRate>
-        </statBases>
-        <tools>
-            <li>
-                <label>mandibles</label>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>4.25</power>
-                <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-            </li>
-            <li>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_Jewelbug</defName>
+		<label>jewelbug</label>
+		<description>Commonly found in crystal caverns, this isopod is smaller than its pillbug cousin.</description>
+		<statBases>
+			<MoveSpeed>2.75</MoveSpeed>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<MarketValue>250</MarketValue>
+			<FilthRate>0</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4.25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
@@ -34,7 +34,7 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.1</chanceFactor>
 			</li>
-        </tools>
+		</tools>
 		<race>
 			<body>BeetleLike</body>
 			<baseBodySize>0.335</baseBodySize>
@@ -65,11 +65,11 @@
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
+					<def>BMT_EusocialInsectNymphFirst</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>AnimalJuvenile</def>
+					<def>BMT_EusocialInsectNymphSecond</def>
 					<minAge>0.05</minAge>
 				</li>
 				<li>
@@ -85,23 +85,23 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-			<tradeTags>
-				<li>AnimalUncommon</li>
-				<li>AnimalInsect</li>
-			</tradeTags>
-        <modExtensions>
-            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
-                <isCustomThingEater>true</isCustomThingEater>
-            </li>
-        </modExtensions>
-        <comps>
-					<li Class="BiomesCore.CompProperties_DefensiveReaction">
-						<hediffs>
-							<li>BMT_JewelbugDefense</li>
-						</hediffs>
-						<graphicSuffix>Rolled</graphicSuffix>
-						<duration>300</duration>
-					</li>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+				<isCustomThingEater>true</isCustomThingEater>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_JewelbugDefense</li>
+				</hediffs>
+				<graphicSuffix>Rolled</graphicSuffix>
+				<duration>300</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggJewelbugFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
@@ -112,9 +112,9 @@
 				<filthNutrition>0.3</filthNutrition>
 			</li>
 		</comps>
-    </ThingDef>
+	</ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_Jewelbug</defName>
 		<label>jewelbug</label>
 		<race>BMT_Jewelbug</race>

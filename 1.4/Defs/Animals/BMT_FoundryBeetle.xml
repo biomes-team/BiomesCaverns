@@ -263,11 +263,11 @@
 	  <nameOnTameChance>0.2</nameOnTameChance>
 	  <lifeStageAges>
 		<li>
-		  <def>AnimalBaby</def>
+		  <def>AnimalAdult</def>
 		  <minAge>0</minAge>
 		</li>
 		<li>
-		  <def>AnimalJuvenile</def>
+		  <def>AnimalAdult</def>
 		  <minAge>0.25</minAge>
 		</li>
 		<li>

@@ -66,11 +66,11 @@
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
+					<def>BMT_EusocialInsectNymphFirst</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>AnimalJuvenile</def>
+					<def>BMT_EusocialInsectNymphSecond</def>
 					<minAge>0.05</minAge>
 				</li>
 				<li>

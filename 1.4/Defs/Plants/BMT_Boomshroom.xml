@@ -206,5 +206,9 @@
 		<products>
 			<Chemfuel>40</Chemfuel>
 		</products>
+		<recipeUsers Inherit="false">
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
 	</RecipeDef>
+
 </Defs>

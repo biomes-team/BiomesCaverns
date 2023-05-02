@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
@@ -277,15 +277,15 @@
 	  <packAnimal>true</packAnimal>
 	  <lifeStageAges>
 		<li>
-		  <def>EusocialInsectLarva</def>
+		  <def>BMT_EusocialInsectAdult</def>
 		  <minAge>0</minAge>
 		</li>
 		<li>
-		  <def>EusocialInsectJuvenile</def>
+		  <def>BMT_EusocialInsectAdult</def>
 		  <minAge>0.03</minAge>
 		</li>
 		<li>
-		  <def>BMT_RideableEusocialInsectAdult</def>
+		  <def>AnimalAdult</def>
 		  <minAge>0.2</minAge>
 		  <soundWounded>Pawn_BigInsect_Pain</soundWounded>
 		  <soundDeath>Pawn_BigInsect_Death</soundDeath>

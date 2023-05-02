@@ -60,11 +60,11 @@
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>EusocialInsectLarva</def>
+					<def>EusocialInsectJuvenile</def>
 					<minAge>0.03</minAge>
 				</li>
 				<li>
-					<def>EusocialInsectLarva</def>
+					<def>BMT_EusocialInsectAdult</def>
 					<minAge>0.2</minAge>
 					<soundWounded>Biomes_Jellypot_Wounded</soundWounded>
 					<soundDeath>Biomes_Jellypot_Death</soundDeath>

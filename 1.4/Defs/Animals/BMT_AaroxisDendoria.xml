@@ -43,7 +43,7 @@
 					<minAge>0.05</minAge>
 				</li>
 				<li>
-					<def>BMT_InsectLarvalThirdPlus</def>
+					<def>BMT_InsectLarvalThird</def>
 					<minAge>0.2</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>

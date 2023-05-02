@@ -1,65 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- How big is it? Cat sized. -->
-<!-- What does it eat? (is it a predator?) Predatory carnivore that can eat raw meat. -->
-<!-- Where does it live? Surface Caverns. -->
-<!-- Does it spawn in packs? No. -->
-<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weaker leather. Not very strong. High nuzzle chance. -->
+	<!-- How big is it? Cat sized. -->
+	<!-- What does it eat? (is it a predator?) Predatory carnivore that can eat raw meat. -->
+	<!-- Where does it live? Surface Caverns. -->
+	<!-- Does it spawn in packs? No. -->
+	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weaker leather. Not very strong. High nuzzle chance. -->
 
-  <ThingDef ParentName="BaseInsect">
-	<defName>BMT_WoolySpider</defName>
-	<label>wooly spider</label>
-	<description>Small and fluffy, these spiders have become a popular pet amongst the cavern-dwelling populace. It can be easily fed from whatever food falls onto the ground.</description>
-	<statBases>
-	  <MoveSpeed>4.4</MoveSpeed>
-	  <MarketValue>100</MarketValue>
-	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>20</ComfyTemperatureMax>
-	</statBases>
-	<race>
-	  <body>BeetleLikeWithClaw</body>
-	  <predator>true</predator>
-	  <baseBodySize>0.32</baseBodySize>
-	  <maxPreyBodySize>0.25</maxPreyBodySize>
-	  <baseHungerRate>0.15</baseHungerRate>
-	  <baseHealthScale>0.42</baseHealthScale>
-	  <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-	  <leatherDef>Leather_Light</leatherDef>
-	  <wildness>0</wildness>
-	  <petness>0.8</petness>
-	  <trainability>None</trainability>
-	  <nuzzleMtbHours>12</nuzzleMtbHours>
-	  <nameOnTameChance>1</nameOnTameChance>
-	  <lifeExpectancy>10</lifeExpectancy>
-	  <lifeStageAges>
-		<li>
-		  <def>AnimalBaby</def>
-		  <minAge>0</minAge>
-		</li>
-		<li>
-		  <def>AnimalJuvenile</def>
-		  <minAge>0.15</minAge>
-		</li>
-		<li>
-		  <def>AnimalAdult</def>
-		  <minAge>0.4</minAge>
-		  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
-		  <soundDeath>Pawn_Megascarab_Death</soundDeath>
-		  <soundCall>Pawn_Megascarab_Call</soundCall>
-		  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
-		</li>
-	  </lifeStageAges>
-	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-	  <headPosPerRotation>
-		<li>(0.02, 0, 0.23)</li>
-		<li>(0.35, 0, 0.05)</li>
-		<li>(0.0, 0, -0.185)</li>
-		<li>(-0.35, 0, 0.05)</li>
-	  </headPosPerRotation>
-	</race>
+	<ThingDef ParentName="BaseInsect">
+		<defName>BMT_WoolySpider</defName>
+		<label>wooly spider</label>
+		<description>Small and fluffy, these spiders have become a popular pet amongst the cavern-dwelling populace. It can be easily fed from whatever food falls onto the ground.</description>
+		<statBases>
+			<MoveSpeed>4.4</MoveSpeed>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>20</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<body>BeetleLikeWithClaw</body>
+			<predator>true</predator>
+			<baseBodySize>0.32</baseBodySize>
+			<maxPreyBodySize>0.25</maxPreyBodySize>
+			<baseHungerRate>0.15</baseHungerRate>
+			<baseHealthScale>0.42</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Light</leatherDef>
+			<wildness>0</wildness>
+			<petness>0.8</petness>
+			<trainability>None</trainability>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<nameOnTameChance>1</nameOnTameChance>
+			<lifeExpectancy>10</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>BMT_EusocialInsectNymphFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_EusocialInsectNymphSecond</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.02, 0, 0.23)</li>
+				<li>(0.35, 0, 0.05)</li>
+				<li>(0.0, 0, -0.185)</li>
+				<li>(-0.35, 0, 0.05)</li>
+			</headPosPerRotation>
+		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggWoolySpiderFertilized</eggFertilizedDef>
@@ -71,82 +71,82 @@
 				<filthNutrition>0.3</filthNutrition>
 			</li>
 		</comps>
-	<tradeTags>
-	  <li>AnimalCommon</li>
-	  <li>AnimalPet</li>
-	  <li>AnimalInsect</li>
-	</tradeTags>
-	<tools>
-	  <li>
-		<label>mandibles</label>
-		<capacities>
-		  <li>Cut</li>
-		</capacities>
-		<power>6</power>
-		<cooldownTime>2.6</cooldownTime>
-		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
-	  </li>
-	  <li>
-		<label>head</label>
-		<capacities>
-		  <li>Blunt</li>
-		</capacities>
-		<power>3</power>
-		<cooldownTime>2</cooldownTime>
-		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-		<chanceFactor>0.2</chanceFactor>
-	  </li>
-	</tools>
-  </ThingDef>
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_WoolySpider</defName>
-	<label>wooly spider</label>
-	<race>BMT_WoolySpider</race>
-	<combatPower>80</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
-		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>0.2</drawSize>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
-		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>0.4</drawSize>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
-		  <!-- <color>(176,150,106)</color> -->
-		  <drawSize>0.8</drawSize>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-<ThingDef ParentName="EggFertBase">
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalPet</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_WoolySpider</defName>
+		<label>wooly spider</label>
+		<race>BMT_WoolySpider</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>0.2</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>0.4</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>0.8</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggWoolySpiderFertilized</defName>
 		<label>wooly spider egg (fert.)</label>
 		<description>A wooly spider egg. If all goes well, it should hatch into a baby spider. It can be eaten raw, but it's much better cooked.</description>

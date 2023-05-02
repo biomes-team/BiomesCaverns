@@ -112,11 +112,11 @@
       <lifeExpectancy>10</lifeExpectancy>
       <lifeStageAges>
         <li>
-          <def>EusocialInsectLarva</def>
+          <def>BMT_EusocialInsectNymphFirst</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>EusocialInsectJuvenile</def>
+          <def>BMT_EusocialInsectNymphSecond</def>
           <minAge>0.03</minAge>
         </li>
         <li>
