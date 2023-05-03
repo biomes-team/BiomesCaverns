@@ -21,6 +21,15 @@
 				<allowLandforms>false</allowLandforms>
 				<allowBiomeTransitions>false</allowBiomeTransitions>
 				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+				<worldTileOverrides>
+					<temperature>
+						<value supplier="randomValueWorld">
+							<seedMask>TempED</seedMask>
+							<min>4.5</min>
+							<max>23.5</max>
+						</value>
+					</temperature>
+				</worldTileOverrides>
 				<worldTileGraphicAtlas>
 					<texture>BMT_Caverns/World/Biomes/Atlas/CrystalCaverns</texture>
 					<drawMode>HexAdjacencyCaves</drawMode>

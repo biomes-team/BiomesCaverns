@@ -64,6 +64,12 @@
 				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_BovineBeetlePupa</evolveIntoPawnKindDef>
 			</li>
+			 <li Class="BiomesCore.ThingComponents.CompProperties_AnimalThingSpawner">
+                <thingToSpawn>BMT_WeakChitin</thingToSpawn>
+                <spawnCount>10</spawnCount>
+                <spawnIntervalRange>750000~900000</spawnIntervalRange>
+                <saveKeysPrefix>WeakChitin</saveKeysPrefix>
+            </li>
 		</comps>
 		<tools>
 			<li>

@@ -80,6 +80,7 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>BMT_GlintHigh</hediffDef>
 					<severity>0.50</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
 				</li>
 			</outcomeDoers>
 		</ingestible>
