@@ -8,6 +8,8 @@
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
 			<Flammability>0.35</Flammability>
 		</statBases>
 		<graphicData>
