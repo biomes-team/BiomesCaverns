@@ -25,6 +25,7 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.50</wildness>
+			<roamMtbDays>2.5</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
@@ -268,7 +269,6 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_GrayChitin</leatherDef>
 			<wildness>0.05</wildness>
-			<roamMtbDays>2.5</roamMtbDays>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<lifeExpectancy>16</lifeExpectancy>

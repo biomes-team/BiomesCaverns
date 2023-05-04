@@ -248,7 +248,7 @@
 				<socialFightChanceFactor>0.25</socialFightChanceFactor>
 				<statOffsets>
 					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
-					<RestFallRateFactor>0.45</RestFallRateFactor>
+					<RestFallRateFactor>-0.45</RestFallRateFactor>
 				</statOffsets>
 				<capMods>
 					<li>
