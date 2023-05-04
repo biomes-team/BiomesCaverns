@@ -84,6 +84,12 @@
 					<severity>0.50</severity>
 					<toleranceChemical>Psychite</toleranceChemical>
 				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>PsychiteTolerance</hediffDef>
+				  <severity>0.010</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -91,9 +97,16 @@
 				<daysToRotStart>15</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
-			<li Class="CompProperties_Drug">
-				<addictiveness>0</addictiveness>
-			</li>
+      <li Class="CompProperties_Drug">
+        <chemical>Psychite</chemical>
+        <addictiveness>0.00005</addictiveness>
+        <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
+        <needLevelOffset>0.2</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>100</listOrder>
+        <overdoseSeverityOffset>0.25~0.45</overdoseSeverityOffset>
+        <largeOverdoseChance>0.0001</largeOverdoseChance>
+      </li>
 		</comps>
 		<allowedArchonexusCount>20</allowedArchonexusCount>
 	</ThingDef>
