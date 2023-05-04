@@ -2,7 +2,7 @@
 <Defs>
 
   <LifeStageDef ParentName="AnimalBaby">
-    <defName>BMT_BatBirdBaby</defName>
+    <defName>BMT_BatbirdBabyTiny</defName>
 	<label>chick</label>
     <bodySizeFactor>0.1</bodySizeFactor>
     <foodMaxFactor>4</foodMaxFactor>
@@ -22,7 +22,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>BMT_BatBirdJuvenile</defName>
+    <defName>BMT_BatbirdJuvenile</defName>
     <label>juvenile</label>
     <voxPitch>1.2</voxPitch>
     <bodySizeFactor>0.5</bodySizeFactor>
@@ -41,14 +41,13 @@
         <bodyGraphicData>
           <texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying</texPath>
           <drawSize>1.0</drawSize>
-		  <shaderType>TransparentPostLight</shaderType>
         </bodyGraphicData>
       </li>
     </modExtensions>
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>BMT_BatBirdAdult</defName>
+    <defName>BMT_BatbirdAdult</defName>
     <label>adult</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
@@ -81,7 +80,7 @@
       <baseBodySize>0.25</baseBodySize>
       <baseHealthScale>0.35</baseHealthScale>
       <baseHungerRate>0.125</baseHungerRate>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>Leather_Light</leatherDef>
       <wildness>0.95</wildness>
       <trainability>Advanced</trainability>
@@ -89,7 +88,7 @@
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
-	  <body>BatBird</body>
+	  <body>BMT_BatBird</body>
       <gestationPeriodDays>6.66</gestationPeriodDays>
       <litterSizeCurve>
         <points>
@@ -101,15 +100,15 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>BMT_BatBirdBaby</def>
+          <def>BMT_BatbirdBabyTiny</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>BMT_BatBirdJuvenile</def>
+          <def>BMT_BatbirdJuvenile</def>
           <minAge>0.11</minAge>
         </li>
         <li>
-          <def>BMT_BatBirdAdult</def>
+          <def>BMT_BatbirdAdult</def>
           <minAge>0.222</minAge>
           <soundWounded>Biomes_Bat_Wounded</soundWounded>
           <soundDeath>Biomes_Bat_Death</soundDeath>
@@ -214,9 +213,9 @@
   </ThingDef>
 
   <PawnKindDef ParentName="BigBirdKindBase">
-    <defName>BMT_BatBird</defName>
+    <defName>BMT_Batbird</defName>
     <label>batbird</label>
-    <race>BMT_BatBird</race>
+    <race>BMT_Batbird</race>
 	<combatPower>45</combatPower>
 	<ecoSystemWeight>0.30</ecoSystemWeight>
 	<wildGroupSize>5~10</wildGroupSize>
