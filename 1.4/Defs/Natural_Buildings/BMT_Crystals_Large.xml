@@ -17,7 +17,7 @@
   <ThingDef ParentName="BMT_Crystal_Large">
 	<defName>BMT_Crystal_BlueLarge</defName>
 	<label>large blue crystal</label>
-	<description>A blue crystal from the depths of the crystal cave.</description>
+	<description>A blue crystal from the depths of the crystal cave. It is surprisingly volatile.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueLarge</texPath>
 	  <drawSize>(2.0,2.0)</drawSize>

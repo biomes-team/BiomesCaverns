@@ -240,7 +240,7 @@
 		</graphicData>
 		<filth>
 			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-			<disappearsInDays>0.03~0.06</disappearsInDays>
+			<disappearsInDays>0.01~0.03</disappearsInDays>
 			<rainWashes>true</rainWashes>
 			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
 			<canFilthAttach>true</canFilthAttach>
