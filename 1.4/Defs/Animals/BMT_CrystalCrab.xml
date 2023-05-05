@@ -29,6 +29,7 @@
 	  <baseHealthScale>1.75</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_RoyalChitin</leatherDef>
+	  <meatLabel>cave crab meat</meatLabel>
 	  <trainability>Intermediate</trainability>
 	  <packAnimal>true</packAnimal>
 	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>

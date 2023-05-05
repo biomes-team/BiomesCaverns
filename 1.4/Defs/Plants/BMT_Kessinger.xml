@@ -41,7 +41,7 @@
 			<wildClusterRadius>10</wildClusterRadius>
 			<wildClusterWeight>5</wildClusterWeight>
 			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
+			<humanFoodPlant>false</humanFoodPlant>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
@@ -56,7 +56,7 @@
 			<texPath>BMT_Caverns/Things/Item/Crops/Kessinger/Kessinger</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.2</MarketValue>
+			<MarketValue>0.6</MarketValue>
 			<Mass>0.015</Mass>
 		</statBases>
 		<comps>
@@ -67,6 +67,7 @@
 		</comps>
 		<ingestible>
 			<foodType>Seed</foodType>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
 		</ingestible>
 	</ThingDef>
 </Defs>

@@ -85,6 +85,7 @@
       <baseHungerRate>0.125</baseHungerRate>
       <foodType>VegetableOrFruit, VegetarianRoughAnimal</foodType>
 	  <leatherDef>Leather_Light</leatherDef>
+	  <useMeatFrom>BMT_MegaBat</useMeatFrom>
       <wildness>0.95</wildness>
       <trainability>Advanced</trainability>
 	  <nuzzleMtbHours>24</nuzzleMtbHours>

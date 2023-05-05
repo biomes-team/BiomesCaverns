@@ -96,6 +96,7 @@
 		<!-- <meatLabel>snail meat</meatLabel> -->
 		<!-- <meatColor>(62,133,215)</meatColor> -->
 		<leatherDef>BMT_Leather_Gastropoda</leatherDef>
+		<useMeatFrom>BMT_GiantSnail</useMeatFrom>
 		<lifeStageAges>
 			<li>
 				<def>AnimalBaby</def>
