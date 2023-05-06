@@ -257,7 +257,6 @@
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
 			<body>BeetleLike</body>
-			<gestationPeriodDays>5</gestationPeriodDays>
 			<roamMtbDays>4</roamMtbDays>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
@@ -289,6 +288,13 @@
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>30</woolAmount>
 			</li>
+			<li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>BMT_AaroxisDendoriaLarvae</eggFertilizedDef>
+                <eggFertilizationCountMax>10</eggFertilizationCountMax>
+                <eggLayIntervalDays>15</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1~2</eggCountRange>
+            </li>
 		</comps>
 		<tools>
 			<li>
