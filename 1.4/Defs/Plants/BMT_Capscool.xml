@@ -93,18 +93,18 @@
       </outcomeDoers>
     </ingestible>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
 	  	<li Class="CompProperties_Rottable">
 				<daysToRotStart>5</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 		</li>
+		<li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
   
    <HediffDef ParentName="DiseaseBase">
     <defName>BMT_CoolingSalve</defName>
     <label>cooling salve</label>
-    <description>The result of using a mushroom-based cooling salve. Heat tolerance is now much higher but the salve does look gross when applied.</description>
+    <description>The result of using a mushroom-based cooling salve. Heat tolerance is now much higher, though the salve does look gross when applied.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>90000~150000</disappearsAfterTicks>
@@ -112,9 +112,11 @@
       </li>
     </comps>
 	<stages>
+	<li>
 	<statOffsets>
 	  <ComfyTemperatureMax>100</ComfyTemperatureMax>
 	</statOffsets>
+	
     </stages>
   </HediffDef>
 </Defs>
