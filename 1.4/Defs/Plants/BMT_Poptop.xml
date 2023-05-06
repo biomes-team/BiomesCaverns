@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Poptop</defName>
 		<label>poptop</label>
-		<description>A spongy mushroom sprout that releases goo-covered spores when exposed to fire. These spores act much like firefoam.</description>
+		<description>A spongy mushroom sprout that releases goo-covered spores when exposed to fire. These spores act much like water or firefoam.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -16,6 +16,7 @@
 		<plant>
 			<growDays>1</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<fertilityMin>0.05</fertilityMin>
 			<visualSizeRange>0.5~1.2</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
@@ -28,7 +29,15 @@
 			<blockAdjacentSow>false</blockAdjacentSow>
 			<harvestedThingDef Inherit="False" />
 			<harvestYield Inherit="False" />
-			<sowResearchPrerequisites  Inherit="False" />
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>Firefoam</li>
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
 		</plant>
 		<specialDisplayRadius>5</specialDisplayRadius>
 		<comps>

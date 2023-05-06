@@ -70,7 +70,7 @@
 			</li>
 		</modExtensions>
 		<animalDensity>3</animalDensity>
-		<plantDensity>0.5</plantDensity>
+		<plantDensity>1</plantDensity>
 		<settlementSelectionWeight>0.8</settlementSelectionWeight>
 		<movementDifficulty>0.5</movementDifficulty>
 		<texture>BMT_Caverns/World/Biomes/EarthenDepths</texture>
@@ -185,6 +185,7 @@
 			<BMT_FireSalamander>0.2</BMT_FireSalamander>
 			<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
 			<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
+			<BMT_Pillbug>0.2</BMT_Pillbug>
 			<!-- <BMT_MetalloSnail>0.5</BMT_MetalloSnail> -->
 
 			<!-- onmnivore -->

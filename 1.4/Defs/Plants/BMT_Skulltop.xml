@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Skulltop</defName>
 		<label>skulltop</label>
-		<description>An extremely deadly mushroom that steadily releases toxic spores into the air. These spores rapidly produce toxic buildup in creatures not immune to poisons.</description>
+		<description>An extremely deadly mushroom that steadily releases polluting toxic spores into the air. These spores rapidly produce toxic buildup in creatures not immune to poisons.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Skulltop/Skulltop</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

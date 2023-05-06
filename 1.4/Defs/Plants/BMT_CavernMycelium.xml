@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_CavernMycelium</defName>
 		<label>mycelium</label>
-		<description>Extremely wide spread mycelium of many different species that have spread throughout the caverns of the Rim.</description>
+		<description>Extremely wide-spread mycelium of many different species that have spread throughout the caverns of the Rim. Herbivores tend to eat it in the wild.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Mycelium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -36,6 +36,13 @@
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<interferesWithRoof>false</interferesWithRoof>
+			<sowResearchPrerequisites>
+				<li>BMT_ResearchMushrooms</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<purpose>Misc</purpose>
 		</plant>
 	</ThingDef>
 

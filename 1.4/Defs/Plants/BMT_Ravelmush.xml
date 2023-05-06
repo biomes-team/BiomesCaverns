@@ -29,6 +29,7 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
+			<harvestYield>3</harvestYield>
 			<visualSizeRange>0.7~0.9</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
@@ -38,7 +39,12 @@
 			<burnedThingDef Inherit="False"/>
 			<smashedThingDef Inherit="False"/>
 			<choppedThingDef Inherit="False"/>
-			<sowResearchPrerequisites  Inherit="False" />
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
 		</plant>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>

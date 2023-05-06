@@ -11,6 +11,7 @@
 		<statBases>
 			<Flammability>0.0</Flammability>
 			<Nutrition>2</Nutrition>
+			<Mass>0.50</Mass>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -36,12 +37,19 @@
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_BoomSpore</harvestedThingDef>
 			<harvestYield>4</harvestYield>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 				<li>BMT_Fungiponics</li>
 			</sowTags>
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
 			<interferesWithRoof>false</interferesWithRoof>
+			<purpose>Health</purpose>
 		</plant>
+		<minifiedDef>MinifiedTree</minifiedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">

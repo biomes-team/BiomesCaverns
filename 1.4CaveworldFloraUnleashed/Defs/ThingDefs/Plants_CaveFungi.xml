@@ -73,7 +73,6 @@
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>10</growDays>
 			<sowTags>
-				<li>Ground</li>
 				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<sowResearchPrerequisites>
@@ -149,8 +148,7 @@
 			<harvestYield>10</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>14</growDays>
-			<sowTags>
-				<li>Ground</li>				
+			<sowTags>	
 				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<sowResearchPrerequisites>
@@ -229,7 +227,6 @@
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>			
 			<sowTags>
-				<li>Ground</li>	
 				<li>BMT_Fungiponics</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
@@ -303,7 +300,6 @@
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>30</growDays>
 			<sowTags>
-				<li>Ground</li>	
 				<li>BMT_Fungiponics</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
@@ -454,8 +450,7 @@
 			<visualSizeRange>0.3~1.05</visualSizeRange>
 			<growDays>4</growDays>
 			<sowTags>
-				<li>Ground</li>	
-				<li>Decorative</li>			
+				<li>BMT_Fungiponics</li>			
 			</sowTags>
 			<sowResearchPrerequisites>
 				<li>BMT_ResearchMushrooms</li>

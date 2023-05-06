@@ -22,6 +22,7 @@
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<growDays>5</growDays>
 			<maxMeshCount>1</maxMeshCount>
 			<visualSizeRange>0.3~0.7</visualSizeRange>
@@ -33,13 +34,18 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
 			<harvestedThingDef Inherit="False"/>
 			<harvestYield Inherit="False"/>
 			<burnedThingDef Inherit="False"/>
 			<smashedThingDef Inherit="False"/>
 			<choppedThingDef Inherit="False"/>
-			<sowResearchPrerequisites Inherit="False" />
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<purpose>Health</purpose>
 		</plant>
 		<comps>
 			<li Class="CompProperties_HeatPusher">

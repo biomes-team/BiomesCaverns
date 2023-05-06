@@ -12,7 +12,7 @@
 		<color>(195,195,195)</color>
 		<statBases>
 			<WorkToBuild>85</WorkToBuild>
-			<Flammability>0.22</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<costList>
 			<BMT_MushroomLog>3</BMT_MushroomLog>
@@ -46,7 +46,7 @@
 		<autoRebuildable>true</autoRebuildable>
 		<statBases>
 			<WorkToBuild>1500</WorkToBuild>
-			<Flammability>0.25</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<costList>
 		</costList>
@@ -69,7 +69,7 @@
 		</affordances>
 		<statBases>
 			<WorkToBuild>1500</WorkToBuild>
-			<Flammability>0.25</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<costList>
 			<BMT_MushroomLog>12</BMT_MushroomLog>
@@ -90,7 +90,7 @@
 		</affordances>
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
-			<Flammability>0.20</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<costList>
 			<BMT_MushroomLog>12</BMT_MushroomLog>
