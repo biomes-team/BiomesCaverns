@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_CapscoolFungus</defName>
+		<label>capscool</label>
+		<description>A strange mushroom that grows in extremely hot environments underground. When harvested, it gives a gooey salve that protects against the heat.</description>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Capscool/CapscoolGrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0.7</fertilityMin>
+			<wildClusterRadius>4</wildClusterRadius>
+			<growDays>10</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>1000</harvestWork>
+			<harvestYield>1</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_CoolingSalve</harvestedThingDef>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Capscool/CapscoolImmature</immatureGraphicPath>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
+			<purpose>Health</purpose>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
+				<forceUseImmature>true</forceUseImmature>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+  <ThingDef>
+    <defName>BMT_CoolingSalve</defName>
+    <label>cooling salve</label>
+    <description>A package of cooling salve gathered from a strange mushroom. This salve grants considerably higher heat tolerance.</description>
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <possessionCount>5</possessionCount>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <alwaysHaulable>true</alwaysHaulable>
+    <pathCost>14</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Item/Drug/CoolingSalve</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <DeteriorationRate>5</DeteriorationRate>
+      <Mass>0.50</Mass>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <Beauty>0</Beauty>
+      <MarketValue>5</MarketValue>
+    </statBases>
+	<techLevel>Neolithic</techLevel>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>Fluid</foodType>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>BMT_CoolingSalve</hediffDef>
+		</li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+	  	<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+		</li>
+    </comps>
+  </ThingDef>
+  
+   <HediffDef ParentName="DiseaseBase">
+    <defName>BMT_CoolingSalve</defName>
+    <label>cooling salve</label>
+    <description>The result of using a mushroom-based cooling salve. Heat tolerance is now much higher but the salve does look gross when applied.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>90000~150000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+        <statOffsets>
+		  <Insulation_heat>1</Insulation_heat>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+          <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+  </HediffDef>
+</Defs>

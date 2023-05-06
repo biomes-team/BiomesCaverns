@@ -48,6 +48,7 @@
 	<race>
 		<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
 		<predator>true</predator>
+		<maxPreyBodySize>3</maxPreyBodySize>
 		<hasGenders>false</hasGenders>
 		<herdAnimal>false</herdAnimal>
 		<bloodDef>Filth_BloodInsect</bloodDef>

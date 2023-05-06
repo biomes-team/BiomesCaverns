@@ -282,7 +282,7 @@
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<leatherDef>BMT_GrayChitin</leatherDef>
+			<leatherDef>BiomesCore_GreenChitin</leatherDef>
 			<wildness>0.05</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>

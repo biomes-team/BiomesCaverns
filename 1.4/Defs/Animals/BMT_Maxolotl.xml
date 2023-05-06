@@ -74,7 +74,9 @@
 			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
-			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
+			<predator>true</predator>
+			<maxPreyBodySize>1</maxPreyBodySize>
+			<foodType>CarnivoreAnimal,AnimalProduct</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<meatLabel>amphibian meat</meatLabel>
 			<wildness>0.75</wildness>

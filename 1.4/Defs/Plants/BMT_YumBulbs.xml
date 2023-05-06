@@ -22,7 +22,8 @@
 		<selectable>true</selectable>
 		<plant>
 			<growMinGlow>0.5</growMinGlow>
-			<growOptimalGlow>1</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>

@@ -71,6 +71,11 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>BMT_SpiderSilk</woolDef>
+				<shearIntervalDays>5</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
 		</comps>
 	<tradeTags>
 	  <li>AnimalExotic</li>
@@ -82,7 +87,7 @@
 		<capacities>
 		  <li>ToxicBite</li>
 		</capacities>
-		<power>28</power>
+		<power>35</power>
 		<cooldownTime>2.0</cooldownTime>
 		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -201,4 +206,44 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+		<ThingDef ParentName="ResourceBase">
+        <defName>BMT_SpiderSilk</defName>
+        <label>giant spider silk</label>
+        <description>A type of silk produced by a species of massive spider. It is weirdly sticky, but quite strong.</description>
+        <graphicData>
+            <texPath>BMT_Caverns/Things/Item/SpiderSilk</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.10</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>2</MarketValue>
+            <Mass>0.01</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>4</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+			<color>(123,57,57)</color>
+            <commonality>0.20</commonality>
+            <statFactors>
+                <Flammability>0.9</Flammability>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>4</Beauty>
+            </statFactors>
+        </stuffProps>
+        <thingCategories>
+            <li>Wools</li>
+        </thingCategories>
+    </ThingDef>
 </Defs>

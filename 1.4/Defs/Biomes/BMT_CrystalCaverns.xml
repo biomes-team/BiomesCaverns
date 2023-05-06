@@ -204,6 +204,7 @@
 			
 			<!-- predators -->
 			<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
+			<BMT_CaveSpider>0.05</BMT_CaveSpider>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.25</BMT_BloodropMoth>		
 			
