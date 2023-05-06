@@ -58,6 +58,7 @@
     <Compile Include="Patches\ThrumboEvent.cs" />
     <Compile Include="Patches\TravelingTransportPods_Arrived_Patch.cs" />
     <Compile Include="Patches\TravelingTransportPods_TraveledPctStepPerTick_Patch.cs" />
+    <Compile Include="PlaceWorkers\NotUnderRoof.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
