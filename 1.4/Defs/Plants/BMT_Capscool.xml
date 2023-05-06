@@ -23,7 +23,7 @@
 			<growDays>10</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
 			<harvestWork>1000</harvestWork>
-			<harvestYield>1</harvestYield>
+			<harvestYield>3</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_CoolingSalve</harvestedThingDef>
 			<topWindExposure>0</topWindExposure>
@@ -114,7 +114,7 @@
 	<stages>
 	<li>
 	<statOffsets>
-	  <ComfyTemperatureMax>100</ComfyTemperatureMax>
+	  <ComfyTemperatureMax>75</ComfyTemperatureMax>
 	</statOffsets>
 	</li>
     </stages>

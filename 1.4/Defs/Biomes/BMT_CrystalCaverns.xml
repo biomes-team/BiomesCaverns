@@ -152,6 +152,7 @@
 			<BMT_Crystalcap>0.5</BMT_Crystalcap>
 			
 			<!-- other harvestable -->
+			<BMT_GreyLady>0.02</BMT_GreyLady>
 			
 			<!-- hydrophytes -->
 			<BMT_Arpeau>0.05</BMT_Arpeau>

@@ -167,6 +167,7 @@
 			<!-- other harvestable -->
 			<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
 			<BMT_MoonlessStripesPlant>0.1</BMT_MoonlessStripesPlant>
+			<BMT_CapscoolFungus>0.1</BMT_CapscoolFungus>
 			
 			<!-- hydrophytes -->
 

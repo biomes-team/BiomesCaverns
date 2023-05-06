@@ -381,7 +381,6 @@
 			<visualSizeRange>0.3~1.2</visualSizeRange>
 			<growDays>24</growDays>
 			<sowTags>
-				<li>Ground</li>
 				<li>BMT_Fungiponics</li>				
 			</sowTags>
 			<sowResearchPrerequisites>
