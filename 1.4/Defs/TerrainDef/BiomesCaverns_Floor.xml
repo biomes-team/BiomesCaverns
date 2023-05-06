@@ -294,4 +294,26 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
 
+  <TerrainDef ParentName="FloorBase">
+    <defName>BMT_MoonlessCarpet</defName>
+    <label>moonless stripes carpet</label>
+    <description>Carpeting made from the fungal fibers of moonless stripes. It's reasonably pretty.</description>
+    <texturePath>BMT_Caverns/Terrains/MoonlessCarpet</texturePath>
+    <color>(231,231,231)</color>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <Beauty>2</Beauty>
+	  <Flammability>0.0</Flammability>
+      <WorkToBuild>100</WorkToBuild>
+      <CleaningTimeFactor>0.8</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <BMT_MoonlessSilk>7</BMT_MoonlessSilk>
+    </costList>
+    <researchPrerequisites>
+      <li>CarpetMaking</li>
+    </researchPrerequisites>
+  </TerrainDef>
 </Defs>

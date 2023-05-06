@@ -116,7 +116,7 @@
 	<statOffsets>
 	  <ComfyTemperatureMax>100</ComfyTemperatureMax>
 	</statOffsets>
-	
+	</li>
     </stages>
   </HediffDef>
 </Defs>
