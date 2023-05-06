@@ -111,10 +111,10 @@
         <showRemainingTime>true</showRemainingTime>
       </li>
     </comps>
-        <statOffsets>
-		  <Insulation_heat>1</Insulation_heat>
-          <ArmorRating_Heat>0.5</ArmorRating_Heat>
-          <PawnBeauty>-1</PawnBeauty>
-        </statOffsets>
+	<stages>
+	<statOffsets>
+	  <ComfyTemperatureMax>100</ComfyTemperatureMax>
+	</statOffsets>
+    </stages>
   </HediffDef>
 </Defs>
