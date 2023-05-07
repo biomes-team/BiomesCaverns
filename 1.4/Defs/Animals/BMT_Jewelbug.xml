@@ -38,7 +38,7 @@
 		<race>
 			<body>BeetleLike</body>
 			<baseBodySize>0.335</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>
