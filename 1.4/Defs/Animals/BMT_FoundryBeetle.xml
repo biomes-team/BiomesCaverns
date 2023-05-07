@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- Larvae -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_FoundryBeetleLarvae</defName>
 		<label>foundry grub</label>
@@ -31,7 +31,8 @@
 			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
-			<body>BeetleLike</body>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_LarvaLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
