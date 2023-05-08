@@ -107,7 +107,7 @@
 		<label>fungal weevil</label>
 		<race>BMT_FungalWeevil</race>
 		<combatPower>80</combatPower>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<ecoSystemWeight>0.65</ecoSystemWeight>
 		<wildGroupSize>2~3</wildGroupSize>
 		<lifeStages>
 			<li>

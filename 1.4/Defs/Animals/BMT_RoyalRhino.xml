@@ -358,7 +358,7 @@
 		<label>royal rhino beetle</label>
 		<race>BMT_RoyalRhino</race>
 		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<ecoSystemWeight>2</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

@@ -101,7 +101,7 @@
 	<race>BMT_AcidSlug</race>
 	<combatPower>500</combatPower>
 	<canArriveManhunter>false</canArriveManhunter>
-	<ecoSystemWeight>1</ecoSystemWeight>
+	<ecoSystemWeight>2</ecoSystemWeight>
 	<lifeStages>
 	  <li>
 		<label>acid slug larva</label>

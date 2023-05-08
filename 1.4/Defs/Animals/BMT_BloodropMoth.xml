@@ -103,7 +103,7 @@
         <label>bloodrop larvae</label>
         <race>BMT_BloodropLarvae</race>
         <combatPower>15</combatPower>
-        <ecoSystemWeight>0.3</ecoSystemWeight>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
         <wildGroupSize>1~3</wildGroupSize>
         <lifeStages>
             <li>

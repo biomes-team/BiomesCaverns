@@ -109,7 +109,7 @@
 		<label>xyrion</label>
 		<race>BMT_Xyrion</race>
 		<combatPower>80</combatPower>
-		<ecoSystemWeight>0.55</ecoSystemWeight>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<label>xyrion hatchling</label>

@@ -330,7 +330,7 @@
 		<label>aaroxis dendoria</label>
 		<race>BMT_AaroxisDendoria</race>
 		<combatPower>60</combatPower>
-		<ecoSystemWeight>0.70</ecoSystemWeight>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>
 			<li>

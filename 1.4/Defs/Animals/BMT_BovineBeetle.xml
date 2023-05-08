@@ -342,7 +342,7 @@
 		<label>bovine beetle</label>
 		<race>BMT_BovineBeetle</race>
 		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<ecoSystemWeight>1.15</ecoSystemWeight>
 		<wildGroupSize>3~4</wildGroupSize>
 		<lifeStages>
 			<li>

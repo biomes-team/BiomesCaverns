@@ -119,7 +119,7 @@
 		<label>glowsnail</label>
 		<race>BMT_GlowSnail</race>
 		<combatPower>40</combatPower>
-		<ecoSystemWeight>0.45</ecoSystemWeight>
+		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

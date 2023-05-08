@@ -142,7 +142,7 @@
 		<label>truffle mole</label>
 		<race>BMT_TruffleMole</race>
 		<combatPower>35</combatPower>
-		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<wildGroupSize>1~1</wildGroupSize>
 		<lifeStages>
 			<li>

@@ -128,7 +128,7 @@
 		<label>chem snail</label>
 		<race>BMT_ChemSnail</race>
 		<combatPower>75</combatPower>
-		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<ecoSystemWeight>0.45</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

@@ -107,7 +107,7 @@
 		<label>yooka</label>
 		<race>BMT_Yooka</race>
 		<combatPower>33</combatPower>
-		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
 		<alternateGraphicChance>0.85</alternateGraphicChance>
 		<alternateGraphics>

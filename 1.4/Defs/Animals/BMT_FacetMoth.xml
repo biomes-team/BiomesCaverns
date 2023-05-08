@@ -95,7 +95,7 @@
 		<label>facet larvae</label>
 		<race>BMT_FacetMothLarvae</race>
 		<combatPower>15</combatPower>
-		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
 		<lifeStages>
 			<li>

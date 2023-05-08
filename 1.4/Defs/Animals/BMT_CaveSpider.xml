@@ -135,7 +135,7 @@
 	<race>BMT_CaveSpider</race>
 	<combatPower>500</combatPower>
 	<canArriveManhunter>true</canArriveManhunter>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<ecoSystemWeight>2</ecoSystemWeight>
 	<wildGroupSize>1</wildGroupSize>
 	<lifeStages>
 	  <li>
