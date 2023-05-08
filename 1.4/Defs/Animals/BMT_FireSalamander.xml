@@ -10,7 +10,7 @@
 			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<Flammability>0</Flammability>
-			<FilthRate>0</FilthRate>
+			<FilthRate>1</FilthRate>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 		</statBases>
 		<tools>
@@ -67,7 +67,7 @@
 		</comps>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>0.7</baseBodySize>
+			<baseBodySize>1.25</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>

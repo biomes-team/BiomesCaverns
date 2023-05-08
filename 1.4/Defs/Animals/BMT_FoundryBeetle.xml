@@ -21,8 +21,8 @@
 			<leatherDef>BMT_DeepChitin</leatherDef>
 			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<baseBodySize>0.8</baseBodySize>
-			<baseHealthScale>0.8</baseHealthScale>
+			<baseBodySize>1.8</baseBodySize>
+			<baseHealthScale>0.85</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.50</wildness>
