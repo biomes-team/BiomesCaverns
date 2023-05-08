@@ -24,7 +24,7 @@
 			<petness>0.5</petness>
 			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>2.5</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
 			<trainability>None</trainability>

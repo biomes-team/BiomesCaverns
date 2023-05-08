@@ -32,7 +32,7 @@
 			<executionRange>6</executionRange>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<body>BeetleLike</body>
-			<baseHungerRate>0.535</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.65</baseHealthScale>
 			<trainability>None</trainability>

@@ -22,7 +22,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.5</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.50</wildness>
 			<trainability>None</trainability>

@@ -25,7 +25,7 @@
 			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.5</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
 			<trainability>Advanced</trainability>
