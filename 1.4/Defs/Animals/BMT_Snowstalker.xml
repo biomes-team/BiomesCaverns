@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BigCatThingBase">
+	<defName>BMT_Snowstalker</defName>
+	<label>snowstalker</label>
+	<description>One of the most dangerous big cats, cougars are solitary hunters with long, sharp teeth and claws. They stalk prey from hidden positions before pouncing.\n\nWhile humans are not their normal diet, they won't turn down a meal of vulnerable human meat.</description>
+	<statBases>
+	  <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+	  <FilthRate>2</FilthRate>
+	</statBases>
+	<race>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.27)</li>
+		<li>(0.36, 0, 0.1)</li>
+		<li>(0.0, 0, 0.03)</li>
+		<li>(-0.36, 0, 0.1)</li>
+	  </headPosPerRotation>
+	</race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigCatKindBase">
+	<defName>BMT_Snowstalker</defName>
+	<label>snowstalker</label>
+	<race>BMT_Snowstalker</race>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal_GH/Snowstalker/Snowstalker</texPath>
+		  <drawSize>1.1</drawSize>
+		</bodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal_GH/Snowstalker/Snowstalker</texPath>
+		  <drawSize>1.4</drawSize>
+		  <shadowData>
+			<volume>(0.3, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal_GH/Snowstalker/Snowstalker</texPath>
+		  <drawSize>2.18</drawSize>
+		  <shadowData>
+			<volume>(0.4, 0.4, 0.4)</volume>
+			<offset>(0,0,-0.1)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+  
+</Defs>

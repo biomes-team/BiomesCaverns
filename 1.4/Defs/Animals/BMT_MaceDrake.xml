@@ -146,13 +146,13 @@
         <alternateGraphicChance>0.50</alternateGraphicChance>
         <alternateGraphics>
             <li>
-                <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
             </li>
         </alternateGraphics>
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                    <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
                     <drawSize>1</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
@@ -160,13 +160,13 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                    <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                    <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
                     <drawSize>2</drawSize>
                     <shadowData>
                         <volume>(0.7, 0.6, 0.4)</volume>
@@ -174,13 +174,13 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                    <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
                     <drawSize>2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                    <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
                     <drawSize>3</drawSize>
                     <shadowData>
                         <volume>(1, 0.8, 0.5)</volume>
@@ -188,7 +188,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BMT_Caverns/Things/Animal/Macedrake/Macedrake</texPath>
+                    <texPath>BMT_Caverns/Things/Animal/Macedrake/MaceDrake</texPath>
                     <drawSize>3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
