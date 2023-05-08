@@ -25,7 +25,7 @@
 					<temperature>
 						<value supplier="randomValueWorld">
 							<seedMask>TempED</seedMask>
-							<min>15.5</min>
+							<min>20.5</min>
 							<max>25.5</max>
 						</value>
 					</temperature>
