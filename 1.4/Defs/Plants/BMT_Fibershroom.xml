@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBaseNonEdible">
+    <defName>BMT_Fibershroom</defName>
+    <label>fibershroom</label>
+    <description>An inedible, fibrous fungus which produces a small amount of a fungalwood-like substance.</description>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Plant/Fibershroom</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <minifiedDef IsNull="True" />
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <plant>
+      <fertilityMin>0.2</fertilityMin>
+      <fertilitySensitivity>0.1</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <harvestWork>300</harvestWork>
+      <harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+      <burnedThingDef IsNull="True" />
+      <harvestYield>2</harvestYield>
+      <harvestTag>Wood</harvestTag>
+      <sowTags>
+        <li>Ground</li>
+        <li>BMT_Fungiponics</li>
+      </sowTags>
+      <topWindExposure>0</topWindExposure>
+      <growDays>6</growDays>
+      <visualSizeRange>0.25~0.55</visualSizeRange>
+      <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+    </plant>
+  </ThingDef>
+
+</Defs>
