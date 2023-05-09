@@ -10,10 +10,8 @@
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.5~0.99</growingHours>
-			</li>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<optimalTemperature>-50~0</optimalTemperature>
+				<growingHours>0.5~0.99</growingHours>
 			</li>
 		</modExtensions>
 		<pathCost>14</pathCost>
