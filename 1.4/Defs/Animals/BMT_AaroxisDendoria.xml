@@ -290,12 +290,12 @@
 				<woolAmount>30</woolAmount>
 			</li>
 			<li Class="CompProperties_EggLayer">
-                <eggFertilizedDef>BMT_AaroxisDendoriaLarvae</eggFertilizedDef>
-                <eggFertilizationCountMax>10</eggFertilizationCountMax>
-                <eggLayIntervalDays>15</eggLayIntervalDays>
-                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-                <eggCountRange>1~2</eggCountRange>
-            </li>
+				<eggFertilizedDef>BMT_EggAaroxisDendoriaFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>10</eggFertilizationCountMax>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
 		</comps>
 		<tools>
 			<li>
