@@ -14,7 +14,10 @@
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-			<optimalTemperature>0~352.222</optimalTemperature>
+			<optimalTemperature>-50~352.222</optimalTemperature>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~0</optimalTemperature>
 			</li>
 		</modExtensions>
         <neverMultiSelect>false</neverMultiSelect>

@@ -88,6 +88,12 @@
 			<li>Medium</li>
 			<li>Heavy</li>
 		</affordances>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge">
+				<loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath>
+				<rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath>
+			</li>
+		</modExtensions>
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
 			<Flammability>0</Flammability>
