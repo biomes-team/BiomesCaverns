@@ -51,7 +51,7 @@
 	 <ThingDef ParentName="PlantFoodRawBase">
 		<defName>BMT_RawDulcis</defName>
 		<label>dulcis</label>
-		<description>Dulcis mushrooms. Nice to eat, even when raw.</description>
+		<description>Dulcis mushrooms. Nice to eat, even when raw. Pawns will not view it as a fungus due to its flavor and texture.</description>
 		<graphicData>
 		  <texPath>BMT_Caverns/Things/Item/Crops/Dulcis/Dulcis</texPath>
 		</graphicData>
@@ -71,9 +71,8 @@
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
 		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
-			</mergeCompatibilityTags>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
 		</ingredient>
 	  </ThingDef>
 </Defs>

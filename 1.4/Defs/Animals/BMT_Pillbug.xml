@@ -40,7 +40,7 @@
 			<body>BeetleLike</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>0.40</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>
@@ -103,7 +103,7 @@
 				<eggCountRange>2~4</eggCountRange>
 			</li>
 			<li Class="BiomesCore.CompProperties_CustomThingEater">
-				<filthNutrition>0.15</filthNutrition>
+				<filthNutrition>0.01</filthNutrition>
 			</li>
 		</comps>
         <modExtensions>

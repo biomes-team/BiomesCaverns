@@ -109,7 +109,7 @@
 				<eggCountRange>2~4</eggCountRange>
 			</li>
 			<li Class="BiomesCore.CompProperties_CustomThingEater">
-				<filthNutrition>0.15</filthNutrition>
+				<filthNutrition>0.01</filthNutrition>
 			</li>
 		</comps>
 	</ThingDef>
