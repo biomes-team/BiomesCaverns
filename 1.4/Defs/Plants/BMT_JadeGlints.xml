@@ -114,7 +114,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
     <defName>BMT_Glitter</defName>
     <label>glitter</label>
-    <description>A crystalized version of the jade glint juices. When snorted, it makes the user better at physical labor and affects their mood. Like many drugs, it is addictive, though it is only half as addictive as yayo.\n\nWhile the fungus was originally designed for beauty, the drug made from it is now used to control mining corp workers at the cost of their health.</description>
+    <description>A crystalized version of the jade glint juices. When snorted, it makes the user better at physical labor and affects their mood, making them feel as though they are not indoors. Like many drugs, it is addictive, though it is only half as addictive as yayo.\n\nWhile the fungus was originally designed for beauty, the drug made from it is now used to control mining corp workers at the cost of their health.</description>
     <descriptionHyperlinks>
       <HediffDef>BMT_GlitterHigh</HediffDef>
       <HediffDef>PsychiteTolerance</HediffDef>
@@ -158,6 +158,11 @@
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
+          <offset>0.25</offset>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+		<li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Outdoors</need>
           <offset>0.25</offset>
           <toleranceChemical>Psychite</toleranceChemical>
         </li>
