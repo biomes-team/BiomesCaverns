@@ -67,12 +67,7 @@
 		</comps>
 		<ingestible>
 			<preferability>RawTasty</preferability>
-			<tasteThought></tasteThought>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
-		<ingredient>
-			<preferability>RawTasty</preferability>
-			<foodType>VegetableOrFruit</foodType>
-		</ingredient>
 	  </ThingDef>
 </Defs>

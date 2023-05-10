@@ -25,7 +25,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.14</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
@@ -98,7 +98,7 @@
 			<MaxHitPoints>360</MaxHitPoints>
 			<WorkToMake>30000</WorkToMake>
 			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>10</EquipDelay>
@@ -172,7 +172,7 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<WorkToMake>50000</WorkToMake>
 			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
@@ -247,7 +247,7 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>65000</WorkToMake>
 			<Mass>12</Mass>
-			<StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>20</EquipDelay>
@@ -308,7 +308,7 @@
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>BMT_Apparel_ChitinFullHelmet</defName>
 		<label>chitin full helmet</label>
-		<description>A chitin helmet which gives moderate protection. a true testament to your strength.</description>
+		<description>A chitin helmet which gives moderate protection. A true testament to your strength.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Headgear/ChitinFullHelmet/ChitinFullHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -328,7 +328,7 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>2.8</Mass>
-			<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
@@ -375,4 +375,129 @@
 		</colorGenerator>
 	</ThingDef>
 
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>BMT_Apparel_ChitinBeetleHelmet</defName>
+		<label>chitin beetle helmet</label>
+		<description>A chitin helmet which gives moderate protection. It is themed around a rhino beetle.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Headgear/BeetleHelmet/BeetleHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costList>
+			<BMT_RoyalChitin>10</BMT_RoyalChitin>
+			<BMT_RoyalRhinoHorn>1</BMT_RoyalRhinoHorn>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>BMT_ChitinStuff</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2.8</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit='False'>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>BMT_Caverns/Things/Headgear/BeetleHelmet/BeetleHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit='False'>
+				<li>CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+		<ThingDef ParentName="HatMakeableBase">
+		<defName>BMT_Apparel_ChitinSpiderHelmet</defName>
+		<label>chitin spider helmet</label>
+		<description>A chitin helmet which gives moderate protection. It is themed around a cave spider.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Headgear/SpiderHelmet/SpiderHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costList>
+			<BMT_RoyalChitin>10</BMT_RoyalChitin>
+			<BMT_CaveSpiderHead>1</BMT_CaveSpiderHead>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>BMT_ChitinStuff</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2.8</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit='False'>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>BMT_Caverns/Things/Headgear/SpiderHelmet/SpiderHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit='False'>
+				<li>CraftingSpot</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

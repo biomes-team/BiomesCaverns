@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ResourceBase">
-		<defName>BMT_RoyalRhinoHorn</defName>
-		<label>royal rhino beetle horn</label>
-		<description>A royal rhino beetle's horn. It's priceless in most markets. This is a true trophy and needed for special items.</description>
+		<defName>BMT_CaveSpiderHead</defName>
+		<label>cave spider head</label>
+		<description>The head of a giant cave spider. It's priceless in most markets. This is a true trophy and needed for special items. It can also be used as a weird weapon.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/RoyalRhinoHorn/RoyalRhinoHorn</texPath>
+			<texPath>BMT_Caverns/Things/Item/SpiderHead/SpiderHead</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
@@ -27,14 +27,22 @@
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<tools>
-			<li>
-				<label>point</label>
+		      <li>
+				<label>venom-fangs</label>
 				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
+				  <li>ToxicBite</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>2</cooldownTime>
+				<power>12</power>
+				<cooldownTime>1</cooldownTime>
+				<chanceFactor>0.75</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
 			</li>
 			<li>
 				<label>base</label>
@@ -43,7 +51,7 @@
 				</capacities>
 				<power>8</power>
 				<cooldownTime>1.5</cooldownTime>
-				<chanceFactor>0.5</chanceFactor>
+				<chanceFactor>0.25</chanceFactor>
 			</li>
 		</tools>
 		<thingCategories>
