@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="ResourceBase">
+	<ThingDef ParentName="ResourceVerbBase">
 		<defName>BMT_CaveSpiderHead</defName>
 		<label>cave spider head</label>
 		<description>The head of a giant cave spider. It's priceless in most markets. This is a true trophy and needed for special items. It can also be used as a weird weapon.</description>
@@ -20,7 +20,7 @@
 			<DeteriorationRate>0.5</DeteriorationRate>
 		</statBases>
 		<useHitPoints>true</useHitPoints>
-		<stackLimit>10</stackLimit>
+		<stackLimit>5</stackLimit>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<weaponClasses>
 			<li>Melee</li>
@@ -63,5 +63,8 @@
 		<thingSetMakerTags>
 			<li>AnimalPart</li>
 		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
 	</ThingDef>
 </Defs>

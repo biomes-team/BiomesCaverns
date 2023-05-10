@@ -38,7 +38,7 @@
 		<race>
 			<body>BeetleLike</body>
 			<baseBodySize>0.335</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>0.75</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>
@@ -109,7 +109,7 @@
 				<eggCountRange>2~4</eggCountRange>
 			</li>
 			<li Class="BiomesCore.CompProperties_CustomThingEater">
-				<filthNutrition>0.01</filthNutrition>
+				<filthNutrition>0.03</filthNutrition>
 			</li>
 		</comps>
 	</ThingDef>

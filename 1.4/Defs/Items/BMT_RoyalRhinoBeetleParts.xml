@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="ResourceBase">
+	<ThingDef ParentName="ResourceVerbBase">
 		<defName>BMT_RoyalRhinoHorn</defName>
 		<label>royal rhino beetle horn</label>
 		<description>A royal rhino beetle's horn. It's priceless in most markets. This is a true trophy and needed for special items.</description>
@@ -55,5 +55,8 @@
 		<thingSetMakerTags>
 			<li>AnimalPart</li>
 		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
 	</ThingDef>
 </Defs>
