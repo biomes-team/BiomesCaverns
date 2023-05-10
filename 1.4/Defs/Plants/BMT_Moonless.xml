@@ -4,6 +4,7 @@
 		<defName>BMT_MoonlessStripesPlant</defName>
 		<label>moonless stripes</label>
 		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown elsewhere, it requires high heat to do so properly.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
