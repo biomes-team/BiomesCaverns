@@ -43,36 +43,43 @@
 
         <wildPlants operation="replace">
 
-          <!-- ground cover -->
-		<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
-		<BMT_ReindeerMoss>0.5</BMT_ReindeerMoss>
+			<!-- ground cover -->
+			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+			<BMT_ReindeerMoss>0.5</BMT_ReindeerMoss>
 		
-          <!-- mid sized -->
-		<BMT_CarveShroom>0.5</BMT_CarveShroom>
-		<BMT_Chubshroom>0.2</BMT_Chubshroom>
-		<BMT_FungalTendril>0.2</BMT_FungalTendril>
-		<BMT_Glittercap>0.1</BMT_Glittercap>
-		<BMT_RimeFlower>0.01</BMT_RimeFlower>
+			<!-- mid sized -->
+			<BMT_CarveShroom>0.5</BMT_CarveShroom>
+			<BMT_Chubshroom>0.2</BMT_Chubshroom>
+			<BMT_FungalTendril>0.2</BMT_FungalTendril>
+			<BMT_Glittercap>0.1</BMT_Glittercap>
+			<BMT_RimeFlower>0.01</BMT_RimeFlower>
 		
-          <!-- trees -->
-		<BMT_Frigu>0.5</BMT_Frigu>
-		<BMT_Curlbranch>0.1</BMT_Curlbranch>
+			<!-- trees -->
+			<BMT_Frigu>0.5</BMT_Frigu>
+			<BMT_Curlbranch>0.1</BMT_Curlbranch>
 		
-          <!-- other harvestable -->
+			<!-- other harvestable -->
 
-          <!-- hydrophytes -->
+			<!-- hydrophytes -->
 
-          <!-- special -->
+			<!-- special -->
 
         </wildPlants>
 
         <wildAnimals operation="replace">
 
-          <!-- herbivores -->
+			<!-- herbivores -->
+			<BMT_AlbinoPenguin>0.2</BMT_AlbinoPenguin>
+			<BMT_CaveLemming>0.4</BMT_CaveLemming>
+			<BMT_Snowstalker>0.35</BMT_Snowstalker>
+			<BMT_CryoMammoth>0.2</BMT_CryoMammoth>
+			<BMT_SilverSheep>0.3</BMT_SilverSheep>
+			<BMT_BushAntleredElk>0.5</BMT_BushAntleredElk>
 
-          <!-- predators -->
+			<!-- predators -->
 
-          <!-- omnivore -->
+			<!-- omnivore -->
+			<BMT_FrostFrog>0.7</BMT_FrostFrog>
 
         </wildAnimals>
 

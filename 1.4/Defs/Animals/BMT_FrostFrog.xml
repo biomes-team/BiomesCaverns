@@ -31,8 +31,8 @@
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/FrostFrog/FrostFrog</texPath>
-		  <drawSize>1</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/FrostFrog/FrostFrog</texPath>
+		  <drawSize>0.7</drawSize>
 		  <!-- <shadowData> -->
 			<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
 			<!-- <offset>(0,0,0)</offset> -->
@@ -41,8 +41,8 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/FrostFrog/FrostFrog</texPath>
-		  <drawSize>1.25</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/FrostFrog/FrostFrog</texPath>
+		  <drawSize>0.95</drawSize>
 		  <!-- <shadowData> -->
 			<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
 			<!-- <offset>(0,0,0)</offset> -->
@@ -51,8 +51,8 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/FrostFrog/FrostFrog</texPath>
-		  <drawSize>1.5</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/FrostFrog/FrostFrog</texPath>
+		  <drawSize>1.2</drawSize>
 		  <shadowData>
 			<volume>(0.32, 0.35, 0.32)</volume>
 			<offset>(0,0,0)</offset>

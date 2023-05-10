@@ -26,7 +26,7 @@
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/CaveLemming/CaveLemming</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/CaveLemming/CaveLemming</texPath>
 		  <drawSize>1.5</drawSize>
 		  <!-- <shadowData> -->
 			<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
@@ -36,7 +36,7 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/CaveLemming/CaveLemming</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/CaveLemming/CaveLemming</texPath>
 		  <drawSize>2.25</drawSize>
 		  <!-- <shadowData> -->
 			<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
@@ -46,7 +46,7 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/CaveLemming/CaveLemming</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/CaveLemming/CaveLemming</texPath>
 		  <drawSize>2.5</drawSize>
 		  <shadowData>
 			<volume>(0.32, 0.35, 0.32)</volume>

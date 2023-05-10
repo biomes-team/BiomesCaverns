@@ -131,8 +131,8 @@
 		<label>lamb</label>
 		<labelPlural>lambs</labelPlural>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/SilverSheep/SilverSheep</texPath>
-		  <drawSize>0.65</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheep</texPath>
+		  <drawSize>0.89</drawSize>
 		  <shadowData>
 			<volume>(0.4, 0.3, 0.3)</volume>
 			<offset>(0,0,-0.2)</offset>
@@ -140,13 +140,13 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
-		  <drawSize>0.65</drawSize>
+		  <drawSize>0.89</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/SilverSheep/SilverSheep</texPath>
-		  <drawSize>1.50</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheep</texPath>
+		  <drawSize>2.1</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
 			<offset>(0,0,-0.25)</offset>
@@ -154,17 +154,17 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
-		  <drawSize>1.50</drawSize>
+		  <drawSize>2.1</drawSize>
 		</dessicatedBodyGraphicData>
 		<femaleDessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
-		  <drawSize>1.50</drawSize>
+		  <drawSize>2.1</drawSize>
 		</femaleDessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/SilverSheep/SilverSheep</texPath>
-		  <drawSize>1.95</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheep</texPath>
+		  <drawSize>2.6</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
 			<offset>(0,0,-0.25)</offset>
@@ -172,11 +172,11 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
-		  <drawSize>1.95</drawSize>
+		  <drawSize>2.65</drawSize>
 		</dessicatedBodyGraphicData>
 		<femaleDessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
-		  <drawSize>1.95</drawSize>
+		  <drawSize>2.65</drawSize>
 		</femaleDessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>

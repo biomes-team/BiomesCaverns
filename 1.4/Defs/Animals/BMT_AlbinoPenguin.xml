@@ -123,15 +123,15 @@
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/AlbinoPenguin/AlbinoPenguin</texPath>
-		  <drawSize>1.1</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/AlbinoPenguin/AlbinoPenguin</texPath>
+		  <drawSize>0.7</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		</bodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/AlbinoPenguin/AlbinoPenguin</texPath>
-		  <drawSize>1.4</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/AlbinoPenguin/AlbinoPenguin</texPath>
+		  <drawSize>1.1</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		  <shadowData>
 			<volume>(0.3, 0.3, 0.3)</volume>
@@ -141,8 +141,8 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/AlbinoPenguin/AlbinoPenguin</texPath>
-		  <drawSize>1.8</drawSize>
+		  <texPath>BMT_Caverns/Things/Animal/AlbinoPenguin/AlbinoPenguin</texPath>
+		  <drawSize>1.5</drawSize>
 		  <shaderType>CutoutComplex</shaderType>
 		  <shadowData>
 			<volume>(0.4, 0.4, 0.4)</volume>

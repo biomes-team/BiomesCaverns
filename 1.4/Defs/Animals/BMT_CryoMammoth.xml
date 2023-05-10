@@ -111,7 +111,7 @@
 	  <li>
 		<label>mammoth calf</label>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/CryoMammoth/CryoMammoth</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/CryoMammoth/CryoMammoth</texPath>
 		  <drawSize>1.6</drawSize>
 		  <shadowData>
 			<volume>(0.4, 0.3, 0.3)</volume>
@@ -125,7 +125,7 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/CryoMammoth/CryoMammoth</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/CryoMammoth/CryoMammoth</texPath>
 		  <drawSize>2.4</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
@@ -139,7 +139,7 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal_GH/CryoMammoth/CryoMammoth</texPath>
+		  <texPath>BMT_Caverns/Things/Animal/CryoMammoth/CryoMammoth</texPath>
 		  <drawSize>3.4</drawSize>
 		  <shadowData>
 			<volume>(0.8, 0.6, 0.6)</volume>
