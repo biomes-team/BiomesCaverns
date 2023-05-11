@@ -35,7 +35,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12</power>
+				<power>20</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -121,7 +121,7 @@
 		<defName>BMT_Maxolotl</defName>
 		<label>maxolotl</label>
 		<race>BMT_Maxolotl</race>
-		<combatPower>80</combatPower>
+		<combatPower>180</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
 			<li>

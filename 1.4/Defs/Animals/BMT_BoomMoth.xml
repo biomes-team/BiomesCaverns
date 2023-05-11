@@ -212,7 +212,7 @@
 		<defName>BMT_BoomPupa</defName>
 		<label>boom pupa</label>
 		<race>BMT_BoomPupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>70</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

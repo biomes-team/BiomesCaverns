@@ -104,7 +104,7 @@
 		<defName>BMT_WoolySpider</defName>
 		<label>wooly spider</label>
 		<race>BMT_WoolySpider</race>
-		<combatPower>80</combatPower>
+		<combatPower>70</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

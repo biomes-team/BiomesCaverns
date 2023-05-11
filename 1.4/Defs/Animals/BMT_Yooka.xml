@@ -106,7 +106,7 @@
 		<defName>BMT_Yooka</defName>
 		<label>yooka</label>
 		<race>BMT_Yooka</race>
-		<combatPower>33</combatPower>
+		<combatPower>100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
 		<alternateGraphicChance>0.85</alternateGraphicChance>

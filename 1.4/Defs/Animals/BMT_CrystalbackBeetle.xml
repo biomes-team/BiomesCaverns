@@ -204,7 +204,7 @@
 		<defName>BMT_CrystalBeetlePupa</defName>
 		<label>crystalback pupa</label>
 		<race>BMT_CrystalBeetlePupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

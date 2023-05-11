@@ -97,7 +97,7 @@
 		<defName>BMT_Megapleura</defName>
 		<label>megapleura</label>
 		<race>BMT_Megapleura</race>
-		<combatPower>100</combatPower>
+		<combatPower>90</combatPower>
 		<ecoSystemWeight>0.85</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

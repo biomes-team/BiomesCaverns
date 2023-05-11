@@ -214,7 +214,7 @@
 		<defName>BMT_RoyalRhinoPupa</defName>
 		<label>royal rhino pupa</label>
 		<race>BMT_RoyalRhinoPupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
@@ -253,7 +253,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>10</power>
+				<power>20</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
@@ -263,7 +263,7 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>20</power>
+				<power>25</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -280,7 +280,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>4</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -357,7 +357,7 @@
 		<defName>BMT_RoyalRhino</defName>
 		<label>royal rhino beetle</label>
 		<race>BMT_RoyalRhino</race>
-		<combatPower>30</combatPower>
+		<combatPower>220</combatPower>
 		<ecoSystemWeight>2</ecoSystemWeight>
 		<lifeStages>
 			<li>

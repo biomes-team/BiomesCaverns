@@ -205,7 +205,7 @@
 		<defName>BMT_FoundryBeetlePupa</defName>
 		<label>foundry pupa</label>
 		<race>BMT_FoundryBeetlePupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
@@ -318,7 +318,7 @@
 	<defName>BMT_FoundryBeetle</defName>
 	<label>foundry beetle</label>
 	<race>BMT_FoundryBeetle</race>
-	<combatPower>140</combatPower>
+	<combatPower>150</combatPower>
 	<ecoSystemWeight>1.1</ecoSystemWeight>
 	<wildGroupSize>1</wildGroupSize>
 	<lifeStages>

@@ -202,7 +202,7 @@
 		<defName>BMT_ShatterjawBeetlePupa</defName>
 		<label>shatterjaw pupa</label>
 		<race>BMT_ShatterjawBeetlePupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
@@ -325,7 +325,7 @@
 	<defName>BMT_ShatterjawBeetle</defName>
 	<label>shatterjaw beetle</label>
 	<race>BMT_ShatterjawBeetle</race>
-	<combatPower>120</combatPower>
+	<combatPower>180</combatPower>
 	<ecoSystemWeight>0.50</ecoSystemWeight>
 	<lifeStages>
 	  <li>

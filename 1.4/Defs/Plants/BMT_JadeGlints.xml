@@ -99,6 +99,7 @@
 				  <need>Outdoors</need>
 				  <offset>0.05</offset>
 				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>

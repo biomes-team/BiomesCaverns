@@ -212,7 +212,7 @@
 		<defName>BMT_AaroxisDendoriaPupa</defName>
 		<label>aaroxis dendoria pupa</label>
 		<race>BMT_AaroxisDendoriaPupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.01</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

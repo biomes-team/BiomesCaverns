@@ -209,7 +209,7 @@
 		<defName>BMT_MossBeetlePupa</defName>
 		<label>moss pupa</label>
 		<race>BMT_MossBeetlePupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>

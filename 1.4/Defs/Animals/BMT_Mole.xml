@@ -140,7 +140,7 @@
 		<defName>BMT_Mole</defName>
 		<label>mole</label>
 		<race>BMT_Mole</race>
-		<combatPower>15</combatPower>
+		<combatPower>25</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>

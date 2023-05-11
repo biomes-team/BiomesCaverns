@@ -102,6 +102,7 @@
         <defName>BMT_Owlbear</defName>
         <label>owlbear</label>
         <race>BMT_Owlbear</race>
+		<combatPower>200</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
