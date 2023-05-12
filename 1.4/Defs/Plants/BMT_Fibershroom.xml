@@ -19,6 +19,7 @@
       <fertilityMin>0.2</fertilityMin>
       <fertilitySensitivity>0.1</fertilitySensitivity>
       <growMinGlow>0</growMinGlow>
+	  <growOptimalGlow>0</growOptimalGlow>
       <harvestWork>300</harvestWork>
       <harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
       <burnedThingDef IsNull="True" />
