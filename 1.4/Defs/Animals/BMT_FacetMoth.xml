@@ -236,7 +236,8 @@
 			<FilthRate>19</FilthRate>
 		</statBases>
 		<race>
-			<body>BeetleLike</body>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_MothLike</body>
 			<leatherDef>BMT_CrystalChitin</leatherDef>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>0.77</baseBodySize>
