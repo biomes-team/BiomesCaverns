@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
 
+  <BodyPartDef>
+	<defName>BMT_MothWing</defName>
+	<label>wing</label>
+	<hitPoints>30</hitPoints>
+	<frostbiteVulnerability>0.5</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	<skinCovered>false</skinCovered>
+	<alive>false</alive>
+	<bleedRate>0</bleedRate>
+	<tags>
+	  <li>MovingLimbCore</li>
+	</tags>
+  </BodyPartDef>
+
   <BodyDef>
 	<defName>BMT_MothLike</defName>
 	<label>mothlike</label>
@@ -10,12 +24,12 @@
 	  <depth>Outside</depth>
 	  <parts>
 		<li>
-		  <def>Elytra</def>
+		  <def>BMT_MothWing</def>
 		  <coverage>0.05</coverage>
 		  <customLabel>left wing</customLabel>
 		</li>
 		<li>
-		  <def>Elytra</def>
+		  <def>BMT_MothWing</def>
 		  <coverage>0.05</coverage>
 		  <customLabel>right wing</customLabel>
 		</li>
