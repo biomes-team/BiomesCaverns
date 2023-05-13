@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>

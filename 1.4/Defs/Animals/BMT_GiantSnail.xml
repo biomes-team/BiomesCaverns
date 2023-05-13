@@ -12,6 +12,7 @@
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">

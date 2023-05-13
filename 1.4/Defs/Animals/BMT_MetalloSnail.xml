@@ -19,6 +19,7 @@
 		<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 		<Flammability>0.0</Flammability>
+		<FilthRate>0</FilthRate>
 	</statBases>
 	<comps>
 		<li Class="BiomesCore.CompProperties_DefensiveReaction">

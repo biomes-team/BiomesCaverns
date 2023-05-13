@@ -11,7 +11,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<Flammability>0.0</Flammability>
+			<Flammability>4</Flammability>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
@@ -232,7 +232,7 @@
 	  <MarketValue>300</MarketValue>
 	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
-	  <FilthRate>16</FilthRate>
+	  <FilthRate>7</FilthRate>
 	  <Flammability>0.0</Flammability>
 	  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 	</statBases>

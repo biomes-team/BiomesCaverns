@@ -12,6 +12,7 @@
 			<LeatherAmount>0</LeatherAmount>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+			<FilthRate>1</FilthRate>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<tools>

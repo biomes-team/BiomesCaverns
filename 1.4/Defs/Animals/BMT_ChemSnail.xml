@@ -9,6 +9,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MarketValue>100</MarketValue>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">

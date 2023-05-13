@@ -50,6 +50,7 @@
 		<defName>BMT_Kessinger</defName>
 		<label>kessinger</label>
 		<description>Nutrient-rich fungal body, harvested and compacted for storage. Kessinger is good animal feed, but inedible for humans.</description>
+		<stackLimit>200</stackLimit>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
 		<graphicData>
@@ -58,6 +59,7 @@
 		<statBases>
 			<MarketValue>0.6</MarketValue>
 			<Mass>0.015</Mass>
+			<Flammability>1.5</Flammability>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -65,6 +67,9 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
 		<ingestible>
 			<foodType>Seed</foodType>
 			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>

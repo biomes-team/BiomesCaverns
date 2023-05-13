@@ -11,6 +11,7 @@
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<tools>
 			<li>

@@ -9,6 +9,7 @@
 			<MarketValue>200</MarketValue>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<FilthRate>3</FilthRate>
 		</statBases>
 		<tools>
 			<li>

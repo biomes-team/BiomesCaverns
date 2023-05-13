@@ -18,6 +18,7 @@
 	  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
 	  <LeatherAmount>12</LeatherAmount>
+	  <FilthRate>4</FilthRate>
 	</statBases>
 	<tools>
 	  <li>

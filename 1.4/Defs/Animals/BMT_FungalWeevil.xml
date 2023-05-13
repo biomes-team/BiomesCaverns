@@ -20,6 +20,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>25</LeatherAmount>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<!-- <uiIconScale>1</uiIconScale> -->
 		<comps>

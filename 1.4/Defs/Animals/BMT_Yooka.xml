@@ -10,6 +10,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<FilthRate>8</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">

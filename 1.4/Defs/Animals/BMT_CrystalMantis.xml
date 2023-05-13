@@ -15,6 +15,7 @@
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
       <MarketValue>150</MarketValue>
       <LeatherAmount>20</LeatherAmount>
+	  <FilthRate>7</FilthRate>
     </statBases>
     <uiIconScale>2</uiIconScale>
     <tools>
