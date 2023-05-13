@@ -56,6 +56,7 @@
     </comps>
     <researchPrerequisites>
       <li>BMT_AdvancedFungi</li>
+	  <li>Hydroponics</li>
     </researchPrerequisites>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>
