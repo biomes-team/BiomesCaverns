@@ -52,6 +52,7 @@
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
+    <Compile Include="Patches\CompScanner_CanUseNow_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_RandomDropSpot_Patch.cs" />
     <Compile Include="Patches\DropPodUtility_MakeDropPodAt_Patch.cs" />
     <Compile Include="Patches\ScatterStalagmites.cs" />
