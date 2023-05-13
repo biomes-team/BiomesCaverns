@@ -65,6 +65,7 @@
 			<anticipationSoundTicks>1000</anticipationSoundTicks>
 			<motesPerCell>0</motesPerCell>
 			<shadowSize>(0, 0)</shadowSize>
+			<hitRoof>false</hitRoof>
 		</skyfaller>
 		<comps>
 			<li>
