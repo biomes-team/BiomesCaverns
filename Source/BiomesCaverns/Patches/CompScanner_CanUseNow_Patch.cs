@@ -12,17 +12,6 @@ namespace BiomesCaverns.Patches
 	[HarmonyPatch(typeof(CompScanner), nameof(CompScanner.CanUseNow), MethodType.Getter)]
 	internal static class CompScanner_CanUseNow_Patch
 	{
-		/*
-		static MethodBase TargetMethod()
-		{
-			foreach (var prop in typeof(CompScanner).GetProperties())
-			{
-				Log.Error(prop.ToString());
-			}
-
-			return typeof(CompScanner).GetProperty("CanUseNow");
-		}
-		*/
 
 		private static bool IsAnyCellUnderNonCavernRoof(Thing thing)
 		{
