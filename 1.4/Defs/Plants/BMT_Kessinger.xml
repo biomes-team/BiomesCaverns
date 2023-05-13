@@ -29,7 +29,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Kessinger</immatureGraphicPath>
 			<topWindExposure>0</topWindExposure>
-			<harvestYield>6</harvestYield>
+			<harvestYield>9</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 				<li>BMT_Fungiponics</li>
