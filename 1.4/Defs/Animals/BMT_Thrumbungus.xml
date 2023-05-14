@@ -76,7 +76,6 @@
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal, CarnivoreAnimal, OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Thrumbo</leatherDef>
       <trainability>Advanced</trainability>
-      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
       <wildness>0.985</wildness>
       <lifeExpectancy>220</lifeExpectancy>
 	  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
