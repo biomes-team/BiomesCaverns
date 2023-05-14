@@ -26,6 +26,7 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.50</wildness>
+			<roamMtbDays>2.75</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
@@ -160,6 +161,7 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>None</foodType>
 			<wildness>1</wildness>
+			<roamMtbDays>2.75</roamMtbDays>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
