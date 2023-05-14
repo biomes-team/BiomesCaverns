@@ -6,7 +6,7 @@
 		<label>royal rhino grub</label>
 		<description>A gigantic larva of the royal rhino beetle. It is much weaker than its adult form, often remaining reclusive until fully grown.</description>
 		<statBases>
-			<MoveSpeed>0.4</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>

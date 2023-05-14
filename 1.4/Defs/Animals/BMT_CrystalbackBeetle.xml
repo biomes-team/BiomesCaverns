@@ -6,7 +6,7 @@
 		<label>crystalback grub</label>
 		<description>Small and relatively slow, this chubby grub hides among crystals to avoid predators. Its main defense is spewing sticky goo at their eyes.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

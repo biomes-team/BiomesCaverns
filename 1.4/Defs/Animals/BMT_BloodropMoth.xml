@@ -6,7 +6,7 @@
         <label>bloodrop larvae</label>
         <description>The larval form of the bloodrop moth. It gains nutrients for growth by feeding on the blood of any large creature. A small group of them can drain even an elephant to death in minutes.</description>
         <statBases>
-            <MoveSpeed>0.3</MoveSpeed>
+            <MoveSpeed>2</MoveSpeed>
             <LeatherAmount>0</LeatherAmount>
             <MarketValue>100</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>

@@ -6,7 +6,7 @@
 		<label>foundry grub</label>
 		<description>A small and soft grub with inflammable chitin. Unfortunately this does not last once the grub is dead.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

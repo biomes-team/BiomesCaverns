@@ -6,7 +6,7 @@
 		<label>shatterjaw grub</label>
 		<description>While its adult form can bite a man in half, this weak, squishy grub is incapable of such a task.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
