@@ -62,6 +62,8 @@
 			<lifeExpectancy>10</lifeExpectancy>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.2</wildness>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<trainability>None</trainability>
 			<roamMtbDays>4</roamMtbDays>
 			<leatherDef>BMT_WeakChitin</leatherDef>

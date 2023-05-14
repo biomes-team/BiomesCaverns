@@ -84,6 +84,8 @@
 			<roamMtbDays>4</roamMtbDays>
 			<lifeExpectancy>8</lifeExpectancy>
 			<gestationPeriodDays>5.5</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

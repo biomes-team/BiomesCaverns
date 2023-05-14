@@ -72,6 +72,7 @@
 			<trainability>None</trainability>
 			<roamMtbDays>6</roamMtbDays>
 			<lifeExpectancy>45</lifeExpectancy>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 			<willNeverEat>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>

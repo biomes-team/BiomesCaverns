@@ -174,7 +174,7 @@
 			<wildness>1</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<body>BeetleLike</body>

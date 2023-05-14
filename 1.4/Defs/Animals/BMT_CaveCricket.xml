@@ -69,6 +69,8 @@
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<herdAnimal>true</herdAnimal>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<lifeExpectancy>6</lifeExpectancy>
 			<lifeStageAges>
 				<li>

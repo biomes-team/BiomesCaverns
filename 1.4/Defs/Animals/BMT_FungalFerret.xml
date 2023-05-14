@@ -80,6 +80,8 @@
 			<leatherDef>Leather_Plain</leatherDef>
 			<wildness>0.4</wildness>
 			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
 			<petness>0.8</petness>
 			<nuzzleMtbHours>10</nuzzleMtbHours>
 			<gestationPeriodDays>5.7</gestationPeriodDays>

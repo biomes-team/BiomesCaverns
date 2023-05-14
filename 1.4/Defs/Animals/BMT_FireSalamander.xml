@@ -75,6 +75,8 @@
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
 			<wildness>0.75</wildness>
 			<trainability>None</trainability>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>

@@ -262,7 +262,7 @@
 	  <lifeExpectancy>15</lifeExpectancy>
 	  <packAnimal>true</packAnimal>
 	  <nuzzleMtbHours>36</nuzzleMtbHours>
-	  <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+	  <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
 	  <nameOnTameChance>0.2</nameOnTameChance>
 	  <lifeStageAges>
 		<li>

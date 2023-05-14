@@ -33,7 +33,7 @@
 			<trainability>Advanced</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<!-- <body>BeetleLike</body> -->
 			<body>BMT_LarvaLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
