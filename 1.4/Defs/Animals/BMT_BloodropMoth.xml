@@ -14,7 +14,7 @@
 			<FilthRate>3</FilthRate>
         </statBases>
         <race>
-            <hasGenders>false</hasGenders>
+            <hasGenders>true</hasGenders>
             <fleshType>Insectoid</fleshType>
 			<herdAnimal>true</herdAnimal>
             <bloodDef>Filth_BloodInsect</bloodDef>
@@ -153,7 +153,7 @@
             <leatherDef>BMT_CrimsonSilk</leatherDef>
             <thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
             <needsRest>false</needsRest>
-            <hasGenders>false</hasGenders>
+            <hasGenders>true</hasGenders>
             <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>
             <meatColor>(160,168,139)</meatColor>
