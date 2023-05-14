@@ -137,7 +137,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_MegapleuraEggFertilized</defName>
 		<label>megapleura egg (fert.)</label>
-		<description>A fertilized megapleura egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized megapleura egg. If all goes well, it should hatch into a baby megapleura. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
 			<color>(114,178,151)</color>

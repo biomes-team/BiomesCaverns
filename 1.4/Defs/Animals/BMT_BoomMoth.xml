@@ -73,10 +73,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>head</label>
@@ -204,10 +200,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BoomPupa</defName>

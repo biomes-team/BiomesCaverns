@@ -258,6 +258,10 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
 		<race>
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>

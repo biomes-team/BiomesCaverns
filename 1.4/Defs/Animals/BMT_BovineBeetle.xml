@@ -96,11 +96,6 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalFarm</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
@@ -211,10 +206,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BovineBeetlePupa</defName>

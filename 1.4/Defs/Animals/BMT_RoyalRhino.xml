@@ -92,12 +92,6 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalFighter</li>
-			<li>AnimalAlpha</li>
-			<li>AnimalExotic</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhinoLarvae</defName>
@@ -206,12 +200,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalFighter</li>
-			<li>AnimalAlpha</li>
-			<li>AnimalExotic</li>
-		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhinoPupa</defName>
