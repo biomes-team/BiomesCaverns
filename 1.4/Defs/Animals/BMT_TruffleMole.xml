@@ -125,10 +125,16 @@
 					<li>20</li>
 				</customAmountToDig>
 				<ticksToDig>60000</ticksToDig>
+				<spawnForbidden>true</spawnForbidden>
 			</li>
 			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>RawFungus</customThingToDig>
-				<customAmountToDig>10</customAmountToDig>
+				<customThingsToDig>
+					<li>RawFungus</li>
+				</customThingsToDig>
+				<customAmountsToDig>
+					<li>10</li>
+				</customAmountsToDig>
+				<spawnForbidden>true</spawnForbidden>
 			</li>
 		</comps>
 		<modExtensions>
