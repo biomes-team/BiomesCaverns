@@ -6,7 +6,7 @@
 		<label>moss grub</label>
 		<description>A large beetle commonly found in dark, damp places, it feeds off low underbrush in caverns. While not the best source of meat, it works when little else is available.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

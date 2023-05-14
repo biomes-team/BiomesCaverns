@@ -6,7 +6,7 @@
 		<label>bovine grub</label>
 		<description>A large grub originally from Caveworlds, this bug is often kept in farms for the milk-like substance it produces as an adult. It is the larval form of the bovine beetle.</description>
 		<statBases>
-			<MoveSpeed>0.4</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>3</LeatherAmount>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

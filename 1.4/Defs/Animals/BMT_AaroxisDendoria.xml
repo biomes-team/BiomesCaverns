@@ -6,7 +6,7 @@
 		<label>cinnabar caterpillar</label>
 		<description>A unique species of moth larva with a spiraling body pattern rather than the normal segmented. It is thought to be a genetic anomaly from its engineered creation. The crimson-colored silk it produces is luxuriously soft.</description>
 		<statBases>
-			<MoveSpeed>0.4</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
