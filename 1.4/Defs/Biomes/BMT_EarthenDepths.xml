@@ -13,6 +13,7 @@
 				<cavernShapes>
 					<li>TunnelNetwork</li>
 				</cavernShapes>
+				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
 				<extraCarriers>
 					<BMT_FoundryBeetle>1</BMT_FoundryBeetle>
 				</extraCarriers>

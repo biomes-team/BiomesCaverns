@@ -12,6 +12,7 @@
 				<cavernShapes>
 					<li>Smooth</li>
 				</cavernShapes>
+				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
 				<applyToCaves>true</applyToCaves>

@@ -19,9 +19,9 @@
 			<anyOf>
 				<landform>CaveEntrance</landform>
 				<landform>SurfaceCave</landform>
-				<landform>Mineshaft</landform>
 				<landform>SecludedValley</landform>
 				<landform>Sinkhole</landform>
+				<landform>BMT_Mineshaft</landform>
 			</anyOf>
 			<noneOf>
 				<biome>Desert</biome>
