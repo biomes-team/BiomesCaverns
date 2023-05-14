@@ -109,6 +109,7 @@
         <modExtensions>
             <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
                 <isCustomThingEater>true</isCustomThingEater>
+	              <eatWhenFed>true</eatWhenFed>
             </li>
         </modExtensions>
 		<tradeTags>
