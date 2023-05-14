@@ -65,7 +65,7 @@
 			<li Class="CompProperties_Shearable">
 				<woolDef>BMT_CrimsonSilk</woolDef>
 				<shearIntervalDays>10</shearIntervalDays>
-				<woolAmount>30</woolAmount>
+				<woolAmount>80</woolAmount>
 			</li>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>12</ageInDays>
