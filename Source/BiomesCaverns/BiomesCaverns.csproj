@@ -46,6 +46,7 @@
     <Compile Include="BC_DefOf.cs" />
     <Compile Include="CompSpawnDust.cs" />
     <Compile Include="CompCleanFilthAround.cs" />
+    <Compile Include="DependencyVersionCheck.cs" />
     <Compile Include="GenSteps\ScattererValidator_RoughRockBuildable.cs" />
     <Compile Include="IncidentWorker_ThrumbungusPasses.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
