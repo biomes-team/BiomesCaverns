@@ -32,7 +32,6 @@
     <ingestible>
       <foodType>Plant</foodType>
       <preferability>DesperateOnlyForHumanlikes</preferability>
-      <tasteThought>AteRawFood</tasteThought>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>RawVegetable_Eat</ingestSound>
 	  <tasteThought>BMT_AteFungalLog</tasteThought>
