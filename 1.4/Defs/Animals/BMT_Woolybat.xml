@@ -204,12 +204,13 @@
 	  </li>
 	</lifeStages>
   </PawnKindDef>
+  
 	<ThingDef ParentName="WoolBase">
         <defName>BMT_BatWool</defName>
         <label>bat wool</label>
-        <description>A delightfully fluffy type of wool from a species of subterranean bat.</description>
+        <description>A delightfully soft type of wool from a species of subterranean bat.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Wool</texPath>
+            <texPath>BMT_Caverns/Things/Item/BatWool</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -239,8 +240,5 @@
                 <Beauty>4</Beauty>
             </statFactors>
         </stuffProps>
-        <thingCategories>
-            <li>Wools</li>
-        </thingCategories>
     </ThingDef>
 </Defs>
