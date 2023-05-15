@@ -232,7 +232,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetle</defName>
 		<label>bovine beetle</label>
-		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<description>A large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance and flakes of chitin.</description>
 		<statBases>
 			<MoveSpeed>3.1</MoveSpeed>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
@@ -324,6 +324,12 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_AnimalThingSpawner">
+                <thingToSpawn>BiomesCore_GreenChitin</thingToSpawn>
+                <spawnCount>5</spawnCount>
+                <spawnIntervalRange>750000~900000</spawnIntervalRange>
+                <saveKeysPrefix>WeakChitin</saveKeysPrefix>
+            </li>
 		</comps>
 		<tradeTags>
 			<li>AnimalUncommon</li>
