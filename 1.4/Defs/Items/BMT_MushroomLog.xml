@@ -30,7 +30,6 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <ingestible>
-      <foodType>Plant</foodType>
       <preferability>DesperateOnlyForHumanlikes</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>RawVegetable_Eat</ingestSound>
