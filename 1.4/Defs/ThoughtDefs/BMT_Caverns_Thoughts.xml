@@ -12,4 +12,17 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+	<ThoughtDef>
+    <defName>BMT_AteFungalLog</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate fungal log</label>
+        <description>My teeth hurt, why did I do this?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>
