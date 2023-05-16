@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- plant -->
-	<ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BMT_GiantLeaf</defName>
 		<label>giant leaf</label>
-		<description>A giant and very impressive leaf. Gathering water and mineral elements from the ground.</description>
+		<description>A giant and very impressive leaf that has adapted to darkness. Gathers water and mineral elements from the ground.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.20</Nutrition>
@@ -22,7 +22,7 @@
 		<pathCost>10</pathCost>
 		<ingestible/>
 		<plant>
-			<growMinGlow>0.5</growMinGlow>
+			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>1</growOptimalGlow>
 			<fertilityMin>1</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
