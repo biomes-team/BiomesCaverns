@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="MechanitesBase">
+		<defName>BMT_ThermophileMechanites</defName>
+		<label>thermophile mechanites</label>
+		<description>Semi-coherent mechanites which create small metallic protrusions in the skin. They increase the victim's tolerance for extreme temperatures, but also cause intense pain. These are probably a mutated strain of exotic environment survival mechanites.</description>
+		<stages>
+			<li>
+				<painOffset>0.2</painOffset>
+				<label>mild pain</label>
+				<statOffsets>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
+					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+					<ComfyTemperatureMax>30</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>intense pain</label>
+				<painOffset>0.6</painOffset>
+				<statOffsets>
+					<RestFallRateFactor>0.8</RestFallRateFactor>
+					<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+					<ComfyTemperatureMax>60</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

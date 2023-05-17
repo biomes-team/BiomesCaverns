@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>BMT_Disease_ThermophileMechanites</defName>
+		<label>thermophile mechanites</label>
+		<diseaseIncident>BMT_ThermophileMechanites</diseaseIncident>
+		<letterLabel>Disease: Thermophile mechanites</letterLabel>
+	</IncidentDef>
+</Defs>
