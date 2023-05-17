@@ -13,6 +13,8 @@
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
 			<FilthRate>1</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<tools>

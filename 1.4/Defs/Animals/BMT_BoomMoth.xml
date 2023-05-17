@@ -144,6 +144,8 @@
 			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<Flammability>0.0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>

@@ -148,6 +148,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>

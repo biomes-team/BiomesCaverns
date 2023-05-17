@@ -21,6 +21,8 @@
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>25</LeatherAmount>
 			<FilthRate>4</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<!-- <uiIconScale>1</uiIconScale> -->
 		<comps>
