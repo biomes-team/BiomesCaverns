@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<IncidentDef ParentName="DiseaseIncident">
+		<defName>BMT_Disease_AthleteFoot</defName>
+		<label>athlete foot</label>
+		<diseaseIncident>BMT_AthleteFoot</diseaseIncident>
+		<diseasePartsToAffect>
+			<li>Foot</li>
+		</diseasePartsToAffect>
+		<letterLabel>Disease: Athlete's foot</letterLabel>
+	</IncidentDef>
+	<IncidentDef ParentName="DiseaseIncident">
 		<defName>BMT_Disease_ThermophileMechanites</defName>
 		<label>thermophile mechanites</label>
 		<diseaseIncident>BMT_ThermophileMechanites</diseaseIncident>

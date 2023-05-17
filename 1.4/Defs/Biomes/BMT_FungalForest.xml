@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<BiomeDef>
 		<defName>BMT_FungalForest</defName>
 		<label>fungal forest</label>
@@ -78,6 +77,10 @@
 		</soundsAmbient>
 		<diseaseMtbDays>40</diseaseMtbDays>
 		<diseases>
+			<li>
+				<diseaseInc>BMT_Disease_AthleteFoot</diseaseInc>
+				<commonality>100</commonality>
+			</li>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>

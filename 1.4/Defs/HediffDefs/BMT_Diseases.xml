@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<HediffDef ParentName="InfectionBase">
+		<defName>BMT_AthleteFoot</defName>
+		<label>athlete's foot</label>
+		<description>Athlete's foot is a fungal infection in one of the victim's feet. It can cause itchy rashes, scaling or redness.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<tendable>true</tendable>
+		<stages>
+			<li>
+				<painOffset>0.1</painOffset>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>48</baseTendDurationHours>
+				<disappearsAtTotalTendQuality>4</disappearsAtTotalTendQuality>
+			</li>
+		</comps>
+	</HediffDef>
 	<HediffDef ParentName="MechanitesBase">
 		<defName>BMT_ThermophileMechanites</defName>
 		<label>thermophile mechanites</label>
