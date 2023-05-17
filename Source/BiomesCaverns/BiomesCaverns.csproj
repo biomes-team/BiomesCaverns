@@ -55,6 +55,7 @@
     <Compile Include="Patches\CompScanner_CanUseNow_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_RandomDropSpot_Patch.cs" />
     <Compile Include="Patches\DropPodUtility_MakeDropPodAt_Patch.cs" />
+    <Compile Include="Patches\GenStep_ArchonexusResearchBuildings_CollisionAt_Patch.cs" />
     <Compile Include="Patches\ScatterStalagmites.cs" />
     <Compile Include="Patches\ShipLandingArea_RecalculateBlockingThing_Patch.cs" />
     <Compile Include="Patches\ThrumboEvent.cs" />
