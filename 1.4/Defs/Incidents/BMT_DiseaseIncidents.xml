@@ -10,6 +10,15 @@
 		<letterLabel>Disease: Athlete's foot</letterLabel>
 	</IncidentDef>
 	<IncidentDef ParentName="DiseaseIncident">
+		<defName>BMT_Disease_PurpleLung</defName>
+		<label>purple lung</label>
+		<diseaseIncident>BMT_PurpleLung</diseaseIncident>
+		<diseasePartsToAffect>
+			<li>Lung</li>
+		</diseasePartsToAffect>
+		<letterLabel>Disease: Purple Lung</letterLabel>
+	</IncidentDef>
+	<IncidentDef ParentName="DiseaseIncident">
 		<defName>BMT_Disease_ThermophileMechanites</defName>
 		<label>thermophile mechanites</label>
 		<diseaseIncident>BMT_ThermophileMechanites</diseaseIncident>

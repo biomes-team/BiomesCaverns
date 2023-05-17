@@ -46,4 +46,45 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef ParentName="InfectionBase">
+		<defName>BMT_PurpleLung</defName>
+		<label>purple lung</label>
+		<description>Microscopic crystal pieces have made their way into the lungs and have begun to grow, absorbing minerals from the bloodstream. While potentially fatal, it can be cured with good medical care.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>10</baseTendDurationHours>
+				<severityPerDayTended>-0.12</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.4</severityPerDayNotImmune>
+				<immunityPerDaySick>0.3</immunityPerDaySick>
+				<severityPerDayImmune>-0.45</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.1</painOffset>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.55</minSeverity>
+				<painOffset>0.4</painOffset>
+				<partEfficiencyOffset>-0.35</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.6</painOffset>
+				<partEfficiencyOffset>-0.55</partEfficiencyOffset>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>
