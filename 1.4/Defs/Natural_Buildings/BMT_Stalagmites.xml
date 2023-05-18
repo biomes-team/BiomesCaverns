@@ -14,6 +14,7 @@
 	<passability>PassThroughOnly</passability>
 	<pathCost>34</pathCost>
 	<statBases>
+	  <WorkToBuild>600</WorkToBuild>
 	  <Beauty>9</Beauty>
 	  <MaxHitPoints>50</MaxHitPoints>
 	</statBases>

@@ -7,6 +7,7 @@
 	<blockLight>false</blockLight>
 	<pathCost>42</pathCost>
 	<statBases>
+	  <WorkToBuild>1000</WorkToBuild>
 	  <Beauty>15</Beauty>
 	  <MaxHitPoints>120</MaxHitPoints>
 	  <Mass>70</Mass>
