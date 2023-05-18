@@ -58,7 +58,7 @@
 				<eggFertilizedDef>BMT_EggGoetoFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>5~6</eggCountRange>
 			</li>
 		</comps>

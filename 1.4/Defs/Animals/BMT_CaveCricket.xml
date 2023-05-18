@@ -51,7 +51,7 @@
 				<eggFertilizedDef>BMT_EggCaveCricketFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>6</eggFertilizationCountMax>
 				<eggLayIntervalDays>6</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>4~6</eggCountRange>
 			</li>
 		</comps>

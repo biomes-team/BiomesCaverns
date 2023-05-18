@@ -23,7 +23,7 @@
 				<eggUnfertilizedDef>BMT_EggChemSnailUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>BMT_EggChemSnailFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>14</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>1~3</eggCountRange>
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>

@@ -107,6 +107,7 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggJewelbugFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggCountRange>2~4</eggCountRange>
 			</li>
