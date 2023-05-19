@@ -38,6 +38,8 @@
   </loadAfter>
   <incompatibleWith>
     <!-- <li>fluffysminion.itw.caveworldfloraunleashed</li> -->
+    <!-- [KV] Impassable Map Maker overrides Biomes! Caverns map generation with their own. -->
+    <li>impassablemapmaker.kv.rw</li>
   </incompatibleWith>
   <description>The caverns module for the Biomes! mods. Requires Biomes! Core loaded before it.</description>
 </ModMetaData>
