@@ -271,7 +271,7 @@
 		<isPaintable>false</isPaintable>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>335</renderPrecedence>
-		<pathCost>3</pathCost>
+		<pathCost>1</pathCost>
 		<statBases>
 			<WorkToBuild>1100</WorkToBuild>
 			<Beauty>4</Beauty>
