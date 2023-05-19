@@ -322,6 +322,9 @@
     <researchPrerequisites>
       <li>CarpetMaking</li>
     </researchPrerequisites>
+	<tags>
+	<li>FineFloor</li>
+	</tags>
   </TerrainDef>
   
   	<TerrainDef ParentName="FloorBase">
