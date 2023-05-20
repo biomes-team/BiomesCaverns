@@ -92,6 +92,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhinoLarvae</defName>
@@ -200,6 +203,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhinoPupa</defName>
@@ -343,6 +349,9 @@
 			<li>AnimalAlpha</li>
 			<li>AnimalExotic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhino</defName>

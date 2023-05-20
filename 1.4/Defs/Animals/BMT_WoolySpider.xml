@@ -102,6 +102,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">

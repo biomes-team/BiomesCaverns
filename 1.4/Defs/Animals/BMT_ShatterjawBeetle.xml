@@ -90,6 +90,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_ShatterjawBeetleLarvae</defName>
@@ -202,6 +205,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_ShatterjawBeetlePupa</defName>
@@ -317,11 +323,14 @@
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
-	<tradeTags>
-	  <li>AnimalUncommon</li>
-	  <li>AnimalFighter</li>
-	  <li>AnimalInsect</li>
-	</tradeTags>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
   </ThingDef>
 
   <!--===============================================-->

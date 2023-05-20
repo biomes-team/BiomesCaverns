@@ -104,6 +104,9 @@
 			<li>AnimalInsect</li>
 			<li>AnimalFarm</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CaveCricket</defName>

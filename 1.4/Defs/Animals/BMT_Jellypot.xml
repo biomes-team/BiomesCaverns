@@ -85,6 +85,9 @@
 		<butcherProducts>
 			<VFEI_Chitin MayRequire="oskarpotocki.vfe.insectoid">15</VFEI_Chitin>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_Jellypot</defName>

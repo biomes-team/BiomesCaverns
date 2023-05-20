@@ -105,6 +105,9 @@
 		<butcherProducts>
 			<RawFungus>12</RawFungus>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">

@@ -91,6 +91,9 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_FacetMothLarvae</defName>
@@ -206,6 +209,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_FacetMothPupa</defName>
@@ -308,11 +314,9 @@
 				<li>AnimalExotic</li> 
 				<li>AnimalInsect</li>
 			</tradeTags>
-		<!-- <modExtensions> -->
-			<!-- <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl"> -->
-				<!-- <isBloodDrinkingAnimal>true</isBloodDrinkingAnimal> -->
-			<!-- </li> -->
-		<!-- </modExtensions> -->
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

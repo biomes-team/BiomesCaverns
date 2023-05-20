@@ -201,6 +201,9 @@
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+        </modExtensions>
     </ThingDef>
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>BMT_BloodropPupa</defName>
