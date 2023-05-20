@@ -10,9 +10,9 @@
   <ThingDef ParentName="BaseInsect">
 	<defName>BMT_PodWorm</defName>
 	<label>pod worm</label>
-	<description>Though large and intimidating, the appearance of this strange insectoid-like creature does not match with its otherwise passive nature. While it originates in insectoid hives as the caste that produces glow pods, it occasionally wanders off or gets captured and sold by humanoids.</description>
+	<description>Though large and intimidating, the appearance of this strange insectoid-like creature does not match with its otherwise passive nature. While it typically lives in insectoid hives as a part of the glow pod producing caste, it occasionally wanders off or gets captured and sold by humanoids.</description>
 	<statBases>
-	  <MoveSpeed>4</MoveSpeed>
+	  <MoveSpeed>2</MoveSpeed>
 	  <MarketValue>400</MarketValue>
 	  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
@@ -75,9 +75,9 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 			<li Class="CompProperties_Milkable">
-				<milkDef>GlowPod</milkDef>
-				<milkIntervalDays>10</milkIntervalDays>
-				<milkAmount>1</milkAmount>
+				<milkDef>BMT_GlowGoo</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>6</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
