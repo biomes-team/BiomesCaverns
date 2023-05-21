@@ -74,7 +74,7 @@
 		<soundsAmbient>
 			<li>BMT_Ambient_FungalForest</li>
 		</soundsAmbient>
-		<diseaseMtbDays>20</diseaseMtbDays>
+		<diseaseMtbDays>60</diseaseMtbDays>
 		<diseases>
 			<li>
 				<diseaseInc>BMT_Disease_PurpleLung</diseaseInc>
