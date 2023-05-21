@@ -39,7 +39,7 @@
 			<body>BeetleLike</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>0.335</baseBodySize>
-			<baseHungerRate>0.45</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>

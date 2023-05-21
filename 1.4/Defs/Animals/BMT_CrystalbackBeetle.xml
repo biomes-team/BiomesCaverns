@@ -23,7 +23,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.25</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.50</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
@@ -277,7 +277,7 @@
 			<meatMarketValue>0.5</meatMarketValue>
 			<body>BeetleLike</body>
 			<baseBodySize>2.45</baseBodySize>
-			<baseHungerRate>0.50</baseHungerRate>
+			<baseHungerRate>0.20</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>

@@ -21,8 +21,8 @@
 	</statBases>
 	<building>
 	  <deconstructible>true</deconstructible>
-	  <!-- <claimable>false</claimable> -->
-	  <claimable>true</claimable>
+	  <claimable>false</claimable>
+	  <!-- <claimable>true</claimable> -->
 	  <!-- <isNaturalRock>true</isNaturalRock> -->
 	  <!-- <isEdifice>false</isEdifice> -->
 	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
