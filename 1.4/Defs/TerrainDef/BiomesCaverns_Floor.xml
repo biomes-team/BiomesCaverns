@@ -269,7 +269,7 @@
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
 		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
 		<isPaintable>false</isPaintable>
-		<edgeType>FadeRough</edgeType>
+		<edgeType>Hard</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>0</pathCost>
 		<statBases>
