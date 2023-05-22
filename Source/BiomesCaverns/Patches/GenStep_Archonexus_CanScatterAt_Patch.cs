@@ -10,10 +10,10 @@ namespace BiomesCaverns.Patches
 	[HarmonyPatch(typeof(GenStep_Archonexus), "CanScatterAt")]
 	internal static class GenStep_Archonexus_CanScatterAt_Patch
 	{
-		private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+		internal static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
 			return TranspilerHelper.ReplaceCall(instructions.ToList(),
-				Methods.CellRoofedMethod, Methods.NoRoofOrCavernMethod);
+				Methods.CellRoofedMethod, Methods.HasNonCavernRoofMethod);
 		}
 	}
 }

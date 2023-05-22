@@ -7,8 +7,8 @@ using RimWorld;
 
 namespace BiomesCaverns.Patches
 {
-	[HarmonyPatch(typeof(GenStep_ArchonexusResearchBuildings), nameof(GenStep_ArchonexusResearchBuildings.CollisionAt))]
-	internal static class GenStep_ArchonexusResearchBuildings_CollisionAt_Patch
+	[HarmonyPatch(typeof(GenStep_ScattererBestFit), "CanScatterAt")]
+	public class GenStep_ScattererBestFit_CanScatterAt_Patch
 	{
 		internal static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
