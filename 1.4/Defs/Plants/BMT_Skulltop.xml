@@ -60,6 +60,7 @@
 				<cellsToFill>2</cellsToFill>
 				<baseSeverity>0.2</baseSeverity>
 				<growthProgress>0.1</growthProgress>
+				<statDef>ToxicResistance</statDef>
 			</li>
 		</comps>
 		<modExtensions>
