@@ -14,7 +14,7 @@
     <soundInteract>Wood_Drop</soundInteract>
     <soundDrop>Wood_Drop</soundDrop>
     <statBases>
-      <Nutrition>0.1</Nutrition>
+      <Nutrition>0.05</Nutrition>
       <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
       <MarketValue>1.1</MarketValue>
       <MaxHitPoints>130</MaxHitPoints>
@@ -64,7 +64,7 @@
     </stuffProps>
     <thingCategories>
       <li>ResourcesRaw</li>
-      <li>PlantFoodRaw</li>
+      <li>Foods</li>
     </thingCategories>
     <weaponClasses>
       <li>Melee</li>
