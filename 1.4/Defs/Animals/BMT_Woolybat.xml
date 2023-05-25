@@ -71,7 +71,7 @@
 	</race>
 			<comps>
 			<li Class="CompProperties_Shearable">
-				<woolDef>BMT_CrimsonSilk</woolDef>
+				<woolDef>BMT_BatWool</woolDef>
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>80</woolAmount>
 			</li>
