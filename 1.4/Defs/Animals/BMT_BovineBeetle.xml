@@ -172,7 +172,6 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>None</foodType>
 			<wildness>1</wildness>
-			<roamMtbDays>2.5</roamMtbDays>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<trainability>None</trainability>

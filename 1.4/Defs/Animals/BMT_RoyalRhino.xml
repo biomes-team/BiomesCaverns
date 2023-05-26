@@ -167,7 +167,6 @@
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
-			<roamMtbDays>3</roamMtbDays>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<body>BeetleLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
