@@ -87,10 +87,6 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
@@ -102,6 +98,7 @@
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.4</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -180,11 +177,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-			<tradeTags>
-				<li>AnimalPet</li>
-				<li>AnimalExotic</li> 
-				<li>AnimalInsect</li>
-			</tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
@@ -219,6 +211,7 @@
 		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
