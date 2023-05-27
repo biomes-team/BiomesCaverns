@@ -60,47 +60,37 @@
     <defName>BMT_CoolingSalve</defName>
     <label>cooling salve</label>
     <description>A package of cooling salve gathered from a strange mushroom. This salve grants considerably higher heat tolerance.</description>
-    <category>Item</category>
-    <thingClass>ThingWithComps</thingClass>
-    <drawerType>MapMeshOnly</drawerType>
-    <useHitPoints>true</useHitPoints>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <selectable>true</selectable>
     <stackLimit>10</stackLimit>
     <tickerType>Rare</tickerType>
     <possessionCount>5</possessionCount>
-    <socialPropernessMatters>false</socialPropernessMatters>
-    <alwaysHaulable>true</alwaysHaulable>
-    <pathCost>14</pathCost>
-    <resourceReadoutPriority>Last</resourceReadoutPriority>
-    <drawGUIOverlay>true</drawGUIOverlay>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <graphicData>
       <texPath>BMT_Caverns/Things/Item/Drug/CoolingSalve</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>
     <statBases>
-      <MaxHitPoints>60</MaxHitPoints>
       <DeteriorationRate>5</DeteriorationRate>
       <Mass>0.50</Mass>
       <Flammability>0.2</Flammability>
-      <Nutrition>0.1</Nutrition>
-      <Beauty>0</Beauty>
       <MarketValue>5</MarketValue>
     </statBases>
-	<techLevel>Neolithic</techLevel>
-    <thingCategories>
-      <li>Foods</li>
-    </thingCategories>
+    <techLevel>Neolithic</techLevel>
     <ingestible>
+      <drugCategory>Medical</drugCategory>
       <foodType>Fluid</foodType>
-      <preferability>DesperateOnly</preferability>
+      <baseIngestTicks>100</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestSound>Ingest_Pill</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
       <outcomeDoers>
-		<li Class="IngestionOutcomeDoer_GiveHediff">
-			<hediffDef>BMT_CoolingSalve</hediffDef>
-		</li>
-		<li Class="IngestionOutcomeDoer_GiveHediff">
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BMT_CoolingSalve</hediffDef>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CoolingSalveTolerance</hediffDef>
           <severity>0.025</severity>
           <divideByBodySize>true</divideByBodySize>
@@ -109,12 +99,11 @@
       </outcomeDoers>
     </ingestible>
     <comps>
-	  	<li Class="CompProperties_Rottable">
-			<daysToRotStart>5</daysToRotStart>
-			<rotDestroys>true</rotDestroys>
-		</li>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Drug">
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Drug">
         <chemical>CoolingSalve</chemical>
         <addictiveness>0.010</addictiveness>
         <minToleranceToAddict>0.15</minToleranceToAddict>
