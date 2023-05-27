@@ -198,6 +198,7 @@
 			<BMT_MossBeetle>0.1</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
 			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.5</BMT_GlowBat>
+			<BMT_Woolybat>0.05</BMT_Woolybat>
 			
 			<!-- onmnivore -->
 			<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>

@@ -103,6 +103,7 @@
 					<BMT_Mole>0.2</BMT_Mole>
 					<BMT_DarkAxolotl>0.3</BMT_DarkAxolotl>
 					<BMT_BrownBat MayRequire="biomesteam.biomesislands">0.4</BMT_BrownBat>
+					<BMT_Woolybat>0.05</BMT_Woolybat>
 
 					<!-- predators -->
 					<BMT_Owlbear>0.15</BMT_Owlbear>
