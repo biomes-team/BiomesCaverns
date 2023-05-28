@@ -11,6 +11,7 @@
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -50,7 +51,7 @@
 				<eggFertilizedDef>BMT_EggCaveCricketFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>6</eggFertilizationCountMax>
 				<eggLayIntervalDays>6</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>4~6</eggCountRange>
 			</li>
 		</comps>
@@ -68,6 +69,8 @@
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<herdAnimal>true</herdAnimal>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<lifeExpectancy>6</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -101,6 +104,9 @@
 			<li>AnimalInsect</li>
 			<li>AnimalFarm</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CaveCricket</defName>

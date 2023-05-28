@@ -72,13 +72,6 @@
 			<harvestYield>5</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>10</growDays>
-			<sowTags>
-				<li>BMT_Fungiponics</li>
-			</sowTags>
-			<sowResearchPrerequisites>
-				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>
-			<sowMinSkill>7</sowMinSkill>	  
 			<wildOrder>0</wildOrder>
 		  <purpose>Food</purpose>
 		  <humanFoodPlant>true</humanFoodPlant>			
@@ -147,13 +140,7 @@
 			<harvestedThingDef>BMT_RawGlowbulb</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<growDays>14</growDays>
-			<sowTags>	
-				<li>BMT_Fungiponics</li>
-			</sowTags>
-			<sowResearchPrerequisites>
-				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>	  
+			<growDays>14</growDays> 
 			<wildOrder>0</wildOrder>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>			
@@ -225,13 +212,7 @@
 			<growDays>14</growDays>
 			<wildOrder>1</wildOrder>
       <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>			
-			<sowTags>
-				<li>BMT_Fungiponics</li>				
-			</sowTags>
-			<sowResearchPrerequisites>
-				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>			
+      <humanFoodPlant>true</humanFoodPlant>					
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -299,12 +280,6 @@
 			<harvestYield>23</harvestYield>		
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>30</growDays>
-			<sowTags>
-				<li>BMT_Fungiponics</li>				
-			</sowTags>
-			<sowResearchPrerequisites>
-				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>	
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>			
 		</plant>
@@ -375,14 +350,7 @@
 			<harvestedThingDef>BMT_GleamcapSalve</harvestedThingDef>
 			<harvestYield>1</harvestYield>
 			<visualSizeRange>0.3~1.2</visualSizeRange>
-			<growDays>24</growDays>
-			<sowTags>
-				<li>BMT_Fungiponics</li>				
-			</sowTags>
-			<sowResearchPrerequisites>
-				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>
-			<sowMinSkill>8</sowMinSkill>	  
+			<growDays>24</growDays>	  
 			<wildOrder>0</wildOrder>
 		</plant>
 		<comps>
@@ -448,13 +416,7 @@
 			<harvestWork>100</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<visualSizeRange>0.3~1.05</visualSizeRange>
-			<growDays>4</growDays>
-			<sowTags>
-				<li>BMT_Fungiponics</li>			
-			</sowTags>
-			<sowResearchPrerequisites>
-				<li>BMT_ResearchMushrooms</li>
-			</sowResearchPrerequisites>	  
+			<growDays>4</growDays> 
 			<wildOrder>0</wildOrder>
 		</plant>
 		<comps>

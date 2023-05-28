@@ -11,6 +11,7 @@
 			<MarketValue>240</MarketValue>
 			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">

@@ -62,7 +62,7 @@
 			<categories>
 				<li>Stony</li>
 			</categories>
-			<commonality>0.3</commonality>
+			<commonality>0.0</commonality>
 			<constructEffect>BMT_ConstructIce</constructEffect>
 			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>

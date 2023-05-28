@@ -101,7 +101,7 @@
 	  <wildness>0.85</wildness>
 	  <packAnimal>false</packAnimal>
 	  <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+	  <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 	  <lifeExpectancy>12</lifeExpectancy>
 	  <lifeStageAges>
 		<li>

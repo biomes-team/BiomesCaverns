@@ -22,7 +22,7 @@
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
-			<mustBeWildToSow>true</mustBeWildToSow>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<growDays>5</growDays>
 			<maxMeshCount>1</maxMeshCount>
 			<visualSizeRange>0.3~0.7</visualSizeRange>
@@ -32,7 +32,7 @@
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
 			<sowTags>
-				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<sowWork>800</sowWork>
 			<sowMinSkill>8</sowMinSkill>

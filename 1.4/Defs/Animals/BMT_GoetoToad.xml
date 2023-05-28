@@ -10,6 +10,7 @@
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -57,7 +58,7 @@
 				<eggFertilizedDef>BMT_EggGoetoFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>5~6</eggCountRange>
 			</li>
 		</comps>

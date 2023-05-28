@@ -6,7 +6,7 @@
 		<label>royal rhino grub</label>
 		<description>A gigantic larva of the royal rhino beetle. It is much weaker than its adult form, often remaining reclusive until fully grown.</description>
 		<statBases>
-			<MoveSpeed>0.4</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
@@ -14,6 +14,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
@@ -28,10 +29,11 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
+			<roamMtbDays>3</roamMtbDays>
 			<trainability>Advanced</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<!-- <body>BeetleLike</body> -->
 			<body>BMT_LarvaLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -90,12 +92,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalFighter</li>
-			<li>AnimalAlpha</li>
-			<li>AnimalExotic</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhinoLarvae</defName>
@@ -104,6 +103,7 @@
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -203,12 +203,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalFighter</li>
-			<li>AnimalAlpha</li>
-			<li>AnimalExotic</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhinoPupa</defName>
@@ -217,6 +214,7 @@
 		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -352,6 +350,9 @@
 			<li>AnimalAlpha</li>
 			<li>AnimalExotic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_RoyalRhino</defName>

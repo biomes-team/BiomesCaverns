@@ -269,9 +269,9 @@
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
 		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
 		<isPaintable>false</isPaintable>
-		<edgeType>FadeRough</edgeType>
+		<edgeType>Hard</edgeType>
 		<renderPrecedence>335</renderPrecedence>
-		<pathCost>3</pathCost>
+		<pathCost>0</pathCost>
 		<statBases>
 			<WorkToBuild>1100</WorkToBuild>
 			<Beauty>4</Beauty>
@@ -297,6 +297,7 @@
 		<takeFootprints>false</takeFootprints>
 		<tags>
 			<li>BMT_Crystal</li>
+			<li>FineFloor</li>
 		</tags>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
@@ -322,6 +323,9 @@
     <researchPrerequisites>
       <li>CarpetMaking</li>
     </researchPrerequisites>
+	<tags>
+	<li>FineFloor</li>
+	</tags>
   </TerrainDef>
   
   	<TerrainDef ParentName="FloorBase">

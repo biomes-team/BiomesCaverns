@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Cat sized. -->
+<!-- What does it eat? (is it a predator?) Predatory carnivore that can eat raw meat. -->
+<!-- Where does it live? Surface Caverns. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weaker leather. Not very strong. High nuzzle chance. -->
+
+  <ThingDef ParentName="BaseInsect">
+	<defName>BMT_PodWorm</defName>
+	<label>pod worm</label>
+	<description>Though large and intimidating, the appearance of this strange insectoid-like creature does not match with its otherwise passive nature. While it typically lives in insectoid hives as a part of the glow pod producing caste, it occasionally wanders off or gets captured and sold by humanoids.</description>
+	<statBases>
+	  <MoveSpeed>2</MoveSpeed>
+	  <MarketValue>400</MarketValue>
+	  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <FilthRate>0.01</FilthRate>
+	</statBases>
+	<race>
+	  <body>BMT_LarvaLike</body>
+	  <predator>false</predator>
+	  <baseBodySize>4</baseBodySize>
+	  <maxPreyBodySize>4</maxPreyBodySize>
+	  <baseHungerRate>0.05</baseHungerRate>
+	  <baseHealthScale>0.80</baseHealthScale>
+	  <foodType>VegetarianRoughAnimal</foodType>
+	  <leatherDef>BMT_WeakChitin</leatherDef>
+	  <wildness>0.5</wildness>
+	  <roamMtbDays>2</roamMtbDays>
+	  <petness>0.01</petness>
+	  <trainability>None</trainability>
+	  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+	  <nameOnTameChance>1</nameOnTameChance>
+	  <lifeExpectancy>20</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>BMT_EusocialInsectNymphFirst</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>BMT_EusocialInsectNymphSecond</def>
+		  <minAge>0.15</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.4</minAge>
+		  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+		  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+		  <soundCall>Pawn_Megascarab_Call</soundCall>
+		  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.02, 0, 0.23)</li>
+		<li>(0.35, 0, 0.05)</li>
+		<li>(0.0, 0, -0.185)</li>
+		<li>(-0.35, 0, 0.05)</li>
+	  </headPosPerRotation>
+	</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggPodWormFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>4</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>BMT_GlowGoo</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>6</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	<tradeTags>
+	  <li>AnimalExotic</li>
+	  <li>AnimalInsect</li>
+	</tradeTags>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_PodWorm</defName>
+	<label>pod worm</label>
+	<race>BMT_PodWorm</race>
+	<combatPower>50</combatPower>
+	<canArriveManhunter>true</canArriveManhunter>
+	<ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>1</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/GlowWorm/GlowWorm</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>1.5</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/GlowWorm/Dessicated_GlowWorm</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/GlowWorm/GlowWorm</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>2.25</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+            <volume>(0.7, 0.6, 0.4)</volume>
+            <offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/GlowWorm/Dessicated_GlowWorm</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/GlowWorm/GlowWorm</texPath>
+		  <!-- <color>(176,150,106)</color> -->
+		  <drawSize>3.25</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+		  <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		 <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/GlowWorm/Dessicated_GlowWorm</texPath>
+          <drawSize>3.25</drawSize>
+        </dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggPodWormFertilized</defName>
+		<label>pod worm egg (fert.)</label>
+		<description>A pod worm egg. If all goes well, it should hatch into a baby pod worm. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>BMT_PodWorm</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

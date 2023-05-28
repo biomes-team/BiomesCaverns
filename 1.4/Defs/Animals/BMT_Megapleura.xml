@@ -12,7 +12,7 @@
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
-			<FilthRate>16</FilthRate>
+			<FilthRate>4</FilthRate>
 			<PawnBeauty>1</PawnBeauty>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
@@ -32,7 +32,7 @@
 			<body>BeetleLikeWithClaw</body>
 			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
-			<baseHungerRate>0.535</baseHungerRate>
+			<baseHungerRate>0.235</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_MediumChitin</leatherDef>
 			<wildness>0.6</wildness>
@@ -91,6 +91,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -137,7 +140,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_MegapleuraEggFertilized</defName>
 		<label>megapleura egg (fert.)</label>
-		<description>A fertilized megapleura egg. If all goes well, it should hatch into a baby facet moth. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized megapleura egg. If all goes well, it should hatch into a baby megapleura. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
 			<color>(114,178,151)</color>

@@ -6,14 +6,15 @@
 		<label>crystalback grub</label>
 		<description>Small and relatively slow, this chubby grub hides among crystals to avoid predators. Its main defense is spewing sticky goo at their eyes.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<race>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -22,7 +23,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.25</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.50</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
@@ -89,6 +90,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CrystalBeetleLarvae</defName>
@@ -97,6 +101,7 @@
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<label>crystalback grub</label>
@@ -147,11 +152,12 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
 			<needsRest>false</needsRest>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -199,6 +205,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CrystalBeetlePupa</defName>
@@ -207,6 +216,7 @@
 		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -256,6 +266,10 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
 		<race>
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
@@ -264,7 +278,7 @@
 			<meatMarketValue>0.5</meatMarketValue>
 			<body>BeetleLike</body>
 			<baseBodySize>2.45</baseBodySize>
-			<baseHungerRate>0.50</baseHungerRate>
+			<baseHungerRate>0.20</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>
@@ -305,10 +319,14 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggCrystalbackBeetleFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>3</eggFertilizationCountMax>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggLayIntervalDays>3.75</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_CrystalBeetle</defName>

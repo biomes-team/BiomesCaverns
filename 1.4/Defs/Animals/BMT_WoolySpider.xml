@@ -16,6 +16,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>20</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<race>
 			<body>BeetleLikeWithClaw</body>
@@ -32,6 +33,8 @@
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<nameOnTameChance>1</nameOnTameChance>
 			<lifeExpectancy>10</lifeExpectancy>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
 					<def>BMT_EusocialInsectNymphFirst</def>
@@ -64,6 +67,7 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggWoolySpiderFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>4</eggFertilizationCountMax>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggLayIntervalDays>7</eggLayIntervalDays>
 				<eggCountRange>2~3</eggCountRange>
 			</li>
@@ -98,6 +102,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">

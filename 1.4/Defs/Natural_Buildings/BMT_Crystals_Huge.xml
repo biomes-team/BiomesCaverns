@@ -2,23 +2,25 @@
 <Defs>
   
   <ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Huge" Abstract="True">
-	<tickerType>Rare</tickerType>
+	<!-- <tickerType>Rare</tickerType> -->
 	<passability>Impassable</passability>
 	<blockLight>false</blockLight>
 	<pathCost>42</pathCost>
 	<statBases>
+	  <WorkToBuild>1000</WorkToBuild>
 	  <Beauty>15</Beauty>
 	  <MaxHitPoints>120</MaxHitPoints>
-	  <Mass>70</Mass>
+	  <!-- <Mass>70</Mass> -->
 	</statBases>
 	<building>
+	  <alwaysDeconstructible>false</alwaysDeconstructible>
 	  <deconstructible>false</deconstructible>
 	  <claimable>false</claimable>
 	</building>
-	<thingCategories>
-	  <li>BuildingsSpecial</li>
-	</thingCategories>
-	<minifiedDef>MinifiedThing</minifiedDef>
+	<!-- <thingCategories> -->
+	  <!-- <li>BuildingsSpecial</li> -->
+	<!-- </thingCategories> -->
+	<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
   </ThingDef>
 
   <!-- ====================================================== -->

@@ -12,6 +12,7 @@
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
@@ -74,7 +75,7 @@
 			<baseHealthScale>1.7</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<packAnimal>true</packAnimal>
-			<wildness>0.75</wildness>
+			<wildness>0.60</wildness>
 			<lifeExpectancy>35</lifeExpectancy>
 			<trainability>None</trainability>
 			<roamMtbDays>2</roamMtbDays>

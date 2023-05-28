@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<BiomeDef>
 		<defName>BMT_FungalForest</defName>
 		<label>fungal forest</label>
@@ -12,6 +11,7 @@
 				<cavernShapes>
 					<li>SmallChambers</li>
 				</cavernShapes>
+				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
 				<applyToCaves>true</applyToCaves>
@@ -77,6 +77,10 @@
 		</soundsAmbient>
 		<diseaseMtbDays>40</diseaseMtbDays>
 		<diseases>
+			<li>
+				<diseaseInc>BMT_Disease_AthleteFoot</diseaseInc>
+				<commonality>100</commonality>
+			</li>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
@@ -232,11 +236,12 @@
 			<BMT_Xyrion>0.15</BMT_Xyrion>
 			<BMT_Yooka>0.025</BMT_Yooka>
 			<BMT_FungalWeevil>0.10</BMT_FungalWeevil>
+			<BMT_Woolybat>0.05</BMT_Woolybat>
 
 			<!-- predators -->
 			<BMT_FungalFerret>0.025</BMT_FungalFerret>
 			<BMT_MossyFennec>0.10</BMT_MossyFennec>
-			<BMT_CaveSpider>0.05</BMT_CaveSpider>
+			<BMT_CaveSpider>0.005</BMT_CaveSpider>
 			<BMT_Maxolotl>0.5</BMT_Maxolotl>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.1</BMT_BloodropMoth>

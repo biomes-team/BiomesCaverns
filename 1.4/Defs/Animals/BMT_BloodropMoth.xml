@@ -6,15 +6,15 @@
         <label>bloodrop larvae</label>
         <description>The larval form of the bloodrop moth. It gains nutrients for growth by feeding on the blood of any large creature. A small group of them can drain even an elephant to death in minutes.</description>
         <statBases>
-            <MoveSpeed>0.3</MoveSpeed>
+            <MoveSpeed>2</MoveSpeed>
             <LeatherAmount>0</LeatherAmount>
             <MarketValue>100</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<FilthRate>8</FilthRate>
+			<FilthRate>3</FilthRate>
         </statBases>
         <race>
-            <hasGenders>false</hasGenders>
+            <hasGenders>true</hasGenders>
             <fleshType>Insectoid</fleshType>
 			<herdAnimal>true</herdAnimal>
             <bloodDef>Filth_BloodInsect</bloodDef>
@@ -26,6 +26,7 @@
             <baseHungerRate>0.25</baseHungerRate>
             <foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
             <wildness>0.15</wildness>
+			<roamMtbDays>4</roamMtbDays>
             <trainability>None</trainability>
             <lifeExpectancy>0.5</lifeExpectancy>
             <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
@@ -93,10 +94,6 @@
                 <chanceFactor>0.1</chanceFactor>
             </li>
         </tools>
-        <tradeTags>
-            <li>AnimalUncommon</li>
-            <li>AnimalInsect</li>
-        </tradeTags>
     </ThingDef>
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>BMT_BloodropLarvae</defName>
@@ -105,6 +102,7 @@
         <combatPower>15</combatPower>
         <ecoSystemWeight>0.5</ecoSystemWeight>
         <wildGroupSize>1~3</wildGroupSize>
+        <canArriveManhunter>false</canArriveManhunter>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -148,12 +146,14 @@
             <MarketValue>100</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>
             <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <ToxicResistance>1</ToxicResistance>
+            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
         </statBases>
         <race>
             <leatherDef>BMT_CrimsonSilk</leatherDef>
             <thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
             <needsRest>false</needsRest>
-            <hasGenders>false</hasGenders>
+            <hasGenders>true</hasGenders>
             <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>
             <meatColor>(160,168,139)</meatColor>
@@ -201,10 +201,9 @@
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
             </li>
         </tools>
-        <tradeTags>
-            <li>AnimalUncommon</li>
-            <li>AnimalInsect</li>
-        </tradeTags>
+        <modExtensions>
+            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+        </modExtensions>
     </ThingDef>
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>BMT_BloodropPupa</defName>
@@ -213,6 +212,7 @@
         <combatPower>5</combatPower>
         <ecoSystemWeight>0.1</ecoSystemWeight>
         <wildGroupSize>1</wildGroupSize>
+        <canArriveManhunter>false</canArriveManhunter>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -238,10 +238,11 @@
             <MarketValue>350</MarketValue>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>57</ComfyTemperatureMax>
-            <FilthRate>8</FilthRate>
+            <FilthRate>4</FilthRate>
         </statBases>
         <race>
-            <body>BeetleLike</body>
+            <!-- <body>BeetleLike</body> -->
+			<body>BMT_MothLike</body>
             <leatherDef>BMT_GrayChitin</leatherDef>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>0.77</baseBodySize>

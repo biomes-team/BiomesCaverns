@@ -9,6 +9,7 @@
 			<MarketValue>240</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>1</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -78,6 +79,8 @@
 			<petness>0.5</petness>
 			<nuzzleMtbHours>45</nuzzleMtbHours>
 			<lifeExpectancy>11</lifeExpectancy>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

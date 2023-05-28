@@ -13,6 +13,7 @@
 			<Nutrition>1.25</Nutrition>
 			<Flammability>0.35</Flammability>
 		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.5~0.99</growingHours>
@@ -25,7 +26,6 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<fertilityMin>0.05</fertilityMin>
-			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.3~0.7</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>

@@ -36,7 +36,7 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_BoomSpore</harvestedThingDef>
-			<harvestYield>4</harvestYield>
+			<harvestYield>8</harvestYield>
 			<sowWork>800</sowWork>
 			<sowMinSkill>8</sowMinSkill>
 			<sowTags>

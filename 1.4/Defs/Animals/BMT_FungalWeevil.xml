@@ -20,6 +20,9 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>100</MarketValue>
 			<LeatherAmount>25</LeatherAmount>
+			<FilthRate>4</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<!-- <uiIconScale>1</uiIconScale> -->
 		<comps>
@@ -61,6 +64,8 @@
 			<lifeExpectancy>10</lifeExpectancy>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.2</wildness>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<trainability>None</trainability>
 			<roamMtbDays>4</roamMtbDays>
 			<leatherDef>BMT_WeakChitin</leatherDef>
@@ -100,6 +105,9 @@
 		<butcherProducts>
 			<RawFungus>12</RawFungus>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">

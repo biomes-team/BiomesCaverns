@@ -39,7 +39,7 @@
 			<body>BeetleLike</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>0.335</baseBodySize>
-			<baseHungerRate>0.75</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>0.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>
@@ -93,6 +93,7 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
 				<isCustomThingEater>true</isCustomThingEater>
+				<eatWhenFed>true</eatWhenFed>
 			</li>
 		</modExtensions>
 		<comps>
@@ -106,6 +107,7 @@
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggJewelbugFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggCountRange>2~4</eggCountRange>
 			</li>
