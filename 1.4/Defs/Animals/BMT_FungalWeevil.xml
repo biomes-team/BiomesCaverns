@@ -27,7 +27,7 @@
 		<!-- <uiIconScale>1</uiIconScale> -->
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>BMT_EggFungalWeevilFertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggFungalWeevilFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~3</eggCountRange>
