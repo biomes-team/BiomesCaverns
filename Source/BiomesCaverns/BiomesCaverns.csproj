@@ -59,6 +59,8 @@
     <Compile Include="Patches\GenStep_ArchonexusResearchBuildings_CollisionAt_Patch.cs" />
     <Compile Include="Patches\GenStep_Archonexus_CanScatterAt_Patch.cs" />
     <Compile Include="Patches\GenStep_ScattererBestFit_CanScatterAt_Patch.cs" />
+    <Compile Include="Patches\JobDriver_Skydreaming_MakeNewToils_Patch.cs" />
+    <Compile Include="Patches\RCellFinder_TryFindSkydreamingSpotOutsideColony_Patch.cs" />
     <Compile Include="Patches\ScatterStalagmites.cs" />
     <Compile Include="Patches\ShipLandingArea_RecalculateBlockingThing_Patch.cs" />
     <Compile Include="Patches\ThrumboEvent.cs" />
