@@ -49,7 +49,7 @@
 		</comps>
 		<race>
 			<body>BeetleLikeWithClaw</body>
-			<baseHungerRate>0.25</baseHungerRate>
+			<baseHungerRate>0.1</baseHungerRate>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>1.7</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
