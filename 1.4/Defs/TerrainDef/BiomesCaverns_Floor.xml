@@ -264,13 +264,14 @@
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>BMT_CrystalManMade</defName>
-		<label>crystal</label>
+		<label>crystal floor</label>
+		<description>Flooring made out of blue crystals from deep within the earth. It takes a while to build but is considered quite beautiful.</description>
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
 		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
 		<isPaintable>false</isPaintable>
-		<edgeType>FadeRough</edgeType>
+		<edgeType>Hard</edgeType>
 		<renderPrecedence>335</renderPrecedence>
-		<pathCost>3</pathCost>
+		<pathCost>0</pathCost>
 		<statBases>
 			<WorkToBuild>1100</WorkToBuild>
 			<Beauty>4</Beauty>
@@ -296,6 +297,7 @@
 		<takeFootprints>false</takeFootprints>
 		<tags>
 			<li>BMT_Crystal</li>
+			<li>FineFloor</li>
 		</tags>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
@@ -321,5 +323,66 @@
     <researchPrerequisites>
       <li>CarpetMaking</li>
     </researchPrerequisites>
+	<tags>
+	<li>FineFloor</li>
+	</tags>
   </TerrainDef>
+  
+  	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_MycelialSoil</defName>
+		<label>mycelial soil</label>
+		<description>Soil with mycelium spread throughout. It's kind of ugly and takes a lot of work to build, but it's perfect for growing darkness-loving crops.</description>
+		<texturePath>BMT_Caverns/Terrains/MycelialSoil</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/MycelialSoil</pollutedTexturePath>
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>70</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+			<WorkToBuild>1100</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<fertility>1</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Soil</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+	<costList>
+      <BMT_MushroomLog>10</BMT_MushroomLog>
+    </costList>
+    <researchPrerequisites>
+      <li>BMT_AdvancedFungi</li>
+    </researchPrerequisites>
+	</TerrainDef>
 </Defs>

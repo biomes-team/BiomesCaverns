@@ -12,6 +12,7 @@
 				<cavernShapes>
 					<li>Smooth</li>
 				</cavernShapes>
+				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
 				<applyToCaves>true</applyToCaves>
@@ -25,7 +26,7 @@
 					<temperature>
 						<value supplier="randomValueWorld">
 							<seedMask>TempED</seedMask>
-							<min>4.5</min>
+							<min>10.5</min>
 							<max>23.5</max>
 						</value>
 					</temperature>
@@ -73,8 +74,12 @@
 		<soundsAmbient>
 			<li>BMT_Ambient_FungalForest</li>
 		</soundsAmbient>
-		<diseaseMtbDays>20</diseaseMtbDays>
+		<diseaseMtbDays>60</diseaseMtbDays>
 		<diseases>
+			<li>
+				<diseaseInc>BMT_Disease_PurpleLung</diseaseInc>
+				<commonality>100</commonality>
+			</li>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
@@ -193,6 +198,7 @@
 			<BMT_MossBeetle>0.1</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
 			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.5</BMT_GlowBat>
+			<BMT_Woolybat>0.05</BMT_Woolybat>
 			
 			<!-- onmnivore -->
 			<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>
@@ -205,7 +211,7 @@
 			
 			<!-- predators -->
 			<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
-			<BMT_CaveSpider>0.05</BMT_CaveSpider>
+			<BMT_CaveSpider>0.005</BMT_CaveSpider>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.25</BMT_BloodropMoth>		
 			

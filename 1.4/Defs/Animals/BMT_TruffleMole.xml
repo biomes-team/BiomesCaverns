@@ -11,6 +11,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<FilthRate>3</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -83,6 +84,8 @@
 			<roamMtbDays>4</roamMtbDays>
 			<lifeExpectancy>8</lifeExpectancy>
 			<gestationPeriodDays>5.5</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -122,10 +125,16 @@
 					<li>20</li>
 				</customAmountToDig>
 				<ticksToDig>60000</ticksToDig>
+				<spawnForbidden>true</spawnForbidden>
 			</li>
 			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-				<customThingToDig>RawFungus</customThingToDig>
-				<customAmountToDig>10</customAmountToDig>
+				<customThingsToDig>
+					<li>RawFungus</li>
+				</customThingsToDig>
+				<customAmountsToDig>
+					<li>10</li>
+				</customAmountsToDig>
+				<spawnForbidden>true</spawnForbidden>
 			</li>
 		</comps>
 		<modExtensions>
@@ -142,7 +151,7 @@
 		<label>truffle mole</label>
 		<race>BMT_TruffleMole</race>
 		<combatPower>35</combatPower>
-		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<wildGroupSize>1~1</wildGroupSize>
 		<lifeStages>
 			<li>

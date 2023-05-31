@@ -12,6 +12,12 @@ namespace BiomesCaverns
     {
         public static bool Prefix(IntVec3 c, Map map, ActiveDropPodInfo info)
         {
+            // Certain mods might trigger drop pods outside of the valid bounds of the map.
+            if (!c.InBounds(map))
+            {
+                return false;
+            }
+
             if (map.roofGrid.RoofAt(c) == BiomesCoreDefOf.BMT_RockRoofStable)
             {
                 MakeDrillPod(c, map, info);

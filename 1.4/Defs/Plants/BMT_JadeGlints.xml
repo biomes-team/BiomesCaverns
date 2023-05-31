@@ -48,7 +48,7 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>BMT_JadeGlints</defName>
 		<label>jade glints</label>
-		<description>A harvested form of the jade glint fungus. In its base form, it can give a tiny but non-addictive bodily high. It can be refined into a drug known as Glitter.</description>
+		<description>A harvested form of the jade glint fungus. In its base form, it can give a tiny but non-addictive bodily high with much weaker effects than its refined state. It can be refined into a drug known as Glitter.</description>
 		<descriptionHyperlinks>
 			<HediffDef>BMT_GlintHigh</HediffDef>
 		</descriptionHyperlinks>
@@ -90,6 +90,16 @@
 				  <divideByBodySize>true</divideByBodySize>
 				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Rest</need>
+				  <offset>0.01</offset>
+				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Outdoors</need>
+				  <offset>0.05</offset>
+				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -114,7 +124,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
     <defName>BMT_Glitter</defName>
     <label>glitter</label>
-    <description>A crystalized version of the jade glint juices. When snorted, it makes the user better at physical labor and affects their mood. Like many drugs, it is addictive, though it is only half as addictive as yayo.\n\nWhile the fungus was originally designed for beauty, the drug made from it is now used to control mining corp workers at the cost of their health.</description>
+    <description>A crystalized version of the jade glint juices. When snorted, it makes the user better at physical labor and affects their mood, making them feel as though they are not indoors. Like many drugs, it is addictive, though it is only half as addictive as yayo.\n\nWhile the fungus was originally designed for beauty, the drug made from it is now used to control mining corp workers at the cost of their health.</description>
     <descriptionHyperlinks>
       <HediffDef>BMT_GlitterHigh</HediffDef>
       <HediffDef>PsychiteTolerance</HediffDef>
@@ -158,6 +168,11 @@
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
+          <offset>0.25</offset>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+		<li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Outdoors</need>
           <offset>0.25</offset>
           <toleranceChemical>Psychite</toleranceChemical>
         </li>

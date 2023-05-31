@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+ <ThingDef ParentName="ResourceBase">
+    <defName>BMT_GlowGoo</defName>
+    <label>glow goo</label>
+    <description>An organic glowing goo. Produced most often by a specific caste of insectoid. When used properly, it can be used to illuminate dark areas.</description>
+    <possessionCount>20</possessionCount>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Item/GlowGoo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Mass>0.05</Mass>
+	  <Beauty>1</Beauty>
+      <Flammability>0.75</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.75</glowRadius>
+				<glowColor>(168,226,109,0)</glowColor>
+			</li>
+		</comps>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+</Defs>

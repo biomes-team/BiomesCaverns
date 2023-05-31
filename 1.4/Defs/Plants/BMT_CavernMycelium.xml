@@ -42,6 +42,9 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_MycelialBlocks</harvestedThingDef>
+			<harvestYield>1</harvestYield>
 			<purpose>Misc</purpose>
 		</plant>
 	</ThingDef>

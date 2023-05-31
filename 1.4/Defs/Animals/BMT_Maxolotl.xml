@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -35,7 +36,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12</power>
+				<power>20</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -52,6 +53,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+				<isBottomFeeder>true</isBottomFeeder>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggMaxolotlFertilized</eggFertilizedDef>
@@ -80,6 +86,8 @@
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<meatLabel>amphibian meat</meatLabel>
 			<wildness>0.75</wildness>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.45</manhunterOnDamageChance>
 			<trainability>Intermediate</trainability>
 			<petness>0.05</petness>
 			<nuzzleMtbHours>48</nuzzleMtbHours>
@@ -116,7 +124,7 @@
 		<defName>BMT_Maxolotl</defName>
 		<label>maxolotl</label>
 		<race>BMT_Maxolotl</race>
-		<combatPower>80</combatPower>
+		<combatPower>180</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
 			<li>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<GenStepDef>
+		<defName>BMT_GenStep_ClearCavernCenter</defName>
+		<order>499</order> <!-- Right before archonexus research buildings. -->
+		<genStep Class="BiomesCaverns.GenSteps.GenStep_ClearCavernCenter"/>
+	</GenStepDef>
+</Defs>

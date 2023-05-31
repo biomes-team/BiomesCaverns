@@ -12,6 +12,9 @@
 			<LeatherAmount>0</LeatherAmount>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+			<FilthRate>1</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<tools>
@@ -46,13 +49,15 @@
 		</comps>
 		<race>
 			<body>BeetleLikeWithClaw</body>
-			<baseHungerRate>0.25</baseHungerRate>
+			<baseHungerRate>0.1</baseHungerRate>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>1.7</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>6</lifeExpectancy>
 			<wildness>0.3</wildness>
 			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
 			<roamMtbDays>7</roamMtbDays>
 			<lifeStageAges>
 				<li>
@@ -82,6 +87,9 @@
 		<butcherProducts>
 			<VFEI_Chitin MayRequire="oskarpotocki.vfe.insectoid">15</VFEI_Chitin>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_Jellypot</defName>

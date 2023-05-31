@@ -15,7 +15,7 @@
 			</li>
 		</modExtensions>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/GreyLady</texPath>
+			<texPath>BMT_Caverns/Things/Plant/GreyLady/GreyLadyGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -28,6 +28,7 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<growDays>8</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/GreyLady/GreyLadyImmature</immatureGraphicPath>
 			<harvestWork>1000</harvestWork>
 			<harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>

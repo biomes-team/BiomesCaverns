@@ -14,14 +14,16 @@
 	<altitudeLayer>Building</altitudeLayer>
 	<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
 	<statBases>
+	  <MarketValue>0</MarketValue>
 	  <Beauty>5</Beauty>
 	  <BeautyOutdoors>5</BeautyOutdoors>
 	  <Flammability>0</Flammability>
 	</statBases>
 	<building>
+	  <alwaysDeconstructible>true</alwaysDeconstructible>
 	  <deconstructible>true</deconstructible>
-	  <!-- <claimable>false</claimable> -->
-	  <claimable>true</claimable>
+	  <claimable>false</claimable>
+	  <!-- <claimable>true</claimable> -->
 	  <!-- <isNaturalRock>true</isNaturalRock> -->
 	  <!-- <isEdifice>false</isEdifice> -->
 	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>

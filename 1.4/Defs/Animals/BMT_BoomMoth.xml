@@ -10,7 +10,7 @@
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
-			<FilthRate>16</FilthRate>
+			<FilthRate>6</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 			<Flammability>0.0</Flammability>
 		</statBases>
@@ -32,7 +32,7 @@
 			<executionRange>6</executionRange>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<body>BeetleLike</body>
-			<baseHungerRate>0.535</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.65</baseHealthScale>
 			<trainability>None</trainability>
@@ -73,10 +73,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>head</label>
@@ -89,6 +85,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -98,6 +97,7 @@
 		<combatPower>80</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -148,6 +148,8 @@
 			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<Flammability>0.0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
@@ -155,7 +157,7 @@
 			<leatherDef>BMT_WeakChitin</leatherDef>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
 			<needsRest>false</needsRest>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -163,7 +165,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<foodType>None</foodType>
+			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>1</wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -203,18 +205,18 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BoomPupa</defName>
 		<label>boom pupa</label>
 		<race>BMT_BoomPupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>70</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -238,13 +240,14 @@
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
-			<FilthRate>16</FilthRate>
+			<FilthRate>7</FilthRate>
 			<Flammability>0.0</Flammability>
 		</statBases>
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>3</executionRange>
-			<body>BeetleLike</body>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_MothLike</body>
 			<leatherDef>BMT_WeakChitin</leatherDef>
 			<herdAnimal>false</herdAnimal>
 			<baseHungerRate>0.535</baseHungerRate>
@@ -314,6 +317,9 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

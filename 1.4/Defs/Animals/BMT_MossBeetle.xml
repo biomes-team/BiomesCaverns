@@ -6,14 +6,15 @@
 		<label>moss grub</label>
 		<description>A large beetle commonly found in dark, damp places, it feeds off low underbrush in caverns. While not the best source of meat, it works when little else is available.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -22,7 +23,7 @@
 			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.5</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
@@ -32,7 +33,8 @@
 			<nuzzleMtbHours>32</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
-			<body>BeetleLike</body>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_LarvaLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -89,10 +91,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MossBeetleLarvae</defName>
@@ -101,6 +102,7 @@
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -147,11 +149,13 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
             <needsRest>false</needsRest>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -159,7 +163,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<foodType>None</foodType>
+			<foodType>OmnivoreRoughAnimal</foodType>
 			<wildness>1</wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
@@ -199,18 +203,18 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MossBeetlePupa</defName>
 		<label>moss pupa</label>
 		<race>BMT_MossBeetlePupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -314,6 +318,9 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MossBeetle</defName>

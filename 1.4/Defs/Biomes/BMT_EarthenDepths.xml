@@ -13,6 +13,7 @@
 				<cavernShapes>
 					<li>TunnelNetwork</li>
 				</cavernShapes>
+				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
 				<extraCarriers>
 					<BMT_FoundryBeetle>1</BMT_FoundryBeetle>
 				</extraCarriers>
@@ -69,7 +70,7 @@
 				</score>
 			</li>
 		</modExtensions>
-		<animalDensity>3</animalDensity>
+		<animalDensity>2</animalDensity>
 		<plantDensity>1</plantDensity>
 		<settlementSelectionWeight>0.8</settlementSelectionWeight>
 		<movementDifficulty>0.5</movementDifficulty>
@@ -82,6 +83,10 @@
 		</soundsAmbient>
 		<diseaseMtbDays>40</diseaseMtbDays>
 		<diseases>
+			<li>
+				<diseaseInc>BMT_Disease_ThermophileMechanites</diseaseInc>
+				<commonality>60</commonality>
+			</li>
 			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
@@ -186,6 +191,7 @@
 			<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
 			<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
 			<BMT_Pillbug>0.2</BMT_Pillbug>
+			<BMT_Woolybat>0.05</BMT_Woolybat>
 			<!-- <BMT_MetalloSnail>0.5</BMT_MetalloSnail> -->
 
 			<!-- onmnivore -->

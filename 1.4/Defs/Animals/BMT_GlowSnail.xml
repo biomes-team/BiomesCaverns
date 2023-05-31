@@ -11,6 +11,7 @@
 			<MarketValue>240</MarketValue>
 			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<FilthRate>0</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
@@ -119,7 +120,7 @@
 		<label>glowsnail</label>
 		<race>BMT_GlowSnail</race>
 		<combatPower>40</combatPower>
-		<ecoSystemWeight>0.45</ecoSystemWeight>
+		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

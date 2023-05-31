@@ -10,7 +10,7 @@
 	  <MarketValue>350</MarketValue>
 	  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
-	  <FilthRate>16</FilthRate>
+	  <FilthRate>8</FilthRate>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 	</statBases>
 	<comps>
@@ -27,7 +27,7 @@
 	  <executionRange>6</executionRange>
 	  <herdAnimal>true</herdAnimal>
 	  <baseBodySize>2.0</baseBodySize>
-	  <baseHungerRate>0.535</baseHungerRate>
+	  <baseHungerRate>0.235</baseHungerRate>
 	  <baseHealthScale>0.65</baseHealthScale>
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>Leather_Plain</leatherDef>

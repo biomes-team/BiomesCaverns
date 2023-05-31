@@ -28,7 +28,7 @@
 						<clipPath>BMT_Caverns/FX/DrillPodLanding</clipPath>
 					</li>
 				</grains>
-				<volumeRange>30~30</volumeRange>
+				<volumeRange>5~5</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>

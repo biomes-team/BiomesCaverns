@@ -65,6 +65,7 @@
 			<anticipationSoundTicks>1000</anticipationSoundTicks>
 			<motesPerCell>0</motesPerCell>
 			<shadowSize>(0, 0)</shadowSize>
+			<hitRoof>false</hitRoof>
 		</skyfaller>
 		<comps>
 			<li>
@@ -126,8 +127,8 @@
 	
   <WorldObjectDef>
     <defName>BMT_TravelingDrillPods</defName>
-    <label>drill pod</label>
-    <description>drill pod.</description>
+    <label>drill pods</label>
+    <description>Drill pods in travel.</description>
     <worldObjectClass>TravelingTransportPods</worldObjectClass>
     <texture>BMT_Caverns/Things/Building/Drillpod/Drillpod</texture>
     <useDynamicDrawer>true</useDynamicDrawer>

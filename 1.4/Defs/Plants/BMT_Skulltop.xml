@@ -60,6 +60,7 @@
 				<cellsToFill>2</cellsToFill>
 				<baseSeverity>0.2</baseSeverity>
 				<growthProgress>0.1</growthProgress>
+				<statDef>ToxicResistance</statDef>
 			</li>
 		</comps>
 		<modExtensions>
@@ -85,107 +86,108 @@
 	</ThingDef>
 
 	<!--=============== High on Spores ==============-->
-	<HediffDef ParentName="DiseaseBase">
-		<defName>BMT_HediffSkulltopSpores</defName>
-		<label>skulltop spores</label>
-		<description>toxic skulltop spores</description>
-    <hediffClass>HediffWithComps</hediffClass>
-    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
-    <lethalSeverity>1</lethalSeverity>
-    <makesSickThought>true</makesSickThought>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <taleOnVisible>ToxicityRevealed</taleOnVisible>
-    <comps>
-      <li Class="HediffCompProperties_Immunizable">
-        <compClass>HediffComp_ImmunizableToxic</compClass>
-        <severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <label>initial</label>
-        <becomeVisible>false</becomeVisible>
-      </li>
-      <li>
-        <label>initial</label>
-        <minSeverity>0.04</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.05</offset>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>minor</label>
-        <minSeverity>0.2</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.10</offset>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>moderate</label>
-        <minSeverity>0.40</minSeverity>
-        <vomitMtbDays>5</vomitMtbDays>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.15</offset>
-          </li>
-        </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>Asthma</hediff>
-            <mtbDays>146</mtbDays>
-            <partsToAffect>
-              <li>Lung</li>
-            </partsToAffect>
-          </li>
-        </hediffGivers>
-      </li>
-      <li>
-        <label>serious</label>
-        <minSeverity>0.60</minSeverity>
-        <vomitMtbDays>1</vomitMtbDays>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.25</offset>
-          </li>
-        </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>Asthma</hediff>
-            <mtbDays>37</mtbDays>
-            <partsToAffect>
-              <li>Lung</li>
-            </partsToAffect>
-          </li>
-        </hediffGivers>
-      </li>
-      <li>
-        <label>extreme</label>
-        <minSeverity>0.80</minSeverity>
-        <vomitMtbDays>0.5</vomitMtbDays>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.25</setMax>
-          </li>
-        </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>Asthma</hediff>
-            <mtbDays>13</mtbDays>
-            <partsToAffect>
-              <li>Lung</li>
-            </partsToAffect>
-          </li>
-        </hediffGivers>
-      </li>
-    </stages>
+
+  <HediffDef ParentName="DiseaseBase">
+	<defName>BMT_HediffSkulltopSpores</defName>
+	<label>skulltop spores</label>
+	<description>The toxic spores of the fungus settled in the creature's lungs. Prolonged exposure can be fatal.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+	<lethalSeverity>1</lethalSeverity>
+	<makesSickThought>true</makesSickThought>
+	<scenarioCanAdd>true</scenarioCanAdd>
+	<taleOnVisible>ToxicityRevealed</taleOnVisible>
+	<comps>
+	  <li Class="HediffCompProperties_Immunizable">
+		<compClass>HediffComp_ImmunizableToxic</compClass>
+		<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+	  </li>
+	</comps>
+	<stages>
+	  <li>
+		<label>initial</label>
+		<becomeVisible>false</becomeVisible>
+	  </li>
+	  <li>
+		<label>initial</label>
+		<minSeverity>0.04</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.05</offset>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>minor</label>
+		<minSeverity>0.2</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.10</offset>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>moderate</label>
+		<minSeverity>0.40</minSeverity>
+		<vomitMtbDays>5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.15</offset>
+		  </li>
+		</capMods>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+			<hediff>Asthma</hediff>
+			<mtbDays>146</mtbDays>
+			<partsToAffect>
+			  <li>Lung</li>
+			</partsToAffect>
+		  </li>
+		</hediffGivers>
+	  </li>
+	  <li>
+		<label>serious</label>
+		<minSeverity>0.60</minSeverity>
+		<vomitMtbDays>1</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.25</offset>
+		  </li>
+		</capMods>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+			<hediff>Asthma</hediff>
+			<mtbDays>37</mtbDays>
+			<partsToAffect>
+			  <li>Lung</li>
+			</partsToAffect>
+		  </li>
+		</hediffGivers>
+	  </li>
+	  <li>
+		<label>extreme</label>
+		<minSeverity>0.80</minSeverity>
+		<vomitMtbDays>0.5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<setMax>0.25</setMax>
+		  </li>
+		</capMods>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+			<hediff>Asthma</hediff>
+			<mtbDays>13</mtbDays>
+			<partsToAffect>
+			  <li>Lung</li>
+			</partsToAffect>
+		  </li>
+		</hediffGivers>
+	  </li>
+	</stages>
   </HediffDef>
 </Defs>

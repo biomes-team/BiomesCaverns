@@ -6,15 +6,16 @@
 		<label>bovine grub</label>
 		<description>A large grub originally from Caveworlds, this bug is often kept in farms for the milk-like substance it produces as an adult. It is the larval form of the bovine beetle.</description>
 		<statBases>
-			<MoveSpeed>0.4</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>3</LeatherAmount>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -23,7 +24,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.5</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
@@ -31,7 +32,8 @@
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
-			<body>BeetleLike</body>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_LarvaLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -94,11 +96,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalFarm</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BovineBeetleLarvae</defName>
@@ -107,6 +107,7 @@
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>3~4</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<label>bovine grub</label>
@@ -156,11 +157,13 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
 			<needsRest>false</needsRest>
-			<hasGenders>false</hasGenders>
+			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<meatColor>(160,168,139)</meatColor>
@@ -168,10 +171,10 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<foodType>None</foodType>
+			<foodType>OmnivoreRoughAnimal</foodType>
 			<wildness>1</wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
 			<body>BeetleLike</body>
@@ -208,18 +211,18 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalInsect</li>
-		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BovineBeetlePupa</defName>
 		<label>Bovine pupa</label>
 		<race>BMT_BovineBeetlePupa</race>
-		<combatPower>0</combatPower>
+		<combatPower>5</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -238,7 +241,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_BovineBeetle</defName>
 		<label>bovine beetle</label>
-		<description>A large beetle, commonly found in dark, damp places. Milkable.\n\nA large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance.</description>
+		<description>A large beetle originally from Caveworlds, this bug is often kept in farms for its production of a milk-like substance and flakes of chitin.</description>
 		<statBases>
 			<MoveSpeed>3.1</MoveSpeed>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
@@ -278,7 +281,7 @@
 			<meatMarketValue>0.5</meatMarketValue>
 			<body>BeetleLike</body>
 			<baseBodySize>2.45</baseBodySize>
-			<baseHungerRate>0.50</baseHungerRate>
+			<baseHungerRate>0.20</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>
@@ -330,18 +333,27 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_AnimalThingSpawner">
+                <thingToSpawn>BiomesCore_GreenChitin</thingToSpawn>
+                <spawnCount>5</spawnCount>
+                <spawnIntervalRange>750000~900000</spawnIntervalRange>
+                <saveKeysPrefix>WeakChitin</saveKeysPrefix>
+            </li>
 		</comps>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_BovineBeetle</defName>
 		<label>bovine beetle</label>
 		<race>BMT_BovineBeetle</race>
 		<combatPower>30</combatPower>
-		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<ecoSystemWeight>1.15</ecoSystemWeight>
 		<wildGroupSize>3~4</wildGroupSize>
 		<lifeStages>
 			<li>

@@ -10,7 +10,7 @@
 			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<Flammability>0</Flammability>
-			<FilthRate>0</FilthRate>
+			<FilthRate>1</FilthRate>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 		</statBases>
 		<tools>
@@ -67,7 +67,7 @@
 		</comps>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>0.7</baseBodySize>
+			<baseBodySize>1.25</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
@@ -75,6 +75,8 @@
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
 			<wildness>0.75</wildness>
 			<trainability>None</trainability>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>

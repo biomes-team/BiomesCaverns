@@ -72,4 +72,50 @@
 		</comps>
 		<allowedArchonexusCount>20</allowedArchonexusCount>
 	</ThingDef>
+	<RecipeDef>
+		<defName>BMT_IndustrialMedicineFromFungal</defName>
+		<label>make medicine from fungal medicine</label>
+		<description>Make medicine.</description>
+		<jobString>Making medicine.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_MedicineFungal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<MedicineIndustrial>1</MedicineIndustrial>
+		</products>
+		<soundWorking>Recipe_Drug</soundWorking>
+	</RecipeDef>
 </Defs>

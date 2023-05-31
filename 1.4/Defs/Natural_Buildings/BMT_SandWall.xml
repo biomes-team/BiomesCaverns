@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>BMT_SandWall</defName>
+		<label>condensed sand wall</label>
+		<description>A wall of condensed sand.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Natural/Linked/condensed_sand_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<blockLight>true</blockLight>
+		<filthLeaving>Filth_Sand</filthLeaving>
+		<building>
+			<isResourceRock>false</isResourceRock>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<mineableThing>BMT_Sand</mineableThing>
+			<mineableYield>50</mineableYield>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>BMT_LightSandWall</defName>
+		<label>condensed sand wall</label>
+		<description>A wall of condensed sand.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Natural/Linked/light_condensed_sand_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<blockLight>true</blockLight>
+		<filthLeaving>Filth_Sand</filthLeaving>
+		<building>
+			<isResourceRock>false</isResourceRock>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<mineableThing>BMT_Sand</mineableThing>
+			<mineableYield>50</mineableYield>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_Sand</defName>
+		<label>sand</label>
+		<description>A pile of fine-grained sand. It's coarse, rough, and irritating, and it gets everywhere.</description>
+		<category>Item</category>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/SandPile</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<Mass>0.05</Mass>
+			<Beauty>-4</Beauty>
+			<Flammability>0</Flammability>	  
+		</statBases>
+		<useHitPoints>true</useHitPoints>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

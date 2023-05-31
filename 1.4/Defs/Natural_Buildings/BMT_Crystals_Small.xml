@@ -7,6 +7,7 @@
 	<blockLight>false</blockLight>
 	<pathCost>1</pathCost>
 	<statBases>
+	  <WorkToBuild>400</WorkToBuild>
 	  <Beauty>6</Beauty>
 	  <MaxHitPoints>20</MaxHitPoints>
 	</statBases>
@@ -17,7 +18,7 @@
   <ThingDef ParentName="BMT_Crystal_Small">
 	<defName>BMT_Crystal_BlueSmall</defName>
 	<label>small blue crystal</label>
-	<description>A blue crystal from the depths of the crystal cave.</description>
+	<description>A blue crystal from the depths of the crystal cave. It is surprisingly volatile.</description>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Crystals/BlueSmall</texPath>
 	  <drawSize>(1.0,1.0)</drawSize>

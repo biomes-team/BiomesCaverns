@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VCE_Fishing.BiomeTempDef>
+		<defName>VCEF_BiomeCold</defName>  
+		<biomeTempLabel>Cold</biomeTempLabel>
+		<biomes>
+			<li>BorealForest</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+		</biomes>      
+	</VCE_Fishing.BiomeTempDef>
+
+	<VCE_Fishing.BiomeTempDef>
+		<defName>VCEF_BiomeWarm</defName>  
+		<biomeTempLabel>Warm</biomeTempLabel>
+		<biomes>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+		</biomes>      
+	</VCE_Fishing.BiomeTempDef>
+	
+	<VCE_Fishing.BiomeTempDef>
+		<defName>VCEF_BiomeHot</defName>  
+		<biomeTempLabel>Hot</biomeTempLabel>
+		<biomes>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+		</biomes>      
+	</VCE_Fishing.BiomeTempDef>
+
+
+
+
+
+</Defs>

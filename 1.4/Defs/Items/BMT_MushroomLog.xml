@@ -5,7 +5,7 @@
   <ThingDef ParentName="ResourceVerbBase"> <!--RoughPlantBase-->
     <defName>BMT_MushroomLog</defName>
     <label>mushroom log</label>
-    <description>Material from large fibrous fungi. Useful for building structures and weapons. Good animal feed, but largely inedible for humans. /n/nDoes not burn easily and cannot be used as fuel for normal burning but can be used for darklight sources.</description>
+    <description>Material from large fibrous fungi. Useful for building structures and weapons. Good animal feed, but largely inedible for humans. \n\nDoes not burn easily and cannot be used as fuel for normal burning but can be used for darklight sources.</description>
     <graphicData>
       <texPath>BMT_Caverns/Things/Item/MushroomLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -14,7 +14,7 @@
     <soundInteract>Wood_Drop</soundInteract>
     <soundDrop>Wood_Drop</soundDrop>
     <statBases>
-      <Nutrition>0.1</Nutrition>
+      <Nutrition>0.05</Nutrition>
       <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
       <MarketValue>1.1</MarketValue>
       <MaxHitPoints>130</MaxHitPoints>
@@ -30,11 +30,11 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <ingestible>
-      <foodType>Plant</foodType>
       <preferability>DesperateOnlyForHumanlikes</preferability>
-      <tasteThought>AteRawFood</tasteThought>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>RawVegetable_Eat</ingestSound>
+	  <tasteThought>BMT_AteFungalLog</tasteThought>
+	  <foodType>Fungus</foodType>
 	  <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
     </ingestible>
     <burnableByRecipe>true</burnableByRecipe>
@@ -64,7 +64,7 @@
     </stuffProps>
     <thingCategories>
       <li>ResourcesRaw</li>
-      <li>PlantFoodRaw</li>
+      <li>Foods</li>
     </thingCategories>
     <weaponClasses>
       <li>Melee</li>

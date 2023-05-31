@@ -7,7 +7,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>BMT_MushroomWine</defName>
         <label>mushroom wine</label>
-        <description>Fungi fermented into an alcoholic beverage not entirely unlike wine. It's an aquired taste, tangy with a hint of agar.</description>
+        <description>Fungi fermented into an alcoholic beverage not entirely unlike wine. It's an acquired taste, tangy with a hint of agar.</description>
         <graphicData>
             <texPath>Things/Item/Drug/BMT_MushroomWine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
