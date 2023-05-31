@@ -28,8 +28,16 @@
       </anyOf>
     </worldTileConditions>
 
+    <worldTileOverrides>
+      <stoneTypes operation="add">
+        <li>BMT_IceWall</li>
+      </stoneTypes>
+    </worldTileOverrides>
+
     <layers>
       <li>
+
+        <id>inside</id>
 
         <mapGridConditions>
           <roof>RoofRockThick</roof>
@@ -43,45 +51,64 @@
 
         <wildPlants operation="replace">
 
-			<!-- ground cover -->
-			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
-			<BMT_ReindeerMoss>0.5</BMT_ReindeerMoss>
-		
-			<!-- mid sized -->
-			<BMT_CarveShroom>0.5</BMT_CarveShroom>
-			<BMT_Chubshroom>0.2</BMT_Chubshroom>
-			<BMT_FungalTendril>0.2</BMT_FungalTendril>
-			<BMT_Glittercap>0.1</BMT_Glittercap>
-			<BMT_RimeFlower>0.01</BMT_RimeFlower>
-		
-			<!-- trees -->
-			<BMT_Frigu>0.5</BMT_Frigu>
-			<BMT_Curlbranch>0.1</BMT_Curlbranch>
-		
-			<!-- other harvestable -->
+          <!-- ground cover -->
+          <BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+          <BMT_ReindeerMoss>0.5</BMT_ReindeerMoss>
 
-			<!-- hydrophytes -->
+          <!-- mid sized -->
+          <BMT_CarveShroom>0.5</BMT_CarveShroom>
+          <BMT_Chubshroom>0.2</BMT_Chubshroom>
+          <BMT_FungalTendril>0.2</BMT_FungalTendril>
+          <BMT_Glittercap>0.1</BMT_Glittercap>
+          <BMT_RimeFlower>0.01</BMT_RimeFlower>
 
-			<!-- special -->
+          <!-- trees -->
+          <BMT_Frigu>0.5</BMT_Frigu>
+          <BMT_Curlbranch>0.1</BMT_Curlbranch>
+
+          <!-- other harvestable -->
+
+          <!-- hydrophytes -->
+
+          <!-- special -->
 
         </wildPlants>
 
         <wildAnimals operation="replace">
 
-			<!-- herbivores -->
-			<BMT_AlbinoPenguin>0.2</BMT_AlbinoPenguin>
-			<BMT_CaveLemming>0.4</BMT_CaveLemming>
-			<BMT_Snowstalker>0.35</BMT_Snowstalker>
-			<BMT_CryoMammoth>0.2</BMT_CryoMammoth>
-			<BMT_SilverSheep>0.3</BMT_SilverSheep>
-			<BMT_BushAntleredElk>0.5</BMT_BushAntleredElk>
+          <!-- herbivores -->
+          <BMT_AlbinoPenguin>0.2</BMT_AlbinoPenguin>
+          <BMT_CaveLemming>0.4</BMT_CaveLemming>
+          <BMT_Snowstalker>0.35</BMT_Snowstalker>
+          <BMT_CryoMammoth>0.2</BMT_CryoMammoth>
+          <BMT_SilverSheep>0.3</BMT_SilverSheep>
+          <BMT_BushAntleredElk>0.5</BMT_BushAntleredElk>
 
-			<!-- predators -->
+          <!-- predators -->
 
-			<!-- omnivore -->
-			<BMT_FrostFrog>0.7</BMT_FrostFrog>
+          <!-- omnivore -->
+          <BMT_FrostFrog>0.7</BMT_FrostFrog>
 
         </wildAnimals>
+
+      </li>
+
+      <li>
+
+        <id>outside</id>
+
+        <mapGridConditions>
+          <roof>Unroofed</roof>
+        </mapGridConditions>
+
+        <terrainOverrides>
+          <modifier>
+            <conditions>
+              <terrain>Gravel</terrain>
+            </conditions>
+            <value>Ice</value>
+          </modifier>
+        </terrainOverrides>
 
       </li>
     </layers>

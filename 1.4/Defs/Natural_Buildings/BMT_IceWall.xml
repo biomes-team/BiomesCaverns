@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="RockBase">
 		<defName>BMT_IceWall</defName>
-		<label>ice wall</label>
+		<label>ice</label>
 		<description>A wall of ice.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/ice_wall_atlas</texPath>
@@ -19,6 +19,7 @@
 			<isResourceRock>false</isResourceRock>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
+			<naturalTerrain>Ice</naturalTerrain>
 			<mineableThing>BMT_IceBlock</mineableThing>
 			<mineableYield>20</mineableYield>
 		</building>
@@ -29,6 +30,11 @@
 				<heatPushMinTemperature>1</heatPushMinTemperature>	
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+				<offset>0.35</offset>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="StoneBlocksBase">
