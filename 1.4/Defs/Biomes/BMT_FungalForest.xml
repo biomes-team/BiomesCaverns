@@ -230,6 +230,7 @@
 			<BMT_MossBeetle>0.075</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
 			<BMT_Pillbug>0.4</BMT_Pillbug>
+			<BMT_PodWorm>0.0001</BMT_PodWorm>
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 			<BMT_SonarRabbit>0.1</BMT_SonarRabbit>
 			<BMT_TruffleMole>0.1</BMT_TruffleMole>
