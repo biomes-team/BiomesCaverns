@@ -19,8 +19,9 @@
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
 			<naturalTerrain>Sand</naturalTerrain>
-			<mineableThing>BMT_Sand</mineableThing>
-			<mineableYield>50</mineableYield>
+			<mineableThing>BMT_ChunkSand</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<!-- <mineableYield>50</mineableYield> -->
 		</building>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
