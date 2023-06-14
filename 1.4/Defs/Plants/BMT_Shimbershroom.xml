@@ -23,7 +23,7 @@
 		<fertilitySensitivity>0.5</fertilitySensitivity>
 		<fertilityMin>0.05</fertilityMin>
         <dieIfLeafless>false</dieIfLeafless>
-        <harvestWork>1000</harvestWork>
+        <harvestWork>600</harvestWork>
         <harvestYield>30</harvestYield>
         <wildOrder>3</wildOrder>
         <neverBlightable>true</neverBlightable>

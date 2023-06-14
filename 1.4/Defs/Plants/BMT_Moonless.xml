@@ -30,7 +30,7 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<growDays>8</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestWork>1000</harvestWork>
+			<harvestWork>300</harvestWork>
 			<harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MoonlessSilk</harvestedThingDef>

@@ -22,7 +22,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<growDays>10</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestWork>1000</harvestWork>
+			<harvestWork>400</harvestWork>
 			<harvestYield>1</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MedicineFungal</harvestedThingDef>

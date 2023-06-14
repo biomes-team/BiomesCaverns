@@ -27,7 +27,7 @@
 			<wildClusterWeight>250</wildClusterWeight>
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
-            <harvestWork>1000</harvestWork>
+            <harvestWork>200</harvestWork>
             <harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
