@@ -6,7 +6,8 @@ namespace BiomesCaverns.Patches
 {
 	public static class ModAssemblies
 	{
-		private static Assembly _vfei;
+		private static Assembly _vfei; // Vanilla Factions Expanded - Insectoids.
+		private static Assembly _viems; // Vanilla Ideology Expanded - Memes and Structures;
 
 		private static bool _cachedValues;
 
@@ -20,7 +21,8 @@ namespace BiomesCaverns.Patches
 			_cachedValues = true;
 			foreach (var pack in LoadedModManager.RunningMods)
 			{
-				if (pack.PackageId == "oskarpotocki.vfe.insectoid")
+				var packageId = pack.PackageId;
+				if (packageId == "oskarpotocki.vfe.insectoid")
 				{
 					foreach (var assembly in pack.assemblies.loadedAssemblies)
 					{
@@ -31,17 +33,31 @@ namespace BiomesCaverns.Patches
 						}
 					}
 				}
+				else if (packageId == "vanillaexpanded.vmemese")
+				{
+					_viems = pack.assemblies.loadedAssemblies[0];
+				}
 			}
 		}
 
 		/// <summary>
 		/// Checks if the Vanilla Factions Expanded - Insectoid mod is present in the current game.
 		/// </summary>
-		/// <returns>Boolean with the loaded state of this mod.</returns>
+		/// <returns>Assembly of this mod.</returns>
 		public static Assembly VanillaFactionsExpandedInsectoid()
 		{
 			CacheMods();
 			return _vfei;
+		}
+
+		/// <summary>
+		/// Checks if the Vanilla Ideology Expanded - Memes and Structures mod is present in the current game.
+		/// </summary>
+		/// <returns>Assembly of this mod.</returns>
+		public static Assembly VanillaIdeologyExpandedMemesStructures()
+		{
+			CacheMods();
+			return _viems;
 		}
 	}
 }

@@ -14,6 +14,11 @@ namespace BiomesCaverns.Patches.VFEI
 		private const string LambdaTypeId = "DisplayClass";
 		private const string LambdaMethodId = "b__";
 
+		static bool Prepare(MethodBase original)
+		{
+			return ModAssemblies.VanillaFactionsExpandedInsectoid() != null;
+		}
+
 		[HarmonyTargetMethods]
 		static IEnumerable<MethodInfo> TargetMethods()
 		{
@@ -37,11 +42,6 @@ namespace BiomesCaverns.Patches.VFEI
 					}
 				}
 			}
-		}
-
-		static bool Prepare(MethodBase original)
-		{
-			return ModAssemblies.VanillaFactionsExpandedInsectoid() != null;
 		}
 
 		internal static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
