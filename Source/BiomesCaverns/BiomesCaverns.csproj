@@ -60,12 +60,14 @@
     <Compile Include="Patches\GenStep_Archonexus_CanScatterAt_Patch.cs" />
     <Compile Include="Patches\GenStep_ScattererBestFit_CanScatterAt_Patch.cs" />
     <Compile Include="Patches\JobDriver_Skydreaming_MakeNewToils_Patch.cs" />
+    <Compile Include="Patches\ModAssemblies.cs" />
     <Compile Include="Patches\RCellFinder_TryFindSkydreamingSpotOutsideColony_Patch.cs" />
     <Compile Include="Patches\ScatterStalagmites.cs" />
     <Compile Include="Patches\ShipLandingArea_RecalculateBlockingThing_Patch.cs" />
     <Compile Include="Patches\ThrumboEvent.cs" />
     <Compile Include="Patches\TravelingTransportPods_Arrived_Patch.cs" />
     <Compile Include="Patches\TravelingTransportPods_TraveledPctStepPerTick_Patch.cs" />
+    <Compile Include="Patches\VFEI\PawnArrivalModeWorker_GigalocustSwarm_Patch.cs" />
     <Compile Include="PlaceWorkers\NotUnderRoof.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Skyfallers\DrillPodIncoming.cs" />
