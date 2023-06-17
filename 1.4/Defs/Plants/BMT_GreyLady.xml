@@ -39,7 +39,7 @@
 			<topWindExposure>0</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<neverBlightable>false</neverBlightable>
-			<visualSizeRange>0.8~1.0</visualSizeRange>
+			<visualSizeRange>0.4~1.0</visualSizeRange>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
