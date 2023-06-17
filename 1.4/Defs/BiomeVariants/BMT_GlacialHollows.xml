@@ -43,6 +43,15 @@
           <roof>RoofRockThick</roof>
         </mapGridConditions>
 
+        <terrainOverrides>
+          <modifier>
+            <conditions>
+              <terrain>Ice</terrain>
+            </conditions>
+            <value>BMT_GlacialIce</value>
+          </modifier>
+        </terrainOverrides>
+
         <applyToCaves>true</applyToCaves>
 
         <animalDensity>3</animalDensity>
@@ -104,9 +113,12 @@
         <terrainOverrides>
           <modifier>
             <conditions>
-              <terrain>Gravel</terrain>
+              <anyOf>
+                <terrain>Ice</terrain>
+                <terrain>Gravel</terrain>
+              </anyOf>
             </conditions>
-            <value>Ice</value>
+            <value>BMT_GlacialIce</value>
           </modifier>
         </terrainOverrides>
 
