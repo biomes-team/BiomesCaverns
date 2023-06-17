@@ -49,8 +49,9 @@
 		</comps>
 		<race>
 			<body>BeetleLikeWithClaw</body>
-			<baseHungerRate>0.1</baseHungerRate>
-			<baseBodySize>0.8</baseBodySize>
+			<baseHungerRate>0.05</baseHungerRate>
+			<!-- Using a body size smaller than 0.7 should disable the DigOutIfCannotReachMapEdge behaviour. -->
+			<baseBodySize>0.65</baseBodySize>
 			<baseHealthScale>1.7</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>6</lifeExpectancy>

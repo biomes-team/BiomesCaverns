@@ -29,7 +29,6 @@
 			<growDays>8</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/GreyLady/GreyLadyImmature</immatureGraphicPath>
-			<harvestWork>1000</harvestWork>
 			<harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>Cloth</harvestedThingDef>
@@ -40,7 +39,7 @@
 			<topWindExposure>0</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<neverBlightable>false</neverBlightable>
-			<visualSizeRange>0.8~1.0</visualSizeRange>
+			<visualSizeRange>0.4~1.0</visualSizeRange>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>

@@ -30,7 +30,7 @@
 			<wildClusterWeight>250</wildClusterWeight>
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
-            <harvestWork>1000</harvestWork>
+            <harvestWork>200</harvestWork>
             <harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
@@ -45,7 +45,7 @@
             <neverBlightable>false</neverBlightable>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisImmature</immatureGraphicPath>
 			<leaflessGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisHarvested</leaflessGraphicPath>
-			<visualSizeRange>0.9~1.3</visualSizeRange>
+			<visualSizeRange>0.5~1.3</visualSizeRange>
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 			<interferesWithRoof>false</interferesWithRoof>

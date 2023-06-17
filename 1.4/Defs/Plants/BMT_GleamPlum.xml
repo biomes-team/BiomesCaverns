@@ -13,7 +13,7 @@
         </statBases>
         <plant>
             <wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>1000</wildClusterWeight>
+			<wildClusterWeight>750</wildClusterWeight>
             <growDays>30</growDays>
 			<topWindExposure>0</topWindExposure>
             <dieIfLeafless>true</dieIfLeafless>

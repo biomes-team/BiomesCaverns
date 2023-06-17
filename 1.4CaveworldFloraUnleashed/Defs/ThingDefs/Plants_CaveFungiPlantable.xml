@@ -246,7 +246,6 @@
 		<defName>BMT_GleamcapPlanted</defName>
 		<label>gleamcap</label>
 		<description>A massive caveworld mushroom, known for its natural healing properties by caveworld tenders. Gleamcap spores are psycoactive and are released whenever the mushroom is disturbed.</description>
-		<tickerType>Rare</tickerType>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>0.3</Flammability>

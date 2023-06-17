@@ -22,7 +22,7 @@
         <growDays>18</growDays>
 		<topWindExposure>0</topWindExposure>
         <dieIfLeafless>true</dieIfLeafless>
-        <harvestWork>1000</harvestWork>
+        <harvestWork>600</harvestWork>
         <harvestYield>30</harvestYield>
         <wildOrder>3</wildOrder>
         <neverBlightable>true</neverBlightable>
