@@ -15,6 +15,20 @@
 			<li>BMT_ResearchMushrooms</li>
 		</prerequisites>
 	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>BMT_CrystalIncubator</defName>
+		<label>crystallization</label>
+		<description>Research methods of artificial crystal growth.</description>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1200</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>1.10</researchViewY>
+		<prerequisites>
+			<li>Hydroponics</li>
+			<li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
 	
 	
 </Defs>
