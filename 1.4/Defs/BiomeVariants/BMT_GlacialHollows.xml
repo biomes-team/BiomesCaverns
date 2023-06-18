@@ -114,11 +114,10 @@
           <modifier>
             <conditions>
               <anyOf>
-                <terrain>Ice</terrain>
                 <terrain>Gravel</terrain>
               </anyOf>
             </conditions>
-            <value>BMT_GlacialIce</value>
+            <value>Ice</value>
           </modifier>
         </terrainOverrides>
 
