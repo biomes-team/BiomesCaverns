@@ -239,7 +239,7 @@
             <categories>
                 <li>Fabric</li>
             </categories>
-			<color>(123,57,57)</color>
+			<color>(189,189,189)</color>
             <commonality>0.20</commonality>
             <statFactors>
                 <Flammability>0.9</Flammability>
