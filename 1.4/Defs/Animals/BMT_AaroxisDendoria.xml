@@ -237,7 +237,7 @@
 		<label>aaroxis dendoria</label>
 		<description>Uniquely engineered for life in an underground environment, this moth has been altered to produce silk even in adulthood, at the cost of remaining wingless.</description>
 		<statBases>
-			<MoveSpeed>0.8</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>110</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
