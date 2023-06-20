@@ -46,10 +46,10 @@
 		<minifiedDef>MinifiedTree</minifiedDef>
 		<rotatable>false</rotatable>
 		<comps>
-			<li MayRequire="Ludeon.RimWorld.Biotech" Class="BiomesCore.CompProperties_PlantPolluteOverTime">
-				<cellsToPollutePerDay>6</cellsToPollutePerDay>
-				<growthProgress>1</growthProgress>
-			</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech" Class="BiomesCore.CompProperties_PlantPolluteOverTime"> -->
+				<!-- <cellsToPollutePerDay>6</cellsToPollutePerDay> -->
+				<!-- <growthProgress>1</growthProgress> -->
+			<!-- </li> -->
 			<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
 				<moteDef>Mote_SkulltopSpores</moteDef>
 				<hediffDef>BMT_HediffSkulltopSpores</hediffDef>
