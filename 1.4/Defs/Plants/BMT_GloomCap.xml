@@ -33,6 +33,12 @@
 			<wildOrder>3</wildOrder>
 			<neverBlightable>true</neverBlightable>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>BMT_ResearchMushrooms</li>
+			</sowResearchPrerequisites>
+			<sowWork>100</sowWork>
+			<sowMinSkill>3</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
