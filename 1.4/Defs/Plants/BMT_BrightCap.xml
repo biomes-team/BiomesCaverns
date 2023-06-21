@@ -6,7 +6,7 @@
 		<label>brightcap</label>
 		<description>A brightly-glowing mushroom. It was engineered during early caveworld colonization efforts to provide constant natural light.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/BrightCap/BrightCap</texPath>
+			<texPath>BMT_Caverns/Things/Plant/BrightCap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
