@@ -94,6 +94,7 @@
           <BMT_BushAntleredElk>0.5</BMT_BushAntleredElk>
 
           <!-- predators -->
+		  <BMT_WoollySpider>0.2</BMT_WoollySpider>
 
           <!-- omnivore -->
           <BMT_FrostFrog>0.7</BMT_FrostFrog>

@@ -9,7 +9,7 @@
 
 	<ThingDef ParentName="BaseInsect">
 		<defName>BMT_WoolySpider</defName>
-		<label>wooly spider</label>
+		<label>fleece spider</label>
 		<description>Small and fluffy, these spiders have become a popular pet amongst the cavern-dwelling populace. It can be easily fed from whatever food falls onto the ground.</description>
 		<statBases>
 			<MoveSpeed>4.4</MoveSpeed>
