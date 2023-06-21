@@ -144,6 +144,7 @@
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- ground cover -->
+			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
 			<BMT_Gleamtip>1.0</BMT_Gleamtip>
 			
 			<!-- mid sized -->
