@@ -27,9 +27,6 @@
 			<growDays>5</growDays>
 			<topWindExposure>0</topWindExposure>
 			<dieIfLeafless>false</dieIfLeafless>
-			<harvestWork>700</harvestWork>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
-			<harvestYield>1</harvestYield>
 			<wildOrder>3</wildOrder>
 			<neverBlightable>true</neverBlightable>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
