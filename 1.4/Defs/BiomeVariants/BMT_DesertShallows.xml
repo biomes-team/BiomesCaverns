@@ -29,8 +29,16 @@
       </anyOf>
     </worldTileConditions>
 
+    <worldTileOverrides>
+      <stoneTypes operation="add">
+        <li>BMT_SandWall</li>
+      </stoneTypes>
+    </worldTileOverrides>
+
     <layers>
       <li>
+
+        <id>inside</id>
 
         <mapGridConditions>
           <roof>RoofRockThick</roof>
@@ -67,6 +75,25 @@
           <!-- omnivore -->
 
         </wildAnimals>
+
+      </li>
+
+      <li>
+
+        <id>outside</id>
+
+        <mapGridConditions>
+          <roof>Unroofed</roof>
+        </mapGridConditions>
+
+        <terrainOverrides>
+          <modifier>
+            <conditions>
+              <terrain>Gravel</terrain>
+            </conditions>
+            <value>Sand</value>
+          </modifier>
+        </terrainOverrides>
 
       </li>
     </layers>

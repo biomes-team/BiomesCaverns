@@ -9,6 +9,11 @@
 			<Nutrition>0.2</Nutrition>
 			<Flammability>0.35</Flammability>
 		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<optimalTemperature>-10~60</optimalTemperature>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/MortalMorel</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="RockBase">
 		<defName>BMT_SandWall</defName>
-		<label>condensed sand wall</label>
+		<label>condensed sand</label>
 		<description>A wall of condensed sand.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/condensed_sand_atlas</texPath>
@@ -18,14 +18,21 @@
 			<isResourceRock>false</isResourceRock>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
-			<mineableThing>BMT_Sand</mineableThing>
-			<mineableYield>50</mineableYield>
+			<naturalTerrain>Sand</naturalTerrain>
+			<mineableThing>BMT_ChunkSand</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<!-- <mineableYield>50</mineableYield> -->
 		</building>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+				<offset>0.35</offset>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="RockBase">
 		<defName>BMT_LightSandWall</defName>
-		<label>condensed sand wall</label>
+		<label>condensed sand</label>
 		<description>A wall of condensed sand.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/light_condensed_sand_atlas</texPath>
@@ -40,6 +47,7 @@
 			<isResourceRock>false</isResourceRock>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
+			<naturalTerrain>Sand</naturalTerrain>
 			<mineableThing>BMT_Sand</mineableThing>
 			<mineableYield>50</mineableYield>
 		</building>

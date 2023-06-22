@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_CrestedLizard</defName>
+		<label>crested lizard</label>
+		<description>Much like the prehistoric Parasaur, this lizard has a crest. The purpose is largely for display, but it also allows them to make cute squeaky noises.</description>
+		<statBases>
+			<MoveSpeed>4.25</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Flammability>1</Flammability>
+			<FilthRate>3</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggCrestedLizardFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>6.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>0.7</baseBodySize>
+			<baseHealthScale>1.5</baseHealthScale>
+			<baseHungerRate>0.535</baseHungerRate>
+			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<useMeatFrom>Iguana</useMeatFrom>
+			<wildness>0.75</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>11</lifeExpectancy>
+			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.8, 1)</li>
+					<li>(2.4, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
+					<soundWounded>Pawn_Rodent_Wounded</soundWounded>
+					<soundDeath>Pawn_Rodent_Death</soundDeath>
+					<soundCall>Pawn_Rodent_Call</soundCall>
+					<soundAngry>Pawn_Rodent_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrestedLizard</defName>
+		<label>crested lizard</label>
+		<race>BMT_CrestedLizard</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggCrestedLizardFertilized</defName>
+		<label>crested lizard egg (fert.)</label>
+		<description>A fertilized crested lizard egg. If all goes well, it should hatch into a tiny lizard. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.05</Mass>
+			<MarketValue>24.0</MarketValue>
+			<MaxHitPoints>40</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_CrestedLizard</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
