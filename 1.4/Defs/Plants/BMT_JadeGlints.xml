@@ -192,7 +192,7 @@
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
     <costList>
-      <BMT_JadeGlints>10</BMT_JadeGlints>
+      <BMT_JadeGlints>8</BMT_JadeGlints>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
