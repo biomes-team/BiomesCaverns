@@ -41,7 +41,7 @@
 	<ThingDef ParentName="StoneBlocksBase">
 		<defName>BMT_IceBlock</defName>
 		<label>ice block</label>
-		<description>A Block of ice.</description>
+		<description>A block of uldre-cold, ultra-dense ice. It will not melt.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/IceBlocks</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
