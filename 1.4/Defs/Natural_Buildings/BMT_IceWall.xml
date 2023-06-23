@@ -4,7 +4,7 @@
 	<ThingDef ParentName="RockBase">
 		<defName>BMT_IceWall</defName>
 		<label>ice</label>
-		<description>A wall of ice.</description>
+		<description>A wall of ultra-cold, ultra-dense ice. Its special molecular structure makes it immune to melting.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/ice_wall_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -41,7 +41,7 @@
 	<ThingDef ParentName="StoneBlocksBase">
 		<defName>BMT_IceBlock</defName>
 		<label>ice block</label>
-		<description>A Block of ice.</description>
+		<description>A block of ultra-cold, ultra-dense ice. Its special molecular structure makes it immune to melting.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/IceBlocks</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
