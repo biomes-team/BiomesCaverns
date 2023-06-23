@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_MoonlessStripesPlant</defName>
 		<label>moonless stripes</label>
-		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown elsewhere, it requires high heat to do so properly.</description>
+		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown anywhere, it requires high heat to grow properly. Its sturdy layered stalk can be used as a leathery textile.</description>
 		<thingClass>BMT.BiomesPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>

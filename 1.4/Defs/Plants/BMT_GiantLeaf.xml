@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_GiantLeaf</defName>
 		<label>giant leaf</label>
-		<description>A giant and very impressive leaf that has adapted to darkness. Gathers water and mineral elements from the ground.</description>
+		<description>A giant and very impressive edible leaf that has adapted to darkness. Gathers water and mineral elements from the ground.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.20</Nutrition>
