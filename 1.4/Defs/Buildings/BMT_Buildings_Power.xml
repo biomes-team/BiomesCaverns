@@ -67,7 +67,7 @@
 		  <li>BMT_PowerFungus</li>
 		</linkableFacilities>
 	  </li>
-	  <li Class="CompProperties_Flickable" />
+	  <!-- <li Class="CompProperties_Flickable" /> -->
 	  <li Class="CompProperties_Glower">
 		<glowRadius>3</glowRadius>
 		<glowColor>(217,112,33,0)</glowColor>
@@ -76,7 +76,7 @@
 		<!-- <compClass>CompHeatPusherPowered</compClass> -->
 		<!-- <heatPerSecond>6</heatPerSecond> -->
 	  <!-- </li> -->
-	  <li Class="CompProperties_Breakdownable"/>
+	  <!-- <li Class="CompProperties_Breakdownable"/> -->
 	</comps>
 	<!-- <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> -->
 	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
