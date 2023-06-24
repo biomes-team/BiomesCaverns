@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_RimeFlower</defName>
 		<label>rime flower</label>
-		<description>While this cold adapted flower can survive without nearly any light, it grows best with at least a little illumination.</description>
+		<description>While this beautiful, cold adapted flower can survive with hardly any light, it grows best with at least a little illumination.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/RimeFlower</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
