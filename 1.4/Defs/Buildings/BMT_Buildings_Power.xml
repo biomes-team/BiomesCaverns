@@ -4,14 +4,14 @@
   <ThingDef ParentName="BuildingBase">
 	<defName>BMT_FungalPowerGenerator</defName>
 	<label>fungal power generator</label>
-	<description>Produces power...</description>
+	<description>Produces power using special fungus planted near. The efficiency depends on the amount of fungus.</description>
 	<thingClass>Building</thingClass>
 	<drawerType>MapMeshAndRealTime</drawerType>
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/TEMPLATE_TEST</texPath>
 	  <!-- <texPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowergenFungusMature</texPath> -->
 	  <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(3,3)</drawSize>
+	  <drawSize>(2,2)</drawSize>
 	  <shadowData>
 		<volume>(1.93,1,1.69)</volume>
 		<offset>(-0.03,0,-0.1)</offset>
@@ -26,19 +26,19 @@
 	<rotatable>false</rotatable>
 	<statBases>
 	  <MaxHitPoints>300</MaxHitPoints>
-	  <WorkToBuild>2500</WorkToBuild>
-	  <Flammability>1.0</Flammability>
+	  <WorkToBuild>3100</WorkToBuild>
+	  <Flammability>0.5</Flammability>
 	  <Beauty>-20</Beauty>
 	</statBases>
 	<tickerType>Normal</tickerType>
 	<canOverlapZones>false</canOverlapZones>
-	<size>(3,3)</size>
+	<size>(2,2)</size>
 	<building>
 	  <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 	</building>
 	<costList>
-	  <Steel>100</Steel>
-	  <ComponentIndustrial>2</ComponentIndustrial>
+	  <Steel>220</Steel>
+	  <ComponentIndustrial>4</ComponentIndustrial>
 	</costList>
 	<comps>
 	  <li Class="CompProperties_Power">
@@ -74,8 +74,9 @@
 	<constructEffect>ConstructMetal</constructEffect>
 	<researchPrerequisites>
 	  <li>Electricity</li>
+	  <li>BMT_AdvancedFungi</li>
 	</researchPrerequisites>
-	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
 
 </Defs>
