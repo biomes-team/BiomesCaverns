@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+	<defName>BMT_FungalPowerGenerator</defName>
+	<label>fungal power generator</label>
+	<description>Produces power...</description>
+	<thingClass>Building</thingClass>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/TEMPLATE_TEST</texPath>
+	  <!-- <texPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowergenFungusMature</texPath> -->
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+	  <shadowData>
+		<volume>(1.93,1,1.69)</volume>
+		<offset>(-0.03,0,-0.1)</offset>
+	  </shadowData>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<blockWind>true</blockWind>
+	<fillPercent>1.0</fillPercent>
+	<castEdgeShadows>false</castEdgeShadows>
+	<rotatable>false</rotatable>
+	<statBases>
+	  <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToBuild>2500</WorkToBuild>
+	  <Flammability>1.0</Flammability>
+	  <Beauty>-20</Beauty>
+	</statBases>
+	<tickerType>Normal</tickerType>
+	<canOverlapZones>false</canOverlapZones>
+	<size>(3,3)</size>
+	<building>
+	  <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+	</building>
+	<costList>
+	  <Steel>100</Steel>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
+	<comps>
+	  <li Class="CompProperties_Power">
+		<!-- Power production depends on plants -->
+		<compClass>BiomesCore.CompPowerPlant_PowerFungus</compClass>
+		<basePowerConsumption>-20</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+		<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
+	  </li>
+	  <!-- All plants are attached through facilities. Facility is recalculated when planting new plants, as well as during a save load -->
+	  <li Class="CompProperties_AffectedByFacilities">
+		<!-- Power production depends on plants -->
+		<!-- The potential of plants depends on their lifespan -->
+		<linkableFacilities>
+		  <li>BMT_PowerFungus</li>
+		</linkableFacilities>
+	  </li>
+	  <li Class="CompProperties_Flickable" />
+	  <li Class="CompProperties_Glower">
+		<glowRadius>6</glowRadius>
+		<glowColor>(217,112,33,0)</glowColor>
+	  </li>
+	  <!-- <li Class="CompProperties_HeatPusher"> -->
+		<!-- <compClass>CompHeatPusherPowered</compClass> -->
+		<!-- <heatPerSecond>6</heatPerSecond> -->
+	  <!-- </li> -->
+	  <li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<designationCategory>Power</designationCategory>
+	<uiOrder>2100</uiOrder>
+	<designationHotKey>Misc3</designationHotKey>
+	<constructEffect>ConstructMetal</constructEffect>
+	<researchPrerequisites>
+	  <li>Electricity</li>
+	</researchPrerequisites>
+	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+
+</Defs>
