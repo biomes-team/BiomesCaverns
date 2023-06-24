@@ -47,6 +47,7 @@
     <Compile Include="CompSpawnDust.cs" />
     <Compile Include="CompCleanFilthAround.cs" />
     <Compile Include="DependencyVersionCheck.cs" />
+    <Compile Include="GameCondition_SporeCloud.cs" />
     <Compile Include="GenSteps\GenStep_ClearCavernCenter.cs" />
     <Compile Include="GenSteps\ScattererValidator_RoughRockBuildable.cs" />
     <Compile Include="IncidentWorker_ThrumbungusPasses.cs" />

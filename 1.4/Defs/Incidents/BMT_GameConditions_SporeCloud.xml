@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+	<defName>BMT_SporeCloud</defName>
+	<conditionClass>BiomesCaverns.GameCondition_SporeCloud</conditionClass>
+	<label>spore cloud</label>
+	<description>A cloud of fungal spores from some distant source is slowly settling over this entire region. Any living thing not under a roof will be suffocating.</description>
+	<descriptionFuture>a cloud of fungal spores will blanket the area around [map_definite] for [gameConditionDuration_duration], killing outdoor animal life</descriptionFuture>
+	<endMessage>The worst of the fungal spores has settled.</endMessage>
+	<letterText>A distant fungal forest has released a plume of spores over this entire region.\n\nAny person or creature not under a roof will be slowly suffocating by the fungal spores settling out of the atmosphere.\n\nIt will last for anywhere between a few days to over a quadrum.</letterText>
+	<letterDef>NegativeEvent</letterDef>
+	<canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <HediffDef>
+	<defName>BMT_SporesBuildup</defName>
+	<label>spore buildup</label>
+	<description>Spores accumulated in the respiratory tract. It is generally not dangerous, but if the spores continue to accumulate, the effect can be fatal.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+	<lethalSeverity>2</lethalSeverity>
+	<makesSickThought>true</makesSickThought>
+	<scenarioCanAdd>true</scenarioCanAdd>
+	<taleOnVisible>ToxicityRevealed</taleOnVisible>
+	<comps>
+	  <li Class="HediffCompProperties_Immunizable">
+		<compClass>HediffComp_ImmunizableToxic</compClass>
+		<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+	  </li>
+	</comps>
+	<stages>
+	  <li>
+		<label>initial</label>
+		<becomeVisible>false</becomeVisible>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>1.0</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>initial</label>
+		<minSeverity>0.04</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.99</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>minor</label>
+		<minSeverity>0.2</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.90</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>moderate</label>
+		<minSeverity>0.40</minSeverity>
+		<vomitMtbDays>5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.80</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>serious</label>
+		<minSeverity>0.60</minSeverity>
+		<vomitMtbDays>1</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.75</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>extreme</label>
+		<minSeverity>0.80</minSeverity>
+		<vomitMtbDays>0.5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.50</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>extreme</label>
+		<minSeverity>1.20</minSeverity>
+		<vomitMtbDays>0.5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.35</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>extreme</label>
+		<minSeverity>1.50</minSeverity>
+		<vomitMtbDays>0.5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Breathing</capacity>
+			<setMax>0.10</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+  </HediffDef>
+
+</Defs>

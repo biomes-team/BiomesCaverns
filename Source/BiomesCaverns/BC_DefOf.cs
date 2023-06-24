@@ -21,5 +21,7 @@ namespace BiomesCaverns
         public static ThingDef BMT_Thrumbungus;
 
         public static WorldObjectDef BMT_TravelingDrillPods;
+
+        public static HediffDef BMT_SporesBuildup;
     }
 }

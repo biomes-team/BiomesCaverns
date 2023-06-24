@@ -46,4 +46,30 @@
 		<allowIndoors>true</allowIndoors>
 	</IncidentDef>
 
+	<IncidentDef>
+		<defName>BMT_SporeCloud</defName>
+		<label>spore cloud</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>BMT_SporeCloud</gameCondition>
+		<letterLabel>Spore cloud</letterLabel>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>0.06</baseChance>
+		<earliestDay>60</earliestDay>
+		<minRefireDays>90</minRefireDays>
+		<disallowedBiomes>
+			<li>BMT_EarthenDepths</li>
+			<li>BMT_FungalForest</li>
+			<li>BMT_CrystalCaverns</li>
+		</disallowedBiomes>
+		<disabledWhen>
+		  <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>2.5~10.5</durationDays>
+		<tale>ToxicFallout</tale>
+	</IncidentDef>
+
 </Defs>
