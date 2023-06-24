@@ -32,6 +32,7 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<mustBeWildToSow>false</mustBeWildToSow>
 			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef IsNull="true" />
 			<sowResearchPrerequisites  Inherit="False" >
 				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>

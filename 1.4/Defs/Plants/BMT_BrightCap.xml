@@ -30,7 +30,9 @@
 			<wildOrder>3</wildOrder>
 			<neverBlightable>true</neverBlightable>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef IsNull="true" />
 			<sowResearchPrerequisites  Inherit="False" >
 				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
