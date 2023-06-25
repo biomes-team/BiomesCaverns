@@ -24,7 +24,7 @@
 	<race>
 	  <herdAnimal>true</herdAnimal>
 	  <predator>false</predator>
-	  <baseBodySize>2.2</baseBodySize>
+	  <baseBodySize>1.2</baseBodySize>
 	  <baseHealthScale>3.0</baseHealthScale>
 	  <baseHungerRate>0.125</baseHungerRate>
 	  <foodType>VegetarianRoughAnimal</foodType>
