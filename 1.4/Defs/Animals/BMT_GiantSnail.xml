@@ -183,7 +183,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(167,198,153)</color>
-			<drawSize>1.7</drawSize>
+			<drawSize>1.1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>20.0</MarketValue>
