@@ -58,6 +58,7 @@
 			<BMT_Wheelshroom>0.2</BMT_Wheelshroom>
 			<BMT_WatOrbs>0.1</BMT_WatOrbs>
 			<BMT_BloomingCactus>0.2</BMT_BloomingCactus>
+			<BMT_GlowingSucculent>0.05</BMT_GlowingSucculent>
           <!-- trees -->
 			<BMT_Dishcap>0.5</BMT_Dishcap>
           <!-- other harvestable -->

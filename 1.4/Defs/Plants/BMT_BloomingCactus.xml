@@ -2,9 +2,9 @@
 <Defs>
   
   <ThingDef ParentName="PlantBase">
-    <defName>BMT_GlowingSucculent</defName>
-    <label>glimmering cactus</label>
-    <description>A bioluminescent succulent species that grows in the caverns below deserts.</description>
+    <defName>BMT_BloomingCactus</defName>
+    <label>blooming cactus</label>
+    <description>A stunted in size yet pretty cactus that had adapted to live in cave systems below deserts.</description>
 	<statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <Nutrition>0.05</Nutrition>
@@ -12,7 +12,7 @@
 	  <BeautyOutdoors>15</BeautyOutdoors>
     </statBases>
     <graphicData>
-      <texPath>BMT_Caverns/Things/Plant/GlowSucculent</texPath>
+      <texPath>BMT_Caverns/Things/Plant/BloomingCactus</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <!-- <drawSize>1.6</drawSize> -->
       <shadowData>
@@ -27,7 +27,7 @@
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <growMinGlow>0</growMinGlow>
 	  <growOptimalGlow>0</growOptimalGlow>
-      <growDays>4</growDays>
+      <growDays>6</growDays>
 	  <topWindExposure>0</topWindExposure>
       <visualSizeRange>0.3~1.05</visualSizeRange>
       <wildClusterRadius>8</wildClusterRadius>
