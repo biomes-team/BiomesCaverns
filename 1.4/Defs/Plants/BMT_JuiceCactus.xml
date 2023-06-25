@@ -33,9 +33,41 @@
       <wildClusterWeight>170</wildClusterWeight>
 	  <maxMeshCount>4</maxMeshCount>
 	  <wildOrder>2</wildOrder>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestWork>200</harvestWork>
+      <harvestYield>10</harvestYield>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestAfterGrowth>0.25</harvestAfterGrowth>
+	  <harvestedThingDef>BMT_CactusJuice</harvestedThingDef>
+	  <sowMinSkill>4</sowMinSkill>
+			 <sowTags>
+				<li>Ground</li>
+			  </sowTags>
     </plant>
   </ThingDef>
-  
+  	 <ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_CactusJuice</defName>
+		<label>cactus juice</label>
+		<description>Juicy flesh from a subterranean cactus. It's surprisingly tasty and filling.</description>
+		<graphicData>
+		  <texPath>BMT_Caverns/Things/Item/Crops/CactusJuice</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1</MarketValue>
+		  <Mass>0.025</Mass>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>16</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
   
 
 </Defs>

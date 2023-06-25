@@ -5,9 +5,9 @@
   <!--===============================================-->
 
   <ThingDef ParentName="BigBirdThingBase">
-	<defName>BMT_AlbinoPenguin</defName>
-	<label>albino penguin</label>
-	<description>The largest unmodified bird species, ostriches are known for their fast run, huge eggs, and powerful kick. It is easily angered.</description>
+	<defName>BMT_DepthsPenguin</defName>
+	<label>depths penguin</label>
+	<description>A fairly large penguin species that lives in the hollowed out tunnels inside of massive glaciers and permanently frozen areas.</description>
 	<statBases>
 	  <MoveSpeed>3.4</MoveSpeed>
 	  <MarketValue>250</MarketValue>
@@ -54,7 +54,7 @@
 	</race>
 	<comps>
 	  <li Class="CompProperties_EggLayer">
-		<eggFertilizedDef>BMT_EggAlbinoPenguinFertilized</eggFertilizedDef>
+		<eggFertilizedDef>BMT_EggDepthsPenguinFertilized</eggFertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
 		<eggLayIntervalDays>3.33</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -114,10 +114,10 @@
   </ThingDef>
 
   <PawnKindDef ParentName="BigBirdKindBase">
-	<defName>BMT_AlbinoPenguin</defName>
-	<label>albino penguin</label>
-	<labelPlural>albino penguins</labelPlural>
-	<race>BMT_AlbinoPenguin</race>
+	<defName>BMT_DepthsPenguin</defName>
+	<label>depths penguin</label>
+	<labelPlural>depths penguins</labelPlural>
+	<race>BMT_DepthsPenguin</race>
 	<combatPower>85</combatPower>
 	<wildGroupSize>2~7</wildGroupSize>
 	<lifeStages>
@@ -156,9 +156,9 @@
   <!--===============================================-->
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggAlbinoPenguinFertilized</defName>
-		<label>albino penguin egg (fert.)</label>
-		<description>A fertilized albino penguin egg. If all goes well, it should hatch into a baby albino penguin.</description>
+		<defName>BMT_EggDepthsPenguinFertilized</defName>
+		<label>depths penguin egg (fert.)</label>
+		<description>A fertilized depths penguin egg. If all goes well, it should hatch into a baby depths penguin.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(149,92,90)</color>
@@ -171,7 +171,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>BMT_AlbinoPenguin</hatcherPawn>
+				<hatcherPawn>BMT_DepthsPenguin</hatcherPawn>
 			</li>
 		</comps>
 		<ingestible>
