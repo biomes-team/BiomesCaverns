@@ -242,7 +242,6 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>3000</MarketValue>
 			<FilthRate>4</FilthRate>
-			<LeatherAmount>5</LeatherAmount>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>
