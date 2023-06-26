@@ -197,7 +197,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Psychite</chemical>
-        <addictiveness>0.05</addictiveness>
+        <addictiveness>0.01</addictiveness>
         <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>
         <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
