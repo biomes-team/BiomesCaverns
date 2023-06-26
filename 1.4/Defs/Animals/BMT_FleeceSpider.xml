@@ -8,7 +8,7 @@
 	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weaker leather. Not very strong. High nuzzle chance. -->
 
 	<ThingDef ParentName="BaseInsect">
-		<defName>BMT_WoolySpider</defName>
+		<defName>BMT_FleeceSpider</defName>
 		<label>fleece spider</label>
 		<description>Small and fluffy, these spiders have become a popular pet amongst the cavern-dwelling populace. It can be easily fed from whatever food falls onto the ground.</description>
 		<statBases>
@@ -65,7 +65,7 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggWoolySpiderFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggFleeceSpiderFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>4</eggFertilizationCountMax>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggLayIntervalDays>7</eggLayIntervalDays>
@@ -108,16 +108,16 @@
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_WoolySpider</defName>
-		<label>wooly spider</label>
-		<race>BMT_WoolySpider</race>
+		<defName>BMT_FleeceSpider</defName>
+		<label>Fleece spider</label>
+		<race>BMT_FleeceSpider</race>
 		<combatPower>70</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/FleeceSpider/FleeceSpider</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>0.2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -129,7 +129,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/FleeceSpider/FleeceSpider</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>0.4</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -141,7 +141,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoolySpider/WoolySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/FleeceSpider/FleeceSpider</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>0.8</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -154,9 +154,9 @@
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggWoolySpiderFertilized</defName>
-		<label>wooly spider egg (fert.)</label>
-		<description>A wooly spider egg. If all goes well, it should hatch into a baby spider. It can be eaten raw, but it's much better cooked.</description>
+		<defName>BMT_EggFleeceSpiderFertilized</defName>
+		<label>Fleece spider egg (fert.)</label>
+		<description>A Fleece spider egg. If all goes well, it should hatch into a baby spider. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
 			<drawSize>0.8</drawSize>
@@ -167,7 +167,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>6</hatcherDaystoHatch>
-				<hatcherPawn>BMT_WoolySpider</hatcherPawn>
+				<hatcherPawn>BMT_FleeceSpider</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
