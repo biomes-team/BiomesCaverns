@@ -33,6 +33,7 @@
 			<mustBeWildToSow>false</mustBeWildToSow>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef IsNull="true" />
+			<harvestYield>0</harvestYield>
 			<sowResearchPrerequisites  Inherit="False" >
 				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
