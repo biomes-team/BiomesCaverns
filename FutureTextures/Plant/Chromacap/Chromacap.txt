@@ -1,1 +1,0 @@
-It's a cave equivalent of the dye plant in vanilla. It should grow in darkness, die via light, require very little fertility.
