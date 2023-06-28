@@ -115,7 +115,7 @@
         <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
         <listOrder>100</listOrder>
         <overdoseSeverityOffset>0.25~0.45</overdoseSeverityOffset>
-        <largeOverdoseChance>0.0001</largeOverdoseChance>
+        <largeOverdoseChance>0</largeOverdoseChance>
       </li>
 		</comps>
 		<allowedArchonexusCount>20</allowedArchonexusCount>
