@@ -32,13 +32,14 @@
 	  </li>
 	  <li Class="CompProperties_Breakdownable"/>
 	  <li Class="CompProperties_Flickable"/>
-	  <li Class="CompProperties_Spawner">
+	  <li Class="BiomesCore.CompProperties_NearSpawner">
 		<requiresPower>true</requiresPower>
 		<thingToSpawn>BMT_ResourceBlueCrystal</thingToSpawn>
 		<spawnCount>75</spawnCount>
 		<spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
 		<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 		<showMessageIfOwned>true</showMessageIfOwned>
+		<saveKeysPrefix>crystal</saveKeysPrefix>
 	  </li>
 	  <li Class="CompProperties_Explosive">
 		<explosiveRadius>7</explosiveRadius>
@@ -69,9 +70,9 @@
 	<specialDisplayRadius>6.9</specialDisplayRadius>
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-	<passability>Impassable</passability>
-	<!-- <passability>PassThroughOnly</passability> -->
-	<!-- <pathCost>70</pathCost> -->
+	<!-- <passability>Impassable</passability> -->
+	<passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
 	<rotatable>false</rotatable>
 	<canOverlapZones>false</canOverlapZones>
 	<minifiedDef>MinifiedThing</minifiedDef>
