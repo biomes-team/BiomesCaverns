@@ -201,7 +201,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>0.1</power>
+				<power>1</power>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -382,7 +382,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>61</MarketValue>
+			<MarketValue>50</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
