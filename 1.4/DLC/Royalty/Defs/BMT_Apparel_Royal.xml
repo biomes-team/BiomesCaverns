@@ -15,9 +15,12 @@
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Armor/CataphractArmor</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
+	  <!-- CutoutComplex not working for Graphic_Single -->
+	  <!-- <shaderType>CutoutComplex</shaderType> -->
 	</graphicData>
 	<apparel>
 	  <wornGraphicPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Armor/CataphractArmor</wornGraphicPath>
+	  <useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
 	<costList Inherit="False">
 	  <ComponentSpacer>6</ComponentSpacer>
@@ -48,6 +51,7 @@
 	<graphicData>
 	  <texPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Helmet/CataphractHelmet</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
+	  <!-- <shaderType>CutoutComplex</shaderType> -->
 	  <drawSize>(0.9, 0.9)</drawSize>
 	</graphicData>
 	<costList Inherit="False">
@@ -60,6 +64,7 @@
 	</stuffCategories>
 	<apparel>
 	  <wornGraphicPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Helmet/CataphractHelmet</wornGraphicPath>
+	  <useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
 	<recipeMaker>
 	  <displayPriority>125</displayPriority>
