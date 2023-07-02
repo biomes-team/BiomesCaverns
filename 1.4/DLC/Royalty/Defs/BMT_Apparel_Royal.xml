@@ -8,8 +8,8 @@
 	<label>chitinphract armor</label>
 	<description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered chitin-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
 	<statBases>
-	  <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 	  <ArmorRating_Heat>0.7</ArmorRating_Heat>
 	</statBases>
 	<graphicData>
@@ -44,8 +44,8 @@
 	<label>chitinphract helmet</label>
 	<description>A heavily-armored high-tech helmet, with a solid chitin-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
 	<statBases>
-	  <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 	  <ArmorRating_Heat>0.7</ArmorRating_Heat>
 	</statBases>
 	<graphicData>
