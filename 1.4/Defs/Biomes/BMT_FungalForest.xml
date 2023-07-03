@@ -242,9 +242,10 @@
 
 			<!-- predators -->
 			<BMT_FungalFerret>0.025</BMT_FungalFerret>
+			<BMT_FungalMantis>0.55<BMT_FungalMantis>
 			<BMT_MossyFennec>0.10</BMT_MossyFennec>
 			<BMT_CaveSpider>0.005</BMT_CaveSpider>
-			<BMT_Maxolotl>0.5</BMT_Maxolotl>
+			<BMT_Maxolotl>0.3</BMT_Maxolotl>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.1</BMT_BloodropMoth>
 			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.75</BMT_GlowBat>
