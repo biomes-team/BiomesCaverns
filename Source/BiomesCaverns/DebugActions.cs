@@ -5,7 +5,7 @@ namespace BiomesCaverns.Debug
 {
 	public static class DebugActions
 	{
-		private const string DebugCategory = "Biomes!Caverns";
+		private const string DebugCategory = "Biomes! Caverns";
 
 		/// <summary>
 		/// Make the map filthy.
