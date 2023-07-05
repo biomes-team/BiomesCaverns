@@ -14,7 +14,6 @@
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
       <MarketValue>150</MarketValue>
-      <LeatherAmount>20</LeatherAmount>
 	  <FilthRate>7</FilthRate>
     </statBases>
     <uiIconScale>2</uiIconScale>
@@ -77,7 +76,7 @@
           <li>Blunt</li>
         </capacities>
         <power>5</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>3</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.1</chanceFactor>
@@ -101,9 +100,9 @@
       <herdAnimal>false</herdAnimal>
       <maxPreyBodySize>2.3</maxPreyBodySize>
       <petness>0.5</petness>
-      <baseBodySize>1.0</baseBodySize>
+      <baseBodySize>2.0</baseBodySize>
       <baseHungerRate>0.25</baseHungerRate>
-      <baseHealthScale>0.5</baseHealthScale>
+      <baseHealthScale>1</baseHealthScale>
       <useMeatFrom>Megaspider</useMeatFrom>
       <trainability>Advanced</trainability>
       <wildness>0.95</wildness>
@@ -214,6 +213,66 @@
 				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_CrystalMantis</hatcherPawn>
 			</li>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="ResourceVerbBase">
+		<defName>BMT_CrystalMantisClaw</defName>
+		<label>crystal mimic mantis claw</label>
+		<description>A claw from a crystal mimic mantis. It's priceless in most markets. This is a true trophy and needed for special weapons.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/CrystalMantisClaw/CrystalMantisClaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<equippedAngleOffset>-40</equippedAngleOffset>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>10</stackLimit>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
 		</comps>
 	</ThingDef>
 </Defs>

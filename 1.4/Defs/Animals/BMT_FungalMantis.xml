@@ -6,7 +6,7 @@
   <ThingDef ParentName="BaseInsect">
     <defName>BMT_FungalMantis</defName>
     <label>fungal mimic mantis</label>
-    <description>A native to the fungal forest caverns, this mantis is nearly the size of a person. It uses its fungus-covered carapace as camouflage while hunting prey.</description>
+    <description>A native to the fungal forest caverns, this mantis is larger than a person. It uses its fungus-covered carapace as camouflage while hunting. Unlike other mantises, they rely on their attacks injecting anesthetic and poisonous chemicals into prey.</description>
     <statBases>
       <MoveSpeed>3.75</MoveSpeed>
       <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -14,7 +14,6 @@
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
       <MarketValue>150</MarketValue>
-      <LeatherAmount>20</LeatherAmount>
 	  <FilthRate>7</FilthRate>
     </statBases>
     <uiIconScale>2</uiIconScale>
@@ -42,34 +41,30 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>11</power>
+        <power>7</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>BMT_FrontLeftScythe</linkedBodyPartsGroup>
-        <surpriseAttack>
           <extraMeleeDamages>
             <li>
-              <def>Stun</def>
-              <amount>25</amount>
+              <def>BMT_ToxicSpores</def>
+              <amount>5</amount>
             </li>
           </extraMeleeDamages>
-        </surpriseAttack>
       </li>
       <li>
         <label>right scythe</label>
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>11</power>
+        <power>7</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>BMT_FrontRightScythe</linkedBodyPartsGroup>
-        <surpriseAttack>
           <extraMeleeDamages>
             <li>
-              <def>Stun</def>
-              <amount>25</amount>
+              <def>BMT_StunningSpores</def>
+              <amount>5</amount>
             </li>
           </extraMeleeDamages>
-        </surpriseAttack>
       </li>
       <li>
         <label>head</label>
@@ -77,7 +72,7 @@
           <li>Blunt</li>
         </capacities>
         <power>5</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>3</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.1</chanceFactor>
@@ -101,9 +96,9 @@
       <herdAnimal>false</herdAnimal>
       <maxPreyBodySize>2.3</maxPreyBodySize>
       <petness>0.5</petness>
-      <baseBodySize>1.0</baseBodySize>
+      <baseBodySize>2.0</baseBodySize>
       <baseHungerRate>0.25</baseHungerRate>
-      <baseHealthScale>0.5</baseHealthScale>
+      <baseHealthScale>2</baseHealthScale>
       <useMeatFrom>Megaspider</useMeatFrom>
       <trainability>Advanced</trainability>
       <wildness>0.95</wildness>
@@ -136,6 +131,9 @@
     <tradeTags>
       <li>AnimalInsect</li>
     </tradeTags>
+	    <butcherProducts>
+            <BMT_Molluskshell>20</BMT_Molluskshell>
+        </butcherProducts>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
     </modExtensions>
@@ -214,6 +212,66 @@
 				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_FungalMantis</hatcherPawn>
 			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>BMT_FungalMantisClaw</defName>
+		<label>fungal mimic mantis claw</label>
+		<description>A claw from a fungal mimic mantis. It's priceless in most markets. This is a true trophy and needed for special weapons.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/FungalMantisClaw/FungalMantisClaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<equippedAngleOffset>-40</equippedAngleOffset>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>10</stackLimit>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
 		</comps>
 	</ThingDef>
 </Defs>
