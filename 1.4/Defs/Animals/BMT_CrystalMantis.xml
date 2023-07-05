@@ -249,8 +249,15 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>12</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
+						<extraMeleeDamages>
+						  <li>
+							<def>Stun</def>
+							<amount>3</amount>
+							<chance>0.5</chance>
+						  </li>
+						</extraMeleeDamages>
 			</li>
 			<li>
 				<label>base</label>
@@ -260,6 +267,13 @@
 				<power>8</power>
 				<cooldownTime>1.5</cooldownTime>
 				<chanceFactor>0.5</chanceFactor>
+						<extraMeleeDamages>
+						  <li>
+							<def>Stun</def>
+							<amount>3</amount>
+							<chance>0.5</chance>
+						  </li>
+						</extraMeleeDamages>
 			</li>
 		</tools>
 		<thingCategories>
