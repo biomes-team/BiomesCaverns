@@ -94,10 +94,8 @@
 		<roamMtbDays>2.25</roamMtbDays>
 		<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
-		<!-- <meatLabel>snail meat</meatLabel> -->
-		<!-- <meatColor>(62,133,215)</meatColor> -->
 		<leatherDef>BMT_Leather_Gastropoda</leatherDef>
-		<useMeatFrom>BMT_GiantSnail</useMeatFrom>
+		<specificMeatDef>BMT_GastropodMeat</specificMeatDef>
 		<lifeStageAges>
 			<li>
 				<def>AnimalBaby</def>
