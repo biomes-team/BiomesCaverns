@@ -135,6 +135,9 @@
     <tradeTags>
       <li>AnimalInsect</li>
     </tradeTags>
+		<butcherProducts>
+       <BMT_CrystalMantisClaw>2</BMT_CrystalMantisClaw>
+    </butcherProducts>
     <modExtensions>
       <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
     </modExtensions>
