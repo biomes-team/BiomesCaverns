@@ -102,7 +102,7 @@
       <petness>0.5</petness>
       <baseBodySize>2.0</baseBodySize>
       <baseHungerRate>0.25</baseHungerRate>
-      <baseHealthScale>1</baseHealthScale>
+      <baseHealthScale>2</baseHealthScale>
       <useMeatFrom>Megaspider</useMeatFrom>
       <trainability>Advanced</trainability>
       <wildness>0.95</wildness>

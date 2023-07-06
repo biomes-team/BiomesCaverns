@@ -18,8 +18,9 @@
 	</statBases>
 	<race>
 	  <herdAnimal>false</herdAnimal>
+	  <predator>true</predator>
 	  <baseBodySize>1.4</baseBodySize>
-	  <baseHealthScale>1.0</baseHealthScale>
+	  <baseHealthScale>2.5</baseHealthScale>
 	  <baseHungerRate>0.4</baseHungerRate>
 	  <foodType>CarnivoreAnimalStrict</foodType>
 	  <wildness>0.60</wildness>

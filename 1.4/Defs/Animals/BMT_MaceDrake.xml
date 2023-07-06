@@ -20,7 +20,7 @@
             <leatherDef>BMT_ToughLeather</leatherDef>
             <herdAnimal>false</herdAnimal>
             <baseBodySize>3.5</baseBodySize>
-            <baseHealthScale>4</baseHealthScale>
+            <baseHealthScale>3</baseHealthScale>
             <baseHungerRate>0.86</baseHungerRate>
             <foodType>VegetarianRoughAnimal</foodType>
             <predator>false</predator>

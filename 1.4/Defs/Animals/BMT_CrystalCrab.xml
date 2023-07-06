@@ -26,7 +26,7 @@
 	  <canBePredatorPrey>false</canBePredatorPrey>
 	  <baseBodySize>2.4</baseBodySize>
 	  <predator>true</predator>
-	  <baseHealthScale>1.75</baseHealthScale>
+	  <baseHealthScale>2</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_RoyalChitin</leatherDef>
 	  <meatLabel>cave crab meat</meatLabel>

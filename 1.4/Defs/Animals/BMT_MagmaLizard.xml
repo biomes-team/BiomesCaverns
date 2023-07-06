@@ -79,7 +79,7 @@
 	  <maxPreyBodySize>2.3</maxPreyBodySize>
 	  <baseBodySize>2.1</baseBodySize>
 	  <baseHungerRate>0.3</baseHungerRate>
-	  <baseHealthScale>1.2</baseHealthScale>
+	  <baseHealthScale>1.5</baseHealthScale>
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>BMT_Leather_Magma</leatherDef>
 	  <trainability>Intermediate</trainability>

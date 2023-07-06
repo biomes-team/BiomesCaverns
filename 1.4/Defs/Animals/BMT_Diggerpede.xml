@@ -49,7 +49,7 @@
 			<herdAnimal>false</herdAnimal>
 			<body>BeetleLike</body>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>1.2</baseHealthScale>
+			<baseHealthScale>2.25</baseHealthScale>
 			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_MediumChitin</leatherDef>

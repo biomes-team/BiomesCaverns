@@ -85,7 +85,7 @@
 		<body>BiomesCore_Snail</body>
 		<baseHungerRate>0.605</baseHungerRate>
 		<baseBodySize>0.85</baseBodySize>
-		<baseHealthScale>0.7</baseHealthScale>
+		<baseHealthScale>2</baseHealthScale>
 		<foodType>OmnivoreAnimal</foodType>
 		<packAnimal>false</packAnimal>
 		<wildness>0.75</wildness>

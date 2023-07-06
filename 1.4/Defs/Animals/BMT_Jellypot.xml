@@ -52,7 +52,7 @@
 			<baseHungerRate>0.05</baseHungerRate>
 			<!-- Using a body size smaller than 0.7 should disable the DigOutIfCannotReachMapEdge behaviour. -->
 			<baseBodySize>0.65</baseBodySize>
-			<baseHealthScale>1.7</baseHealthScale>
+			<baseHealthScale>1</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>6</lifeExpectancy>
 			<wildness>0.3</wildness>

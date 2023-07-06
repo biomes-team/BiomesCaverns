@@ -10,9 +10,9 @@
 	  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
 	</statBases>
 	<race>
-	  <!-- <baseBodySize>1.0</baseBodySize> -->
-	  <!-- <baseHungerRate>0.415</baseHungerRate> -->
-	  <!-- <baseHealthScale>0.8</baseHealthScale> -->
+	  <baseBodySize>0.75</baseBodySize>
+	  <baseHungerRate>0.415</baseHungerRate>
+	  <baseHealthScale>0.8</baseHealthScale>
 	  <foodType>OmnivoreAnimal</foodType>
 	  <leatherDef>BMT_Leather_GlacialPlain</leatherDef>
 	  <headPosPerRotation>

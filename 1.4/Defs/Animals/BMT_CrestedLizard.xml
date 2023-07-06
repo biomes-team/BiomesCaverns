@@ -64,7 +64,7 @@
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseBodySize>0.7</baseBodySize>
-			<baseHealthScale>1.5</baseHealthScale>
+			<baseHealthScale>0.7</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
