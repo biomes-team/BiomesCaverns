@@ -81,7 +81,7 @@
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.75</wildness>
+			<wildness>0.60</wildness>
 			<lifeExpectancy>8</lifeExpectancy>
 			<trainability>None</trainability>
 			<roamMtbDays>2.25</roamMtbDays>
