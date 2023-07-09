@@ -20,20 +20,19 @@
 				<optimalTemperature>-50~0</optimalTemperature>
 			</li>
 		</modExtensions>
-        <neverMultiSelect>false</neverMultiSelect>
-        <plant>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
 			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilityMin>0.70</fertilityMin>
-            <wildClusterRadius>5</wildClusterRadius>
+			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
-            <growDays>7</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestWork>200</harvestWork>
-            <harvestYield>16</harvestYield>
+			<growDays>7</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>200</harvestWork>
+			<harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
-			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<harvestedThingDef>BMT_RawDulcis</harvestedThingDef>
 			<sowMinSkill>4</sowMinSkill>
 			 <sowTags>
@@ -42,7 +41,7 @@
 			  </sowTags>
 			<topWindExposure>0</topWindExposure>
 			<wildOrder>2</wildOrder>
-            <neverBlightable>false</neverBlightable>
+			<neverBlightable>false</neverBlightable>
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisImmature</immatureGraphicPath>
 			<leaflessGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisHarvested</leaflessGraphicPath>
 			<visualSizeRange>0.5~1.3</visualSizeRange>
