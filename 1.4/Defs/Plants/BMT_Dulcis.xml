@@ -33,6 +33,7 @@
 			<harvestWork>200</harvestWork>
 			<harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.1</harvestAfterGrowth>
 			<harvestedThingDef>BMT_RawDulcis</harvestedThingDef>
 			<sowMinSkill>4</sowMinSkill>
 			 <sowTags>
