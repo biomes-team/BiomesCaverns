@@ -216,13 +216,6 @@
 				<hatcherDaystoHatch>8</hatcherDaystoHatch>
 				<hatcherPawn>BMT_MetalloSnail</hatcherPawn>
 			</li>
-			<li Class="CompProperties_Spawner">
-				<thingToSpawn>ChunkSlagSteel</thingToSpawn>
-				<spawnCount>1</spawnCount>
-				<spawnIntervalRange>6~12</spawnIntervalRange>
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
-				<saveKeysPrefix>slag</saveKeysPrefix>
-			</li>
 		</comps>
 	</ThingDef>
 
