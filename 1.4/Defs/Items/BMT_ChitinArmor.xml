@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>BMT_Apparel_ChitinLightArmor</defName>
-		<label>chitin armor</label>
+		<label>chitin light armor</label>
 		<description>Overlapping chitin plates of armor olny covering shoulders and legs.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
@@ -61,7 +61,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -76,7 +76,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>BMT_Apparel_ChitinMediumArmor</defName>
-		<label>chitin armor</label>
+		<label>chitin medium armor</label>
 		<description>Overlapping chitin plates of armor covering the entire body from neck to feet, without shoulders.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
@@ -136,7 +136,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -151,7 +151,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>BMT_Apparel_ChitinHeavyArmor</defName>
-		<label>chitin armor</label>
+		<label>chitin heavy armor</label>
 		<description>Overlapping chitin plates of armor covering the entire body from neck to feet.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Apparel/ChitinHeavyArmor/ChitinHeavyArmor</texPath>
@@ -211,7 +211,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -224,7 +224,7 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="ApparelBase">
 		<defName>BMT_Apparel_ChitinFullArmor</defName>
 		<label>chitin full armor</label>
 		<description>Overlapping chitin plates of armor covering the entire body from neck to feet. Thick chitin plates offer more protection, but at the cost of mobility.</description>
@@ -284,18 +284,6 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>10</Crafting>
-			</skillRequirements>
-			<recipeUsers>
-				<li>CraftingSpot</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
 				<li>
