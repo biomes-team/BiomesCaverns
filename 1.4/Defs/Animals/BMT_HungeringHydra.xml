@@ -16,7 +16,7 @@
         </statBases>
         <race>
             <body>BMT_QuadrupedAnimalWithPawsTailAndThreeHeads</body>
-            <leatherDef>BMT_DinoHideHeavy</leatherDef>
+            <leatherDef>Leather_Lizard</leatherDef>
             <herdAnimal>false</herdAnimal>
             <baseBodySize>5.5</baseBodySize>
             <baseHealthScale>8</baseHealthScale>
