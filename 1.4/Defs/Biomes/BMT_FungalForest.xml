@@ -162,6 +162,12 @@
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_FungalCavern>100</BMT_FungalCavern>
+			<DryThunderstorm>0</DryThunderstorm>
+			<FoggyRain>0</FoggyRain>
+			<Rain>0</Rain>
+			<RainyThunderstorm>0</RainyThunderstorm>
+			<SnowGentle>0</SnowGentle>
+			<SnowHard>0</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
 
