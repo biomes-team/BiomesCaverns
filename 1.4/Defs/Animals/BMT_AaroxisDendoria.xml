@@ -401,12 +401,12 @@
         </graphicData>
         <statBases>
             <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+            <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.15</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
             <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>2</MarketValue>
+            <MarketValue>4</MarketValue>
             <Mass>0.01</Mass>
             <Flammability>0.9</Flammability>
             <DeteriorationRate>4</DeteriorationRate>

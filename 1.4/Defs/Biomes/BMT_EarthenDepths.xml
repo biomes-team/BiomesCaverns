@@ -81,7 +81,7 @@
 		<soundsAmbient>
 			<li>BMT_Ambient_FungalForest</li>
 		</soundsAmbient>
-		<diseaseMtbDays>40</diseaseMtbDays>
+		<diseaseMtbDays>120</diseaseMtbDays>
 		<diseases>
 			<li>
 				<diseaseInc>BMT_Disease_ThermophileMechanites</diseaseInc>

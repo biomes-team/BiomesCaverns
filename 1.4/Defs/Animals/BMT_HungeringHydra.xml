@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="AnimalThingBase">
-        <defName>BMT_HungeringHydra</label>
+        <defName>BMT_HungeringHydra</defName>
         <description>With three heads and just as many stomachs, this massive ravenous beast almost constantly scours cave systems for food. They are protected by strong natural armor and their razor sharp teeth, with any injuries they do sustain healing rapidly.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
