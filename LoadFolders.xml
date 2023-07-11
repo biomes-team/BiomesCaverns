@@ -14,6 +14,7 @@
 		<li IfModActive="sarg.magicalmenagerie">1.4/Mods/AlphaMythology</li>
 		<li IfModActive="VanillaExpanded.VBrewE">1.4/Mods/VanillaBrewingExpanded</li>
 		<li IfModActive="vanillaexpanded.backgrounds">1.4/Mods/VBgE</li>
+		<li IfModActive="VanillaExpanded.HelixienGas">1.4/Mods/VanillaHelixienGasExpanded</li>
 		<li IfModActive="vanillaexpanded.vcef">1.4/Mods/VFE</li>
 	</v1.4>
 </loadFolders>
