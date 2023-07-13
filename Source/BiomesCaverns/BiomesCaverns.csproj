@@ -51,6 +51,7 @@
     <Compile Include="GameCondition_SporeCloud.cs" />
     <Compile Include="GenSteps\GenStep_ClearCavernCenter.cs" />
     <Compile Include="GenSteps\ScattererValidator_RoughRockBuildable.cs" />
+    <Compile Include="Incidents\IncidentWorker_HungeringHydra.cs" />
     <Compile Include="IncidentWorker_ThrumbungusPasses.cs" />
     <Compile Include="Patches\Building_PodLauncher_GetGizmos_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />

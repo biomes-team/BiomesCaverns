@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<IncidentDef>
+		<defName>BMT_HungeringHydraIncident</defName>
+		<label>hungering hydras</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>BiomesCaverns.Incidents.IncidentWorker_HungeringHydra</workerClass>
+		<baseChance>0.15</baseChance>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+	</IncidentDef>
+</Defs>

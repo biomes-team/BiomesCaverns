@@ -1,164 +1,166 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="AnimalThingBase">
-        <defName>BMT_HungeringHydra</defName>
-        <description>With three heads and just as many stomachs, this massive ravenous beast almost constantly scours cave systems for food. They are protected by strong natural armor and their razor sharp teeth, with any injuries they do sustain healing rapidly.</description>
-        <statBases>
-            <MoveSpeed>5</MoveSpeed>
-            <MarketValue>2500</MarketValue>
-            <ComfyTemperatureMin>-70</ComfyTemperatureMin>
-            <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_HungeringHydra</defName>
+		<label>hungering hydra</label>
+		<description>With three heads and just as many stomachs, this massive ravenous beast almost constantly scours cave systems for food. They are protected by strong natural armor and their razor sharp teeth, with any injuries they do sustain healing rapidly.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>2500</MarketValue>
+			<ComfyTemperatureMin>-70</ComfyTemperatureMin>
+			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<FilthRate>18</FilthRate>
 			<CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
-            <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-        </statBases>
-        <race>
-            <body>BMT_QuadrupedAnimalWithPawsTailAndThreeHeads</body>
-            <leatherDef>Leather_Lizard</leatherDef>
-            <herdAnimal>false</herdAnimal>
-            <baseBodySize>5.5</baseBodySize>
-            <baseHealthScale>8</baseHealthScale>
-            <baseHungerRate>0.60</baseHungerRate>
-            <foodType>OmnivoreRoughAnimal</foodType>
-            <predator>true</predator>
-            <maxPreyBodySize>5</maxPreyBodySize>
-            <wildness>0.99</wildness>
-            <lifeExpectancy>20</lifeExpectancy>
-            <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <trainability>Advanced</trainability>
-            <lifeStageAges>
-                <li>
-                    <def>AnimalBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>AnimalJuvenile</def>
-                    <minAge>0.6</minAge>
-                </li>
-                <li>
-                    <def>AnimalAdult</def>
-                    <minAge>1.3</minAge>
-                    <soundWounded>BMT_TRex_Wounded</soundWounded>
-                    <soundDeath>BMT_TRex_Death</soundDeath>
-                    <soundCall>BMT_TRex_Call</soundCall>
-                    <soundAngry>BMT_TRex_Angry</soundAngry>
-                </li>
-            </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-        </race>
-        <uiIconScale>4</uiIconScale>
-        <comps>
-            <li Class="CompProperties_EggLayer">
-                <eggFertilizedDef>BMT_HydraEggFertilized</eggFertilizedDef>
-                <eggFertilizationCountMax>2</eggFertilizationCountMax>
-                <eggLayIntervalDays>20</eggLayIntervalDays>
-                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-                <eggCountRange>1~2</eggCountRange>
-            </li>
-        </comps>
-        <tools>
-            <li>
-                <label>left claws</label>
-                <capacities>
-                    <li>Scratch</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>BMT_FrontLeftClaws</linkedBodyPartsGroup>
-                <chanceFactor>0.3</chanceFactor>
-            </li>
-            <li>
-                <label>right claws</label>
-                <capacities>
-                    <li>Scratch</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>BMT_FrontRightClaws</linkedBodyPartsGroup>
-                <chanceFactor>0.3</chanceFactor>
-            </li>
-            <li>
-                <label>left foot</label>
-                <capacities>
-                    <li>Scratch</li>
-                </capacities>
-                <power>16</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>BMT_RearLeftClaw</linkedBodyPartsGroup>
-                <chanceFactor>0.5</chanceFactor>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>6</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
-            <li>
-                <label>right foot</label>
-                <capacities>
-                    <li>Scratch</li>
-                </capacities>
-                <power>16</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>BMT_RearRightClaw</linkedBodyPartsGroup>
-                <chanceFactor>0.5</chanceFactor>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>6</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
-            <li>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>40</power>
-                <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-                <!--chanceFactor>0.7</chanceFactor-->
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>14</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
-            <li>
-                <label>head</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>14</power>
-                <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-                <chanceFactor>0.2</chanceFactor>
-            </li>
-        </tools>
-        <tradeTags>
-            <li>AnimalFighter</li>
-            <li>AnimalUncommon</li>
-        </tradeTags>
-    </ThingDef>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+		</statBases>
+		<race>
+			<body>BMT_QuadrupedAnimalWithPawsTailAndThreeHeads</body>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>5.5</baseBodySize>
+			<baseHealthScale>8</baseHealthScale>
+			<baseHungerRate>0.60</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<predator>true</predator>
+			<maxPreyBodySize>5</maxPreyBodySize>
+			<wildness>0.99</wildness>
+			<lifeExpectancy>20</lifeExpectancy>
+			<manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<trainability>Advanced</trainability>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.6</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>1.3</minAge>
+					<soundWounded>Pawn_Iguana_Wounded</soundWounded>
+					<soundDeath>Pawn_Iguana_Death</soundDeath>
+					<soundCall>Pawn_Iguana_Call</soundCall>
+					<soundAngry>Pawn_Iguana_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<uiIconScale>4</uiIconScale>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_HungeringHydraEggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<!--
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>BMT_FrontLeftClaws</linkedBodyPartsGroup>
+				<chanceFactor>0.3</chanceFactor>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>BMT_FrontRightClaws</linkedBodyPartsGroup>
+				<chanceFactor>0.3</chanceFactor>
+			</li>
+			<li>
+				<label>left foot</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>BMT_RearLeftClaw</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right foot</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>BMT_RearRightClaw</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			-->
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<!--chanceFactor>0.7</chanceFactor-->
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
+	</ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase">
-        <defName>BMT_HungeringHydra</defName>
-        <label>three-headed hydra</label>
-        <race>BMT_HungeringHydra</race>
-        <combatPower>360</combatPower>
-        <wildGroupSize>2~4</wildGroupSize>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_HungeringHydra</defName>
+		<label>hungering hydra</label>
+		<race>BMT_HungeringHydra</race>
+		<combatPower>360</combatPower>
+		<wildGroupSize>2~4</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -194,30 +196,28 @@
 					<drawSize>4.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
-        </lifeStages>
-    </PawnKindDef>
+		</lifeStages>
+	</PawnKindDef>
 
-
-
-    <ThingDef ParentName="EggFertBase">
-        <defName>BMT_HungeringHydra</defName>
-        <label>hydra egg (fert.)</label>
-        <description>A fertilized hydra egg. If all goes well, it should hatch into a baby hydra. It can be eaten raw, but it's much better cooked.</description>
-        <graphicData>
-            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-            <color>(104,118,103)</color>
-            <drawSize>1.2</drawSize>
-        </graphicData>
-        <statBases>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_HungeringHydraEggFertilized</defName>
+		<label>hungering hydra egg (fert.)</label>
+		<description>A fertilized hydra egg. If all goes well, it should hatch into a baby hydra. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(104,118,103)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
 			<Nutrition>1.375</Nutrition>
-            <MarketValue>100</MarketValue>
-        </statBases>
-        <comps>
-            <li Class="CompProperties_Hatcher">
-                <hatcherDaystoHatch>12</hatcherDaystoHatch>
-                <hatcherPawn>BMT_HungeringHydra</hatcherPawn>
-            </li>
-        </comps>
-    </ThingDef>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12</hatcherDaystoHatch>
+				<hatcherPawn>BMT_HungeringHydra</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>
