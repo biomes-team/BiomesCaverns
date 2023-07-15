@@ -29,5 +29,11 @@
 			<neverBlightable>true</neverBlightable>
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 		</plant>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(183,240,239)</glowColor>
+      </li>
+    </comps>
 	</ThingDef>
 </Defs>

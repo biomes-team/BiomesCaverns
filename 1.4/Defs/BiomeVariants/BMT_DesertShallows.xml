@@ -46,7 +46,7 @@
 
         <applyToCaves>true</applyToCaves>
 
-        <animalDensity>3</animalDensity>
+        <animalDensity>3.5</animalDensity>
         <plantDensity>1</plantDensity>
         <wildPlantRegrowDays>27</wildPlantRegrowDays>
 
