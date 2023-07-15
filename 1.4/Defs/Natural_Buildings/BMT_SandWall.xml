@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="RockBase">
 		<defName>BMT_SandWall</defName>
-		<label>condensed sand wall</label>
+		<label>condensed sand</label>
 		<description>A wall of condensed sand.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/condensed_sand_atlas</texPath>
@@ -18,31 +18,100 @@
 			<isResourceRock>false</isResourceRock>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
-			<mineableThing>BMT_Sand</mineableThing>
-			<mineableYield>50</mineableYield>
+			<naturalTerrain>Sand</naturalTerrain>
+			<mineableThing>BMT_ChunkSand</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<!-- <mineableYield>50</mineableYield> -->
 		</building>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+				<offset>0.35</offset>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="RockBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_LightSandWall</defName>
-		<label>condensed sand wall</label>
-		<description>A wall of condensed sand.</description>
+		<label>soft sand wall</label>
+		<description>An artificial wall created using soft sand.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/light_condensed_sand_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
 		</graphicData>
+		<!-- ToDo use the correct menu icon. See issue #61 -->
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>80</WorkToBuild>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<blockLight>true</blockLight>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<filthLeaving>Filth_Sand</filthLeaving>
+		<costList>
+			<BMT_Sand>10</BMT_Sand>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<uiOrder>2002</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
 		<building>
-			<isResourceRock>false</isResourceRock>
-			<isNaturalRock>false</isNaturalRock>
-			<claimable>false</claimable>
-			<mineableThing>BMT_Sand</mineableThing>
-			<mineableYield>50</mineableYield>
+			<paintable>true</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<!-- ToDo use the correct blueprint atlas. See issue #61 -->
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+			</relatedBuildCommands>
 		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">

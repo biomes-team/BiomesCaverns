@@ -9,6 +9,11 @@
 			<Nutrition>0.2</Nutrition>
 			<Flammability>0.35</Flammability>
 		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<optimalTemperature>-10~60</optimalTemperature>
+			</li>
+		</modExtensions>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/MortalMorel</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -22,7 +27,7 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<growDays>10</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestWork>1000</harvestWork>
+			<harvestWork>400</harvestWork>
 			<harvestYield>1</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MedicineFungal</harvestedThingDef>

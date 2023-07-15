@@ -115,7 +115,7 @@
         <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
         <listOrder>100</listOrder>
         <overdoseSeverityOffset>0.25~0.45</overdoseSeverityOffset>
-        <largeOverdoseChance>0.0001</largeOverdoseChance>
+        <largeOverdoseChance>0</largeOverdoseChance>
       </li>
 		</comps>
 		<allowedArchonexusCount>20</allowedArchonexusCount>
@@ -192,12 +192,12 @@
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
     <costList>
-      <BMT_JadeGlints>10</BMT_JadeGlints>
+      <BMT_JadeGlints>8</BMT_JadeGlints>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Psychite</chemical>
-        <addictiveness>0.05</addictiveness>
+        <addictiveness>0.01</addictiveness>
         <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>
         <isCombatEnhancingDrug>true</isCombatEnhancingDrug>

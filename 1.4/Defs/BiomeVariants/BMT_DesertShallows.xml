@@ -29,8 +29,16 @@
       </anyOf>
     </worldTileConditions>
 
+    <worldTileOverrides>
+      <stoneTypes operation="add">
+        <li>BMT_SandWall</li>
+      </stoneTypes>
+    </worldTileOverrides>
+
     <layers>
       <li>
+
+        <id>inside</id>
 
         <mapGridConditions>
           <roof>RoofRockThick</roof>
@@ -38,20 +46,24 @@
 
         <applyToCaves>true</applyToCaves>
 
-        <animalDensity>3</animalDensity>
+        <animalDensity>3.5</animalDensity>
         <plantDensity>1</plantDensity>
         <wildPlantRegrowDays>27</wildPlantRegrowDays>
 
         <wildPlants operation="replace">
 
           <!-- ground cover -->
-
+			<BMT_CavernMycelium>0.6</BMT_CavernMycelium>
           <!-- mid sized -->
-
+			<BMT_Wheelshroom>0.2</BMT_Wheelshroom>
+			<BMT_WatOrbs>0.1</BMT_WatOrbs>
+			<BMT_BloomingCactus>0.2</BMT_BloomingCactus>
+			<BMT_GlowingSucculent>0.05</BMT_GlowingSucculent>
           <!-- trees -->
-
+			<BMT_Dishcap>0.5</BMT_Dishcap>
           <!-- other harvestable -->
-
+			<BMT_JuiceCactus>0.1</BMT_JuiceCactus>
+			<BMT_DulcisPlant>0.05</BMT_DulcisPlant>
           <!-- hydrophytes -->
 
           <!-- special -->
@@ -61,12 +73,43 @@
         <wildAnimals operation="replace">
 
           <!-- herbivores -->
-
+		    <BMT_Pillbug>0.1</BMT_Pillbug>
+			<BMT_CaveCricket>0.2</BMT_CaveCricket>
+			<BMT_CrestedLizard>0.1</BMT_CrestedLizard>
+			<BMT_MaceDrake>0.2</BMT_MaceDrake>
+			<BMT_SandLeaper>0.4</BMT_SandLeaper>
+			<BMT_SandyToad>0.3</BMT_SandyToad>
+			<BMT_Stoneback>0.25</BMT_Stoneback>
+			<BMT_PodWorm>0.01</BMT_PodWorm>
+			<BMT_ChemSnail>0.025</BMT_ChemSnail>
+			
           <!-- predators -->
-
+			<BMT_Diggerpede>0.2</BMT_Diggerpede>
+			<BMT_CactusCrab>0.1</BMT_CactusCrab>
+			
           <!-- omnivore -->
-
+			<BMT_Xyrion>0.1</BMT_Xyrion>
+			
         </wildAnimals>
+
+      </li>
+
+      <li>
+
+        <id>outside</id>
+
+        <mapGridConditions>
+          <roof>Unroofed</roof>
+        </mapGridConditions>
+
+        <terrainOverrides>
+          <modifier>
+            <conditions>
+              <terrain>Gravel</terrain>
+            </conditions>
+            <value>Sand</value>
+          </modifier>
+        </terrainOverrides>
 
       </li>
     </layers>

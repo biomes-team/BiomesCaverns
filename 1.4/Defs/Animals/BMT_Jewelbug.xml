@@ -123,10 +123,25 @@
 		<race>BMT_Jewelbug</race>
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
+		<alternateGraphicChance>1.0</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>BMT_Caverns/Things/Animal/Jewelbug/Blue/Jewelbug</texPath>
+			</li>
+			<!-- <li> -->
+				<!-- <texPath>BMT_Caverns/Things/Animal/Jewelbug/Red/Jewelbug</texPath> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <texPath>BMT_Caverns/Things/Animal/Jewelbug/Green/Jewelbug</texPath> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <texPath>BMT_Caverns/Things/Animal/Jewelbug/Yellow/Jewelbug</texPath> -->
+			<!-- </li> -->
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Blue/Jewelbug</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -136,7 +151,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Blue/Jewelbug</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -146,7 +161,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Jewelbug</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Blue/Jewelbug</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>

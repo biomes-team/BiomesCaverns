@@ -5,6 +5,7 @@
 		<value>
 			<placeWorkers>
 				<li>PlaceWorker_FuelingPort</li>
+				<li>BiomesCaverns.PlaceWorkers.NotUnderRoof</li>
 			</placeWorkers>
 		</value>
 	</Operation>

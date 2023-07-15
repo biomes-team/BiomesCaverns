@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+	<defName>BMT_FungalPowerGenerator</defName>
+	<label>powergen fungus</label>
+	<description>Produces power using special fungus planted near. The efficiency depends on the amount of fungus.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>BMT_PowerFungus</ThingDef>
+	</descriptionHyperlinks>
+	<thingClass>Building</thingClass>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<soundImpactDefault>MeleeHit_Wood</soundImpactDefault>
+	<graphicData>
+	  <!-- <texPath>BMT_Caverns/Things/TEMPLATE_TEST</texPath> -->
+	  <texPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowergenFungusMature</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(2,2)</drawSize>
+	  <drawOffset>(0,0,0.35)</drawOffset>
+	  <drawRotated>false</drawRotated>
+	  <allowFlip>false</allowFlip>
+	  <shadowData>
+		<volume>(0.3, 0.5, 0.3)</volume>
+		<offset>(0,0,-0.23)</offset>
+	  </shadowData>
+	  <damageData>
+		<rect>(0.2,0.2,0.6,0.6)</rect>
+	  </damageData>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<uiIconScale>0.5</uiIconScale>
+	<blockWind>true</blockWind>
+	<fillPercent>1.0</fillPercent>
+	<castEdgeShadows>false</castEdgeShadows>
+	<rotatable>false</rotatable>
+	<statBases>
+	  <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToBuild>3100</WorkToBuild>
+	  <Flammability>0.5</Flammability>
+	  <Beauty>-20</Beauty>
+	</statBases>
+	<tickerType>Normal</tickerType>
+	<canOverlapZones>false</canOverlapZones>
+	<size>(1,1)</size>
+	<building>
+	  <destroySound>Harvest_Tree_Finish</destroySound>
+	</building>
+	<costList>
+	  <RawFungus>220</RawFungus>
+	  <BMT_MushroomLog>66</BMT_MushroomLog>
+	</costList>
+	<comps>
+	  <li Class="CompProperties_Power">
+		<!-- Power production depends on plants -->
+		<compClass>BiomesCore.CompPowerPlant_PowerFungus</compClass>
+		<basePowerConsumption>-20</basePowerConsumption>
+		<transmitsPower>true</transmitsPower>
+		<!-- <soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower> -->
+	  </li>
+	  <!-- All plants are attached through facilities. Facility is recalculated when planting new plants, as well as during a save load -->
+	  <li Class="CompProperties_AffectedByFacilities">
+		<!-- Power production depends on plants -->
+		<!-- The potential of plants depends on their lifespan -->
+		<linkableFacilities>
+		  <li>BMT_PowerFungus</li>
+		</linkableFacilities>
+	  </li>
+	  <!-- <li Class="CompProperties_Flickable" /> -->
+	  <li Class="CompProperties_Glower">
+		<glowRadius>3</glowRadius>
+		<glowColor>(217,112,33,0)</glowColor>
+	  </li>
+	  <!-- <li Class="CompProperties_HeatPusher"> -->
+		<!-- <compClass>CompHeatPusherPowered</compClass> -->
+		<!-- <heatPerSecond>6</heatPerSecond> -->
+	  <!-- </li> -->
+	  <!-- <li Class="CompProperties_Breakdownable"/> -->
+	</comps>
+	<!-- <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> -->
+	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+	<designationCategory>Power</designationCategory>
+	<uiOrder>2100</uiOrder>
+	<designationHotKey>Misc3</designationHotKey>
+	<constructEffect>ConstructMetal</constructEffect>
+	<researchPrerequisites>
+	  <li>Electricity</li>
+	  <li>BMT_AdvancedFungi</li>
+	</researchPrerequisites>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+</Defs>

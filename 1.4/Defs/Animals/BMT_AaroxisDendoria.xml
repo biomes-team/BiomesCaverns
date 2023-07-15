@@ -201,7 +201,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>0.1</power>
+				<power>1</power>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -237,7 +237,7 @@
 		<label>aaroxis dendoria</label>
 		<description>Uniquely engineered for life in an underground environment, this moth has been altered to produce silk even in adulthood, at the cost of remaining wingless.</description>
 		<statBases>
-			<MoveSpeed>0.8</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>110</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -382,7 +382,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>61</MarketValue>
+			<MarketValue>50</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -401,12 +401,12 @@
         </graphicData>
         <statBases>
             <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+            <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.15</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
             <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>2</MarketValue>
+            <MarketValue>4</MarketValue>
             <Mass>0.01</Mass>
             <Flammability>0.9</Flammability>
             <DeteriorationRate>4</DeteriorationRate>

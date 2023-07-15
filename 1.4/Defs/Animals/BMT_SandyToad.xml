@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_SandyToad</defName>
+		<label>sandy toad</label>
+		<description>The sandy toad is native to the cave systems below deserts on the Rim. It tends to be preyed upon quite easily but many cave dwellers have taken a shine to it as a pet.</description>
+		<statBases>
+			<MoveSpeed>2.1</MoveSpeed>
+			<SwimSpeed MayRequire="biomesteam.biomesislands">5.6</SwimSpeed>
+			<MarketValue>50</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggSandyToadFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>5~6</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>QuadrupedAnimalWithPaws</body>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHealthScale>0.35</baseHealthScale>
+			<baseHungerRate>0.2</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>BMT_Leather_Amphibian</leatherDef>
+			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
+			<wildness>0</wildness>
+			<trainability>None</trainability>
+			<roamMtbDays>5</roamMtbDays>
+			<mateMtbHours>8</mateMtbHours>
+			<lifeExpectancy>10</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.12</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_Iguana_Wounded</soundWounded>
+					<soundDeath>Pawn_Iguana_Death</soundDeath>
+					<soundCall>Pawn_Iguana_Call</soundCall>
+					<soundAngry>Pawn_Iguana_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_SandyToad</defName>
+		<label>sandy toad</label>
+		<race>BMT_SandyToad</race>
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>sandy toad tadpole</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/SandyToad/SandyToad</texPath>
+					<drawSize>0.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GoetoToad/Dessicated_GoetoToad</texPath>
+					<drawSize>0.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>sandy toad froglet</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/SandyToad/SandyToad</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GoetoToad/Dessicated_GoetoToad</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/SandyToad/SandyToad</texPath>
+					<drawSize>0.87</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.05)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GoetoToad/Dessicated_GoetoToad</texPath>
+					<drawSize>0.87</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSandyToadFertilized</defName>
+		<label>sandy toad egg (fert.)</label>
+		<description>A fertilized sandy toad egg. If all goes well, it should hatch into a sandy toad. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_SandyToad</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

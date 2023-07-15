@@ -5,7 +5,7 @@
 		<defName>BMT_WoodPlankFloorMushroom</defName>
 		<label>mushroom floor</label>
 		<renderPrecedence>250</renderPrecedence>
-		<description>Mushroom plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<description>Mushroom plank flooring for that warm, homey feeling. It is quick to lay and not flammable.</description>
 		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
 		<isPaintable>true</isPaintable>
 		<burnedDef>BurnedWoodPlankFloor</burnedDef>
@@ -384,5 +384,32 @@
     <researchPrerequisites>
       <li>BMT_AdvancedFungi</li>
     </researchPrerequisites>
+	</TerrainDef>
+	
+		<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_GlacialIce</defName>
+		<label>glacial ice</label>
+		<texturePath>BMT_Caverns/Terrains/GlacialIce</texturePath>
+		<pollutedTexturePath>BMT_Caverns/Terrains/GlacialIce</pollutedTexturePath>
+		<isPaintable>false</isPaintable>
+		<edgeType>FadeRough</edgeType>
+			<renderPrecedence>350</renderPrecedence>
+			<pathCost>14</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<takeFootprints>false</takeFootprints>
 	</TerrainDef>
 </Defs>

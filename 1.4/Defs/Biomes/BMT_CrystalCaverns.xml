@@ -141,9 +141,16 @@
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_Calm>100</BMT_Calm>
+			<DryThunderstorm>0</DryThunderstorm>
+			<FoggyRain>0</FoggyRain>
+			<Rain>0</Rain>
+			<RainyThunderstorm>0</RainyThunderstorm>
+			<SnowGentle>0</SnowGentle>
+			<SnowHard>0</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- ground cover -->
+			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
 			<BMT_Gleamtip>1.0</BMT_Gleamtip>
 			
 			<!-- mid sized -->
@@ -182,6 +189,7 @@
 			<BMT_AaroxisDendoriaLarvae>0.05</BMT_AaroxisDendoriaLarvae>
 			<BMT_BovineBeetle>0.1</BMT_BovineBeetle>
 			<BMT_BovineBeetleLarvae>0.05</BMT_BovineBeetleLarvae>
+			<BMT_ChemSnail>0.05</BMT_ChemSnail>
 			<BMT_CrystalBeetleLarvae>0.05</BMT_CrystalBeetleLarvae>
 			<BMT_CrystalBeetle>0.05</BMT_CrystalBeetle>
 			<BMT_Jewelbug>0.1</BMT_Jewelbug>
@@ -194,6 +202,7 @@
 			<BMT_ShatterjawBeetle>0.1</BMT_ShatterjawBeetle>
 			<BMT_FacetMothLarvae>0.05</BMT_FacetMothLarvae>
 			<BMT_FacetMoth>0.05</BMT_FacetMoth>
+			<BMT_PodWorm>0.0001</BMT_PodWorm>
 			<BMT_CrystalFairyMole>0.025</BMT_CrystalFairyMole>
 			<BMT_MossBeetle>0.1</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>

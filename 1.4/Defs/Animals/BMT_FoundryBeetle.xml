@@ -384,7 +384,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>BMT_ShatterjawBeetleLarvae</hatcherPawn>
+				<hatcherPawn>BMT_FoundryBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

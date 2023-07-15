@@ -100,6 +100,7 @@
 					<Hare>0.2</Hare>
 					<Megasloth>0.1</Megasloth>
 					<Rat>0.3</Rat>
+					<BMT_PodWorm>0.0001</BMT_PodWorm>
 					<BMT_Mole>0.2</BMT_Mole>
 					<BMT_DarkAxolotl>0.3</BMT_DarkAxolotl>
 					<BMT_BrownBat MayRequire="biomesteam.biomesislands">0.4</BMT_BrownBat>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================== Insects ================== -->
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>BMT_FungalMantis</defName>
+    <label>fungal mimic mantis</label>
+    <description>A native to the fungal forest caverns, this mantis is larger than a person. It uses its fungus-covered carapace as camouflage while hunting. Unlike other mantises, they rely on their attacks injecting anesthetic and poisonous chemicals into prey.</description>
+    <statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <MarketValue>150</MarketValue>
+	  <FilthRate>7</FilthRate>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li>
+        <label>mandibles</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <chanceFactor>0.6</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>left scythe</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BMT_FrontLeftScythe</linkedBodyPartsGroup>
+          <extraMeleeDamages>
+            <li>
+              <def>BMT_ToxicSpores</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+      </li>
+      <li>
+        <label>right scythe</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BMT_FrontRightScythe</linkedBodyPartsGroup>
+          <extraMeleeDamages>
+            <li>
+              <def>BMT_StunningSpores</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BMT_FungalMantisEggFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>20</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>1</min>
+          <max>5</max>
+        </eggCountRange>
+      </li>
+    </comps>
+    <race>
+      <body>BMT_MantisLike</body>
+      <predator>true</predator>
+      <herdAnimal>false</herdAnimal>
+      <maxPreyBodySize>2.3</maxPreyBodySize>
+      <petness>0.5</petness>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>2</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <trainability>Advanced</trainability>
+      <wildness>0.95</wildness>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+	  <leatherDef>BMT_MediumChitin</leatherDef>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>BMT_EusocialInsectNymphFirst</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>BMT_EusocialInsectNymphSecond</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>BMT_Pawn_Mantis_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+	<butcherProducts>
+       <BMT_FungalMantisClaw>2</BMT_FungalMantisClaw>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+    </modExtensions>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_FungalMantis</defName>
+    <label>fungal mimic mantis</label>
+    <race>BMT_FungalMantis</race>
+    <combatPower>160</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>
+      <min>2</min>
+      <max>3</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FungalMantis/FungalMantis</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.2)</volume>
+            <offset>(-0.1,0,-0.4)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FungalMantis/Dessicated_FungalMantis</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FungalMantis/FungalMantis</texPath>
+          <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.35)</volume>
+            <offset>(-0.15,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FungalMantis/Dessicated_FungalMantis</texPath>
+          <drawSize>2.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FungalMantis/FungalMantis</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.5)</volume>
+            <offset>(-0.2,0,-0.6)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/FungalMantis/Dessicated_FungalMantis</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_FungalMantisEggFertilized</defName>
+		<label>fungal mimic mantis egg (fert.)</label>
+		<description>A fertilized fungal mantis egg. If all goes well, it should hatch into a mantis larvae. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(209,134,70)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_FungalMantis</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>BMT_FungalMantisClaw</defName>
+		<label>fungal mimic mantis claw</label>
+		<description>A claw from a fungal mimic mantis. It's priceless in most markets. This is a true trophy and needed for special weapons.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/FungalMantisClaw/FungalMantisClaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<equippedAngleOffset>-40</equippedAngleOffset>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>10</stackLimit>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+						<extraMeleeDamages>
+						  <li>
+							<def>BMT_StunningSpores</def>
+							<amount>2</amount>
+							<chance>0.25</chance>
+						  </li>
+						</extraMeleeDamages>
+			</li>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+						<extraMeleeDamages>
+						  <li>
+							<def>BMT_ToxicSpores</def>
+							<amount>2</amount>
+							<chance>0.25</chance>
+						  </li>
+						</extraMeleeDamages>
+			</li>
+		</tools>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+</Defs>

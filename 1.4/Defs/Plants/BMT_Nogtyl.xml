@@ -70,9 +70,11 @@
 			<treeCategory>Full</treeCategory>
 			<sowTags Inherit="False">
 				<li MayRequire="vanillaexpanded.vplantsemore">VCE_Aquatic</li>
+				<li>Ground</li>
 			</sowTags>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<interferesWithRoof>false</interferesWithRoof>
 			<harvestTag>Wood</harvestTag>
 			<visualSizeRange>1.5~2.5</visualSizeRange>

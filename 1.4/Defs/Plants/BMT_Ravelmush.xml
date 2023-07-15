@@ -32,6 +32,7 @@
 			<harvestYield>3</harvestYield>
 			<visualSizeRange>0.7~0.9</visualSizeRange>
 			<topWindExposure>0</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>3</wildOrder>

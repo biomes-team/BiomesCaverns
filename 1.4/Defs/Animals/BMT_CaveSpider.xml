@@ -27,7 +27,7 @@
 	  <baseBodySize>4</baseBodySize>
 	  <maxPreyBodySize>4</maxPreyBodySize>
 	  <baseHungerRate>0.05</baseHungerRate>
-	  <baseHealthScale>0.80</baseHealthScale>
+	  <baseHealthScale>8</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_RoyalChitin</leatherDef>
 	  <wildness>0.99</wildness>
@@ -239,7 +239,7 @@
             <categories>
                 <li>Fabric</li>
             </categories>
-			<color>(123,57,57)</color>
+			<color>(189,189,189)</color>
             <commonality>0.20</commonality>
             <statFactors>
                 <Flammability>0.9</Flammability>

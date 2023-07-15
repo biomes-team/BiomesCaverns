@@ -247,7 +247,7 @@
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.27</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<MarketValue>100</MarketValue>
+			<MarketValue>400</MarketValue>
 			<FilthRate>4</FilthRate>
 			<CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
 		</statBases>

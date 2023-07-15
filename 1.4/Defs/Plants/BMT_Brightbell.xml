@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_Brightbell</defName>
-		<label>brightbell</label>
+		<label>shinebell</label>
 		<description>A small pretty mushroom that glows in the dark.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Brightbell</texPath>

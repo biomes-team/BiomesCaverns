@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BiomesCore_CrabThingBase" >
+	<defName>BMT_CactusCrab</defName>
+	<label>cactus crab</label>
+	<description>A smaller relative of the crystal crab, adapted to desert-like underground environments. They grow cacti on their shell for camoflauge and defense. From birth, they find a rock and settle into it as their shell.</description>
+	<statBases>
+	  <MoveSpeed>3.5</MoveSpeed>
+	  <MarketValue>2300</MarketValue>
+	  <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+	  <FilthRate>10</FilthRate>
+	  <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+	  <SwimSpeed MayRequire="biomesteam.biomesislands">4</SwimSpeed>
+	</statBases>
+	<uiIconScale>1.35</uiIconScale>
+	<comps>
+	  <!-- <li Class="CompProperties_Shearable"> -->
+		<!-- <woolDef>Wool</woolDef> -->
+		<!-- <shearIntervalDays>15</shearIntervalDays> -->
+		<!-- <woolAmount>120</woolAmount> -->
+	  <!-- </li> -->
+	</comps>
+	<race>
+	  <canBePredatorPrey>false</canBePredatorPrey>
+	  <baseBodySize>2.4</baseBodySize> 
+	  <predator>true</predator>
+	  <baseHealthScale>1.75</baseHealthScale>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>BMT_GrayChitin</leatherDef>
+	  <meatLabel>cave crab meat</meatLabel>
+	  <trainability>Advanced</trainability>
+	  <packAnimal>false</packAnimal>
+	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+	</race>
+	<tradeTags>
+		<li>AnimalFighter</li>
+		<li>AnimalExotic</li> 
+	</tradeTags>
+
+	<tools>
+		<li>
+			<label>claw</label>
+			<capacities>
+				<li>Cut</li>
+			</capacities>
+			<power>30</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>25</power>
+			<cooldownTime>4</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		</li>
+	</tools>
+  </ThingDef>
+
+	<!-- ============================================================================ -->
+
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CactusCrab</defName>
+		<label>cactus crab</label>
+		<race>BMT_CactusCrab</race>
+		<combatPower>180</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CactusCrab/CactusCrab</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.0</drawSize>
+					<!-- <shaderType>CutoutComplex</shaderType> -->
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CactusCrab/CactusCrab</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.2</drawSize>
+					<!-- <shaderType>CutoutComplex</shaderType> -->
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CactusCrab/CactusCrab</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.5</drawSize>
+					<!-- <shaderType>CutoutComplex</shaderType> -->
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+  	  <ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggCactusCrabFertilized</defName>
+		<label>cactus crab egg (fert.)</label>
+		<description>A fertilized cactus crab egg. If all goes well, it should hatch into a cactus crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.50</Mass>
+			<MarketValue>24.0</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherPawn>BMT_CactusCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> -->
+
+</Defs>

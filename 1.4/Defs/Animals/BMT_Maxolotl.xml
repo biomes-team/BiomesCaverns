@@ -128,8 +128,6 @@
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
 			<li>
-				<label>Maxolotl Larva</label>
-				<labelPlural>Maxolotl Larvae</labelPlural>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Maxolotl/Maxolotl</texPath>
 					<drawSize>1.3</drawSize>

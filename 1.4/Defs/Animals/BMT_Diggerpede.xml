@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_Diggerpede</defName>
+		<label>diggerpede</label>
+		<description>The predatory diggerpede is found below the desert surface, burrowing in the sand and soil faster than most can run. It hunts anything it can lay its mandibles on when it hungers.\n\nDespite being similar to other arthropods, it gives live birth rather than lay eggs.</description>
+		<statBases>
+			<MoveSpeed>5.2</MoveSpeed>
+			<DiggingSpeed MayRequire="biomesteam.biomesislands">9</DiggingSpeed>
+			<!--SandDrillingSpeed MayRequire="biomesteam.biomesislands">4.5</SandDrillingSpeed-->
+			<MarketValue>350</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>20</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<predator>true</predator>
+			<herdAnimal>false</herdAnimal>
+			<body>BeetleLike</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>2.25</baseHealthScale>
+			<baseHungerRate>0.4</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>BMT_MediumChitin</leatherDef>
+			<wildness>0.20</wildness>
+			<trainability>None</trainability>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<roamMtbDays>2</roamMtbDays>
+			<lifeExpectancy>6</lifeExpectancy>
+			<gestationPeriodDays>7</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.5, 1)</li>
+					<li>(2, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>BMT_DiggerBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_DiggerJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>BMT_DiggerAdult</def>
+					<minAge>0.2222</minAge>
+					<soundWounded>Biomes_TruffleMole_Wounded</soundWounded>
+					<soundDeath>Biomes_TruffleMole_Death</soundDeath>
+					<soundCall>Biomes_TruffleMole_Call</soundCall>
+					<soundAngry>Biomes_TruffleMole_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<!--li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+				<defOfBuilding>BMT_MoleHill_Soil</defOfBuilding>
+				<ticksToBuild>1000</ticksToBuild>
+				<maxBuildingsPerMap>20</maxBuildingsPerMap>
+				<acceptedTerrains>
+					<li>SoilRich</li>
+					<li>Soil</li>
+					<li>MossyTerrain</li>
+					<li>MarshyTerrain</li>
+					<li>Gravel</li>
+				</acceptedTerrains>
+			</li-->
+		</comps>
+		<modExtensions>
+			<li Class="TerrainMovement.TerrainMovementPawnRestrictions" MayRequire="biomesteam.biomesislands">
+				<stayOffTerrainTag>Water</stayOffTerrainTag>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Diggerpede</defName>
+		<label>diggerpede</label>
+		<race>BMT_Diggerpede</race>
+		<combatPower>300</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>Diggerpede spawn</label>
+				<labelPlural>Diggerpede spawn</labelPlural>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Diggerpede/Diggerpede</texPath>
+					<drawSize>0.55</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Diggerpede/Dessicated_Diggerpede_east</texPath>
+					<drawSize>0.55</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Diggerpede/Diggerpede</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Diggerpede/Dessicated_Diggerpede_east</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Diggerpede/Diggerpede</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Diggerpede/Dessicated_Diggerpede_east</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

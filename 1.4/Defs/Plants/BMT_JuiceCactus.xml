@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>BMT_JuiceCactus</defName>
+    <label>juice cactus</label>
+    <description>A pretty flowering cactus whose insides are filled with a rather tasty juice.</description>
+	<statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Nutrition>0.25</Nutrition>
+	  <Beauty>2</Beauty>
+	  <BeautyOutdoors>4</BeautyOutdoors>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Plant/JuiceCactus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <!-- <drawSize>1.6</drawSize> -->
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.42)</offset>
+      </shadowData>
+    </graphicData>
+	<selectable>true</selectable>
+	<pathCost>30</pathCost>
+    <ingestible />
+    <plant>
+	  <growMinGlow>0</growMinGlow>
+	  <growOptimalGlow>0</growOptimalGlow>
+      <growDays>3.5</growDays>
+	  <topWindExposure>0.2</topWindExposure>
+      <visualSizeRange>0.6~1.1</visualSizeRange>
+      <wildClusterRadius>8</wildClusterRadius>
+      <wildClusterWeight>170</wildClusterWeight>
+	  <maxMeshCount>4</maxMeshCount>
+	  <wildOrder>2</wildOrder>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestWork>200</harvestWork>
+      <harvestYield>10</harvestYield>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestAfterGrowth>0.25</harvestAfterGrowth>
+	  <harvestedThingDef>BMT_CactusJuice</harvestedThingDef>
+	  <sowMinSkill>4</sowMinSkill>
+			 <sowTags>
+				<li>Ground</li>
+			  </sowTags>
+    </plant>
+  </ThingDef>
+  	 <ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_CactusJuice</defName>
+		<label>cactus juice</label>
+		<description>Juicy flesh from a subterranean cactus. It's surprisingly tasty and filling.</description>
+		<graphicData>
+		  <texPath>BMT_Caverns/Things/Item/Crops/CactusJuice</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1</MarketValue>
+		  <Mass>0.025</Mass>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>16</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+  
+
+</Defs>

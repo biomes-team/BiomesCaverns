@@ -162,6 +162,12 @@
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_FungalCavern>100</BMT_FungalCavern>
+			<DryThunderstorm>0</DryThunderstorm>
+			<FoggyRain>0</FoggyRain>
+			<Rain>0</Rain>
+			<RainyThunderstorm>0</RainyThunderstorm>
+			<SnowGentle>0</SnowGentle>
+			<SnowHard>0</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
 
@@ -222,6 +228,7 @@
 			<BMT_BovineBeetle>0.80</BMT_BovineBeetle>
 			<BMT_BovineBeetleLarvae>0.1</BMT_BovineBeetleLarvae>
 			<BMT_CaveCricket>0.10</BMT_CaveCricket>
+			<BMT_ChemSnail>0.25</BMT_ChemSnail>
 			<BMT_GiantSlug>0.25</BMT_GiantSlug>
 			<BMT_GiantSnail>0.30</BMT_GiantSnail>
 			<BMT_GlowSlug>0.1</BMT_GlowSlug>
@@ -230,6 +237,7 @@
 			<BMT_MossBeetle>0.075</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
 			<BMT_Pillbug>0.4</BMT_Pillbug>
+			<BMT_PodWorm>0.0001</BMT_PodWorm>
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 			<BMT_SonarRabbit>0.1</BMT_SonarRabbit>
 			<BMT_TruffleMole>0.1</BMT_TruffleMole>
@@ -240,9 +248,10 @@
 
 			<!-- predators -->
 			<BMT_FungalFerret>0.025</BMT_FungalFerret>
+			<BMT_FungalMantis>0.05</BMT_FungalMantis>
 			<BMT_MossyFennec>0.10</BMT_MossyFennec>
 			<BMT_CaveSpider>0.005</BMT_CaveSpider>
-			<BMT_Maxolotl>0.5</BMT_Maxolotl>
+			<BMT_Maxolotl>0.3</BMT_Maxolotl>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.1</BMT_BloodropMoth>
 			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.75</BMT_GlowBat>

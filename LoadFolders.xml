@@ -11,8 +11,11 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/DLC/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/DLC/Biotech</li>
 		<li IfModActive="sarg.alphaanimals">1.4/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.magicalmenagerie">1.4/Mods/AlphaMythology</li>
+		<li IfModActive="GonDragon.UINotIncluded">1.4/Mods/UINotIncluded</li>
 		<li IfModActive="VanillaExpanded.VBrewE">1.4/Mods/VanillaBrewingExpanded</li>
 		<li IfModActive="vanillaexpanded.backgrounds">1.4/Mods/VBgE</li>
+		<li IfModActive="VanillaExpanded.HelixienGas">1.4/Mods/VanillaHelixienGasExpanded</li>
 		<li IfModActive="vanillaexpanded.vcef">1.4/Mods/VFE</li>
 	</v1.4>
 </loadFolders>

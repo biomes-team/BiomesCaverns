@@ -17,7 +17,7 @@
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
-			<growDays>1</growDays>
+			<growDays>8</growDays>
 			<dieIfLeafless>false</dieIfLeafless>
 			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
@@ -31,25 +31,25 @@
 			<neverBlightable>true</neverBlightable>
 			<dieIfNoSunlight>false</dieIfNoSunlight>
 			<growMinGlow>0</growMinGlow>
-			<harvestTag Inherit="False"/>
-			<harvestedThingDef Inherit="False"/>
-			<harvestYield Inherit="False"/>
-			<burnedThingDef Inherit="False"/>
-			<smashedThingDef Inherit="False"/>
-			<choppedThingDef Inherit="False"/>
+			<!-- <harvestTag Inherit="False"/> -->
+			<!-- <harvestedThingDef Inherit="False"/> -->
+			<!-- <harvestYield Inherit="False"/> -->
+			<!-- <burnedThingDef Inherit="False"/> -->
+			<!-- <smashedThingDef Inherit="False"/> -->
+			<!-- <choppedThingDef Inherit="False"/> -->
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<dieFromToxicFallout>False</dieFromToxicFallout>
 			<pollution>Any</pollution>
 		</plant>
 		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
+		<!-- <neverMultiSelect>false</neverMultiSelect> -->
 		<minifiedDef>MinifiedTree</minifiedDef>
-		<rotatable>false</rotatable>
+		<!-- <rotatable>false</rotatable> -->
 		<comps>
-			<li MayRequire="Ludeon.RimWorld.Biotech" Class="BiomesCore.CompProperties_PlantPolluteOverTime">
-				<cellsToPollutePerDay>6</cellsToPollutePerDay>
-				<growthProgress>1</growthProgress>
-			</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech" Class="BiomesCore.CompProperties_PlantPolluteOverTime"> -->
+				<!-- <cellsToPollutePerDay>6</cellsToPollutePerDay> -->
+				<!-- <growthProgress>1</growthProgress> -->
+			<!-- </li> -->
 			<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
 				<moteDef>Mote_SkulltopSpores</moteDef>
 				<hediffDef>BMT_HediffSkulltopSpores</hediffDef>
@@ -63,11 +63,12 @@
 				<statDef>ToxicResistance</statDef>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.01~0.99</growingHours>
-			</li>
-		</modExtensions>
+		<!-- Sergkart: I don't understand what this piece of code is for. Skulltop grows well without it. -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl"> -->
+				<!-- <growingHours>0.01~0.99</growingHours> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</ThingDef>
 
 	<!--=============== Puffs ==============-->

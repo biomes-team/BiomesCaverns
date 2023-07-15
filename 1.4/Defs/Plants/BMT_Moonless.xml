@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_MoonlessStripesPlant</defName>
 		<label>moonless stripes</label>
-		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown elsewhere, it requires high heat to do so properly.</description>
+		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown anywhere, it requires high heat to grow properly. Its sturdy layered stalk can be used as a leathery textile.</description>
 		<thingClass>BMT.BiomesPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
@@ -30,7 +30,7 @@
 			<wildClusterRadius>3</wildClusterRadius>
 			<growDays>8</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestWork>1000</harvestWork>
+			<harvestWork>300</harvestWork>
 			<harvestYield>16</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MoonlessSilk</harvestedThingDef>
@@ -47,7 +47,7 @@
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_MoonlessSilk</defName>
-		<label>moonless silk</label>
+		<label>moonless leather</label>
 		<description>Tanned, dried, scraped mushroom layers. A good underground material for making clothes and bags.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Crops/MoonlessSilk</texPath>

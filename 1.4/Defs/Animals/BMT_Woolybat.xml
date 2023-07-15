@@ -9,7 +9,7 @@
 
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_Woolybat</defName>
-	<label>wooly bat</label>
+	<label>woolly bat</label>
 	<description>These large bats have been farmed for their wool-like fur for generations. They were selectively bred to be flightless to make wool gathering easier. Their livable temperature range is shockingly wide.</description>
 	<statBases>
 	  <!-- <BiomesCore_SleepSpeed>99</BiomesCore_SleepSpeed> -->
@@ -24,7 +24,7 @@
 	<race>
 	  <herdAnimal>true</herdAnimal>
 	  <predator>false</predator>
-	  <baseBodySize>2.2</baseBodySize>
+	  <baseBodySize>1.2</baseBodySize>
 	  <baseHealthScale>3.0</baseHealthScale>
 	  <baseHungerRate>0.125</baseHungerRate>
 	  <foodType>VegetarianRoughAnimal</foodType>
@@ -215,12 +215,12 @@
         </graphicData>
         <statBases>
             <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+            <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
             <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>2</MarketValue>
+            <MarketValue>2.7</MarketValue>
             <Mass>0.01</Mass>
             <Flammability>0.9</Flammability>
             <DeteriorationRate>4</DeteriorationRate>

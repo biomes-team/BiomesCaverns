@@ -81,7 +81,7 @@
 		<soundsAmbient>
 			<li>BMT_Ambient_FungalForest</li>
 		</soundsAmbient>
-		<diseaseMtbDays>40</diseaseMtbDays>
+		<diseaseMtbDays>120</diseaseMtbDays>
 		<diseases>
 			<li>
 				<diseaseInc>BMT_Disease_ThermophileMechanites</diseaseInc>
@@ -156,6 +156,12 @@
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_Calm>100</BMT_Calm>
+			<DryThunderstorm>0</DryThunderstorm>
+			<FoggyRain>0</FoggyRain>
+			<Rain>0</Rain>
+			<RainyThunderstorm>0</RainyThunderstorm>
+			<SnowGentle>0</SnowGentle>
+			<SnowHard>0</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- ground cover -->
@@ -190,6 +196,7 @@
 			<BMT_FireSalamander>0.2</BMT_FireSalamander>
 			<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
 			<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
+			<BMT_PodWorm>0.0001</BMT_PodWorm>
 			<BMT_Pillbug>0.2</BMT_Pillbug>
 			<BMT_Woolybat>0.05</BMT_Woolybat>
 			<!-- <BMT_MetalloSnail>0.5</BMT_MetalloSnail> -->

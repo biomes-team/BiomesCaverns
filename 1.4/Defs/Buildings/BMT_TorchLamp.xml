@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="TorchLamp">
+	<defName>BMT_CrystalTorch</defName>
+	<label>crystal torch</label>
+	<description>A specially-treated torch that produces a light over a large area.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Building/CrystalTorch</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<uiIconPath>BMT_Caverns/Things/Building/CrystalTorch/Artboard1</uiIconPath>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<tickerType>Never</tickerType>
+	<statBases>
+	  <Mass>1</Mass>
+	  <WorkToBuild>18000</WorkToBuild>
+	</statBases>
+	<costList>
+	  <BMT_ResourceBlueCrystal>30</BMT_ResourceBlueCrystal>
+	</costList>
+	<thingCategories>
+	  <li>BuildingsMisc</li>
+	</thingCategories>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(154, 207, 246, 0)</glowColor>
+	  </li>
+	</comps>
+	<placeWorkers Inherit="False">
+	  <!-- <li>PlaceWorker_Heater</li> -->
+	  <!-- <li>PlaceWorker_MeditationOffsetBuildingsNear</li> -->
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <ThingDef ParentName="TorchLamp">
+	<defName>BMT_CrystalLamp</defName>
+	<label>crystal lamp</label>
+	<description>A specially-treated lamp that produces a light over a large area.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Building/CrystalLamp</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<uiIconPath>BMT_Caverns/Things/Building/CrystalLamp/Artboard3</uiIconPath>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<tickerType>Never</tickerType>
+	<statBases>
+	  <Mass>1</Mass>
+	  <WorkToBuild>16000</WorkToBuild>
+	</statBases>
+	<costList Inherit="False">
+	  <BMT_ResourceBlueCrystal>40</BMT_ResourceBlueCrystal>
+	</costList>
+	<thingCategories>
+	  <li>BuildingsMisc</li>
+	</thingCategories>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(154, 207, 246, 0)</glowColor>
+	  </li>
+	</comps>
+	<placeWorkers Inherit="False">
+	  <!-- <li>PlaceWorker_Heater</li> -->
+	  <!-- <li>PlaceWorker_MeditationOffsetBuildingsNear</li> -->
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <ThingDef ParentName="TorchLamp">
+	<defName>BMT_GlowGooTorch</defName>
+	<label>glow goo torch</label>
+	<description>A specially-treated torch that produces a light over a large area.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Building/GlowGooLamp</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<uiIconPath>BMT_Caverns/Things/Building/GlowGooLamp/Artboard1</uiIconPath>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<statBases>
+	  <Mass>1</Mass>
+	  <!-- <WorkToBuild>6000</WorkToBuild> -->
+	</statBases>
+	<costList>
+	  <BMT_GlowGoo>5</BMT_GlowGoo>
+	</costList>
+	<thingCategories>
+	  <li>BuildingsMisc</li>
+	</thingCategories>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(222, 245, 158, 0)</glowColor>
+	  </li>
+	  <li Class="CompProperties_Refuelable">
+		<fuelConsumptionRate>1.5</fuelConsumptionRate>
+		<fuelCapacity>20.0</fuelCapacity>
+		<initialFuelPercent>0.1</initialFuelPercent>
+		<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+		<fuelFilter>
+		  <thingDefs>
+			<li>BMT_GlowGoo</li>
+		  </thingDefs>
+		</fuelFilter>
+		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+	  </li>
+	</comps>
+	<placeWorkers Inherit="False">
+	  <!-- <li>PlaceWorker_Heater</li> -->
+	  <!-- <li>PlaceWorker_MeditationOffsetBuildingsNear</li> -->
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <ThingDef ParentName="TorchLamp">
+	<defName>BMT_FungalGlowGooTorch</defName>
+	<label>fungal glow goo torch</label>
+	<description>A specially-treated torch that produces a light over a large area.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Building/FungalGlowGooTorch</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<uiIconPath>BMT_Caverns/Things/Building/FungalGlowGooTorch/FungalGlowGooTorch</uiIconPath>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<statBases>
+	  <Mass>1</Mass>
+	  <!-- <WorkToBuild>6000</WorkToBuild> -->
+	</statBases>
+	<costList Inherit="False">
+	  <RawFungus>20</RawFungus>
+	  <BMT_GlowGoo>5</BMT_GlowGoo>
+	</costList>
+	<thingCategories>
+	  <li>BuildingsMisc</li>
+	</thingCategories>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(222, 245, 158, 0)</glowColor>
+	  </li>
+	  <li Class="CompProperties_Refuelable">
+		<fuelConsumptionRate>1.5</fuelConsumptionRate>
+		<fuelCapacity>20.0</fuelCapacity>
+		<initialFuelPercent>0.1</initialFuelPercent>
+		<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+		<fuelFilter>
+		  <thingDefs>
+			<li>BMT_GlowGoo</li>
+		  </thingDefs>
+		</fuelFilter>
+		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+	  </li>
+	</comps>
+	<placeWorkers Inherit="False">
+	  <!-- <li>PlaceWorker_Heater</li> -->
+	  <!-- <li>PlaceWorker_MeditationOffsetBuildingsNear</li> -->
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <ThingDef ParentName="TorchLamp">
+	<defName>BMT_FungalCrystalTorch</defName>
+	<label>fungal crystal torch</label>
+	<description>A specially-treated torch that produces a light over a large area.</description>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Building/FungalCrystalTorch</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<uiIconPath>BMT_Caverns/Things/Building/FungalCrystalTorch/FungalCrystalTorch</uiIconPath>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<tickerType>Never</tickerType>
+	<statBases>
+	  <Mass>1</Mass>
+	  <WorkToBuild>18000</WorkToBuild>
+	</statBases>
+	<costList Inherit="False">
+	  <RawFungus>20</RawFungus>
+	  <BMT_ResourceBlueCrystal>30</BMT_ResourceBlueCrystal>
+	</costList>
+	<thingCategories>
+	  <li>BuildingsMisc</li>
+	</thingCategories>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(154, 207, 246, 0)</glowColor>
+	  </li>
+	</comps>
+	<placeWorkers Inherit="False">
+	  <!-- <li>PlaceWorker_Heater</li> -->
+	  <!-- <li>PlaceWorker_MeditationOffsetBuildingsNear</li> -->
+	</placeWorkers>
+	<drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+</Defs>

@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="RockBase">
 		<defName>BMT_IceWall</defName>
-		<label>ice wall</label>
-		<description>A wall of ice.</description>
+		<label>ice</label>
+		<description>A wall of ultra-cold, ultra-dense ice. Its special molecular structure makes it immune to melting.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Natural/Linked/ice_wall_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -19,8 +19,10 @@
 			<isResourceRock>false</isResourceRock>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
-			<mineableThing>BMT_IceBlock</mineableThing>
-			<mineableYield>20</mineableYield>
+			<naturalTerrain>Ice</naturalTerrain>
+			<mineableThing>BMT_ChunkIce</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<!-- <mineableYield>20</mineableYield> -->
 		</building>
 		<comps>
 			<li Class="CompProperties_HeatPusher">
@@ -29,12 +31,17 @@
 				<heatPushMinTemperature>1</heatPushMinTemperature>	
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+				<offset>0.35</offset>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="StoneBlocksBase">
 		<defName>BMT_IceBlock</defName>
 		<label>ice block</label>
-		<description>A Block of ice.</description>
+		<description>A block of ultra-cold, ultra-dense ice. Its special molecular structure makes it immune to melting.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/IceBlocks</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
