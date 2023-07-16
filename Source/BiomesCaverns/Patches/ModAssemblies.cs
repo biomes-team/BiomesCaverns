@@ -7,7 +7,8 @@ namespace BiomesCaverns.Patches
 	public static class ModAssemblies
 	{
 		private static Assembly _vfei; // Vanilla Factions Expanded - Insectoids.
-		private static Assembly _viems; // Vanilla Ideology Expanded - Memes and Structures;
+		private static Assembly _viems; // Vanilla Ideology Expanded - Memes and Structures.
+		private static Assembly _vpeh; // Vanilla Psycasts Expanded - Hemosage.
 
 		private static bool _cachedValues;
 
@@ -37,6 +38,10 @@ namespace BiomesCaverns.Patches
 				{
 					_viems = pack.assemblies.loadedAssemblies[0];
 				}
+				else if (packageId == "vanillaexpanded.vpe.hemosage")
+				{
+					_vpeh = pack.assemblies.loadedAssemblies[0];
+				}
 			}
 		}
 
@@ -58,6 +63,16 @@ namespace BiomesCaverns.Patches
 		{
 			CacheMods();
 			return _viems;
+		}
+
+		/// <summary>
+		/// Checks if the Vanilla Psycasts Expanded - Hemosage mod is present in the current game.
+		/// </summary>
+		/// <returns>Assembly of this mod.</returns>
+		public static Assembly VanillaPsycastsExpandedHemosage()
+		{
+			CacheMods();
+			return _vpeh;
 		}
 	}
 }
