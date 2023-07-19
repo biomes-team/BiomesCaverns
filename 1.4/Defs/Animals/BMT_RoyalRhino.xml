@@ -150,7 +150,7 @@
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>1000</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
