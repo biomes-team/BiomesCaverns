@@ -15,11 +15,9 @@
         </statBases>
         <race>
             <hasGenders>true</hasGenders>
-            <fleshType>Insectoid</fleshType>
 			<herdAnimal>true</herdAnimal>
+            <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>
-            <meatColor>(160,168,139)</meatColor>
-            <meatMarketValue>0.5</meatMarketValue>
             <useMeatFrom>Megaspider</useMeatFrom>
             <baseBodySize>0.7</baseBodySize>
             <baseHealthScale>0.8</baseHealthScale>
@@ -55,12 +53,6 @@
                 </li>
             </lifeStageAges>
         </race>
-        <ingredient>
-            <mergeCompatibilityTags>
-                <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-            </mergeCompatibilityTags>
-        </ingredient>
-        <!--uiIconScale>1.5</uiIconScale-->
         <modExtensions>
             <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
                 <isBloodDrinkingAnimal>true</isBloodDrinkingAnimal>
@@ -156,8 +148,6 @@
             <hasGenders>true</hasGenders>
             <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>
-            <meatColor>(160,168,139)</meatColor>
-            <meatMarketValue>0.5</meatMarketValue>
             <useMeatFrom>Megaspider</useMeatFrom>
             <baseBodySize>1</baseBodySize>
             <baseHealthScale>0.8</baseHealthScale>
@@ -178,12 +168,6 @@
                 </li>
             </lifeStageAges>
         </race>
-        <ingredient>
-            <mergeCompatibilityTags>
-                <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-            </mergeCompatibilityTags>
-        </ingredient>
-        <!--uiIconScale>1.5</uiIconScale-->
         <comps>
             <li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
                 <ageInDays>10</ageInDays>
@@ -196,7 +180,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>1</power>
+                <power>0</power>
+                <cooldownTime>10000</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
             </li>
@@ -258,6 +243,8 @@
             <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
             <trainability>Intermediate</trainability>
+            <fleshType>Insectoid</fleshType>
+            <bloodDef>Filth_BloodInsect</bloodDef>
             <useMeatFrom>Megaspider</useMeatFrom>
             <lifeStageAges>
                 <li>

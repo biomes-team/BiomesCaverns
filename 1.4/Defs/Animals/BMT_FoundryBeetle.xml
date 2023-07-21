@@ -17,10 +17,8 @@
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<leatherDef>BMT_DeepChitin</leatherDef>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_DeepChitin</leatherDef>
 			<baseBodySize>1.8</baseBodySize>
 			<baseHealthScale>0.85</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
@@ -56,11 +54,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -162,8 +155,6 @@
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -184,11 +175,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -202,7 +188,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>2</power>
+				<power>0</power>
+				<cooldownTime>10000</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -258,8 +245,9 @@
 	  </li>
 	</comps>
 	<race>
-	  <useMeatFrom>Megaspider</useMeatFrom>
-	  <bloodDef>Filth_BloodInsect</bloodDef>
+		<fleshType>Insectoid</fleshType>
+		<bloodDef>Filth_BloodInsect</bloodDef>
+		<useMeatFrom>Megaspider</useMeatFrom>
 	  <body>BeetleLikeWithClaw</body>
 	  <baseBodySize>2.4</baseBodySize>
 	  <baseHealthScale>1.75</baseHealthScale>

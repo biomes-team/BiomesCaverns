@@ -20,6 +20,9 @@
 		</statBases>
 		<race>
 			<body>BeetleLikeWithClaw</body>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<predator>true</predator>
 			<baseBodySize>0.32</baseBodySize>
 			<maxPreyBodySize>0.25</maxPreyBodySize>

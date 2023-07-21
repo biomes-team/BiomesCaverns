@@ -39,10 +39,7 @@
 			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-			<!-- <meatLabel>snail meat</meatLabel> -->
-			<!-- <meatColor>(62,133,215)</meatColor> -->
 			<leatherDef>BMT_WeakChitin</leatherDef>
-			<!-- = -->
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<herdAnimal>false</herdAnimal>
@@ -160,8 +157,6 @@
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -182,12 +177,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
-		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>10</ageInDays>
@@ -200,7 +189,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>1</power>
+				<power>0</power>
+				<cooldownTime>10000</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>

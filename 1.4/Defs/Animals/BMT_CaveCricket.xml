@@ -95,11 +95,6 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 
 		</race>
-		<ingredient>
-		<mergeCompatibilityTags>
-			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-		</mergeCompatibilityTags>
-		</ingredient>
 		<tradeTags>
 			<li>AnimalInsect</li>
 			<li>AnimalFarm</li>

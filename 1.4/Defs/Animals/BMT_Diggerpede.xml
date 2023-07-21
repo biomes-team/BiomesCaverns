@@ -52,6 +52,9 @@
 			<baseHealthScale>2.25</baseHealthScale>
 			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_MediumChitin</leatherDef>
 			<wildness>0.20</wildness>
 			<trainability>None</trainability>

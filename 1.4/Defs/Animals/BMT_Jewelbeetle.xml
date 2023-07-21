@@ -16,10 +16,8 @@
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<leatherDef>BMT_WeakChitin</leatherDef>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_WeakChitin</leatherDef>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
@@ -54,11 +52,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -153,8 +146,6 @@
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -175,11 +166,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<uiIconScale>1.5</uiIconScale>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -194,6 +180,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>0</power>
+				<cooldownTime>10000</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -260,14 +247,12 @@
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<body>BeetleLike</body>
 			<baseBodySize>2.45</baseBodySize>
 			<baseHungerRate>0.50</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BiomesCore_GreenChitin</leatherDef>
 			<wildness>0.05</wildness>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
@@ -296,11 +281,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggJewelBeetleFertilized</eggFertilizedDef>

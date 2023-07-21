@@ -29,6 +29,9 @@
 	  <baseHungerRate>0.05</baseHungerRate>
 	  <baseHealthScale>8</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
+		<fleshType>Insectoid</fleshType>
+		<bloodDef>Filth_BloodInsect</bloodDef>
+		<useMeatFrom>Megaspider</useMeatFrom>
 	  <leatherDef>BMT_RoyalChitin</leatherDef>
 	  <wildness>0.99</wildness>
 	  <petness>0.8</petness>

@@ -27,8 +27,9 @@
 		</comps>
 		<race>
 			<packAnimal>false</packAnimal>
-			<useMeatFrom>Megaspider</useMeatFrom>
+			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<body>BeetleLikeWithClaw</body>
 			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
