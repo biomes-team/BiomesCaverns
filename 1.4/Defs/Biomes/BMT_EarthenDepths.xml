@@ -18,6 +18,27 @@
 					<BMT_FoundryBeetle>1</BMT_FoundryBeetle>
 				</extraCarriers>
 				<extraCarriersRelativeWeight>100</extraCarriersRelativeWeight>
+				<disallowedWeathers>
+					<li>DryThunderstorm</li>
+					<li>FoggyRain</li>
+					<li>Rain</li>
+					<li>RainyThunderstorm</li>
+					<li>SnowGentle</li>
+					<li>SnowHard</li>
+					<li MayRequire="sarg.alphabiomes">AB_AcidRainWeather</li>
+					<li MayRequire="sarg.alphabiomes">AB_ForsakenRainyNight</li>
+					<li MayRequire="sarg.alphabiomes">AB_ForsakenThunderstorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Blizzard</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySandstorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySnow</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Hail</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Monsoon</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Overcast</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStormHard</li>
+					<li MayRequire="ReGrowth.BOTR.Wastelands">RG_ToxicRain</li>
+					<li MayRequire="ReGrowth.BOTR.Wastelands">RG_ToxicRainyThunderstorm</li>
+				</disallowedWeathers>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
 				<applyToCaves>true</applyToCaves>

@@ -13,6 +13,27 @@
 					<li>Smooth</li>
 				</cavernShapes>
 				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
+				<disallowedWeathers>
+					<li>DryThunderstorm</li>
+					<li>FoggyRain</li>
+					<li>Rain</li>
+					<li>RainyThunderstorm</li>
+					<li>SnowGentle</li>
+					<li>SnowHard</li>
+					<li MayRequire="sarg.alphabiomes">AB_AcidRainWeather</li>
+					<li MayRequire="sarg.alphabiomes">AB_ForsakenRainyNight</li>
+					<li MayRequire="sarg.alphabiomes">AB_ForsakenThunderstorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Blizzard</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySandstorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySnow</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Hail</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Monsoon</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Overcast</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStormHard</li>
+					<li MayRequire="ReGrowth.BOTR.Wastelands">RG_ToxicRain</li>
+					<li MayRequire="ReGrowth.BOTR.Wastelands">RG_ToxicRainyThunderstorm</li>
+				</disallowedWeathers>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
 				<applyToCaves>true</applyToCaves>
@@ -141,12 +162,6 @@
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<BMT_Calm>100</BMT_Calm>
-			<DryThunderstorm>0</DryThunderstorm>
-			<FoggyRain>0</FoggyRain>
-			<Rain>0</Rain>
-			<RainyThunderstorm>0</RainyThunderstorm>
-			<SnowGentle>0</SnowGentle>
-			<SnowHard>0</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- ground cover -->
