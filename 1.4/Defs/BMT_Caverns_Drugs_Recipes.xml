@@ -46,6 +46,7 @@
 	<label>make go-juice from glitter</label>
 	<description>Make a go-juice from glitter.</description>
 	<jobString>Making go-juice from glitter.</jobString>
+	<workAmount>600</workAmount>
 	<researchPrerequisites>
 	  <li>GoJuiceProduction</li>
 	</researchPrerequisites>
@@ -77,6 +78,7 @@
 	<label>make go-juice from glitter x5</label>
 	<description>Make a go-juice from glitter.</description>
 	<jobString>Making go-juice from glitter.</jobString>
+	<workAmount>2400</workAmount>
 	<researchPrerequisites>
 	  <li>GoJuiceProduction</li>
 	</researchPrerequisites>

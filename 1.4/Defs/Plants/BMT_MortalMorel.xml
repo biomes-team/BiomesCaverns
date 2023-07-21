@@ -79,6 +79,7 @@
 		<jobString>Making medicine.</jobString>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
+		<workAmount>600</workAmount>
 		<recipeUsers>
 			<li>DrugLab</li>
 		</recipeUsers>
@@ -115,6 +116,53 @@
 		</ingredients>
 		<products>
 			<MedicineIndustrial>1</MedicineIndustrial>
+		</products>
+		<soundWorking>Recipe_Drug</soundWorking>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>BMT_IndustrialMedicineFromFungal4c</defName>
+		<label>make medicine from fungal medicine x4</label>
+		<description>Make medicine.</description>
+		<jobString>Making medicine.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<workAmount>2100</workAmount>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_MedicineFungal</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<products>
+			<MedicineIndustrial>4</MedicineIndustrial>
 		</products>
 		<soundWorking>Recipe_Drug</soundWorking>
 	</RecipeDef>
