@@ -1,861 +1,847 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef ParentName="BiomesCore_CrabThingBase" Name="BMT_CrystalCrab_Base" Abstract="True">
-	<!-- <defName>BMT_CrystalCrab</defName> -->
-	<label>crystal crab</label>
-	<description>A large and powerful relative of the decorator crab, cavern crystals grow from the minerals on this crab's rocky shell. Despite its strong exoskeleton, the CrystalCrab hauls around this heavy shell, the reason for which is unknown. They are not known to breed in captivity.</description>
-	<statBases>
-	  <MoveSpeed>3.5</MoveSpeed>
-	  <MarketValue>2300</MarketValue>
-	  <ComfyTemperatureMin>-55</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
-	  <FilthRate>16</FilthRate>
-	  <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
-	  <SwimSpeed MayRequire="biomesteam.biomesislands">4</SwimSpeed>
-	</statBases>
-	<uiIconScale>1.35</uiIconScale>
-	<comps>
-	  <!-- <li Class="CompProperties_Shearable"> -->
-		<!-- <woolDef>Wool</woolDef> -->
-		<!-- <shearIntervalDays>15</shearIntervalDays> -->
-		<!-- <woolAmount>120</woolAmount> -->
-	  <!-- </li> -->
-	</comps>
-	<race>
-	  <canBePredatorPrey>false</canBePredatorPrey>
-	  <baseBodySize>2.4</baseBodySize>
-	  <predator>true</predator>
-	  <baseHealthScale>2</baseHealthScale>
-	  <foodType>CarnivoreAnimal</foodType>
-	  <leatherDef>BMT_RoyalChitin</leatherDef>
-	  <meatLabel>cave crab meat</meatLabel>
-	  <trainability>Intermediate</trainability>
-	  <packAnimal>true</packAnimal>
-	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
-	  <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
-	</race>
-	<tradeTags>
-		<li>AnimalFighter</li>
-		<li>AnimalExotic</li> 
-	</tradeTags>
-
-	<tools>
-		<li>
-			<label>claw</label>
-			<capacities>
-				<li>Cut</li>
-			</capacities>
-			<power>30</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
-		</li>
-		<li>
-			<label>head</label>
-			<capacities>
-				<li>Blunt</li>
-			</capacities>
-			<power>25</power>
-			<cooldownTime>4</cooldownTime>
-			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		</li>
-	</tools>
-	<butcherProducts>
-	  <!-- crystal resource -->
-	  <BMT_ResourceBlueCrystal>75</BMT_ResourceBlueCrystal>
-	  <!-- <Sandstone>3</Sandstone> -->
-	</butcherProducts>
-  </ThingDef>
-
-	<!-- ============================================================================ -->
-
-  <ThingDef ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Sandstone</defName>
-	<butcherProducts>
-	  <ChunkSandstone>3</ChunkSandstone>
-	</butcherProducts>
-  </ThingDef>
-  <ThingDef ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Granite</defName>
-	<butcherProducts>
-	  <ChunkGranite>3</ChunkGranite>
-	</butcherProducts>
-  </ThingDef>
-  <ThingDef ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Limestone</defName>
-	<butcherProducts>
-	  <ChunkLimestone>3</ChunkLimestone>
-	</butcherProducts>
-  </ThingDef>
-  <ThingDef ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Slate</defName>
-	<butcherProducts>
-	  <ChunkSlate>3</ChunkSlate>
-	</butcherProducts>
-  </ThingDef>
-  <ThingDef ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Marble</defName>
-	<butcherProducts>
-	  <ChunkMarble>3</ChunkMarble>
-	</butcherProducts>
-  </ThingDef>
-  <ThingDef ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Jade</defName>
-	<statBases>
-	  <MarketValue>2480</MarketValue>
-	</statBases>
-	<butcherProducts>
-	  <Jade>78</Jade>
-	</butcherProducts>
-  </ThingDef>
-  <ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_CrystalCrab_Base">
-	<defName>BMT_CrystalCrab_Coral</defName>
-	<butcherProducts>
-	  <BiomesIslands_CoralRock>3</BiomesIslands_CoralRock>
-	</butcherProducts>
-  </ThingDef>
-
-	<!-- ============================================================================ -->
-
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Sandstone</defName>
-	<label>sandstone crystal crab</label>
-	<race>BMT_CrystalCrab_Sandstone</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(126,104,94)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(126,104,94)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(126,104,94)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(126,104,94)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(126,104,94)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(126,104,94)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Marble</defName>
-	<label>marble crystal crab</label>
-	<race>BMT_CrystalCrab_Marble</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(132,135,132)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(132,135,132)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(132,135,132)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(132,135,132)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(132,135,132)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(132,135,132)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Slate</defName>
-	<label>slate crystal crab</label>
-	<race>BMT_CrystalCrab_Slate</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(70,70,70)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(70,70,70)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(70,70,70)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(70,70,70)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(70,70,70)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(70,70,70)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Limestone</defName>
-	<label>limestone crystal crab</label>
-	<race>BMT_CrystalCrab_Limestone</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(158,153,135)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(158,153,135)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(158,153,135)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(158,153,135)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(158,153,135)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(158,153,135)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Granite</defName>
-	<label>granite crystal crab</label>
-	<race>BMT_CrystalCrab_Granite</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(105,95,97)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(105,95,97)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(105,95,97)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(105,95,97)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(105,95,97)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(105,95,97)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Jade</defName>
-	<label>jade crystal crab</label>
-	<race>BMT_CrystalCrab_Jade</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(85,118,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(85,118,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(85,118,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(85,118,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(85,118,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(85,118,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-
-  <PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
-	<defName>BMT_CrystalCrab_Coral</defName>
-	<label>jade crystal crab</label>
-	<race>BMT_CrystalCrab_Coral</race>
-	<combatPower>290</combatPower>
-	<ecoSystemWeight>1.1</ecoSystemWeight>
-	<wildGroupSize>1</wildGroupSize>
-	<lifeStages>
-	  <li>
-		
-		
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(250,180,147)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		  <color>(250,180,147)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.4, 0.3, 0.3)</volume>
-			<offset>(0,0,-0.2)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>1.5</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>1.5</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(250,180,147)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		  <color>(250,180,147)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.6, 0.45, 0.45)</volume>
-			<offset>(0,0,-0.25)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>2.25</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>2.25</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	  <li>
-		<bodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(250,180,147)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</bodyGraphicData>
-		<femaleGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		  <color>(250,180,147)</color>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(0.8, 0.6, 0.6)</volume>
-			<offset>(0,0,-0.3)</offset>
-		  </shadowData>
-		</femaleGraphicData>
-		<dessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
-		  <drawSize>3.3</drawSize>
-		</dessicatedBodyGraphicData>
-		<femaleDessicatedBodyGraphicData>
-		  <texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
-		  <drawSize>3.3</drawSize>
-		</femaleDessicatedBodyGraphicData>
-	  </li>
-	</lifeStages>
-  </PawnKindDef>
-  	  <!-- <ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggCrystalcrabFertilizedFertilized</defName>
-		<label>crystal crab egg (fert.)</label>
-		<description>A fertilized crystal crab egg. If all goes well, it should hatch into a crystal crab. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
-			<drawSize>1</drawSize>
-		</graphicData>
+	<ThingDef ParentName="BiomesCore_CrabThingBase" Name="BMT_CrystalCrab_Base" Abstract="True">
+		<label>crystal crab</label>
+		<description>A large and powerful relative of the decorator crab, cavern crystals grow from the minerals on this crab's rocky shell. Despite its strong exoskeleton, the crystal crab hauls around this heavy shell, the reason for which is unknown. They are not known to breed in captivity.</description>
 		<statBases>
-			<Mass>0.50</Mass>
-			<MarketValue>24.0</MarketValue>
-			<MaxHitPoints>60</MaxHitPoints>
+			<MoveSpeed>3.5</MoveSpeed>
+			<MarketValue>2300</MarketValue>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<SwimSpeed MayRequire="biomesteam.biomesislands">4</SwimSpeed>
 		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>BMT_CrystalCrab</hatcherPawn>
+		<uiIconScale>1.35</uiIconScale>
+		<race>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<baseBodySize>2.4</baseBodySize>
+			<predator>true</predator>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>BMT_RoyalChitin</leatherDef>
+			<meatLabel>cave crab meat</meatLabel>
+			<trainability>Intermediate</trainability>
+			<packAnimal>true</packAnimal>
+			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
+
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 			</li>
-		</comps>
-	</ThingDef> -->
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<butcherProducts>
+			<!-- crystal resource -->
+			<BMT_ResourceBlueCrystal>75</BMT_ResourceBlueCrystal>
+			<!-- <Sandstone>3</Sandstone> -->
+		</butcherProducts>
+	</ThingDef>
+
+	<!-- ============================================================================ -->
+
+	<ThingDef ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Sandstone</defName>
+		<butcherProducts>
+			<ChunkSandstone>3</ChunkSandstone>
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Granite</defName>
+		<butcherProducts>
+			<ChunkGranite>3</ChunkGranite>
+		</butcherProducts>
+		<race>
+			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+		</race>
+	</ThingDef>
+	<ThingDef ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Limestone</defName>
+		<butcherProducts>
+			<ChunkLimestone>3</ChunkLimestone>
+		</butcherProducts>
+		<race>
+			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+		</race>
+	</ThingDef>
+	<ThingDef ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Slate</defName>
+		<butcherProducts>
+			<ChunkSlate>3</ChunkSlate>
+		</butcherProducts>
+		<race>
+			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+		</race>
+	</ThingDef>
+	<ThingDef ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Marble</defName>
+		<butcherProducts>
+			<ChunkMarble>3</ChunkMarble>
+		</butcherProducts>
+		<race>
+			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+		</race>
+	</ThingDef>
+	<ThingDef ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Jade</defName>
+		<statBases>
+			<MarketValue>2480</MarketValue>
+		</statBases>
+		<butcherProducts>
+			<Jade>78</Jade>
+		</butcherProducts>
+		<race>
+			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+		</race>
+	</ThingDef>
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_CrystalCrab_Base">
+		<defName>BMT_CrystalCrab_Coral</defName>
+		<butcherProducts>
+			<BiomesIslands_CoralRock>3</BiomesIslands_CoralRock>
+		</butcherProducts>
+		<race>
+			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+		</race>
+	</ThingDef>
+
+	<!-- ============================================================================ -->
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Sandstone</defName>
+		<label>sandstone crystal crab</label>
+		<race>BMT_CrystalCrab_Sandstone</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(126,104,94)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(126,104,94)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(126,104,94)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(126,104,94)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(126,104,94)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(126,104,94)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Marble</defName>
+		<label>marble crystal crab</label>
+		<race>BMT_CrystalCrab_Marble</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+
+
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(132,135,132)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(132,135,132)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(132,135,132)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(132,135,132)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(132,135,132)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(132,135,132)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Slate</defName>
+		<label>slate crystal crab</label>
+		<race>BMT_CrystalCrab_Slate</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+
+
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(70,70,70)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(70,70,70)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(70,70,70)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(70,70,70)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(70,70,70)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(70,70,70)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Limestone</defName>
+		<label>limestone crystal crab</label>
+		<race>BMT_CrystalCrab_Limestone</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+
+
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(158,153,135)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(158,153,135)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(158,153,135)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(158,153,135)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(158,153,135)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(158,153,135)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Granite</defName>
+		<label>granite crystal crab</label>
+		<race>BMT_CrystalCrab_Granite</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+
+
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(105,95,97)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(105,95,97)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(105,95,97)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(105,95,97)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(105,95,97)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(105,95,97)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Jade</defName>
+		<label>jade crystal crab</label>
+		<race>BMT_CrystalCrab_Jade</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+
+
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(85,118,69)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(85,118,69)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(85,118,69)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(85,118,69)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(85,118,69)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(85,118,69)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+		<defName>BMT_CrystalCrab_Coral</defName>
+		<label>jade crystal crab</label>
+		<race>BMT_CrystalCrab_Coral</race>
+		<combatPower>290</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+
+
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(250,180,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(250,180,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>1.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(250,180,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<color>(250,180,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(250,180,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+					<color>(250,180,147)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Male</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/CrystalCrab_Female</texPath>
+					<drawSize>3.3</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 
 </Defs>
