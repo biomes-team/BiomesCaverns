@@ -4,6 +4,7 @@
 		<defName>BMT_Glittercap</defName>
 		<label>glittercap</label>
 		<description>Able to survive below-freezing temperatures for extended periods of time, this mushroom is considered a beauty of the glacial hollows.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Glittercap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

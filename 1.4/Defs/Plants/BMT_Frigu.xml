@@ -10,6 +10,7 @@
 		<defName>BMT_Frigu</defName>
 		<label>frigu</label>
 		<description>A frail but hardy mushroom tree. Slow-growing, but this fungus is well adapted to the cold.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Frigu</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

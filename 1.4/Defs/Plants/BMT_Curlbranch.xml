@@ -4,6 +4,7 @@
 		<defName>BMT_Curlbranch</defName>
 		<label>curlbranch</label>
 		<description>Thought to be a genetically engineered tree-fungus hybrid, this gloomy yet beautiful plant thing thrives in both sheer darkness and bitter cold.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Curlbranch</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

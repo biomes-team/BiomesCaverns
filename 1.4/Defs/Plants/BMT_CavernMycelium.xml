@@ -5,6 +5,7 @@
 		<defName>BMT_CavernMycelium</defName>
 		<label>mycelium</label>
 		<description>Extremely wide-spread mycelium of many different species that have spread throughout the caverns of the Rim. Herbivores tend to eat it in the wild.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Mycelium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -12,8 +13,6 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.7~0.3</growingHours>
-			</li>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<optimalTemperature>-100~352.222</optimalTemperature>
 			</li>
 		</modExtensions>

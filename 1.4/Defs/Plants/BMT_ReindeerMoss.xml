@@ -4,6 +4,7 @@
 		<defName>BMT_ReindeerMoss</defName>
 		<label>reindeer moss</label>
 		<description>With a color befitting frozen tunnels, this moss has adapted to darkness. It survives off whatever it can.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>20</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>

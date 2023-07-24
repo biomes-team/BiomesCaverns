@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
+<Defs>
+
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Brightcap</defName>
 		<label>brightcap</label>
 		<description>A brightly-glowing mushroom. It was engineered during early caveworld colonization efforts to provide constant natural light.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/BrightCap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -32,9 +33,9 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<mustBeWildToSow>false</mustBeWildToSow>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef IsNull="true" />
+			<harvestedThingDef IsNull="true"/>
 			<harvestYield>0</harvestYield>
-			<sowResearchPrerequisites  Inherit="False" >
+			<sowResearchPrerequisites Inherit="False">
 				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
 			<sowWork>100</sowWork>
@@ -44,12 +45,12 @@
 			</sowTags>
 		</plant>
 
-	<comps>
-      <li Class="CompProperties_Glower">
-        <glowRadius>7</glowRadius>
-        <glowColor>(147,207,80,0)</glowColor>
-      </li>
-    </comps>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(147,207,80,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

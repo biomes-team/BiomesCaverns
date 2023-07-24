@@ -2,9 +2,9 @@
 <Defs>
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_StinkLattice</defName>
-		<thingClass>BMT.BiomesPlant</thingClass>
 		<label>stink lattice</label>
 		<description>The gasses from this latice-like fungus smell like a rotting corpse.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
