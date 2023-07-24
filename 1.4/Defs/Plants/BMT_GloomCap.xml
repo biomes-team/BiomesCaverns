@@ -5,6 +5,7 @@
 		<defName>BMT_Gloomcap</defName>
 		<label>gloomcap</label>
 		<description>A darklight-like mushroom. It was engineered during early caveworld colonization efforts to provide a constant source of darklight for those with light sensitivity.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/GloomCap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

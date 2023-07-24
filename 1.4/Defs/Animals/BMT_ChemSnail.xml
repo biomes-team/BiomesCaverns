@@ -16,7 +16,7 @@
 				<hediffs>
 					<li>BMT_ChemSnailDefense</li>
 				</hediffs>
-				<graphicSuffix>Shell</graphicSuffix>
+				<graphicSuffix>Shell_east</graphicSuffix>
 				<duration>300</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -41,17 +41,17 @@
     <sleepGraphicData>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell</texPath>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
         <drawSize>2.2</drawSize>
       </li>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell</texPath>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
         <drawSize>3.2</drawSize>
       </li>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell</texPath>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
         <drawSize>4.0</drawSize>
       </li>
     </sleepGraphicData>

@@ -19,6 +19,7 @@
 					<li>BMT_GlowSnailDefense</li>
 				</hediffs>
 				<graphicSuffix>Shell</graphicSuffix>
+				<useMultiGraphic>true</useMultiGraphic>
 				<duration>750</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -36,17 +37,17 @@
     <sleepGraphicData>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailSleeping</texPath>
+        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell_east</texPath>
         <drawSize>0.95</drawSize>
       </li>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailSleeping</texPath>
+        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell_east</texPath>
         <drawSize>1.3</drawSize>
       </li>
       <li>
         <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailSleeping</texPath>
+        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell_east</texPath>
         <drawSize>1.9</drawSize>
       </li>
     </sleepGraphicData>

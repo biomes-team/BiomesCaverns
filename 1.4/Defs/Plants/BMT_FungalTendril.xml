@@ -4,6 +4,7 @@
 		<defName>BMT_FungalTendril</defName>
 		<label>tendralus</label>
 		<description>Shaped differently than normal fungi, this tendril-like fungus spreads its spores from the small nodes along its length.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/FungalTendril</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

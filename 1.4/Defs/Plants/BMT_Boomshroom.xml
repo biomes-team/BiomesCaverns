@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BMT_CaveBushBase">
+	<ThingDef ParentName="BMT_CaveBushBase">
 		<defName>BMT_Boomshroom</defName>
 		<label>boomspore shroom</label>
 		<description>A fungus grown by cavern dwelling populace for its dangerously volatile pods which can be refined into chemfuel.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -43,7 +44,7 @@
 				<li>Ground</li>
 				<li>BMT_Fungiponics</li>
 			</sowTags>
-			<sowResearchPrerequisites  Inherit="False" >
+			<sowResearchPrerequisites Inherit="False">
 				<li>BMT_AdvancedFungi</li>
 			</sowResearchPrerequisites>
 			<interferesWithRoof>false</interferesWithRoof>

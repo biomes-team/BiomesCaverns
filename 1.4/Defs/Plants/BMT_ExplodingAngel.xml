@@ -4,6 +4,7 @@
 		<defName>BMT_ExplodingAngel</defName>
 		<label>exploding angel</label>
 		<description>A mushroom filled with volatile natural chemicals. This volatility makes it explode when impacted.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

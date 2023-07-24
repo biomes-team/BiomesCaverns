@@ -4,6 +4,7 @@
 		<defName>BMT_Chubshroom</defName>
 		<label>chubshroom</label>
 		<description>A stubby mushroom that remains surprisingly soft despite the freezing cold temperatures of its home biome.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Chubshroom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
