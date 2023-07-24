@@ -191,6 +191,7 @@
     <comps>
       <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
         <roofedOnly>true</roofedOnly>
+        <faceSouth>true</faceSouth>
         <sleepGraphicData>
           <li>
             <graphicClass>Graphic_Single</graphicClass>
