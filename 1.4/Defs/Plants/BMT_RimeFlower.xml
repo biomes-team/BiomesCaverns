@@ -4,6 +4,7 @@
 		<defName>BMT_RimeFlower</defName>
 		<label>rime flower</label>
 		<description>While this beautiful, cold adapted flower can survive with hardly any light, it grows best with at least a little illumination.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/RimeFlower</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

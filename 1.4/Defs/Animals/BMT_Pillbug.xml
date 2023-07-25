@@ -45,8 +45,6 @@
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_GrayChitin</leatherDef>
 			<wildness>0.30</wildness>

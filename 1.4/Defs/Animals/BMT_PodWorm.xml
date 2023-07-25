@@ -23,6 +23,9 @@
 	</statBases>
 	<race>
 	  <body>BMT_LarvaLike</body>
+		<fleshType>Insectoid</fleshType>
+		<bloodDef>Filth_BloodInsect</bloodDef>
+		<useMeatFrom>Megaspider</useMeatFrom>
 	  <predator>false</predator>
 	  <baseBodySize>4</baseBodySize>
 	  <maxPreyBodySize>4</maxPreyBodySize>

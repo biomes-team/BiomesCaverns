@@ -23,6 +23,9 @@
 	</statBases>
 	<race>
 	  <body>BMT_GiantSpider</body>
+		<fleshType>Insectoid</fleshType>
+		<bloodDef>Filth_BloodInsect</bloodDef>
+		<useMeatFrom>Megaspider</useMeatFrom>
 	  <predator>true</predator>
 	  <baseBodySize>2.4</baseBodySize>
 	  <maxPreyBodySize>2</maxPreyBodySize>

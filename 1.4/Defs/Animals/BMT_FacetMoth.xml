@@ -15,11 +15,9 @@
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
-			<fleshType>Insectoid</fleshType>
 			<leatherDef>BMT_CrystalChitin</leatherDef>
+			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<petness>0.5</petness>
@@ -57,11 +55,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>10</ageInDays>
@@ -155,8 +148,6 @@
 			<hasGenders>false</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -177,12 +168,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
-		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>7</ageInDays>
@@ -196,6 +181,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>0</power>
+				<cooldownTime>10000</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -254,6 +240,8 @@
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<trainability>None</trainability>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<petness>0.5</petness>
 			<nuzzleMtbHours>6</nuzzleMtbHours>

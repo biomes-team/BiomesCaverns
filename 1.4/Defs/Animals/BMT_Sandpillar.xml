@@ -16,8 +16,6 @@
 			<hasGenders>true</hasGenders>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<meatColor>(160,168,139)</meatColor>
-			<meatMarketValue>0.5</meatMarketValue>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_MediumChitin</leatherDef>
 			<baseBodySize>0.8</baseBodySize>
@@ -53,12 +51,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
-		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggSandpillarFertilized</eggFertilizedDef>

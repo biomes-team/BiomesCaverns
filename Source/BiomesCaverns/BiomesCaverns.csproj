@@ -75,6 +75,7 @@
     <Compile Include="Patches\VFEI\IncidentWorker_GiantInfestation_TryFindCell_Patch.cs" />
     <Compile Include="Patches\VFEI\PawnArrivalModeWorker_GigalocustSwarm_Patch.cs" />
     <Compile Include="Patches\VIEMS\CompAbilityConstructANest_Apply_Patch.cs" />
+    <Compile Include="Patches\VPE-H\Ability_SanguineSpear_Patches.cs" />
     <Compile Include="PlaceWorkers\NotUnderRoof.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Skyfallers\DrillPodIncoming.cs" />

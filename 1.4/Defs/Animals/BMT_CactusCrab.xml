@@ -29,7 +29,8 @@
 	  <baseHealthScale>1.75</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_GrayChitin</leatherDef>
-	  <meatLabel>cave crab meat</meatLabel>
+		<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
+
 	  <trainability>Advanced</trainability>
 	  <packAnimal>false</packAnimal>
 	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>

@@ -4,6 +4,7 @@
 		<defName>BMT_CarveShroom</defName>
 		<label>carvefungus</label>
 		<description>Large and adapted to utter darkness, this fungus thrives in freezing cold temperatures.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Carveshroom</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

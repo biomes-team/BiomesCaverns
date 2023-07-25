@@ -53,6 +53,8 @@
 			<!-- Using a body size smaller than 0.7 should disable the DigOutIfCannotReachMapEdge behaviour. -->
 			<baseBodySize>0.65</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>6</lifeExpectancy>
 			<wildness>0.3</wildness>

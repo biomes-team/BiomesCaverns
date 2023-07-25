@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
+<Defs>
+
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Candlesnuff</defName>
 		<label>candlesnuff</label>
 		<description>An ash pale mushroom tree. It is slow-growing but can survive the intense heat of the nearby magma.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Candlesnuff/CandlesnuffGrown</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

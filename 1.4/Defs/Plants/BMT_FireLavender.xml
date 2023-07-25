@@ -4,6 +4,7 @@
 		<defName>BMT_FireLavender</defName>
 		<label>fire lavender</label>
 		<description>This type of lavender originated in volcanic areas on the surface but adapted to surviving off the glow of magma deep underground. It is well loved by cavern-dwelling botanists for its beauty.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/FireLavender</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
