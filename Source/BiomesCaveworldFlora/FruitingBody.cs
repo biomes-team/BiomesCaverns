@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using BiomesCore;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -308,6 +309,20 @@ namespace Caveworld_Flora_Unleashed
 
         public static bool CanTerrainSupportPlantAt(ThingDef_FruitingBody plantDef, Map map, IntVec3 position)
         {
+            // Forbid spawns in closed rooms.
+            var room = position.GetRoom(map);
+            if (room != null && !room.PsychologicallyOutdoors)
+            {
+                return false;
+            }
+
+            // Forbid these fungi from spawning in deep cavern biomes.
+            var roof = position.GetRoof(map);
+            if (roof == BiomesCoreDefOf.BMT_RockRoofStable)
+            {
+                return false;
+            }
+
             bool isValidSpot = true;
             isValidSpot = !plantDef.growOnlyOnRoughRock ? isValidSpot & IsFertilityConditionOkAt(plantDef, map, position) : isValidSpot & IsNaturalRoughRockAt(map, position);
             isValidSpot = !plantDef.growOnlyUndeRoof ? isValidSpot & !map.roofGrid.Roofed(position) : isValidSpot & map.roofGrid.Roofed(position);
