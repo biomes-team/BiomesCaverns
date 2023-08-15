@@ -53,8 +53,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<!-- ToDo use the correct menu icon. See issue #61 -->
-		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>BMT_Caverns/Things/Natural/Linked/light_sand_wall_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>80</WorkToBuild>
@@ -90,8 +89,6 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
-				<!-- ToDo use the correct blueprint atlas. See issue #61 -->
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Door</li>
