@@ -49,7 +49,7 @@
 		</comps>
 		<race>
 			<body>BeetleLikeWithClaw</body>
-			<baseHungerRate>0.05</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<!-- Using a body size smaller than 0.7 should disable the DigOutIfCannotReachMapEdge behaviour. -->
 			<baseBodySize>0.65</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
@@ -57,7 +57,7 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>6</lifeExpectancy>
-			<wildness>0.3</wildness>
+			<wildness>0.45</wildness>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
 			<foodType>OmnivoreAnimal</foodType>
