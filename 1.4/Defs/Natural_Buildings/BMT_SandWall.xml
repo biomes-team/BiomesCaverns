@@ -88,8 +88,6 @@
 			<isInert>true</isInert>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Door</li>
 				<li>Autodoor</li>
