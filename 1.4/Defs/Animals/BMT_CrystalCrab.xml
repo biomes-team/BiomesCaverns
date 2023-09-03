@@ -116,7 +116,7 @@
 	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_CrystalCrab_Base">
 		<defName>BMT_CrystalCrab_Coral</defName>
 		<butcherProducts>
-			<BiomesIslands_CoralRock>3</BiomesIslands_CoralRock>
+			<BiomesIslands_ChunkCoral>3</BiomesIslands_ChunkCoral>
 		</butcherProducts>
 		<race>
 			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
