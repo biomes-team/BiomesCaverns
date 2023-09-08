@@ -202,7 +202,7 @@
 		<label>fungal mimic mantis egg (fert.)</label>
 		<description>A fertilized fungal mantis egg. If all goes well, it should hatch into a mantis larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-		<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(209,134,70)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>

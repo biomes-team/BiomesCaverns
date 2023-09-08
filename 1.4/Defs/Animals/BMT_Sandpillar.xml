@@ -133,7 +133,7 @@
 		<label>sandpillar egg (fert.)</label>
 		<description>A sandpillar egg. If all goes well, it should hatch into a baby sandpillar. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(147,126,107)</color>
 			<drawSize>1</drawSize>
 		</graphicData>
