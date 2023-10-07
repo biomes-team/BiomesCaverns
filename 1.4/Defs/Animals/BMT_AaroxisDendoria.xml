@@ -93,7 +93,7 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_AaroxisDendoriaLarvae</defName>
-		<label>aaroxis dendoria larvae</label>
+		<label>cinnabar caterpillar</label>
 		<race>BMT_AaroxisDendoriaLarvae</race>
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
