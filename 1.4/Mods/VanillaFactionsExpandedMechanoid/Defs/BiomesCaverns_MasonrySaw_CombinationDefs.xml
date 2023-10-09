@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ItemProcessor.CombinationDef>
+		<defName>BMT_MasonrySaw_IceBlocks</defName>
+		<building>VFEM_MasonryAndMetallicsFactory_MasonrySaw</building>
+		<items>
+			<li>BMT_ChunkIce</li>
+		</items>
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>BMT_IceBlock</result>
+		<yield>10</yield>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>2000</maxTotalOutput>
+		<resultUsesSpecialIcon>true</resultUsesSpecialIcon>
+		<resultSpecialIcon>BMT_Caverns/Things/Item/IceBlocks/Iceblocks_C</resultSpecialIcon>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>BMT_MasonrySaw_Sand</defName>
+		<building>VFEM_MasonryAndMetallicsFactory_MasonrySaw</building>
+		<items>
+			<li>BMT_ChunkSand</li>
+		</items>
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>BMT_Sand</result>
+		<yield>10</yield>
+		<outputLimitControlled>true</outputLimitControlled>
+		<maxTotalOutput>2000</maxTotalOutput>
+		<resultUsesSpecialIcon>true</resultUsesSpecialIcon>
+		<resultSpecialIcon>BMT_Caverns/Things/Item/SandPile/sandpile_C</resultSpecialIcon>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>0.2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+</Defs>
