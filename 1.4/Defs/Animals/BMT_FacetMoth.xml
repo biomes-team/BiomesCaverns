@@ -217,8 +217,7 @@
 		<label>facet moth</label>
 		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty. The females are capable of producing multiple batches of fertilized eggs from one mating period.</description>
 		<statBases>
-			<MoveSpeed>12</MoveSpeed>
-			<BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">12</BiomesCore_FlySpeed>
+			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>57</ComfyTemperatureMax>
@@ -296,6 +295,9 @@
 			</tradeTags>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 

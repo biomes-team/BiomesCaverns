@@ -6,7 +6,6 @@
 		<description>These large salamanders prefer wet environments with pools of water they can comfortably slip into. While they lack teeth, their strong jaws can crush the shells of most insects. They are capable of fertilizing multiple batches of eggs in one go.</description>
 		<statBases>
 			<MoveSpeed>5.1</MoveSpeed>
-			<SwimSpeed MayRequire="biomesteam.biomesislands">18.6</SwimSpeed>
 			<MarketValue>900</MarketValue>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -56,6 +55,9 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
 				<isBottomFeeder>true</isBottomFeeder>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Amphibious</movementDef>
 			</li>
 		</modExtensions>
 		<comps>
