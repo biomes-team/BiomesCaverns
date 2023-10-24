@@ -187,5 +187,16 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_Core/Things/Animal/Digging/Burrowed</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>
