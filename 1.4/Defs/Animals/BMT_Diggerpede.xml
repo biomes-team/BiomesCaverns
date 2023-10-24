@@ -108,6 +108,13 @@
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Digging</movementDef>
 			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagMovementExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<moveSpeedMultiplier>3</moveSpeedMultiplier>
+			</li>
 		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
