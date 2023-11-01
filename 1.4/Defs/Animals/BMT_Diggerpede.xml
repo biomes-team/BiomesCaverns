@@ -166,7 +166,7 @@
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_Ground</li>
 					<li>PF_TerrainTag_Sand</li>
