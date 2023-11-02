@@ -24,6 +24,29 @@
 	</IncidentDef>
 
 	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
+		<defName>BMT_ExplodingAngel</defName>
+		<label>exploding angel</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>BiomesCore.IncidentWorker_PlantSprout</workerClass>
+		<baseChance>0.4</baseChance>
+		<letterLabel>Angel sprout</letterLabel>
+		<letterText>A grove of the mysterious fungi mushroom has sprouted nearby! Fully grown, they can get dangerous.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<allowedBiomes>
+			<li>BMT_EarthenDepths</li>
+			<!-- <li>BMT_FungalForest</li> -->
+			<!-- <li>BMT_CrystalCaverns</li> -->
+		</allowedBiomes>
+		<plant>BMT_ExplodingAngel</plant>
+		<amount>5~15</amount>
+		<ignoreSeason>true</ignoreSeason>
+		<allowIndoors>true</allowIndoors>
+	</IncidentDef>
+
+	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
 		<defName>BMT_SkulltopSprout</defName>
 		<label>skulltop sprout</label>
 		<category>Misc</category>
