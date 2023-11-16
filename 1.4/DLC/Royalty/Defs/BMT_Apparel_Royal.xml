@@ -214,7 +214,7 @@
 
   <ThingDef ParentName="BMT_ApparelArmorHelmetCataphract_PrestigeChitinphract">
 	<defName>BMT_Apparel_ArmorHelmetSpidrephractPrestige</defName>
-	<label>prestige spidrephract helmet</label>
+	<label>prestige spiderphract helmet</label>
 	<statBases>
 	  <ArmorRating_Sharp>1.35</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
