@@ -21,7 +21,7 @@
 	<additionalHediffs>
 	  <li>
 		<hediff>BloodLoss</hediff>
-		<severityPerDamageDealt>0.01</severityPerDamageDealt>
+		<severityPerDamageDealt>0.1</severityPerDamageDealt>
 		<inverseStatScaling>true</inverseStatScaling>
 		<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 	  </li>

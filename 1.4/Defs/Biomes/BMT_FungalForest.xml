@@ -275,7 +275,7 @@
 			<BMT_Maxolotl>0.3</BMT_Maxolotl>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.1</BMT_BloodropMoth>
-			<BMT_GlowBat MayRequire="biomesteam.biomesislands">0.75</BMT_GlowBat>
+			<BMT_GlowBat MayRequire="pathfinding.framework">0.75</BMT_GlowBat>
 			
 			<!-- onmnivore -->
 			<BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>

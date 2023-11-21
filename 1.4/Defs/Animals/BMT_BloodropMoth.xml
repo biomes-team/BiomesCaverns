@@ -219,7 +219,6 @@
         <description>The adult form of this species. It flies near silently through cave systems in search of blood it can drain from prey using its razor sharp proboscis. Much like bats, they live in large groups.\n\nEven a small group of them can drain a large animal to death in mere minutes.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
-            <BiomesCore_FlySpeed MayRequire="biomesteam.biomesislands">5</BiomesCore_FlySpeed>
             <MarketValue>350</MarketValue>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>57</ComfyTemperatureMax>
@@ -300,6 +299,9 @@
         <modExtensions>
             <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
                 <isBloodDrinkingAnimal>true</isBloodDrinkingAnimal>
+            </li>
+            <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+                <movementDef>PF_Movement_Flying</movementDef>
             </li>
         </modExtensions>
     </ThingDef>

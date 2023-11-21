@@ -142,7 +142,7 @@
 	<label>cave spider</label>
 	<race>BMT_CaveSpider</race>
 	<combatPower>500</combatPower>
-	<canArriveManhunter>true</canArriveManhunter>
+	<canArriveManhunter>false</canArriveManhunter>
 	<ecoSystemWeight>2</ecoSystemWeight>
 	<wildGroupSize>1</wildGroupSize>
 	<lifeStages>

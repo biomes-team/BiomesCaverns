@@ -5,8 +5,7 @@
 		<label>sandy toad</label>
 		<description>The sandy toad is native to the cave systems below deserts on the Rim. It tends to be preyed upon quite easily but many cave dwellers have taken a shine to it as a pet.</description>
 		<statBases>
-			<MoveSpeed>2.1</MoveSpeed>
-			<SwimSpeed MayRequire="biomesteam.biomesislands">5.6</SwimSpeed>
+			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -99,7 +98,13 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFarm</li>
 		</tradeTags>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Amphibious</movementDef>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_SandyToad</defName>
 		<label>sandy toad</label>

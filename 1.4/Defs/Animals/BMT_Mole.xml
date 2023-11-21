@@ -5,9 +5,7 @@
 		<label>mole</label>
 		<description>The mole is usually found within shallower caverns, digging through terrain faster than it otherwise walks.</description>
 		<statBases>
-			<MoveSpeed>2.2</MoveSpeed>
-			<DiggingSpeed MayRequire="biomesteam.biomesislands">9</DiggingSpeed>
-			<!--SandDrillingSpeed MayRequire="biomesteam.biomesislands">4.5</SandDrillingSpeed-->
+			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -129,8 +127,15 @@
 			</li-->
 		</comps>
 		<modExtensions>
-			<li Class="TerrainMovement.TerrainMovementPawnRestrictions" MayRequire="biomesteam.biomesislands">
-				<stayOffTerrainTag>Water</stayOffTerrainTag>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Digging</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagMovementExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<moveSpeedMultiplier>3</moveSpeedMultiplier>
 			</li>
 		</modExtensions>
 		<tradeTags>
@@ -182,5 +187,16 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_Core/Things/Animal/Digging/Burrowed</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

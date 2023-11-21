@@ -6,8 +6,6 @@
 		<description>The predatory diggerpede is found below the desert surface, burrowing in the sand and soil faster than most can run. It hunts anything it can lay its mandibles on when it hungers.\n\nDespite being similar to other arthropods, it gives live birth rather than lay eggs.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
-			<DiggingSpeed MayRequire="biomesteam.biomesislands">9</DiggingSpeed>
-			<!--SandDrillingSpeed MayRequire="biomesteam.biomesislands">4.5</SandDrillingSpeed-->
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -107,8 +105,15 @@
 			</li-->
 		</comps>
 		<modExtensions>
-			<li Class="TerrainMovement.TerrainMovementPawnRestrictions" MayRequire="biomesteam.biomesislands">
-				<stayOffTerrainTag>Water</stayOffTerrainTag>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Digging</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagMovementExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<moveSpeedMultiplier>3</moveSpeedMultiplier>
 			</li>
 		</modExtensions>
 		<tradeTags>
@@ -160,5 +165,16 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_Core/Things/Animal/Digging/Burrowed</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

@@ -5,8 +5,7 @@
 		<label>goeto toad</label>
 		<description>The goeto toad is another attempt at creating a meat and egg source for mining exportation centers and underground colonies. The project rapidly got out of hand, and the specimens quickly adapted to the caves which became its new 'natural' habitat.</description>
 		<statBases>
-			<MoveSpeed>2.1</MoveSpeed>
-			<SwimSpeed MayRequire="biomesteam.biomesislands">13.6</SwimSpeed>
+			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -101,7 +100,13 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFarm</li>
 		</tradeTags>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Amphibious</movementDef>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_Goeto</defName>
 		<label>goeto toad</label>

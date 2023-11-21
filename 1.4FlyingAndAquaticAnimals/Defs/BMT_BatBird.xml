@@ -8,17 +8,7 @@
     <foodMaxFactor>4</foodMaxFactor>
     <statFactors>
       <MoveSpeed>0.5</MoveSpeed>
-      <BiomesCore_FlySpeed>0.01</BiomesCore_FlySpeed>
     </statFactors>
-    <modExtensions>
-      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying</texPath>
-          <drawSize>1.1</drawSize>
-        </bodyGraphicData>
-      </li>
-    </modExtensions>
   </LifeStageDef>
 
   <LifeStageDef>
@@ -33,17 +23,7 @@
     <meleeDamageFactor>0.75</meleeDamageFactor>
     <statFactors>
       <MoveSpeed>0.9</MoveSpeed>
-      <BiomesCore_FlySpeed>0.9</BiomesCore_FlySpeed>
     </statFactors>
-    <modExtensions>
-      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying</texPath>
-          <drawSize>1.0</drawSize>
-        </bodyGraphicData>
-      </li>
-    </modExtensions>
   </LifeStageDef>
 
   <LifeStageDef>
@@ -53,14 +33,6 @@
     <reproductive>true</reproductive>
     <milkable>true</milkable>
     <shearable>true</shearable>
-    <modExtensions>
-      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
-        <bodyGraphicData>
-          <texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying</texPath>
-          <drawSize>1.2</drawSize>
-        </bodyGraphicData>
-      </li>    </modExtensions>
   </LifeStageDef>
   
   <ThingDef ParentName="AnimalThingBase">
@@ -68,9 +40,7 @@
     <label>batbird</label>
     <description>It's a flappy herbivorous mammal. These bats flit around within the dark, using their sense of echolocation to locate prey, often small insects or mammals.</description>
     <statBases>
-      <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
-      <SwimSpeed>0.5</SwimSpeed>
-	    <MoveSpeed>0.8</MoveSpeed>
+	    <MoveSpeed>4</MoveSpeed>
       <MarketValue>95</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -211,6 +181,18 @@
       <li>AnimalUncommon</li>
       <li>AnimalPet</li>
     </tradeTags>
+    <modExtensions>
+      <li Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li Class="PathfindingFramework.LocomotionMovementExtension">
+        <locomotionUrgencies>
+          <li>Jog</li>
+          <li>Sprint</li>
+        </locomotionUrgencies>
+        <moveSpeedMultiplier>4</moveSpeedMultiplier>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="BigBirdKindBase">
@@ -254,6 +236,17 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
+    <modExtensions>
+      <li Class="PathfindingFramework.LocomotionGraphicExtension">
+        <locomotionUrgencies>
+          <li>Jog</li>
+          <li>Sprint</li>
+        </locomotionUrgencies>
+        <bodyGraphicData>
+          <texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying</texPath>
+        </bodyGraphicData>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
 </Defs>

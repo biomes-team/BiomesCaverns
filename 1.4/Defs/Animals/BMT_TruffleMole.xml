@@ -6,8 +6,6 @@
 		<description>Thought to be related in some strange way to the truffle pigs of Earth, this mole has a specialized sense of smell, enabling it to find rare fungi.</description>
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
-			<DiggingSpeed MayRequire="biomesteam.biomesislands">16</DiggingSpeed>
-			<!--SandDrillingSpeed MayRequire="biomesteam.biomesislands">8</SandDrillingSpeed-->
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
@@ -137,15 +135,23 @@
 				<spawnForbidden>true</spawnForbidden>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="TerrainMovement.TerrainMovementPawnRestrictions" MayRequire="biomesteam.biomesislands">
-				<stayOffTerrainTag>Water</stayOffTerrainTag>
-			</li>
-		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Digging</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagMovementExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<moveSpeedMultiplier>3</moveSpeedMultiplier>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_TruffleMole</defName>
 		<label>truffle mole</label>
@@ -191,5 +197,16 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_Ground</li>
+					<li>PF_TerrainTag_Sand</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_Core/Things/Animal/Digging/Burrowed</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

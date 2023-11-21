@@ -12,9 +12,6 @@
 	<label>woolly bat</label>
 	<description>These large bats have been farmed for their wool-like fur for generations. They were selectively bred to be flightless to make wool gathering easier. Their livable temperature range is shockingly wide.</description>
 	<statBases>
-	  <!-- <BiomesCore_SleepSpeed>99</BiomesCore_SleepSpeed> -->
-	  <!-- <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed> -->
-	  <!-- <SwimSpeed>0.5</SwimSpeed> -->
 	  <MoveSpeed>4</MoveSpeed>
 	  <MarketValue>145</MarketValue>
 	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
