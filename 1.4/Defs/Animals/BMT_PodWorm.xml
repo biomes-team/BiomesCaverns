@@ -29,7 +29,7 @@
 	  <predator>false</predator>
 	  <baseBodySize>4</baseBodySize>
 	  <maxPreyBodySize>4</maxPreyBodySize>
-	  <baseHungerRate>0.05</baseHungerRate>
+	  <baseHungerRate>0.75</baseHungerRate>
 	  <baseHealthScale>0.80</baseHealthScale>
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>BMT_WeakChitin</leatherDef>
