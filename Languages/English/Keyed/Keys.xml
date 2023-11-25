@@ -13,5 +13,7 @@
 
   <MustBeOnLava>must be build on lava or magma.</MustBeOnLava>
   <LavaGeneratoor_lavaUsedTwice>Flow reduced: Turbulence from other lava generator</LavaGeneratoor_lavaUsedTwice>
+  <BMT_FungalPowerGenerator_MustNotBePlacedCloseToAnother>Must be placed at a distance larger than {0} from another {1_label}</BMT_FungalPowerGenerator_MustNotBePlacedCloseToAnother>
+  <BMT_FungalPowerGenerator_MakeGrowingZoneDesc>Create a growing zone around one or more powergen fungi, exactly matching their power gathering radius.</BMT_FungalPowerGenerator_MakeGrowingZoneDesc>
 
 </LanguageData>

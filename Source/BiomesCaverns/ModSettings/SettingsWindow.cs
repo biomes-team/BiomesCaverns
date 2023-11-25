@@ -30,6 +30,10 @@ namespace BiomesCaverns.ModSettings
 				ref Settings.Values.CoolEnclosedThickRoofAreas,
 				"BiomesCaverns_CoolEnclosedThickRoofAreasHover".Translate());
 
+			ref int powerGenFungusScaling = ref BiomesCore.ModSettings.Settings.Values.PowerGenFungusMultiplier;
+			powerGenFungusScaling = (int) listing.SliderLabeled("BiomesCaverns_PowerGenFungusMultiplierLabel".Translate(powerGenFungusScaling),
+				powerGenFungusScaling, 10, 500, 0.5F, "BiomesCaverns_PowerGenFungusMultiplierHover".Translate());
+
 			listing.End();
 		}
 

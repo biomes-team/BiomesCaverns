@@ -1,58 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="PlantBaseNonEdible">
-	<defName>BMT_PowerFungus</defName>
-	<label>power fungus</label>
-	<description>Electro-potential mushroom. If you have a suitable device, you can get energy from it. Power potential 60.</description>
-	<descriptionHyperlinks>
-	  <ThingDef>BMT_FungalPowerGenerator</ThingDef>
-	</descriptionHyperlinks>
-	<graphicData>
-	  <texPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowerFungusImmature</texPath>
-	  <graphicClass>Graphic_Random</graphicClass>
-	</graphicData>
-	<minifiedDef IsNull="True" />
-	<statBases>
-	  <MaxHitPoints>15</MaxHitPoints>
-	</statBases>
-	<selectable>true</selectable>
-	<pathCost>14</pathCost>
-	<plant>
-	  <fertilityMin>0.2</fertilityMin>
-	  <fertilitySensitivity>0.1</fertilitySensitivity>
-	  <growMinGlow>0</growMinGlow>
-	  <growOptimalGlow>0</growOptimalGlow>
-	  <!-- <immatureGraphicPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowerFungusImmature</immatureGraphicPath> -->
-	  <topWindExposure>0</topWindExposure>
-	  <visualSizeRange>0.55~1.25</visualSizeRange>
-	  <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-	  <dieIfLeafless>true</dieIfLeafless>
-	  <harvestTag>Standard</harvestTag>
-	  <sowWork>540</sowWork> <!-- 120 ticks per live day for beauty -->
-	  <sowTags>
-		<li>Ground</li>
-		<li>Decorative</li>
-	  </sowTags>
-	  <growDays>1.5</growDays>
-	  <!-- lifespan = power production per plant -->
-	  <lifespanDaysPerGrowDays>60</lifespanDaysPerGrowDays>
-	  <wildOrder>1</wildOrder>
-	  <purpose>Beauty</purpose>
-	</plant>
-	<comps>
-	  <!-- <li Class="CompProperties_Power"> -->
-		<!-- <compClass>CompPowerPlant</compClass> -->
-		<!-- <basePowerConsumption>0</basePowerConsumption> -->
-		<!-- <transmitsPower>true</transmitsPower> -->
-	  <!-- </li> -->
-	  <li Class="CompProperties_Facility">
-		<!-- <statOffsets> -->
-		  <!-- <ResearchSpeedFactor>0.1</ResearchSpeedFactor> -->
-		<!-- </statOffsets> -->
-		<maxSimultaneous>55</maxSimultaneous>
-	  </li>
-	</comps>
-  </ThingDef>
+	<ThingDef ParentName="PlantBaseNonEdible">
+		<defName>BMT_PowerFungus</defName>
+		<label>power fungus</label>
+		<description>Electro-potential mushroom. If you have a suitable device, you can get energy from it. Power potential 60.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BMT_FungalPowerGenerator</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowerFungusImmature</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<minifiedDef IsNull="True"/>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+		</statBases>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<plant>
+			<fertilityMin>0.2</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<!-- <immatureGraphicPath>BMT_Caverns/Things/Building/PowergeneratingShroom/PowerFungusImmature</immatureGraphicPath> -->
+			<topWindExposure>0</topWindExposure>
+			<visualSizeRange>0.55~1.25</visualSizeRange>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<sowWork>540</sowWork> <!-- 120 ticks per live day for beauty -->
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+			<growDays>1.5</growDays>
+			<!-- lifespan = power production per plant -->
+			<lifespanDaysPerGrowDays>30</lifespanDaysPerGrowDays>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+		<comps>
+			<!-- <li Class="CompProperties_Power"> -->
+			<!-- <compClass>CompPowerPlant</compClass> -->
+			<!-- <basePowerConsumption>0</basePowerConsumption> -->
+			<!-- <transmitsPower>true</transmitsPower> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>55</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>

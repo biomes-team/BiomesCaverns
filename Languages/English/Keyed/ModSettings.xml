@@ -3,6 +3,9 @@
 	<BiomesCaverns_CoolEnclosedThickRoofAreasLabel>Cool enclosed thick roof areas</BiomesCaverns_CoolEnclosedThickRoofAreasLabel>
 	<BiomesCaverns_CoolEnclosedThickRoofAreasHover>By default, the game will cool enclosed areas under thick mountain roof. You can disable this setting to ignore this feature. This will apply to every map, making biomes such as Earthen Depths more challenging.</BiomesCaverns_CoolEnclosedThickRoofAreasHover>
 
+	<BiomesCaverns_PowerGenFungusMultiplierLabel>Powergen fungus output multiplier: {0}%</BiomesCaverns_PowerGenFungusMultiplierLabel>
+	<BiomesCaverns_PowerGenFungusMultiplierHover>Multiply the total watts produced by the powergen fungus by this %.</BiomesCaverns_PowerGenFungusMultiplierHover>
+	
 	<BiomesCaverns_ResetSettingsLabel>Reset</BiomesCaverns_ResetSettingsLabel>
 	<BiomesCaverns_ResetSettingsHover>Reset all options of the mod to their default values.</BiomesCaverns_ResetSettingsHover>
 </LanguageData>
