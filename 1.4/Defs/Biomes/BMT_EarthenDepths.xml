@@ -162,7 +162,7 @@
 				<perlinFrequency>0.045</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>BMT_MagmaStone</terrain>
+						<terrain>BMT_Terrain_Tachylite</terrain>
 						<!--terrain>Slate_Rough</terrain-->
 						<min>0.33</min>
 						<max>0.73</max>

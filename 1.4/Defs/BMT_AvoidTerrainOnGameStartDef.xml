@@ -3,7 +3,7 @@
 	<BiomesCore.AvoidTerrainOnGameStartDef>
 		<defName>BMT_AvoidMagmaOnGameStart</defName>
 		<terrains>
-			<li>BMT_MagmaStone</li>
+			<li>BMT_Terrain_Tachylite</li>
 		</terrains>
 	</BiomesCore.AvoidTerrainOnGameStartDef>
 </Defs>
