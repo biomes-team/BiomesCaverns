@@ -53,6 +53,8 @@
     <Compile Include="GenSteps\ScattererValidator_RoughRockBuildable.cs" />
     <Compile Include="Incidents\IncidentWorker_HungeringHydra.cs" />
     <Compile Include="IncidentWorker_ThrumbungusPasses.cs" />
+    <Compile Include="ModSettings\Settings.cs" />
+    <Compile Include="ModSettings\SettingsWindow.cs" />
     <Compile Include="Patches\Building_PodLauncher_GetGizmos_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="Patches\GenStep_ArchonexusResearchBuildings_CollisionAt_Patch.cs" />
     <Compile Include="Patches\GenStep_Archonexus_CanScatterAt_Patch.cs" />
     <Compile Include="Patches\GenStep_ScattererBestFit_CanScatterAt_Patch.cs" />
+    <Compile Include="Patches\RoomTempTracker_DeepEqualizationTempChangePerInterval_Patch.cs" />
     <Compile Include="Patches\TunnelHiveSpawner_Spawn_Patch.cs" />
     <Compile Include="Patches\JobDriver_Skydreaming_MakeNewToils_Patch.cs" />
     <Compile Include="Patches\ModAssemblies.cs" />
