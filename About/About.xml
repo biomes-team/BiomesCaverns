@@ -25,6 +25,13 @@
       <downloadUrl>https://github.com/m00nl1ght-dev/GeologicalLandforms/releases/latest</downloadUrl>
     </li>
   </modDependencies>
+  <loadBefore>
+    <!--
+    If the "Lag Free Lamps" option is enabled, Biomes! Caverns will fail to apply its dark torch patches if it loads
+    after Tweaks Galore.
+    -->
+    <li>Neronix17.TweaksGalore</li>
+  </loadBefore>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
