@@ -83,6 +83,7 @@
 						</anyOf>
 						<temperature>
 							<min>0</min>
+							<max>500</max>
 						</temperature>
 						<rainfall>
 							<max>750</max>
