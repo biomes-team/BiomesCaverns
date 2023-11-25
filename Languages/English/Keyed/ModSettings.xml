@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<BiomesCaverns_AllowCoolingEnclosedEarthenDepthsAreasLabel>Cool enclosed areas in the Earthen Depths</BiomesCaverns_AllowCoolingEnclosedEarthenDepthsAreasLabel>
-	<BiomesCaverns_AllowCoolingEnclosedEarthenDepthsAreasHover>By default, the game will cool enclosed areas under thick mountain roof. You can disable this setting to make the Earthen Depths ignore this feature, making the biome even more challenging.</BiomesCaverns_AllowCoolingEnclosedEarthenDepthsAreasHover>
+	<BiomesCaverns_CoolEnclosedThickRoofAreasLabel>Cool enclosed thick roof areas</BiomesCaverns_CoolEnclosedThickRoofAreasLabel>
+	<BiomesCaverns_CoolEnclosedThickRoofAreasHover>By default, the game will cool enclosed areas under thick mountain roof. You can disable this setting to ignore this feature. This will apply to every map, making biomes such as Earthen Depths more challenging.</BiomesCaverns_CoolEnclosedThickRoofAreasHover>
 
 	<BiomesCaverns_ResetSettingsLabel>Reset</BiomesCaverns_ResetSettingsLabel>
 	<BiomesCaverns_ResetSettingsHover>Reset all options of the mod to their default values.</BiomesCaverns_ResetSettingsHover>

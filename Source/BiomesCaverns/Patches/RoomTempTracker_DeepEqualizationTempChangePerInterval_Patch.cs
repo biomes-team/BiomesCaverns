@@ -7,9 +7,9 @@ namespace BiomesCaverns.Patches
 	[HarmonyPatch(typeof(RoomTempTracker), "DeepEqualizationTempChangePerInterval")]
 	public static class RoomTempTracker_DeepEqualizationTempChangePerInterval_Patch
 	{
-		public static void Postfix(ref float __result, Room ___room)
+		public static void Postfix(ref float __result)
 		{
-			if (___room.Map.Biome == BC_DefOf.BMT_EarthenDepths && !Settings.Values.AllowCoolingEnclosedEarthenDepthsAreas)
+			if (!Settings.Values.CoolEnclosedThickRoofAreas)
 			{
 				__result = 0.0F;
 			}

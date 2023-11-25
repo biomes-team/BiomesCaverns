@@ -12,7 +12,7 @@ namespace BiomesCaverns.ModSettings
 		/// By default, the game will cool enclosed areas under thick mountain roof. You can disable this setting to make
 		/// the Earthen Depths ignore this feature, making the biome even more challenging.
 		/// </summary>
-		public bool AllowCoolingEnclosedEarthenDepthsAreas = true;
+		public bool CoolEnclosedThickRoofAreas = true;
 	}
 
 	/// <summary>
@@ -39,8 +39,8 @@ namespace BiomesCaverns.ModSettings
 		public override void ExposeData()
 		{
 			base.ExposeData();
-			Scribe_Values.Look(ref Values.AllowCoolingEnclosedEarthenDepthsAreas,
-				nameof(Values.AllowCoolingEnclosedEarthenDepthsAreas), defaultValue: true);
+			Scribe_Values.Look(ref Values.CoolEnclosedThickRoofAreas,
+				nameof(Values.CoolEnclosedThickRoofAreas), defaultValue: true);
 		}
 	}
 }

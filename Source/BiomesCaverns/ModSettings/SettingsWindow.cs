@@ -26,9 +26,9 @@ namespace BiomesCaverns.ModSettings
 			Listing_Standard listing = new Listing_Standard();
 			listing.Begin(inRect);
 
-			listing.CheckboxLabeled("BiomesCaverns_AllowCoolingEnclosedEarthenDepthsAreasLabel".Translate(),
-				ref Settings.Values.AllowCoolingEnclosedEarthenDepthsAreas,
-				"BiomesCaverns_AllowCoolingEnclosedEarthenDepthsAreasHover".Translate());
+			listing.CheckboxLabeled("BiomesCaverns_CoolEnclosedThickRoofAreasLabel".Translate(),
+				ref Settings.Values.CoolEnclosedThickRoofAreas,
+				"BiomesCaverns_CoolEnclosedThickRoofAreasHover".Translate());
 
 			listing.End();
 		}
