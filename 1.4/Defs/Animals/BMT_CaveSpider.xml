@@ -34,7 +34,7 @@
 		<useMeatFrom>Megaspider</useMeatFrom>
 	  <leatherDef>BMT_RoyalChitin</leatherDef>
 	  <wildness>0.99</wildness>
-	  <petness>0.8</petness>
+	  <petness>0.1</petness>
 	  <trainability>Advanced</trainability>
 	  <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
