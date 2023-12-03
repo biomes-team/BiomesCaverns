@@ -47,7 +47,7 @@
 			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
 				<gasType>RotStink</gasType>
 				<cellsToFill>1</cellsToFill>
-				<effecterReleasing MayRequire="Ludeon.RimWorld.Biotech">GasReleasing</effecterReleasing>
+				<effecterReleasing MayRequire="Ludeon.RimWorld.Biotech">BMT_SilentGasReleasing</effecterReleasing>
 				<growthProgress>0.6</growthProgress>
 			</li>
 		</comps>
@@ -61,4 +61,24 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+  <EffecterDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>BMT_SilentGasReleasing</defName>
+	<children>
+	  <li>
+		<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+		<!-- Sergkart: The sound causes endless click spam -->
+		<!-- <soundDef>GasReleasing</soundDef> -->
+	  </li>
+	  <li>
+		<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+		<positionRadius>0.3</positionRadius>
+		<fleckDef>Fleck_GasSmall</fleckDef>
+		<chancePerTick>0.1</chancePerTick>
+		<scale>0.5~1</scale>
+		<spawnLocType>OnSource</spawnLocType>
+	  </li>
+	</children>
+  </EffecterDef>
+
 </Defs>

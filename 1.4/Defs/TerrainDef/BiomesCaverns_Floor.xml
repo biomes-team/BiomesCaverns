@@ -109,7 +109,14 @@
 		<defName>BMT_MagmaAsh</defName>
 		<label>hot ash</label>
 		<texturePath>BMT_Caverns/Terrains/MagmaAsh</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/MagmaAsh</pollutedTexturePath>
+		<!-- Sergkart: pollutedTexturePath is needed only if such a texture is present; otherwise, a shader is used. -->
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/MagmaAsh</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
 		<edgeType>Fade</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>16</pathCost>
@@ -156,7 +163,13 @@
 		<defName>BMT_VolcanicAsh</defName>
 		<label>ash</label>
 		<texturePath>BMT_Caverns/Terrains/VolcanicAsh</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/VolcanicAsh</pollutedTexturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/VolcanicAsh</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
 		<edgeType>Fade</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>16</pathCost>
@@ -202,11 +215,17 @@
 		<defName>BMT_Crystal</defName>
 		<label>crystal</label>
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath> -->
 		<isPaintable>false</isPaintable>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>335</renderPrecedence>
 		<pathCost>3</pathCost>
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
 		<statBases>
 			<Beauty>4</Beauty>
 			<BeautyOutdoors>4</BeautyOutdoors>
@@ -233,7 +252,13 @@
 		<label>crystal floor</label>
 		<description>Flooring made out of blue crystals from deep within the earth. It takes a while to build but is considered quite beautiful.</description>
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
 		<isPaintable>false</isPaintable>
 		<edgeType>Hard</edgeType>
 		<renderPrecedence>335</renderPrecedence>
@@ -299,7 +324,13 @@
 		<label>mycelial soil</label>
 		<description>Soil with mycelium spread throughout. It's kind of ugly and takes a lot of work to build, but it's perfect for growing darkness-loving crops.</description>
 		<texturePath>BMT_Caverns/Terrains/MycelialSoil</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/MycelialSoil</pollutedTexturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/MycelialSoil</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
 		<edgeType>Fade</edgeType>
 		<renderPrecedence>70</renderPrecedence>
 		<pathCost>2</pathCost>
@@ -356,7 +387,13 @@
 		<defName>BMT_GlacialIce</defName>
 		<label>glacial ice</label>
 		<texturePath>BMT_Caverns/Terrains/GlacialIce</texturePath>
-		<pollutedTexturePath>BMT_Caverns/Terrains/GlacialIce</pollutedTexturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/GlacialIce</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
 		<isPaintable>false</isPaintable>
 		<edgeType>FadeRough</edgeType>
 			<renderPrecedence>350</renderPrecedence>
