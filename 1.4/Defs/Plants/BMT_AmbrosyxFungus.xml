@@ -4,6 +4,7 @@
 		<defName>BMT_AmbrosyxFungus</defName>
 		<label>ambrosyx fungus</label>
 		<description>A rare wild fungus which yields ambrosyx shrooms. Similar to ambrosia, this shroom is delicious and produces a drug-like mood boost. This fungus cannot be farmed, which makes it very valuable.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Nutrition>0.5</Nutrition>
@@ -43,6 +44,7 @@
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowInCave>true</allowInCave>
 				<allowInBuilding>true</allowInBuilding>
+				<optimalTemperature>-50~352.222</optimalTemperature>
 			</li>
 		</modExtensions>
 	</ThingDef>

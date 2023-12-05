@@ -16,6 +16,8 @@ namespace BiomesCaverns
         public static ThingDef BMT_DrillPodActive;
         public static ThingDef BMT_DrillPod;
         public static ThingDef BMT_HungeringHydra;
+        public static ThingDef BMT_IceWall;
+        public static ThingDef BMT_SandWall;
         public static ThingDef BMT_NaturalBuildings_Stalagmites_Small;
         public static ThingDef BMT_NaturalBuildings_Stalagmites_Medium;
         public static ThingDef BMT_NaturalBuildings_Stalagmites_Large;
