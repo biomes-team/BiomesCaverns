@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!-- <ThingDef ParentName="RockBase"> -->
+	<!-- <defName>BMT_MineableCrystals</defName> -->
+	<!-- <label>compacted crystals</label> -->
+	<!-- <description>Crystals formed in rock.</description> -->
+	<!-- <graphicData> -->
+	  <!-- <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath> -->
+	  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+	  <!-- <shaderType>CutoutComplex</shaderType> -->
+	  <!-- <color>(95,155,198)</color> -->
+	  <!-- <colorTwo>(154,210,250)</colorTwo> -->
+	<!-- </graphicData> -->
+	<!-- <statBases> -->
+	  <!-- <MaxHitPoints>1500</MaxHitPoints> -->
+	<!-- </statBases> -->
+	<!-- <building> -->
+	  <!-- <isResourceRock>true</isResourceRock> -->
+	  <!-- <mineableThing>BMT_ResourceBlueCrystal</mineableThing> -->
+	  <!-- <mineableYield>40</mineableYield> -->
+	  <!-- <mineableScatterCommonality>1</mineableScatterCommonality> -->
+	  <!-- <mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange> -->
+	<!-- </building> -->
+  <!-- </ThingDef> -->
+  
+</Defs>
