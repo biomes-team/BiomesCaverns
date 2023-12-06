@@ -14,6 +14,9 @@
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0</generateCommonality>
 		<generateAllowChance>0</generateAllowChance>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
 		<statBases>
 			<MarketValue>1</MarketValue>
 			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
