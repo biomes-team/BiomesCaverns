@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+	<defName>BMT_CavernDweller</defName>
+	<label>cavern dweller</label>
+	<description>Our distant ancestors lived in caves and we will only continue this tradition.</description>
+	<iconPath>BMT_Caverns/UI/Memes/Memes_CavernDweller</iconPath>
+	<groupDef>Misc</groupDef>
+	<impact>1</impact>
+	<requireOne>
+	  <li>
+		<li>SmallSpaces_Acceptable</li>
+	  </li>
+	</requireOne>
+	<!-- <generalRules> -->
+	  <!-- <rulesStrings> -->
+		<!-- <li>memeCreed->cave</li> -->
+		<!-- <li>memeCreed->bunker</li> -->
+		<!-- <li>memeCreed->shaft</li> -->
+		<!-- <li>memeAdjective->deep</li> -->
+		<!-- <li>memeHyphenPrefix->stone</li> -->
+		<!-- <li>memeHyphenPrefix->cave</li> -->
+		<!-- <li>memeHyphenPrefix->deep</li> -->
+		<!-- <li>memeHyphenPrefix->sub</li> -->
+		<!-- <li>memeHyphenPrefix->under</li> -->
+		<!-- <li>memeConcept->earth</li> -->
+		<!-- <li>memeConcept->stone</li> -->
+		<!-- <li>memeConcept->depth</li> -->
+		<!-- <li>memeConcept->burial</li> -->
+		<!-- <li>memeLeaderNoun->foredigger</li> -->
+		<!-- <li>memeLeaderNoun->deepsounder</li> -->
+		<!-- <li>memeLeaderNoun->shaft</li> -->
+		<!-- <li>memeLeaderAdjective->deep</li> -->
+		<!-- <li>memeMoralist->truthdigger</li> -->
+		<!-- <li>memeMoralist->thoughtdigger</li> -->
+		<!-- <li>memeMoralist->mindminer</li> -->
+	  <!-- </rulesStrings> -->
+	<!-- </generalRules> -->
+	<renderOrder>110</renderOrder>
+	<!-- <addDesignators> -->
+	  <!-- <li>FungalGravel</li> -->
+	<!-- </addDesignators> -->
+	<styleItemTags>
+	  <li>
+		<tag>TattooBodyInsect</tag>
+		<baseWeight>0.01</baseWeight>
+		<weightFactor>1</weightFactor>
+	  </li>
+	</styleItemTags>
+	<startingResearchProjects>
+	  <li>Stonecutting</li>
+	</startingResearchProjects>
+	<agreeableTraits>
+	  <li>Undergrounder</li>
+	</agreeableTraits>
+  </MemeDef>
+
+</Defs>
