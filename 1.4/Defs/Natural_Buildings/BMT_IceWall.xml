@@ -14,7 +14,6 @@
 		</statBases>
 		<blockLight>true</blockLight>
 		<filthLeaving>Filth_Water</filthLeaving>
-		<tickerType>Normal</tickerType>
 		<building>
 			<isResourceRock>false</isResourceRock>
 			<isNaturalRock>false</isNaturalRock>
@@ -24,13 +23,6 @@
 			<mineableDropChance>0.25</mineableDropChance>
 			<!-- <mineableYield>20</mineableYield> -->
 		</building>
-		<comps>
-			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusher</compClass>
-				<heatPerSecond>-1</heatPerSecond>
-				<heatPushMinTemperature>1</heatPushMinTemperature>	
-			</li>
-		</comps>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
 				<offset>0.35</offset>
