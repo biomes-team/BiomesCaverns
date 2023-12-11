@@ -33,9 +33,9 @@
       <preferability>DesperateOnlyForHumanlikes</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>RawVegetable_Eat</ingestSound>
-	  <tasteThought>BMT_AteFungalLog</tasteThought>
-	  <foodType>Fungus</foodType>
-	  <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+	    <tasteThought>BMT_AteFungalLog</tasteThought>
+	    <foodType>Fungus</foodType>
+	    <optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
     </ingestible>
     <burnableByRecipe>true</burnableByRecipe>
     <healthAffectsPrice>false</healthAffectsPrice>

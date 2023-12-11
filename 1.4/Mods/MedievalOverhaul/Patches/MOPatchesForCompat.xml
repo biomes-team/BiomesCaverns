@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Adjusts the mass and prices of the mushroom logs, following the instructions of \2553700067\1.4\Defs\ThingDefs_Items\Items_Resources.xml-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/statBases/Mass</xpath>
+        <value>
+            <Mass>1.2</Mass>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/statBases/MarketValue</xpath>
+        <value>
+            <MarketValue>2.2</MarketValue>
+        </value>
+    </Operation>
+
+    <!-- Adjustments to make prevent raw wood from appearing as ingredient on buildings that require planks-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/thingCategories/li[text()="ResourcesRaw"]</xpath>
+        <value>
+            <li>DankPyon_RawWood</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/stuffProps/categories/li[text()="Woody"]</xpath>
+        <value>
+            <li>DankPyon_RawWood</li>
+        </value>
+    </Operation>
+
+</Patch>

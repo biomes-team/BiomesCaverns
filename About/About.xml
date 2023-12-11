@@ -42,6 +42,7 @@
     <li>BiomesTeam.BiomesIslands</li>
     <li>m00nl1ght.GeologicalLandforms</li>
     <li>VanillaExpanded.VCEF</li>
+    <li>dankpyon.medieval.overhaul</li>
   </loadAfter>
   <incompatibleWith>
     <!-- <li>fluffysminion.itw.caveworldfloraunleashed</li> -->
