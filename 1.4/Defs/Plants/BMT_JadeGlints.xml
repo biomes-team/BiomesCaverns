@@ -29,7 +29,7 @@
 			<fertilityMin>0.25</fertilityMin> 
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_JadeGlints</harvestedThingDef>
-			<harvestYield>5</harvestYield>
+			<harvestYield>3</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 				<li>BMT_Fungiponics</li>
@@ -60,7 +60,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>15</MarketValue>
+			<MarketValue>2.5</MarketValue>
 			<Mass>0.1</Mass>
 			<DeteriorationRate>4</DeteriorationRate>
 			<Nutrition>0.2</Nutrition>
@@ -139,7 +139,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>350</WorkToMake>
-      <MarketValue>21</MarketValue>
+      <MarketValue>30</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
     <techLevel>Industrial</techLevel>
