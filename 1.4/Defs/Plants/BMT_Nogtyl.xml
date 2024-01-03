@@ -14,7 +14,7 @@
 		</modExtensions>
 		<defName>BMT_Nogtyl</defName>
 		<label>nogtyl</label>
-		<description>A strong wood-like mushroom. Fast-growing, but doesn't yield much usable material.</description>
+		<description>A strong wood-like mushroom. Fast-growing, but doesn't yield much usable material. It can only be grown by people on marshy soil.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Nogtyl</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
