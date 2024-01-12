@@ -14,7 +14,7 @@
 	<statBases>
 	  <MoveSpeed>4.5</MoveSpeed>
 	  <MarketValue>400</MarketValue>
-	  <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>-200</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
@@ -138,8 +138,8 @@
   
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_WoollySpider</defName>
-	<label>cave spider</label>
-	<race>BMT_CaveSpider</race>
+	<label>woolly spider</label>
+	<race>BMT_WoollySpider</race>
 	<combatPower>150</combatPower>
 	<canArriveManhunter>false</canArriveManhunter>
 	<ecoSystemWeight>1.2</ecoSystemWeight>
