@@ -112,7 +112,7 @@
 	
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_FleeceSpider</defName>
-		<label>Fleece spider</label>
+		<label>fleece spider</label>
 		<race>BMT_FleeceSpider</race>
 		<combatPower>70</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
@@ -158,8 +158,8 @@
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggFleeceSpiderFertilized</defName>
-		<label>Fleece spider egg (fert.)</label>
-		<description>A Fleece spider egg. If all goes well, it should hatch into a baby spider. It can be eaten raw, but it's much better cooked.</description>
+		<label>fleece spider egg (fert.)</label>
+		<description>A fleece spider egg. If all goes well, it should hatch into a baby spider. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
 			<drawSize>0.8</drawSize>
