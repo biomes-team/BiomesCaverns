@@ -7,7 +7,8 @@
 	<description>This small, solitary herbivore can swiftly hop away from danger.</description>
 	<uiIconScale>1.1</uiIconScale>
 	<statBases>
-	  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 	</statBases>
 	<race>
 	  <baseBodySize>0.75</baseBodySize>

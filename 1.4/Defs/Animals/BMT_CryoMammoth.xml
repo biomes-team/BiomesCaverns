@@ -8,7 +8,7 @@
 	<statBases>
 	  <MoveSpeed>4.8</MoveSpeed>
 	  <MarketValue>600</MarketValue>
-	  <ComfyTemperatureMin>-12</ComfyTemperatureMin>
+	  <ComfyTemperatureMin>-200</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 	  <FilthRate>24</FilthRate>
 	  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
