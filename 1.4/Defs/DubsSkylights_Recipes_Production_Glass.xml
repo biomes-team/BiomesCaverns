@@ -3,7 +3,7 @@
 
   <RecipeDef MayRequire="dubwise.dubsskylights">
 	<defName>BMT_Sand_SmeltGlass</defName>
-	<label>smelt glass</label>
+	<label>smelt glass from cavern sand</label>
 	<description>Make framed glass windows.</description>
 	<jobString>Smelting glass.</jobString>
 	<workAmount>1600</workAmount>
@@ -41,7 +41,7 @@
 
 	<RecipeDef MayRequire="dubwise.dubsskylights">
 		<defName>BMT_Sand_SmeltGlass4x</defName>
-		<label>smelt glass x4</label>
+		<label>smelt glass from cavern sand x4</label>
 		<description>Make framed glass windows.</description>
 		<jobString>Smelting glass.</jobString>
 		<workAmount>6400</workAmount>
