@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Verse;
 
 namespace Caveworld_Flora_Unleashed
@@ -42,6 +43,8 @@ namespace Caveworld_Flora_Unleashed
             if (randomSpawnPeriodInTicks == 0)
             {
                 int mapSurfaceCoefficient = map.Size.x * 2 + map.Size.z * 2;
+                // Prevent division by zero errors with mods using very small maps such as pocket dimensions.
+                mapSurfaceCoefficient = Math.Max(mapSurfaceCoefficient, 1);
                 randomSpawnPeriodInTicks = 160000 / (mapSurfaceCoefficient / 100);
             }
 
