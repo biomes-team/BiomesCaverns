@@ -7,7 +7,7 @@
 			]/genSteps
 		</xpath>
 		<value>
-			<li>BMT_GenStep_ClearCavernCenter</li>
+			<li>BMT_GenStep_ClearCavernCenter_Archonexus</li>
 		</value>
 	</Operation>
 </Patch>

@@ -4,8 +4,10 @@ using Verse;
 
 namespace BiomesCaverns.GenSteps
 {
-	public class GenStep_ClearCavernCenter : GenStep
+	public abstract class GenStep_ClearCavernCenter : GenStep
 	{
+		public abstract int CenterRadius();
+
 		public override void Generate(Map map, GenStepParams parms)
 		{
 			BiomeDef biome = map.Biome;
@@ -15,7 +17,7 @@ namespace BiomesCaverns.GenSteps
 				return;
 			}
 
-			foreach (var cell in GenRadial.RadialCellsAround(map.Center, 16, true))
+			foreach (var cell in GenRadial.RadialCellsAround(map.Center, CenterRadius(), true))
 			{
 				List<Thing> thingList = cell.GetThingList(map);
 				for (int index = 0; index < thingList.Count; ++index)
