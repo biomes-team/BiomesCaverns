@@ -16,7 +16,7 @@
     <intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>3</MarketValue>
+      <MarketValue>1.5</MarketValue>
       <Mass>0.05</Mass>
 	  <Beauty>1</Beauty>
       <Flammability>0.75</Flammability>
@@ -25,6 +25,9 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>1.75</glowRadius>
