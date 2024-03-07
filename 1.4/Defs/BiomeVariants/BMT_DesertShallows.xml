@@ -26,6 +26,8 @@
       <anyOf>
         <biome>Desert</biome>
         <biome>ExtremeDesert</biome>
+        <biome MayRequire="sarg.alphabiomes">AB_GallatrossGraveyard</biome>
+        <biome MayRequire="sarg.alphabiomes">AB_RockyCrags</biome>
       </anyOf>
     </worldTileConditions>
 

@@ -25,6 +25,7 @@
       </anyOf>
       <anyOf>
         <biome>IceSheet</biome>
+        <biome MayRequire="sarg.alphabiomes">AB_PropaneLakes</biome>
       </anyOf>
     </worldTileConditions>
 

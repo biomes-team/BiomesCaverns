@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_ScorchedPyroducts</defName>
+
+		<label>scorched pyroducts</label>
+
+		<biomeLabel operation="replace">scorched pyroducts</biomeLabel>
+		<biomeDescription operation="replace">A molten landscape unfolds on the surface, marked by liquid lava and active calderas. The dormant lava tubes leading to the depths unveil a hidden subterranean world.</biomeDescription>
+
+		<worldTileGraphicAtlas>
+			<texture>BMT_Caverns/World/Biomes/Atlas/ScorchedPyroducts</texture>
+			<drawMode>HexAdjacencyCaves</drawMode>
+			<atlasSize>(4,4)</atlasSize>
+		</worldTileGraphicAtlas>
+
+		<worldTileConditions>
+			<anyOf>
+				<landform>CaveEntrance</landform>
+				<landform>SurfaceCave</landform>
+				<landform>SecludedValley</landform>
+				<landform>Sinkhole</landform>
+				<landform>BMT_Mineshaft</landform>
+			</anyOf>
+			<anyOf>
+				<biome>AB_PyroclasticConflagration</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<id>inside</id>
+
+				<mapGridConditions>
+					<roof>RoofRockThick</roof>
+				</mapGridConditions>
+
+				<terrainOverrides>
+					<modifier>
+						<conditions>
+							<terrain>WaterShallow</terrain>
+						</conditions>
+						<value>AB_SolidifiedLava</value>
+					</modifier>
+					<modifier>
+						<conditions>
+							<terrain>Gravel</terrain>
+						</conditions>
+						<value>BMT_VolcanicAsh</value>
+					</modifier>
+				</terrainOverrides>
+
+				<applyToCaves>true</applyToCaves>
+
+				<animalDensity>2</animalDensity>
+				<plantDensity>1</plantDensity>
+				<wildPlantRegrowDays>27</wildPlantRegrowDays>
+
+				<wildPlants operation="replace">
+
+					<!-- ground cover -->
+					<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+					<BMT_FireLavender>1</BMT_FireLavender>
+
+					<!-- mid sized -->
+					<BMT_Boomshroom>0.2</BMT_Boomshroom>
+
+					<!-- trees -->
+					<BMT_Candlesnuff>0.7</BMT_Candlesnuff>
+
+					<!-- other harvestable -->
+					<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
+					<BMT_MoonlessStripesPlant>0.1</BMT_MoonlessStripesPlant>
+					<BMT_CapscoolFungus>0.1</BMT_CapscoolFungus>
+
+					<!-- hydrophytes -->
+
+					<!-- special -->
+					<BMT_HeatsinkFungus>0.1</BMT_HeatsinkFungus>
+					<BMT_StinkLattice>0.05</BMT_StinkLattice>
+
+				</wildPlants>
+
+				<wildAnimals operation="replace">
+
+					<!-- herbivores -->
+					<BMT_Boomapillar>0.2</BMT_Boomapillar>
+					<BMT_BoomMoth>0.2</BMT_BoomMoth>
+					<BMT_FoundryBeetle>0.2</BMT_FoundryBeetle>
+					<BMT_FireSalamander>0.2</BMT_FireSalamander>
+					<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
+					<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
+					<BMT_PodWorm>0.0001</BMT_PodWorm>
+					<BMT_Pillbug>0.2</BMT_Pillbug>
+					<BMT_Woolybat>0.05</BMT_Woolybat>
+					<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
+
+					<!-- predators -->
+					<BMT_AcidSlug>0.01</BMT_AcidSlug>
+					<BMT_Basilisk>0.2</BMT_Basilisk>
+
+					<!-- onmnivore -->
+					<BMT_CrystalCrab_Sandstone>0.0001</BMT_CrystalCrab_Sandstone>
+					<BMT_CrystalCrab_Granite>0.0001</BMT_CrystalCrab_Granite>
+					<BMT_CrystalCrab_Limestone>0.0001</BMT_CrystalCrab_Limestone>
+					<BMT_CrystalCrab_Slate>0.0001</BMT_CrystalCrab_Slate>
+					<BMT_CrystalCrab_Marble>0.0001</BMT_CrystalCrab_Marble>
+					<BMT_CrystalCrab_Jade>0.0001</BMT_CrystalCrab_Jade>
+					<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.0001</BMT_CrystalCrab_Coral>
+
+				</wildAnimals>
+
+			</li>
+
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

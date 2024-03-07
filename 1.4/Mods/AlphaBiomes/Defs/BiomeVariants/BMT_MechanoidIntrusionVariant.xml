@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_MechanoidIntrusionVariant</defName>
+
+		<label>mechanoid intrusion</label>
+
+		<worldTileGraphicAtlas>
+			<texture>BMT_Caverns/World/Biomes/Atlas/ShallowCave</texture>
+			<drawMode>HexAdjacencyCaves</drawMode>
+			<atlasSize>(4,4)</atlasSize>
+		</worldTileGraphicAtlas>
+
+		<worldTileConditions>
+			<anyOf>
+				<landform>CaveEntrance</landform>
+				<landform>SurfaceCave</landform>
+				<landform>SecludedValley</landform>
+				<landform>Sinkhole</landform>
+				<landform>BMT_Mineshaft</landform>
+			</anyOf>
+			<anyOf>
+				<biome>AB_MechanoidIntrusion</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<id>inside</id>
+
+				<mapGridConditions>
+					<roof>RoofRockThick</roof>
+				</mapGridConditions>
+
+				<terrainOverrides>
+					<modifier>
+						<conditions>
+							<terrain>WaterShallow</terrain>
+						</conditions>
+						<value>GU_Piping</value>
+					</modifier>
+					<modifier>
+						<conditions>
+							<terrain>Gravel</terrain>
+						</conditions>
+						<value>AB_SoilOnCrackedMetal</value>
+					</modifier>
+				</terrainOverrides>
+
+				<applyToCaves>true</applyToCaves>
+
+				<animalDensity>0.1</animalDensity>
+				<plantDensity>0.2</plantDensity>
+				<wildPlantRegrowDays>25</wildPlantRegrowDays>
+
+				<wildPlants operation="replace">
+
+					<!-- ground cover -->
+					<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+					<BMT_FloorMold>3.0</BMT_FloorMold>
+
+					<!-- mid sized -->
+					<BMT_Wheelshroom>0.2</BMT_Wheelshroom>
+					<BMT_Greatbulb>0.3</BMT_Greatbulb>
+
+					<!-- trees -->
+					<BMT_Dishcap>0.5</BMT_Dishcap>
+
+				</wildPlants>
+
+			</li>
+
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

@@ -27,6 +27,12 @@
 				<biome>Desert</biome>
 				<biome>ExtremeDesert</biome>
 				<biome>IceSheet</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_GallatrossGraveyard</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_GelatinousSuperorganism</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_MechanoidIntrusion</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_PropaneLakes</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_PyroclasticConflagration</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_RockyCrags</biome>
 			</noneOf>
 		</worldTileConditions>
 
