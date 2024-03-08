@@ -35,7 +35,6 @@
 			</li>
 				<li Class="BiomesCore.CompProperties_MakeFilthTrail">
 					<filthDef>BMT_Filth_Snail_FuelTrail</filthDef>
-					<cooldown>20</cooldown>
 				</li>
 			  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
     <sleepGraphicData>
