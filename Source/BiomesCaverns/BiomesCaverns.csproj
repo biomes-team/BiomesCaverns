@@ -49,6 +49,7 @@
     <Compile Include="CompCleanFilthAround.cs" />
     <Compile Include="DebugActions.cs" />
     <Compile Include="DependencyVersionCheck.cs" />
+    <Compile Include="FeatureWorkers\FeatureWorker_CavernBiomeCluster.cs" />
     <Compile Include="GameCondition_SporeCloud.cs" />
     <Compile Include="GenSteps\GenStep_ClearCavernCenter.cs" />
     <Compile Include="GenSteps\GenStep_ClearCavernCenter_Archonexus.cs" />
