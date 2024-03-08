@@ -42,8 +42,6 @@
 		</plant>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
 				<optimalTemperature>-50~352.222</optimalTemperature>
 			</li>
 		</modExtensions>

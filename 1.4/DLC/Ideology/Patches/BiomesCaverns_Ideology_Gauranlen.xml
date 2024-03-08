@@ -23,16 +23,6 @@
 			</li>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]</xpath>
-		<value>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-				<allowUnroofed>true</allowUnroofed>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant</xpath>
 		<value>
@@ -59,16 +49,6 @@
 						<graphicPath>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomCluster</graphicPath>
 					</li>
 				</graphicsPerBiome>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_MossGauranlen"]</xpath>
-		<value>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-				<allowUnroofed>true</allowUnroofed>
 			</li>
 		</value>
 	</Operation>
@@ -99,16 +79,6 @@
 						<graphicPath>BMT_Caverns/Things/Plant/Gauranlen/GauranlenMushroomPod</graphicPath>
 					</li>
 				</graphicsPerBiome>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_PodGauranlen"]</xpath>
-		<value>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-				<allowUnroofed>true</allowUnroofed>
 			</li>
 		</value>
 	</Operation>

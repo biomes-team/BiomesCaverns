@@ -96,13 +96,6 @@
 		<!-- <<glowColor>(119,189,239,0)</glowColor> -->
 	  <!-- </li> -->
 	</comps>
-	<modExtensions>
-		<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-			<allowInCave>true</allowInCave>
-			<allowInBuilding>true</allowInBuilding>
-			<!-- <allowUnroofed>true</allowUnroofed> -->
-		</li>
-	</modExtensions>
   </ThingDef>
   
 </Defs>

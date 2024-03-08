@@ -23,16 +23,6 @@
 			</li>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
-		<value>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-				<allowUnroofed>true</allowUnroofed>
-			</li>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]/plant</xpath>
 		<value>
@@ -60,16 +50,6 @@
 						<graphicPath>BMT_Caverns/Things/Plant/Animu/Animycelium</graphicPath>
 					</li>
 				</graphicsPerBiome>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Plant_GrassAnima"]</xpath>
-		<value>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInCave>true</allowInCave>
-				<allowInBuilding>true</allowInBuilding>
-				<allowUnroofed>true</allowUnroofed>
 			</li>
 		</value>
 	</Operation>
