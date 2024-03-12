@@ -47,6 +47,7 @@
     <Compile Include="Buildings\Building_FungalPowerGenerator.cs" />
     <Compile Include="CompSpawnDust.cs" />
     <Compile Include="CompCleanFilthAround.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_SharpExplosion.cs" />
     <Compile Include="DebugActions.cs" />
     <Compile Include="DependencyVersionCheck.cs" />
     <Compile Include="FeatureWorkers\FeatureWorker_CavernBiomeCluster.cs" />
