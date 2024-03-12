@@ -114,7 +114,7 @@
 		</tradeTags>
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
+				<movementDef>PF_Movement_Magmatic</movementDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
