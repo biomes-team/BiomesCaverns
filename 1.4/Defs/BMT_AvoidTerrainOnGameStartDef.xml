@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<BiomesCore.AvoidTerrainOnGameStartDef>
-		<defName>BMT_AvoidMagmaOnGameStart</defName>
+	<BiomesCore.Defs.AvoidTerrainOnGameStartDef>
+		<defName>BMT_AvoidTachyliteOnGameStart</defName>
 		<terrains>
 			<li>BMT_Terrain_Tachylite</li>
 		</terrains>
-	</BiomesCore.AvoidTerrainOnGameStartDef>
+	</BiomesCore.Defs.AvoidTerrainOnGameStartDef>
 </Defs>
