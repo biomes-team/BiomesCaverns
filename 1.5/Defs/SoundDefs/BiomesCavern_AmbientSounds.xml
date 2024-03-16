@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<SoundDef>
+		<defName>BMT_Ambient_Cave_Calm</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<name>MainWind</name>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>BMT_Caverns/Ambient/Ambient_Cave_Calm</clipPath>
+					</li>
+				</grains>
+				<volumeRange>2.5~2.5</volumeRange>
+				<pitchRange>0.8973684~1.148246</pitchRange>
+
+				<sustainLoopDurationRange>30~50</sustainLoopDurationRange>
+				<sustainIntervalRange>-10~-10</sustainIntervalRange>
+				<sustainAttack>10</sustainAttack>
+				<sustainRelease>10</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BMT_Ambient_FungalForest</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<name>Main</name>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>BMT_Caverns/Ambient/Ambient_FungalForest</clipPath>
+					</li>
+				</grains>
+				<volumeRange>2.5~2.5</volumeRange>
+				<pitchRange>0.8973684~1.148246</pitchRange>
+
+				<sustainLoopDurationRange>30~50</sustainLoopDurationRange>
+				<sustainIntervalRange>-10~-10</sustainIntervalRange>
+				<sustainAttack>10</sustainAttack>
+				<sustainRelease>10</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</Defs>

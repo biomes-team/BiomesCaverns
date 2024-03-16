@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.0~0.5</growingHours>
+			</li>
+		</modExtensions>
+		<defName>BMT_Jellycap</defName>
+		<label>jellycap</label>
+		<description>A strong purple mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Jellycap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+			<growDays>18</growDays>
+			<topWindExposure>0</topWindExposure>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>600</harvestWork>
+			<harvestYield>30</harvestYield>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+		</plant>
+	</ThingDef>
+</Defs>

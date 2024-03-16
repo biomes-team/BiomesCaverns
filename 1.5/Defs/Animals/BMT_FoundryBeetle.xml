@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Larvae -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_FoundryBeetleLarvae</defName>
+		<label>foundry grub</label>
+		<description>A small and soft grub with inflammable chitin. Unfortunately this does not last once the grub is dead.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<LeatherAmount>2</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Flammability>4</Flammability>
+		</statBases>
+		<race>
+			<hasGenders>true</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_DeepChitin</leatherDef>
+			<baseBodySize>1.8</baseBodySize>
+			<baseHealthScale>0.85</baseHealthScale>
+			<baseHungerRate>0.25</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.50</wildness>
+			<roamMtbDays>5</roamMtbDays>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<nuzzleMtbHours>6</nuzzleMtbHours>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_LarvaLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_InsectLarvalFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalSecound</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalThird</def>
+					<minAge>0.1</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>7</ageInDays>
+				<evolveIntoPawnKindDef>BMT_FoundryBeetlePupa</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_FoundryBeetleLarvae</defName>
+		<label>foundry grub</label>
+		<race>BMT_FoundryBeetleLarvae</race>
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<label>foundry grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/FoundryGrub</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/Dessicated_FoundryGrub</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>foundry grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/FoundryGrub</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/Dessicated_FoundryGrub</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<label>foundry grub</label>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/FoundryGrub</texPath>
+					<drawSize>1.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/Dessicated_FoundryGrub</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Pupa -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_FoundryBeetlePupa</defName>
+		<label>foundry pupa</label>
+		<description>The pupal form of the foundry beetle. Its body has largely liquified as it metamorphoses within. It is completely inflammable in nature.</description>
+		<statBases>
+			<MoveSpeed>0</MoveSpeed>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<LeatherAmount>0</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Flammability>0.0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
+			<needsRest>false</needsRest>
+			<hasGenders>true</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>1</wildness>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_Pupa</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<uiIconScale>1.5</uiIconScale>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>7</ageInDays>
+				<evolveIntoPawnKindDef>BMT_FoundryBeetle</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>Twitching</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>0</power>
+				<cooldownTime>10000</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_FoundryBeetlePupa</defName>
+		<label>foundry pupa</label>
+		<race>BMT_FoundryBeetlePupa</race>
+		<combatPower>5</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/BeetlePupa</texPath>
+					<drawSize>1</drawSize>
+					<color>(172,72,61)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/BeetlePupae/Dessicated_BeetlePupa_east</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+  <ThingDef ParentName="BaseInsect">
+	<defName>BMT_FoundryBeetle</defName>
+	<label>foundry beetle</label>
+	<description>While herbivorous, this beetle is no easy prey. It uses its massive mandibles to crush both rival mates and anything that tries to hunt it. These beetles are often bred as war bugs by the more vicious cave dwellers.</description>
+	<statBases>
+	  <MoveSpeed>4.5</MoveSpeed>
+	  <MarketValue>300</MarketValue>
+	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+	  <FilthRate>7</FilthRate>
+	  <Flammability>0.0</Flammability>
+	  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+	</statBases>
+	<uiIconScale>1.35</uiIconScale>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>BMT_FoundryBeetleEggFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>9.5</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	</comps>
+	<race>
+		<fleshType>Insectoid</fleshType>
+		<bloodDef>Filth_BloodInsect</bloodDef>
+		<useMeatFrom>Megaspider</useMeatFrom>
+	  <body>BeetleLikeWithClaw</body>
+	  <baseBodySize>2.4</baseBodySize>
+	  <baseHealthScale>1.75</baseHealthScale>
+	  <baseHungerRate>0.535</baseHungerRate>
+	  <foodType>VegetarianRoughAnimal</foodType>
+	  <leatherDef>BMT_MediumChitin</leatherDef>
+	  <wildness>0.6</wildness>
+	  <trainability>Advanced</trainability>
+	  <lifeExpectancy>15</lifeExpectancy>
+	  <packAnimal>true</packAnimal>
+	  <nuzzleMtbHours>36</nuzzleMtbHours>
+	  <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+	  <nameOnTameChance>0.2</nameOnTameChance>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.25</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.3333</minAge>
+		  <soundWounded>BMT_ChemSnail_Wounded</soundWounded>
+		  <soundDeath>BMT_ChemSnail_Death</soundDeath>
+		  <soundCall>BMT_ChemSnail_Call</soundCall>
+		  <soundAngry>BMT_ChemSnail_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	</race>
+	<tradeTags>
+	  <li>AnimalCommon</li>
+	  <li>AnimalFighter</li>
+	  <li>AnimalInsect</li>
+	</tradeTags>
+	<tools>
+	  <li>
+		<label>head claw</label>
+		<capacities>
+		  <li>Cut</li>
+		</capacities>
+		<power>26</power>
+		<cooldownTime>1.6</cooldownTime>
+		<armorPenetration>0.9</armorPenetration>
+		<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+			<label>head</label>
+			<capacities>
+		    <li>Blunt</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+	  </li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_FoundryBeetle</defName>
+	<label>foundry beetle</label>
+	<race>BMT_FoundryBeetle</race>
+	<combatPower>150</combatPower>
+	<ecoSystemWeight>1.1</ecoSystemWeight>
+	<wildGroupSize>1</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FoundryBeetle/FoundryBeetle</texPath>
+		  <drawSize>1.5</drawSize>
+		  <shadowData>
+			<volume>(0.4, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FoundryBeetle/FoundryBeetle</texPath>
+		  <drawSize>2.0</drawSize>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_Caverns/Things/Animal/FoundryBeetle/FoundryBeetle</texPath>
+		  <drawSize>2.5</drawSize>
+		  <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
+			<offset>(0,0,-0.3)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_FoundryBeetleEggFertilized</defName>
+		<label>foundry beetle egg (fert.)</label>
+		<description>A fertilized foundry beetle egg. If all goes well, it should hatch into a baby foundry beetle. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(191,57,42)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>BMT_FoundryBeetleLarvae</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

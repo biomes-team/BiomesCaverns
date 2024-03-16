@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_CaveCricket</defName>
+		<label>cave cricket</label>
+		<description>While often considered a pest to cave-dwellers, some have domesticated these meaty crickets for their own use as disgusting but hearty food. They grow fast and lay a multitude of eggs in mere days.</description>
+		<statBases>
+			<MoveSpeed>3.75</MoveSpeed>
+			<MarketValue>100</MarketValue>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<!-- from Megamantis -->
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<chanceFactor>0.4</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggCaveCricketUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggCaveCricketFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>6</eggFertilizationCountMax>
+				<eggLayIntervalDays>6</eggLayIntervalDays>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+				<eggCountRange>4~6</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>BeetleLike</body>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>0.5</baseHealthScale>
+			<baseHungerRate>0.6</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<leatherDef>BMT_GrayChitin</leatherDef>
+			<wildness>0.7</wildness>
+			<roamMtbDays>2</roamMtbDays>
+			<trainability>None</trainability>
+			<herdAnimal>true</herdAnimal>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<lifeExpectancy>6</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>BMT_EusocialInsectNymphFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_EusocialInsectNymphSecond</def>
+					<minAge>0.08</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.25</minAge>
+					<soundWounded>BMT_Cricket_Wounded</soundWounded>
+					<soundDeath>BMT_Cricket_Death</soundDeath>
+					<soundCall>BMT_Cricket_Call</soundCall>
+					<soundAngry>BMT_Cricket_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+			<li>AnimalFarm</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_CaveCricket</defName>
+		<label>cave cricket</label>
+		<race>BMT_CaveCricket</race>
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<wildGroupSize>4~8</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricket</texPath>
+					<drawSize>0.7</drawSize>
+					<color>(50, 50, 50)</color>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
+					<drawSize>0.7</drawSize>
+					<color>(50, 50, 50)</color>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricketFemale_east</texPath>
+					<drawSize>0.7</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricket</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
+					<drawSize>0.9</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricketFemale_east</texPath>
+					<drawSize>0.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricket</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricketFemale_east</texPath>
+					<drawSize>2</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggCaveCricketFertilized</defName>
+		<label>cave cricket egg (fert.)</label>
+		<description>A fertilized cave cricket egg. If all goes well, it should hatch into a cave cricket. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(237,231,228)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7</hatcherDaystoHatch>
+				<hatcherPawn>BMT_CaveCricket</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggCaveCricketUnfertilized</defName>
+		<label>cave cricket egg (unfert.)</label>
+		<description>An unfertilized cave cricket egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(226,211,197)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

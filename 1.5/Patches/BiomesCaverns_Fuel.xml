@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="WoodLog"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[text()="WoodLog"]]/fuelFilter/thingDefs/li[text()="WoodLog"]</xpath>
+					<value>
+						<li>WoodLog</li>
+						<li>BMT_BoomSpore</li>
+						<li>BMT_EggChemSnailUnfertilized</li>
+						<li>BMT_EggChemSnailFertilized</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseInsect">
+		<defName>BMT_Jellypot</defName>
+		<label>jellypot</label>
+		<description>Named the jellypot for its ability to produce insect jelly in its large thoracic sac, this rare animal is almost exclusively found near insectoid hives. Despite being farmed much like ants do with aphids, it does not seem capable of breeding in captivity.</description>
+		<statBases>
+			<MoveSpeed>1.65</MoveSpeed>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<MarketValue>200</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+			<FilthRate>1</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="BiomesCore.ThingComponents.CompProperties_AnimalThingSpawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>3</spawnCount>
+				<spawnIntervalRange>60000~120000</spawnIntervalRange>
+				<saveKeysPrefix>JellySpawn</saveKeysPrefix>
+			</li>
+		</comps>
+		<race>
+			<body>BeetleLikeWithClaw</body>
+			<baseHungerRate>0.25</baseHungerRate>
+			<!-- Using a body size smaller than 0.7 should disable the DigOutIfCannotReachMapEdge behaviour. -->
+			<baseBodySize>0.65</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>6</lifeExpectancy>
+			<wildness>0.45</wildness>
+			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<roamMtbDays>7</roamMtbDays>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>BMT_EusocialInsectAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>BMT_Jellypot_Wounded</soundWounded>
+					<soundDeath>BMT_Jellypot_Death</soundDeath>
+					<soundCall>BMT_Jellypot_Call</soundCall>
+					<soundAngry>BMT_Jellypot_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<butcherProducts>
+			<VFEI_Chitin MayRequire="oskarpotocki.vfe.insectoid">15</VFEI_Chitin>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Jellypot</defName>
+		<label>jellypot</label>
+		<race>BMT_Jellypot</race>
+		<combatPower>15</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Jellypot/Jellypot</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Jellypot/Jellypot</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Jellypot/Jellypot</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.5, 0.37)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Spelopede/Dessicated_Spelopede</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<defaultFactionType MayRequire="oskarpotocki.vfe.insectoid">VFEI_Insect</defaultFactionType>
+		<aiAvoidCover MayRequire="oskarpotocki.vfe.insectoid">false</aiAvoidCover>
+		<defendPointRadius MayRequire="oskarpotocki.vfe.insectoid">0</defendPointRadius>
+	</PawnKindDef>
+</Defs>

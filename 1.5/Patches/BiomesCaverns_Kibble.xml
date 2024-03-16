@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Make_Kibble"]/ingredients/li/filter/thingDefs</xpath>
+		<value>
+			<li>BMT_Kessinger</li>
+			<li>BMT_MushroomLog</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Make_Kibble"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>BMT_Kessinger</li>
+			<li>BMT_MushroomLog</li>
+		</value>
+	</Operation>
+</Patch>

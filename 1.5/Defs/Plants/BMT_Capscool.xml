@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_CapscoolFungus</defName>
+		<label>capscool</label>
+		<description>A strange mushroom that grows in extremely hot environments underground. When harvested, it gives a gooey salve that protects against the heat.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Capscool/CapscoolGrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilityMin>0.7</fertilityMin>
+			<wildClusterRadius>4</wildClusterRadius>
+			<growDays>10</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>200</harvestWork>
+			<harvestYield>3</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_CoolingSalve</harvestedThingDef>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Capscool/CapscoolImmature</immatureGraphicPath>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
+			<interferesWithRoof>false</interferesWithRoof>
+			<sowWork>800</sowWork>
+			<sowMinSkill>10</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<sowResearchPrerequisites Inherit="False">
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
+			<purpose>Health</purpose>
+		</plant>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
+				<forceUseImmature>true</forceUseImmature>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>BMT_CoolingSalve</defName>
+		<label>cooling salve</label>
+		<description>A package of cooling salve gathered from a strange mushroom. This salve grants considerably higher heat tolerance.</description>
+		<stackLimit>10</stackLimit>
+		<tickerType>Rare</tickerType>
+		<possessionCount>5</possessionCount>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Drug/CoolingSalve</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>5</DeteriorationRate>
+			<Mass>0.50</Mass>
+			<Flammability>0.2</Flammability>
+			<MarketValue>5</MarketValue>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<foodType>Fluid</foodType>
+			<baseIngestTicks>100</baseIngestTicks>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Take {0}</ingestCommandString>
+			<ingestReportString>Taking {0}.</ingestReportString>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BMT_CoolingSalve</hediffDef>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CoolingSalveTolerance</hediffDef>
+					<severity>0.025</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>false</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>CoolingSalve</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>30</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>BMT_CoolingSalve</defName>
+		<label>cooling salve</label>
+		<description>The result of using a mushroom-based cooling salve. Heat tolerance is now much higher.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~75000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMax>50</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Salve addiction -->
+
+	<ChemicalDef>
+		<defName>CoolingSalve</defName>
+		<label>cooling salve</label>
+		<addictionHediff>CoolingSalveAddiction</addictionHediff>
+		<toleranceHediff>CoolingSalveTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+		<generateAddictionGenes>false</generateAddictionGenes>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Salve</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>cooling salve</label>
+		<description>Because of a salve addiction, this person needs to regularly use cooling salve to avoid withdrawal symptoms.</description>
+		<listPriority>20</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>CoolingSalveTolerance</defName>
+		<label>cooling salve tolerance</label>
+		<description>A built-up tolerance to cooling salve. The more severe this tolerance is, the more salve it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.020</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>CoolingSalve</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>CoolingSalveAddiction</defName>
+		<label>cooling salve addiction</label>
+		<description>A chemical addiction to cooling salve. Long-term presence of this salve has caused neurological adaptations at the cellular level, so the body can no longer function properly without the salve.
+			\nWithout regular doses of it, withdrawal symptoms will begin. However, extended abstinence will force the body to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>Chemical_Salve</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<painFactor>3</painFactor>
+				<statOffsets>
+					<ComfyTemperatureMax>-5</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>SalveWithdrawl</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>CoolingSalveAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>cooling salve withdrawal</label>
+				<description>I feel heavy and hot all the time. I never thought I'd want to smear salve on me this much.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

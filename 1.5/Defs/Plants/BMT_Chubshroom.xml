@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_Chubshroom</defName>
+		<label>chubshroom</label>
+		<description>A stubby mushroom that remains surprisingly soft despite the freezing cold temperatures of its home biome.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Chubshroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>55</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~10</optimalTemperature>
+				<growingHours>0.1~0.99</growingHours>
+			</li>
+		</modExtensions>
+		<selectable>true</selectable>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>

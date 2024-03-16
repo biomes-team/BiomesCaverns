@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_FungalTendril</defName>
+		<label>tendralus</label>
+		<description>Shaped differently than normal fungi, this tendril-like fungus spreads its spores from the small nodes along its length.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/FungalTendril</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>-50~10</optimalTemperature>
+			</li>
+		</modExtensions>
+		<selectable>true</selectable>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>

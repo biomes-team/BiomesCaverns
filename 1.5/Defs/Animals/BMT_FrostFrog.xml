@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHare">
+		<defName>BMT_FrostFrog</defName>
+		<label>frost frog</label>
+		<description>This small, solitary herbivore can swiftly hop away from danger.</description>
+		<uiIconScale>1.1</uiIconScale>
+		<statBases>
+			<ComfyTemperatureMin>-200</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<baseBodySize>0.75</baseBodySize>
+			<baseHungerRate>0.415</baseHungerRate>
+			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
+			<leatherDef>BMT_Leather_GlacialPlain</leatherDef>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.07)</li>
+				<li>(0.19, 0, 0)</li>
+				<li>(0.0, 0, -0.07)</li>
+				<li>(-0.19, 0, 0)</li>
+			</headPosPerRotation>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="HareBase">
+		<defName>BMT_FrostFrog</defName>
+		<label>frost frog</label>
+		<race>BMT_FrostFrog</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FrostFrog/FrostFrog</texPath>
+					<drawSize>0.7</drawSize>
+					<!-- <shadowData> -->
+					<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
+					<!-- <offset>(0,0,0)</offset> -->
+					<!-- </shadowData> -->
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FrostFrog/FrostFrog</texPath>
+					<drawSize>0.95</drawSize>
+					<!-- <shadowData> -->
+					<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
+					<!-- <offset>(0,0,0)</offset> -->
+					<!-- </shadowData> -->
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FrostFrog/FrostFrog</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.32, 0.35, 0.32)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

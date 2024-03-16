@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- How big is it? Muffalo sized. -->
+	<!-- What does it eat? (is it a predator?) Predatory carnivore. -->
+	<!-- Where does it live? The Earthen Depths. -->
+	<!-- Does it spawn in packs? No. -->
+	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Tough leather. Cannot "fly" but instead walks on its wings and uses them in stunning attacks. -->
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_Woolybat</defName>
+		<label>woolly bat</label>
+		<description>These large bats have been farmed for their wool-like fur for generations. They were selectively bred to be flightless to make wool gathering easier. Their livable temperature range is shockingly wide.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>145</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>500</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHealthScale>3.0</baseHealthScale>
+			<baseHungerRate>0.125</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Light</leatherDef>
+			<useMeatFrom>BMT_Megabat</useMeatFrom>
+			<wildness>0.10</wildness>
+			<trainability>None</trainability>
+			<roamMtbDays>4</roamMtbDays>
+			<!-- <nuzzleMtbHours>24</nuzzleMtbHours> -->
+			<lifeExpectancy>20</lifeExpectancy>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+			<body>Monkey</body>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.8, 1)</li>
+					<li>(2.4, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.22</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>BMT_Bat_Wounded</soundWounded>
+					<soundDeath>BMT_Bat_Death</soundDeath>
+					<soundCall>BMT_Bat_Call</soundCall>
+					<soundAngry>BMT_Bat_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<li Class="CompProperties_Shearable">
+				<woolDef>BMT_BatWool</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>80</woolAmount>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>wing</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>wing</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Woolybat</defName>
+		<label>wooly bat</label>
+		<race>BMT_Woolybat</race>
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>4</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Woolybat/Woolybat</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.5</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Woolybat/Dessicated_Bat</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Woolybat/Woolybat</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.8</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Woolybat/Dessicated_Bat</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Woolybat/Woolybat</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>2.6</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/Woolybat/Dessicated_Bat</texPath>
+					<drawSize>2.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>BMT_BatWool</defName>
+		<label>bat wool</label>
+		<description>A delightfully soft type of wool from a species of subterranean bat.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/BatWool</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>2.7</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0.9</Flammability>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>30</minRewardCount>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(230,230,230)</color>
+			<commonality>0.20</commonality>
+			<statFactors>
+				<Flammability>0.9</Flammability>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>4</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+</Defs>

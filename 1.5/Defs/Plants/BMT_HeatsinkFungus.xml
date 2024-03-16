@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_HeatsinkFungus</defName>
+		<label>heatsink fungus</label>
+		<description>Using a complex mix of chemical reactions, this fungus draws in heat to help fuel its growth. Deep-dwelling troglodytes use its heat-drawing ability to cool off their homes, often by building around it or moving it indoors.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/HeatsinkFungus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>1</Nutrition>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<growDays>5</growDays>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>1</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
+			<sowTags>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<harvestedThingDef Inherit="False"/>
+			<harvestYield Inherit="False"/>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<purpose>Health</purpose>
+		</plant>
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>-10</heatPerSecond>
+				<heatPushMinTemperature>15</heatPushMinTemperature>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_CrystaltipBrambles</defName>
+		<label>crystaltip brambles</label>
+		<description>Tangled, thorny, crystaline shoots covered with leaves. Crystaltip brambles grow in clusters, and slow down anyone moving over them.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/CrystaltipBrambles</texPath>
+			<drawSize>1.7</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible />
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<!--leaflessGraphicPath>BMT_Caverns/Things/Plant/CrystaltipBrambles/CrystaltipBramblesLeafless</leaflessGraphicPath-->
+			<!--pollutedGraphicPath>BMT_Caverns/Things/Plant/CrystaltipBrambles/CrystaltipBramblesPolluted</pollutedGraphicPath-->
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<interferesWithRoof>false</interferesWithRoof>
+			<!--pollution>Any</pollution-->
+		</plant>
+	</ThingDef>
+</Defs>

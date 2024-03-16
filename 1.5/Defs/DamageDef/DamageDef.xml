@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef ParentName="Bomb">
+		<defName>BMT_Crystalope_SharpBomb</defName>
+		<label>crystal bomb</label>
+		<defaultDamage>20</defaultDamage>
+		<defaultArmorPenetration>0.9</defaultArmorPenetration>
+	</DamageDef>
+
+	<!-- ==================================================== -->
+
+	<ToolCapacityDef>
+		<defName>BMT_BloodSuck</defName>
+		<label>blood suck</label>
+	</ToolCapacityDef>
+
+	<DamageDef ParentName="Bite">
+		<defName>BMT_BloodSuck</defName>
+		<label>blood suck</label>
+		<additionalHediffs>
+			<li>
+				<hediff>BloodLoss</hediff>
+				<severityPerDamageDealt>0.1</severityPerDamageDealt>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>true</applyAdditionalHediffsIfHuntingForFood>
+		<!--impactSoundType>Toxic</impactSoundType-->
+		<!--damageEffecter>Impact_Toxic</damageEffecter-->
+	</DamageDef>
+
+	<DamageDef ParentName="Scratch">
+		<defName>BMT_ToxicSpores</defName>
+		<label>toxic spores</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+
+	<DamageDef ParentName="Scratch">
+		<defName>BMT_StunningSpores</defName>
+		<label>stunning spores</label>
+		<additionalHediffs>
+			<li>
+				<hediff>BMT_Paralysis</hediff>
+				<severityPerDamageDealt>0.05</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+	<!-- ==================================================== -->
+
+</Defs>

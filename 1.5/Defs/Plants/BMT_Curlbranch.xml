@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_Curlbranch</defName>
+		<label>curlbranch</label>
+		<description>Thought to be a genetically engineered tree-fungus hybrid, this gloomy yet beautiful plant thing thrives in both sheer darkness and bitter cold.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Curlbranch</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>1.0</Nutrition>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~10</optimalTemperature>
+				<growingHours>0.5~0.99</growingHours>
+			</li>
+		</modExtensions>
+		<selectable>true</selectable>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>15</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>700</harvestWork>
+			<harvestYield>40</harvestYield>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>

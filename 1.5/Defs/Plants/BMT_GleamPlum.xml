@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_GleamPlum</defName>
+		<label>gleamplum</label>
+		<description>A strong yellow mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Gleamplum</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>750</wildClusterWeight>
+			<growDays>30</growDays>
+			<topWindExposure>0</topWindExposure>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>1000</harvestWork>
+			<harvestYield>40</harvestYield>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+		</plant>
+	</ThingDef>
+</Defs>

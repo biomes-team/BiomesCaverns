@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Cataphract armor -->
+	<ThingDef Name="BMT_ApparelArmorCataphract_Chitinphract" ParentName="ApparelArmorCataphractBase" Abstract="True">
+		<label>chitinphract armor</label>
+		<description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered chitin-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+		<statBases>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Armor/CataphractArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- CutoutComplex not working for Graphic_Single -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Armor/CataphractArmor</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<costList Inherit="False">
+			<ComponentSpacer>6</ComponentSpacer>
+			<!-- <Plasteel>150</Plasteel> -->
+			<BMT_ResourceBlueCrystal>50</BMT_ResourceBlueCrystal>
+		</costList>
+		<costStuffCount>150</costStuffCount>
+		<stuffCategories>
+			<li>BMT_ChitinStuff</li>
+		</stuffCategories>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<recipeMaker>
+			<displayPriority>130</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_ApparelArmorCataphract_Chitinphract">
+		<defName>BMT_Apparel_ArmorChitinphract</defName>
+		<label>chitinphract armor</label>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Armor/CataphractArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- CutoutComplex not working for Graphic_Single -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Armor/CataphractArmor</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<!-- helm -->
+
+	<ThingDef Name="BMT_ApparelArmorHelmetCataphract_Chitinphract" ParentName="ApparelArmorHelmetCataphractBase"
+	          Abstract="True">
+		<label>chitinphract helmet</label>
+		<description>A heavily-armored high-tech helmet, with a solid chitin-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+		<statBases>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<costList Inherit="False">
+			<ComponentSpacer>1</ComponentSpacer>
+			<!-- <Plasteel>50</Plasteel> -->
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>BMT_ChitinStuff</li>
+		</stuffCategories>
+		<recipeMaker>
+			<displayPriority>125</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_ApparelArmorHelmetCataphract_Chitinphract">
+		<defName>BMT_Apparel_ArmorHelmetChitinphract</defName>
+		<label>chitinphract helmet</label>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Helmet/CataphractHelmet</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/BugCataphractArmor/Helmet/CataphractHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<!-- prestige -->
+
+	<ThingDef ParentName="BMT_ApparelArmorCataphract_Chitinphract" Name="BMT_ApparelArmorCataphract_PrestigeChitinphract"
+	          Abstract="True">
+		<defName>Apparel_ArmorCataphractPrestige</defName>
+		<label>prestige cataphract armor</label>
+		<description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered chitin-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractArmor/PrestigeCataphractArmor</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>150000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<costList>
+			<Gold>18</Gold>
+		</costList>
+		<apparel>
+			<tags>
+				<li>PrestigeCombatGear</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<recipeMaker>
+			<displayPriority>165</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_ApparelArmorCataphract_PrestigeChitinphract">
+		<defName>BMT_Apparel_ArmorChitinphractPrestige</defName>
+		<label>prestige chitinphract armor</label>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigePowerArmor/armortest</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigePowerArmor/armortest</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="BMT_ApparelArmorCataphract_PrestigeChitinphract">
+		<defName>BMT_Apparel_ArmorBeetlephractPrestige</defName>
+		<label>prestige beetlephract armor</label>
+		<statBases>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/Prestigechitinarmor/armortest</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/Prestigechitinarmor/armortest</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<!-- helm -->
+
+	<ThingDef Name="BMT_ApparelArmorHelmetCataphract_PrestigeChitinphract"
+	          ParentName="BMT_ApparelArmorHelmetCataphract_Chitinphract" Abstract="True">
+		<description>A heavily-armored high-tech helmet, with a solid chitin-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.9, 0.9)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>52500</WorkToMake>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<costList>
+			<Gold>9</Gold>
+		</costList>
+		<apparel>
+			<tags>
+				<li>PrestigeCombatGear</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<displayPriority>160</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_ApparelArmorHelmetCataphract_PrestigeChitinphract">
+		<defName>BMT_Apparel_ArmorHelmetChitinphractPrestige</defName>
+		<label>prestige chitinphract helmet</label>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigePowerhelm</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigePowerhelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_ApparelArmorHelmetCataphract_PrestigeChitinphract">
+		<defName>BMT_Apparel_ArmorHelmetBeetlephractPrestige</defName>
+		<label>prestige beetlephract helmet</label>
+		<statBases>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigeBeetlehelm</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigeBeetlehelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_ApparelArmorHelmetCataphract_PrestigeChitinphract">
+		<defName>BMT_Apparel_ArmorHelmetSpidrephractPrestige</defName>
+		<label>prestige spiderphract helmet</label>
+		<statBases>
+			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigeSpidrehelm</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>BMT_Caverns/Things/Apparel/ChitinArmorPrestige/PrestigeSpidrehelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+</Defs>

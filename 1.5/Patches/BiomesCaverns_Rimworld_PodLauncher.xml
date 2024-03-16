@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PodLauncher"]/placeWorkers</xpath>
+		<value>
+			<placeWorkers>
+				<li>PlaceWorker_FuelingPort</li>
+				<li>BiomesCaverns.PlaceWorkers.NotUnderRoof</li>
+			</placeWorkers>
+		</value>
+	</Operation>
+</Patch>

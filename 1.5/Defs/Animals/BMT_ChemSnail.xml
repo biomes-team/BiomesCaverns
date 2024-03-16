@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_ChemSnail</defName>
+		<label>chem snail</label>
+		<description>Engineered much like the surface-dwelling Boomalope, this snail produces volatile chemicals within its shell. Even the strongest predators of the caverns have learned to avoid it, as the chemsnail explodes upon death. Its slime can be carefully harvested for chemfuel.</description>
+		<statBases>
+			<MoveSpeed>1.2</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>100</MarketValue>
+			<FilthRate>0</FilthRate>
+		</statBases>
+		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_ChemSnailDefense</li>
+				</hediffs>
+				<graphicSuffix>Shell_east</graphicSuffix>
+				<duration>300</duration>
+			</li>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>BMT_EggChemSnailUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggChemSnailFertilized</eggFertilizedDef>
+				<eggLayIntervalDays>14</eggLayIntervalDays>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+				<eggCountRange>1~3</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>22</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+				<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+					<filthDef>BMT_Filth_Snail_FuelTrail</filthDef>
+				</li>
+			  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+    <sleepGraphicData>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
+        <drawSize>2.2</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
+        <drawSize>3.2</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
+        <drawSize>4.0</drawSize>
+      </li>
+    </sleepGraphicData>
+  </li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
+			<herdAnimal>false</herdAnimal>
+			<deathAction>
+				<workerClass>DeathActionWorker_SmallExplosion</workerClass>
+			</deathAction>
+			<executionRange>6</executionRange>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<body>BMT_Snail</body>
+			<baseHungerRate>0.22</baseHungerRate>
+			<baseBodySize>0.4</baseBodySize>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.60</wildness>
+			<lifeExpectancy>8</lifeExpectancy>
+			<trainability>None</trainability>
+			<roamMtbDays>2.25</roamMtbDays>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
+			<specificMeatDef>BMT_GastropodMeat</specificMeatDef>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.222</minAge>
+					<soundWounded>BMT_ChemSnail_Wounded</soundWounded>
+					<soundDeath>BMT_ChemSnail_Death</soundDeath>
+					<soundCall>BMT_ChemSnail_Call</soundCall>
+					<soundAngry>BMT_ChemSnail_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalFarm</li>
+			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<butcherProducts>
+			<BMT_Molluskshell>20</BMT_Molluskshell>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_ChemSnail</defName>
+		<label>chem snail</label>
+		<race>BMT_ChemSnail</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0.45</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
+					<drawSize>3.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
+					<drawSize>3.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnail</texPath>
+					<drawSize>4.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/Dessicated_ChemSnail</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_ChemSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggChemSnailFertilized</defName>
+		<label>chem snail egg (fert.)</label>
+		<description>A fertilized chem snail egg. If all goes well, it should hatch into a baby chemsnail. It can be used as fuel.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(149,92,90)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>30.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_ChemSnail</hatcherPawn>
+			</li>
+		</comps>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+	</ThingDef>
+-	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggChemSnailUnfertilized</defName>
+		<label>chem snail egg (unfert.)</label>
+		<description>An unfertilized chem snail egg. It can be eaten raw, but it's much, much better cooked. It can be used as fuel.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(175,70,0)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+	</ThingDef>
+	<!--filth / trail -->
+	<ThingDef ParentName="BaseFilth">
+		<defName>BMT_Filth_Snail_FuelTrail</defName>
+		<label>chemfuel trail</label>
+		<description>A trail of hardened flammable chemslime left from a chem snail.</description>
+		<thingClass>LiquidFuel</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<Cleanliness>-5</Cleanliness>
+			<Flammability>2.0</Flammability>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/LiquidFuel</texPath>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>0.01~0.03</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>false</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>

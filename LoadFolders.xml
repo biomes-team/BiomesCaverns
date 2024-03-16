@@ -11,6 +11,7 @@
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/DLC/Biotech</li>
 		<li IfModActive="pathfinding.framework">1.4FlyingAndAquaticAnimals</li>
 		<li IfModActive="pathfinding.framework">PathfindingFramework</li>
+
 		<li IfModActive="sarg.alphaanimals">1.4/Mods/AlphaAnimals</li>
 		<li IfModActive="sarg.alphaanimals">1.4/Mods/AlphaBiomes</li>
 		<li IfModActive="sarg.magicalmenagerie">1.4/Mods/AlphaMythology</li>
@@ -26,7 +27,7 @@
 	<v1.5>
 		<li>1.5</li>
 		<li>\</li>
-		<li>1.5CaveworldFloraUnleashed</li>
+		<li>1.5/CaveworldFloraUnleashed</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/DLC/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/DLC/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/DLC/Biotech</li>

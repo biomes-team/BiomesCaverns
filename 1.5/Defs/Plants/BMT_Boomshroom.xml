@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_Boomshroom</defName>
+		<label>boomspore shroom</label>
+		<description>A fungus grown by cavern dwelling populace for its dangerously volatile pods which can be refined into chemfuel.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomGrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Flammability>0.0</Flammability>
+			<Nutrition>2</Nutrition>
+			<Mass>0.50</Mass>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
+		<ingestible/>
+		<selectable>true</selectable>
+		<plant>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomImmature</immatureGraphicPath>
+			<growMinGlow>0</growMinGlow>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5</growDays>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>0.7~0.9</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_BoomSpore</harvestedThingDef>
+			<harvestYield>8</harvestYield>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<sowResearchPrerequisites Inherit="False">
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
+			<interferesWithRoof>false</interferesWithRoof>
+			<purpose>Health</purpose>
+		</plant>
+		<minifiedDef>MinifiedTree</minifiedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_BoomSpore</defName>
+		<label>boom spore sac</label>
+		<description>The spore sac of a boomspore shroom. It's a good fuel for campfires and generators, and can be refined into chemfuel.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/BoomSpore</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<techLevel>Neolithic</techLevel>
+		<stackLimit>75</stackLimit>
+		<equipmentType>Primary</equipmentType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<MarketValue>1</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+			<SellPriceFactor>0.10</SellPriceFactor>
+		</statBases>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeFlame</li>
+		</weaponTags>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>Grenades</li>
+		</thingCategories>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<verbs>
+			<li>
+				<label>throw spore sac</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>10</range>
+				<forcedMissRadius>1</forcedMissRadius>
+				<warmupTime>0.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_BMT_BoomSporeSac</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseIncendiaryProjectile">
+		<defName>Proj_BMT_BoomSporeSac</defName>
+		<label>boom spore sac</label>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/BoomSpore/BoomSpore_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>0.8</explosionRadius>
+			<damageDef>Flame</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<shadowSize>0.3</shadowSize>
+			<screenShakeFactor>0.2</screenShakeFactor>
+		</projectile>
+	</ThingDef>
+
+	<!--ThingDef ParentName="ResourceBase">
+		<defName>BMT_BoomSpore</defName>
+		<label>boom spore sac</label>
+		<description>The spore sac of a boomshroom. It is a good fuel for campfires and generators, and can be refined into chemfuel.</description>
+		
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/BoomSpore</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+	</ThingDef-->
+
+	<RecipeDef>
+		<defName>BMT_Make_ChemfuelFromBoomSpore</defName>
+		<label>make chemfuel from boom spore sac</label>
+		<description>Extracting a batch of chemfuel from boom spore sacs.</description>
+		<jobString>Refining chemfuel from boom spore sacs.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_BoomSpore</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_BoomSpore</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>40</Chemfuel>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

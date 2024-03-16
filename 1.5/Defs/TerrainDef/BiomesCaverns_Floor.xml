@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_WoodPlankFloorMushroom</defName>
+		<label>mushroom floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Mushroom plank flooring for that warm, homey feeling. It is quick to lay and not flammable.</description>
+		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<isPaintable>true</isPaintable>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(195,195,195)</color>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>3</BMT_MushroomLog>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" Name="BMT_BridgeMushroomBase">
+		<label>mushroom bridge</label>
+		<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
+		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
+		<layerable>true</layerable>
+		<isPaintable>true</isPaintable>
+		<!--bridge>true</bridge-->
+		<affordances>
+			<li>Light</li>
+		</affordances>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge">
+				<loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath>
+				<rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath>
+			</li>
+		</modExtensions>
+		<designationCategory>Structure</designationCategory>
+		<fertility>0</fertility>
+		<constructEffect>ConstructWood</constructEffect>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>400</renderPrecedence>
+		<autoRebuildable>true</autoRebuildable>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+		</costList>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+		<destroyEffect>Bridge_Collapse</destroyEffect>
+		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+	</TerrainDef>
+
+	<TerrainDef ParentName="BMT_BridgeMushroomBase">
+		<defName>BMT_BridgeMushroom</defName>
+		<label>mushroom bridge</label>
+		<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
+		<affordances>
+			<li>Light</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>12</BMT_MushroomLog>
+		</costList>
+		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="BMT_BridgeMushroomBase">
+		<defName>BMT_HeavyBridgeMushroom</defName>
+		<label>heavy mushroom bridge</label>
+		<description>A flat mushroom surface on extra-strong supportive beams which can be built over water. You can build heavy structures on this bridge, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/HeavyMushroomBridge_MenuIcon</uiIconPath>
+		<isPaintable>true</isPaintable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge">
+				<loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath>
+				<rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath>
+			</li>
+		</modExtensions>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>12</BMT_MushroomLog>
+			<Steel>5</Steel>
+		</costList>
+		<destroyOnBombDamageThreshold>55</destroyOnBombDamageThreshold>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_MagmaAsh</defName>
+		<label>hot ash</label>
+		<texturePath>BMT_Caverns/Terrains/MagmaAsh</texturePath>
+		<!-- Sergkart: pollutedTexturePath is needed only if such a texture is present; otherwise, a shader is used. -->
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/MagmaAsh</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>16</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Ash</generatedFilth>
+		<fertility>1</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>ash</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+			<li>Ash</li>
+		</tags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Ash</li>
+					<li>Hot</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_VolcanicAsh</defName>
+		<label>ash</label>
+		<texturePath>BMT_Caverns/Terrains/VolcanicAsh</texturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/VolcanicAsh</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>16</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Ash</generatedFilth>
+		<fertility>1.1</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>ash</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+			<li>Ash</li>
+		</tags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Ash</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_Crystal</defName>
+		<label>crystal</label>
+		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath> -->
+		<isPaintable>false</isPaintable>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>3</pathCost>
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<CleaningTimeFactor>0.75</CleaningTimeFactor>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<fertility>0</fertility>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<takeFootprints>false</takeFootprints>
+		<tags>
+			<li>BMT_Crystal</li>
+		</tags>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_CrystalManMade</defName>
+		<label>crystal floor</label>
+		<description>Flooring made out of blue crystals from deep within the earth. It takes a while to build but is considered quite beautiful.</description>
+		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
+		<isPaintable>false</isPaintable>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>335</renderPrecedence>
+		<pathCost>0</pathCost>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<CleaningTimeFactor>0.75</CleaningTimeFactor>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<costList>
+			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+		</costList>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<fertility>0</fertility>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<takeFootprints>false</takeFootprints>
+		<tags>
+			<li>BMT_Crystal</li>
+			<li>FineFloor</li>
+		</tags>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>BMT_MoonlessCarpet</defName>
+    <label>moonless stripes carpet</label>
+    <description>Carpeting made from the fungal fibers of moonless stripes. It's reasonably pretty.</description>
+    <texturePath>BMT_Caverns/Terrains/MoonlessCarpet</texturePath>
+    <color>(231,231,231)</color>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <Beauty>2</Beauty>
+	  <Flammability>0.0</Flammability>
+      <WorkToBuild>100</WorkToBuild>
+      <CleaningTimeFactor>0.8</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <BMT_MoonlessSilk>7</BMT_MoonlessSilk>
+    </costList>
+    <researchPrerequisites>
+      <li>CarpetMaking</li>
+    </researchPrerequisites>
+	<tags>
+	<li>FineFloor</li>
+	</tags>
+  </TerrainDef>
+  
+  	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_MycelialSoil</defName>
+		<label>mycelial soil</label>
+		<description>Soil with mycelium spread throughout. It's kind of ugly and takes a lot of work to build, but it's perfect for growing darkness-loving crops.</description>
+		<texturePath>BMT_Caverns/Terrains/MycelialSoil</texturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/MycelialSoil</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
+		<edgeType>Fade</edgeType>
+		<renderPrecedence>70</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+			<WorkToBuild>1100</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<fertility>1</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Soil</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+	<costList>
+      <BMT_MushroomLog>10</BMT_MushroomLog>
+    </costList>
+    <researchPrerequisites>
+      <li>BMT_AdvancedFungi</li>
+    </researchPrerequisites>
+	</TerrainDef>
+	
+		<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>BMT_GlacialIce</defName>
+		<label>glacial ice</label>
+		<texturePath>BMT_Caverns/Terrains/GlacialIce</texturePath>
+		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/GlacialIce</pollutedTexturePath> -->
+		<!-- Vanilla Pollution Stone -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
+		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
+		<!-- Vanilla Pollution Stone -->
+		<isPaintable>false</isPaintable>
+		<edgeType>FadeRough</edgeType>
+			<renderPrecedence>350</renderPrecedence>
+			<pathCost>14</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<filthAcceptanceMask>
+			<li>None</li>
+		</filthAcceptanceMask>
+		<takeFootprints>false</takeFootprints>
+	</TerrainDef>
+</Defs>

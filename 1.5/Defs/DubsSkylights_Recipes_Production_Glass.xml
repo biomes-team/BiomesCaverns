@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef MayRequire="dubwise.dubsskylights">
+		<defName>BMT_Sand_SmeltGlass</defName>
+		<label>smelt glass from cavern sand</label>
+		<description>Make framed glass windows.</description>
+		<jobString>Smelting glass.</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_Sand</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_Sand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GlassPane>1</GlassPane>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef MayRequire="dubwise.dubsskylights">
+		<defName>BMT_Sand_SmeltGlass4x</defName>
+		<label>smelt glass from cavern sand x4</label>
+		<description>Make framed glass windows.</description>
+		<jobString>Smelting glass.</jobString>
+		<workAmount>6400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_Sand</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_Sand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GlassPane>4</GlassPane>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

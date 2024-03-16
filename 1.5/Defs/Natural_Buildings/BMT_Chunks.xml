@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>BMT_ChunkIce</defName>
+		<label>ice chunk</label>
+		<description>A chunk of ice. Can be cut into usable ice blocks.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Chunks/ChunkIce</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(255,255,255)</color>
+		</graphicData>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<BMT_IceBlock>20</BMT_IceBlock>
+		</butcherProducts>
+	</ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>BMT_Make_IceBlock</defName>
+		<label>make ice block</label>
+		<description>Cuts ice chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_ChunkIce</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_ChunkIce</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BMT_IceBlock>20</BMT_IceBlock>
+		</products>
+	</RecipeDef>
+
+	<!-- ===================================================== -->
+
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>BMT_ChunkSand</defName>
+		<label>sand chunk</label>
+		<description>A chunk of sand. Can be cut into usable sand.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Chunks/ChunkSand</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(255,255,255)</color>
+		</graphicData>
+		<statBases>
+			<Mass>17</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<BMT_Sand>20</BMT_Sand>
+		</butcherProducts>
+	</ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>BMT_Make_Sand</defName>
+		<label>make sand</label>
+		<description>Break sand chunks into sand.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_ChunkSand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_ChunkSand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BMT_Sand>20</BMT_Sand>
+		</products>
+	</RecipeDef>
+
+</Defs>

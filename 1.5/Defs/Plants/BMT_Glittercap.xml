@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_Glittercap</defName>
+		<label>glittercap</label>
+		<description>Able to survive below-freezing temperatures for extended periods of time, this mushroom is considered a beauty of the glacial hollows.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Glittercap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Beauty>16</Beauty>
+			<BeautyOutdoors>14</BeautyOutdoors>
+			<Nutrition>1.0</Nutrition>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~10</optimalTemperature>
+				<growingHours>0.5~0.99</growingHours>
+			</li>
+		</modExtensions>
+		<selectable>true</selectable>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>1.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+			<interferesWithRoof>false</interferesWithRoof>
+			<purpose>Beauty</purpose>
+		</plant>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(183,240,239)</glowColor>
+      </li>
+    </comps>
+	</ThingDef>
+</Defs>

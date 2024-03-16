@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LeatherBase">
+	<defName>BMT_Leather_GlacialPlain</defName>
+	<label>glacialleather</label>
+	<statBases>
+	  <StuffPower_Insulation_Cold>46</StuffPower_Insulation_Cold>
+	</statBases>
+	<graphicData>
+	  <color>(57,106,162)</color>
+	</graphicData>
+	<stuffProps>
+	  <color>(57,106,162)</color>
+	  <commonality>0.05</commonality>
+	</stuffProps>
+  </ThingDef>
+
+</Defs>

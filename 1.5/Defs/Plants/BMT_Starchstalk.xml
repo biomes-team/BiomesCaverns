@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_StarchstalkPlant</defName>
+		<label>starchstalk</label>
+		<description>Essentially a potato-like root that has grown upwards, it is farmed by cave-dwelling tribes due to the ease in which it grows even on the worst soil.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Starchstalk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.2, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<pollution>Any</pollution>
+			<growDays>6</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Starchstalk</immatureGraphicPath>
+			<topWindExposure>0</topWindExposure>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestYield>11</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_Starchstalk</harvestedThingDef>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>24</wildClusterWeight>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<!-- fruit -->
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_Starchstalk</defName>
+		<label>starchstalk</label>
+		<description>Essentially a potato-like root that has grown upwards.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/Starchstalk/Starchstalk</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			<Mass>0.02</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+</Defs>

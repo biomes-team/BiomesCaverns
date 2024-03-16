@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_DulcisPlant</defName>
+		<label>dulcis</label>
+		<description>An oddly sweet mushroom grown by cave dwellers in place of berries. It can survive in a wide range of temperatures.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Dulcis/DulcisGrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.20</Nutrition>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<fertilityMin>0.70</fertilityMin>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
+			<growDays>7</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>200</harvestWork>
+			<harvestYield>12</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.1</harvestAfterGrowth>
+			<harvestedThingDef>BMT_RawDulcis</harvestedThingDef>
+			<sowMinSkill>4</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<neverBlightable>false</neverBlightable>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisImmature</immatureGraphicPath>
+			<leaflessGraphicPath>BMT_Caverns/Things/Plant/Dulcis/DulcisHarvested</leaflessGraphicPath>
+			<visualSizeRange>0.5~1.3</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_RawDulcis</defName>
+		<label>dulcis</label>
+		<description>Dulcis mushrooms. Nice to eat, even when raw, if you like fungus.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/Dulcis/Dulcis</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>16</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought>BMT_AteRawDulcis</tasteThought>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+</Defs>

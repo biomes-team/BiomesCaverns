@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_StinkLattice</defName>
+		<label>stink lattice</label>
+		<description>The gasses from this latice-like fungus smell like a rotting corpse.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeGrown</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<pathCost>60</pathCost>
+		<blockWind>false</blockWind>
+		<plant>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>4</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<fertilityMin>0.05</fertilityMin>
+			<pollution>Any</pollution>
+			<soundHarvesting>Harvest_Standard</soundHarvesting>
+			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>500</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<neverBlightable>true</neverBlightable>
+			<harvestTag Inherit="False"/>
+			<harvestedThingDef Inherit="False"/>
+			<harvestYield Inherit="False"/>
+			<burnedThingDef Inherit="False"/>
+			<smashedThingDef Inherit="False"/>
+			<choppedThingDef Inherit="False"/>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/StinkLattice/StinkLatticeImmature</immatureGraphicPath>
+		</plant>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<rotatable>false</rotatable>
+		<comps>
+			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
+				<gasType>RotStink</gasType>
+				<cellsToFill>1</cellsToFill>
+				<effecterReleasing MayRequire="Ludeon.RimWorld.Biotech">BMT_SilentGasReleasing</effecterReleasing>
+				<growthProgress>0.6</growthProgress>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
+				<forceUseImmature>true</forceUseImmature>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+  <EffecterDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>BMT_SilentGasReleasing</defName>
+	<children>
+	  <li>
+		<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+		<!-- Sergkart: The sound causes endless click spam -->
+		<!-- <soundDef>GasReleasing</soundDef> -->
+	  </li>
+	  <li>
+		<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+		<positionRadius>0.3</positionRadius>
+		<fleckDef>Fleck_GasSmall</fleckDef>
+		<chancePerTick>0.1</chancePerTick>
+		<scale>0.5~1</scale>
+		<spawnLocType>OnSource</spawnLocType>
+	  </li>
+	</children>
+  </EffecterDef>
+
+</Defs>
