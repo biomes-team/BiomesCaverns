@@ -5,6 +5,7 @@
 		<li>1.4</li>
 		<li>\</li>
 		<li>1.4CaveworldFloraUnleashed</li>
+		<li>CaveworldFloraUnleashed</li>
 		<!--<li IfModActive="musicexpanded.framework">MusicExpandedPatch</li>-->
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/DLC/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/DLC/Ideology</li>
@@ -27,6 +28,7 @@
 	<v1.5>
 		<li>1.5</li>
 		<li>\</li>
+		<li>CaveworldFloraUnleashed</li>
 		<li>1.5/CaveworldFloraUnleashed</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/DLC/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/DLC/Ideology</li>
