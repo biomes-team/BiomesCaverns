@@ -158,23 +158,10 @@
 			<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
 				<roofedOnly>true</roofedOnly>
 				<faceSouth>true</faceSouth>
-				<sleepGraphicData>
-					<li>
-						<graphicClass>Graphic_Single</graphicClass>
-						<texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Hanging</texPath>
-						<drawSize>0.8</drawSize>
-					</li>
-					<li>
-						<graphicClass>Graphic_Single</graphicClass>
-						<texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Hanging</texPath>
-						<drawSize>1.0</drawSize>
-					</li>
-					<li>
-						<graphicClass>Graphic_Single</graphicClass>
-						<texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Hanging</texPath>
-						<drawSize>1.2</drawSize>
-					</li>
-				</sleepGraphicData>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Hanging</texPath>
+				</graphicData>
 			</li>
 		</comps>
 		<tradeTags>

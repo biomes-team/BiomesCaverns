@@ -16,7 +16,10 @@
 				<hediffs>
 					<li>BMT_ChemSnailDefense</li>
 				</hediffs>
-				<graphicSuffix>Shell_east</graphicSuffix>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
+				</graphicData>
 				<duration>300</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -33,28 +36,15 @@
 				<milkAmount>22</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
-				<li Class="BiomesCore.CompProperties_MakeFilthTrail">
-					<filthDef>BMT_Filth_Snail_FuelTrail</filthDef>
-				</li>
-			  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
-    <sleepGraphicData>
-      <li>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
-        <drawSize>2.2</drawSize>
-      </li>
-      <li>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
-        <drawSize>3.2</drawSize>
-      </li>
-      <li>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
-        <drawSize>4.0</drawSize>
-      </li>
-    </sleepGraphicData>
-  </li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>BMT_Filth_Snail_FuelTrail</filthDef>
+			</li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>BMT_Caverns/Things/Animal/ChemSnail/ChemSnailShell_east</texPath>
+				</graphicData>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -206,7 +196,8 @@
 			<preferability>DesperateOnly</preferability>
 		</ingestible>
 	</ThingDef>
--	<ThingDef ParentName="EggUnfertBase">
+	-
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggChemSnailUnfertilized</defName>
 		<label>chem snail egg (unfert.)</label>
 		<description>An unfertilized chem snail egg. It can be eaten raw, but it's much, much better cooked. It can be used as fuel.</description>

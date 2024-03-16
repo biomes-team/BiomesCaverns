@@ -18,8 +18,9 @@
 				<hediffs>
 					<li>BMT_GlowSnailDefense</li>
 				</hediffs>
-				<graphicSuffix>Shell</graphicSuffix>
-				<useMultiGraphic>true</useMultiGraphic>
+				<graphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell</texPath>
+				</graphicData>
 				<duration>750</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -32,25 +33,11 @@
 			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
 				<filthDef>BMT_Filth_Snail_Slime</filthDef>
 			</li>
-		  <li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
-    <sleepGraphicData>
-      <li>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell_east</texPath>
-        <drawSize>0.95</drawSize>
-      </li>
-      <li>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell_east</texPath>
-        <drawSize>1.3</drawSize>
-      </li>
-      <li>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell_east</texPath>
-        <drawSize>1.9</drawSize>
-      </li>
-    </sleepGraphicData>
-  </li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+				<graphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlowSnail/GlowSnailShell</texPath>
+				</graphicData>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -106,11 +93,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-			<tradeTags>
-				<li>AnimalFarm</li>
-				<li>AnimalUncommon</li>
-				<li>AnimalInsect</li>
-			</tradeTags>
+		<tradeTags>
+			<li>AnimalFarm</li>
+			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
 		<butcherProducts>
 			<BMT_Molluskshell>30</BMT_Molluskshell>
 		</butcherProducts>

@@ -99,7 +99,24 @@
 				<hediffs>
 					<li>BMT_JewelbugDefense</li>
 				</hediffs>
-				<graphicSuffix>Rolled</graphicSuffix>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>BMT_Caverns/Things/Animal/Jewelbug/Blue/JewelbugRolled</texPath>
+				</graphicData>
+				<alternateGraphics>
+					<li>
+						<graphicClass>Graphic_Single</graphicClass>
+						<texPath>BMT_Caverns/Things/Animal/Jewelbug/Red/JewelbugRolled</texPath>
+					</li>
+					<li>
+						<graphicClass>Graphic_Single</graphicClass>
+						<texPath>BMT_Caverns/Things/Animal/Jewelbug/Green/JewelbugRolled</texPath>
+					</li>
+					<li>
+						<graphicClass>Graphic_Single</graphicClass>
+						<texPath>BMT_Caverns/Things/Animal/Jewelbug/Yellow/JewelbugRolled</texPath>
+					</li>
+				</alternateGraphics>
 				<duration>300</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -121,11 +138,8 @@
 		<race>BMT_Jewelbug</race>
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
-		<alternateGraphicChance>1.0</alternateGraphicChance>
+		<alternateGraphicChance>0.75</alternateGraphicChance>
 		<alternateGraphics>
-			<li>
-				<texPath>BMT_Caverns/Things/Animal/Jewelbug/Blue/Jewelbug</texPath>
-			</li>
 			<li>
 				<texPath>BMT_Caverns/Things/Animal/Jewelbug/Red/Jewelbug</texPath>
 			</li>

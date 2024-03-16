@@ -90,7 +90,10 @@
 				<hediffs>
 					<li>BMT_PillbugDefense</li>
 				</hediffs>
-				<graphicSuffix>Rolled</graphicSuffix>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/PillbugRolled</texPath>
+				</graphicData>
 				<duration>750</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
@@ -104,12 +107,12 @@
 				<filthNutrition>0.03</filthNutrition>
 			</li>
 		</comps>
-        <modExtensions>
-            <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
-                <isCustomThingEater>true</isCustomThingEater>
-	              <eatWhenFed>true</eatWhenFed>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+				<isCustomThingEater>true</isCustomThingEater>
+				<eatWhenFed>true</eatWhenFed>
+			</li>
+		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
@@ -200,4 +203,3 @@
 		</comps>
 	</ThingDef>
 </Defs>
-
