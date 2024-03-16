@@ -20,7 +20,7 @@ namespace BiomesCaverns
             base.CompTick();
             Vector3 vector = base.parent.PositionHeld.ToVector3Shifted();
             if (Rand.MTBEventOccurs(FilthSpawnMTB, 1f, 1.TicksToSeconds())
-                && CellFinder.TryFindRandomReachableCellNear(base.parent.PositionHeld, base.parent.Map, FilthSpawnRadius,
+                && CellFinder.TryFindRandomReachableNearbyCell(base.parent.PositionHeld, base.parent.Map, FilthSpawnRadius,
                 TraverseParms.For(TraverseMode.NoPassClosedDoors), null, null, out var result))
             {
                 FilthMaker.TryMakeFilth(result, base.parent.Map, filthTypes.RandomElement());

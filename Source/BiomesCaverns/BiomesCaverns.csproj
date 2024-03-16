@@ -17,14 +17,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\1.4\Assemblies\</OutputPath>
+    <OutputPath>..\..\1.5\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BiomesCore">
-      <HintPath>..\..\..\BiomesCore\1.4\Assemblies\BiomesCore.dll</HintPath>
+      <HintPath>..\..\..\BiomesCore\1.5\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -79,7 +79,7 @@
     <Compile Include="Patches\TunnelHiveSpawner_Spawn_Patch.cs" />
     <Compile Include="Patches\JobDriver_Skydreaming_MakeNewToils_Patch.cs" />
     <Compile Include="Patches\ModAssemblies.cs" />
-    <Compile Include="Patches\RCellFinder_TryFindSkydreamingSpotOutsideColony_Patch.cs" />
+    <Compile Include="Patches\RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch.cs" />
     <Compile Include="Patches\ScatterStalagmites.cs" />
     <Compile Include="Patches\ShipLandingArea_RecalculateBlockingThing_Patch.cs" />
     <Compile Include="Patches\ThrumboEvent.cs" />
@@ -101,13 +101,25 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.4.3901</Version>
-    </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.1.1</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\RimWorldLinux_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Publicize Include="Assembly-CSharp:RimWorld.ActiveDropPod.contents" />

@@ -1,5 +1,6 @@
 using RimWorld;
 using Verse;
+using Verse.AI.Group;
 
 namespace BiomesCaverns.DeathActionWorkers
 {
@@ -9,11 +10,11 @@ namespace BiomesCaverns.DeathActionWorkers
 
 		public override bool DangerousInMelee => true;
 
-		public override void PawnDied(Corpse corpse)
+		public override void PawnDied(Corpse corpse, Lord prevLord)
 		{
-			float radius = corpse.InnerPawn.ageTracker.CurLifeStageIndex == 0
-				? 1.9F
-				: (corpse.InnerPawn.ageTracker.CurLifeStageIndex != 1 ? 4.9F : 2.9F);
+			float radius = corpse.InnerPawn.ageTracker.CurLifeStageIndex != 0
+				? (corpse.InnerPawn.ageTracker.CurLifeStageIndex != 1 ? 4.9F : 2.9F)
+				: 1.9F;
 			GenExplosion.DoExplosion(corpse.Position, corpse.Map, radius, BC_DefOf.BMT_Crystalope_SharpBomb,
 				corpse.InnerPawn);
 		}

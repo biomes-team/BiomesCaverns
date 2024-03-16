@@ -4,22 +4,21 @@ using System.Reflection;
 using BiomesCore.Reflections;
 using HarmonyLib;
 using RimWorld;
+using Verse;
 
 namespace BiomesCaverns.Patches
 {
 	[HarmonyPatch]
-	public class RCellFinder_TryFindSkydreamingSpotOutsideColony_Patch
+	public class RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch
 	{
 		static MethodBase TargetMethod()
 		{
-			foreach (var nestedType in typeof(RCellFinder).GetNestedTypes(AccessTools.all))
+			foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(RCellFinder)))
 			{
-				foreach (var method in nestedType.GetMethods(AccessTools.all))
+				if (method.Name.Contains("CellValidator"))
 				{
-					if (method.Name.Contains(nameof(RCellFinder.TryFindSkydreamingSpotOutsideColony)))
-					{
-						return method;
-					}
+					Log.Error("method");
+					return method;
 				}
 			}
 

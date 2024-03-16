@@ -1,16 +1,15 @@
-﻿using RimWorld;
+﻿using LudeonTK;
+using RimWorld;
 using Verse;
 
-namespace BiomesCaverns.Debug
+namespace BiomesCaverns
 {
 	public static class DebugActions
 	{
-		private const string DebugCategory = "Biomes! Caverns";
-
 		/// <summary>
 		/// Make the map filthy.
 		/// </summary>
-		[DebugAction(DebugCategory, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+		[DebugAction(BiomesCaverns.Name, allowedGameStates = AllowedGameStates.PlayingOnMap)]
 		private static void SpawnFilth()
 		{
 			var filthDef = ThingDefOf.Filth_Slime;

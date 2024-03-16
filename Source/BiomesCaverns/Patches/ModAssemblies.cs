@@ -6,7 +6,6 @@ namespace BiomesCaverns.Patches
 {
 	public static class ModAssemblies
 	{
-		private static Assembly _vfei; // Vanilla Factions Expanded - Insectoids.
 		private static Assembly _viems; // Vanilla Ideology Expanded - Memes and Structures.
 		private static Assembly _vpeh; // Vanilla Psycasts Expanded - Hemosage.
 
@@ -23,36 +22,16 @@ namespace BiomesCaverns.Patches
 			foreach (var pack in LoadedModManager.RunningMods)
 			{
 				var packageId = pack.PackageId;
-				if (packageId == "oskarpotocki.vfe.insectoid")
+				switch (packageId)
 				{
-					foreach (var assembly in pack.assemblies.loadedAssemblies)
-					{
-						if (assembly.FullName.Contains("VFEI"))
-						{
-							_vfei = assembly;
-							break;
-						}
-					}
-				}
-				else if (packageId == "vanillaexpanded.vmemese")
-				{
-					_viems = pack.assemblies.loadedAssemblies[0];
-				}
-				else if (packageId == "vanillaexpanded.vpe.hemosage")
-				{
-					_vpeh = pack.assemblies.loadedAssemblies[0];
+					case "vanillaexpanded.vmemese":
+						_viems = pack.assemblies.loadedAssemblies[0];
+						break;
+					case "vanillaexpanded.vpe.hemosage":
+						_vpeh = pack.assemblies.loadedAssemblies[0];
+						break;
 				}
 			}
-		}
-
-		/// <summary>
-		/// Checks if the Vanilla Factions Expanded - Insectoid mod is present in the current game.
-		/// </summary>
-		/// <returns>Assembly of this mod.</returns>
-		public static Assembly VanillaFactionsExpandedInsectoid()
-		{
-			CacheMods();
-			return _vfei;
 		}
 
 		/// <summary>

@@ -39,7 +39,7 @@ namespace BiomesCaverns
 
 		public override void GameConditionTick()
 		{
-			List<Map> affectedMaps = base.AffectedMaps;
+			List<Map> affectedMaps = AffectedMaps;
 			if (Find.TickManager.TicksGame % 3451 == 0)
 			{
 				for (int i = 0; i < affectedMaps.Count; i++)
@@ -58,7 +58,7 @@ namespace BiomesCaverns
 
 		private void DoPawnsToxicDamage(Map map)
 		{
-			List<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
+			IReadOnlyList<Pawn> allPawnsSpawned = map.mapPawns.AllPawnsSpawned;
 			for (int i = 0; i < allPawnsSpawned.Count; i++)
 			{
 				DoPawnToxicDamage(allPawnsSpawned[i]);

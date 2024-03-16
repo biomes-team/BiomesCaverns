@@ -8,7 +8,7 @@ namespace BiomesCaverns
 {
 	public class BiomesCaverns : Mod
 	{
-		public const string Id = "rimworld.biomes.caverns";
+		public const string Id = "BiomesTeam.BiomesCaverns";
 		public const string Name = "Biomes! Caverns";
 		private static readonly Version Version = typeof(BiomesCaverns).Assembly.GetName().Version;
 

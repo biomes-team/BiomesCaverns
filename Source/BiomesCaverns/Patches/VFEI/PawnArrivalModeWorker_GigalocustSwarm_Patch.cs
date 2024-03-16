@@ -7,6 +7,9 @@ using HarmonyLib;
 
 namespace BiomesCaverns.Patches.VFEI
 {
+	/// <summary>
+	/// Commented out patch, kept in case it is useful for future VFE - Insectoids 2 support.
+	/// </summary>
 	[HarmonyPatch]
 	internal static class PawnArrivalModeWorker_GigalocustSwarm_Patch
 	{
@@ -16,12 +19,13 @@ namespace BiomesCaverns.Patches.VFEI
 
 		static bool Prepare(MethodBase original)
 		{
-			return ModAssemblies.VanillaFactionsExpandedInsectoid() != null;
+			return false;  // ModAssemblies.VanillaFactionsExpandedInsectoid() != null;
 		}
 
 		[HarmonyTargetMethods]
 		static IEnumerable<MethodInfo> TargetMethods()
 		{
+			/*
 			var assembly = ModAssemblies.VanillaFactionsExpandedInsectoid();
 			foreach (var type in assembly.GetTypes())
 			{
@@ -42,6 +46,8 @@ namespace BiomesCaverns.Patches.VFEI
 					}
 				}
 			}
+			*/
+			yield break;
 		}
 
 		internal static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
