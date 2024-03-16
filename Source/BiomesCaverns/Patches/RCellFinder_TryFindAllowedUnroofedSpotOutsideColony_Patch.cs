@@ -4,25 +4,16 @@ using System.Reflection;
 using BiomesCore.Reflections;
 using HarmonyLib;
 using RimWorld;
-using Verse;
 
 namespace BiomesCaverns.Patches
 {
 	[HarmonyPatch]
-	public class RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch
+	public static class RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch
 	{
-		static MethodBase TargetMethod()
+		private static MethodBase TargetMethod()
 		{
-			foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(RCellFinder)))
-			{
-				if (method.Name.Contains("CellValidator"))
-				{
-					Log.Error("method");
-					return method;
-				}
-			}
-
-			return null;
+			return typeof(RCellFinder).GetLocalFunc(nameof(RCellFinder.TryFindAllowedUnroofedSpotOutsideColony),
+				localFunc: "CellValidator");
 		}
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
