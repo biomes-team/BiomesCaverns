@@ -74,10 +74,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>BMT_Pillbug_Wounded</soundWounded>
-					<soundDeath>BMT_Pillbug_Death</soundDeath>
-					<soundCall>BMT_Pillbug_Call</soundCall>
-					<soundAngry>BMT_Pillbug_Angry</soundAngry>
+					<soundWounded>Biomes_Pillbug_Wounded</soundWounded>
+					<soundDeath>Biomes_Pillbug_Death</soundDeath>
+					<soundCall>Biomes_Pillbug_Call</soundCall>
+					<soundAngry>Biomes_Pillbug_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

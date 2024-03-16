@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_CrabThingBase" Name="BMT_CrystalCrab_Base" Abstract="True">
+	<ThingDef ParentName="BiomesIslands_CrabThingBase" Name="BMT_CrystalCrab_Base" Abstract="True">
 		<label>crystal crab</label>
 		<description>A large and powerful relative of the decorator crab, cavern crystals grow from the minerals on this crab's rocky shell. Despite its strong exoskeleton, the crystal crab hauls around this heavy shell, the reason for which is unknown. They are not known to breed in captivity.</description>
 		<statBases>

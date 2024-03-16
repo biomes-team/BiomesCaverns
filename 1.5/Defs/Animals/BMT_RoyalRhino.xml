@@ -304,10 +304,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
-					<soundWounded>BMT_RoyalRhino_Wounded</soundWounded>
-					<soundDeath>BMT_RoyalRhino_Death</soundDeath>
-					<soundCall>BMT_RoyalRhino_Call</soundCall>
-					<soundAngry>BMT_RoyalRhino_Angry</soundAngry>
+					<soundWounded>Biomes_RoyalRhino_Wounded</soundWounded>
+					<soundDeath>Biomes_RoyalRhino_Death</soundDeath>
+					<soundCall>Biomes_RoyalRhino_Call</soundCall>
+					<soundAngry>Biomes_RoyalRhino_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

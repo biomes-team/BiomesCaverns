@@ -81,10 +81,10 @@
 				<li>
 					<def>BMT_GlowBatAdult</def>
 					<minAge>0.222</minAge>
-					<soundWounded>BMT_Bat_Wounded</soundWounded>
-					<soundDeath>BMT_Bat_Death</soundDeath>
-					<soundCall>BMT_Bat_Call</soundCall>
-					<soundAngry>BMT_Bat_Angry</soundAngry>
+					<soundWounded>Biomes_Bat_Wounded</soundWounded>
+					<soundDeath>Biomes_Bat_Death</soundDeath>
+					<soundCall>Biomes_Bat_Call</soundCall>
+					<soundAngry>Biomes_Bat_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

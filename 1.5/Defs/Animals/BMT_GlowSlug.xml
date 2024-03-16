@@ -41,7 +41,7 @@
 			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
 			<hasGenders>false</hasGenders>
 			<herdAnimal>true</herdAnimal>
-			<body>BMT_Slug</body>
+			<body>BiomesCore_Slug</body>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>0.5</baseHealthScale>
@@ -65,10 +65,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
-					<soundWounded>BMT_GlowSnail_Wounded</soundWounded>
-					<soundDeath>BMT_GlowSnail_Death</soundDeath>
-					<soundCall>BMT_GlowSnail_Call</soundCall>
-					<soundAngry>BMT_GlowSnail_Angry</soundAngry>
+					<soundWounded>Biomes_GlowSnail_Wounded</soundWounded>
+					<soundDeath>Biomes_GlowSnail_Death</soundDeath>
+					<soundCall>Biomes_GlowSnail_Call</soundCall>
+					<soundAngry>Biomes_GlowSnail_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

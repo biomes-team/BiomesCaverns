@@ -275,10 +275,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>BMT_MossBeetle_Wounded</soundWounded>
-					<soundDeath>BMT_MossBeetle_Death</soundDeath>
-					<soundCall>BMT_MossBeetle_Call</soundCall>
-					<soundAngry>BMT_MossBeetle_Angry</soundAngry>
+					<soundWounded>Biomes_MossBeetle_Wounded</soundWounded>
+					<soundDeath>Biomes_MossBeetle_Death</soundDeath>
+					<soundCall>Biomes_MossBeetle_Call</soundCall>
+					<soundAngry>Biomes_MossBeetle_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

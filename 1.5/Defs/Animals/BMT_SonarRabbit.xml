@@ -68,10 +68,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.2222</minAge>
-					<soundWounded>BMT_SonarRabbit_Wounded</soundWounded>
-					<soundDeath>BMT_SonarRabbit_Death</soundDeath>
-					<soundCall>BMT_SonarRabbit_Call</soundCall>
-					<soundAngry>BMT_SonarRabbit_Angry</soundAngry>
+					<soundWounded>Biomes_SonarRabbit_Wounded</soundWounded>
+					<soundDeath>Biomes_SonarRabbit_Death</soundDeath>
+					<soundCall>Biomes_SonarRabbit_Call</soundCall>
+					<soundAngry>Biomes_SonarRabbit_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

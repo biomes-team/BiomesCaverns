@@ -285,10 +285,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3</minAge>
-					<soundWounded>BMT_BovineBeetle_Wounded</soundWounded>
-					<soundDeath>BMT_BovineBeetle_Death</soundDeath>
-					<soundCall>BMT_BovineBeetle_Call</soundCall>
-					<soundAngry>BMT_BovineBeetle_Angry</soundAngry>
+					<soundWounded>Biomes_BovineBeetle_Wounded</soundWounded>
+					<soundDeath>Biomes_BovineBeetle_Death</soundDeath>
+					<soundCall>Biomes_BovineBeetle_Call</soundCall>
+					<soundAngry>Biomes_BovineBeetle_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>

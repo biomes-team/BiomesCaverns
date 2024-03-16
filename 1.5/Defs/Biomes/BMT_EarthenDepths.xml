@@ -196,7 +196,7 @@
 						<max>0.73</max>
 					</li>
 					<li>
-						<terrain>BMT_Magma</terrain>
+						<terrain>BiomeCore_Magma</terrain>
 						<min>0.73</min>
 						<max>999</max>
 					</li>

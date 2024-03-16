@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<SoundDef>
-		<defName>BMT_Bat_Angry</defName>
+		<defName>Biomes_Bat_Angry</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
@@ -18,7 +18,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>BMT_Bat_Call</defName>
+		<defName>Biomes_Bat_Call</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
@@ -35,7 +35,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>BMT_Bat_Death</defName>
+		<defName>Biomes_Bat_Death</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
@@ -52,7 +52,7 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
-		<defName>BMT_Bat_Wounded</defName>
+		<defName>Biomes_Bat_Wounded</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>

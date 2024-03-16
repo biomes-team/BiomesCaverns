@@ -102,10 +102,10 @@
 				<li>
 					<def>BMT_DiggerAdult</def>
 					<minAge>0.2222</minAge>
-					<soundWounded>BMT_TruffleMole_Wounded</soundWounded>
-					<soundDeath>BMT_TruffleMole_Death</soundDeath>
-					<soundCall>BMT_TruffleMole_Call</soundCall>
-					<soundAngry>BMT_TruffleMole_Angry</soundAngry>
+					<soundWounded>Biomes_TruffleMole_Wounded</soundWounded>
+					<soundDeath>Biomes_TruffleMole_Death</soundDeath>
+					<soundCall>Biomes_TruffleMole_Call</soundCall>
+					<soundAngry>Biomes_TruffleMole_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
