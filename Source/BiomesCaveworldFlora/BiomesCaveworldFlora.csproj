@@ -17,14 +17,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\1.4CaveworldFloraUnleashed\Assemblies\</OutputPath>
+    <OutputPath>..\..\1.5\CaveworldFloraUnleashed\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BiomesCore">
-      <HintPath>..\..\..\BiomesCore\1.4\Assemblies\BiomesCore.dll</HintPath>
+      <HintPath>..\..\..\BiomesCore\1.5\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -33,6 +33,11 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_MushroomWineFermentingBarrel.cs" />
@@ -49,11 +54,6 @@
     <Compile Include="ThingDef_FruitingBody.cs" />
     <Compile Include="GenCaveFungusReproduction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.4.3901</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
