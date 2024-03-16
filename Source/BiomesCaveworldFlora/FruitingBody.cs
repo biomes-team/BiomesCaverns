@@ -63,7 +63,7 @@ namespace Caveworld_Flora_Unleashed
         {
             get
             {
-                float light = Map.glowGrid.GameGlowAt(Position);
+                float light = Map.glowGrid.GroundGlowAt(Position);
                 if (light >= FruitingBodyProps.minLight && light <= FruitingBodyProps.maxLight)
                 {
                     return 1f;
@@ -194,7 +194,7 @@ namespace Caveworld_Flora_Unleashed
                 growthInt += GrowthPerTick * 2000f;
                 if (!plantWasAlreadyMature && LifeStage == PlantLifeStage.Mature)
                 {
-                    Map.mapDrawer.MapMeshDirty(Position, MapMeshFlag.Things);
+                    Map.mapDrawer.MapMeshDirty(Position, MapMeshFlagDefOf.Things);
                 }
             }
 
@@ -249,7 +249,7 @@ namespace Caveworld_Flora_Unleashed
 
                     if (!IsLightConditionOk)
                     {
-                        float light = Map.glowGrid.GameGlowAt(Position);
+                        float light = Map.glowGrid.GroundGlowAt(Position);
                         if (light < FruitingBodyProps.minLight)
                         {
                             stringBuilder.Append(", " + "Caveworld_Flora_Unleashed.TooDark".Translate());
@@ -292,7 +292,7 @@ namespace Caveworld_Flora_Unleashed
 
         public static bool IsLightConditionOkAt(ThingDef_FruitingBody plantDef, Map map, IntVec3 position)
         {
-            float light = map.glowGrid.GameGlowAt(position);
+            float light = map.glowGrid.GroundGlowAt(position);
             if (light >= plantDef.minLight && light <= plantDef.maxLight)
             {
                 return true;
