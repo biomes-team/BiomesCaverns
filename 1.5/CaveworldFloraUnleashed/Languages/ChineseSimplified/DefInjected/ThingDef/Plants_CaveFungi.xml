@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<ItW_Shimmershroom.label>微光菇</ItW_Shimmershroom.label>
+	<ItW_Shimmershroom.description>一种软糯可口的微光蘑菇，由于它美妙的风味，它被洞穴居民推崇为一种佳肴。</ItW_Shimmershroom.description>
+	
+	<ItW_Glowbulb.label>灯泡菇</ItW_Glowbulb.label>
+	<ItW_Glowbulb.description>一种体型很小的，像正在生长的灯泡一样的蘑菇，几乎可以在每个昏暗洞穴的角落中找到。尽管理论上可以食用，但它生吃味道比较……你最好还是煮一下吧。</ItW_Glowbulb.description>
+
+	<ItW_Greyfields.label>灰地菇</ItW_Greyfields.label>
+	<ItW_Greyfields.description>外观、味道和质地上都相当普通的蘑菇。但它的特点在于，可以酿成蘑菇酒。</ItW_Greyfields.description>
+
+	<ItW_RoyalBracket.label>金冠灵芝</ItW_RoyalBracket.label>
+	<ItW_RoyalBracket.description>跟土地老儿的千年灵芝是亲戚，浑身上下都散发着奢华的金色光芒。</ItW_RoyalBracket.description>
+
+	<ItW_Gleamcap.label>光帽灵芝</ItW_Gleamcap.label>
+	<ItW_Gleamcap.description>一种巨大的洞穴里生长的蘑菇，因其特有的治疗功效而备受洞穴居民医护的推崇。光帽灵芝的孢子具有活跃的精神特性，只要蘑菇受到扰动就会释放出来。</ItW_Gleamcap.description>
+	
+	<ItW_Brightbells.label>光铃菌</ItW_Brightbells.label>
+	<ItW_Brightbells.description>一种形态非常优美的真菌，矿工们非常喜欢，因为它脆弱的菌丝末端那些小灯泡可以给他们带去光芒。它经常被穴居者用作自然光源。富含纤维的结构让它不能被食用。</ItW_Brightbells.description>
+
+</LanguageData>

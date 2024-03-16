@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Mushroom Wine -->
+
+	<BMT_NoMushroomMust>No mushroom must</BMT_NoMushroomMust>
+	<BMT_ContainsMushroomMust>Contains {0} / {1} mushroom must.</BMT_ContainsMushroomMust>
+	<BMT_ContainsMushroomWine>Contains {0} / {1} mushroom wine.</BMT_ContainsMushroomWine>
+	<BMT_LetterLabelThrumbungusPasses>Rare thrumbungus</BMT_LetterLabelThrumbungusPasses>
+	<BMT_LetterThrumbungusPasses>A group herd of thrumbungus have wandered into the area.\n\nPeaceful by nature, these rare creatures are extremely dangerous when confronted.</BMT_LetterThrumbungusPasses>
+
+</LanguageData>
