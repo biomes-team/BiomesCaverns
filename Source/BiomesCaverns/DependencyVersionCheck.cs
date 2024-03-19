@@ -12,8 +12,8 @@ namespace BiomesCaverns
         
         private static readonly List<Dependency> _dependencies = new List<Dependency>
         {
-            new Dependency("Biomes! Core", "BiomesCore", new Version("2.4.0.0")),
-            new Dependency("Geological Landforms", "GeologicalLandforms", new Version("1.6.3.0"))
+            new Dependency("Biomes! Core", "BiomesCore", new Version("2.6.0.0")),
+            new Dependency("Geological Landforms", "GeologicalLandforms", new Version("1.6.8.0"))
         };
 
         static DependencyVersionCheck()
