@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_GelatinousSuperorganismVariant</defName>
+
+		<label>gelatinous superorganism</label>
+
+		<worldTileGraphicAtlas>
+			<texture>BMT_Caverns/World/Biomes/Atlas/GelatinousSuperorganismVariant</texture>
+			<drawMode>HexAdjacencyCaves</drawMode>
+			<atlasSize>(4,4)</atlasSize>
+		</worldTileGraphicAtlas>
+
+		<worldTileConditions>
+			<anyOf>
+				<landform>CaveEntrance</landform>
+				<landform>SurfaceCave</landform>
+				<landform>SecludedValley</landform>
+				<landform>Sinkhole</landform>
+				<landform>BMT_Mineshaft</landform>
+			</anyOf>
+			<anyOf>
+				<biome>AB_GelatinousSuperorganism</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<id>inside</id>
+
+				<mapGridConditions>
+					<roof>RoofRockThick</roof>
+				</mapGridConditions>
+
+				<terrainOverrides>
+					<modifier>
+						<conditions>
+							<terrain>WaterShallow</terrain>
+						</conditions>
+						<value>AB_LiquidSlime</value>
+					</modifier>
+					<modifier>
+						<conditions>
+							<terrain>Gravel</terrain>
+						</conditions>
+						<value>AB_SlimeGrass</value>
+					</modifier>
+				</terrainOverrides>
+
+				<applyToCaves>true</applyToCaves>
+
+				<animalDensity>2</animalDensity>
+				<plantDensity>0.2</plantDensity>
+				<wildPlantRegrowDays>13</wildPlantRegrowDays>
+
+				<wildPlants operation="replace">
+
+					<!-- ground cover -->
+					<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+					<BMT_FruitingBodies>0.5</BMT_FruitingBodies>
+					<BMT_Pusmelon>0.3</BMT_Pusmelon>
+
+					<!-- mid sized -->
+					<BMT_Brightbell>0.3</BMT_Brightbell>
+					<BMT_CoralClub>0.25</BMT_CoralClub>
+					<BMT_Greatbulb>0.3</BMT_Greatbulb>
+					
+					<!--
+					Tree-sized fungi are omitted on purpose, to follow the restrictions about woody materials of this biome.
+					-->
+
+					<!-- other harvestable -->
+					<BMT_KessingerPlant>0.001</BMT_KessingerPlant>
+
+					<!-- hydrophytes -->
+					<BMT_BiolumiAlgaeTurquoise>0.2</BMT_BiolumiAlgaeTurquoise>
+					<BMT_BiolumiAlgaeChrysoberyl>0.2</BMT_BiolumiAlgaeChrysoberyl>
+					<BMT_BiolumiAlgaeCitrine>0.2</BMT_BiolumiAlgaeCitrine>
+
+				</wildPlants>
+
+			</li>
+
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

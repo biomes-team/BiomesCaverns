@@ -19,7 +19,7 @@
 			<MaxHitPoints>50</MaxHitPoints>
 		</statBases>
 		<neverOverlapFloors>true</neverOverlapFloors>
-		<blockPlants>true</blockPlants>
+		<wipesPlants>true</wipesPlants>
 		<building>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 			<claimable>false</claimable>

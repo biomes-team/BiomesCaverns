@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BMT_ChitinBase">
+	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_WeakChitin</defName>
 		<label>brittle chitin</label>
 		<!-- small chitin t1 -->
@@ -26,7 +26,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_ChitinBase">
+	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_MediumChitin</defName>
 		<!-- medium chitin t2 -->
 		<label>tough chitin</label>
@@ -51,7 +51,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_ChitinBase">
+	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_CrystalChitin</defName>
 		<!-- large chitin t3 -->
 		<label>crystal carapace</label>
@@ -76,7 +76,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_ChitinBase">
+	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_RoyalChitin</defName>
 		<!-- large chitin t4 -->
 		<label>royal chitin</label>
@@ -101,7 +101,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_ChitinBase">
+	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_DeepChitin</defName>
 		<!-- large chitin t5 -->
 		<label>deep chitin</label>

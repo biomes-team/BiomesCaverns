@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BMT_CactusCrab</defName>
 		<label>cactus crab</label>
 		<description>A smaller relative of the crystal crab, adapted to desert-like underground environments. They grow cacti on their shell for camoflauge and defense. From birth, they find a rock and settle into it as their shell.</description>
