@@ -5,7 +5,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace BiomesCaverns
+namespace BiomesCaverns.Patches
 {
 	[HarmonyPatch(typeof(CompLaunchable), nameof(CompLaunchable.TryLaunch))]
 	public class CompLaunchable_TryLaunch_Patch

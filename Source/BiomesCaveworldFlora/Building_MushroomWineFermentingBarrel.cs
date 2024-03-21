@@ -5,6 +5,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
+[StaticConstructorOnStartup]
 public class Building_MushroomFermentingBarrel : Building, IThingHolder
 {
 	private int wortCount;

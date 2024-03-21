@@ -18,12 +18,10 @@ namespace BiomesCaverns.Patches
 			var lifeStageIndex = BC_PawnDefOf.BMT_PodWorm.lifeStages.Count - 1;
 			request.FixedBiologicalAge = BC_PawnDefOf.BMT_PodWorm.race.race.lifeStageAges[lifeStageIndex].minAge;
 			var pawn = PawnGenerator.GeneratePawn(request);
-			if (pawn == null)
+			if (pawn != null)
 			{
-				return;
+				GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(loc, map, 2), map);
 			}
-
-			GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(loc, map, 2), map);
 		}
 	}
 }

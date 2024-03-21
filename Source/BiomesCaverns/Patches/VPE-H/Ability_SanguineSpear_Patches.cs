@@ -12,7 +12,7 @@ namespace BiomesCaverns.Patches.VPE_H
 	public class Ability_SanguineSpear_Patches
 	{
 		private const string TypeName = "Ability_SanguineSpear";
-		private static readonly string[] MethodNames = { "IsEnabledForPawn", "ValidateTarget" };
+		private static readonly string[] MethodNames = {"IsEnabledForPawn", "ValidateTarget"};
 
 		static bool Prepare(MethodBase original)
 		{
@@ -32,7 +32,7 @@ namespace BiomesCaverns.Patches.VPE_H
 				}
 
 				foreach (var currentMethod in type.GetMethods(BindingFlags.Public | BindingFlags.NonPublic |
-					         BindingFlags.Instance | BindingFlags.Static))
+				                                              BindingFlags.Instance | BindingFlags.Static))
 				{
 					foreach (var targetMethod in MethodNames)
 					{
@@ -48,7 +48,7 @@ namespace BiomesCaverns.Patches.VPE_H
 		internal static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
 			return TranspilerHelper.ReplaceCall(instructions.ToList(),
-				Methods.CellRoofedMethod, Methods.HasNonCavernRoofMethod);
+				Methods.CellRoofedMethod, Methods.CellHasNonCavernRoofMethod);
 		}
 	}
 }

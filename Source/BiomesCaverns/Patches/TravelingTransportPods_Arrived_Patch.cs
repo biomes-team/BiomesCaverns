@@ -3,6 +3,9 @@ using RimWorld.Planet;
 
 namespace BiomesCaverns.Patches
 {
+	/// <summary>
+	/// Allow drillpods to choose landing spots under cavern roof.
+	/// </summary>
 	[HarmonyPatch(typeof(TravelingTransportPods), "Arrived")]
 	public static class TravelingTransportPods_Arrived_Patch
 	{

@@ -6,7 +6,7 @@ namespace BiomesCaverns.GenSteps
 {
 	public abstract class GenStep_ClearCavernCenter : GenStep
 	{
-		public abstract int CenterRadius();
+		protected abstract int CenterRadius();
 
 		public override void Generate(Map map, GenStepParams parms)
 		{

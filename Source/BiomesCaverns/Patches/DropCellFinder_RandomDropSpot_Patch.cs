@@ -4,7 +4,10 @@ using Verse;
 
 namespace BiomesCaverns.Patches
 {
-	[HarmonyPatch(typeof(DropCellFinder), "RandomDropSpot")]
+	/// <summary>
+	/// Allow drillpods to choose landing spots under cavern roof.
+	/// </summary>
+	[HarmonyPatch(typeof(DropCellFinder), nameof(DropCellFinder.RandomDropSpot))]
 	public static class DropCellFinder_RandomDropSpot_Patch
 	{
 		public static bool Prefix(ref IntVec3 __result, Map map, bool standableOnly = true)

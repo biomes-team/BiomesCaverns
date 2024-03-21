@@ -65,7 +65,8 @@
     <Compile Include="ModSettings\SettingsWindow.cs" />
     <Compile Include="Patches\Building_PodLauncher_GetGizmos_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_AnyInGroupIsUnderRoof_Patch.cs" />
-    <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceAtFuelLevel_Patch.cs" />
+    <Compile Include="Patches\CompLaunchable_MaxLaunchDistanceEverPossible_Patch.cs" />
+    <Compile Include="Patches\CompLaunchable_MaxLaunchDistance_Patch.cs" />
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
     <Compile Include="Patches\CompScanner_CanUseNow_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_RandomDropSpot_Patch.cs" />
@@ -74,15 +75,15 @@
     <Compile Include="Patches\GenStep_Archonexus_CanScatterAt_Patch.cs" />
     <Compile Include="Patches\GenStep_ScattererBestFit_CanScatterAt_Patch.cs" />
     <Compile Include="Patches\RoomTempTracker_DeepEqualizationTempChangePerInterval_Patch.cs" />
+    <Compile Include="Patches\SectionLayer_SunShadows_DrawLayer_Patch.cs" />
     <Compile Include="Patches\SectionLayer_LightingOverlay_Regenerate_Patch.cs" />
     <Compile Include="Patches\ThingSetMaker_Meteorite_Reset_Patch.cs" />
     <Compile Include="Patches\TunnelHiveSpawner_Spawn_Patch.cs" />
     <Compile Include="Patches\JobDriver_Skydreaming_MakeNewToils_Patch.cs" />
     <Compile Include="Patches\ModAssemblies.cs" />
     <Compile Include="Patches\RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch.cs" />
-    <Compile Include="Patches\ScatterStalagmites.cs" />
     <Compile Include="Patches\ShipLandingArea_RecalculateBlockingThing_Patch.cs" />
-    <Compile Include="Patches\ThrumboEvent.cs" />
+    <Compile Include="Patches\IncidentWorker_ThrumboPasses_CanFireNowSub_Patch.cs" />
     <Compile Include="Patches\TravelingTransportPods_Arrived_Patch.cs" />
     <Compile Include="Patches\TravelingTransportPods_TraveledPctStepPerTick_Patch.cs" />
     <Compile Include="Patches\VFEI\IncidentWorker_GiantInfestation_TryFindCell_Patch.cs" />

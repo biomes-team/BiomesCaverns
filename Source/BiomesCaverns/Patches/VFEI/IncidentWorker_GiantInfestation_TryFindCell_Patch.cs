@@ -10,6 +10,7 @@ namespace BiomesCaverns.Patches.VFEI
 	/// <summary>
 	/// Commented out patch, kept in case it is useful for future VFE - Insectoids 2 support.
 	/// </summary>
+	/*
 	[HarmonyPatch]
 	internal static class IncidentWorker_GiantInfestation_TryFindCell_Patch
 	{
@@ -24,7 +25,6 @@ namespace BiomesCaverns.Patches.VFEI
 
 		static MethodBase TargetMethod()
 		{
-			/*
 			var assembly = ModAssemblies.VanillaFactionsExpandedInsectoid();
 			foreach (var type in assembly.GetTypes())
 			{
@@ -46,7 +46,6 @@ namespace BiomesCaverns.Patches.VFEI
 					}
 				}
 			}
-			*/
 
 			return null;
 		}
@@ -57,4 +56,5 @@ namespace BiomesCaverns.Patches.VFEI
 				Methods.GetRoofThickIfCavernMethod);
 		}
 	}
+	*/
 }

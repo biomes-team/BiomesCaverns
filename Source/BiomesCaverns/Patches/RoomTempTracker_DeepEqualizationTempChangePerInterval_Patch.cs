@@ -4,6 +4,9 @@ using Verse;
 
 namespace BiomesCaverns.Patches
 {
+	/// <summary>
+	/// Disable enclosed thick roof area cooling feature from vanilla if the setting says so.
+	/// </summary>
 	[HarmonyPatch(typeof(RoomTempTracker), "DeepEqualizationTempChangePerInterval")]
 	public static class RoomTempTracker_DeepEqualizationTempChangePerInterval_Patch
 	{

@@ -7,13 +7,16 @@ using RimWorld;
 
 namespace BiomesCaverns.Patches
 {
+	/// <summary>
+	/// Allow archonexus creation under cavern roof.
+	/// </summary>
 	[HarmonyPatch(typeof(GenStep_Archonexus), "CanScatterAt")]
 	internal static class GenStep_Archonexus_CanScatterAt_Patch
 	{
 		internal static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
 			return TranspilerHelper.ReplaceCall(instructions.ToList(),
-				Methods.CellRoofedMethod, Methods.HasNonCavernRoofMethod);
+				Methods.CellRoofedMethod, Methods.CellHasNonCavernRoofMethod);
 		}
 	}
 }

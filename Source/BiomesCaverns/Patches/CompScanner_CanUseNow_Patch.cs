@@ -9,6 +9,9 @@ using Verse;
 
 namespace BiomesCaverns.Patches
 {
+	/// <summary>
+	/// Allow using scanners under cavern roof.
+	/// </summary>
 	[HarmonyPatch(typeof(CompScanner), nameof(CompScanner.CanUseNow), MethodType.Getter)]
 	internal static class CompScanner_CanUseNow_Patch
 	{

@@ -7,17 +7,20 @@ using RimWorld;
 
 namespace BiomesCaverns.Patches
 {
+	/// <summary>
+	/// Children can dream about the sky under cavern roof.
+	/// </summary>
 	[HarmonyPatch]
 	internal static class JobDriver_Skydreaming_MakeNewToils_Patch
 	{
-		static MethodBase TargetMethod()
+		public static MethodBase TargetMethod()
 		{
 			return typeof(JobDriver_Skydreaming).GetLambda("MakeNewToils", lambdaOrdinal: 2);
 		}
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
-			return BiomesCore.Patches.Caverns.Transpilers.CellUnbreachableRoofed(instructions.ToList());
+			return BiomesCore.Patches.Caverns.Transpilers.CellHasNonCavernRoof(instructions.ToList());
 		}
 	}
 }

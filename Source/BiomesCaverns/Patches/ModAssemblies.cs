@@ -1,9 +1,11 @@
-﻿using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 using Verse;
 
 namespace BiomesCaverns.Patches
 {
+	/// <summary>
+	/// Mod compatibility utility class.
+	/// </summary>
 	public static class ModAssemblies
 	{
 		private static Assembly _viems; // Vanilla Ideology Expanded - Memes and Structures.

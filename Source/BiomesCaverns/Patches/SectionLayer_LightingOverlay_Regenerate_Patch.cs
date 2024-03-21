@@ -14,7 +14,7 @@ namespace BiomesCaverns.Patches
 	{
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
-			return BiomesCore.Patches.Caverns.Transpilers.CellUnbreachableRoofed(instructions.ToList());
+			return BiomesCore.Patches.Caverns.Transpilers.CellHasNonCavernRoof(instructions.ToList());
 		}
 	}
 }

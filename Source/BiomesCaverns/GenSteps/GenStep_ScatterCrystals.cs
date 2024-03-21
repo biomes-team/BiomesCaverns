@@ -2,8 +2,10 @@
 
 namespace BiomesCaverns.GenSteps
 {
-	class GenStep_ScatterCrystals : GenStep_ScatterGroup
+	public class GenStep_ScatterCrystals : GenStep_ScatterGroup
 	{
+		public override int SeedPart => -101767548;
+
 		private static bool ShouldSkipMapCrystal(Map map)
 		{
 			return map.Biome != BC_DefOf.BMT_CrystalCaverns;
@@ -11,24 +13,10 @@ namespace BiomesCaverns.GenSteps
 
 		public override void Generate(Map map, GenStepParams parms)
 		{
-			if (ShouldSkipMapCrystal(map) || ShouldSkipMap(map))
+			if ( map.Biome == BC_DefOf.BMT_CrystalCaverns)
 			{
-				return;
+				base.Generate(map, parms);
 			}
-
-			int num = CalculateFinalCount(map);
-			for (int i = 0; i < num; i++)
-			{
-				if (!TryFindScatterCell(map, out var result))
-				{
-					return;
-				}
-
-				ScatterAt(result, map, parms);
-				usedSpots.Add(result);
-			}
-
-			usedSpots.Clear();
 		}
 	}
 }

@@ -4,9 +4,9 @@ namespace BiomesCaverns.GenSteps
 {
 	public class ScattererValidator_RoughRockBuildable : ScattererValidator_Buildable
 	{
-		private static bool RadialAllows(IntVec3 center, Map map)
+		private bool RadialAllows(IntVec3 center, Map map)
 		{
-			foreach (var cell in GenRadial.RadialCellsAround(center, 4.0F, true))
+			foreach (var cell in GenRadial.RadialCellsAround(center, radius, true))
 			{
 				if (cell.GetTerrain(map).smoothedTerrain == null)
 				{
