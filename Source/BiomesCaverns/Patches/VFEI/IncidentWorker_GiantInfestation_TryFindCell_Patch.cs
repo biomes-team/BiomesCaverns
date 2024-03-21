@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using BiomesCore.Patches.Caverns;
 using BiomesCore.Reflections;
 using HarmonyLib;
 

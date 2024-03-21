@@ -24,7 +24,7 @@ namespace BiomesCaverns.Patches
 				AccessTools.Method(typeof(ShipLandingArea_RecalculateBlockingThing_Patch), nameof(RoofedNotCavern));
 
 			var instructionList = TranspilerHelper.ReplaceCall(instructions.ToList(),
-				BiomesCore.Patches.Caverns.Methods.CellRoofedMethod, roofedNotCavernMethod);
+				Methods.CellRoofedMethod, roofedNotCavernMethod);
 
 			foreach (var instruction in instructionList)
 			{

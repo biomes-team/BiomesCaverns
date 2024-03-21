@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using BiomesCore.Patches.Caverns;
 using BiomesCore.Reflections;
 using HarmonyLib;
 using RimWorld;

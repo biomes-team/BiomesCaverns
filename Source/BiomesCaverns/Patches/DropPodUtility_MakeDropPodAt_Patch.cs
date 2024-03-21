@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using BiomesCore;
+﻿using BiomesCore;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;

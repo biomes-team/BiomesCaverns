@@ -8,16 +8,15 @@ using RimWorld;
 namespace BiomesCaverns.Patches
 {
 	/// <summary>
-	/// Although this function is generic, its only current vanilla usage is deciding where children can skydream.
-	/// 
+	/// Allow choosing cells with cavern roof for this check.
 	/// </summary>
 	[HarmonyPatch]
-	public static class RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch
+	public static class DropCellFinder_TryFindSafeLandingSpotCloseToColony_Patch
 	{
 		private static MethodBase TargetMethod()
 		{
-			return typeof(RCellFinder).GetLocalFunc(nameof(RCellFinder.TryFindAllowedUnroofedSpotOutsideColony),
-				localFunc: "CellValidator");
+			return typeof(DropCellFinder).GetLocalFunc(nameof(DropCellFinder.TryFindSafeLandingSpotCloseToColony),
+				localFunc: "SpotValidator");
 		}
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
