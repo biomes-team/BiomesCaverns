@@ -205,7 +205,7 @@
 		<label>dark axolotl egg (fert.)</label>
 		<description>A fertilized dark axolotl egg. If all goes well, it should hatch into an axolotl. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/SalamanderEggs</texPath>
+			<texPath>BiomesCore_Things/Items/Eggs/SalamanderEggs</texPath>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>

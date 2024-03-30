@@ -167,7 +167,7 @@
 		<label>fire salamander egg (fert.)</label>
 		<description>A fertilized fire salamander egg. If all goes well, it should hatch into a fire salamander. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/SalamanderEggs</texPath>
+			<texPath>BiomesCore_Things/Items/Eggs/SalamanderEggs</texPath>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>
@@ -187,7 +187,7 @@
 		<label>fire salamander egg (unfert.)</label>
 		<description>An unfertilized fire salamander egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/SalamanderEggs</texPath>
+			<texPath>BiomesCore_Things/Items/Eggs/SalamanderEggs</texPath>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<statBases>
