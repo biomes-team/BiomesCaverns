@@ -26,7 +26,6 @@
 					<li MayRequire="ReGrowth.BOTR.Core">RG_Blizzard</li>
 					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySandstorm</li>
 					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySnow</li>
-					<li MayRequire="ReGrowth.BOTR.Core">RG_Hail</li>
 					<li MayRequire="ReGrowth.BOTR.Core">RG_Monsoon</li>
 					<li MayRequire="ReGrowth.BOTR.Core">RG_Overcast</li>
 					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStorm</li>
