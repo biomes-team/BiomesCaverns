@@ -83,7 +83,9 @@
     <Compile Include="Patches\GenStep_SpecialTrees_CanSpawnAt_Patch.cs" />
     <Compile Include="Patches\IncidentWorker_GauranlenPodSpawn_CanSpawnPodAt_Patch.cs" />
     <Compile Include="Patches\InfestationCellFinder_GetMountainousnessScoreAt_Patch.cs" />
+    <Compile Include="Patches\LargeBuildingCellFinder_GetCellScore_Patch.cs" />
     <Compile Include="Patches\PawnsArrivalModeWorker_EdgeWalkIn_TryResolveRaidSpawnCenter_Patch.cs" />
+    <Compile Include="Patches\QuestPart_DropPods_GetRandomDropSpot_Patch.cs" />
     <Compile Include="Patches\RaidStrategyWorker_Siege_CanUseWith_Patch.cs" />
     <Compile Include="Patches\RCellFinder_TryFindRandomPawnEntryCell_Patch.cs" />
     <Compile Include="Patches\RCellFinder_TryFindRandomSpotJustOutsideColony_Patch.cs" />
