@@ -60,7 +60,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_FungiponicsBasin</defName>
 		<label>fungiponics basin</label>
-		<description>Not a basin at all, but a series of rotting logs fixed in place with holes for mycelium starters. Growing mushrooms doesn't require light or power hungry watering systems.</description>
+		<description>Not a basin at all, but a series of rotting logs fixed in place with holes for mycelium starters. Growing mushrooms doesn't require light or power hungry watering systems. Some fungi can only grow in these.</description>
 		<thingClass>Caveworld_Flora_Unleashed.Building_FungiponicsBasin</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Linked/BMT_Fungiponics_Atlas</texPath>
