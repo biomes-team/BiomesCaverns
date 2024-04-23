@@ -8,7 +8,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_ShimmershroomPlanted</defName>
 		<label>shimmershroom</label>
-		<description>Some soft and delicate caveworld shimmershrooms. Much appreciated for their subtle taste they are considered a delicacy by caveworlds inhabitants.</description>
+		<description>Some soft and delicate caveworld shimmershrooms. Much appreciated for their subtle taste they are considered a delicacy by caveworlds inhabitants. It can only be grown in fungiponics.</description>
 		<statBases>
 			<MaxHitPoints>25</MaxHitPoints>
 			<Flammability>0.4</Flammability>
@@ -68,7 +68,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_GlowbulbPlanted</defName>
 		<label>glowbulb</label>
-		<description>A small glowing bulb, found growing in nearly every corner of dark caves. While technically edible, its very rough taste make it better used as a cooked ingredient.</description>
+		<description>A small glowing bulb, found growing in nearly every corner of dark caves. While technically edible, its very rough taste make it better used as a cooked ingredient. It can only be grown in fungiponics.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Flammability>0.4</Flammability>
@@ -126,7 +126,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_GreyfieldsPlanted</defName>
 		<label>greyfields</label>
-		<description>A fairly unremarkable mushroom in appearance, taste, and texture; what is notable about them is that it is possible to brew them into mushroom wine.</description>
+		<description>A fairly unremarkable mushroom in appearance, taste, and texture; what is notable about them is that it is possible to brew them into mushroom wine. It can only be grown in fungiponics.</description>
 		<statBases>
 			<MaxHitPoints>65</MaxHitPoints>
 			<Flammability>0.4</Flammability>
@@ -185,7 +185,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_RoyalBracketPlanted</defName>
 		<label>royal bracket</label>
-		<description>A braket fungus related to the oyster mushroom of old Terra that glows with a luxurious golden glow.</description>
+		<description>A braket fungus related to the oyster mushroom of old Terra that glows with a luxurious golden glow. It can only be grown in fungiponics.</description>
 		<statBases>
 			<MaxHitPoints>65</MaxHitPoints>
 			<Flammability>0.4</Flammability>
@@ -245,7 +245,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_GleamcapPlanted</defName>
 		<label>gleamcap</label>
-		<description>A massive caveworld mushroom, known for its natural healing properties by caveworld tenders. Gleamcap spores are psycoactive and are released whenever the mushroom is disturbed.</description>
+		<description>A massive caveworld mushroom, known for its natural healing properties by caveworld tenders. Gleamcap spores are psycoactive and are released whenever the mushroom is disturbed. It can only be grown in fungiponics.</description>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Flammability>0.3</Flammability>
@@ -303,7 +303,7 @@
 	<ThingDef ParentName="BMT_CavePlantBase">
 		<defName>BMT_BrightbellsPlanted</defName>
 		<label>brightbells</label>
-		<description>A very elegant fungus, appreciated by miners for the light emitted by the little bulbs ending its fragile branches. It is often used by caveworld people as a natural lightning; its fibrous texture renders it inedible though.</description>
+		<description>A very elegant fungus, appreciated by miners for the light emitted by the little bulbs ending its fragile branches. It is often used by caveworld people as a natural lightning; its fibrous texture renders it inedible though. It can only be grown in fungiponics.</description>
 		<statBases>
 			<MaxHitPoints>15</MaxHitPoints>
 			<Flammability>0.3</Flammability>
