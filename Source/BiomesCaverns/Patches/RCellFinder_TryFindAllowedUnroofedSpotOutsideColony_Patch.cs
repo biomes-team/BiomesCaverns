@@ -22,12 +22,7 @@ namespace BiomesCaverns.Patches
 				localFunc: "CellValidator");
 			if (ModsConfig.IsActive("divineDerivative.Romance"))
 			{
-				Log.Message("Trying to find WalkCellValidator");
-				var type = Type.GetType("BetterRomance.DateUtility, WayBetterRomance");
-				Log.Message($"BetterRomance.DateUtility {(type == null ? "not found" : "found")}");
-				var method = AccessTools.Method(type, "WalkCellValidator", new Type[] { typeof(IntVec3), typeof(Map) });
-                Log.Message($"WalkCellValidator {(method == null ? "not found" : "found")}");
-                yield return method;
+                yield return AccessTools.Method(Type.GetType("BetterRomance.DateUtility, WayBetterRomance"), "WalkCellValidator", new Type[] { typeof(IntVec3), typeof(Map) });
 			}
 		}
 
