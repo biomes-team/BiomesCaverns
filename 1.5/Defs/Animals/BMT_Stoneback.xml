@@ -71,6 +71,7 @@
 			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<petness>0.15</petness>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<lifeExpectancy>12</lifeExpectancy>
 			<lifeStageAges>
 				<li>
