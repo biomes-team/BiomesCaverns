@@ -1,32 +1,72 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- Adjusts the mass and prices of the mushroom logs, following the instructions of \2553700067\1.4\Defs\ThingDefs_Items\Items_Resources.xml-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/statBases/Mass</xpath>
+	<!-- To prevent processing of wood due to manual patching -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MedievalOverhaul.SeperateWoodList[defName="LogList"]/plankDict</xpath>
 		<value>
-			<Mass>1.2</Mass>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/statBases/MarketValue</xpath>
-		<value>
-			<MarketValue>2.2</MarketValue>
+			<li>
+				<key>BMT_MushroomLogPlanks</key>
+				<value>BMT_MushroomLog</value>
+			</li>
 		</value>
 	</Operation>
 
-	<!-- Adjustments to make prevent raw wood from appearing as ingredient on buildings that require planks-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/thingCategories/li[text()="ResourcesRaw"]</xpath>
-		<value>
-			<li>DankPyon_RawWood</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/stuffProps/categories/li[text()="Woody"]</xpath>
-		<value>
-			<li>DankPyon_RawWood</li>
-		</value>
+	<!-- Toggle option to only process when woodChain is enabled -->
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>woodChain</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Adjustments to make prevent raw wood from appearing as ingredient on buildings that require planks-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/thingCategories/li[text()="ResourcesRaw"]</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/stuffProps/categories/li[text()="Woody"]</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+					</value>
+				</li>
+
+				<!-- Adjusts the mass and prices of the mushroom logs, following the instructions of \2553700067\1.4\Defs\ThingDefs_Items\Items_Resources.xml-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/statBases/Mass</xpath>
+					<value>
+						<Mass>1.2</Mass>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BMT_MushroomLog"]/statBases/MarketValue</xpath>
+					<value>
+						<MarketValue>2.2</MarketValue>
+					</value>
+				</li>
+
+				<!-- Adjusts the fuel value of the log to be greater than the default value of 1 -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="BMT_MushroomLog"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.FuelValueProperty">
+							<fuelValue>2</fuelValue>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+
+			</operations>
+		</inactive>
 	</Operation>
 
 </Patch>

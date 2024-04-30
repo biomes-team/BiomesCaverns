@@ -40,9 +40,10 @@
 			<color>(112,91,76)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
-			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>0.75</MaxHitPoints>
 				<Beauty>2</Beauty>
