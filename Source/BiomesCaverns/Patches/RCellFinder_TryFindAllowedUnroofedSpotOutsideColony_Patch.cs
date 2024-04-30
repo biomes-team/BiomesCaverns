@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using BiomesCore.Reflections;
 using HarmonyLib;
 using RimWorld;
+using Verse;
 
 namespace BiomesCaverns.Patches
 {
@@ -14,10 +16,14 @@ namespace BiomesCaverns.Patches
 	[HarmonyPatch]
 	public static class RCellFinder_TryFindAllowedUnroofedSpotOutsideColony_Patch
 	{
-		private static MethodBase TargetMethod()
-		{
-			return typeof(RCellFinder).GetLocalFunc(nameof(RCellFinder.TryFindAllowedUnroofedSpotOutsideColony),
+		private static IEnumerable<MethodBase> TargetMethods()
+        {
+			yield return typeof(RCellFinder).GetLocalFunc(nameof(RCellFinder.TryFindAllowedUnroofedSpotOutsideColony),
 				localFunc: "CellValidator");
+			if (ModsConfig.IsActive("divineDerivative.Romance"))
+			{
+                yield return AccessTools.Method(Type.GetType("BetterRomance.DateUtility, WayBetterRomance"), "WalkCellValidator", new Type[] { typeof(IntVec3), typeof(Map) });
+			}
 		}
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
