@@ -50,7 +50,7 @@
 						<ThingDef ParentName="MealBase">
 							<defName>BMT_Shimmersmoothie</defName>
 							<label>shimmersmoothie</label>
-							<description>Making a smoothie out of shimmershroom doesn't ruin its subtle tase, and results in a drink that sparkles like glitter. Fun!</description>
+							<description>Making a smoothie out of shimmershroom doesn't ruin its subtle taste, and results in a drink that sparkles like glitter. Fun!</description>
 							<graphicData>
 								<texPath>Things/Item/Drink/BMT_Shimmersmoothie</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
