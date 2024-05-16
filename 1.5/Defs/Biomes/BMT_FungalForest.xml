@@ -329,6 +329,7 @@
 			<li>BMT_CrystalCrab_Jade</li>
 			<li MayRequire="biomesteam.biomesislands">BMT_CrystalCrab_Coral</li>
 		</allowedPackAnimals>
+		<pollutionWildAnimals/>
 	</BiomeDef>
 
 </Defs>
