@@ -40,7 +40,7 @@
 			<wildClusterWeight>25</wildClusterWeight> 
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
+			<humanFoodPlant>false</humanFoodPlant>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant> 
 	</ThingDef>
