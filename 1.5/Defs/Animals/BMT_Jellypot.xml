@@ -60,7 +60,7 @@
 			<wildness>0.45</wildness>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
-			<!-- <foodType>OmnivoreAnimal,VegetarianRoughAnimal</foodType> -->
+			<foodType>OmnivoreAnimal, VegetarianRoughAnimal, AnimalProduct</foodType>
 			<roamMtbDays>7</roamMtbDays>
 			<lifeStageAges>
 				<li>
