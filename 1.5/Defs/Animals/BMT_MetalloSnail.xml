@@ -105,6 +105,9 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+		<butcherProducts Inherit="false">
+			<BMT_DeepChitin>15</BMT_DeepChitin>
+		</butcherProducts>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
