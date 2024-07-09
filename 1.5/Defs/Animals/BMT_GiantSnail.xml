@@ -111,31 +111,31 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/GiantSnail/GiantSnail</texPath>
+					<texPath>BMT_Caverns/Things/Animal/GiantSnail_1.5_Temp/GiantSnail</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/GiantSnail/Dessicated_GiantSnail</texPath>
+					<texPath>BMT_Caverns/Things/Animal/GiantSnail_1.5_Temp/Dessicated_GiantSnail</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/GiantSnail/GiantSnail</texPath>
+					<texPath>BMT_Caverns/Things/Animal/GiantSnail_1.5_Temp/GiantSnail</texPath>
 					<drawSize>2.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/GiantSnail/Dessicated_GiantSnail</texPath>
+					<texPath>BMT_Caverns/Things/Animal/GiantSnail_1.5_Temp/Dessicated_GiantSnail</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/GiantSnail/GiantSnail</texPath>
+					<texPath>BMT_Caverns/Things/Animal/GiantSnail_1.5_Temp/GiantSnail</texPath>
 					<drawSize>2.85</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/GiantSnail/Dessicated_GiantSnail</texPath>
+					<texPath>BMT_Caverns/Things/Animal/GiantSnail_1.5_Temp/Dessicated_GiantSnail</texPath>
 					<drawSize>2.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
