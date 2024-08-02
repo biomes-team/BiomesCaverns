@@ -280,7 +280,7 @@
 			<harvestedThingDef>BMT_GleamcapSalve</harvestedThingDef>
 			<harvestYield>1</harvestYield>
 			<visualSizeRange>0.3~1.2</visualSizeRange>
-			<growDays>24</growDays>
+			<growDays>12</growDays>
 			<sowTags>
 				<li>BMT_Fungiponics</li>				
 			</sowTags>
