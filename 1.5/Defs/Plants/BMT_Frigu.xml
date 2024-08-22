@@ -26,9 +26,23 @@
 			<dieIfLeafless>false</dieIfLeafless>
 			<harvestWork>700</harvestWork>
 			<harvestYield>25</harvestYield>
+			<harvestMinGrow<mustBeWildToSow>false</mustBeWildToSow>th>0.40</harvestMinGrowth>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
 			<wildOrder>3</wildOrder>
 			<neverBlightable>true</neverBlightable>
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<sowWork>4000</sowWork>
+			<sowMinSkill>6</sowMinSkill>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<mustBeWildToSow>true</mustBeWildToSow>
 		</plant>
 	<comps>
       <li Class="CompProperties_Glower">
