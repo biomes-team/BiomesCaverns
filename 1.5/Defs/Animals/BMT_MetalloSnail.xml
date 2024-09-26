@@ -107,14 +107,12 @@
 		</race>
 		<butcherProducts Inherit="false">
 			<BMT_DeepChitin>15</BMT_DeepChitin>
+			<Steel>16</Steel>
 		</butcherProducts>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalInsect</li>
 		</tradeTags>
-		<butcherProducts>
-			<Steel>16</Steel>
-		</butcherProducts>
 	</ThingDef>
 
 

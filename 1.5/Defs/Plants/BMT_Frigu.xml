@@ -26,7 +26,8 @@
 			<dieIfLeafless>false</dieIfLeafless>
 			<harvestWork>700</harvestWork>
 			<harvestYield>25</harvestYield>
-			<harvestMinGrow<mustBeWildToSow>false</mustBeWildToSow>th>0.40</harvestMinGrowth>
+			<harvestMinGrow>th>0.40</harvestMinGrowth>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
 			<wildOrder>3</wildOrder>
 			<neverBlightable>true</neverBlightable>
