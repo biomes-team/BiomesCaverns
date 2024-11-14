@@ -42,7 +42,7 @@
 				<li>BMT_Fungiponics</li>
 			</sowTags>
 			<sowResearchPrerequisites Inherit="False">
-				<li>BMT_AdvancedFungi</li>
+				<li>BMT_ResearchMushrooms</li>
 			</sowResearchPrerequisites>
 			<purpose>Health</purpose>
 		</plant>
@@ -101,7 +101,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>5</daysToRotStart>
+				<daysToRotStart>20</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Drug">
