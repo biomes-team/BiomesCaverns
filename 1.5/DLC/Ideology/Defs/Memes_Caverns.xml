@@ -12,6 +12,10 @@
 			<li>
 				<li>SmallSpaces_Acceptable</li>
 			</li>
+			<li>
+				<li>BMT_FungusEating_DontCare</li>
+				<li>FungusEating_Preferred</li>
+			</li>
 		</requireOne>
 		<!-- <generalRules> -->
 		<!-- <rulesStrings> -->
