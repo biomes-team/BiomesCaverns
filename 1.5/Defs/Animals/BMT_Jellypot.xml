@@ -56,7 +56,7 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<lifeExpectancy>6</lifeExpectancy>
+			<lifeExpectancy>1</lifeExpectancy>
 			<wildness>0.45</wildness>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>

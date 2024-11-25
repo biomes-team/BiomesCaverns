@@ -161,7 +161,7 @@
 			<harvestedThingDef>BMT_RawGreyfields</harvestedThingDef>
 			<harvestYield>8</harvestYield>		
 			<visualSizeRange>0.6~0.8</visualSizeRange>
-			<growDays>14</growDays>
+			<growDays>6</growDays>
 			<wildOrder>1</wildOrder>
       <purpose>Food</purpose>
       <humanFoodPlant>true</humanFoodPlant>			
