@@ -42,6 +42,13 @@
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+						<extraMeleeDamages>
+		  <li>
+			<def>AcidBurn</def>
+			<amount>20</amount>
+			<chance>0.5</chance>
+		  </li>
+		</extraMeleeDamages>
 			</li>
 		</tools>
 		<race>
