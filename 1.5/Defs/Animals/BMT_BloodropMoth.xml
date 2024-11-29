@@ -234,7 +234,7 @@
 			<baseHungerRate>0.35</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<predator>true</predator>
-			<maxPreyBodySize>0.80</maxPreyBodySize>
+			<maxPreyBodySize>1.0</maxPreyBodySize>
 			<wildness>0.55</wildness>
 			<petness>0.1</petness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
