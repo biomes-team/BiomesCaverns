@@ -12,8 +12,9 @@ namespace BiomesCaverns.Patches
 	{
 		public static bool Prefix(ref IntVec3 __result, Map map, bool standableOnly = true)
 		{
-			if (TravelingTransportPods_Arrived_Patch.drillPodIncoming)
+			if (TravelingTransportPods_Arrived_Patch.drillPodIncoming || map?.Biome?.GetModExtension<BiomesCore.DefModExtensions.BiomesMap>()?.isCavern == true)
 			{
+				//Log.Error("0");
 				__result = CellFinderLoose.RandomCellWith((IntVec3 c) => (!standableOnly || c.Standable(map)) && !c.Fogged(map),
 					map);
 				return false;
