@@ -72,6 +72,7 @@
     <Compile Include="Patches\CompScanner_CanUseNow_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_CanPhysicallyDropInto_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_FindRaidDropCenterDistant_Patch.cs" />
+    <Compile Include="Patches\RCellFinder_TryFindSiegePosition.cs" />
     <Compile Include="Patches\DropCellFinder_RandomDropSpot_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_TradeDropSpot_Patch.cs" />
     <Compile Include="Patches\DropCellFinder_TryFindSafeLandingSpotCloseToColony_Patch.cs" />

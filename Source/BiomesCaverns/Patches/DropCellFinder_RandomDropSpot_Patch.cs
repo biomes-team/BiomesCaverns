@@ -13,7 +13,7 @@ namespace BiomesCaverns.Patches
 	{
 		public static bool Prefix(ref IntVec3 __result, Map map, bool standableOnly = true)
 		{
-			if (TravelingTransportPods_Arrived_Patch.drillPodIncoming || map?.Biome?.GetModExtension<BiomesCore.DefModExtensions.BiomesMap>()?.isCavern == true)
+			if (TravelingTransportPods_Arrived_Patch.drillPodIncoming || Utility.IsCavern(map))
 			{
 				//Log.Error("0");
 				__result = CellFinderLoose.RandomCellWith((IntVec3 c) => (!standableOnly || c.Standable(map)) && !c.Fogged(map),
@@ -67,7 +67,7 @@ namespace BiomesCaverns.Patches
     {
         public static bool Prefix(Map map, ref LargeBuildingSpawnParms parms)
         {
-            if (map?.Biome?.GetModExtension<BiomesCore.DefModExtensions.BiomesMap>()?.isCavern == true)
+            if (Utility.IsCavern(map))
             {
                 parms.attemptSpawnLocationType = SpawnLocationType.Anywhere;
             }

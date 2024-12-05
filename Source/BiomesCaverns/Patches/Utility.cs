@@ -77,5 +77,10 @@ namespace BiomesCaverns.Patches
 		{
 			return cell.GetRoof(map) != BiomesCoreDefOf.BMT_RockRoofStable && cell.UsesOutdoorTemperature(map);
 		}
+
+		public static bool IsCavern(this Map map)
+		{
+			return map?.Biome?.GetModExtension<BiomesCore.DefModExtensions.BiomesMap>()?.isCavern == true;
+		}
 	}
 }
