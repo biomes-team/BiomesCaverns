@@ -14,7 +14,8 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignators/li[3]</xpath>
+		<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignators/li[contains(text(),'Boards_Totemic')]</xpath>
+		<success>Always</success>
 	</Operation>
 
 </Patch>
