@@ -19,9 +19,9 @@ namespace Caveworld_Flora_Unleashed
                 if (cavePlantDefsInternal.NullOrEmpty())
                 {
                     cavePlantDefsInternal = new List<ThingDef_FruitingBody>();
-                    foreach (var plantDef in DefDatabase<ThingDef>.AllDefs)
+                    foreach (var plantDef in DefDatabase<ThingDef>.AllDefsListForReading)
                     {
-                        if (plantDef.category == ThingCategory.Plant)
+                        if (plantDef.IsPlant)
                         {
                             if (plantDef is ThingDef_FruitingBody fruitingBodyDef && (!fruitingBodyDef.growsOnlyInCaveBiome || map.Biome.defName == "Cave"))
                             {
@@ -45,7 +45,8 @@ namespace Caveworld_Flora_Unleashed
                 int mapSurfaceCoefficient = map.Size.x * 2 + map.Size.z * 2;
                 // Prevent division by zero errors with mods using very small maps such as pocket dimensions.
                 mapSurfaceCoefficient = Math.Max(mapSurfaceCoefficient, 1);
-                randomSpawnPeriodInTicks = 160000 / (mapSurfaceCoefficient / 100);
+                int coeff = (mapSurfaceCoefficient / 100);
+                randomSpawnPeriodInTicks = 160000 / (coeff > 0f ? coeff : 1);
             }
 
             if (Find.TickManager.TicksGame > nextRandomSpawnTick)
