@@ -260,7 +260,7 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_FacetMoth</eggFertilizedDef>
+				<eggFertilizedDef>BMT_FacetMothEggFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
