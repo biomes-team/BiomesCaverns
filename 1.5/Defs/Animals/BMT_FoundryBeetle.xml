@@ -11,7 +11,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<Flammability>4</Flammability>
+			<Flammability>0</Flammability>
 		</statBases>
 		<race>
 			<hasGenders>true</hasGenders>
@@ -231,6 +231,9 @@
 	  <ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 	  <FilthRate>7</FilthRate>
+	  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.50</ArmorRating_Heat>
 	  <Flammability>0.0</Flammability>
 	  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 	</statBases>
