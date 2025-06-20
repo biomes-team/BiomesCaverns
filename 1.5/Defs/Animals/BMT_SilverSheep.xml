@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_SilverSheep</defName>
 		<label>silver sheep</label>
-		<description>Sheep husbandry is practised throughout the majority of the inhabited worlds, however only recently it has been introduced to the rimworlds. Domestic sheep are relatively small herbivores, usually with yellowish wool and medium sized horns.</description>
+		<description>Silver sheep are known for the warmth and luster of their wool, allowing many a colonist to survive inside hollow glaciers.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>
 			<MarketValue>210</MarketValue>
@@ -131,45 +131,69 @@
 				<label>lamb</label>
 				<labelPlural>lambs</labelPlural>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheep</texPath>
+					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepMale</texPath>
 					<drawSize>0.89</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepFemale</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+					<texPath>Things/Pawn/Animal/SilverSheep/Dessicated_SilverSheepFemale</texPath>
 					<drawSize>0.89</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheep</texPath>
+					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepMale</texPath>
 					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepFemale</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+					<texPath>Things/Pawn/Animal/SilverSheep/Dessicated_SilverSheepMale</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+					<texPath>Things/Pawn/Animal/SilverSheep/Dessicated_SilverSheepFemale</texPath>
 					<drawSize>2.1</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheep</texPath>
+					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepMale</texPath>
 					<drawSize>2.6</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/SilverSheepFemale</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
 					<drawSize>2.65</drawSize>

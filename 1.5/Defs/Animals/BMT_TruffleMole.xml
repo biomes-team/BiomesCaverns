@@ -168,7 +168,7 @@
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<texPath>BMT_Caverns/Things/Animal/TruffleMole/Dessicated_TruffleMole</texPath>
 					<drawSize>0.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -178,7 +178,7 @@
 					<drawSize>1.15</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<texPath>BMT_Caverns/Things/Animal/TruffleMole/Dessicated_TruffleMole</texPath>
 					<drawSize>1.15</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -192,7 +192,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+					<texPath>BMT_Caverns/Things/Animal/TruffleMole/Dessicated_TruffleMole</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

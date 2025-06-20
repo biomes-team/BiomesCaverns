@@ -77,10 +77,10 @@
 					<!-- herbivores -->
 					<BMT_Pillbug>0.1</BMT_Pillbug>
 					<BMT_CaveCricket>0.2</BMT_CaveCricket>
-					<BMT_CrestedLizard>0.1</BMT_CrestedLizard>
+					<BMT_CrestedDragon>0.1</BMT_CrestedDragon>
 					<BMT_MaceDrake>0.2</BMT_MaceDrake>
 					<BMT_SandLeaper>0.4</BMT_SandLeaper>
-					<BMT_SandyToad>0.3</BMT_SandyToad>
+					<BMT_ImperialToad>0.3</BMT_ImperialToad>
 					<BMT_Stoneback>0.25</BMT_Stoneback>
 					<BMT_PodWorm>0.01</BMT_PodWorm>
 					<BMT_ChemSnail>0.025</BMT_ChemSnail>

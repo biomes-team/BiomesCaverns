@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_GlowSnail</defName>
-		<label>glowsnail</label>
+		<defName>BMT_ShimmershellSnail</defName>
+		<label>shimmershell snail</label>
 		<description>Similar to the other gigantic snail species found underground and on Caveworlds, this species has been modified to bioluminesce.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
@@ -103,9 +103,9 @@
 		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_GlowSnail</defName>
-		<label>glowsnail</label>
-		<race>BMT_GlowSnail</race>
+		<defName>BMT_ShimmershellSnail</defName>
+		<label>shimmershell snail</label>
+		<race>BMT_ShimmershellSnail</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<lifeStages>
@@ -167,9 +167,9 @@
 		</stages>
 	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggGlowSnailFertilized</defName>
-		<label>glowsnail egg (fert.)</label>
-		<description>A fertilized glowsnail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
+		<defName>BMT_EggShimmershellSnailFertilized</defName>
+		<label>shimmershell snail egg (fert.)</label>
+		<description>A fertilized shimmershell snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(138,226,226)</color>
@@ -182,7 +182,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>7</hatcherDaystoHatch>
-				<hatcherPawn>BMT_GlowSnail</hatcherPawn>
+				<hatcherPawn>BMT_ShimmershellSnail</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

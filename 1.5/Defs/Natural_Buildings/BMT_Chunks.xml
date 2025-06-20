@@ -6,7 +6,7 @@
 		<label>ice chunk</label>
 		<description>A chunk of ice. Can be cut into usable ice blocks.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Chunks/ChunkIce</texPath>
+			<texPath>BMT_Caverns/Things/Chunks/GlacialChunk</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<color>(255,255,255)</color>
 		</graphicData>
@@ -48,9 +48,9 @@
 	<ThingDef ParentName="ChunkRockBase">
 		<defName>BMT_ChunkSand</defName>
 		<label>sand chunk</label>
-		<description>A chunk of sand. Can be cut into usable sand.</description>
+		<description>A chunk of compressed sand. Can be cut into usable blocks.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Chunks/ChunkSand</texPath>
+			<texPath>BMT_Caverns/Things/Chunks/HardsandChunk</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<color>(255,255,255)</color>
 		</graphicData>
@@ -59,14 +59,14 @@
 		</statBases>
 		<soundDrop>ChunkRock_Drop</soundDrop>
 		<butcherProducts>
-			<BMT_Sand>20</BMT_Sand>
+			<BMT_SandBlock>20</BMT_SandBlock>
 		</butcherProducts>
 	</ThingDef>
 
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>BMT_Make_Sand</defName>
 		<label>make sand</label>
-		<description>Break sand chunks into sand.</description>
+		<description>Break sand chunks into sand blocks.</description>
 		<ingredients>
 			<li>
 				<filter>
@@ -83,8 +83,26 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<BMT_Sand>20</BMT_Sand>
+			<BMT_SandBlock>20</BMT_SandBlock>
 		</products>
 	</RecipeDef>
 
+	<!-- ===================================================== -->
+	
+		<ThingDef ParentName="ChunkRockBase">
+		<defName>BMT_ChunkCrystal</defName>
+		<label>crystal chunk</label>
+		<description>A chunk of crystal. Can be cut into usable crystal pieces.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Chunks/CrystalChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<BMT_ResourceBlueCrystal>20</BMT_ResourceBlueCrystal>
+		</butcherProducts>
+	</ThingDef>
 </Defs>

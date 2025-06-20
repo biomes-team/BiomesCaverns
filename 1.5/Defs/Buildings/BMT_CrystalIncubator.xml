@@ -6,8 +6,8 @@
 		<label>crystal incubator</label>
 		<description>Slowly generates crystals by a complex series of chemical reactions, using atoms extracted from the air. Very volatile. Capable of holding a roof.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Building/Crystalncubator</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Building/Crystalncubator/Crystalncubator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.2, 3.2)</drawSize>
 			<shadowData>
 				<volume>(1.8, 1.0, 0.2)</volume>

@@ -62,7 +62,7 @@
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<filthLeaving>Filth_Sand</filthLeaving>
 		<costList>
-			<BMT_Sand>10</BMT_Sand>
+			<BMT_SandBlock>10</BMT_SandBlock>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
@@ -113,12 +113,12 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>BMT_Sand</defName>
-		<label>sand</label>
-		<description>A pile of fine-grained sand. It's coarse, rough, and irritating, and it gets everywhere.</description>
+		<defName>BMT_SandBlock</defName>
+		<label>sand block</label>
+		<description>A block of fine-grained sand. It's coarse, rough, and irritating, and it gets everywhere.</description>
 		<category>Item</category>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/SandPile</texPath>
+			<texPath>BMT_Caverns/Things/Item/HardsandBlocks</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Standard_Pickup</soundInteract>

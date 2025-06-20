@@ -14,7 +14,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BMT_Sand</li>
+						<li>BMT_SandBlock</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -22,7 +22,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>BMT_Sand</li>
+				<li>BMT_SandBlock</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -52,7 +52,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BMT_Sand</li>
+						<li>BMT_SandBlock</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -60,7 +60,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>BMT_Sand</li>
+				<li>BMT_SandBlock</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

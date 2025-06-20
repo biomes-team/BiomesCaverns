@@ -29,12 +29,12 @@
 		<amount>
 			<li>1</li>
 		</amount>
-		<result>BMT_Sand</result>
+		<result>BMT_SandBlock</result>
 		<yield>10</yield>
 		<outputLimitControlled>true</outputLimitControlled>
 		<maxTotalOutput>2000</maxTotalOutput>
 		<resultUsesSpecialIcon>true</resultUsesSpecialIcon>
-		<resultSpecialIcon>BMT_Caverns/Things/Item/SandPile/sandpile_C</resultSpecialIcon>
+		<resultSpecialIcon>BMT_Caverns/Things/Item/HardsandBlocks/HardsandBlocks_C</resultSpecialIcon>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>0.2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_CrestedLizard</defName>
-		<label>crested lizard</label>
-		<description>Much like the prehistoric Parasaur, this lizard has a crest. The purpose is largely for display, but it also allows them to make cute squeaky noises.</description>
+		<defName>BMT_CrestedDragon</defName>
+		<label>crested dragon</label>
+		<description>Much like the prehistoric Parasaur, this lizard has a crest. The purpose is largely for display, but also allows them to make cute squeaky noises.</description>
 		<statBases>
 			<MoveSpeed>4.25</MoveSpeed>
 			<MarketValue>300</MarketValue>
@@ -54,7 +54,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggCrestedLizardFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggCrestedDragonFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>6.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -108,35 +108,35 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_CrestedLizard</defName>
-		<label>crested lizard</label>
-		<race>BMT_CrestedLizard</race>
+		<defName>BMT_CrestedDragon</defName>
+		<label>crested dragon</label>
+		<race>BMT_CrestedDragon</race>
 		<combatPower>80</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/CrestedDragon/CrestedDragon</texPath>
 					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/CrestedDragon/CrestedDragon</texPath>
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/CrestedDragon/CrestedDragon</texPath>
 					<drawSize>1.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/CrestedDragon/CrestedDragon</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/CrestedDragon/CrestedDragon</texPath>
 					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -144,16 +144,16 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrestedLizard/CrestedLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/CrestedDragon/CrestedDragon</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggCrestedLizardFertilized</defName>
-		<label>crested lizard egg (fert.)</label>
-		<description>A fertilized crested lizard egg. If all goes well, it should hatch into a tiny lizard. It can be eaten raw, but it's much better cooked.</description>
+		<defName>BMT_EggCrestedDragonFertilized</defName>
+		<label>crested dragon egg (fert.)</label>
+		<description>A fertilized crested dragon egg. If all goes well, it should hatch into a tiny lizard. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<drawSize>1</drawSize>
@@ -166,7 +166,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_CrestedLizard</hatcherPawn>
+				<hatcherPawn>BMT_CrestedDragon</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
