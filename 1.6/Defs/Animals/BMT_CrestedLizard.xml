@@ -11,6 +11,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<Flammability>1</Flammability>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -69,7 +70,6 @@
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<useMeatFrom>Iguana</useMeatFrom>
-			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>11</lifeExpectancy>
 			<gestationPeriodDays>5.661</gestationPeriodDays>

@@ -11,6 +11,7 @@
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<Wildness>0.20</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -54,7 +55,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_MediumChitin</leatherDef>
-			<wildness>0.20</wildness>
 			<trainability>None</trainability>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<roamMtbDays>2</roamMtbDays>

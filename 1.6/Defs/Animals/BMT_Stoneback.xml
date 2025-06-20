@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.95</ToxicEnvironmentResistance>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -68,7 +69,6 @@
 			<baseHungerRate>0.2</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
-			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<petness>0.15</petness>
 			<nuzzleMtbHours>12</nuzzleMtbHours>

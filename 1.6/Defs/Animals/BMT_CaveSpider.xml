@@ -20,6 +20,7 @@
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.10</ArmorRating_Heat>
 			<FilthRate>0.01</FilthRate>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>BMT_GiantSpider</body>
@@ -33,7 +34,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_RoyalChitin</leatherDef>
-			<wildness>0.99</wildness>
 			<petness>0.1</petness>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>

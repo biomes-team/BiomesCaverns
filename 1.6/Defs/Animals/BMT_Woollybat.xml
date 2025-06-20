@@ -17,6 +17,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>500</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.10</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -27,7 +28,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>BMT_Megabat</useMeatFrom>
-			<wildness>0.10</wildness>
 			<trainability>None</trainability>
 			<roamMtbDays>4</roamMtbDays>
 			<!-- <nuzzleMtbHours>24</nuzzleMtbHours> -->

@@ -10,6 +10,7 @@
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<FilthRate>16</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
 		<comps>
@@ -27,7 +28,6 @@
 			<baseHealthScale>1.9</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.75</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<lifeExpectancy>18</lifeExpectancy>

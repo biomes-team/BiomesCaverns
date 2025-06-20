@@ -14,6 +14,7 @@
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<FilthRate>4</FilthRate>
 			<PawnBeauty>1</PawnBeauty>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<comps>
@@ -36,7 +37,6 @@
 			<baseHungerRate>0.235</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_MediumChitin</leatherDef>
-			<wildness>0.6</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>15</lifeExpectancy>
 			<petness>0.2</petness>

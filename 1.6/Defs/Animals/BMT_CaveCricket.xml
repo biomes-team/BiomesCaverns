@@ -12,6 +12,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.7</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -65,7 +66,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_GrayChitin</leatherDef>
-			<wildness>0.7</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<herdAnimal>true</herdAnimal>

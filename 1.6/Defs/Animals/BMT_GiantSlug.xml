@@ -12,6 +12,7 @@
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
@@ -47,7 +48,6 @@
 			<baseBodySize>1.7</baseBodySize>
 			<baseHealthScale>0.7</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType> <!-- xeye: could be onivore many slugs and especially snails eat other gastropods eggs. -->
-			<wildness>0.75</wildness>
 			<lifeExpectancy>12</lifeExpectancy>
 			<trainability>None</trainability>
 			<roamMtbDays>2.25</roamMtbDays>

@@ -18,6 +18,7 @@
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
 			<InjuryHealingFactor>5.0</InjuryHealingFactor>
 			<Flammability>0.0</Flammability>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<!-- <uiIconScale>1.75</uiIconScale> -->
 		<comps>
@@ -64,7 +65,6 @@
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>8.0</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<wildness>0.95</wildness>
 			<lifeExpectancy>220</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.9</manhunterOnTameFailChance>

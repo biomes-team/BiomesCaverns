@@ -10,6 +10,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.60</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -75,7 +76,6 @@
 			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.60</wildness>
 			<trainability>None</trainability>
 			<petness>0.20</petness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>

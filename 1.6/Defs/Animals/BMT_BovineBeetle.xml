@@ -12,6 +12,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.15</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -24,7 +25,6 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
-			<wildness>0.15</wildness>
 			<roamMtbDays>2.5</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
@@ -163,7 +163,7 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<wildness>1</wildness>
+			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -271,7 +271,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BiomesCore_GreenChitin</leatherDef>
-			<wildness>0.05</wildness>
+			<Wildness>0.05</Wildness>
 			<roamMtbDays>2.5</roamMtbDays>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>

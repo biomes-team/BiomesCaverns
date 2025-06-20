@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>24</FilthRate>
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -63,7 +64,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Elephant</leatherDef>
 			<gestationPeriodDays>13.32</gestationPeriodDays>
-			<wildness>0.75</wildness>
 			<trainability>Advanced</trainability>
 			<lifeExpectancy>50</lifeExpectancy>
 			<packAnimal>true</packAnimal>

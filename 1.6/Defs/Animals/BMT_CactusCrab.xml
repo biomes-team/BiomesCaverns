@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<FilthRate>10</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<comps>
@@ -29,7 +30,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_GrayChitin</leatherDef>
 			<useMeatFrom>BMT_CrystalCrab_Sandstone</useMeatFrom>
-
 			<trainability>Advanced</trainability>
 			<packAnimal>false</packAnimal>
 			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>

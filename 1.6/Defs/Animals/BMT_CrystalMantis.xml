@@ -15,6 +15,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>150</MarketValue>
 			<FilthRate>7</FilthRate>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>
@@ -105,7 +106,6 @@
 			<baseHealthScale>2</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<trainability>Advanced</trainability>
-			<wildness>0.95</wildness>
 			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<leatherDef>BMT_CrystalChitin</leatherDef>

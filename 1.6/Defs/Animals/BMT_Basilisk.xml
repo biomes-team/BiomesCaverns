@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<Flammability>0.0</Flammability>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -98,7 +99,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<trainability>Advanced</trainability>
-			<wildness>0.85</wildness>
 			<packAnimal>false</packAnimal>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>

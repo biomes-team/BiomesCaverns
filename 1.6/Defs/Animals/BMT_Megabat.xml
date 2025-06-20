@@ -17,6 +17,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<race>
 			<predator>true</predator>
@@ -26,7 +27,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<meatLabel>bat meat</meatLabel>
-			<wildness>0.95</wildness>
 			<trainability>Advanced</trainability>
 			<!-- <nuzzleMtbHours>24</nuzzleMtbHours> -->
 			<lifeExpectancy>9</lifeExpectancy>

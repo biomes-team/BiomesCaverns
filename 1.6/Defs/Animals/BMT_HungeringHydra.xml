@@ -14,6 +14,7 @@
 			<CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
 			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>BMT_QuadrupedAnimalWithPawsTailAndThreeHeads</body>
@@ -25,7 +26,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<predator>true</predator>
 			<maxPreyBodySize>5</maxPreyBodySize>
-			<wildness>0.99</wildness>
 			<lifeExpectancy>20</lifeExpectancy>
 			<manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>

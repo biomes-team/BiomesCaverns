@@ -10,6 +10,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -69,7 +70,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>0</wildness>
 			<trainability>None</trainability>
 			<roamMtbDays>5</roamMtbDays>
 			<mateMtbHours>8</mateMtbHours>

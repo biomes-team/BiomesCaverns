@@ -15,6 +15,7 @@
 			<FilthRate>1</FilthRate>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+			<Wildness>0.45</Wildness>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<tools>
@@ -57,7 +58,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>1</lifeExpectancy>
-			<wildness>0.45</wildness>
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
 			<foodType>OmnivoreAnimal, VegetarianRoughAnimal, AnimalProduct</foodType>

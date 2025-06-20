@@ -12,6 +12,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.15</Wildness>
 		</statBases>
 		<race>
 			<hasGenders>true</hasGenders>
@@ -23,7 +24,6 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal,AnimalProduct</foodType>
-			<wildness>0.15</wildness>
 			<roamMtbDays>4</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
@@ -140,6 +140,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+			<Wildness>1</Wildness>
 		</statBases>
 		<race>
 			<leatherDef>BMT_CrimsonSilk</leatherDef>
@@ -152,7 +153,6 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<wildness>1</wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -223,6 +223,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>57</ComfyTemperatureMax>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<race>
 			<!-- <body>BeetleLike</body> -->
@@ -235,7 +236,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<predator>true</predator>
 			<maxPreyBodySize>1.0</maxPreyBodySize>
-			<wildness>0.55</wildness>
 			<petness>0.1</petness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<lifeExpectancy>10</lifeExpectancy>

@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
 			<Flammability>0.0</Flammability>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -83,7 +84,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_Leather_Magma</leatherDef>
 			<trainability>Intermediate</trainability>
-			<wildness>0.85</wildness>
 			<packAnimal>false</packAnimal>
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>

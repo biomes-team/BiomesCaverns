@@ -9,6 +9,7 @@
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<Wildness>0</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -67,7 +68,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>0</wildness>
 			<trainability>None</trainability>
 			<petness>0.45</petness>
 			<nuzzleMtbHours>10</nuzzleMtbHours>

@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>8</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -33,7 +34,6 @@
 			<baseHealthScale>0.65</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0.6</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<gestationPeriodDays>6.66</gestationPeriodDays>

@@ -20,6 +20,7 @@
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<Flammability>0.0</Flammability>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
@@ -75,7 +76,6 @@
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>OmnivoreAnimal</foodType>
 			<packAnimal>false</packAnimal>
-			<wildness>0.75</wildness>
 			<lifeExpectancy>35</lifeExpectancy>
 			<trainability>None</trainability>
 			<roamMtbDays>2.25</roamMtbDays>

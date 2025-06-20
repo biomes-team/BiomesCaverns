@@ -12,6 +12,7 @@
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<FilthRate>1</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -41,7 +42,6 @@
 			<baseHungerRate>0.115</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<petness>0.4</petness>
 			<nuzzleMtbHours>12</nuzzleMtbHours>

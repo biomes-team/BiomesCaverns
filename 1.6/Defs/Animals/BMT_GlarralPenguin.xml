@@ -13,6 +13,7 @@
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -20,7 +21,6 @@
 			<baseHealthScale>1.0</baseHealthScale>
 			<baseHungerRate>0.42</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.95</wildness>
 			<!-- <roamMtbDays>3</roamMtbDays> -->
 			<lifeExpectancy>45</lifeExpectancy>
 			<!-- <useMeatFrom>Cassowary</useMeatFrom> -->

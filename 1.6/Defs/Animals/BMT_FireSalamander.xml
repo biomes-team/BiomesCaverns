@@ -12,6 +12,7 @@
 			<Flammability>0</Flammability>
 			<FilthRate>1</FilthRate>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -73,7 +74,6 @@
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>

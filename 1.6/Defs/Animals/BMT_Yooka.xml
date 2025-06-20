@@ -11,6 +11,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 			<FilthRate>8</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -68,7 +69,6 @@
 			<baseHungerRate>0.635</baseHungerRate>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<leatherDef>Leather_Camel</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<roamMtbDays>6</roamMtbDays>
 			<lifeExpectancy>45</lifeExpectancy>

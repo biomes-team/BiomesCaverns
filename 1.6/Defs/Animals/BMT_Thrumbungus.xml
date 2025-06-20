@@ -16,6 +16,7 @@
 			<MeatAmount>0</MeatAmount>
 			<FilthRate>2</FilthRate>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<Wildness>0.985</Wildness>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
 		<tools>
@@ -76,7 +77,6 @@
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal, CarnivoreAnimal, OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Thrumbo</leatherDef>
 			<trainability>Advanced</trainability>
-			<wildness>0.985</wildness>
 			<lifeExpectancy>220</lifeExpectancy>
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>

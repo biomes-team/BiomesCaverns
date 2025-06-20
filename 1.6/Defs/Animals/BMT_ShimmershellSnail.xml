@@ -12,6 +12,7 @@
 			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
@@ -61,7 +62,6 @@
 			<baseHealthScale>0.65</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<packAnimal>false</packAnimal>
-			<wildness>0.75</wildness>
 			<lifeExpectancy>35</lifeExpectancy>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>

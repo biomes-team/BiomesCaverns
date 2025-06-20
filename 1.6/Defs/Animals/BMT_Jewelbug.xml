@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>250</MarketValue>
 			<FilthRate>0</FilthRate>
+			<Wildness>0.33</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -46,7 +47,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_CrystalChitin</leatherDef>
-			<wildness>0.33</wildness>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<herdAnimal>true</herdAnimal>

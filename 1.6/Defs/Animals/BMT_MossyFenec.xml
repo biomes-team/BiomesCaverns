@@ -10,6 +10,7 @@
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.4</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -78,7 +79,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Fox</leatherDef>
 			<useMeatFrom>Fox_Fennec</useMeatFrom>
-			<wildness>0.4</wildness>
 			<trainability>Advanced</trainability>
 			<petness>0.8</petness>
 			<nuzzleMtbHours>30</nuzzleMtbHours>

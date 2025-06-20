@@ -20,6 +20,7 @@
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<FilthRate>16</FilthRate>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<race>
 			<body>BMT_GiantSpider</body>
@@ -33,7 +34,6 @@
 			<baseHungerRate>0.535</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Bluefur</leatherDef>
-			<wildness>0.6</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>

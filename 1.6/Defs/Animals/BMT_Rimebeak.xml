@@ -15,6 +15,7 @@
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</ToxicEnvironmentResistance>
+			<Wildness>0.60</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -23,7 +24,6 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>CarnivoreAnimalStrict</foodType>
-			<wildness>0.60</wildness>
 			<maxPreyBodySize>2.3</maxPreyBodySize>
 			<!-- <roamMtbDays>3</roamMtbDays> -->
 			<lifeExpectancy>45</lifeExpectancy>

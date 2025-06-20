@@ -14,6 +14,7 @@
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.10</ArmorRating_Heat>
 			<FilthRate>17</FilthRate>
+			<Wildness>0.65</Wildness>
 		</statBases>
 		<race>
 			<body>BMT_QuadrupedWithWingsBeakAndTailWeapon</body>
@@ -25,7 +26,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<predator>false</predator>
 			<packAnimal>false</packAnimal>
-			<wildness>0.65</wildness>
 			<lifeExpectancy>80</lifeExpectancy>
 			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.45</manhunterOnDamageChance>

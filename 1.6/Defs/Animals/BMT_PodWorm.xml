@@ -20,6 +20,7 @@
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<FilthRate>0.01</FilthRate>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<race>
 			<body>BMT_LarvaLike</body>
@@ -33,7 +34,6 @@
 			<baseHealthScale>0.80</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_WeakChitin</leatherDef>
-			<wildness>0.5</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<petness>0.01</petness>
 			<trainability>None</trainability>

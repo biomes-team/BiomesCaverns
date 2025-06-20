@@ -44,6 +44,7 @@
 			<MarketValue>95</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -52,7 +53,6 @@
 			<baseHungerRate>0.125</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.95</wildness>
 			<trainability>Advanced</trainability>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<lifeExpectancy>9</lifeExpectancy>

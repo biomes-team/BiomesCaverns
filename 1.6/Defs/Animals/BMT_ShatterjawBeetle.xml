@@ -12,6 +12,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>
@@ -23,7 +24,6 @@
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.50</wildness>
 			<roamMtbDays>2.75</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.5</lifeExpectancy>
@@ -157,7 +157,7 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>None</foodType>
-			<wildness>1</wildness>
+			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -269,7 +269,7 @@
 	  <baseHealthScale>1.3</baseHealthScale>
 	  <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <leatherDef>BMT_MediumChitin</leatherDef>
-	  <wildness>0.80</wildness>
+	  <Wildness>0.80</Wildness>
 	  <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <lifeExpectancy>13</lifeExpectancy>

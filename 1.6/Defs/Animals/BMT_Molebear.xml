@@ -11,10 +11,10 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MarketValue>900</MarketValue>
 			<FilthRate>3</FilthRate>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<race>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.80</wildness>
 			<meatLabel>molebear meat</meatLabel>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
