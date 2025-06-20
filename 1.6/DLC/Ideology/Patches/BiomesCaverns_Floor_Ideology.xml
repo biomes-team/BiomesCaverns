@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
+		<value>
+			<designatorDropdown>Floor_Totemic_Boards</designatorDropdown>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignatorGroups</xpath>
+		<value>
+			<li>Floor_Totemic_Boards</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignators/li[contains(text(),'Boards_Totemic')]</xpath>
+		<success>Always</success>
+	</Operation>
+
+</Patch>

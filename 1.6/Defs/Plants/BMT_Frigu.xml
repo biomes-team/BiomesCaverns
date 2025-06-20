@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~10</optimalTemperature>
+				<growingHours>0.6~0.1</growingHours>
+			</li>
+		</modExtensions>
+		<defName>BMT_Frigu</defName>
+		<label>frigu</label>
+		<description>A frail but hardy mushroom tree. Slow-growing, but this fungus is well adapted to the cold.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Frigu</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+			<growDays>12</growDays>
+			<topWindExposure>0</topWindExposure>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>700</harvestWork>
+			<harvestYield>25</harvestYield>
+			<harvestMinGrowth>0.40</harvestMinGrowth>
+			<!-- <mustBeWildToSow>false</mustBeWildToSow> -->
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<sowWork>4000</sowWork>
+			<sowMinSkill>6</sowMinSkill>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<mustBeWildToSow>true</mustBeWildToSow>
+		</plant>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>5</glowRadius>
+			<glowColor>(183,240,239)</glowColor>
+		  </li>
+		</comps>
+	</ThingDef>
+</Defs>

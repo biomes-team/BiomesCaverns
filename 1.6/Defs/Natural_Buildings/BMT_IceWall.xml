@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>BMT_IceWall</defName>
+		<label>ice</label>
+		<description>A wall of ultra-cold, ultra-dense ice. Its special molecular structure makes it immune to melting.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Natural/Linked/ice_wall_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<blockLight>true</blockLight>
+		<filthLeaving>Filth_Water</filthLeaving>
+		<building>
+			<isResourceRock>false</isResourceRock>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<naturalTerrain>Ice</naturalTerrain>
+			<mineableThing>BMT_ChunkIce</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<!-- <mineableYield>20</mineableYield> -->
+		</building>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+				<offset>0.35</offset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>BMT_IceBlock</defName>
+		<label>ice block</label>
+		<description>A block of ultra-cold, ultra-dense ice. Its special molecular structure makes it immune to melting.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/IceBlocks</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<soundDrop>Standard_Pickup</soundDrop>
+		<statBases>
+			<MarketValue>0.7</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.6</Mass> 
+			<Flammability>0.0</Flammability>
+			<StuffPower_Armor_Sharp>0.48</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.48</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.37</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.82</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>icy</stuffAdjective>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<commonality>0.0</commonality>
+			<constructEffect>BMT_ConstructIce</constructEffect>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<Beauty>0.3</Beauty>
+				<Flammability>0.0</Flammability>
+				<WorkToMake>0.85</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+				<DoorOpenSpeed>0.9</DoorOpenSpeed>
+				<BedRestEffectiveness>0.8</BedRestEffectiveness>
+				<Comfort>0.8</Comfort>
+				<MeleeWeapon_CooldownMultiplier>1.10</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<smeltable>false</smeltable>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>BMT_ConstructIce</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>Interact_ConstructDirt</soundDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>SnowBits</fleckDef>
+				<chancePerTick>0.035</chancePerTick>
+				<scale>0.9~1.2</scale>
+				<rotationRate>-60~60</rotationRate>
+				<speed>0.6~1.8</speed>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>SnowBits</fleckDef>
+				<spawnLocType>BetweenPositions</spawnLocType>
+				<chancePerTick>0.05</chancePerTick>
+				<scale>0.5~0.6</scale>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+				<angle>0~360</angle>
+				<speed>5</speed>
+			</li>
+		</children>
+	</EffecterDef>
+
+</Defs>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_MoonlessStripesPlant</defName>
+		<label>moonless stripes</label>
+		<description>Heat-loving and durable, this bizzare fungus thrives in the depths of the earth. While it can be grown anywhere, it requires high heat to grow properly. Its sturdy layered stalk can be used as a leathery textile.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0</Flammability>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>50~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/MoonlessStripes</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0.70</fertilityMin>
+			<wildClusterRadius>3</wildClusterRadius>
+			<growDays>8</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>300</harvestWork>
+			<harvestYield>16</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_MoonlessSilk</harvestedThingDef>
+			<sowTags>
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<neverBlightable>false</neverBlightable>
+			<visualSizeRange>0.8~1.0</visualSizeRange>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BMT_MoonlessSilk</defName>
+		<label>moonless leather</label>
+		<description>Tanned, dried, scraped mushroom layers. A good underground material for making clothes and bags.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/MoonlessSilk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Sharp>0.50</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>3.75</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+			<BC_StuffPower_FlammabilityOffset>-0.4</BC_StuffPower_FlammabilityOffset>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>4.5</MarketValue>
+			<Mass>0.026</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>30</minRewardCount>
+		<stuffProps>
+			<categories>
+				<li>Leathery</li>
+			</categories>
+			<commonality>0.20</commonality>
+			<statFactors>
+				<Flammability>0.05</Flammability>
+				<MaxHitPoints>1.0</MaxHitPoints>
+				<Beauty>3.0</Beauty>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Leathers</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- How big is it? Roughly dog sized. -->
+	<!-- What does it eat? (is it a predator?) Omnivore, will eat anything. Not a predator. -->
+	<!-- Where does it live? The Earthen Depths  -->
+	<!-- Does it spawn in packs? No. -->
+	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Strong chitin. Can be sheared for either metal scrap or small amounts of steel. Maybe about as often as a muffalo gives wool? -->
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_MetalloSnail</defName>
+		<label>metallosnail</label>
+		<description>Adapted or engineered to survive the considerable heat and volatility near the molten layer, the metallosnail has gained the ability to grow metal for its shell. It also produces thin plates of metal to protect its softer bits.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
+			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+			<MarketValue>100</MarketValue>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<Flammability>0.0</Flammability>
+			<FilthRate>0</FilthRate>
+		</statBases>
+		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_MetalloSnailDefense</li>
+				</hediffs>
+				<graphicData>
+					<texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailShell</texPath>
+				</graphicData>
+				<duration>750</duration>
+			</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggMetalloSnailFertilized</eggFertilizedDef>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="BiomesCore.CompProperties_HarvestAnimalProduct">
+				<harvestIntervalDays>2</harvestIntervalDays>
+				<baseResourceAmount>1</baseResourceAmount>
+				<thingDef>ChunkSlagSteel</thingDef>
+				<resourceGrowthReportString>BMT_MetalloSnailShellGrowth</resourceGrowthReportString>
+			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>BMT_Filth_Snail_FireFoam</filthDef>
+			</li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+				<graphicData>
+					<texPath>BMT_Caverns/Things/Animal/MetalloSnail/MetallosnailShell</texPath>
+				</graphicData>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.5</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
+			<herdAnimal>false</herdAnimal>
+			<body>BiomesCore_Snail</body>
+			<baseHungerRate>0.605</baseHungerRate>
+			<baseBodySize>0.85</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<wildness>0.75</wildness>
+			<lifeExpectancy>35</lifeExpectancy>
+			<trainability>None</trainability>
+			<roamMtbDays>2.25</roamMtbDays>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
+			<specificMeatDef>BMT_GastropodMeat</specificMeatDef>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Biomes_GiantSnail_Wounded</soundWounded>
+					<soundDeath>Biomes_GiantSnail_Death</soundDeath>
+					<soundCall>Biomes_GiantSnail_Call</soundCall>
+					<soundAngry>Biomes_GiantSnail_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts Inherit="false">
+			<BMT_DeepChitin>15</BMT_DeepChitin>
+			<Steel>16</Steel>
+		</butcherProducts>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MetalloSnail</defName>
+		<label>metallo snail</label>
+		<race>BMT_MetalloSnail</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MetalloSnail/Metallosnail</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>0.4</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MetalloSnail/Metallosnail</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MetalloSnail/Metallosnail</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.4</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<HediffDef>
+		<defName>BMT_MetalloSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggMetalloSnailFertilized</defName>
+		<label>metallo snail egg (fert.)</label>
+		<description>A fertilized metallosnail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(102,84,49)</color>
+			<drawSize>1.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherPawn>BMT_MetalloSnail</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>BMT_Filth_Snail_FireFoam</defName>
+		<label>firefoam</label>
+		<statBases>
+			<Beauty>-25</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/FireFoam</texPath>
+			<drawSize>1.75</drawSize>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>0.01~0.03</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<allowsFire>false</allowsFire>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>

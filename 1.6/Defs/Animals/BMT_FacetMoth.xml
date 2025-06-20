@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Larvae -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_FacetMothLarvae</defName>
+		<label>crystalline caterpillar</label>
+		<description>The larval form of the facet moth. To deter predators, its body appears spiky and hard through a form of natural mimicry.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<LeatherAmount>2</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<nuzzleMtbHours>6</nuzzleMtbHours>
+			<petness>0.5</petness>
+			<baseBodySize>0.7</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.25</baseHungerRate>
+			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
+			<wildness>0.15</wildness>
+			<roamMtbDays>3</roamMtbDays>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_LarvaLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_InsectLarvalFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalSecound</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalThird</def>
+					<minAge>0.1</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>10</ageInDays>
+				<evolveIntoPawnKindDef>BMT_FacetMothPupa</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>proboscis</label>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_FacetMothLarvae</defName>
+		<label>facet larvae</label>
+		<race>BMT_FacetMothLarvae</race>
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
+		<wildGroupSize>1~3</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>0.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>0.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Pupa -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_FacetMothPupa</defName>
+		<label>facet pupa</label>
+		<description>The pupal form of the facet moth. While immobile, its hard shell protects it from most predators.</description>
+		<statBases>
+			<MoveSpeed>0</MoveSpeed>
+			<LeatherAmount>5</LeatherAmount>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
+			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>1</wildness>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.5</lifeExpectancy>
+			<body>BeetleLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_Pupa</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>7</ageInDays>
+				<evolveIntoPawnKindDef>BMT_FacetMoth</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>Twitching</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>0</power>
+				<cooldownTime>10000</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_FacetMothPupa</defName>
+		<label>facet pupa</label>
+		<race>BMT_FacetMothPupa</race>
+		<combatPower>5</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/FacetMothPupa</texPath>
+					<drawSize>1.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Crystalpillar</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Adult -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_FacetMoth</defName>
+		<label>facet moth</label>
+		<description>A large moth with wings that glimmer like the facets of crystal. It flits about in dark caverns and is often captured and kept as a pet for its beauty. The females are capable of producing multiple batches of fertilized eggs from one mating period.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>350</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>57</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+		</statBases>
+		<race>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_MothLike</body>
+			<leatherDef>BMT_CrystalChitin</leatherDef>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>0.77</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.35</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<predator>false</predator>
+			<!-- <maxPreyBodySize>0.80</maxPreyBodySize> -->
+			<wildness>0.55</wildness>
+			<lifeExpectancy>10</lifeExpectancy>
+			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<trainability>None</trainability>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<petness>0.5</petness>
+			<nuzzleMtbHours>6</nuzzleMtbHours>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_FacetMothEggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>20</eggFertilizationCountMax>
+				<eggLayIntervalDays>10</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>5~10</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>proboscis</label>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.85</chanceFactor>
+			</li>
+		</tools>
+			<tradeTags>
+				<li>AnimalPet</li>
+				<li>AnimalExotic</li> 
+				<li>AnimalInsect</li>
+			</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_FacetMoth</defName>
+		<label>facet moth</label>
+		<race>BMT_FacetMoth</race>
+		<combatPower>25</combatPower>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/FacetMoth</texPath>
+					<drawSize>1.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FacetMoth/Dessicated_FacetMoth</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_FacetMothEggFertilized</defName>
+		<label>facet moth egg (fert.)</label>
+		<description>A fertilized facet moth egg. If all goes well, it should hatch into a facet larvae. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(230,212,193)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_FacetMothLarvae</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

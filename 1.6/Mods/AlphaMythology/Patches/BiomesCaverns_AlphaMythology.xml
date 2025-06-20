@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_CrystalCaverns"]/wildAnimals</xpath>
+		<value>
+			<MM_Cerberus>0.005</MM_Cerberus>
+			<MM_Ieltxu>0.01</MM_Ieltxu>
+			<MM_WildMinotaur>0.005</MM_WildMinotaur>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_EarthenDepths"]/wildAnimals</xpath>
+		<value>
+			<MM_Kitsune>0.005</MM_Kitsune>
+			<MM_Salamander>0.005</MM_Salamander>
+			<MM_Tlilcoatl>0.005</MM_Tlilcoatl>
+			<MM_WildMinotaur>0.005</MM_WildMinotaur>
+			<MM_WillOWisp>0.005</MM_WillOWisp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_FungalForest"]/wildAnimals</xpath>
+		<value>
+			<MM_Chimera>0.005</MM_Chimera>
+			<MM_Ieltxu>0.01</MM_Ieltxu>
+			<MM_WildMinotaur>0.005</MM_WildMinotaur>
+			<MM_WillOWisp>0.005</MM_WillOWisp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeVariantDef[defName="BMT_GlacialHollows"]/layers/li/wildAnimals</xpath>
+		<value>
+			<MM_Cerberus>0.005</MM_Cerberus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeVariantDef[defName="BMT_DesertShallows"]/layers/li/wildAnimals</xpath>
+		<value>
+			<MM_Chimera>0.01</MM_Chimera>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeVariantDef[defName="BMT_ShallowCave"]/layers/li/wildAnimals</xpath>
+		<value>
+			<MM_Cerberus>0.005</MM_Cerberus>
+		</value>
+	</Operation>
+
+</Patch>

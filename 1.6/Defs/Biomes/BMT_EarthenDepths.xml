@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>BMT_EarthenDepths</defName>
+		<label>earthen depths</label>
+		<description>Deep within the depths of the planet's crust lie the most inhospitable of environments, forged of the rock and magma near the mantle layer. The molten rock and extreme depth make it both dangerous and difficult to survive here, but those that do survive have a greater chance of finding earthen resources, from ore to gems.</description>
+		<workerClass>GeologicalLandforms.ConfigurableBiomeWorker</workerClass>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.BiomesMap">
+				<isCavern>true</isCavern>
+				<alwaysGrowthSeason>true</alwaysGrowthSeason>
+				<cavernShapes>
+					<li>TunnelNetwork</li>
+				</cavernShapes>
+				<seasonalTemperatureShift>0.2</seasonalTemperatureShift>
+				<extraCarriers>
+					<BMT_FoundryBeetle>1</BMT_FoundryBeetle>
+				</extraCarriers>
+				<extraCarriersRelativeWeight>100</extraCarriersRelativeWeight>
+				<disallowedWeathers>
+					<li>DryThunderstorm</li>
+					<li>FoggyRain</li>
+					<li>Rain</li>
+					<li>RainyThunderstorm</li>
+					<li>SnowGentle</li>
+					<li>SnowHard</li>
+					<li MayRequire="sarg.alphabiomes">AB_AcidRainWeather</li>
+					<li MayRequire="sarg.alphabiomes">AB_ForsakenRainyNight</li>
+					<li MayRequire="sarg.alphabiomes">AB_ForsakenThunderstorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Blizzard</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySandstorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_FoggySnow</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Monsoon</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_Overcast</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStorm</li>
+					<li MayRequire="ReGrowth.BOTR.Core">RG_SandStormHard</li>
+					<li MayRequire="ReGrowth.BOTR.Wastelands">RG_ToxicRain</li>
+					<li MayRequire="ReGrowth.BOTR.Wastelands">RG_ToxicRainyThunderstorm</li>
+				</disallowedWeathers>
+			</li>
+			<li Class="GeologicalLandforms.BiomeProperties">
+				<applyToCaves>true</applyToCaves>
+				<overrideLandforms>
+					<li>BMT_EarthenDepths</li>
+				</overrideLandforms>
+				<allowLandforms>false</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>
+				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
+				<worldTileOverrides>
+					<temperature>
+						<value supplier="randomValueWorld">
+							<seedMask>TempED</seedMask>
+							<min>50</min>
+							<max>90</max>
+						</value>
+					</temperature>
+				</worldTileOverrides>
+				<worldTileGraphicAtlas>
+					<texture>BMT_Caverns/World/Biomes/Atlas/EarthenDepths</texture>
+					<drawMode>HexAdjacencyCaves</drawMode>
+					<atlasSize>(4,4)</atlasSize>
+				</worldTileGraphicAtlas>
+			</li>
+			<li Class="GeologicalLandforms.BiomeWorkerConfig">
+				<score>
+					<value>120</value>
+					<conditions>
+						<anyOf>
+							<depthInCaveSystem>
+								<min>3</min>
+							</depthInCaveSystem>
+							<allOf>
+								<depthInCaveSystem>2</depthInCaveSystem>
+								<valueInRange>
+									<value supplier="randomValueWorld">
+										<seedMask>CaveDepthFlag</seedMask>
+									</value>
+									<min>0.5</min>
+								</valueInRange>
+							</allOf>
+						</anyOf>
+						<temperature>
+							<min>0</min>
+							<max>500</max>
+						</temperature>
+						<rainfall>
+							<max>750</max>
+						</rainfall>
+					</conditions>
+				</score>
+			</li>
+			<!-- Earthen Depths disable solar flares, in addition to the incidents disabled by other biomes. -->
+			<li Class="BiomesCore.DefModExtensions.DisableIncidentsExtension">
+				<disabledIncidents>
+					<li>Aurora</li>
+					<li>ColdSnap</li>
+					<li>Eclipse</li>
+					<li>Flashstorm</li>
+					<li>HeatWave</li>
+					<li>MeteoriteImpact</li>
+					<li>SolarFlare</li>
+					<li>ToxicFallout</li>
+					<li>VolcanicWinter</li>
+					<li MayRequire="sarg.alphaanimals">AA_IncidentSummitCrab</li>
+					<li MayRequire="sarg.alphaanimals">AA_Incident_SkyMeteorite</li>
+					<li MayRequire="sarg.alphaanimals">AA_Eclipse</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_MeteoriteShower</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_ShuttleCrash</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_SpaceBattle</li>
+					<li MayRequire="OskarPotocki.VFE.Insectoid">VFEI_InfestedSmallShipPartDrop</li>
+					<li MayRequire="OskarPotocki.VFE.Insectoid">VFEI_InfestedShipPartDrop</li>
+					<li MayRequire="OskarPotocki.VFE.Insectoid">VFEI_InfestedShipModuleDrop</li>
+				</disabledIncidents>
+			</li>
+		</modExtensions>
+		<animalDensity>2</animalDensity>
+		<plantDensity>1</plantDensity>
+		<settlementSelectionWeight>0.8</settlementSelectionWeight>
+		<movementDifficulty>0.5</movementDifficulty>
+		<texture>BMT_Caverns/World/Biomes/EarthenDepths</texture>
+		<forageability>0.5</forageability>
+		<foragedFood>BMT_RawDulcis</foragedFood>
+		<wildPlantRegrowDays>27</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>BMT_Ambient_FungalForest</li>
+		</soundsAmbient>
+		<diseaseMtbDays>120</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>BMT_Disease_ThermophileMechanites</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>0</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>BMT_VolcanicAsh</terrain>
+				<min>-999</min>
+				<max>0.8</max>
+			</li>
+			<li>
+				<terrain>BMT_MagmaAsh</terrain>
+				<min>0.25</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.045</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>BMT_Terrain_Tachylite</terrain>
+						<!--terrain>Slate_Rough</terrain-->
+						<min>0.33</min>
+						<max>0.73</max>
+					</li>
+					<li>
+						<terrain>BiomeCore_Magma</terrain>
+						<min>0.73</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<BMT_Calm>100</BMT_Calm>
+			<DryThunderstorm>0</DryThunderstorm>
+			<FoggyRain>0</FoggyRain>
+			<Rain>0</Rain>
+			<RainyThunderstorm>0</RainyThunderstorm>
+			<SnowGentle>0</SnowGentle>
+			<SnowHard>0</SnowHard>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- ground cover -->
+			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+			<BMT_FireLavender>1</BMT_FireLavender>
+			
+			<!-- mid sized -->
+			<!-- <BMT_ExplodingAngel>0.5</BMT_ExplodingAngel> -->
+			<BMT_Boomshroom>0.2</BMT_Boomshroom>
+
+			<!-- trees -->
+			<BMT_Candlesnuff>0.7</BMT_Candlesnuff>
+			
+			<!-- other harvestable -->
+			<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
+			<BMT_MoonlessStripesPlant>0.1</BMT_MoonlessStripesPlant>
+			<BMT_CapscoolFungus>0.1</BMT_CapscoolFungus>
+			
+			<!-- hydrophytes -->
+
+			<!-- special -->
+			<BMT_HeatsinkFungus>0.1</BMT_HeatsinkFungus>
+			<BMT_StinkLattice>0.05</BMT_StinkLattice>
+
+		</wildPlants>
+
+		<wildAnimals>
+			<!-- herbivores -->
+			<BMT_Boomapillar>0.2</BMT_Boomapillar>
+			<BMT_BoomMoth>0.2</BMT_BoomMoth>
+			<BMT_FoundryBeetle>0.2</BMT_FoundryBeetle>
+			<BMT_FireSalamander>0.2</BMT_FireSalamander>
+			<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
+			<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
+			<BMT_PodWorm>0.0001</BMT_PodWorm>
+			<BMT_Pillbug>0.2</BMT_Pillbug>
+			<BMT_Woolybat>0.05</BMT_Woolybat>
+			<!-- <BMT_MetalloSnail>0.5</BMT_MetalloSnail> -->
+			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
+
+			<!-- onmnivore -->
+			
+			<!-- predators -->
+			<BMT_AcidSlug>0.01</BMT_AcidSlug>
+			<BMT_Basilisk>0.2</BMT_Basilisk>
+
+			<!-- onmnivore -->
+			<BMT_CrystalCrab_Sandstone>0.0001</BMT_CrystalCrab_Sandstone>
+			<BMT_CrystalCrab_Granite>0.0001</BMT_CrystalCrab_Granite>
+			<BMT_CrystalCrab_Limestone>0.0001</BMT_CrystalCrab_Limestone>
+			<BMT_CrystalCrab_Slate>0.0001</BMT_CrystalCrab_Slate>
+			<BMT_CrystalCrab_Marble>0.0001</BMT_CrystalCrab_Marble>
+			<BMT_CrystalCrab_Jade>0.0001</BMT_CrystalCrab_Jade>
+			<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.0001</BMT_CrystalCrab_Coral>
+			
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>BMT_FoundryBeetle</li>
+		</allowedPackAnimals>
+		<pollutionWildAnimals/>
+	</BiomeDef>
+
+</Defs>

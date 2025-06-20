@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Huge" Abstract="True">
+		<!-- <tickerType>Rare</tickerType> -->
+		<passability>Impassable</passability>
+		<blockLight>false</blockLight>
+		<pathCost>42</pathCost>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>120</MaxHitPoints>
+			<!-- <Mass>70</Mass> -->
+		</statBases>
+		<building>
+			<alwaysDeconstructible>false</alwaysDeconstructible>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<!-- <thingCategories> -->
+		<!-- <li>BuildingsSpecial</li> -->
+		<!-- </thingCategories> -->
+		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+	</ThingDef>
+
+	<!-- ====================================================== -->
+
+	<ThingDef ParentName="BMT_Crystal_Huge">
+		<defName>BMT_Crystal_BlueHuge</defName>
+		<label>huge blue crystal</label>
+		<description>A blue crystal from the depths of the crystal cave. This crystal is large enough that a smaller crystal could break off from it. It is surprisingly volatile.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Crystals/BlueHuge</texPath>
+			<drawSize>(3.0,3.0)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+			<!-- <li Class="CompProperties_Spawner"> -->
+			<!-- <thingToSpawn>BMT_Crystal_BlueMedium</thingToSpawn> -->
+			<!-- <spawnCount>1</spawnCount> -->
+			<!-- <spawnIntervalRange><min>300000</min><max>420000</max></spawnIntervalRange> -->
+			<!-- <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn> -->
+			<!-- <showMessageIfOwned>false</showMessageIfOwned> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<costList>
+			<BMT_ResourceBlueCrystal>340</BMT_ResourceBlueCrystal>
+		</costList>
+	</ThingDef>
+
+</Defs>

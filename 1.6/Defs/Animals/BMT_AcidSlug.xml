@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_AcidSlug</defName>
+		<label>acid slug</label>
+		<description>Originally designed for combat, the acid slug is one of the most dangerous predators in the earthen depths due to its highly acidic slime and flesh. The bodies of its prey are melted down to the bone within its gelatinous flesh.</description>
+		<statBases>
+			<MoveSpeed>1.5</MoveSpeed>
+			<LeatherAmount>16</LeatherAmount>
+			<MarketValue>3500</MarketValue>
+			<ComfyTemperatureMin>37.7778</ComfyTemperatureMin>
+			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<FilthRate>8</FilthRate>
+			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<InjuryHealingFactor>5.0</InjuryHealingFactor>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<!-- <uiIconScale>1.75</uiIconScale> -->
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggAcidSlugFertilized</eggFertilizedDef>
+				<eggLayIntervalDays>36</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~1</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>BMT_Filth_Acidic_Snail_Slime</filthDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+						<extraMeleeDamages>
+		  <li>
+			<def>AcidBurn</def>
+			<amount>20</amount>
+			<chance>0.5</chance>
+		  </li>
+		</extraMeleeDamages>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<predator>true</predator>
+			<maxPreyBodySize>3</maxPreyBodySize>
+			<hasGenders>false</hasGenders>
+			<herdAnimal>false</herdAnimal>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<body>BiomesCore_Slug</body>
+			<baseHungerRate>0.8</baseHungerRate>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>8.0</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>220</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.9</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<packAnimal>false</packAnimal>
+			<!-- <meatLabel>snail meat</meatLabel> -->
+			<!-- <meatColor>(62,133,215)</meatColor> -->
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef> <!-- or hyponota, could be same as squids, octopuses, nautiluses, Worm like... -->
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.333</minAge>
+					<soundWounded>Biomes_GiantSnail_Wounded</soundWounded>
+					<soundDeath>Biomes_GiantSnail_Death</soundDeath>
+					<soundCall>Biomes_GiantSnail_Call</soundCall>
+					<soundAngry>Biomes_GiantSnail_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_AcidSlug</defName>
+		<label>acid slug</label>
+		<race>BMT_AcidSlug</race>
+		<combatPower>500</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>2</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>acid slug larva</label>
+				<labelPlural>acid slug larvae</labelPlural>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AcidSlug/AcidSlug</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AcidSlug/AcidSlug</texPath>
+					<drawSize>4.0</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.6, 0.4)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/AcidSlug/AcidSlug</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(1, 0.8, 0.5)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggAcidSlugFertilized</defName>
+		<label>acid slug egg (fert.)</label>
+		<description>A fertilized acid slug egg. If all goes well, it should hatch into a baby acid slug. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(255,188,190)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_AcidSlug</hatcherPawn>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>30</minSafeTemperature>
+				<maxSafeTemperature>400</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>BMT_Filth_Acidic_Snail_Slime</defName>
+		<label>acidic slime</label>
+		<statBases>
+			<Beauty>-25</Beauty>
+			<Cleanliness>-15</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(170, 182, 120, 170)</color>
+		</graphicData>
+		<filth>
+			<disappearsInDays>0.01~0.02</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>

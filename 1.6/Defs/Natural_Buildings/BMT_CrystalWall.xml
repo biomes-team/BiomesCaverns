@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>BMT_NaturalCrystalWall</defName>
+		<label>natural crystal</label>
+		<description>A wall of natural crystal. It is quite beautiful.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<blockLight>true</blockLight>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<building>
+			<isResourceRock>false</isResourceRock>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<naturalTerrain>BMT_Crystal</naturalTerrain>
+			<mineableThing>BMT_ChunkCrystal</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<!-- <mineableYield>50</mineableYield> -->
+			<smoothedThing>BMT_SmoothedCrystalWall</smoothedThing>
+		</building>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+				<offset>0.65</offset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+  <ThingDef ParentName="SandstoneBase">
+    <defName>BMT_SmoothedCrystalWall</defName>
+    <label>smoothed crystal</label>
+    <description>A crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+	  <naturalTerrain>BMT_Crystal</naturalTerrain>
+      <paintable>false</paintable>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  	<ThingDef ParentName="BuildingBase">
+		<defName>BMT_BuiltCrystalWall</defName>
+		<label>constructed crystal</label>
+		<description>A wall of constructed crystal. It is quite beautiful.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>80</WorkToBuild>
+			<MeditationFocusStrength>0.25</MeditationFocusStrength>
+		</statBases>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<costList>
+			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<uiOrder>2002</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<paintable>false</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+			</relatedBuildCommands>
+			<smoothedThing>BMT_BuiltSmoothedCrystalWall</smoothedThing>
+		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+
+  <ThingDef ParentName="SandstoneBase">
+    <defName>BMT_BuiltSmoothedCrystalWall</defName>
+    <label>constructed smoothed crystal</label>
+    <description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>80</WorkToBuild>
+			<MeditationFocusStrength>0.25</MeditationFocusStrength>
+		</statBases>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<costList>
+			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<uiOrder>2002</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<building>
+			<paintable>false</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+			</relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
+  </ThingDef>
+
+</Defs>

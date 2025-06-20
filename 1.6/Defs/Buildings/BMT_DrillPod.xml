@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>BMT_DrillPod</defName>
+		<label>drill pod</label>
+		<description>A launchable subterranean cargo pod capable of carrying people, items, or animals. Can be used for sending gifts, transporting people or supplies, surprise attacks, or reinforcing battles.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Building/Drillpod/Drillpod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<designationHotKey>Misc12</designationHotKey>
+		<fillPercent>0.5</fillPercent>
+		<designationCategory>Misc</designationCategory>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>0.8</restEffectiveness>
+			</li>
+			<li Class="CompProperties_Launchable">
+				<skyfallerLeaving>BMT_DrillPodLeaving</skyfallerLeaving>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_ContentsTransporter</li>
+		</inspectorTabs>
+		<placeWorkers>
+			<li>PlaceWorker_NeedsFuelingPort</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>TransportPod</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<uiIconScale>0.65</uiIconScale>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>BMT_DrillPodIncoming</defName>
+		<label>drop pod (incoming)</label>
+		<thingClass>BiomesCaverns.DrillPodIncoming</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSound>BMT_DrillPod</anticipationSound>
+			<anticipationSoundTicks>1000</anticipationSoundTicks>
+			<motesPerCell>0</motesPerCell>
+			<shadowSize>(0, 0)</shadowSize>
+			<hitRoof>false</hitRoof>
+		</skyfaller>
+		<comps>
+			<li>
+				<compClass>BiomesCaverns.CompSpawnDust</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SkyfallerBase">
+		<defName>BMT_DrillPodLeaving</defName>
+		<label>drop pod (leaving)</label>
+		<thingClass>FlyShipLeaving</thingClass>
+		<graphicData>
+			<texPath>Things/Mote/Transparent</texPath> <!-- Invisible -->
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>BMT_DrillPod</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
+			<shadowSize>(0, 0)</shadowSize>
+		</skyfaller>
+		<comps>
+			<li>
+				<compClass>BiomesCaverns.CompSpawnDust</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>BMT_DrillPodActive</defName>
+		<label>drop pod</label>
+		<category>Item</category>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>BiomesCaverns.ActiveDrillPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Building/Drillpod/Drillpod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.6, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+	
+  <WorldObjectDef>
+    <defName>BMT_TravelingDrillPods</defName>
+    <label>drill pods</label>
+    <description>Drill pods in travel.</description>
+    <worldObjectClass>TravelingTransportPods</worldObjectClass>
+    <texture>BMT_Caverns/Things/Building/Drillpod/Drillpod</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>BMT_Caverns/Things/Building/Drillpod/Drillpod</expandingIconTexture>
+    <expandingIconPriority>60</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+  </WorldObjectDef>
+
+</Defs>

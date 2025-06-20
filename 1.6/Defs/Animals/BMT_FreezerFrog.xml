@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHare">
+		<defName>BMT_FreezerFrog</defName>
+		<label>freezer frog</label>
+		<description>This small, herbivorous frog has special chemicals in its blood that allow it to survive in sub-zero temperatures. Due to the scarcity of liquid water, their young hatch into miniature adults rather than tadpoles.</description>
+		<uiIconScale>1.1</uiIconScale>
+		<statBases>
+			<ComfyTemperatureMin>-200</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggFreezerFrogFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<baseBodySize>0.75</baseBodySize>
+			<baseHungerRate>0.415</baseHungerRate>
+			<baseHealthScale>0.8</baseHealthScale>
+			<foodType>OmnivoreAnimal</foodType>
+			<leatherDef>BMT_Leather_GlacialPlain</leatherDef>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.07)</li>
+				<li>(0.19, 0, 0)</li>
+				<li>(0.0, 0, -0.07)</li>
+				<li>(-0.19, 0, 0)</li>
+			</headPosPerRotation>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="HareBase">
+		<defName>BMT_FreezerFrog</defName>
+		<label>freezer frog</label>
+		<race>BMT_FreezerFrog</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FreezerFrog/FreezerFrog</texPath>
+					<drawSize>0.7</drawSize>
+					<!-- <shadowData> -->
+					<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
+					<!-- <offset>(0,0,0)</offset> -->
+					<!-- </shadowData> -->
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FreezerFrog/Dessicated_FreezerFrog</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FreezerFrog/FreezerFrog</texPath>
+					<drawSize>0.95</drawSize>
+					<!-- <shadowData> -->
+					<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
+					<!-- <offset>(0,0,0)</offset> -->
+					<!-- </shadowData> -->
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FreezerFrog/Dessicated_FreezerFrog</texPath>
+					<drawSize>0.95</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FreezerFrog/FreezerFrog</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.32, 0.35, 0.32)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FreezerFrog/Dessicated_FreezerFrog</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggFreezerFrogFertilized</defName>
+		<label>freezer frog egg (fert.)</label>
+		<description>A fertilized freezer frog egg. If all goes well, it should hatch into a freezer frog. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Goeto</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggFreezerFrogUnfertilized</defName>
+		<label>freezer frog egg (unfert.)</label>
+		<description>An unfertilized freezer frog egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

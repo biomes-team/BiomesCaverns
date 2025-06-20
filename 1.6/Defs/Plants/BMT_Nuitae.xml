@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_Nuitae</defName>
+		<label>nuitae</label>
+		<description>While its cap's exterior is largely dark in color, its underside glows brightly. It grows most often in water or extremely wet environments.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Nutrition>0.60</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Nuitae</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<pollution>Any</pollution>
+			<growDays>3</growDays>
+			<harvestWork>80</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>

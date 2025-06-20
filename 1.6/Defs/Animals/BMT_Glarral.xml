@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===============================================-->
+
+	<ThingDef ParentName="BigBirdThingBase">
+		<defName>BMT_GlarralPenguin</defName>
+		<label>glarral penguin</label>
+		<description>Large-beaked penguins that use their beaks to carve out dens and dig for food in hollowed out glaciers and frozen wastes.</description>
+		<statBases>
+			<MoveSpeed>3.4</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<baseHungerRate>0.42</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.95</wildness>
+			<!-- <roamMtbDays>3</roamMtbDays> -->
+			<lifeExpectancy>45</lifeExpectancy>
+			<!-- <useMeatFrom>Cassowary</useMeatFrom> -->
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
+				</li>
+			</lifeStageAges>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.37)</li>
+				<li>(0.23, 0, 0.27)</li>
+				<li>(0.0, 0, 0.27)</li>
+				<li>(-0.23, 0, 0.27)</li>
+			</headPosPerRotation>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggGlarralPenguinFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.33</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_GlarralPenguin</defName>
+		<label>glarral penguin</label>
+		<labelPlural>glarral penguins</labelPlural>
+		<race>BMT_GlarralPenguin</race>
+		<combatPower>85</combatPower>
+		<wildGroupSize>2~7</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlarralPenguin/GlarralPenguin</texPath>
+					<drawSize>0.7</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/GlarralPenguin/Dessicated_GlarralPenguin</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlarralPenguin/GlarralPenguin</texPath>
+					<drawSize>1.1</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/GlarralPenguin/Dessicated_GlarralPenguin</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/GlarralPenguin/GlarralPenguin</texPath>
+					<drawSize>1.5</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/GlarralPenguin/Dessicated_GlarralPenguin</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--===============================================-->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGlarralPenguinFertilized</defName>
+		<label>depths penguin egg (fert.)</label>
+		<description>A fertilized depths penguin egg. If all goes well, it should hatch into a baby depths penguin.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(149,92,90)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>30.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>BMT_DepthsPenguin</hatcherPawn>
+			</li>
+		</comps>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+	</ThingDef>
+
+
+</Defs>

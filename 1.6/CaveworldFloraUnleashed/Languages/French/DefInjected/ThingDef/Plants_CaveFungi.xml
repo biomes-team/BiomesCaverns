@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<ItW_Shimmershroom.label>Champignon chatoyant</ItW_Shimmershroom.label>
+	<ItW_Shimmershroom.description>Un champignon doux et délicieux chatoyant, il est loué comme un mets délicat par les habitants des cavernes en raison de sa merveilleuse saveur.</ItW_Shimmershroom.description>
+	
+	<ItW_Glowbulb.label>Champignon bulbe</ItW_Glowbulb.label>
+	<ItW_Glowbulb.description>Un petit champignon qui ressemble à une ampoule en croissance peut être trouvé dans presque tous les coins d'une grotte sombre. Bien qu'il soit comestible en théorie, il a meilleur goût lorsqu'il est mangé cru ... vous feriez mieux de le cuire.</ItW_Glowbulb.description>
+
+	<ItW_Greyfields.label>Champignon gris</ItW_Greyfields.label>
+	<ItW_Greyfields.description>Les champignons ont une apparence, un goût et une texture assez ordinaires. Mais sa particularité est qu'il peut être brassé en vin de champignon.</ItW_Greyfields.description>
+
+	<ItW_RoyalBracket.label>Ganoderma doré</ItW_RoyalBracket.label>
+	<ItW_RoyalBracket.description>Ganoderma lucidum, vieux de mille ans, est un parent du vieil homme du pays, et son corps dégage une luxueuse lumière dorée.</ItW_RoyalBracket.description>
+
+	<ItW_Gleamcap.label>Ganoderma lucidum</ItW_Gleamcap.label>
+	<ItW_Gleamcap.description>Un champignon poussant dans une immense grotte est très apprécié des habitants de la grotte pour ses propriétés curatives uniques. Les spores de Ganoderma lucidum ont des propriétés mentales actives et seront libérées chaque fois que le champignon est dérangé.</ItW_Gleamcap.description>
+	
+	<ItW_Brightbells.label>Bactérie Bell</ItW_Brightbells.label>
+	<ItW_Brightbells.description>Un très beau champignon que les mineurs apprécient beaucoup, car les minuscules ampoules au bout de son fragile mycélium peuvent leur apporter de la lumière. Il est souvent utilisé par les habitants des cavernes comme source de lumière naturelle. La structure riche en fibres l'empêche d'être consommée.</ItW_Brightbells.description>
+
+</LanguageData>

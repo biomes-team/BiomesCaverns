@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+		<value>
+			<li>BMT_CrystalsGenerator</li>
+			<li>BMT_ScatterStalagmiteGenerator</li>
+		</value>
+	</Operation>
+
+</Patch>

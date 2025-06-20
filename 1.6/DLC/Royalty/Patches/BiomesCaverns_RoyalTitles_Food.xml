@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--
+	Adds allowed foods to the food requirements of any Shattered Empire title that has food requirements.
+	Supports Vanilla Factions Expanded - Empire.
+	-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/RoyalTitleDef[@ParentName="BaseEmpireTitle" or @ParentName="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs
+		</xpath>
+		<value>
+			<li>BMT_AmbrosyxShroom</li>
+		</value>
+	</Operation>
+</Patch>

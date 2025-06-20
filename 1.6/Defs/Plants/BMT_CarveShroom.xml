@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_CarveShroom</defName>
+		<label>carvefungus</label>
+		<description>Large and adapted to utter darkness, this fungus thrives in freezing cold temperatures.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Carveshroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+			<Nutrition>1.25</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~10</optimalTemperature>
+				<growingHours>0.5~0.99</growingHours>
+			</li>
+		</modExtensions>
+		<selectable>true</selectable>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>8</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>
