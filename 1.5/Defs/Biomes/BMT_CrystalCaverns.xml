@@ -246,7 +246,7 @@
 			<BMT_MossBeetle>0.1</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
 			<BMT_GlowBat MayRequire="pathfinding.framework">0.5</BMT_GlowBat>
-			<BMT_Woolybat>0.05</BMT_Woolybat>
+			<BMT_Woollybat>0.05</BMT_Woollybat>
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 
 			<!-- onmnivore -->

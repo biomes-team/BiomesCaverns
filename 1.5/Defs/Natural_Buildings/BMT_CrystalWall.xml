@@ -10,7 +10,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>2</Beauty>
 		</statBases>
 		<blockLight>true</blockLight>
 		<filthLeaving>Filth_RubbleRock</filthLeaving>
@@ -31,7 +32,7 @@
 		</modExtensions>
 	</ThingDef>
 
-  <ThingDef ParentName="SandstoneBase">
+  <ThingDef ParentName="RockBase">
     <defName>BMT_SmoothedCrystalWall</defName>
     <label>smoothed crystal</label>
     <description>A crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
@@ -41,8 +42,9 @@
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <Beauty>2</Beauty>
-      <MarketValue>10</MarketValue>
+	  <MaxHitPoints>500</MaxHitPoints>
+      <Beauty>4</Beauty>
+	  <MarketValue>10</MarketValue>
     </statBases>
     <building>
       <isNaturalRock>false</isNaturalRock>
@@ -65,7 +67,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<MarketValue>30</MarketValue>
 			<WorkToBuild>80</WorkToBuild>
 			<MeditationFocusStrength>0.25</MeditationFocusStrength>
 		</statBases>
@@ -123,7 +127,7 @@
 		</damageMultipliers>
 	</ThingDef>
 
-  <ThingDef ParentName="SandstoneBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>BMT_BuiltSmoothedCrystalWall</defName>
     <label>constructed smoothed crystal</label>
     <description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
@@ -133,7 +137,9 @@
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<MarketValue>40</MarketValue>
 			<WorkToBuild>80</WorkToBuild>
 			<MeditationFocusStrength>0.25</MeditationFocusStrength>
 		</statBases>

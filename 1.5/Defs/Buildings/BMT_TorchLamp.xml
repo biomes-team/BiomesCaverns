@@ -14,7 +14,7 @@
 		<tickerType>Never</tickerType>
 		<statBases>
 			<Mass>1</Mass>
-			<WorkToBuild>18000</WorkToBuild>
+			<WorkToBuild>200</WorkToBuild>
 		</statBases>
 		<costList>
 			<BMT_ResourceBlueCrystal>30</BMT_ResourceBlueCrystal>
@@ -48,7 +48,7 @@
 		<tickerType>Never</tickerType>
 		<statBases>
 			<Mass>1</Mass>
-			<WorkToBuild>16000</WorkToBuild>
+			<WorkToBuild>300</WorkToBuild>
 		</statBases>
 		<costList Inherit="False">
 			<BMT_ResourceBlueCrystal>40</BMT_ResourceBlueCrystal>
@@ -81,7 +81,7 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<Mass>1</Mass>
-			<!-- <WorkToBuild>6000</WorkToBuild> -->
+			<WorkToBuild>200</WorkToBuild>
 		</statBases>
 		<costList>
 			<BMT_GlowGoo>5</BMT_GlowGoo>
@@ -126,7 +126,7 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<Mass>1</Mass>
-			<!-- <WorkToBuild>6000</WorkToBuild> -->
+			<WorkToBuild>200</WorkToBuild>
 		</statBases>
 		<costList Inherit="False">
 			<RawFungus>20</RawFungus>
@@ -173,7 +173,7 @@
 		<tickerType>Never</tickerType>
 		<statBases>
 			<Mass>1</Mass>
-			<WorkToBuild>18000</WorkToBuild>
+			<WorkToBuild>200</WorkToBuild>
 		</statBases>
 		<costList Inherit="False">
 			<RawFungus>20</RawFungus>

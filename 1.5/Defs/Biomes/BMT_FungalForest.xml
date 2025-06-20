@@ -277,7 +277,7 @@
 			<BMT_GiantSlug>0.25</BMT_GiantSlug>
 			<BMT_GiantSnail>0.30</BMT_GiantSnail>
 			<BMT_GlowSlug>0.1</BMT_GlowSlug>
-			<BMT_GlowSnail>0.1</BMT_GlowSnail>
+			<BMT_ShimmershellSnail>0.05</BMT_ShimmershellSnail>
 			<BMT_Goeto>0.05</BMT_Goeto>
 			<BMT_MossBeetle>0.075</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
@@ -289,7 +289,7 @@
 			<BMT_Xyrion>0.15</BMT_Xyrion>
 			<BMT_Yooka>0.025</BMT_Yooka>
 			<BMT_FungalWeevil>0.10</BMT_FungalWeevil>
-			<BMT_Woolybat>0.05</BMT_Woolybat>
+			<BMT_Woollybat>0.05</BMT_Woollybat>
 
 			<!-- predators -->
 			<BMT_FungalFerret>0.025</BMT_FungalFerret>
