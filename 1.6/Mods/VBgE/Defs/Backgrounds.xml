@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<VBE.BackgroundImageDef>
+		<label>CavernBiome</label>
+		<description>Splash Screen Included in Caverns.</description>
+		<defName>BMT_Cavern_Splash</defName>
+		<path>BMT_Caverns/UI/BG/BGCaves</path>
+		<iconPath>BMT_Core/UI/Icon/Biomes!Palm</iconPath>
+	</VBE.BackgroundImageDef>
+</Defs>

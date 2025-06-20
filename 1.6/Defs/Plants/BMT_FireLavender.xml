@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_FireLavender</defName>
+		<label>fire lavender</label>
+		<description>This type of lavender originated in volcanic areas on the surface but adapted to surviving off the glow of magma deep underground. It is well loved by cavern-dwelling botanists for its beauty.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/FireLavender</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>1.0</Nutrition>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.5~0.99</growingHours>
+				<optimalTemperature>37.7778~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
+		<ingestible/>
+		<plant>
+			<growMinGlow>0.5</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.5~0.9</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

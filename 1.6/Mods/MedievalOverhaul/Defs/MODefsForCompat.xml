@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Plank def-->
+	<ThingDef ParentName="ResourceVerbBase" Name="BMT_MushroomLogPlanks">
+		<defName>BMT_MushroomLogPlanks</defName>
+		<label>mushroom timber</label>
+		<description>Material from large fibrous fungi. Useful for building structures and weapons. Good animal feed, but largely inedible for humans. \n\nDoes not burn easily and cannot be used as fuel for normal burning but can be used for darklight sources.</description>
+		<graphicData>
+			<texPath>Resources/WoodPlank</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(229,218,218)</color>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.6</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>0.6</Mass> 
+			<Flammability>0.95</Flammability>
+			<DeteriorationRate>0.4</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.58</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.05</BluntDamageMultiplier>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>10</minRewardCount>
+		<stuffProps>
+			<stuffAdjective>fungal</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<color>(112,91,76)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>0.75</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Flammability>0.95</Flammability>
+				<WorkToMake>0.85</WorkToMake>
+				<WorkToBuild>0.85</WorkToBuild>
+				<DoorOpenSpeed>1.25</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<isTechHediff>true</isTechHediff>
+		<thingCategories>
+			<li>DankPyon_Wood</li>
+		</thingCategories>
+		<techHediffsTags>
+		<li>Poor</li>
+		</techHediffsTags>
+		<tools>
+		<li>
+			<label>plank</label>
+			<capacities>
+			<li>Blunt</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+		</tools>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
+
+	<!-- Recipes to make planks from the wood.-->
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>BMT_MushroomLog_Make_Planks</defName>
+		<label>make mushroom timber x2</label>
+		<description>Cuts raw wood into timber.</description>
+		<workAmount>30</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_MushroomLog</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_MushroomLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+				<BMT_MushroomLogPlanks>2</BMT_MushroomLogPlanks>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>BMT_MushroomLog_Make_PlanksBulk</defName>
+		<label>make mushroom timber x40</label>
+		<description>Cuts raw wood into timber.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_MushroomLog</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_MushroomLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+				<BMT_MushroomLogPlanks>40</BMT_MushroomLogPlanks>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>BMT_MushroomLog_Make_PlanksBulkExtra</defName>
+		<label>make mushroom timber x200</label>
+		<description>Cuts raw wood into timber.</description>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_MushroomLog</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_MushroomLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+				<BMT_MushroomLogPlanks>200</BMT_MushroomLogPlanks>
+		</products>
+	</RecipeDef>
+
+</Defs>

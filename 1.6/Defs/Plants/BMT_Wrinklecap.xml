@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_Wrinklecap</defName>
+		<label>wrinklecap</label>
+		<description>A subterranean fungus that grows in damp environments. It is often eaten by fungivores.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Nutrition>1.20</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Fresh</li>
+					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Wrinklecap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>80</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.05</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>3.9</glowRadius>
+			<glowColor>(126, 108, 155, 0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

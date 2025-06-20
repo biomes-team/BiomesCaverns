@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Music Expanded Framework</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+
+				<!--Fungal Forest-->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Caravan</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Children_of_Podostroma</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Credits</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Discovery</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Forests_and_Forests</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Good_Morning</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Light_Show</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Neonothopanus</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Peace</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Purple_Sunset</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Quiet_Finally</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Tall_Shrooms</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/What_Day_Is_It</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/You_Will_Wont</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<!-- Tension -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Small_Loop</clipPath>
+							<volume>1.0</volume>
+							<tense>true</tense>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Medium</clipPath>
+							<volume>1.0</volume>
+							<tense>true</tense>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Large_Loop</clipPath>
+							<volume>1.0</volume>
+							<tense>true</tense>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Legendary_Loop</clipPath>
+							<volume>1.0</volume>
+							<tense>true</tense>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_FungalForest</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<!-- Cave -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/Cavern/Cavern_Chill</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_EarthenDepths</li>
+										<li>BMT_CrystalCaverns</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/Cavern/Essence_Of_The_Underground</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_EarthenDepths</li>
+										<li>BMT_CrystalCaverns</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/Cavern/Indoor_Garden</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_EarthenDepths</li>
+										<li>BMT_CrystalCaverns</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/Cavern/That_Which_Glimmers</clipPath>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_EarthenDepths</li>
+										<li>BMT_CrystalCaverns</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+				<!-- Tension -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SongDef>
+							<clipPath>BMT_Caverns/Music/Cavern/Cave_Battle</clipPath>
+							<tense>true</tense>
+							<modExtensions>
+								<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+									<biomeDefNameRestrictions>
+										<li>BMT_EarthenDepths</li>
+										<li>BMT_CrystalCaverns</li>
+									</biomeDefNameRestrictions>
+								</li>
+							</modExtensions>
+						</SongDef>
+					</value>
+				</li>
+
+			</operations>
+		</nomatch>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.ThemeDef>
+							<defName>BMT_Caverns_FungalForest</defName>
+							<label>Biomes! Caverns - FungalForest</label>
+							<iconPath>BMT_Caverns/UI/Icon/Cavern</iconPath>
+							<description>Echo.</description>
+							<tracks>
+								<li MayRequire="musicexpanded.core">ME_Shared_ManInBlack</li>
+								<li>BMT_Caverns_Quiet_Finally_ACOUSTIC_MainMenu</li>
+								<li>BMT_Caverns_Caravan</li>
+								<li>BMT_Caverns_Children_of_Podostroma</li>
+								<li>BMT_Caverns_Credits</li>
+								<li>BMT_Caverns_Discovery</li>
+								<li>BMT_Caverns_Forests_and_Forests</li>
+								<li>BMT_Caverns_Good_Morning</li>
+								<li>BMT_Caverns_Light_Show</li>
+								<li>BMT_Caverns_Neonothopanus</li>
+								<li>BMT_Caverns_Peace</li>
+								<li>BMT_Caverns_Quiet_Finally</li>
+								<li>BMT_Caverns_Tall_Shrooms</li>
+								<li>BMT_Caverns_What_Day_Is_It</li>
+								<li>BMT_Caverns_You_Will_Wont</li>
+
+								<li>BMT_Caverns_FungalForest_Battle_Small_Loop</li>
+								<li>BMT_Caverns_FungalForest_Battle_Medium</li>
+								<li>BMT_Caverns_FungalForest_Battle_Large_Loop</li>
+								<li>BMT_Caverns_FungalForest_Battle_Legendary_Loop</li>
+							</tracks>
+						</MusicExpanded.ThemeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.ThemeDef>
+							<defName>BMT_Caverns</defName>
+							<label>Biomes! Caverns</label>
+							<iconPath>BMT_Caverns/UI/Icon/Cavern</iconPath>
+							<description>Echo. (additional)</description>
+							<tracks>
+								<li MayRequire="musicexpanded.core">ME_Shared_ManInBlack</li>
+								<li>BMT_Caverns_Cavern_Chill</li>
+								<li>BMT_Caverns_Cavern_Essence_Of_The_Underground</li>
+								<li>BMT_Caverns_Indoor_Garden</li>
+								<li>BMT_Caverns_That_Which_Glimmers</li>
+
+								<li>BMT_Caverns_Cave_Battle</li>
+							</tracks>
+						</MusicExpanded.ThemeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Quiet Finally (ACOUSTIC)</label> <!--MainMenu-->
+							<defName>BMT_Caverns_Quiet_Finally_ACOUSTIC_MainMenu</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Quiet_Finally_ACOUSTIC</clipPath>
+							<cue>MainMenu</cue>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Caravan</label>
+							<defName>BMT_Caverns_Caravan</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Caravan</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Children of Podostroma</label>
+							<defName>BMT_Caverns_Children_of_Podostroma</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Children_of_Podostroma</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Credits</label>
+							<defName>BMT_Caverns_Credits</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Credits</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Discovery</label>
+							<defName>BMT_Caverns_Discovery</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Discovery</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Forests and Forests</label>
+							<defName>BMT_Caverns_Forests_and_Forests</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Forests_and_Forests</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Good Morning</label>
+							<defName>BMT_Caverns_Good_Morning</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Good_Morning</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Light Show</label>
+							<defName>BMT_Caverns_Light_Show</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Light_Show</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Neonothopanus</label>
+							<defName>BMT_Caverns_Neonothopanus</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Neonothopanus</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Peace</label>
+							<defName>BMT_Caverns_Peace</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Peace</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Quiet Finally</label>
+							<defName>BMT_Caverns_Quiet_Finally</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Quiet_Finally</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Tall Shrooms</label>
+							<defName>BMT_Caverns_Tall_Shrooms</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Tall_Shrooms</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - What Day Is It</label>
+							<defName>BMT_Caverns_What_Day_Is_It</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/What_Day_Is_It</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - You Will Wont</label>
+							<defName>BMT_Caverns_You_Will_Wont</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/You_Will_Wont</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>Cavern - Cavern Chill</label>
+							<defName>BMT_Caverns_Cavern_Chill</defName>
+							<clipPath>BMT_Caverns/Music/Cavern/Cavern_Chill</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>Cavern - Essence Of The Underground</label>
+							<defName>BMT_Caverns_Cavern_Essence_Of_The_Underground</defName>
+							<clipPath>BMT_Caverns/Music/Cavern/Essence_Of_The_Underground</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>Cavern - Indoor Garden</label>
+							<defName>BMT_Caverns_Indoor_Garden</defName>
+							<clipPath>BMT_Caverns/Music/Cavern/Indoor_Garden</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>Cavern - That Which Glimmers</label>
+							<defName>BMT_Caverns_That_Which_Glimmers</defName>
+							<clipPath>BMT_Caverns/Music/Cavern/That_Which_Glimmers</clipPath>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Battle_Small_Loop</label>
+							<defName>BMT_Caverns_FungalForest_Battle_Small_Loop</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Small_Loop</clipPath>
+							<cue>BattleSmall</cue>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Battle_Medium</label>
+							<defName>BMT_Caverns_FungalForest_Battle_Medium</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Medium</clipPath>
+							<cue>BattleMedium</cue>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Battle_Large_Loop</label>
+							<defName>BMT_Caverns_FungalForest_Battle_Large_Loop</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Large_Loop</clipPath>
+							<cue>BattleLarge</cue>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>FungalForest - Battle_Legendary_Loop</label>
+							<defName>BMT_Caverns_FungalForest_Battle_Legendary_Loop</defName>
+							<clipPath>BMT_Caverns/Music/FungalForest/Battle_Legendary_Loop</clipPath>
+							<cue>BattleLegendary</cue>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<MusicExpanded.TrackDef>
+							<label>Cavern - Cave_Battle</label>
+							<defName>BMT_Caverns_Cave_Battle</defName>
+							<clipPath>BMT_Caverns/Music/Cavern/Cave_Battle</clipPath>
+							<vanillaLogic>true</vanillaLogic>
+							<tense>true</tense>
+						</MusicExpanded.TrackDef>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

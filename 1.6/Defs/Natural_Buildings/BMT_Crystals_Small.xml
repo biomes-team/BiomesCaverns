@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BMT_Crystal_Building_Base" Name="BMT_Crystal_Small" Abstract="True">
+		<tickerType>Never</tickerType>
+		<passability>PassThroughOnly</passability>
+		<blockLight>false</blockLight>
+		<pathCost>1</pathCost>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<Beauty>6</Beauty>
+			<MaxHitPoints>20</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<!-- ====================================================== -->
+
+	<ThingDef ParentName="BMT_Crystal_Small">
+		<defName>BMT_Crystal_BlueSmall</defName>
+		<label>small blue crystal</label>
+		<description>A blue crystal from the depths of the crystal cave. It is surprisingly volatile.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Crystals/BlueSmall</texPath>
+			<drawSize>(1.0,1.0)</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<costList>
+			<BMT_ResourceBlueCrystal>21</BMT_ResourceBlueCrystal>
+		</costList>
+	</ThingDef>
+
+</Defs>

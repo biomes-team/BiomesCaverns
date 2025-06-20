@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Fungiponics -->
+  <Caveworld_Flora_Unleashed.CannotGrowTooCold>现在不能生长：温度过低。</Caveworld_Flora_Unleashed.CannotGrowTooCold>
+  <Caveworld_Flora_Unleashed.CannotGrowTooHot>现在不能生长：温度过高。</Caveworld_Flora_Unleashed.CannotGrowTooHot>
+  <Caveworld_Flora_Unleashed.Growing>正在生长。</Caveworld_Flora_Unleashed.Growing>
+  <!-- Flora Plant -->
+  <Caveworld_Flora_Unleashed.InCryostasis>冬眠中</Caveworld_Flora_Unleashed.InCryostasis>
+  <Caveworld_Flora_Unleashed.Dying>濒死中</Caveworld_Flora_Unleashed.Dying>
+  <Caveworld_Flora_Unleashed.Drying>干旱中</Caveworld_Flora_Unleashed.Drying>
+  <Caveworld_Flora_Unleashed.TooDark>过于黑暗</Caveworld_Flora_Unleashed.TooDark>
+  <Caveworld_Flora_Unleashed.Overlit>光线过强</Caveworld_Flora_Unleashed.Overlit>
+  <Caveworld_Flora_Unleashed.Unroofed>露天状态</Caveworld_Flora_Unleashed.Unroofed>
+  <Caveworld_Flora_Unleashed.UnadaptedSoil>土壤不适合</Caveworld_Flora_Unleashed.UnadaptedSoil>
+  <Caveworld_Flora_Unleashed.TooFarFromRock>离岩石过远</Caveworld_Flora_Unleashed.TooFarFromRock>
+  <Caveworld_Flora_Unleashed.MyceliumRootRemoved>菌丝被移走</Caveworld_Flora_Unleashed.MyceliumRootRemoved>
+  <Caveworld_Flora_Unleashed.Cryostasis>冬眠</Caveworld_Flora_Unleashed.Cryostasis>
+</LanguageData>

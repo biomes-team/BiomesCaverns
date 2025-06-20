@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_AmbrosyxFungus</defName>
+		<label>ambrosyx fungus</label>
+		<description>A rare wild fungus which yields ambrosyx shrooms. Similar to ambrosia, this shroom is delicious and produces a drug-like mood boost. This fungus cannot be farmed, which makes it very valuable.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Ambrosyx</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.2, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>6</growDays>
+			<leaflessGraphicPath>BMT_Caverns/Things/Plant/Ambrosyx</leaflessGraphicPath>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Ambrosyx</immatureGraphicPath>
+			<harvestYield>4</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<harvestedThingDef>BMT_AmbrosyxShroom</harvestedThingDef>
+			<visualSizeRange>0.6~1.1</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<allowAutoCut>false</allowAutoCut>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<interferesWithRoof>false</interferesWithRoof>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+		</plant>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<optimalTemperature>-50~352.222</optimalTemperature>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

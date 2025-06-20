@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHare">
+		<defName>BMT_CaveLemming</defName>
+		<label>cave lemming</label>
+		<description>This big, solitary herbivore can swiftly hop away from danger.</description>
+		<uiIconScale>1.1</uiIconScale>
+		<race>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHungerRate>0.415</baseHungerRate>
+			<baseHealthScale>0.8</baseHealthScale>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.07)</li>
+				<li>(0.19, 0, 0)</li>
+				<li>(0.0, 0, -0.07)</li>
+				<li>(-0.19, 0, 0)</li>
+			</headPosPerRotation>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="HareBase">
+		<defName>BMT_CaveLemming</defName>
+		<label>cave lemming</label>
+		<race>BMT_CaveLemming</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveLemming/CaveLemming</texPath>
+					<drawSize>1.5</drawSize>
+					<!-- <shadowData> -->
+					<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
+					<!-- <offset>(0,0,0)</offset> -->
+					<!-- </shadowData> -->
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveLemming/CaveLemming</texPath>
+					<drawSize>2.25</drawSize>
+					<!-- <shadowData> -->
+					<!-- <volume>(0.32, 0.35, 0.32)</volume> -->
+					<!-- <offset>(0,0,0)</offset> -->
+					<!-- </shadowData> -->
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/CaveLemming/CaveLemming</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.32, 0.35, 0.32)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

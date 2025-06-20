@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="BMT_Crystal_Building_Base" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<!-- <texPath>Things/Building/Ruins/AncientConcreteBarrier</texPath> -->
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<thingCategories Inherit="False"/>
+		<rotatable>false</rotatable>
+		<fillPercent>0.35</fillPercent>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+			<deconstructible>true</deconstructible>
+			<claimable>false</claimable>
+			<!-- <claimable>true</claimable> -->
+			<!-- <isNaturalRock>true</isNaturalRock> -->
+			<!-- <isEdifice>false</isEdifice> -->
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Stone_Small</destroySound>
+		</building>
+		<costList>
+			<!-- <Steel>15</Steel> -->
+		</costList>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+
+</Defs>

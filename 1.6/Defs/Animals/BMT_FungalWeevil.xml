@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- How big is it? Little bigger than a husky -->
+	<!-- What does it eat? (is it a predator?) Herbivore. -->
+	<!-- Where does it live? Fungal Forest -->
+	<!-- Does it spawn in packs? Packs of 2-3 -->
+	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weak chitin. Gives fungus as well as meat when butchered. -->
+
+
+	<ThingDef ParentName="BaseInsect">
+		<defName>BMT_FungalWeevil</defName>
+		<label>fungal weevil</label>
+		<description>Unlike normal fungal infestations within insects, this infestation has somehow grown into a healthy symbiosis. The insect's movements help to spread the fungal spores while its body provides the fungus a home. In return, the fungus helps its host hide within the fungal growths of the biome.</description>
+		<statBases>
+			<MoveSpeed>3.75</MoveSpeed>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>25</LeatherAmount>
+			<FilthRate>4</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+		</statBases>
+		<!-- <uiIconScale>1</uiIconScale> -->
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggFungalWeevilFertilized</eggFertilizedDef>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~3</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>BeetleLike</body>
+			<baseBodySize>0.5</baseBodySize>
+			<baseHungerRate>0.10</baseHungerRate>
+			<baseHealthScale>0.8</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>10</lifeExpectancy>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.2</wildness>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+			<trainability>None</trainability>
+			<roamMtbDays>4</roamMtbDays>
+			<leatherDef>BMT_WeakChitin</leatherDef>
+			<lifeStageAges>
+				<li>
+					<def>BMT_EusocialInsectNymphFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_EusocialInsectNymphSecond</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.12)</li>
+				<li>(0.07, 0, -0.05)</li>
+				<li>(0.0, 0, -0.08)</li>
+				<li>(-0.07, 0, -0.05)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<butcherProducts>
+			<RawFungus>12</RawFungus>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_FungalWeevil</defName>
+		<label>fungal weevil</label>
+		<race>BMT_FungalWeevil</race>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>0.65</ecoSystemWeight>
+		<wildGroupSize>2~3</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FungalWeevil/FungalWeevil</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.0</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FungalWeevil/Dessicated_FungalWeevil</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FungalWeevil/FungalWeevil</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.4</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FungalWeevil/Dessicated_FungalWeevil</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FungalWeevil/FungalWeevil</texPath>
+					<!-- <color>(176,150,106)</color> -->
+					<drawSize>1.8</drawSize>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/FungalWeevil/Dessicated_FungalWeevil</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggFungalWeevilFertilized</defName>
+		<label>fungal weevil egg (fert.)</label>
+		<description>A fertilized fungal weevil egg. If all goes well, it should hatch into a baby weevil. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(102,84,49)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>4</hatcherDaystoHatch>
+				<hatcherPawn>BMT_FungalWeevil</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

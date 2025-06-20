@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_GlacialHollows</defName>
+
+		<label>glacial hollows</label>
+
+		<biomeLabel operation="replace">glacial hollows</biomeLabel>
+		<biomeDescription operation="replace">Sitting within the sometimes kilometers thick ice of permanently frozen regions, these hollows have never seen warmth. Nearly every surface is made of solid ice, so dense and cold that they are impervious to heat, with any warmth quickly drawn away. Little life can survive here, but what does is unsurprisingly quite hardy.</biomeDescription>
+
+		<worldTileGraphicAtlas>
+			<texture>BMT_Caverns/World/Biomes/Atlas/GlacialHollows</texture>
+			<drawMode>HexAdjacencyCaves</drawMode>
+			<atlasSize>(4,4)</atlasSize>
+		</worldTileGraphicAtlas>
+
+		<worldTileConditions>
+			<anyOf>
+				<landform>CaveEntrance</landform>
+				<landform>SurfaceCave</landform>
+				<landform>SecludedValley</landform>
+				<landform>Sinkhole</landform>
+				<landform>BMT_Mineshaft</landform>
+			</anyOf>
+			<anyOf>
+				<biome>IceSheet</biome>
+				<biome MayRequire="sarg.alphabiomes">AB_PropaneLakes</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<worldTileOverrides>
+			<stoneTypes operation="add">
+				<li>BMT_IceWall</li>
+			</stoneTypes>
+		</worldTileOverrides>
+
+		<layers>
+			<li>
+
+				<id>inside</id>
+
+				<mapGridConditions>
+					<roof>RoofRockThick</roof>
+				</mapGridConditions>
+
+				<terrainOverrides>
+					<modifier>
+						<conditions>
+							<terrain>Ice</terrain>
+						</conditions>
+						<value>BMT_GlacialIce</value>
+					</modifier>
+				</terrainOverrides>
+
+				<applyToCaves>true</applyToCaves>
+
+				<animalDensity>3</animalDensity>
+				<plantDensity>1</plantDensity>
+				<wildPlantRegrowDays>20</wildPlantRegrowDays>
+
+				<wildPlants operation="replace">
+
+					<!-- ground cover -->
+					<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
+					<BMT_ReindeerMoss>0.5</BMT_ReindeerMoss>
+
+					<!-- mid sized -->
+					<BMT_CarveShroom>0.5</BMT_CarveShroom>
+					<BMT_Chubshroom>0.2</BMT_Chubshroom>
+					<BMT_FungalTendril>0.2</BMT_FungalTendril>
+					<BMT_Glittercap>0.1</BMT_Glittercap>
+					<BMT_RimeFlower>0.01</BMT_RimeFlower>
+
+					<!-- trees -->
+					<BMT_Frigu>0.5</BMT_Frigu>
+					<BMT_Curlbranch>0.1</BMT_Curlbranch>
+
+					<!-- other harvestable -->
+
+					<!-- hydrophytes -->
+
+					<!-- special -->
+
+				</wildPlants>
+
+				<wildAnimals operation="replace">
+
+					<!-- herbivores -->
+					<BMT_DepthsPenguin>0.2</BMT_DepthsPenguin>
+					<BMT_CaveLemming>0.4</BMT_CaveLemming>
+					<BMT_Snowstalker>0.35</BMT_Snowstalker>
+					<BMT_CryoMammoth>0.2</BMT_CryoMammoth>
+					<BMT_SilverSheep>0.3</BMT_SilverSheep>
+					<BMT_BushAntleredElk>0.5</BMT_BushAntleredElk>
+					<BMT_Pillbug>0.1</BMT_Pillbug>
+					<BMT_ChemSnail>0.025</BMT_ChemSnail>
+
+					<!-- predators -->
+					<BMT_WoollySpider>0.2</BMT_WoollySpider>
+					<BMT_Rimebeak>0.1</BMT_Rimebeak>
+
+					<!-- omnivore -->
+					<BMT_FrostFrog>0.7</BMT_FrostFrog>
+
+				</wildAnimals>
+
+			</li>
+
+			<li>
+
+				<id>outside</id>
+
+				<mapGridConditions>
+					<roof>Unroofed</roof>
+				</mapGridConditions>
+
+				<terrainOverrides>
+					<modifier>
+						<conditions>
+							<anyOf>
+								<terrain>Gravel</terrain>
+							</anyOf>
+						</conditions>
+						<value>Ice</value>
+					</modifier>
+				</terrainOverrides>
+
+			</li>
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_Poptop</defName>
+		<label>poptop</label>
+		<description>A spongy mushroom sprout that releases goo-covered spores when exposed to fire. These spores act much like water or firefoam.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Poptop</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<blockWind>false</blockWind>
+		<tickerType>Normal</tickerType>
+		<plant>
+			<growDays>1</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<fertilityMin>0.05</fertilityMin>
+			<visualSizeRange>0.5~1.2</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>10</wildClusterWeight>
+			<wildOrder>3</wildOrder>
+			<wildEqualLocalDistribution>true</wildEqualLocalDistribution>
+			<pollution>Any</pollution>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<blockAdjacentSow>false</blockAdjacentSow>
+			<harvestedThingDef Inherit="False" />
+			<harvestYield Inherit="False" />
+			<sowResearchPrerequisites  Inherit="False" >
+				<li>Firefoam</li>
+				<li>BMT_AdvancedFungi</li>
+			</sowResearchPrerequisites>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+		</plant>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<comps>
+			<li Class="BiomesCore.CompProperties_PlantProximityExplosive">
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<postExplosionSpawnThingDef>Filth_Water</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explosionEffect>ExtinguisherExplosion</explosionEffect>
+				<explosionSound>BMT_WaterSplash</explosionSound>
+				<proxiTarget>Fire</proxiTarget>
+				<proxiRadius>4.9</proxiRadius>
+				<growthProgress>0.6</growthProgress>
+				<growthAfterExplosion>0.4</growthAfterExplosion>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

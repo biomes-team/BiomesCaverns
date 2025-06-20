@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_CrystalCaverns"]/wildAnimals</xpath>
+		<value>
+			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
+			<AA_Aerofleet>0.03</AA_Aerofleet>
+			<AA_Blizzarisk>0.01</AA_Blizzarisk>
+			<AA_DuskRat>0.05</AA_DuskRat>
+			<AA_GreatDevourer>0.005</AA_GreatDevourer>
+			<AA_Groundrunner>0.01</AA_Groundrunner>
+			<AA_LarvalAtispec>0.005</AA_LarvalAtispec>
+			<AA_Radyak>0.005</AA_Radyak>
+			<AA_Slurrypede>0.01</AA_Slurrypede>
+			<AA_Terramorph>0.01</AA_Terramorph>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_EarthenDepths"]/wildAnimals</xpath>
+		<value>
+			<AA_Aerofleet>0.01</AA_Aerofleet>
+			<AA_ChemfuelMyrmidon>0.03</AA_ChemfuelMyrmidon>
+			<AA_Cinderlisk>0.01</AA_Cinderlisk>
+			<AA_Metallovore>0.01</AA_Metallovore>
+			<AA_Slurrypede>0.01</AA_Slurrypede>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_FungalForest"]/wildAnimals</xpath>
+		<value>
+			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
+			<AA_Aerofleet>0.03</AA_Aerofleet>
+			<AA_Agaripawn>0.03</AA_Agaripawn>
+			<AA_Agaripod>0.01</AA_Agaripod>
+			<AA_CrepuscularBeetle>0.02</AA_CrepuscularBeetle>
+			<AA_DuskRat>0.05</AA_DuskRat>
+			<AA_Feralisk>0.01</AA_Feralisk>
+			<AA_GreatDevourer>0.005</AA_GreatDevourer>
+			<AA_Groundrunner>0.08</AA_Groundrunner>
+			<AA_Slurrypede>0.01</AA_Slurrypede>
+			<AA_TeratogenicOriginator>0.005</AA_TeratogenicOriginator>
+			<AA_Terramorph>0.01</AA_Terramorph>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeVariantDef[defName="BMT_GlacialHollows"]/layers/li/wildAnimals</xpath>
+		<value>
+			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
+			<AA_DuskRat>0.03</AA_DuskRat>
+			<AA_FrostboundBehemoth>0.02</AA_FrostboundBehemoth>
+			<AA_Frostling>0.005</AA_Frostling>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeVariantDef[defName="BMT_DesertShallows"]/layers/li/wildAnimals</xpath>
+		<value>
+			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
+			<AA_DuskRat>0.03</AA_DuskRat>
+			<AA_Groundrunner>0.2</AA_Groundrunner>
+			<AA_LarvalAtispec>0.005</AA_LarvalAtispec>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeVariantDef[defName="BMT_ShallowCave"]/layers/li/wildAnimals</xpath>
+		<value>
+			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
+			<AA_DuskRat>0.03</AA_DuskRat>
+			<AA_Groundrunner>0.2</AA_Groundrunner>
+			<AA_LarvalAtispec>0.005</AA_LarvalAtispec>
+		</value>
+	</Operation>
+
+</Patch>

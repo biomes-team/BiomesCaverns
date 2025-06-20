@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BMT_Crystal_Plant_Base">
+		<defName>BMT_Crystal_BlueSowable</defName>
+		<label>fast growing crystal</label>
+		<description>Unlike its more unstable counterparts, this crystals grows very fast and does not explode when damaged. However, in this regard, they require fertile soil.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Crystals/BlueMedium</texPath>
+		</graphicData>
+		<tickerType>Long</tickerType>
+		<pathCost>1</pathCost>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+		</statBases>
+		<plant>
+			<immatureGraphicPath>BMT_Caverns/Things/Crystals/BlueSmall</immatureGraphicPath>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
+			<harvestedThingDef>BMT_ResourceBlueCrystal</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<growDays>33.3</growDays>
+			<harvestTag>Standard</harvestTag>
+			<fertilityMin>0.0</fertilityMin>
+			<sowMinSkill>7</sowMinSkill>
+			<!-- <wildClusterRadius>0</wildClusterRadius> -->
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.75</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+			<!-- <li Class="BMT.CompProperties_ThingDefReplacer"> -->
+			<!-- <evolveIntoThingDef>BMT_Crystal_BlueMedium</evolveIntoThingDef> -->
+			<!-- <spawnIntervalRange><min>1200000</min><max>3600000</max></spawnIntervalRange> -->
+			<!-- </li> -->
+		</comps>
+	</ThingDef>
+
+</Defs>

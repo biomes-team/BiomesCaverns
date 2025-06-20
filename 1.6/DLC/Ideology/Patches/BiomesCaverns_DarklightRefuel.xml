@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<!-- (78, 226, 229, 0) -->
+		<xpath>Defs/ThingDef[defName="Darktorch" or defName="DarktorchFungus" or defName="DarklightBrazier" or
+			defName="Stone_DarklightCampfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>BMT_MushroomLog</li>
+		</value>
+	</Operation>
+</Patch>

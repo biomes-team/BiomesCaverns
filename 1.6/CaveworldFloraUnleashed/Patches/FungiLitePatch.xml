@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Fungi lite</li>
+        </mods>
+		<success>Always</success>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FUNGI_PLANT_DEF"]</xpath>
+			<value>
+				<ThingDef ParentName="BMT_CaveWorldMushroomBase" Class="Caveworld_Flora_Unleashed.ThingDef_FruitingBody">
+					<defName>FUNGI_PLANT_DEF</defName>
+					<label>Fungi Shroom</label>
+					<description>Due to their genetics, Fungi can also reproduce asexually. A Full grown Fungi will step out of his birthshroom</description>
+					<statBases>
+					  <MaxHitPoints>120</MaxHitPoints>
+					  <Nutrition>0.3</Nutrition>
+					</statBases>
+					<graphicData>
+					  <texPath>FungiPlant/Plant</texPath>
+					  <graphicClass>Graphic_Random</graphicClass>
+					</graphicData>
+					<selectable>true</selectable>
+					<pathCost>20</pathCost>
+					<ingestible />
+					<plant>
+						<growDays>10</growDays>
+						<dieIfLeafless>true</dieIfLeafless>
+						<harvestTag>Standard</harvestTag>
+					  <harvestedThingDef>RawFungus</harvestedThingDef>
+						<harvestYield>1</harvestYield>
+						<sowMinSkill>1</sowMinSkill>
+					  <sowTags>
+							<li>Ground</li>
+						</sowTags>
+						<topWindExposure>0.1</topWindExposure>
+					  <immatureGraphicPath>FungiPlant/Immature</immatureGraphicPath>
+					  <visualSizeRange>0.35~2</visualSizeRange>
+						<wildOrder>2</wildOrder>
+					  <purpose>Food</purpose>
+					</plant>
+				<comps>
+				<li Class="CompPawnGrower.CompProperties_PawnGrower">
+						<canspawn>true</canspawn>
+						<spawnwild>false</spawnwild>
+						<spawnChance>0.9</spawnChance>
+						<Races>
+										<Alien_Fungi>8</Alien_Fungi>
+						</Races>
+					  </li>
+				  </comps>
+					<minGrowTemperature>5</minGrowTemperature>
+					<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
+					<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
+					<maxGrowTemperature>40</maxGrowTemperature>
+					<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
+					<growOnlyUndeRoof>true</growOnlyUndeRoof>
+					<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
+					<minFertility>0.0</minFertility>
+					<maxFertility>999.0</maxFertility>
+					<minLight>0.0</minLight>
+					<maxLight>0.6</maxLight>
+					<MyceliumAbundance>0</MyceliumAbundance>
+					<MyceliumSizeRange>
+						<min>4</min>
+						<max>7</max>
+					</MyceliumSizeRange>
+					<MyceliumSpawnRadius>2.0</MyceliumSpawnRadius>
+					<MyceliumExclusivityRadiusOffset>5</MyceliumExclusivityRadiusOffset>
+					<MyceliumExclusivityRadiusFactor>2</MyceliumExclusivityRadiusFactor>
+				</ThingDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

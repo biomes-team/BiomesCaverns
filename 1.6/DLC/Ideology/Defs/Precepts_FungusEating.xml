@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef>
+	<defName>BMT_FungusEating_DontCare</defName>
+	<issue>FungusEating</issue>
+	<label>don`t care</label>
+	<description>Fungus isn't disgusting, but it's not great either.</description>
+	<impact>Low</impact>
+	<displayOrderInIssue>5</displayOrderInIssue>
+	<displayOrderInImpact>100</displayOrderInImpact>
+	<!-- <requiredMemes> -->
+	  <!-- <li>Tunneler</li> -->
+	<!-- </requiredMemes> -->
+	<comps>
+	  <!-- good thoughts -->
+	  <!-- <li Class="PreceptComp_SelfTookMemoryThought"> -->
+		<!-- <eventDef>AteFungus</eventDef> -->
+		<!-- <thought>AteFungus_Preferred</thought> -->
+	  <!-- </li> -->
+	  <!-- <li Class="PreceptComp_SelfTookMemoryThought"> -->
+		<!-- <eventDef>AteFungusAsIngredient</eventDef> -->
+		<!-- <thought>AteFungusAsIngredient_Preferred</thought> -->
+	  <!-- </li> -->
+	  <!-- bad thoughts -->
+	  <!-- <li Class="PreceptComp_SelfTookMemoryThought"> -->
+		<!-- <eventDef>AteNonFungusPlant</eventDef> -->
+		<!-- <thought>AteNonFungusPlant_Despised</thought> -->
+	  <!-- </li> -->
+	  <!-- <li Class="PreceptComp_SelfTookMemoryThought"> -->
+		<!-- <eventDef>AteNonFungusMealWithPlants</eventDef> -->
+		<!-- <thought>AteNonFungusMealWithPlants_Despised</thought> -->
+	  <!-- </li> -->
+	</comps>
+  </PreceptDef>
+
+</Defs>

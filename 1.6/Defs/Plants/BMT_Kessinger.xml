@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_KessingerPlant</defName>
+		<label>kessinger</label>
+		<description>A very tough frill-like fungus. It is largely inedible to humans, but its tough fruiting body can be eaten by animals.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Kessinger</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.2, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>18</pathCost>
+		<ingestible/>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<fertilityMin>0.1</fertilityMin>
+			<growDays>3</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/Kessinger</immatureGraphicPath>
+			<topWindExposure>0</topWindExposure>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_Kessinger</harvestedThingDef>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<purpose>Food</purpose>
+			<humanFoodPlant>false</humanFoodPlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<!-- fruit -->
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>BMT_Kessinger</defName>
+		<label>kessinger</label>
+		<description>Nutrient-rich fungal body, harvested and compacted for storage. Kessinger is good animal feed, but inedible for humans.</description>
+		<stackLimit>200</stackLimit>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/Kessinger/Kessinger</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.6</MarketValue>
+			<Mass>0.015</Mass>
+			<Flammability>1.5</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<ingestible>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+	</ThingDef>
+</Defs>

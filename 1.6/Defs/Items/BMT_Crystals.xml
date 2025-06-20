@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StuffAppearanceDef>
+		<defName>BMT_AppearanceCrystal</defName>
+	</StuffAppearanceDef>
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>BMT_ResourceBlueCrystal</defName>
+		<label>blue crystal</label>
+		<description>Blue crystal mined from crystal caves.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/BlueCrystal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+			<Beauty>4</Beauty>
+			<ConstructionSpeedFactor>0.7</ConstructionSpeedFactor>
+			<Mass>1</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stuffProps>
+			<color>(106,173,222)</color>
+			<commonality>0</commonality>
+			<appearance>BMT_AppearanceCrystal</appearance>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<stuffAdjective>crystalline</stuffAdjective>
+			<statFactors>
+				<Beauty>1.25</Beauty>
+				<MarketValue>0.6</MarketValue>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToBuild>6.5</WorkToBuild>
+				<WorkToMake>1.4</WorkToMake>
+				<DoorOpenSpeed>0.5</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>1.20</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+		</stuffProps>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.75</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

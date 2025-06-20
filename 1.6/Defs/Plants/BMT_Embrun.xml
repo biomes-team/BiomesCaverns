@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<growingHours>0.6~0.1</growingHours>
+			</li>
+		</modExtensions>
+		<defName>BMT_Embrun</defName>
+		<label>embrun</label>
+		<description>A strong brown mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Embrun</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+			<growDays>12</growDays>
+			<topWindExposure>0</topWindExposure>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>700</harvestWork>
+			<harvestYield>25</harvestYield>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+		</plant>
+	</ThingDef>
+</Defs>

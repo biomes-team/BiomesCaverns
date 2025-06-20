@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_Skulltop</defName>
+		<label>skulltop</label>
+		<description>An extremely deadly mushroom that steadily releases polluting toxic spores into the air. These spores rapidly produce toxic buildup in creatures not immune to poisons.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Skulltop/Skulltop</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<pathCost>60</pathCost>
+		<blockWind>false</blockWind>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>8</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<soundHarvesting>Harvest_Standard</soundHarvesting>
+			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+			<visualSizeRange>0.3~0.7</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>500</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<neverBlightable>true</neverBlightable>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+			<growMinGlow>0</growMinGlow>
+			<!-- <harvestTag Inherit="False"/> -->
+			<!-- <harvestedThingDef Inherit="False"/> -->
+			<!-- <harvestYield Inherit="False"/> -->
+			<!-- <burnedThingDef Inherit="False"/> -->
+			<!-- <smashedThingDef Inherit="False"/> -->
+			<!-- <choppedThingDef Inherit="False"/> -->
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<dieFromToxicFallout>False</dieFromToxicFallout>
+			<pollution>Any</pollution>
+		</plant>
+		<selectable>true</selectable>
+		<!-- <neverMultiSelect>false</neverMultiSelect> -->
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<!-- <rotatable>false</rotatable> -->
+		<comps>
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech" Class="BiomesCore.CompProperties_PlantPolluteOverTime"> -->
+				<!-- <cellsToPollutePerDay>6</cellsToPollutePerDay> -->
+				<!-- <growthProgress>1</growthProgress> -->
+			<!-- </li> -->
+			<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
+				<moteDef>Mote_SkulltopSpores</moteDef>
+				<hediffDef>BMT_HediffSkulltopSpores</hediffDef>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+				<cellsToFill>2</cellsToFill>
+				<baseSeverity>0.2</baseSeverity>
+				<growthProgress>0.1</growthProgress>
+				<statDef>ToxicResistance</statDef>
+			</li>
+		</comps>
+		<!-- Sergkart: I don't understand what this piece of code is for. Skulltop grows well without it. -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl"> -->
+				<!-- <growingHours>0.01~0.99</growingHours> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</ThingDef>
+
+	<!--=============== Puffs ==============-->
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_SkulltopSpores</defName>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Mote/BMT_BadSpores</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>10</fadeInTime>
+			<solidTime>15</solidTime>
+			<fadeOutTime>10</fadeOutTime>
+			<growthRate>0.05</growthRate>
+		</mote>
+	</ThingDef>
+
+	<!--=============== High on Spores ==============-->
+
+  <HediffDef ParentName="DiseaseBase">
+	<defName>BMT_HediffSkulltopSpores</defName>
+	<label>skulltop spores</label>
+	<description>The toxic spores of the fungus settled in the creature's lungs. Prolonged exposure can be fatal.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+	<lethalSeverity>1</lethalSeverity>
+	<makesSickThought>true</makesSickThought>
+	<scenarioCanAdd>true</scenarioCanAdd>
+	<taleOnVisible>ToxicityRevealed</taleOnVisible>
+	<comps>
+	  <li Class="HediffCompProperties_Immunizable">
+		<compClass>HediffComp_ImmunizableToxic</compClass>
+		<severityPerDayNotImmune>-0.08</severityPerDayNotImmune>
+	  </li>
+	</comps>
+	<stages>
+	  <li>
+		<label>initial</label>
+		<becomeVisible>false</becomeVisible>
+	  </li>
+	  <li>
+		<label>initial</label>
+		<minSeverity>0.04</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.05</offset>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>minor</label>
+		<minSeverity>0.2</minSeverity>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.10</offset>
+		  </li>
+		</capMods>
+	  </li>
+	  <li>
+		<label>moderate</label>
+		<minSeverity>0.40</minSeverity>
+		<vomitMtbDays>5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.15</offset>
+		  </li>
+		</capMods>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+			<hediff>Asthma</hediff>
+			<mtbDays>146</mtbDays>
+			<partsToAffect>
+			  <li>Lung</li>
+			</partsToAffect>
+		  </li>
+		</hediffGivers>
+	  </li>
+	  <li>
+		<label>serious</label>
+		<minSeverity>0.60</minSeverity>
+		<vomitMtbDays>1</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-0.25</offset>
+		  </li>
+		</capMods>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+			<hediff>Asthma</hediff>
+			<mtbDays>37</mtbDays>
+			<partsToAffect>
+			  <li>Lung</li>
+			</partsToAffect>
+		  </li>
+		</hediffGivers>
+	  </li>
+	  <li>
+		<label>extreme</label>
+		<minSeverity>0.80</minSeverity>
+		<vomitMtbDays>0.5</vomitMtbDays>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<setMax>0.25</setMax>
+		  </li>
+		</capMods>
+		<hediffGivers>
+		  <li Class="HediffGiver_Random">
+			<hediff>Asthma</hediff>
+			<mtbDays>13</mtbDays>
+			<partsToAffect>
+			  <li>Lung</li>
+			</partsToAffect>
+		  </li>
+		</hediffGivers>
+	  </li>
+	</stages>
+  </HediffDef>
+</Defs>

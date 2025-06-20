@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Hive"]/comps</xpath>
+		<value>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompAnimalsAroundThing">
+				<pawnDef>BMT_Jellypot</pawnDef>
+				<pawnCount>1</pawnCount>
+				<pawnSpawnIntervalDays>1.6~2.2</pawnSpawnIntervalDays>
+				<spawnSound>Hive_Spawn</spawnSound>
+			</li>
+		</value>
+	</Operation>
+</Patch>
