@@ -8,9 +8,9 @@
 	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weaker leather. Not very strong. High nuzzle chance. -->
 
 	<ThingDef ParentName="BaseInsect">
-		<defName>BMT_WoollySpider</defName>
-		<label>woolly spider</label>
-		<description>Engineered for the freezing cold tunnels and caverns found in areas that never see a summer, the fuzz that grows on these beastly spiders can be sheared off periodically. It is near identical to muffalo wool. While generally peaceful, these spiders are antisocial and are known to attack when enraged.</description>
+		<defName>BMT_FrostweaverSpider</defName>
+		<label>frostweaver</label>
+		<description>Engineered for the freezing cold tunnels and caverns found in areas that never see a summer, the fuzz that grows on these beastly spiders forms into icy peaks. These spiders are antisocial and are known to attack when enraged.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>400</MarketValue>
@@ -69,16 +69,11 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggWoollySpiderFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggFrostweaverSpiderFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
 				<eggLayIntervalDays>18</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
-			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>WoolMuffalo</woolDef>
-				<shearIntervalDays>15</shearIntervalDays>
-				<woolAmount>120</woolAmount>
 			</li>
 		</comps>
 		<tradeTags>
@@ -137,9 +132,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_WoollySpider</defName>
-		<label>woolly spider</label>
-		<race>BMT_WoollySpider</race>
+		<defName>BMT_FrostweaverSpider</defName>
+		<label>frostweaver</label>
+		<race>BMT_FrostweaverSpider</race>
 		<combatPower>150</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1.2</ecoSystemWeight>
@@ -147,7 +142,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoollySpider/WoollySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Frostweaver/Frostweaver</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>1.5</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -157,13 +152,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoollySpider/Dessicated_WoollySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Frostweaver/Dessicated_Frostweaver</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoollySpider/WoollySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Frostweaver/Frostweaver</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>2.25</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -173,13 +168,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoollySpider/Dessicated_WoollySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Frostweaver/Dessicated_Frostweaver</texPath>
 					<drawSize>2.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoollySpider/WoollySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Frostweaver/Frostweaver</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>3.25</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -189,16 +184,16 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/WoollySpider/Dessicated_WoollySpider</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Frostweaver/Dessicated_Frostweaver</texPath>
 					<drawSize>3.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggWoollySpiderFertilized</defName>
-		<label>woolly spider egg (fert.)</label>
-		<description>A woolly spider egg. If all goes well, it should hatch into a fuzzy baby spider. It can be eaten raw, but it's much better cooked.</description>
+		<defName>BMT_EggFrostweaverSpiderFertilized</defName>
+		<label>frostweaver spider egg (fert.)</label>
+		<description>A frostweaver spider egg. If all goes well, it should hatch into a fuzzy baby spider. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
 			<drawSize>0.85</drawSize>
@@ -209,7 +204,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>BMT_WoollySpider</hatcherPawn>
+				<hatcherPawn>BMT_FrostweaverSpider</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

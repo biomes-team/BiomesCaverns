@@ -8,7 +8,7 @@
 	<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Tough leather. Cannot "fly" but instead walks on its wings and uses them in stunning attacks. -->
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_Woolybat</defName>
+		<defName>BMT_Woollybat</defName>
 		<label>woolly bat</label>
 		<description>These large bats have been farmed for their wool-like fur for generations. They were selectively bred to be flightless to make wool gathering easier. Their livable temperature range is shockingly wide.</description>
 		<statBases>
@@ -144,16 +144,16 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Woolybat</defName>
-		<label>wooly bat</label>
-		<race>BMT_Woolybat</race>
+		<defName>BMT_Woollybat</defName>
+		<label>woolly bat</label>
+		<race>BMT_Woollybat</race>
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>4</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Woolybat/Woolybat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Woollybat/Woollybat</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>1.5</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -163,13 +163,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Woolybat/Dessicated_Bat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Woollybat/Dessicated_Woollybat</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Woolybat/Woolybat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Woollybat/Woollybat</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>1.8</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -179,13 +179,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Woolybat/Dessicated_Bat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Woollybat/Dessicated_Woollybat</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Woolybat/Woolybat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Woollybat/Woollybat</texPath>
 					<!-- <color>(176,150,106)</color> -->
 					<drawSize>2.6</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -195,7 +195,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Woolybat/Dessicated_Bat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Woollybat/Dessicated_Woollybat</texPath>
 					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

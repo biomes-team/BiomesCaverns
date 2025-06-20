@@ -168,7 +168,7 @@
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggGlarralPenguinFertilized</defName>
-		<label>depths penguin egg (fert.)</label>
+		<label>glarral penguin egg (fert.)</label>
 		<description>A fertilized depths penguin egg. If all goes well, it should hatch into a baby depths penguin.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
@@ -182,7 +182,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>BMT_DepthsPenguin</hatcherPawn>
+				<hatcherPawn>BMT_GlarralPenguin</hatcherPawn>
 			</li>
 		</comps>
 		<ingestible>
