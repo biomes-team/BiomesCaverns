@@ -51,7 +51,7 @@ namespace BiomesCaverns
 			{
 				for (int k = 0; k < affectedMaps.Count; k++)
 				{
-					overlays[j].TickOverlay(affectedMaps[k]);
+					overlays[j].TickOverlay(affectedMaps[k], 1f);
 				}
 			}
 		}

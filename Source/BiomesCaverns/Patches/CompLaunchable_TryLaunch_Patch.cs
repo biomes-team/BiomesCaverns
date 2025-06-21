@@ -19,7 +19,7 @@ namespace BiomesCaverns.Patches
 		{
 			return instance.parent.def == BC_DefOf.BMT_DrillPod
 				? BC_DefOf.BMT_TravelingDrillPods
-				: WorldObjectDefOf.TravelingTransportPods;
+				: WorldObjectDefOf.TravellingTransporters;
 		}
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
@@ -30,7 +30,7 @@ namespace BiomesCaverns.Patches
 				AccessTools.Method(typeof(CompLaunchable_TryLaunch_Patch), nameof(GetActiveDropPodDef));
 
 			FieldInfo TravelingTransportPodsField =
-				AccessTools.Field(typeof(WorldObjectDefOf), nameof(WorldObjectDefOf.TravelingTransportPods));
+				AccessTools.Field(typeof(WorldObjectDefOf), nameof(WorldObjectDefOf.TravellingTransporters));
 			MethodInfo GetWorldObjectDefMethod =
 				AccessTools.Method(typeof(CompLaunchable_TryLaunch_Patch), nameof(GetWorldObjectDef));
 
