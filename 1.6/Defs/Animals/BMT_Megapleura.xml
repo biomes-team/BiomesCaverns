@@ -139,7 +139,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_MegapleuraEggFertilized</defName>
+		<defName>BMT_EggMegapleuraFertilized</defName>
 		<label>megapleura egg (fert.)</label>
 		<description>A fertilized megapleura egg. If all goes well, it should hatch into a baby megapleura. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -158,4 +158,17 @@
 		</comps>
 	</ThingDef>
 
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggMegapleuraUnfertilized</defName>
+		<label>megapleura egg (unfert.)</label>
+		<description>An unfertilized megapleura egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(104,168,141)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

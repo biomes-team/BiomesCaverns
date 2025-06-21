@@ -70,13 +70,6 @@
 			</headPosPerRotation>
 		</race>
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggPodWormFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>4</eggFertilizationCountMax>
-				<eggLayIntervalDays>5</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1~2</eggCountRange>
-			</li>
 			<li Class="CompProperties_Milkable">
 				<milkDef>BMT_GlowGoo</milkDef>
 				<milkIntervalDays>1</milkIntervalDays>
@@ -174,22 +167,5 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggPodWormFertilized</defName>
-		<label>pod worm egg (fert.)</label>
-		<description>A pod worm egg. If all goes well, it should hatch into a baby pod worm. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
-			<drawSize>0.85</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>40.0</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>1</hatcherDaystoHatch>
-				<hatcherPawn>BMT_PodWorm</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
+	
 </Defs>

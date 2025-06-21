@@ -355,5 +355,19 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+			<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggMossBeetleUnfertilized</defName>
+		<label>moss beetle egg (unfert.)</label>
+		<description>An unfertilized moss beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(108,125,127)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.0</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>
 

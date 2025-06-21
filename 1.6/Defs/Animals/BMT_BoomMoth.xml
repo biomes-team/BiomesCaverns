@@ -363,4 +363,18 @@
 			<preferability>DesperateOnly</preferability>
 		</ingestible>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggBoomapillarUnfertilized</defName>
+		<label>boomapillar egg (unfert.)</label>
+		<description>An unfertilized boomapillar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(245,215,155)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

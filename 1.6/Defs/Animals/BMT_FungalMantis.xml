@@ -198,7 +198,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_FungalMantisEggFertilized</defName>
+		<defName>BMT_EggFungalMantisFertilized</defName>
 		<label>fungal mimic mantis egg (fert.)</label>
 		<description>A fertilized fungal mantis egg. If all goes well, it should hatch into a mantis larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -215,6 +215,21 @@
 				<hatcherPawn>BMT_FungalMantis</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggFungalMantisUnfertilized</defName>
+		<label>fungal mimic mantis egg (unfert.)</label>
+		<description>An unfertilized fungal mimic mantis egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(199,124,60)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceVerbBase">

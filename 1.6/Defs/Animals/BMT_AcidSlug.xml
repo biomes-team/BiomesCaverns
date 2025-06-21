@@ -168,6 +168,20 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggAcidSlugUnfertilized</defName>
+		<label>acid slug egg (unfert.)</label>
+		<description>An unfertilized acid slug egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(245,178,180)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 	<ThingDef ParentName="BaseFilth">
 		<defName>BMT_Filth_Acidic_Snail_Slime</defName>

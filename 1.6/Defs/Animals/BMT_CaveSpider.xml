@@ -214,6 +214,19 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggCaveSpiderUnfertilized</defName>
+		<label>cave spider egg (unfert.)</label>
+		<description>An unfertilized cave spider egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_SpiderSilk</defName>

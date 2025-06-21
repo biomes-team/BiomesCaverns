@@ -206,6 +206,20 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+			<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggMetalloSnailUnfertilized</defName>
+		<label>metallo snail egg (unfert.)</label>
+		<description>An unfertilized metallo snail egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(92,74,39)</color>
+			<drawSize>1.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 	<ThingDef ParentName="BaseFilth">
 		<defName>BMT_Filth_Snail_FireFoam</defName>

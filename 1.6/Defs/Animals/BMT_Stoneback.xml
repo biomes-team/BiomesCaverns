@@ -170,5 +170,19 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+			<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggStonebackUnfertilized</defName>
+		<label>stoneback egg (unfert.)</label>
+		<description>An unfertilized stoneback egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(220,202,183)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 </Defs>

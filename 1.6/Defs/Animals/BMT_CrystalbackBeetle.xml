@@ -362,7 +362,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>61</MarketValue>
+			<MarketValue>60</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -370,5 +370,19 @@
 				<hatcherPawn>BMT_CrystalBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggCrystalbackBeetleUnfertilized</defName>
+		<label>crystalback beetle egg (unfert.)</label>
+		<description>An unfertilized crystalback beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(95,161,210)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>30.0</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

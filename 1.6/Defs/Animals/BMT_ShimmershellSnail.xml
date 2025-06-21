@@ -176,7 +176,7 @@
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>23.0</MarketValue>
+			<MarketValue>25.0</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<comps>
@@ -185,5 +185,19 @@
 				<hatcherPawn>BMT_ShimmershellSnail</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+			<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggShimmershellSnailUnfertilized</defName>
+		<label>shimmershell snail egg (unfert.)</label>
+		<description>An unfertilized shimmershell snail egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(128,216,216)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

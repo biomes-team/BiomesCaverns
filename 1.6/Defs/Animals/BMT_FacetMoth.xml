@@ -322,7 +322,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_FacetMothEggFertilized</defName>
+		<defName>BMT_EggFacetMothFertilized</defName>
 		<label>facet moth egg (fert.)</label>
 		<description>A fertilized facet moth egg. If all goes well, it should hatch into a facet larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -339,6 +339,21 @@
 				<hatcherPawn>BMT_FacetMothLarvae</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggFacetMothUnfertilized</defName>
+		<label>facet moth egg (unfert.)</label>
+		<description>An unfertilized facet moth egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(220,202,183)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 
 </Defs>

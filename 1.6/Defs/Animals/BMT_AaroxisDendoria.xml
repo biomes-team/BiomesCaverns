@@ -369,6 +369,20 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggAaroxisDendoriaUnfertilized</defName>
+		<label>aaroxis dendoria egg (unfert.)</label>
+		<description>An unfertilized aaroxis dendoria egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(117,63,63)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+		</statBases>
+	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
         <defName>BMT_CrimsonSilk</defName>
         <label>crimson silk</label>

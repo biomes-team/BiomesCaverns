@@ -38,7 +38,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Batbird</defName>
 		<label>batbird</label>
-		<description>It's a flappy herbivorous mammal. These bats flit around within the dark, using their sense of echolocation to locate prey, often small insects or mammals.</description>
+		<description>A hybrid of bat and bird adapted to shallow desert caves. It feeds on small prey and gives live birth.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>95</MarketValue>
@@ -235,5 +235,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	
 
 </Defs>

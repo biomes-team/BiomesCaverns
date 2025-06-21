@@ -361,7 +361,7 @@
   </PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_FoundryBeetleEggFertilized</defName>
+		<defName>BMT_EggFoundryBeetleFertilized</defName>
 		<label>foundry beetle egg (fert.)</label>
 		<description>A fertilized foundry beetle egg. If all goes well, it should hatch into a baby foundry beetle. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -378,6 +378,21 @@
 				<hatcherPawn>BMT_FoundryBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggFoundryBeetleUnfertilized</defName>
+		<label>foundry beetle egg (unfert.)</label>
+		<description>An unfertilized foundry beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(181,47,32)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 
 </Defs>

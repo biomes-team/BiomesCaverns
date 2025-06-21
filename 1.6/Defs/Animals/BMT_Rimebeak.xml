@@ -198,4 +198,17 @@
 		</ingestible>
 	</ThingDef>
 
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggRimebeakUnfertilized</defName>
+		<label>rimebeak egg (unfert.)</label>
+		<description>An unfertilized rimebeak egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(139,82,80)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15.0</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

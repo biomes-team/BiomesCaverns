@@ -196,7 +196,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_MaceDrakeEggFertilized</defName>
+		<defName>BMT_EggMaceDrakeFertilized</defName>
 		<label>mace drake egg (fert.)</label>
 		<description>A fertilized mace drake egg. If all goes well, it should hatch into a baby drake. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -214,6 +214,21 @@
 				<hatcherPawn>BMT_MaceDrake</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggMaceDrakeUnfertilized</defName>
+		<label>mace drake egg (unfert.)</label>
+		<description>An unfertilized mace drake egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/OwlbearEggs</texPath>
+			<color>(206,160,113)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 
 </Defs>

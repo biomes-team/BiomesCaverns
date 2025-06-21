@@ -170,5 +170,19 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggImperialToadUnfertilized</defName>
+		<label>imperial toad egg (unfert.)</label>
+		<description>An unfertilized imperial toad egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 </Defs>

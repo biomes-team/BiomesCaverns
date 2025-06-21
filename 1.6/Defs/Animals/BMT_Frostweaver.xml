@@ -196,7 +196,7 @@
 		<description>A frostweaver spider egg. If all goes well, it should hatch into a fuzzy baby spider. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
-			<drawSize>0.85</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>30.0</MarketValue>
@@ -207,6 +207,20 @@
 				<hatcherPawn>BMT_FrostweaverSpider</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggFrostweaverSpiderUnfertilized</defName>
+		<label>frostweaver spider egg (unfert.)</label>
+		<description>An unfertilized frostweaver spider egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/SpiderEggs</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>15.0</MarketValue>
+		</statBases>
 	</ThingDef>
 
 </Defs>

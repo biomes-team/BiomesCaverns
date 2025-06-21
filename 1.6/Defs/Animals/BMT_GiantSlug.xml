@@ -150,7 +150,7 @@
 		<description>An unfertilized giant slug egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
-			<color>(102,84,49)</color>
+			<color>(99,127,60)</color>
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>

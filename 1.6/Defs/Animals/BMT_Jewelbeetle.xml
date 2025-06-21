@@ -346,7 +346,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>61</MarketValue>
+			<MarketValue>20</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -354,5 +354,20 @@
 				<hatcherPawn>BMT_JewelBeetleLarvae</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggJewelBeetleUnfertilized</defName>
+		<label>jewel beetle egg (unfert.)</label>
+		<description>An unfertilized jewel beetle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(17,136,95)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

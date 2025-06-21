@@ -147,4 +147,18 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+			<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggSandpillarUnfertilized</defName>
+		<label>sandpillar egg (unfert.)</label>
+		<description>An unfertilized sandpillar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(137,116,97)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

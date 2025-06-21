@@ -131,6 +131,18 @@
 			</li>
 		</comps>
 	</ThingDef>
-	-->
+	
+			<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggCactusCrabUnfertilized</defName>
+		<label>cactus crab egg (unfert.)</label>
+		<description>An unfertilized cactus crab egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 </Defs>

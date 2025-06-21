@@ -188,5 +188,20 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+		</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggFungalWeevilUnfertilized</defName>
+		<label>fungal weevil egg (unfert.)</label>
+		<description>An unfertilized fungal weevil egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<color>(92,74,39)</color>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+	</ThingDef>
 
 </Defs>

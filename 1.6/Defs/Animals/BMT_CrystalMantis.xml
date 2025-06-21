@@ -200,7 +200,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_MimicMantisEggFertilized</defName>
+		<defName>BMT_EggMimicMantisFertilized</defName>
 		<label>crystal mimic mantis egg (fert.)</label>
 		<description>A fertilized crystal mantis egg. If all goes well, it should hatch into a mantis larvae. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -217,6 +217,20 @@
 				<hatcherPawn>BMT_CrystalMantis</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggMimicMantisUnfertilized</defName>
+		<label>crystal mimic mantis egg (unfert.)</label>
+		<description>An unfertilized crystal mimic mantis egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(125,188,235)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+		</statBases>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceVerbBase">
