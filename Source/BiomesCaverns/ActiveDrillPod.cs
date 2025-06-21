@@ -2,24 +2,16 @@
 
 namespace BiomesCaverns
 {
-	public class ActiveDrillPod : ActiveDropPod
+	public class ActiveDrillPod : ActiveTransporter
 	{
-		public override void Tick()
+		protected override void Tick()
 		{
-			if (contents == null)
+			if (Contents != null)
 			{
-				return;
-			}
+                Contents.innerContainer.DoTick();
+            }
 
-			contents.innerContainer.ThingOwnerTick();
-			if (Spawned)
-			{
-				age++;
-				if (age > contents.openDelay)
-				{
-					PodOpen();
-				}
-			}
+			base.Tick();
 		}
 	}
 }

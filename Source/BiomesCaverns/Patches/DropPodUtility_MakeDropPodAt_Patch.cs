@@ -9,7 +9,7 @@ namespace BiomesCaverns.Patches
 	[HarmonyPatch(typeof(DropPodUtility), nameof(DropPodUtility.MakeDropPodAt))]
 	public static class DropPodUtility_MakeDropPodAt_Patch
 	{
-		private static bool ShouldCreateDrillpod(IntVec3 cell, Map map, ActiveDropPodInfo info)
+		private static bool ShouldCreateDrillpod(IntVec3 cell, Map map, ActiveTransporterInfo info)
 		{
 			if (map.roofGrid.RoofAt(cell) == BiomesCoreDefOf.BMT_RockRoofStable)
 			{
@@ -27,7 +27,7 @@ namespace BiomesCaverns.Patches
 			return false;
 		}
 
-		public static bool Prefix(IntVec3 c, Map map, ActiveDropPodInfo info)
+		public static bool Prefix(IntVec3 c, Map map, ActiveTransporterInfo info)
 		{
 			// Certain mods might trigger drop pods outside of the valid bounds of the map.
 			if (!c.InBounds(map))
@@ -44,14 +44,14 @@ namespace BiomesCaverns.Patches
 			return true;
 		}
 
-		private static void MakeDrillPod(IntVec3 c, Map map, ActiveDropPodInfo info)
+		private static void MakeDrillPod(IntVec3 c, Map map, ActiveTransporterInfo info)
 		{
-			ActiveDropPod activeDropPod = (ActiveDrillPod) ThingMaker.MakeThing(BC_DefOf.BMT_DrillPodActive);
-			activeDropPod.Contents = info;
+			ActiveTransporter activeDrillPod = (ActiveDrillPod) ThingMaker.MakeThing(BC_DefOf.BMT_DrillPodActive);
+			activeDrillPod.Contents = info;
 
-			SkyfallerMaker.SpawnSkyfaller(BC_DefOf.BMT_DrillPodIncoming, activeDropPod, c, map);
+			SkyfallerMaker.SpawnSkyfaller(BC_DefOf.BMT_DrillPodIncoming, activeDrillPod, c, map);
 
-			foreach (var item in activeDropPod.Contents.innerContainer)
+			foreach (var item in activeDrillPod.Contents.innerContainer)
 			{
 				Pawn pawn;
 				if ((pawn = item as Pawn) != null && pawn.IsWorldPawn())

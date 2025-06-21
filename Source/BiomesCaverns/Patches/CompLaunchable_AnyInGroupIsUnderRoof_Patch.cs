@@ -4,9 +4,9 @@ using RimWorld;
 namespace BiomesCaverns.Patches
 {
 	/// <summary>
-	/// Inject drillpod specific behavior in CompLaunchable.
+	/// Allow Drillpods to launch under roofs
 	/// </summary>
-	[HarmonyPatch(typeof(CompLaunchable), nameof(CompLaunchable.AnyInGroupIsUnderRoof), MethodType.Getter)]
+	[HarmonyPatch(typeof(CompLaunchable), "AnyInGroupIsUnderRoof")]
 	public static class CompLaunchable_AnyInGroupIsUnderRoof_Patch
 	{
 		public static void Postfix(CompLaunchable __instance, ref bool __result)

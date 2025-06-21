@@ -6,12 +6,12 @@ namespace BiomesCaverns.Patches
 	/// <summary>
 	/// Allow drillpods to choose landing spots under cavern roof.
 	/// </summary>
-	[HarmonyPatch(typeof(TravelingTransportPods), "Arrived")]
+	[HarmonyPatch(typeof(TravellingTransporters), "Arrived")]
 	public static class TravelingTransportPods_Arrived_Patch
 	{
 		public static bool drillPodIncoming;
 
-		public static void Prefix(TravelingTransportPods __instance)
+		public static void Prefix(TravellingTransporters __instance)
 		{
 			if (__instance.def == BC_DefOf.BMT_TravelingDrillPods)
 			{

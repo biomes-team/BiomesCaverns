@@ -5,34 +5,20 @@ using Verse;
 
 namespace BiomesCaverns.Patches
 {
-	[HarmonyPatch(typeof(TravelingTransportPods), "TraveledPctStepPerTick", MethodType.Getter)]
+	[HarmonyPatch(typeof(TravellingTransporters), "TraveledPctStepPerTick", MethodType.Getter)]
 	public class TravelingTransportPods_TraveledPctStepPerTick_Patch
 	{
 		[HarmonyPriority(Priority.Last)]
-		private static bool Prefix(TravelingTransportPods __instance, ref float __result)
+		private static void PostFix(TravellingTransporters __instance, ref float __result)
 		{
-			if (__instance.def == BC_DefOf.BMT_TravelingDrillPods)
+			if (__instance.def == BC_DefOf.BMT_TravelingDrillPods && __result != 0f)
 			{
-				Vector3 start = __instance.Start;
-				Vector3 end = __instance.End;
-				if (start == end)
-				{
-					__result = 1f;
-					return false;
-				}
-
-				float num = GenMath.SphericalDistance(start.normalized, end.normalized);
-				if (num == 0f)
-				{
-					__result = 1f;
-					return false;
-				}
-
+                // Can't directly calculate this value anymore, modify it.
+                // TODO what is the purpose of using (0.00025f / 10f) / num instead 
+				// of vanilla's 0.00025f / num?
+                float num = 0.00025f / __result;
 				__result = (0.00025f / 10f) / num;
-				return false;
 			}
-
-			return true;
 		}
 	}
 }
