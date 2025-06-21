@@ -5,7 +5,7 @@ namespace BiomesCaverns
 {
     public class BiomeWorker_NoTest : BiomeWorker
     {
-        public override float GetScore(Tile tile, int tileID)
+        public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
 
             return -100;

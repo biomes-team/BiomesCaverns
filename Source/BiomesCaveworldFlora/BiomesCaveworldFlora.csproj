@@ -25,7 +25,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BiomesCore">
-      <HintPath>..\..\..\BiomesCore\1.5\Assemblies\BiomesCore.dll</HintPath>
+      <HintPath>..\..\..\BiomesCore\1.6\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

@@ -24,7 +24,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BiomesCore">
-      <HintPath>..\..\..\BiomesCore\1.5\Assemblies\BiomesCore.dll</HintPath>
+      <HintPath>..\..\..\BiomesCore\1.6\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -128,7 +128,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.3.3</Version>
+      <Version>2.3.6</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
