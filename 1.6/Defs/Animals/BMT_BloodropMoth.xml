@@ -262,6 +262,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggBloodropMothFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_BloodropMothEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
