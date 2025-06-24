@@ -114,9 +114,7 @@
 			<MarketValue>7.0</MarketValue>
 		</statBases>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggFreezerFrogUnfertilized</defName>
 		<label>freezer frog egg (unfert.)</label>
 		<description>An unfertilized freezer frog egg. It can be eaten raw, but it's much, much better cooked.</description>

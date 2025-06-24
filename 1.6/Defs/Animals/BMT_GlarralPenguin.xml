@@ -190,9 +190,7 @@
 			<preferability>DesperateOnly</preferability>
 		</ingestible>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggGlarralPenguinUnfertilized</defName>
 		<label>glarral penguin egg (unfert.)</label>
 		<description>An unfertilized glarral penguin egg. It can be eaten raw, but it's much, much better cooked.</description>

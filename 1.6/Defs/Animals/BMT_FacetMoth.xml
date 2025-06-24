@@ -340,9 +340,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggFacetMothUnfertilized</defName>
 		<label>facet moth egg (unfert.)</label>
 		<description>An unfertilized facet moth egg. It can be eaten raw, but it's much, much better cooked.</description>
@@ -355,5 +353,4 @@
 			<MarketValue>20.0</MarketValue>
 		</statBases>
 	</ThingDef>
-
 </Defs>

@@ -215,9 +215,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggMaceDrakeUnfertilized</defName>
 		<label>mace drake egg (unfert.)</label>
 		<description>An unfertilized mace drake egg. It can be eaten raw, but it's much, much better cooked.</description>

@@ -220,9 +220,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggDarkAxolotlUnfertilized</defName>
 		<label>dark axolotl egg (unfert.)</label>
 		<description>An unfertilized dark axolotl egg. It can be eaten raw, but it's much, much better cooked.</description>
@@ -235,8 +233,4 @@
 			<MarketValue>10.0</MarketValue>
 		</statBases>
 	</ThingDef>
-
-	<!--===============================================-->
-
-
 </Defs>

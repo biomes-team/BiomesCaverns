@@ -188,9 +188,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggFungalWeevilUnfertilized</defName>
 		<label>fungal weevil egg (unfert.)</label>
 		<description>An unfertilized fungal weevil egg. It can be eaten raw, but it's much, much better cooked.</description>

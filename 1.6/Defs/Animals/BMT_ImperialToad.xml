@@ -170,9 +170,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-		</ThingDef>
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggImperialToadUnfertilized</defName>
 		<label>imperial toad egg (unfert.)</label>
 		<description>An unfertilized imperial toad egg. It can be eaten raw, but it's much, much better cooked.</description>
