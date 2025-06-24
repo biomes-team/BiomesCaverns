@@ -415,4 +415,28 @@
 		</filthAcceptanceMask>
 		<takeFootprints>false</takeFootprints>
 	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBase">
+    <defName>BMT_MycelialMatting</defName>
+    <label>mycelial matting</label>
+    <description>Rough mycelium matting for use in animal barns where straw is unavailable. It is cheap and accepts very little filth.</description>
+    <texturePath>BMT_Caverns/Terrains/MycelialMatting</texturePath>
+    <pollutionOverlayTexturePath></pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 1)</pollutionColor>
+    <pollutionTintColor>(1, 1, 1, 1)</pollutionTintColor>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>240</renderPrecedence>
+    <pathCost>1</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-0.1</Cleanliness>
+      <WorkToBuild>120</WorkToBuild>
+      <FilthMultiplier>0.05</FilthMultiplier>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <BMT_MushroomLog>5</BMT_MushroomLog>
+    </costList>
+    <uiOrder>2010</uiOrder>
+  </TerrainDef>
 </Defs>
