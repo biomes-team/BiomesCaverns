@@ -34,6 +34,8 @@
 			</li>
 			<li Class="CompProperties_Launchable">
 				<skyfallerLeaving>BMT_DrillPodLeaving</skyfallerLeaving>
+				<activeTransporterDef>BMT_DrillPodActive</activeTransporterDef>
+				<worldObjectDef>BMT_TravelingDrillPods</worldObjectDef>
 			</li>
 		</comps>
 		<inspectorTabs>
