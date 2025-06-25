@@ -144,6 +144,7 @@
 			<MarketValue>1000</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>352.222</ComfyTemperatureMax>
+			<Wildness>1</Wildness>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -155,7 +156,6 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -229,6 +229,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>3000</MarketValue>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.985</Wildness>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>
@@ -289,7 +290,6 @@
 			<manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 			<lifeExpectancy>25</lifeExpectancy>
-			<Wildness>0.985</Wildness>
 			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeStageAges>

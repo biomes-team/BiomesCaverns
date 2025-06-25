@@ -140,6 +140,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+			<Wildness>1</Wildness>
 		</statBases>
 		<race>
 			<leatherDef>BMT_CrystalChitin</leatherDef>
@@ -152,7 +153,6 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -222,6 +222,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>57</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
+			<Wildness>0.55</Wildness>
 		</statBases>
 		<race>
 			<!-- <body>BeetleLike</body> -->
@@ -234,7 +235,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<predator>false</predator>
 			<!-- <maxPreyBodySize>0.80</maxPreyBodySize> -->
-			<Wildness>0.55</Wildness>
 			<lifeExpectancy>10</lifeExpectancy>
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>

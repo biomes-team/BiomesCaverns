@@ -148,6 +148,7 @@
 			<Flammability>0.0</Flammability>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+			<Wildness>1</Wildness>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -159,7 +160,6 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -236,6 +236,7 @@
 	  <ArmorRating_Heat>0.50</ArmorRating_Heat>
 	  <Flammability>0.0</Flammability>
 	  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+	  <Wildness>0.6</Wildness>
 	</statBases>
 	<uiIconScale>1.35</uiIconScale>
 	<comps>
@@ -258,7 +259,6 @@
 	  <baseHungerRate>0.535</baseHungerRate>
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>BMT_DeepChitin</leatherDef>
-	  <Wildness>0.6</Wildness>
 	  <trainability>Advanced</trainability>
 	  <lifeExpectancy>15</lifeExpectancy>
 	  <packAnimal>true</packAnimal>

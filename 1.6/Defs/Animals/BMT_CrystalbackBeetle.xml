@@ -146,6 +146,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<ToxicResistance>1</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+			<Wildness>1</Wildness>
 		</statBases>
 		<race>
 			<thinkTreeMain>BMT_PupaeThinkTree</thinkTreeMain>
@@ -157,7 +158,6 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -230,6 +230,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
 			<FilthRate>4</FilthRate>
+			<Wildness>0.05</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -268,7 +269,6 @@
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_GrayChitin</leatherDef>
-			<Wildness>0.05</Wildness>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<lifeExpectancy>16</lifeExpectancy>

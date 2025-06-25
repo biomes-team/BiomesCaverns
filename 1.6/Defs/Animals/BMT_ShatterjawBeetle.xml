@@ -157,7 +157,6 @@
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>None</foodType>
-			<Wildness>1</Wildness>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<trainability>None</trainability>
@@ -231,6 +230,7 @@
 	  <MarketValue>550</MarketValue>
 	  <CarryingCapacity>125</CarryingCapacity>
 	  <CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
+	  <Wildness>0.80</Wildness>
 	</statBases>
 	<uiIconScale>1.15</uiIconScale>
 	<tools>
@@ -269,7 +269,6 @@
 	  <baseHealthScale>1.3</baseHealthScale>
 	  <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <leatherDef>BMT_MediumChitin</leatherDef>
-	  <Wildness>0.80</Wildness>
 	  <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 	  <lifeExpectancy>13</lifeExpectancy>
