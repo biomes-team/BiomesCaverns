@@ -24,7 +24,7 @@
 			<drawOffset>(0,-2,-2)</drawOffset>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<hideAtSnowDepth>0.2</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.2</hideAtSnowOrSandDepth>
 		<plant>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>

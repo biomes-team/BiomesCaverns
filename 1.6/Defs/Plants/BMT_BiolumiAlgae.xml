@@ -32,7 +32,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -76,7 +76,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -120,7 +120,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -164,7 +164,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -208,7 +208,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -252,7 +252,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
