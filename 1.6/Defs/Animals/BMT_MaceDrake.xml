@@ -54,7 +54,8 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_MaceDrakeEggFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggMaceDrakeFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggMaceDrakeUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>4</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

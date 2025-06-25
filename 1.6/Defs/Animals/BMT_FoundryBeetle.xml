@@ -240,7 +240,8 @@
 	<uiIconScale>1.35</uiIconScale>
 	<comps>
 	  <li Class="CompProperties_EggLayer">
-		<eggFertilizedDef>BMT_FoundryBeetleEggFertilized</eggFertilizedDef>
+		<eggFertilizedDef>BMT_EggFoundryBeetleFertilized</eggFertilizedDef>
+		<eggUnfertilizedDef>BMT_EggFoundryBeetleUnfertilized</eggUnfertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
 		<eggLayIntervalDays>9.5</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

@@ -298,6 +298,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggCrystalbackBeetleFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggCrystalbackBeetleUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>3</eggFertilizationCountMax>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggLayIntervalDays>3.75</eggLayIntervalDays>

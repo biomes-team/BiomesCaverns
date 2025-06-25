@@ -58,7 +58,7 @@
 					<li>(0.05,80)</li>
 					<li>(1.5,60)</li>
 					<li>(5,50)</li>
-					<li>6,0)</li>
+					<li>(6,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -98,6 +98,7 @@
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggPillbugFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggPillbugUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

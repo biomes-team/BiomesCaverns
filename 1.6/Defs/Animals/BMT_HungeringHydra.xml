@@ -55,7 +55,8 @@
 		<uiIconScale>4</uiIconScale>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_HungeringHydraEggFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggHungeringHydraFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggHungeringHydraUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -220,7 +221,7 @@
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggHungeringHydrafertilized</defName>
+		<defName>BMT_EggHungeringHydraUnfertilized</defName>
 		<label>hungering hydra egg (unfert.)</label>
 		<description>An unfertilized hungering hydra egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>

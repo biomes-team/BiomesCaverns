@@ -80,7 +80,8 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_BasiliskEggFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggBasiliskFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggBasiliskUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -186,9 +187,8 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-			<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggBasiliskEggUnfertilized</defName>
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggBasiliskUnfertilized</defName>
 		<label>basilisk egg (unfert.)</label>
 		<description>An unfertilized basilisk egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>

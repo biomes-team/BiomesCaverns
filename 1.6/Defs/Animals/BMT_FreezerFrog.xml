@@ -13,6 +13,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggFreezerFrogFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggFreezerFrogUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
@@ -101,18 +102,6 @@
 				<hatcherPawn>BMT_Goeto</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggFreezerFrogUnfertilized</defName>
-		<label>freezer frog egg (unfert.)</label>
-		<description>An unfertilized freezer frog egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/GoetoToadEggs</texPath>
-			<drawSize>0.75</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggFreezerFrogUnfertilized</defName>

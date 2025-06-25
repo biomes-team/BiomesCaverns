@@ -56,7 +56,8 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_MagmaLizardEggFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggMagmaLizardFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggMagmaLizardUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -174,8 +175,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-			<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggMagmaLizardUnfertilized</defName>
 		<label>magma lizard egg (unfert.)</label>
 		<description>An unfertilized magma lizard egg. It can be eaten raw, but it's much, much better cooked.</description>
@@ -187,5 +187,4 @@
 			<MarketValue>20.0</MarketValue>
 		</statBases>
 	</ThingDef>
-
 </Defs>

@@ -91,6 +91,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggDarkAxolotlFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggDarkAxolotlUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>10</eggFertilizationCountMax>
 				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

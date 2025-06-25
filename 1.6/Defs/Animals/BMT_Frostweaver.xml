@@ -70,6 +70,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggFrostweaverSpiderFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggFrostweaverSpiderUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
 				<eggLayIntervalDays>18</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

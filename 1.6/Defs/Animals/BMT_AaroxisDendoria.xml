@@ -272,6 +272,7 @@
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggAaroxisDendoriaFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggAaroxisDendoriaUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>10</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

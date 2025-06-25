@@ -26,6 +26,7 @@
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggShimmershellSnailFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggShimmershellSnailUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>12</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>

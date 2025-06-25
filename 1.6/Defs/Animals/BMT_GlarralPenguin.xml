@@ -54,6 +54,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGlarralPenguinFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGlarralPenguinUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>3.33</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -203,6 +204,4 @@
 			<MarketValue>15.0</MarketValue>
 		</statBases>
 	</ThingDef>
-
-
 </Defs>

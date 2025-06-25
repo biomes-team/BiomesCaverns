@@ -17,6 +17,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGlowSlugFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGlowSlugUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>12</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>

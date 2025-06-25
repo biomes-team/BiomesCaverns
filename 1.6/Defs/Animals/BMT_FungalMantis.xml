@@ -81,7 +81,8 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_FungalMantisEggFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggFungalMantisFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggFungalMantisUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

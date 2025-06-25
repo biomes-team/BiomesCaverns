@@ -29,6 +29,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggFungalWeevilFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggFungalWeevilUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~3</eggCountRange>
@@ -201,5 +202,4 @@
 			<MarketValue>10.0</MarketValue>
 		</statBases>
 	</ThingDef>
-
 </Defs>

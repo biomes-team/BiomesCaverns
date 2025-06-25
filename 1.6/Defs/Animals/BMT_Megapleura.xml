@@ -19,7 +19,8 @@
 		<uiIconScale>1.35</uiIconScale>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_MegapleuraEggFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggMegapleuraFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggMegapleuraUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.661</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -157,8 +158,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-		<ThingDef ParentName="EggUnfertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>BMT_EggMegapleuraUnfertilized</defName>
 		<label>megapleura egg (unfert.)</label>
 		<description>An unfertilized megapleura egg. It can be eaten raw, but it's much, much better cooked.</description>
