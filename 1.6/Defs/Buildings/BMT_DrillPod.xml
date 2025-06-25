@@ -131,7 +131,7 @@
     <defName>BMT_TravelingDrillPods</defName>
     <label>drill pods</label>
     <description>Drill pods in travel.</description>
-    <worldObjectClass>TravelingTransportPods</worldObjectClass>
+    <worldObjectClass>TravellingTransporters</worldObjectClass>
     <texture>BMT_Caverns/Things/Building/Drillpod/Drillpod</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
     <expandingIcon>true</expandingIcon>
