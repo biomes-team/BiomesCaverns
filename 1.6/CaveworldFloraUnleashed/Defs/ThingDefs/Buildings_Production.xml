@@ -81,7 +81,7 @@
 		<uiIconPath>Things/Building/Linked/BMT_Fungiponics_MenuIcon</uiIconPath>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Fill2D</drawStyleCategory>
 		<pathCost>30</pathCost>
 		<castEdgeShadows>true</castEdgeShadows>
 		<constructEffect>ConstructWood</constructEffect>
