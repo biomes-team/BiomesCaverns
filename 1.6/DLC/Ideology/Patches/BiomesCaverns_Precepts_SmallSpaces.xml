@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/PreceptDef[defName="SmallSpaces_Acceptable"]/requiredMemes</xpath>
+		<xpath>Defs/PreceptDef[defName="Indoors_Acceptable"]/requiredMemes</xpath>
 		<value>
 			<li>BMT_CavernDweller</li>
 		</value>
