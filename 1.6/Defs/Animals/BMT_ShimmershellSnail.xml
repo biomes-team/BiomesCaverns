@@ -17,7 +17,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
 				<hediffs>
-					<li>BMT_GlowSnailDefense</li>
+					<li>BMT_ShimmershellSnailDefense</li>
 				</hediffs>
 				<graphicData>
 					<texPath>BMT_Caverns/Things/Animal/ShimmershellSnail/ShimmershellSnailShell</texPath>
@@ -146,7 +146,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<HediffDef>
-		<defName>BMT_GlowSnailDefense</defName>
+		<defName>BMT_ShimmershellSnailDefense</defName>
 		<label>retracted into shell</label>
 		<description>Retracted into shell for defense.</description>
 		<stages>

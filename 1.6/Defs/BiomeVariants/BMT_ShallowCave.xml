@@ -110,7 +110,7 @@
 					<BMT_Mole>0.2</BMT_Mole>
 					<BMT_DarkAxolotl>0.3</BMT_DarkAxolotl>
 					<BMT_BrownBat MayRequire="pathfinding.framework">0.4</BMT_BrownBat>
-					<BMT_Woolybat>0.05</BMT_Woolybat>
+					<BMT_Woollybat>0.05</BMT_Woollybat>
 
 					<!-- predators -->
 					<BMT_Molebear>0.15</BMT_Molebear>

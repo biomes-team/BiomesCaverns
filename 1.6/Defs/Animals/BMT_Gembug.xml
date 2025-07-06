@@ -97,7 +97,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
 				<hediffs>
-					<li>BMT_JewelbugDefense</li>
+					<li>BMT_GembugDefense</li>
 				</hediffs>
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -190,7 +190,7 @@
 	</PawnKindDef>
 
 	<HediffDef>
-		<defName>BMT_JewelbugDefense</defName>
+		<defName>BMT_GembugDefense</defName>
 		<label>rolled up</label>
 		<description>Rolled up for defense.</description>
 		<stages>
