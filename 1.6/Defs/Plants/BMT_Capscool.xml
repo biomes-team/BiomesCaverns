@@ -173,7 +173,7 @@
 		<description>A chemical addiction to cooling salve. Long-term presence of this salve has caused neurological adaptations at the cellular level, so the body can no longer function properly without the salve.
 			\nWithout regular doses of it, withdrawal symptoms will begin. However, extended abstinence will force the body to adapt back to its normal state, resolving the addiction.</description>
 		<hediffClass>Hediff_Addiction</hediffClass>
-		<causesNeed>Chemical_Salve</causesNeed>
+		<chemicalNeed>Chemical_Salve</chemicalNeed>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.1</severityPerDay>
