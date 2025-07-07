@@ -31,7 +31,7 @@
 		</modExtensions>
 	</ThingDef>
 
-  <ThingDef ParentName="SandstoneBase">
+  <ThingDef ParentName="RockBase">
     <defName>BMT_SmoothedCrystalWall</defName>
     <label>smoothed crystal</label>
     <description>A crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
@@ -56,7 +56,7 @@
     <repairEffect>Repair</repairEffect>
   </ThingDef>
   
-  	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="Wall">
 		<defName>BMT_BuiltCrystalWall</defName>
 		<label>constructed crystal</label>
 		<description>A wall of constructed crystal. It is quite beautiful.</description>
@@ -64,130 +64,52 @@
 			<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_icon</uiIconPath>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>80</WorkToBuild>
-			<MeditationFocusStrength>0.25</MeditationFocusStrength>
+			<Flammability>0</Flammability>
 		</statBases>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>Filth_RubbleRock</filthLeaving>
 		<costList>
 			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
 		</costList>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
-		<drawStyleCategory>Walls</drawStyleCategory>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<holdsRoof>true</holdsRoof>
-		<designationCategory>Structure</designationCategory>
-		<uiOrder>2002</uiOrder>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<canOverlapZones>false</canOverlapZones>
-		<fertility>0</fertility>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<stuffCategories Inherit="False"/>
+		<costStuffCount Inherit="False"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<paintable>false</paintable>
-			<isInert>true</isInert>
-			<isPlaceOverableWall>true</isPlaceOverableWall>
-			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>Autodoor</li>
-			</relatedBuildCommands>
 			<smoothedThing>BMT_BuiltSmoothedCrystalWall</smoothedThing>
 		</building>
-		<comps>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Minimal</li>
-				</focusTypes>
-			</li>
-		</comps>
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>4</multiplier>
-			</li>
-		</damageMultipliers>
 	</ThingDef>
 
-  <ThingDef ParentName="SandstoneBase">
-    <defName>BMT_BuiltSmoothedCrystalWall</defName>
-    <label>constructed smoothed crystal</label>
-    <description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
-    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-    <graphicData>
-      <texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+	<ThingDef ParentName="Wall">
+		<defName>BMT_BuiltSmoothedCrystalWall</defName>
+		<label>constructed smoothed crystal</label>
+		<description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
+		<!-- <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath> -->
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>80</WorkToBuild>
-			<MeditationFocusStrength>0.25</MeditationFocusStrength>
+			<Flammability>0</Flammability>
 		</statBases>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>Filth_RubbleRock</filthLeaving>
 		<costList>
+			<!-- Not buildable, but refunds resouces when decontructed/destroyed -->
 			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
 		</costList>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
-		<drawStyleCategory>Walls</drawStyleCategory>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<holdsRoof>true</holdsRoof>
-		<designationCategory>Structure</designationCategory>
-		<uiOrder>2002</uiOrder>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<canOverlapZones>false</canOverlapZones>
-		<fertility>0</fertility>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<stuffCategories Inherit="False"/>
+		<costStuffCount Inherit="False"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory Inherit="False"/>
 		<building>
 			<paintable>false</paintable>
-			<isInert>true</isInert>
-			<isPlaceOverableWall>true</isPlaceOverableWall>
-			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
+      		<neverBuildable>true</neverBuildable>
 			<relatedBuildCommands>
-				<li>Door</li>
-				<li>Autodoor</li>
+				<li>BMT_BuiltCrystalWall</li>
 			</relatedBuildCommands>
 		</building>
-		<comps>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Minimal</li>
-				</focusTypes>
-			</li>
-		</comps>
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>4</multiplier>
-			</li>
-		</damageMultipliers>
-  </ThingDef>
-
+	</ThingDef>
 </Defs>
