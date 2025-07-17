@@ -87,21 +87,21 @@
 				<wildAnimals operation="replace">
 
 					<!-- herbivores -->
-					<BMT_DepthsPenguin>0.2</BMT_DepthsPenguin>
+					<BMT_GlarralPenguin>0.2</BMT_GlarralPenguin>
 					<BMT_CaveLemming>0.4</BMT_CaveLemming>
 					<BMT_Snowstalker>0.35</BMT_Snowstalker>
-					<BMT_CryoMammoth>0.2</BMT_CryoMammoth>
+					<BMT_HoarfrostMastodon>0.2</BMT_HoarfrostMastodon>
 					<BMT_SilverSheep>0.3</BMT_SilverSheep>
-					<BMT_BushAntleredElk>0.5</BMT_BushAntleredElk>
+					<BMT_BeardedYak>0.5</BMT_BeardedYak>
 					<BMT_Pillbug>0.1</BMT_Pillbug>
 					<BMT_ChemSnail>0.025</BMT_ChemSnail>
 
 					<!-- predators -->
-					<BMT_WoollySpider>0.2</BMT_WoollySpider>
+					<BMT_FrostweaverSpider>0.2</BMT_FrostweaverSpider>
 					<BMT_Rimebeak>0.1</BMT_Rimebeak>
 
 					<!-- omnivore -->
-					<BMT_FrostFrog>0.7</BMT_FrostFrog>
+					<BMT_FreezerFrog>0.7</BMT_FreezerFrog>
 
 				</wildAnimals>
 
