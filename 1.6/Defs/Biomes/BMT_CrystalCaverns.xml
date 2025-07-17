@@ -109,6 +109,7 @@
 		</modExtensions>
 		<animalDensity>4.5</animalDensity>
 		<plantDensity>0.75</plantDensity>
+		<wildPlantsAreCavePlants>true</wildPlantsAreCavePlants>
 		<settlementSelectionWeight>0.8</settlementSelectionWeight>
 		<movementDifficulty>0.5</movementDifficulty>
 		<texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>

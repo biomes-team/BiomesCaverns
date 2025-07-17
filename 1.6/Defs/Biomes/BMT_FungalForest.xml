@@ -110,6 +110,7 @@
 		</modExtensions>
 		<animalDensity>4.25</animalDensity>
 		<plantDensity>0.90</plantDensity>
+		<wildPlantsAreCavePlants>true</wildPlantsAreCavePlants>
 		<settlementSelectionWeight>0.7</settlementSelectionWeight>
 		<movementDifficulty>0.2</movementDifficulty>
 		<texture>BMT_Caverns/World/Biomes/FungalForest</texture>

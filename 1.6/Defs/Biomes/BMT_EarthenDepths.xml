@@ -119,6 +119,7 @@
 		</modExtensions>
 		<animalDensity>2</animalDensity>
 		<plantDensity>1</plantDensity>
+		<wildPlantsAreCavePlants>true</wildPlantsAreCavePlants>
 		<settlementSelectionWeight>0.8</settlementSelectionWeight>
 		<movementDifficulty>0.5</movementDifficulty>
 		<texture>BMT_Caverns/World/Biomes/EarthenDepths</texture>
