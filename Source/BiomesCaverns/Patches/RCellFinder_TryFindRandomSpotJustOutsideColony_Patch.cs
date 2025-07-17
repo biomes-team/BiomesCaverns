@@ -18,10 +18,10 @@ namespace BiomesCaverns.Patches
 	{
 		private static MethodBase TargetMethod()
 		{
-			return typeof(RCellFinder).GetLambda(nameof(RCellFinder.TryFindRandomSpotJustOutsideColony), parentArgs: new[]
+			return typeof(RCellFinder).GetLocalFunc(nameof(RCellFinder.TryFindRandomSpotJustOutsideColony), parentArgs: new[]
 			{
-				typeof(IntVec3), typeof(Map), typeof(Pawn), typeof(IntVec3).MakeByRefType(), typeof(Predicate<IntVec3>)
-			}, lambdaOrdinal: 0);
+                typeof(IntVec3), typeof(Map), typeof(Pawn), typeof(IntVec3).MakeByRefType(), typeof(Predicate<IntVec3>)
+            }, localFunc: "FinalValidator");
 		}
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)

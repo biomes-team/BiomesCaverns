@@ -35,7 +35,6 @@
 				</disallowedWeathers>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
-				<applyToCaves>true</applyToCaves>
 				<overrideLandforms>
 					<li>BMT_CrystalCaverns</li>
 				</overrideLandforms>
