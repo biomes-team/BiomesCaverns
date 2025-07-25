@@ -10,7 +10,11 @@ namespace BiomesCaverns
 		public static BiomeDef BMT_EarthenDepths;
 		public static BiomeDef BMT_FungalForest;
 
-		public static DamageDef BMT_Crystalope_SharpBomb;
+        public static GameConditionDef Earthquake;
+        public static IncidentDef CaveIn;
+        public static SoundDef EarthquakeSound;
+
+        public static DamageDef BMT_Crystalope_SharpBomb;
 
 		public static ThingDef BMT_DrillPodIncoming;
 		public static ThingDef BMT_DrillPodActive;

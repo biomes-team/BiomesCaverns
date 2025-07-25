@@ -57,7 +57,10 @@
     <Compile Include="GenSteps\GenStep_ScatterCrystals.cs" />
     <Compile Include="GenSteps\GenStep_ScatterStalagmite.cs" />
     <Compile Include="GenSteps\ScattererValidator_RoughRockBuildable.cs" />
+    <Compile Include="Incidents\GameCondition_Earthquake.cs" />
     <Compile Include="Incidents\GameCondition_PhosphoricLights.cs" />
+    <Compile Include="Incidents\IncidentWorker_CaveIn.cs" />
+    <Compile Include="Incidents\IncidentWorker_Earthquake.cs" />
     <Compile Include="Incidents\IncidentWorker_HungeringHydra.cs" />
     <Compile Include="Incidents\ThoughtWorker_PhosphoricLights.cs" />
     <Compile Include="IncidentWorker_ThrumbungusPasses.cs" />
