@@ -115,7 +115,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<comps>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
 				<customThingToDig>
 					<li>RawFungus</li>
 				</customThingToDig>
@@ -125,7 +125,7 @@
 				<ticksToDig>60000</ticksToDig>
 				<spawnForbidden>true</spawnForbidden>
 			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
 				<customThingsToDig>
 					<li>RawFungus</li>
 				</customThingsToDig>
