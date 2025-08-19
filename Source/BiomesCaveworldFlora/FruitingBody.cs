@@ -310,18 +310,23 @@ namespace Caveworld_Flora_Unleashed
         public static bool CanTerrainSupportPlantAt(ThingDef_FruitingBody plantDef, Map map, IntVec3 position)
         {
             // Forbid spawns in closed rooms.
+            //var room = position.GetRoom(map);
+            //if (room != null && !room.PsychologicallyOutdoors)
+            //{
+            //    return false;
+            //}
             var room = position.GetRoom(map);
-            if (room != null && !room.PsychologicallyOutdoors)
+            if (room != null && !room.TouchesMapEdge && room.Role != RoomRoleDefOf.None)
             {
                 return false;
             }
 
             // Forbid these fungi from spawning in deep cavern biomes.
-            var roof = position.GetRoof(map);
-            if (roof == BiomesCoreDefOf.BMT_RockRoofStable)
-            {
-                return false;
-            }
+            //var roof = position.GetRoof(map);
+            //if (roof == BiomesCoreDefOf.BMT_RockRoofStable)
+            //{
+            //    return false;
+            //}
 
             bool isValidSpot = true;
             isValidSpot = !plantDef.growOnlyOnRoughRock ? isValidSpot & IsFertilityConditionOkAt(plantDef, map, position) : isValidSpot & IsNaturalRoughRockAt(map, position);

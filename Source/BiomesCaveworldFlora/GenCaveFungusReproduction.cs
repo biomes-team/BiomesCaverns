@@ -154,33 +154,33 @@ namespace Caveworld_Flora_Unleashed
             {
                 return false;
             }
-
+            //Log.Error("4.0");
             if (position.GetEdifice(map) != null || position.GetCover(map) != null)
             {
                 return false;
             }
-
+            //Log.Error("4.1");
             if (!FruitingBody.CanTerrainSupportPlantAt(plantDef, map, position))
             {
                 return false;
             }
-
+            //Log.Error("4.2");
             if (checkTemperature && !FruitingBody.IsTemperatureConditionOkAt(plantDef, map, position))
             {
                 return false;
             }
-
+            //Log.Error("4.3");
             if (!FruitingBody.IsLightConditionOkAt(plantDef, map, position))
             {
                 return false;
             }
-
+            //Log.Error("4.4");
             var plant = map.thingGrid.ThingAt(position, ThingCategory.Plant);
             if (plant != null && !(plant is Mycelium))
             {
                 return false;
             }
-
+            //Log.Error("4.5");
             var thingList = map.thingGrid.ThingsListAt(position);
             foreach (var thing in thingList)
             {
@@ -192,12 +192,12 @@ namespace Caveworld_Flora_Unleashed
                     }
                 }
             }
-
+            //Log.Error("4.6");
             if (!PlantUtility.SnowAllowsPlanting(position, map))
             {
                 return false;
             }
-
+            //Log.Error("4.7");
             return true;
         }
     }

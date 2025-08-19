@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace Caveworld_Flora_Unleashed
@@ -18,6 +19,7 @@ namespace Caveworld_Flora_Unleashed
             {
                 if (cavePlantDefsInternal.NullOrEmpty())
                 {
+                    //Log.Error("0");
                     cavePlantDefsInternal = new List<ThingDef_FruitingBody>();
                     foreach (var plantDef in DefDatabase<ThingDef>.AllDefsListForReading)
                     {
@@ -25,6 +27,7 @@ namespace Caveworld_Flora_Unleashed
                         {
                             if (plantDef is ThingDef_FruitingBody fruitingBodyDef && (!fruitingBodyDef.growsOnlyInCaveBiome || map.Biome.defName == "Cave"))
                             {
+                                //Log.Error("1");
                                 cavePlantDefsInternal.Add(fruitingBodyDef);
                             }
                         }
@@ -35,11 +38,21 @@ namespace Caveworld_Flora_Unleashed
             }
         }
 
+        public override void MapGenerated()
+        {
+            float baseGeneration = map.AllCells.ToList().Count * 0.02f;
+            for (int i = 0; baseGeneration > i; i++)
+            {
+                TrySpawnNewMyceliumAtRandomPosition();
+            }
+        }
+
         public MapComponent_CaveFungus(Map map)
             : base(map) { }
 
         public override void MapComponentTick()
         {
+            //Log.Error("2");
             if (randomSpawnPeriodInTicks == 0)
             {
                 int mapSurfaceCoefficient = map.Size.x * 2 + map.Size.z * 2;
@@ -51,6 +64,7 @@ namespace Caveworld_Flora_Unleashed
 
             if (Find.TickManager.TicksGame > nextRandomSpawnTick)
             {
+                //Log.Error("3");
                 nextRandomSpawnTick = Find.TickManager.TicksGame + randomSpawnPeriodInTicks;
                 TrySpawnNewMyceliumAtRandomPosition();
             }
@@ -58,11 +72,19 @@ namespace Caveworld_Flora_Unleashed
 
         public void TrySpawnNewMyceliumAtRandomPosition()
         {
+            //Log.Error(map.wildPlantSpawner.CachedChanceFromDensity.ToString());
+            // Uncomment this if too much fungus spawn
+            //if (!Rand.Chance(map.wildPlantSpawner.CachedChanceFromDensity))
+            //{
+            //    return;
+            //}
+            //Log.Error("4");
             var cavePlantDef = CavePlantDefs.RandomElementByWeight(plantDef => plantDef.MyceliumAbundance / plantDef.MyceliumSizeRange.Average);
             int newDesiredMyceliumSize = cavePlantDef.MyceliumSizeRange.RandomInRange;
             GenCaveFungusReproduction.TryGetRandomMyceliumSpawnCell(cavePlantDef, newDesiredMyceliumSize, checkTemperature: true, map, out var spawnCell);
             if (spawnCell.IsValid)
             {
+                //Log.Error("5");
                 Mycelium.SpawnNewMyceliumAt(map, spawnCell, cavePlantDef, newDesiredMyceliumSize);
             }
         }

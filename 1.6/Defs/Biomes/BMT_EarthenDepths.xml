@@ -144,7 +144,7 @@
 		<foragedFood>BMT_RawDulcis</foragedFood>
 		<wildPlantRegrowDays>27</wildPlantRegrowDays>
 		<disableShadows>true</disableShadows>
-		<disableSkyLighting>true</disableSkyLighting>
+		<disableSkyLighting>false</disableSkyLighting>
 		<noAmbientWind>true</noAmbientWind>
 		<constantOutdoorTemperature>55</constantOutdoorTemperature>
 		<soundsAmbient>
