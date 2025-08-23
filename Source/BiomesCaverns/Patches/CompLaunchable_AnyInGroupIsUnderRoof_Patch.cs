@@ -3,10 +3,10 @@ using RimWorld;
 
 namespace BiomesCaverns.Patches
 {
-	/// <summary>
-	/// Allow Drillpods to launch under roofs
-	/// </summary>
-	[HarmonyPatch(typeof(CompLaunchable), "AnyInGroupIsUnderRoof", MethodType.Getter)]
+    /// <summary>
+    /// Allow Drillpods to launch under roofs
+    /// </summary>
+    [HarmonyPatch(typeof(CompLaunchable), "AnyInGroupIsUnderRoof", MethodType.Getter)]
 	public static class CompLaunchable_AnyInGroupIsUnderRoof_Patch
 	{
 		public static void Postfix(CompLaunchable __instance, ref bool __result)
@@ -16,5 +16,6 @@ namespace BiomesCaverns.Patches
 				__result = false;
 			}
 		}
-	}
+    }
+
 }

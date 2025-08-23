@@ -9,4 +9,11 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GenStepDef/genStep/allowRoofed</xpath>
+		<value>
+			<allowRoofed>true</allowRoofed>
+		</value>
+	</Operation>
+
 </Patch>

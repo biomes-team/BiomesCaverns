@@ -187,19 +187,27 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/CrystalCrab/SilverSheepFemale</texPath>
+					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepFemale</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</femaleGraphicData>
+				<!-- <dessicatedBodyGraphicData> -->
+					<!-- <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath> -->
+					<!-- <drawSize>2.65</drawSize> -->
+				<!-- </dessicatedBodyGraphicData> -->
+				<!-- <femaleDessicatedBodyGraphicData> -->
+					<!-- <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath> -->
+					<!-- <drawSize>2.65</drawSize> -->
+				<!-- </femaleDessicatedBodyGraphicData> -->
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+					<texPath>Things/Pawn/Animal/SilverSheep/Dessicated_SilverSheepMale</texPath>
 					<drawSize>2.65</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+					<texPath>Things/Pawn/Animal/SilverSheep/Dessicated_SilverSheepFemale</texPath>
 					<drawSize>2.65</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
