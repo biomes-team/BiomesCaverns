@@ -45,6 +45,7 @@
       <MarketValue>10</MarketValue>
     </statBases>
     <building>
+	  <isAirtight>true</isAirtight>
       <isNaturalRock>false</isNaturalRock>
       <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>

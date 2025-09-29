@@ -90,6 +90,12 @@
 				<power>13</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<extraMeleeDamages>
+					<li>
+						<def>BMT_ChillingVenom</def>
+						<amount>5</amount>
+					</li>
+				</extraMeleeDamages>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.8</chanceFactor>
 			</li>
