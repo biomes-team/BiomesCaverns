@@ -1,116 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="RockBase">
-		<defName>BMT_NaturalCrystalWall</defName>
-		<label>natural crystal</label>
-		<description>A wall of natural crystal. It is quite beautiful.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-		</statBases>
-		<blockLight>true</blockLight>
-		<filthLeaving>Filth_RubbleRock</filthLeaving>
-		<building>
-			<isResourceRock>false</isResourceRock>
-			<isNaturalRock>false</isNaturalRock>
-			<claimable>false</claimable>
-			<naturalTerrain>BMT_Crystal</naturalTerrain>
-			<mineableThing>BMT_ChunkCrystal</mineableThing>
-			<mineableDropChance>0.25</mineableDropChance>
-			<!-- <mineableYield>50</mineableYield> -->
-			<smoothedThing>BMT_SmoothedCrystalWall</smoothedThing>
-		</building>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
-				<offset>0.65</offset>
-			</li>
-		</modExtensions>
-	</ThingDef>
+  <ThingDef ParentName="RockBase">
+	<defName>BMT_NaturalCrystalWall</defName>
+	<label>natural crystal</label>
+	<description>A wall of natural crystal. It is quite beautiful.</description>
+	<graphicData>
+		<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+	</statBases>
+	<blockLight>true</blockLight>
+	<filthLeaving>Filth_RubbleRock</filthLeaving>
+	<building>
+		<isResourceRock>false</isResourceRock>
+		<isNaturalRock>false</isNaturalRock>
+		<claimable>false</claimable>
+		<naturalTerrain>BMT_Crystal</naturalTerrain>
+		<mineableThing>BMT_ChunkCrystal</mineableThing>
+		<mineableDropChance>0.25</mineableDropChance>
+		<!-- <mineableYield>50</mineableYield> -->
+		<smoothedThing>BMT_SmoothedCrystalWall</smoothedThing>
+		<isStuffableAirtight>false</isStuffableAirtight>
+	</building>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
+			<offset>0.65</offset>
+		</li>
+	</modExtensions>
+  </ThingDef>
 
   <ThingDef ParentName="RockBase">
-    <defName>BMT_SmoothedCrystalWall</defName>
-    <label>smoothed crystal</label>
-    <description>A crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
-    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-    <graphicData>
-      <texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
+	<defName>BMT_SmoothedCrystalWall</defName>
+	<label>smoothed crystal</label>
+	<description>A crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
+	<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+	<graphicData>
+	  <texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <Beauty>2</Beauty>
-      <MarketValue>10</MarketValue>
-    </statBases>
-    <building>
+	</graphicData>
+	<statBases>
+	  <Beauty>2</Beauty>
+	  <MarketValue>10</MarketValue>
+	</statBases>
+	<building>
 	  <isAirtight>true</isAirtight>
-      <isNaturalRock>false</isNaturalRock>
-      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+	  <isStuffableAirtight>false</isStuffableAirtight>
+	  <isNaturalRock>false</isNaturalRock>
+	  <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 	  <naturalTerrain>BMT_Crystal</naturalTerrain>
-      <paintable>false</paintable>
-      <smoothedThing />
-    </building>
-    <saveCompressible>false</saveCompressible>
-    <repairEffect>Repair</repairEffect>
+	  <paintable>false</paintable>
+	  <smoothedThing />
+	</building>
+	<saveCompressible>false</saveCompressible>
+	<repairEffect>Repair</repairEffect>
   </ThingDef>
-  
-	<ThingDef ParentName="Wall">
-		<defName>BMT_BuiltCrystalWall</defName>
-		<label>constructed crystal</label>
-		<description>A wall of constructed crystal. It is quite beautiful.</description>
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_icon</uiIconPath>
-		<statBases>
-			<Flammability>0</Flammability>
-		</statBases>
-		<costList>
-			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
-		</costList>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<stuffCategories Inherit="False"/>
-		<costStuffCount Inherit="False"/>
-		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<building>
-			<paintable>false</paintable>
-			<smoothedThing>BMT_BuiltSmoothedCrystalWall</smoothedThing>
-		</building>
-	</ThingDef>
 
-	<ThingDef ParentName="Wall">
-		<defName>BMT_BuiltSmoothedCrystalWall</defName>
-		<label>constructed smoothed crystal</label>
-		<description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
-		<!-- <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath> -->
-		<graphicData>
-			<texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<Flammability>0</Flammability>
-		</statBases>
-		<costList>
-			<!-- Not buildable, but refunds resouces when decontructed/destroyed -->
-			<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
-		</costList>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<stuffCategories Inherit="False"/>
-		<costStuffCount Inherit="False"/>
-		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory Inherit="False"/>
-		<building>
-			<paintable>false</paintable>
-      		<neverBuildable>true</neverBuildable>
-			<relatedBuildCommands>
-				<li>BMT_BuiltCrystalWall</li>
-			</relatedBuildCommands>
-		</building>
-	</ThingDef>
+  <ThingDef ParentName="Wall">
+	<defName>BMT_BuiltCrystalWall</defName>
+	<label>constructed crystal</label>
+	<description>A wall of constructed crystal. It is quite beautiful.</description>
+	<graphicData>
+		<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<uiIconPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_icon</uiIconPath>
+	<statBases>
+		<Flammability>0</Flammability>
+	</statBases>
+	<costList>
+		<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+	</costList>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<uiIconPathsStuff IsNull="true" Inherit="False"/>
+	<stuffCategories IsNull="true" Inherit="False"/>
+	<costStuffCount>0</costStuffCount>
+	<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<building>
+		<paintable>false</paintable>
+		<isStuffableAirtight>false</isStuffableAirtight>
+		<smoothedThing>BMT_BuiltSmoothedCrystalWall</smoothedThing>
+	</building>
+  </ThingDef>
+
+  <ThingDef ParentName="Wall">
+	<defName>BMT_BuiltSmoothedCrystalWall</defName>
+	<label>constructed smoothed crystal</label>
+	<description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
+	<!-- <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath> -->
+	<graphicData>
+		<texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<Flammability>0</Flammability>
+	</statBases>
+	<costList>
+		<!-- Not buildable, but refunds resouces when decontructed/destroyed -->
+		<BMT_ResourceBlueCrystal>5</BMT_ResourceBlueCrystal>
+	</costList>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<uiIconPathsStuff IsNull="true" Inherit="False"/>
+	<stuffCategories IsNull="true" Inherit="False"/>
+	<costStuffCount>0</costStuffCount>
+	<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<designationCategory Inherit="False"/>
+	<building>
+		<paintable>false</paintable>
+		<neverBuildable>true</neverBuildable>
+		<isStuffableAirtight>false</isStuffableAirtight>
+		<relatedBuildCommands>
+			<li>BMT_BuiltCrystalWall</li>
+		</relatedBuildCommands>
+	</building>
+  </ThingDef>
+
 </Defs>
