@@ -74,10 +74,10 @@
 		<label>glow goo torch</label>
 		<description>A specially-treated torch that produces a light over a large area.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Building/GlowGooLamp</texPath>
+			<texPath>BMT_Caverns/Things/Building/GlowGootorch</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<uiIconPath>BMT_Caverns/Things/Building/GlowGooLamp/Artboard1</uiIconPath>
+		<uiIconPath>BMT_Caverns/Things/Building/GlowGooTorch/Artboard1</uiIconPath>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<Mass>1</Mass>

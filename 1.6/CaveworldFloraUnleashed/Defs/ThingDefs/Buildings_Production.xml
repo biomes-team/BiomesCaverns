@@ -5,11 +5,11 @@
 	<!-- Much like any other fermenting barrel but mustier and more inclined to give off spores -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_MushroomFermentingBarrel</defName>
-		<label>mushroom fermenting barrel</label>
+		<label>fungal fermenting barrel</label>
 		<description>A barrel for fermenting mushroom must into mushroom wine.</description>
 		<thingClass>Building_MushroomFermentingBarrel</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/BMT_MushroomFermentingBarrel/BMT_MushroomFermentingBarrel</texPath>
+			<texPath>Things/Building/Production/FungalFermentingBarrel/FungalFermentingBarrel</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
