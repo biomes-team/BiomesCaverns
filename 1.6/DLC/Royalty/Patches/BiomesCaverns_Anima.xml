@@ -16,6 +16,7 @@
 							<li>BMT_CrystalCaverns</li>
 							<li>BMT_FungalForest</li>
 							<li>BMT_EarthenDepths</li>
+							<li MayRequire="ludeon.rimworld.odyssey">Glowforest</li>
 						</biomes>
 						<graphicPath>BMT_Caverns/Things/Plant/Animu/Animushroom</graphicPath>
 					</li>
@@ -46,6 +47,7 @@
 							<li>BMT_CrystalCaverns</li>
 							<li>BMT_FungalForest</li>
 							<li>BMT_EarthenDepths</li>
+							<li MayRequire="ludeon.rimworld.odyssey">Glowforest</li>
 						</biomes>
 						<graphicPath>BMT_Caverns/Things/Plant/Animu/Animycelium</graphicPath>
 					</li>
