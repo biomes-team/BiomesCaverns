@@ -107,6 +107,14 @@
 			<li Class="BiomesCore.CompProperties_CustomThingEater">
 				<filthNutrition>0.03</filthNutrition>
 			</li>
+			<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
+				<roofedOnly>false</roofedOnly>
+				<faceSouth>false</faceSouth>
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>BMT_Caverns/Things/Animal/Pillbug/PillbugRolled</texPath>
+				</graphicData>
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
