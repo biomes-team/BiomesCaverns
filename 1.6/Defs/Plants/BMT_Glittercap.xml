@@ -21,6 +21,7 @@
 				<growingHours>0.5~0.99</growingHours>
 			</li>
 		</modExtensions>
+		<altitudeLayer>Item</altitudeLayer>
 		<selectable>true</selectable>
 		<plant>
 			<growMinGlow>0</growMinGlow>
