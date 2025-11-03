@@ -43,7 +43,7 @@
 			<texPath>BMT_Caverns/Things/Building/CrystalLamp</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<uiIconPath>BMT_Caverns/Things/Building/CrystalLamp/Artboard3</uiIconPath>
+		<uiIconPath>BMT_Caverns/Things/Building/CrystalLamp/CrystalLamp</uiIconPath>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<tickerType>Never</tickerType>
 		<statBases>
@@ -74,10 +74,10 @@
 		<label>glow goo torch</label>
 		<description>A specially-treated torch that produces a light over a large area.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Building/GlowGootorch</texPath>
+			<texPath>BMT_Caverns/Things/Building/GlowGooTorch</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<uiIconPath>BMT_Caverns/Things/Building/GlowGooTorch/Artboard1</uiIconPath>
+		<uiIconPath>BMT_Caverns/Things/Building/GlowGooTorch/GlowGooTorch</uiIconPath>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<Mass>1</Mass>
