@@ -135,7 +135,7 @@
 					<xpath>/Defs</xpath>
 					<value>
 						<ThoughtDef>	
-							<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+							<thoughtClass>VEF.Cooking.Thought_Hediff</thoughtClass>
 							<defName>BMT_ConsumedRoyalSauce</defName>
 							<durationDays>0.5</durationDays>
 							<stages>
@@ -163,7 +163,7 @@
 							<initialSeverity>1.0</initialSeverity>
 							<maxSeverity>1.0</maxSeverity>
 							<comps>
-								<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+								<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 									<thoughtDefs>
 										<li>BMT_ConsumedRoyalSauce</li>
 									</thoughtDefs>
