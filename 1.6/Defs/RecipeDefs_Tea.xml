@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>BMT_PsychiteTeaFromJadeGlints</defName>
+		<label>make psychite tea from jade glints</label>
+		<description>Make psychite tea from jade glints.</description>
+		<jobString>Making psychite tea.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>220</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_JadeGlints</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_JadeGlints</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>BMT_JadeGlints</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<BMT_JadeGlints>1</BMT_JadeGlints>
+		</products>
+		<researchPrerequisite>PsychoidBrewing</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>BMT_PsychiteTeaFromJadeGlints10x</defName>
+		<label>make psychite tea from jade glints (x10)</label>
+		<description>Make psychite tea from jade glints.</description>
+		<jobString>Making psychite tea.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>2200</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_JadeGlints</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_JadeGlints</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>BMT_JadeGlints</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<BMT_JadeGlints>10</BMT_JadeGlints>
+		</products>
+		<researchPrerequisite>PsychoidBrewing</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>
