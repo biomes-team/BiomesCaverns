@@ -89,7 +89,7 @@
 
 	<!-- ===================================================== -->
 	
-		<ThingDef ParentName="ChunkRockBase">
+	<ThingDef ParentName="ChunkRockBase">
 		<defName>BMT_ChunkCrystal</defName>
 		<label>crystal chunk</label>
 		<description>A chunk of crystal. Can be cut into usable crystal pieces.</description>
@@ -105,4 +105,29 @@
 			<BMT_ResourceBlueCrystal>20</BMT_ResourceBlueCrystal>
 		</butcherProducts>
 	</ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>BMT_Make_BlueCrystals</defName>
+		<label>make blue crystals</label>
+		<description>Break crystal chunks into crystals.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_ChunkCrystal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_ChunkCrystal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BMT_ResourceBlueCrystal>20</BMT_ResourceBlueCrystal>
+		</products>
+	</RecipeDef>
+
 </Defs>
