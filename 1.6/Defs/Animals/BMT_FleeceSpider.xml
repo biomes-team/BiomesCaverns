@@ -33,6 +33,9 @@
 			<leatherDef>Leather_Light</leatherDef>
 			<petness>0.8</petness>
 			<trainability>None</trainability>
+		    <specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+			</specialTrainables>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<nameOnTameChance>1</nameOnTameChance>
 			<lifeExpectancy>10</lifeExpectancy>
