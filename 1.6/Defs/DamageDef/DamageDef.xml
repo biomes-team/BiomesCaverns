@@ -60,7 +60,7 @@
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>
-		<applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+		<applyAdditionalHediffsIfHuntingForFood>true</applyAdditionalHediffsIfHuntingForFood>
 		<impactSoundType>Toxic</impactSoundType>
 		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
