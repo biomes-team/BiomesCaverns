@@ -38,7 +38,7 @@
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<BMT_JadeGlints>1</BMT_JadeGlints>
+			<PsychiteTea>1</PsychiteTea>
 		</products>
 		<researchPrerequisite>PsychoidBrewing</researchPrerequisite>
 	</RecipeDef>
@@ -80,7 +80,7 @@
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<BMT_JadeGlints>10</BMT_JadeGlints>
+			<PsychiteTea>10</PsychiteTea>
 		</products>
 		<researchPrerequisite>PsychoidBrewing</researchPrerequisite>
 	</RecipeDef>
