@@ -133,6 +133,11 @@
 					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/MagmaLizard</texPath>
 					<drawSize>1.05</drawSize>
 				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/Dessicated_MagmaLizard</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>2.65</drawSize>
+				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -143,6 +148,11 @@
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/Dessicated_MagmaLizard</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>2.65</drawSize>
+				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -153,6 +163,11 @@
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/Dessicated_MagmaLizard</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>2.65</drawSize>
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
