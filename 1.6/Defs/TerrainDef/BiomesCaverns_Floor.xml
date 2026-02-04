@@ -20,44 +20,71 @@
 		<constructEffect>ConstructWood</constructEffect>
 	</TerrainDef>
 
-	<TerrainDef Abstract="True" Name="BMT_BridgeMushroomBase">
-		<label>mushroom bridge</label>
-		<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
-		<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
-		<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
-		<layerable>true</layerable>
-		<isPaintable>true</isPaintable>
-		<!--bridge>true</bridge-->
-		<affordances>
-			<li>Light</li>
-		</affordances>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge">
-				<loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath>
-				<rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath>
-			</li>
-		</modExtensions>
-		<designationCategory>Structure</designationCategory>
-		<fertility>0</fertility>
-		<constructEffect>ConstructWood</constructEffect>
-		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
-		<edgeType>Hard</edgeType>
-		<renderPrecedence>400</renderPrecedence>
-		<autoRebuildable>true</autoRebuildable>
-		<statBases>
-			<WorkToBuild>1500</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
-		<costList>
-		</costList>
-		<tags>
-			<li>Floor</li>
-		</tags>
-		<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
-		<destroyEffect>Bridge_Collapse</destroyEffect>
-		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-	</TerrainDef>
+	<!-- <TerrainDef Abstract="True" Name="BMT_BridgeMushroomBase"> -->
+		<!-- <label>mushroom bridge</label> -->
+		<!-- <description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description> -->
+		<!-- <texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath> -->
+		<!-- <uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath> -->
+		<!-- <layerable>true</layerable> -->
+		<!-- <isPaintable>true</isPaintable> -->
+		<!-- <affordances> -->
+			<!-- <li>Light</li> -->
+		<!-- </affordances> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge"> -->
+				<!-- <loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath> -->
+				<!-- <rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+		<!-- <designationCategory>Structure</designationCategory> -->
+		<!-- <fertility>0</fertility> -->
+		<!-- <constructEffect>ConstructWood</constructEffect> -->
+		<!-- <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded> -->
+		<!-- <edgeType>Hard</edgeType> -->
+		<!-- <renderPrecedence>400</renderPrecedence> -->
+		<!-- <autoRebuildable>true</autoRebuildable> -->
+		<!-- <statBases> -->
+			<!-- <WorkToBuild>1500</WorkToBuild> -->
+			<!-- <Flammability>0</Flammability> -->
+		<!-- </statBases> -->
+		<!-- <costList> -->
+		<!-- </costList> -->
+		<!-- <tags> -->
+			<!-- <li>Floor</li> -->
+		<!-- </tags> -->
+		<!-- <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold> -->
+		<!-- <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed> -->
+		<!-- <destroyEffect>Bridge_Collapse</destroyEffect> -->
+		<!-- <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater> -->
+	<!-- </TerrainDef> -->
+
+  <TerrainDef ParentName="BridgeBase" Abstract="True" Name="BMT_BridgeMushroomBase">
+	<label>mushroom bridge</label>
+	<description>A flat mushroom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+	<texturePath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge</texturePath>
+	<bridgePropsPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps</bridgePropsPath>
+	<spaceBridgePropsPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps</spaceBridgePropsPath>
+	<color>(195,195,195)</color>
+	<uiIconPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridge_MenuIcon</uiIconPath>
+	<isPaintable>true</isPaintable>
+	<affordances>
+		<li>Light</li>
+		<!-- <li>Medium</li> -->
+		<!-- <li>Heavy</li> -->
+	</affordances>
+	<constructEffect>ConstructWood</constructEffect>
+	<statBases>
+	  <WorkToBuild>1500</WorkToBuild>
+	  <Flammability>0</Flammability>
+	</statBases>
+	<!-- <costList> -->
+		<!-- <WoodLog>8</WoodLog> -->
+		<!-- <Cloth>8</Cloth> -->
+	<!-- </costList> -->
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+	<designationHotKey>Misc4</designationHotKey>
+	<destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+  </TerrainDef>
 
 	<TerrainDef ParentName="BMT_BridgeMushroomBase">
 		<defName>BMT_BridgeMushroom</defName>
@@ -88,12 +115,12 @@
 			<li>Medium</li>
 			<li>Heavy</li>
 		</affordances>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge">
-				<loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath>
-				<rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesCore.DefModExtensions.TerrainDef_Bridge"> -->
+				<!-- <loopTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Loop</loopTexPath> -->
+				<!-- <rightTexPath>BMT_Caverns/Terrains/MushroomBridge/MushroomBridgeProps_Right</rightTexPath> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
 			<Flammability>0</Flammability>
