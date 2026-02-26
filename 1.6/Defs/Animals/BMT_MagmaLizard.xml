@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_MagmaLizard</defName>
-		<label>magma lizard</label>
-		<description>The patterning on its skin resembles that of both cooled and hot magma, seemingly to blend in with the volatile environment within the cavern systems.</description>
+		<label>maguana</label>
+		<description>The patterning on the skin of this relative of the surface iguana resembles both cooled and hot magma, seemingly to blend in with the volatile environment within the cavern systems. They are naturally immune to fire due to the special composition of their flesh.</description>
 		<statBases>
 			<MoveSpeed>0.6</MoveSpeed>
 			<MarketValue>980</MarketValue>
@@ -174,8 +174,8 @@
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMagmaLizardFertilized</defName>
-		<label>magma lizard egg (fert.)</label>
-		<description>A fertilized magma lizard egg. If all goes well, it should hatch into a baby magma lizard. It can be eaten raw, but it's much better cooked.</description>
+		<label>maguana egg (fert.)</label>
+		<description>A fertilized maguana egg. If all goes well, it should hatch into a baby maguana. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<color>(160,70,29)</color>
 			<drawSize>0.8</drawSize>
