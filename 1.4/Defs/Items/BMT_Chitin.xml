@@ -57,7 +57,7 @@
 		<label>crystal carapace</label>
 		<description>A crystallized carapace that is commonly found on arthropods in crystal-heavy caverns.</description>
 		<graphicData>
-			<color>(21,244,238)</color>
+			<color>(124,178,210)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>7.5</MarketValue>
@@ -68,7 +68,7 @@
 			<BC_StuffPower_FlammabilityOffset>-0.2</BC_StuffPower_FlammabilityOffset>
 		</statBases>
 		<stuffProps>
-			<color>(21,244,238)</color>
+			<color>(124,178,210)</color>
 			<statFactors>
 				<MaxHitPoints>1.4</MaxHitPoints>
 				<Beauty>4</Beauty>

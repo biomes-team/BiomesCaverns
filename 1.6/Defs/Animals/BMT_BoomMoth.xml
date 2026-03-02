@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseInsect">
+<!--	<ThingDef ParentName="BaseInsect">
 		<defName>BMT_Boomapillar</defName>
 		<label>boomapillar</label>
 		<description>Born out of the same genetic engineering research as the boomalope and boomasaurolophus, the boomapillar, though more buggy, is just as explosive. It takes a long time to mature, but produces volatile chemicals while young.</description>
@@ -28,7 +28,7 @@
 			</li>
 		</comps>
 		<race>
-			<!-- = -->
+
 			<deathAction>
 				<workerClass>DeathActionWorker_BigExplosion</workerClass>
 			</deathAction>
@@ -101,9 +101,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BoomMoth/Boomapillar</texPath>
-					<!-- <color>(176,150,106)</color> -->
 					<drawSize>1.0</drawSize>
-					<!-- <shaderType>CutoutComplex</shaderType> -->
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -113,9 +111,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BoomMoth/Boomapillar</texPath>
-					<!-- <color>(176,150,106)</color> -->
 					<drawSize>1.4</drawSize>
-					<!-- <shaderType>CutoutComplex</shaderType> -->
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -125,9 +121,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/BoomMoth/Boomapillar</texPath>
-					<!-- <color>(176,150,106)</color> -->
 					<drawSize>1.8</drawSize>
-					<!-- <shaderType>CutoutComplex</shaderType> -->
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -243,7 +237,6 @@
 				<workerClass>DeathActionWorker_BigExplosion</workerClass>
 			</deathAction>
 			<executionRange>3</executionRange>
-			<!-- <body>BeetleLike</body> -->
 			<body>BMT_MothLike</body>
 			<leatherDef>BMT_WeakChitin</leatherDef>
 			<herdAnimal>false</herdAnimal>
@@ -377,5 +370,5 @@
 		<statBases>
 			<MarketValue>20.0</MarketValue>
 		</statBases>
-	</ThingDef>
+	</ThingDef> -->
 </Defs>

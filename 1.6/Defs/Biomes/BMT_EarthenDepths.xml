@@ -259,11 +259,9 @@
 
 		<wildAnimals>
 			<!-- herbivores -->
-			<BMT_Boomapillar>0.2</BMT_Boomapillar>
-			<BMT_BoomMoth>0.2</BMT_BoomMoth>
 			<BMT_FoundryBeetle>0.2</BMT_FoundryBeetle>
 			<BMT_FireSalamander>0.2</BMT_FireSalamander>
-			<BMT_MagmaLizard>0.5</BMT_MagmaLizard>
+			<BMT_Maguana>0.5</BMT_Maguana>
 			<BMT_MetalloSnail>0.35</BMT_MetalloSnail>
 			<BMT_PodWorm>0.0001</BMT_PodWorm>
 			<BMT_Pillbug>0.2</BMT_Pillbug>
@@ -278,13 +276,7 @@
 			<BMT_Basilisk>0.2</BMT_Basilisk>
 
 			<!-- onmnivore -->
-			<BMT_CrystalCrab_Sandstone>0.0001</BMT_CrystalCrab_Sandstone>
-			<BMT_CrystalCrab_Granite>0.0001</BMT_CrystalCrab_Granite>
-			<BMT_CrystalCrab_Limestone>0.0001</BMT_CrystalCrab_Limestone>
-			<BMT_CrystalCrab_Slate>0.0001</BMT_CrystalCrab_Slate>
-			<BMT_CrystalCrab_Marble>0.0001</BMT_CrystalCrab_Marble>
-			<BMT_CrystalCrab_Jade>0.0001</BMT_CrystalCrab_Jade>
-			<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.0001</BMT_CrystalCrab_Coral>
+			<BMT_CrystalCrab>0.0001</BMT_CrystalCrab>
 			
 		</wildAnimals>
 		<allowedPackAnimals>

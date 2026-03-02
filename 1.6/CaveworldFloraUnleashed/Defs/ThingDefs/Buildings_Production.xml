@@ -36,7 +36,7 @@
 		</statBases>
 		<costList>
 			<Steel>10</Steel>
-			<WoodLog>30</WoodLog>
+			<BMT_MushroomLog>30</BMT_MushroomLog>
 		</costList>
 		<comps>
 			<li Class="CompProperties_TemperatureRuinable">

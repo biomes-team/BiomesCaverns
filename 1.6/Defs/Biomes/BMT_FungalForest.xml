@@ -252,10 +252,7 @@
 			<BMT_VioletWimple>0.02</BMT_VioletWimple>
 			
 			<!-- trees -->
-			<BMT_Embrun>0.2</BMT_Embrun>
-			<BMT_GleamPlum>0.4</BMT_GleamPlum>
-			<BMT_Jellycap>0.4</BMT_Jellycap>
-			<BMT_Viritoll>0.2</BMT_Viritoll>
+			<BMT_FlakespireFungus>0.2</BMT_FlakespireFungus>
 			
 			<!-- other harvestable -->
 			<!-- food --> 
@@ -299,7 +296,7 @@
 			<BMT_GiantSnail>0.30</BMT_GiantSnail>
 			<BMT_GlowSlug>0.1</BMT_GlowSlug>
 			<BMT_ShimmershellSnail>0.1</BMT_ShimmershellSnail>
-			<BMT_Goeto>0.05</BMT_Goeto>
+			<BMT_GoetoToad>0.05</BMT_GoetoToad>
 			<BMT_MossBeetle>0.075</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.075</BMT_MossBeetleLarvae>
 			<BMT_Pillbug>0.4</BMT_Pillbug>
@@ -323,13 +320,7 @@
 			<BMT_GlowBat MayRequire="pathfinding.framework">0.75</BMT_GlowBat>
 			
 			<!-- onmnivore -->
-			<BMT_CrystalCrab_Sandstone>0.001</BMT_CrystalCrab_Sandstone>
-			<BMT_CrystalCrab_Granite>0.001</BMT_CrystalCrab_Granite>
-			<BMT_CrystalCrab_Limestone>0.001</BMT_CrystalCrab_Limestone>
-			<BMT_CrystalCrab_Slate>0.001</BMT_CrystalCrab_Slate>
-			<BMT_CrystalCrab_Marble>0.001</BMT_CrystalCrab_Marble>
-			<BMT_CrystalCrab_Jade>0.0002</BMT_CrystalCrab_Jade>
-			<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
+			<BMT_CrystalCrab>0.001</BMT_CrystalCrab>
 
 		</wildAnimals>
 		<allowedPackAnimals>
@@ -342,13 +333,7 @@
 			<li>BMT_FoundryBeetle</li>
 			<li>BMT_CaveSpider</li>
 			<li>BMT_ShatterjawBeetle</li>
-			<li>BMT_CrystalCrab_Sandstone</li>
-			<li>BMT_CrystalCrab_Granite</li>
-			<li>BMT_CrystalCrab_Granite</li>
-			<li>BMT_CrystalCrab_Slate</li>
-			<li>BMT_CrystalCrab_Marble</li>
-			<li>BMT_CrystalCrab_Jade</li>
-			<li MayRequire="biomesteam.biomesislands">BMT_CrystalCrab_Coral</li>
+			<li>BMT_CrystalCrab</li>
 		</allowedPackAnimals>
 		<pollutionWildAnimals/>
 	</BiomeDef>

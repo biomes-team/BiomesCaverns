@@ -271,13 +271,7 @@
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 
 			<!-- onmnivore -->
-			<BMT_CrystalCrab_Sandstone>0.008</BMT_CrystalCrab_Sandstone>
-			<BMT_CrystalCrab_Granite>0.008</BMT_CrystalCrab_Granite>
-			<BMT_CrystalCrab_Limestone>0.008</BMT_CrystalCrab_Limestone>
-			<BMT_CrystalCrab_Slate>0.008</BMT_CrystalCrab_Slate>
-			<BMT_CrystalCrab_Marble>0.008</BMT_CrystalCrab_Marble>
-			<BMT_CrystalCrab_Jade>0.001</BMT_CrystalCrab_Jade>
-			<BMT_CrystalCrab_Coral MayRequire="biomesteam.biomesislands">0.001</BMT_CrystalCrab_Coral>
+			<BMT_CrystalCrab>0.008</BMT_CrystalCrab>
 			
 			<!-- predators -->
 			<BMT_CrystalMantis>0.2</BMT_CrystalMantis>
@@ -296,13 +290,7 @@
 			<li>BMT_FoundryBeetle</li>
 			<li>BMT_CaveSpider</li>
 			<li>BMT_ShatterjawBeetle</li>
-			<li>BMT_CrystalCrab_Sandstone</li>
-			<li>BMT_CrystalCrab_Granite</li>
-			<li>BMT_CrystalCrab_Granite</li>
-			<li>BMT_CrystalCrab_Slate</li>
-			<li>BMT_CrystalCrab_Marble</li>
-			<li>BMT_CrystalCrab_Jade</li>
-			<li MayRequire="biomesteam.biomesislands">BMT_CrystalCrab_Coral</li>
+			<li>BMT_CrystalCrab</li>
 		</allowedPackAnimals>
 		<pollutionWildAnimals/>
 	</BiomeDef>
