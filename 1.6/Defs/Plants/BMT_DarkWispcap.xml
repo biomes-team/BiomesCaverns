@@ -2,13 +2,13 @@
 <Defs>	
 	
 	<ThingDef ParentName="BMT_CaveTreeBase">
-		<defName>BMT_Gloomcap</defName>
-		<label>gloomcap</label>
-		<description>A darklight-like mushroom. It was engineered during early caveworld colonization efforts to provide a constant source of darklight for those with light sensitivity.</description>
+		<defName>BMT_DarkWispcap</defName>
+		<label>dark wispcap</label>
+		<description>A short darklight-producing mushroom. It was engineered during early caveworld colonization efforts to provide a constant source of darklight for those with light sensitivity.</description>
 		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/GloomCap</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Caverns/Things/Plant/DarkWispcap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
 			<Flammability>0.0</Flammability>
@@ -46,7 +46,7 @@
 
 	<comps>
       <li Class="CompProperties_Glower">
-        <glowRadius>7</glowRadius>
+        <glowRadius>10</glowRadius>
         <glowColor>(78,226,229,0)</glowColor>
       </li>
     </comps>

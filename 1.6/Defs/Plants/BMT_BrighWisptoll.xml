@@ -2,12 +2,12 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_CaveTreeBase">
-		<defName>BMT_Brightcap</defName>
-		<label>brightcap</label>
+		<defName>BMT_BrightWisptoll</defName>
+		<label>bright wisptoll</label>
 		<description>A brightly-glowing mushroom. It was engineered during early caveworld colonization efforts to provide constant natural light.</description>
 		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Plant/BrightCap</texPath>
+			<texPath>BMT_Caverns/Things/Plant/BrightWisptoll</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
@@ -47,7 +47,7 @@
 
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>7</glowRadius>
+				<glowRadius>10</glowRadius>
 				<glowColor>(147,207,80,0)</glowColor>
 			</li>
 		</comps>

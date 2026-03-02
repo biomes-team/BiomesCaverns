@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_MagmaLizard</defName>
+		<defName>BMT_Maguana</defName>
 		<label>maguana</label>
 		<description>The patterning on the skin of this relative of the surface iguana resembles both cooled and hot magma, seemingly to blend in with the volatile environment within the cavern systems. They are naturally immune to fire due to the special composition of their flesh.</description>
 		<statBases>
@@ -56,8 +56,8 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggMagmaLizardFertilized</eggFertilizedDef>
-				<eggUnfertilizedDef>BMT_EggMagmaLizardUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BMT_EggMaguanaFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggMaguanaUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>5.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -122,26 +122,26 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_MagmaLizard</defName>
-		<label>magma lizard</label>
-		<race>BMT_MagmaLizard</race>
+		<defName>BMT_Maguana</defName>
+		<label>maguana</label>
+		<race>BMT_Maguana</race>
 		<combatPower>75</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/MagmaLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Maguana/Maguana</texPath>
 					<drawSize>1.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/Dessicated_MagmaLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Maguana/Dessicated_Maguana</texPath>
 					<color>(100,60,70)</color>
 					<drawSize>2.65</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/MagmaLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Maguana/Maguana</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -149,14 +149,14 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/Dessicated_MagmaLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Maguana/Dessicated_Maguana</texPath>
 					<color>(100,60,70)</color>
 					<drawSize>2.65</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/MagmaLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Maguana/Maguana</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -164,7 +164,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/MagmaLizard/Dessicated_MagmaLizard</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Maguana/Dessicated_Maguana</texPath>
 					<color>(100,60,70)</color>
 					<drawSize>2.65</drawSize>
 				</dessicatedBodyGraphicData>
@@ -173,7 +173,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggMagmaLizardFertilized</defName>
+		<defName>BMT_EggMaguana</defName>
 		<label>maguana egg (fert.)</label>
 		<description>A fertilized maguana egg. If all goes well, it should hatch into a baby maguana. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -191,9 +191,9 @@
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggMagmaLizardUnfertilized</defName>
-		<label>magma lizard egg (unfert.)</label>
-		<description>An unfertilized magma lizard egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<defName>BMT_EggMaguanaUnfertilized</defName>
+		<label>magmuana egg (unfert.)</label>
+		<description>An unfertilized maguana egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
 			<color>(150,60,19)</color>
 			<drawSize>0.8</drawSize>
