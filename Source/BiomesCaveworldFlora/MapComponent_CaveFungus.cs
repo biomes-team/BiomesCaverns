@@ -40,8 +40,12 @@ namespace Caveworld_Flora_Unleashed
         }
 
         public override void MapGenerated()
-        {
-            float baseGeneration = map.AllCells.ToList().Count * 0.02f;
+		{
+			if (!Enabled)
+			{
+				return;
+			}
+			float baseGeneration = map.AllCells.ToList().Count * 0.02f;
             for (int i = 0; baseGeneration > i; i++)
             {
                 TrySpawnNewMyceliumAtRandomPosition();
