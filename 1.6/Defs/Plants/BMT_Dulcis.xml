@@ -13,11 +13,6 @@
 			<Nutrition>0.20</Nutrition>
 			<Flammability>0.1</Flammability>
 		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<optimalTemperature>-50~352.222</optimalTemperature>
-			</li>
-		</modExtensions>
 		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
 			<growMinGlow>0</growMinGlow>

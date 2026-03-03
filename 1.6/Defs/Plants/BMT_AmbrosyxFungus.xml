@@ -40,10 +40,5 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>5</wildClusterWeight>
 		</plant>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<optimalTemperature>-50~352.222</optimalTemperature>
-			</li>
-		</modExtensions>
 	</ThingDef>
 </Defs>
