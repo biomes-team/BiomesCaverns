@@ -20,6 +20,10 @@
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/ExplodingAngel/ExplodingAngelImmature</immatureGraphicPath>
 			<fertilityMin>0.75</fertilityMin>
 			<fertilitySensitivity>0.75</fertilitySensitivity>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>50</growOptimalGlow>
+			<minGrowthTemperature>50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<growDays>5</growDays>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.8~1</visualSizeRange>

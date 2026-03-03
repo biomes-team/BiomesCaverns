@@ -21,12 +21,13 @@
 		<description>A blue crystal from the depths of the crystal cave. It is surprisingly volatile.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Crystals/BlueMedium</texPath>
-			<drawSize>(1.0,1.0)</drawSize>
+			<drawSize>(3.0,3.0)</drawSize>
 		</graphicData>
+		<size>(2,2)</size>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
+				<glowRadius>3</glowRadius>
 				<glowColor>(119,189,239,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Explosive">

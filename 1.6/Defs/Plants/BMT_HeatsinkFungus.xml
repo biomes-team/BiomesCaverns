@@ -23,6 +23,8 @@
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<minGrowthTemperature>50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<mustBeWildToSow>false</mustBeWildToSow>
 			<growDays>5</growDays>
 			<dieIfLeafless>false</dieIfLeafless>

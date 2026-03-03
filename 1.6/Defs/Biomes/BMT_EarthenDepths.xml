@@ -210,7 +210,7 @@
 				<perlinFrequency>0.045</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>BMT_Terrain_Tachylite</terrain>
+						<terrain>BMT_Terrain_MagmaStone</terrain>
 						<!--terrain>Slate_Rough</terrain-->
 						<min>0.33</min>
 						<max>0.73</max>
@@ -235,7 +235,7 @@
 		<wildPlants>
 			<!-- ground cover -->
 			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
-			<BMT_FireLavender>1</BMT_FireLavender>
+			<BMT_FireLavender>0.55</BMT_FireLavender>
 			
 			<!-- mid sized -->
 			<!-- <BMT_ExplodingAngel>0.5</BMT_ExplodingAngel> -->

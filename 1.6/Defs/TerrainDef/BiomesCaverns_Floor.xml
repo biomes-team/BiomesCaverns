@@ -188,7 +188,7 @@
 
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>BMT_VolcanicAsh</defName>
-		<label>ash</label>
+		<label>volcanic ash</label>
 		<texturePath>BMT_Caverns/Terrains/VolcanicAsh</texturePath>
 		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/VolcanicAsh</pollutedTexturePath> -->
 		<!-- Vanilla Pollution Stone -->

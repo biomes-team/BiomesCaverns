@@ -18,6 +18,8 @@
 		<plant>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>4</growDays>
+			<minGrowthTemperature>50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
 			<pollution>Any</pollution>
@@ -46,7 +48,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_PlantReleaseGas">
 				<gasType>RotStink</gasType>
-				<cellsToFill>1</cellsToFill>
+				<cellsToFill>0.5</cellsToFill>
 				<effecterReleasing MayRequire="Ludeon.RimWorld.Biotech">BMT_SilentGasReleasing</effecterReleasing>
 				<growthProgress>0.6</growthProgress>
 			</li>

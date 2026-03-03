@@ -76,12 +76,6 @@
 		  <purpose>Food</purpose>
 		  <humanFoodPlant>true</humanFoodPlant>			
 		</plant>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
-				<glowColor>(75,0,128,0)</glowColor>
-			</li>
-		 </comps>
 		<minGrowTemperature>5</minGrowTemperature>
 		<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
 		<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>

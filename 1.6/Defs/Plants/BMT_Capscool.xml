@@ -19,6 +19,8 @@
 		<plant>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
+			<minGrowthTemperature>50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilityMin>0.7</fertilityMin>
 			<wildClusterRadius>4</wildClusterRadius>

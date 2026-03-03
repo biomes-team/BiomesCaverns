@@ -13,7 +13,6 @@
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<growingHours>0.5~0.99</growingHours>
-				<optimalTemperature>50~352.222</optimalTemperature>
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -26,6 +25,8 @@
 		<plant>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
+			<minGrowthTemperature>50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<fertilityMin>0.70</fertilityMin>
 			<wildClusterRadius>3</wildClusterRadius>
 			<growDays>8</growDays>

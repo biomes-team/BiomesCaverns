@@ -99,7 +99,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_Goeto</hatcherPawn>
+				<hatcherPawn>BMT_FreezerFrog</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

@@ -41,7 +41,7 @@
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
-				<multiplier>2</multiplier>
+				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
 	</ThingDef>

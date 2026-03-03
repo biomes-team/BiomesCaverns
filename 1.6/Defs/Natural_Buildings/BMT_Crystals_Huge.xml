@@ -31,9 +31,9 @@
 		<description>A blue crystal from the depths of the crystal cave. This crystal is large enough that a smaller crystal could break off from it. It is surprisingly volatile.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Crystals/BlueHuge</texPath>
-			<drawSize>(3.0,3.0)</drawSize>
+			<drawSize>(7.0,7.0)</drawSize>
 		</graphicData>
-		<size>(3,3)</size>
+		<size>(5,5)</size>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Glower">
