@@ -56,5 +56,15 @@
 				<glowColor>(119,189,239,0)</glowColor>
 			</li>
 		</comps>
+    <tools>
+      <li>
+        <label>crystal shard</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
 	</ThingDef>
 </Defs>

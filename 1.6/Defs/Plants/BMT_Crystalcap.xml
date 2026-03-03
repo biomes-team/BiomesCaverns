@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_CaveTreeBase">
 		<defName>BMT_Crystalcap</defName>
 		<label>crystalcap</label>
-		<description>A strong crystal caped mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>
+		<description>A strong crystal caped mushroom tree. Slow-growing, but this woody fungus is very strong and attractive. It grows well in just about any soil.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Crystalcap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -12,6 +12,7 @@
 			<Beauty>6</Beauty>
 		</statBases>
 		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
 			<growDays>30</growDays>
