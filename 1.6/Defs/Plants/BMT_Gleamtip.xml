@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/Gleamtip</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.0,2.0)</drawSize>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
