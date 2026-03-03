@@ -6,55 +6,55 @@
 		<!-- Only runs for Crystalline Caverns. -->
 		<genStep Class="BiomesCaverns.GenSteps.GenStep_ScatterCrystals">
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>5</minSpacing>
+			<minSpacing>1</minSpacing>
 			<countPer10kCellsRange>15.0~30.0</countPer10kCellsRange>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>true</allowRoofed>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
-					<radius>5</radius>
-					<affordance>Heavy</affordance>
+					<radius>1</radius>
+					<affordance>BMT_Crystal</affordance>
 				</li>
 			</validators>
 			<groups>
 				<li>
 					<things>
-						<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
-						<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
-						<BMT_Crystal_BlueHuge>0.00833</BMT_Crystal_BlueHuge>
+						<BMT_Crystal_BlueSmall>0.05</BMT_Crystal_BlueSmall>
+						<BMT_Crystal_BlueLarge>0.0333</BMT_Crystal_BlueLarge>
+						<BMT_Crystal_BlueHuge>0.0233</BMT_Crystal_BlueHuge>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>1.5~3.5</coveredCellsPer10Cells>
 					<clusterRectRadius>3~5</clusterRectRadius>
 				</li>
 				<li>
 					<things>
-						<BMT_Crystal_BlueSmall>0.1</BMT_Crystal_BlueSmall>
-						<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
+						<BMT_Crystal_BlueSmall>0.05</BMT_Crystal_BlueSmall>
+						<BMT_Crystal_BlueLarge>0.0233</BMT_Crystal_BlueLarge>
 						<BMT_Crystal_BlueHuge>0.00433</BMT_Crystal_BlueHuge>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>1.5~3.5</coveredCellsPer10Cells>
 					<clusterRectRadius>3~5</clusterRectRadius>
 				</li>
 				<li>
 					<things>
-						<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
-						<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
-						<BMT_Crystal_BlueHuge>0.01</BMT_Crystal_BlueHuge>
+						<BMT_Crystal_BlueMedium>0.05</BMT_Crystal_BlueMedium>
+						<BMT_Crystal_BlueLarge>0.0433</BMT_Crystal_BlueLarge>
+						<BMT_Crystal_BlueHuge>0.045</BMT_Crystal_BlueHuge>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>1.5~3.5</coveredCellsPer10Cells>
 					<clusterRectRadius>4~5</clusterRectRadius>
 				</li>
 				<li>
 					<things>
-						<BMT_Crystal_BlueMedium>0.1</BMT_Crystal_BlueMedium>
-						<BMT_Crystal_BlueLarge>0.0833</BMT_Crystal_BlueLarge>
-						<BMT_Crystal_BlueHuge>0.05</BMT_Crystal_BlueHuge>
+						<BMT_Crystal_BlueMedium>0.05</BMT_Crystal_BlueMedium>
+						<BMT_Crystal_BlueLarge>0.0433</BMT_Crystal_BlueLarge>
+						<BMT_Crystal_BlueHuge>0.025</BMT_Crystal_BlueHuge>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>1.5~3.5</coveredCellsPer10Cells>
 					<clusterRectRadius>4~5</clusterRectRadius>
 				</li>
 			</groups>

@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="RockBase">
 	<defName>BMT_NaturalCrystalWall</defName>
-	<label>natural crystal</label>
+	<label>crystal</label>
 	<description>A wall of natural crystal. It is quite beautiful.</description>
 	<graphicData>
 		<texPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_atlas</texPath>
@@ -16,7 +16,7 @@
 	<filthLeaving>Filth_RubbleRock</filthLeaving>
 	<building>
 		<isResourceRock>false</isResourceRock>
-		<isNaturalRock>false</isNaturalRock>
+		<isNaturalRock>true</isNaturalRock>
 		<claimable>false</claimable>
 		<naturalTerrain>BMT_Crystal</naturalTerrain>
 		<mineableThing>BMT_ChunkCrystal</mineableThing>
@@ -24,12 +24,16 @@
 		<!-- <mineableYield>50</mineableYield> -->
 		<smoothedThing>BMT_SmoothedCrystalWall</smoothedThing>
 		<isStuffableAirtight>false</isStuffableAirtight>
+		<biomeSpecific>true</biomeSpecific>
+        <mineableScatterLumpSizeRange>12~32</mineableScatterLumpSizeRange>
+		<mineablePreventMeteorite>true</mineablePreventMeteorite>
 	</building>
-	<modExtensions>
-		<li Class="BiomesCore.DefModExtensions.RockNoiseConfig">
-			<offset>0.65</offset>
-		</li>
-	</modExtensions>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+		</comps>
   </ThingDef>
 
   <ThingDef ParentName="RockBase">
@@ -57,6 +61,12 @@
 	</building>
 	<saveCompressible>false</saveCompressible>
 	<repairEffect>Repair</repairEffect>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+		</comps>
   </ThingDef>
 
   <ThingDef ParentName="Wall">
@@ -85,6 +95,12 @@
 		<isStuffableAirtight>false</isStuffableAirtight>
 		<smoothedThing>BMT_BuiltSmoothedCrystalWall</smoothedThing>
 	</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+		</comps>
   </ThingDef>
 
   <ThingDef ParentName="Wall">
@@ -118,6 +134,12 @@
 			<li>BMT_BuiltCrystalWall</li>
 		</relatedBuildCommands>
 	</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+		</comps>
   </ThingDef>
 
 </Defs>

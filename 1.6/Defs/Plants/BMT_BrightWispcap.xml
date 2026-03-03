@@ -9,6 +9,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/BrightWispcap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.0,1.0)</drawSize>
 		</graphicData>
 		<statBases>
 			<Flammability>0.0</Flammability>

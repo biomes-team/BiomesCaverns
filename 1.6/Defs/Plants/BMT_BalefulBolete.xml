@@ -10,6 +10,7 @@
 		</graphicData>
 		<statBases>
 			<Beauty>12</Beauty>
+			<BeautyOutdoors>12</BeautyOutdoors>
 			<Nutrition>1.25</Nutrition>
 			<Flammability>0.35</Flammability>
 		</statBases>

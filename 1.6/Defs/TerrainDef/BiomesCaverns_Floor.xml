@@ -263,8 +263,11 @@
 			<li>Light</li>
 			<li>Medium</li>
 			<li>Heavy</li>
+			<li>BMT_Crystal</li>
 		</affordances>
 		<fertility>0</fertility>
+		<glowRadius>2</glowRadius>
+		<glowColor>(119,189,239,0)</glowColor>		
 		<filthAcceptanceMask>
 			<li>None</li>
 		</filthAcceptanceMask>
@@ -309,6 +312,8 @@
 			<li>Heavy</li>
 		</affordances>
 		<fertility>0</fertility>
+		<glowRadius>2</glowRadius>
+		<glowColor>(119,189,239,0)</glowColor>	
 		<filthAcceptanceMask>
 			<li>None</li>
 		</filthAcceptanceMask>

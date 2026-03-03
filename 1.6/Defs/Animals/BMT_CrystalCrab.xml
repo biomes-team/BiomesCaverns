@@ -23,7 +23,7 @@
 			<leatherDef>BMT_RoyalChitin</leatherDef>
 			<meatLabel>cave crab meat</meatLabel>
 			<trainability>Intermediate</trainability>
-			<packAnimal>true</packAnimal>
+			<packAnimal>false</packAnimal>
 			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 		</race>
