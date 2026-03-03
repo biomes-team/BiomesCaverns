@@ -42,6 +42,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<pollution>Any</pollution>
 		</plant>
 
 		<comps>
