@@ -90,7 +90,7 @@
   <ThingDef ParentName="Wall">
 	<defName>BMT_BuiltSmoothedCrystalWall</defName>
 	<label>constructed smoothed crystal</label>
-	<description>A constructed crystaline material that has been smoothed to a polished sheen. It is quite beautiful.</description>
+	<description>A constructed crystaline material that has been smoothed to a polished sheen. It can only be created by smoothing crystal walls, built or natural. It is quite beautiful.</description>
 	<!-- <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath> -->
 	<graphicData>
 		<texPath>BMT_Caverns/Things/Natural/Linked/smoothedcrystal_wall_atlas</texPath>
