@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BiomesCaverns.Patches;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
@@ -50,8 +51,25 @@ namespace Caveworld_Flora_Unleashed
         public MapComponent_CaveFungus(Map map)
             : base(map) { }
 
-        public override void MapComponentTick()
+        private bool? enabledForCurrentMap;
+		public bool Enabled
+		{
+			get
+			{
+                if (!enabledForCurrentMap.HasValue)
+                {
+                    enabledForCurrentMap = !Utility.IsCavern(map);
+				}
+				return enabledForCurrentMap.Value;
+			}
+		}
+
+		public override void MapComponentTick()
         {
+            if (!Enabled)
+            {
+                return;
+            }
             //Log.Error("2");
             if (randomSpawnPeriodInTicks == 0)
             {

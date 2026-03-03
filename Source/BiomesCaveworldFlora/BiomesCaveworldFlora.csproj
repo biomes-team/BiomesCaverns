@@ -61,5 +61,12 @@
     <Compile Include="GenCaveFungusReproduction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BiomesCaverns\BiomesCaverns.csproj">
+      <Project>{F6F666FE-8891-4BBF-BE7F-AE5B1A6D1D37}</Project>
+      <Name>BiomesCaverns</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
