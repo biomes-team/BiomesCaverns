@@ -110,17 +110,19 @@
 		<!-- temp -->
 		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
 		  <freshwater_Common>
-			<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+			<BMT_BlindTetra MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_BlindTetra>
+			<BMT_StoneSalamander MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_StoneSalamander>
 		  </freshwater_Common>
 		  <freshwater_Uncommon>
-			<Fish_Frostfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Frostfish>
+			<BMT_GlowCuttlefish MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_GlowCuttlefish>
+			<BMT_GiantCaveCrab MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_GiantCaveCrab>
 		  </freshwater_Uncommon>
 		  <saltwater_Common>
-			<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
-			<Fish_Cod MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Cod>
+			<BMT_Rocktooth MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_Rocktooth>
+			<BMT_GhostShrimp MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_GhostShrimp>
 		  </saltwater_Common>
 		  <saltwater_Uncommon>
-			<Fish_Dogfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Dogfish>
+			<BMT_CaveAngelFish MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_CaveAngelFish>
 		  </saltwater_Uncommon>
 		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Cold</rareCatchesSetMaker>
 		</fishTypes>

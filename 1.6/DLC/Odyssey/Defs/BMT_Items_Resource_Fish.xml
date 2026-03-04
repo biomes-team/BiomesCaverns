@@ -5,7 +5,7 @@
 	<!--=============================== Fish ================================-->
 	<!--=====================================================================-->
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_BlindTetra</defName>
 		<label>blind tetra</label>
 		<description>Raw blind tetra.</description>
@@ -23,7 +23,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_DevilsPupfish</defName>
 		<label>devils pupfish</label>
 		<description>Raw devils pupfish.</description>
@@ -41,7 +41,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_GhostShrimp</defName>
 		<label>ghost shrimp</label>
 		<description>Raw ghost shrimp.</description>
@@ -59,7 +59,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_Rocktooth</defName>
 		<label>rocktooth</label>
 		<description>Raw rocktooth.</description>
@@ -80,7 +80,7 @@
 
 	<!-- ================================================ -->
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_CaveAngelFish</defName>
 		<label>cave angel fish</label>
 		<description>Raw cave angel fish.</description>
@@ -98,7 +98,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_Lumineel</defName>
 		<label>lumineel</label>
 		<description>Raw lumineel.</description>
@@ -122,7 +122,7 @@
 		  </li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_RockLobster</defName>
 		<label>rock lobster</label>
 		<description>Raw rock lobster.</description>
@@ -140,7 +140,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_StoneSalamander</defName>
 		<label>stone salamander</label>
 		<description>Raw stone salamander.</description>
@@ -161,7 +161,7 @@
 
 	<!-- ================================================ -->
 
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_BlindCatfish</defName>
 		<label>blind catfish</label>
 		<description>Raw blind catfish.</description>
@@ -179,7 +179,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_Boneblade</defName>
 		<label>boneblade</label>
 		<description>Raw boneblade.</description>
@@ -197,7 +197,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_GiantCaveCrab</defName>
 		<label>giant cave crab</label>
 		<description>Raw giant cave crab.</description>
@@ -215,7 +215,7 @@
 		</ingestible>
 		<uiIconForStackCount>1</uiIconForStackCount>
 	</ThingDef>
-	<ThingDef ParentName="VCEF_RawFishBase">
+	<ThingDef ParentName="FishBase">
 		<defName>BMT_GlowCuttlefish</defName>
 		<label>glow cuttle fish</label>
 		<description>Raw glow cuttle fish.</description>

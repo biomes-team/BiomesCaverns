@@ -111,19 +111,21 @@
 		<!-- temp -->
 		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
 		  <freshwater_Common>
-			<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+			<BMT_BlindTetra MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_BlindTetra>
+			<BMT_GhostShrimp MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_GhostShrimp>
 		  </freshwater_Common>
 		  <freshwater_Uncommon>
-			<Fish_Frostfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Frostfish>
+			<BMT_Boneblade MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_Boneblade>
+			<BMT_GlowCuttlefish MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_GlowCuttlefish>
 		  </freshwater_Uncommon>
 		  <saltwater_Common>
-			<Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon>
+			<BMT_StoneSalamander MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_StoneSalamander>
 			<Fish_Cod MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Cod>
 		  </saltwater_Common>
 		  <saltwater_Uncommon>
-			<Fish_Dogfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Dogfish>
+			<BMT_BlindCatfish MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_BlindCatfish>
 		  </saltwater_Uncommon>
-		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Cold</rareCatchesSetMaker>
+		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
 		</fishTypes>
 		<animalDensity>4.25</animalDensity>
 		<plantDensity>0.90</plantDensity>
