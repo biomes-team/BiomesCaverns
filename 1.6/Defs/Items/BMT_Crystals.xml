@@ -50,12 +50,22 @@
 				<Beauty>1</Beauty>
 			</statOffsets>
 		</stuffProps>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
 		<comps>
 			<li Class="CompProperties_Glower">
 				<glowRadius>1.75</glowRadius>
 				<glowColor>(119,189,239,0)</glowColor>
 			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
 		</comps>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+      <li>Neolithic</li>
+    </weaponClasses>		
     <tools>
       <li>
         <label>crystal shard</label>
