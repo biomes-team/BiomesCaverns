@@ -1,44 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_BatbirdBabyTiny</defName>
-		<label>chick</label>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_BatbirdJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_BatbirdAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>BMT_Batbird</defName>
 		<label>batbird</label>
-		<description>A hybrid of bat and bird adapted to shallow desert caves. It feeds on small prey and gives live birth.</description>
+		<description>An engineered hybrid of mammal and avian, the batbird lives in shallow caves below the desert sands. It feeds on small prey and gives birth to live young.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>95</MarketValue>
@@ -70,15 +36,15 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BatbirdBabyTiny</def>
+					<def>AnimalBaby</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_BatbirdJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.11</minAge>
 				</li>
 				<li>
-					<def>BMT_BatbirdAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.222</minAge>
 					<soundWounded>Biomes_Bat_Wounded</soundWounded>
 					<soundDeath>Biomes_Bat_Death</soundDeath>
@@ -168,18 +134,6 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalPet</li>
 		</tradeTags>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BigBirdKindBase">
@@ -189,6 +143,12 @@
 		<combatPower>45</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>5~10</wildGroupSize>
+			<flyingAnimationFramePathPrefix>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.7</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 		<lifeStages>
 			<li>
 				<label>batbird chick</label>
@@ -223,17 +183,6 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.LocomotionGraphicExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Batbird/Batbird_Flying</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 	
 	

@@ -231,7 +231,7 @@
 			<FilthRate>4</FilthRate>
 			<Wildness>0.985</Wildness>
 		</statBases>
-		<uiIconScale>2</uiIconScale>
+		<uiIconScale>1</uiIconScale>
 		<tools>
 			<li>
 				<label>mandibles</label>

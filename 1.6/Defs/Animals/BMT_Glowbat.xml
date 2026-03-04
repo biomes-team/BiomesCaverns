@@ -1,44 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_BrownBatBabyTiny</defName>
-		<label>pup</label>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_BrownBatJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_BrownBatAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
-
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_BrownBat</defName>
-		<label>brown bat</label>
-		<description>It's a flappy herbivorous mammal. These bats flit around within the dark, using their sense of echolocation to locate prey, often small insects or mammals.</description>
+<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_GlowBat</defName>
+		<label>bioluminescent bat</label>
+		<description>Feasting on the bioluminescent plants and fungi within the caverns has caused this bat to adapt a similar trait.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>95</MarketValue>
@@ -51,7 +16,7 @@
 			<baseBodySize>0.25</baseBodySize>
 			<baseHealthScale>0.35</baseHealthScale>
 			<baseHungerRate>0.125</baseHungerRate>
-			<foodType>CarnivoreAnimal</foodType>
+			<foodType>VegetableOrFruit, VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>BMT_Megabat</useMeatFrom>
 			<trainability>Advanced</trainability>
@@ -59,7 +24,7 @@
 			<lifeExpectancy>9</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.75</manhunterOnDamageChance>
-			<body>Monkey</body>
+			<body>BMT_Bat</body>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
@@ -71,15 +36,15 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BrownBatBabyTiny</def>
+					<def>AnimalBaby</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_BrownBatJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.11</minAge>
 				</li>
 				<li>
-					<def>BMT_BrownBatAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.222</minAge>
 					<soundWounded>Biomes_Bat_Wounded</soundWounded>
 					<soundDeath>Biomes_Bat_Death</soundDeath>
@@ -161,7 +126,7 @@
 				<faceSouth>true</faceSouth>
 				<graphicData>
 					<graphicClass>Graphic_Single</graphicClass>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Hanging</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Hanging</texPath>
 				</graphicData>
 			</li>
 		</comps>
@@ -169,72 +134,58 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalPet</li>
 		</tradeTags>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BigBirdKindBase">
-		<defName>BMT_BrownBat</defName>
-		<label>brown bat</label>
-		<race>BMT_BrownBat</race>
+		<defName>BMT_GlowBat</defName>
+		<label>bioluminescent bat</label>
+		<race>BMT_GlowBat</race>
 		<combatPower>45</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>5~10</wildGroupSize>
+			<flyingAnimationFramePathPrefix>BMT_Caverns/Things/Animal/Glowbat/Glowbat_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.7</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 		<lifeStages>
 			<li>
-				<label>brown bat pup</label>
-				<labelPlural>brown bat pups</labelPlural>
+				<label>glow bat pup</label>
+				<labelPlural>glow bat pups</labelPlural>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Sitting</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
 					<drawSize>0.8</drawSize>
+					<shaderType>TransparentPostLight</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Dessicated_Bat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
 					<drawSize>0.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Sitting</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
 					<drawSize>1.0</drawSize>
+					<shaderType>TransparentPostLight</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Dessicated_Bat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Sitting</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Sitting</texPath>
 					<drawSize>1.2</drawSize>
+					<shaderType>TransparentPostLight</shaderType>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Dessicated_Bat</texPath>
+					<texPath>BMT_Caverns/Things/Animal/Glowbat/Dessicated_Bat</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.LocomotionGraphicExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<bodyGraphicData>
-					<texPath>BMT_Caverns/Things/Animal/Brownbat/Bat_Flying</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 </Defs>

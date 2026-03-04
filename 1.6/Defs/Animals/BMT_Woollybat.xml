@@ -68,7 +68,7 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_Shearable">
-				<woolDef>WoolSheep</woolDef>
+				<woolDef>BMT_BatWool</woolDef>
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>80</woolAmount>
 			</li>
@@ -155,7 +155,7 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Woollybat/Woollybat</texPath>
 					<!-- <color>(176,150,106)</color> -->
-					<drawSize>1.5</drawSize>
+					<drawSize>0.55</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -164,14 +164,14 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Woollybat/Dessicated_Woollybat</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>0.55</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Woollybat/Woollybat</texPath>
 					<!-- <color>(176,150,106)</color> -->
-					<drawSize>1.8</drawSize>
+					<drawSize>0.75</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -180,14 +180,14 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Woollybat/Dessicated_Woollybat</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Woollybat/Woollybat</texPath>
 					<!-- <color>(176,150,106)</color> -->
-					<drawSize>2.6</drawSize>
+					<drawSize>2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -196,7 +196,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/Woollybat/Dessicated_Woollybat</texPath>
-					<drawSize>2.6</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

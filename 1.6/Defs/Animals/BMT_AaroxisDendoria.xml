@@ -384,44 +384,5 @@
 			<MarketValue>25.0</MarketValue>
 		</statBases>
 	</ThingDef>
-	<ThingDef ParentName="ResourceBase">
-        <defName>BMT_CrimsonSilk</defName>
-        <label>crimson silk</label>
-        <description>A blood red silk produced by a species of subterranean moth. It is luxuriously soft.</description>
-        <graphicData>
-            <texPath>BMT_Caverns/Things/Item/CrimsonSilk</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>
-        <statBases>
-            <StuffPower_Armor_Sharp>0.15</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.15</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-            <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>4</MarketValue>
-            <Mass>0.01</Mass>
-            <Flammability>0.9</Flammability>
-            <DeteriorationRate>4</DeteriorationRate>
-        </statBases>
-        <burnableByRecipe>true</burnableByRecipe>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <minRewardCount>30</minRewardCount>
-        <stuffProps>
-            <categories>
-                <li>Fabric</li>
-            </categories>
-			<color>(123,57,57)</color>
-            <commonality>0.20</commonality>
-            <statFactors>
-                <Flammability>0.9</Flammability>
-                <MaxHitPoints>1.3</MaxHitPoints>
-                <Beauty>6</Beauty>
-				<Comfort>1.5</Comfort>
-            </statFactors>
-        </stuffProps>
-        <thingCategories>
-            <li>Wools</li>
-        </thingCategories>
-    </ThingDef>
+
 </Defs>

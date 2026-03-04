@@ -126,8 +126,8 @@
 		  </saltwater_Uncommon>
 		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Cold</rareCatchesSetMaker>
 		</fishTypes>
-		<animalDensity>4.5</animalDensity>
-		<plantDensity>0.75</plantDensity>
+		<animalDensity>2.5</animalDensity>
+		<plantDensity>2</plantDensity>
 		<wildPlantsAreCavePlants>true</wildPlantsAreCavePlants>
 		<settlementSelectionWeight>0.8</settlementSelectionWeight>
 		<movementDifficulty>0.5</movementDifficulty>
@@ -268,7 +268,7 @@
 			<BMT_CrystalFairyMole>0.025</BMT_CrystalFairyMole>
 			<BMT_MossBeetle>0.1</BMT_MossBeetle>
 			<BMT_MossBeetleLarvae>0.1</BMT_MossBeetleLarvae>
-			<BMT_GlowBat MayRequire="pathfinding.framework">0.5</BMT_GlowBat>
+			<BMT_GlowBat>0.5</BMT_GlowBat>
 			<BMT_Woollybat>0.05</BMT_Woollybat>
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 
