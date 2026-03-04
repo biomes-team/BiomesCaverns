@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>	
 	
-	<ThingDef ParentName="BMT_CaveTreeBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BMT_DarkWispcap</defName>
 		<label>dark wispcap</label>
 		<description>A short darklight-producing mushroom. It was engineered during early caveworld colonization efforts to provide a constant source of darklight for those with light sensitivity.</description>
@@ -17,6 +17,7 @@
 		<statBases>
 			<Flammability>0.0</Flammability>
 			<Beauty>2</Beauty>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
