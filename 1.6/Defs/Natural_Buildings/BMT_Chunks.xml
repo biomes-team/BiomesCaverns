@@ -104,6 +104,15 @@
 		<butcherProducts>
 			<BMT_ResourceBlueCrystal>20</BMT_ResourceBlueCrystal>
 		</butcherProducts>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1.75</glowRadius>
+				<glowColor>(119,189,239,0)</glowColor>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<RecipeDef ParentName="MakeStoneBlocksBase">

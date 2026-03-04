@@ -115,12 +115,10 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricket</texPath>
 					<drawSize>0.7</drawSize>
-					<color>(50, 50, 50)</color>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/CaveCricketFemale</texPath>
 					<drawSize>0.7</drawSize>
-					<color>(50, 50, 50)</color>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/CaveCricket/Dessicated_CaveCricket_east</texPath>
@@ -184,7 +182,7 @@
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(237,231,228)</color>
-			<drawSize>1.3</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>20.0</MarketValue>
@@ -203,7 +201,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
 			<color>(226,211,197)</color>
-			<drawSize>1.3</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>20.0</MarketValue>

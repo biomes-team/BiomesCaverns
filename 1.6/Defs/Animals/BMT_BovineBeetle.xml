@@ -381,7 +381,7 @@
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(223,232,204)</color>
-			<drawSize>1.3</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>40.0</MarketValue>
@@ -401,7 +401,7 @@
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(213,222,194)</color>
-			<drawSize>1.3</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>20.0</MarketValue>
