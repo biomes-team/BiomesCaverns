@@ -374,7 +374,7 @@
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(74, 51, 87)</color>
-			<drawSize>2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>0.50</Mass>
@@ -396,7 +396,7 @@
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(64, 41, 77)</color>
-			<drawSize>2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>40.0</MarketValue>

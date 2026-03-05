@@ -280,7 +280,7 @@
 	<TerrainDef ParentName="FloorBase">
 		<defName>BMT_CrystalManMade</defName>
 		<label>crystal floor</label>
-		<description>Flooring made out of blue crystals from deep within the earth. It takes a while to build but is considered quite beautiful.</description>
+		<description>Flooring made out of blue crystals from deep within the earth. It takes a while to build but is considered quite beautiful. It is also quite easy to clean.</description>
 		<texturePath>BMT_Caverns/Terrains/Crystal</texturePath>
 		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/Crystal</pollutedTexturePath> -->
 		<!-- Vanilla Pollution Stone -->

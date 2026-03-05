@@ -207,7 +207,7 @@
 		<description>A fertilized dark axolotl egg. If all goes well, it should hatch into an axolotl. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BiomesCore_Things/Items/Eggs/SalamanderEggs</texPath>
-			<drawSize>2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>0.50</Mass>
@@ -227,8 +227,7 @@
 		<description>An unfertilized dark axolotl egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
 			<texPath>BiomesCore_Things/Items/Eggs/SalamanderEggs</texPath>
-			<drawSize>2</drawSize>
-			<drawSize>2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>10.0</MarketValue>

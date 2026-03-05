@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/BrightWispcap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(0.5,0.5)</drawSize>
+			<drawSize>(0.75,0.75)</drawSize>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
 		<selectable>true</selectable>

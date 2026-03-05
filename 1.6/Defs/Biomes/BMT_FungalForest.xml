@@ -128,7 +128,7 @@
 		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
 		</fishTypes>
 		<animalDensity>4.25</animalDensity>
-		<plantDensity>0.90</plantDensity>
+		<plantDensity>2</plantDensity>
 		<wildPlantsAreCavePlants>true</wildPlantsAreCavePlants>
 		<settlementSelectionWeight>0.7</settlementSelectionWeight>
 		<movementDifficulty>0.2</movementDifficulty>
