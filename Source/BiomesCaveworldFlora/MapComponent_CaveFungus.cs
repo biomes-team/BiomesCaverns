@@ -1,4 +1,4 @@
-﻿using BiomesCaverns.Patches;
+﻿using BiomesCaverns;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,7 +41,7 @@ namespace Caveworld_Flora_Unleashed
 
         public override void MapGenerated()
 		{
-			if (!Enabled)
+			if (!IsNotCavern)
 			{
 				return;
 			}
@@ -56,7 +56,7 @@ namespace Caveworld_Flora_Unleashed
             : base(map) { }
 
         private bool? enabledForCurrentMap;
-		public bool Enabled
+		public bool IsNotCavern
 		{
 			get
 			{
@@ -70,7 +70,7 @@ namespace Caveworld_Flora_Unleashed
 
 		public override void MapComponentTick()
         {
-            if (!Enabled)
+            if (!IsNotCavern)
             {
                 return;
             }

@@ -1,9 +1,11 @@
 using BiomesCore;
 using RimWorld;
 using System.Collections.Generic;
+using UnityEngine;
 using Verse;
+using Verse.Noise;
 
-namespace BiomesCaverns.Patches
+namespace BiomesCaverns
 {
 	/// <summary>
 	/// Transpiler helpers may replace vanilla code with the functions in this class.
@@ -107,6 +109,41 @@ namespace BiomesCaverns.Patches
 				cachedMapsNonCaverns.Add(map);
 			}
 			return false;
+		}
+
+		public static void CavernPlantSpawnerTick(Map map)
+		{
+			WildPlantSpawner wildPlantSpawner = map.wildPlantSpawner;
+			int area = map.Area;
+			int num = Mathf.CeilToInt((float)area * 0.0001f);
+			float currentPlantDensityFactor = wildPlantSpawner.CurrentPlantDensityFactor;
+			wildPlantSpawner.CacheWholeMapNumDesiredPlants();
+			int num2 = Mathf.CeilToInt(10000f);
+			float cachedChanceFromDensity = wildPlantSpawner.CachedChanceFromDensity;
+			for (int i = 0; i < num; i++)
+			{
+				if (wildPlantSpawner.cycleIndex >= area)
+				{
+					wildPlantSpawner.calculatedWholeMapNumDesiredPlants = wildPlantSpawner.calculatedWholeMapNumDesiredPlantsTmp;
+					wildPlantSpawner.calculatedWholeMapNumDesiredPlantsTmp = 0f;
+					wildPlantSpawner.calculatedWholeMapNumNonZeroFertilityCells = wildPlantSpawner.calculatedWholeMapNumNonZeroFertilityCellsTmp;
+					wildPlantSpawner.calculatedWholeMapNumNonZeroFertilityCellsTmp = 0;
+					wildPlantSpawner.cycleIndex = 0;
+				}
+				IntVec3 intVec = map.cellsInRandomOrder.Get(wildPlantSpawner.cycleIndex);
+				wildPlantSpawner.calculatedWholeMapNumDesiredPlantsTmp += wildPlantSpawner.GetDesiredPlantsCountAt(intVec, currentPlantDensityFactor);
+				if (map.fertilityGrid.FertilityAt(intVec) > 0f)
+				{
+					wildPlantSpawner.calculatedWholeMapNumNonZeroFertilityCellsTmp++;
+				}
+				float mtb = map.BiomeAt(intVec).wildPlantRegrowDays;
+				float num3 = wildPlantSpawner.OverrideDensityForFertilityCurve.Evaluate(map.fertilityGrid.FertilityAt(intVec));
+				if (Rand.Chance((num3 > 0f) ? num3 : cachedChanceFromDensity) && Rand.MTBEventOccurs(mtb, 60000f, num2) && wildPlantSpawner.CanRegrowAt(intVec))
+				{
+					wildPlantSpawner.CheckSpawnWildPlantAt(intVec, currentPlantDensityFactor, wildPlantSpawner.calculatedWholeMapNumDesiredPlants);
+				}
+				wildPlantSpawner.cycleIndex++;
+			}
 		}
 
 	}

@@ -162,6 +162,13 @@
     <Publicize Include="Assembly-CSharp:RimWorld.Planet.TravelingTransportPods.End" />
     <Publicize Include="Assembly-CSharp:Verse.GenStep_ScatterGroup.map" />
     <Publicize Include="Assembly-CSharp:Verse.ThingOwner.GetAt" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.calculatedWholeMapNumDesiredPlants" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.calculatedWholeMapNumDesiredPlantsTmp" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.CacheWholeMapNumDesiredPlants" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.cycleIndex" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.calculatedWholeMapNumNonZeroFertilityCells" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.calculatedWholeMapNumNonZeroFertilityCellsTmp" />
+    <Publicize Include="Assembly-CSharp:RimWorld.WildPlantSpawner.CanRegrowAt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
