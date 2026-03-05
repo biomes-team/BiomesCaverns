@@ -1,5 +1,6 @@
 using BiomesCore;
 using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace BiomesCaverns.Patches
@@ -78,9 +79,35 @@ namespace BiomesCaverns.Patches
 			return cell.GetRoof(map) != BiomesCoreDefOf.BMT_RockRoofStable && cell.UsesOutdoorTemperature(map);
 		}
 
-		public static bool IsCavern(this Map map)
+		public static bool IsCavern_Direct(Map map)
 		{
 			return map?.Biome?.GetModExtension<BiomesCore.DefModExtensions.BiomesMap>()?.isCavern == true;
 		}
+
+		private static List<Map> cachedMapsCaverns = [];
+		private static List<Map> cachedMapsNonCaverns = [];
+
+		public static bool IsCavern(this Map map)
+		{
+			if (cachedMapsNonCaverns.Contains(map))
+			{
+				return false;
+			}
+			if (cachedMapsCaverns.Contains(map))
+			{
+				return true;
+			}
+			if (IsCavern_Direct(map))
+			{
+				cachedMapsCaverns.Add(map);
+				return true;
+			}
+			else
+			{
+				cachedMapsNonCaverns.Add(map);
+			}
+			return false;
+		}
+
 	}
 }
