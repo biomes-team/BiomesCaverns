@@ -117,7 +117,7 @@
 
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>BMT_Make_BlueCrystals</defName>
-		<label>make blue crystals</label>
+		<label>make crystals</label>
 		<description>Break crystal chunks into crystals.</description>
 		<ingredients>
 			<li>

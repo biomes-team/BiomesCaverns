@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>BMT_CrystalIncubator</defName>
 		<label>crystal incubator</label>
-		<description>Slowly generates crystals by a complex series of chemical reactions, using atoms extracted from the air. Very volatile. Capable of holding a roof.</description>
+		<description>Slowly generates crystals by a complex series of chemical reactions, using atoms extracted from the air. Very volatile and will likely explode when too damaged.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Building/Crystalncubator/Crystalncubator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -69,7 +69,7 @@
 		</thingSetMakerTags>
 		<size>(2, 2)</size>
 		<fillPercent>1.0</fillPercent>
-		<holdsRoof>true</holdsRoof>
+		<holdsRoof>false</holdsRoof>
 		<specialDisplayRadius>6.9</specialDisplayRadius>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

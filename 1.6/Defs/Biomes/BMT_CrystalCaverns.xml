@@ -134,7 +134,7 @@
 		<texture>BMT_Caverns/World/Biomes/CrystalCaverns</texture>
 		<forageability>0.5</forageability>
 		<foragedFood>BMT_RawDulcis</foragedFood>
-		<wildPlantRegrowDays>27</wildPlantRegrowDays>
+		<wildPlantRegrowDays>5</wildPlantRegrowDays>
 		<disableShadows>true</disableShadows>
 		<disableSkyLighting>false</disableSkyLighting>
 		<noAmbientWind>true</noAmbientWind>
