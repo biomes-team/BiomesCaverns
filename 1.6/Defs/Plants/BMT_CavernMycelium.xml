@@ -27,6 +27,7 @@
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<fertilitySensitivity>0.0</fertilitySensitivity>
 			<growDays>3.5</growDays>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
 			<fertilityMin>0.05</fertilityMin>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
