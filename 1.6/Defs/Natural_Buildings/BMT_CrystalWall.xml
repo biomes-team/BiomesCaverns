@@ -19,6 +19,7 @@
 		<isNaturalRock>true</isNaturalRock>
 		<claimable>false</claimable>
 		<naturalTerrain>BMT_Crystal</naturalTerrain>
+		<leaveTerrain>BMT_Crystal</leaveTerrain>
 		<mineableThing>BMT_ChunkCrystal</mineableThing>
 		<mineableDropChance>0.25</mineableDropChance>
 		<!-- <mineableYield>50</mineableYield> -->

@@ -9,6 +9,8 @@
 			<MarketValue>95</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<MaxFlightTime>50</MaxFlightTime>
+			<FlightCooldown>7</FlightCooldown>
 			<Wildness>0.95</Wildness>
 		</statBases>
 		<race>

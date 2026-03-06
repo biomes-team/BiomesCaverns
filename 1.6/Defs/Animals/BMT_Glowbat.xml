@@ -9,6 +9,7 @@
 			<MarketValue>95</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FlightCooldown>7</FlightCooldown>
 			<Wildness>0.95</Wildness>
 		</statBases>
 		<race>
@@ -20,6 +21,9 @@
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>BMT_Megabat</useMeatFrom>
 			<trainability>Advanced</trainability>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<lifeExpectancy>9</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
