@@ -5,7 +5,7 @@
 	</StuffAppearanceDef>
 	<ThingDef ParentName="StoneBlocksBase">
 		<defName>BMT_ResourceBlueCrystal</defName>
-		<label>blue crystal</label>
+		<label>crystal</label>
 		<description>Blue crystal mined from crystal caves.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/BlueCrystal</texPath>
