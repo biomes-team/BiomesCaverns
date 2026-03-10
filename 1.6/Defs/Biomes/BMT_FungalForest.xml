@@ -150,6 +150,10 @@
 				<commonality>100</commonality>
 			</li>
 			<li>
+				<diseaseInc>BMT_Disease_SporeFlesh</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
 				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
 			</li>
