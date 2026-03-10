@@ -148,7 +148,7 @@
 		<combatPower>45</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>5~10</wildGroupSize>
-			<flyingAnimationFramePathPrefix>BMT_Caverns/Things/Animal/Glowbat/Glowbat_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFramePathPrefix>BMT_Caverns/Things/Animal/Glowbat/GlowBat_Flying_</flyingAnimationFramePathPrefix>
 			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
 			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
 			<flyingAnimationDrawSize>1.7</flyingAnimationDrawSize>
