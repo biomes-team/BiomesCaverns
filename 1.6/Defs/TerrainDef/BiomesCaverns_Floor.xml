@@ -274,6 +274,7 @@
 		<takeFootprints>false</takeFootprints>
 		<tags>
 			<li>BMT_Crystal</li>
+			<li>FineFloor</li>
 		</tags>
 	</TerrainDef>
 
