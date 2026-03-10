@@ -13,8 +13,7 @@
 			<!-- <Mass>70</Mass> -->
 		</statBases>
 		<building>
-			<alwaysDeconstructible>false</alwaysDeconstructible>
-			<deconstructible>false</deconstructible>
+			<deconstructible>true</deconstructible>
 			<claimable>false</claimable>
 		</building>
 		<!-- <thingCategories> -->
