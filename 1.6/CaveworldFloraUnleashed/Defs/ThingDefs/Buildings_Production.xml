@@ -17,7 +17,7 @@
 			<shadowData>
 				<volume>(0.75, 0.35, 0.33)</volume>
 			</shadowData>
-			<drawSize>(1.25,1.25)</drawSize>
+			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>

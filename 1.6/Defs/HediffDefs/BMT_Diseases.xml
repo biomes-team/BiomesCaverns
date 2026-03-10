@@ -87,4 +87,63 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef ParentName="InfectionBase">
+		<defName>BMT_SporeFlesh</defName>
+		<label>spore flesh</label>
+		<description>Unique mycelia have invaded the body of the afflicted, numbing their pain and slowing their bleeding while drawing nutrients from their body. It will slowly alter the brain chemistry of the afflicted, driving them increaingly to aggression. While potentially fatal, it can be cured with good medical care.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>10</baseTendDurationHours>
+				<severityPerDayTended>-0.12</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.37</severityPerDayNotImmune>
+				<immunityPerDaySick>0.3</immunityPerDaySick>
+				<severityPerDayImmune>-0.45</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.05</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<totalBleedFactor>0.90</totalBleedFactor>
+				<painFactor>0.75</painFactor>
+				<hungerRateFactor>1.10</hungerRateFactor>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.55</minSeverity>
+				<totalBleedFactor>0.70</totalBleedFactor>
+				<painFactor>0.45</painFactor>
+				<hungerRateFactor>1.30</hungerRateFactor>
+					<mentalStateGivers>
+					<li>
+					<mentalState>Tantrum</mentalState>
+					<mtbDays>6</mtbDays>
+					</li>
+					</mentalStateGivers>
+				<forgetMemoryThoughtMtbDays>10</forgetMemoryThoughtMtbDays>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<totalBleedFactor>0.50</totalBleedFactor>
+				<painFactor>0.25</painFactor>
+				<hungerRateFactor>1.50</hungerRateFactor>
+				<mentalStateGivers>
+					<li>
+					<mentalState>Berserk</mentalState>
+					<mtbDays>12</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<forgetMemoryThoughtMtbDays>7</forgetMemoryThoughtMtbDays>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

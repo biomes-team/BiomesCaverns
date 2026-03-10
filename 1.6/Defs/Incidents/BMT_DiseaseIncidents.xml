@@ -19,6 +19,12 @@
 		<letterLabel>Disease: Purple Lung</letterLabel>
 	</IncidentDef>
 	<IncidentDef ParentName="DiseaseIncident">
+		<defName>BMT_Disease_SporeFlesh</defName>
+		<label>spore flesh</label>
+		<diseaseIncident>BMT_SporeFlesh</diseaseIncident>
+		<letterLabel>Disease: Spore Flesh</letterLabel>
+	</IncidentDef>
+	<IncidentDef ParentName="DiseaseIncident">
 		<defName>BMT_Disease_ThermophileMechanites</defName>
 		<label>thermophile mechanites</label>
 		<diseaseIncident>BMT_ThermophileMechanites</diseaseIncident>

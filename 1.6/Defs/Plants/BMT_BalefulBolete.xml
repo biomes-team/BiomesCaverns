@@ -34,12 +34,13 @@
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
-			<harvestYield>2</harvestYield>
+			<harvestedThingDef IsNull="true"/>
+			<harvestYield>0</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 				<li>Decorative</li>
 			</sowTags>
+			<purpose>Beauty</purpose>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
