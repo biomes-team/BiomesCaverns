@@ -63,9 +63,6 @@
 				<listOrder>10</listOrder>
 			</li>
 			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-			<li>
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
