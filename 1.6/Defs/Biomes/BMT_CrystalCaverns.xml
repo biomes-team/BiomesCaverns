@@ -91,6 +91,7 @@
 					<li>MeteoriteImpact</li>
 					<li>ToxicFallout</li>
 					<li>VolcanicWinter</li>
+					<li>SolarFlare</li>
 					<li MayRequire="sarg.alphaanimals">AA_IncidentSummitCrab</li>
 					<li MayRequire="sarg.alphaanimals">AA_Incident_SkyMeteorite</li>
 					<li MayRequire="sarg.alphaanimals">AA_Eclipse</li>

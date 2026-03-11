@@ -29,6 +29,44 @@
 			<harvestYield>1</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>BMT_MedicineFungal</harvestedThingDef>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<neverBlightable>false</neverBlightable>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~1.0</visualSizeRange>
+			<purpose>Health</purpose>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_MortalMorelPlantGrowable</defName>
+		<label>mortal morel</label>
+		<description>A slow-growing mushroom which yields fungal medicine when harvested. Sowing and harvesting this fungus is both very labor-intensive tasks because of its delicate structure.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/MortalMorel</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<minGrowthTemperature>-50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<fertilityMin>1.0</fertilityMin>
+			<growDays>10</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestWork>400</harvestWork>
+			<harvestYield>1</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_MedicineFungal</harvestedThingDef>
 			<sowMinSkill>8</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
@@ -42,7 +80,8 @@
 			<purpose>Health</purpose>
 			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
-	</ThingDef>
+	</ThingDef>	
+	
 	<ThingDef ParentName="MedicineBase">
 		<defName>BMT_MedicineFungal</defName>
 		<label>fungal medicine</label>
@@ -70,6 +109,7 @@
 		</comps>
 		<allowedArchonexusCount>20</allowedArchonexusCount>
 	</ThingDef>
+	
 	<RecipeDef>
 		<defName>BMT_IndustrialMedicineFromFungal</defName>
 		<label>make medicine from fungal medicine</label>

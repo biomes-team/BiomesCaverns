@@ -416,38 +416,7 @@
     </researchPrerequisites>
 	</TerrainDef>
 	
-		<TerrainDef ParentName="NaturalTerrainBase">
-		<defName>BMT_GlacialIce</defName>
-		<label>glacial ice</label>
-		<texturePath>BMT_Caverns/Terrains/GlacialIce</texturePath>
-		<!-- <pollutedTexturePath>BMT_Caverns/Terrains/GlacialIce</pollutedTexturePath> -->
-		<!-- Vanilla Pollution Stone -->
-		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
-		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
-		<pollutionColor>(1, 1, 1, 0.43)</pollutionColor>
-		<pollutionOverlayScale>(0.66, 0.66)</pollutionOverlayScale>
-		<!-- Vanilla Pollution Stone -->
-		<isPaintable>false</isPaintable>
-		<edgeType>FadeRough</edgeType>
-			<renderPrecedence>350</renderPrecedence>
-			<pathCost>14</pathCost>
-		<statBases>
-		  <Beauty>-3</Beauty>
-		  <BeautyOutdoors>0</BeautyOutdoors>
-		</statBases>
-		<affordances>
-			<li>Light</li>
-			<li>Medium</li>
-			<li>Heavy</li>
-			<li>Diggable</li>
-		</affordances>
-		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>0</fertility>
-		<filthAcceptanceMask>
-			<li>None</li>
-		</filthAcceptanceMask>
-		<takeFootprints>false</takeFootprints>
-	</TerrainDef>
+
 	
 	<TerrainDef ParentName="FloorBase">
     <defName>BMT_MycelialMatting</defName>
