@@ -35,9 +35,16 @@
 				</disallowedWeathers>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
-				<overrideLandforms>
+				<overrideLandforms operation="add">
 					<li>BMT_CrystalCaverns</li>
 				</overrideLandforms>
+				<allowedLandforms>
+					<li>River</li>
+					<li>RiverSource</li>
+					<li>RiverIsland</li>
+					<li>RiverDelta</li>
+					<li>RiverConfluence</li>
+				</allowedLandforms>
 				<allowLandforms>false</allowLandforms>
 				<allowBiomeTransitions>false</allowBiomeTransitions>
 				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
@@ -215,7 +222,7 @@
 			<!-- ground cover -->
 			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
 			<BMT_Gleamtip>1.0</BMT_Gleamtip>
-			
+
 			<!-- mid sized -->
 			<BMT_Fungusfern>0.5</BMT_Fungusfern>
 			<BMT_CrystaltipBrambles>0.3</BMT_CrystaltipBrambles>
@@ -225,10 +232,10 @@
 			<!-- trees -->
 
 			<BMT_Crystalcap>0.5</BMT_Crystalcap>
-			
+
 			<!-- other harvestable -->
 			<BMT_GreyLady>0.02</BMT_GreyLady>
-			
+
 			<!-- hydrophytes -->
 			<BMT_Arpeau>0.05</BMT_Arpeau>
 			<BMT_LuminousSpout>0.2</BMT_LuminousSpout>
@@ -275,13 +282,13 @@
 
 			<!-- onmnivore -->
 			<BMT_CrystalCrab>0.008</BMT_CrystalCrab>
-			
+
 			<!-- predators -->
 			<BMT_CrystalMantis>0.1</BMT_CrystalMantis>
 			<BMT_CaveSpider>0.005</BMT_CaveSpider>
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
-			<BMT_BloodropMoth>0.25</BMT_BloodropMoth>		
-			
+			<BMT_BloodropMoth>0.25</BMT_BloodropMoth>
+
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
@@ -297,7 +304,7 @@
 		</allowedPackAnimals>
     <extraRockTypes>
       <li>BMT_NaturalCrystalWall</li>
-    </extraRockTypes> 
+    </extraRockTypes>
 		<pollutionWildAnimals/>
 	</BiomeDef>
 

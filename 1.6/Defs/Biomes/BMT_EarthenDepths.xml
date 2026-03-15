@@ -40,9 +40,16 @@
 				</disallowedWeathers>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
-				<overrideLandforms>
+				<overrideLandforms operation="add">
 					<li>BMT_EarthenDepths</li>
 				</overrideLandforms>
+				<allowedLandforms>
+					<li>River</li>
+					<li>RiverSource</li>
+					<li>RiverIsland</li>
+					<li>RiverDelta</li>
+					<li>RiverConfluence</li>
+				</allowedLandforms>
 				<allowLandforms>false</allowLandforms>
 				<allowBiomeTransitions>false</allowBiomeTransitions>
 				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
@@ -238,19 +245,19 @@
 			<!-- ground cover -->
 			<BMT_CavernMycelium>5.0</BMT_CavernMycelium>
 			<BMT_FireLavender>0.55</BMT_FireLavender>
-			
+
 			<!-- mid sized -->
 			<!-- <BMT_ExplodingAngel>0.5</BMT_ExplodingAngel> -->
 			<BMT_Boomshroom>0.2</BMT_Boomshroom>
 
 			<!-- trees -->
 			<BMT_Candlesnuff>0.7</BMT_Candlesnuff>
-			
+
 			<!-- other harvestable -->
 			<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
 			<BMT_MoonlessStripesPlant>0.1</BMT_MoonlessStripesPlant>
 			<BMT_CapscoolFungus>0.1</BMT_CapscoolFungus>
-			
+
 			<!-- hydrophytes -->
 
 			<!-- special -->
@@ -272,14 +279,14 @@
 			<BMT_RoyalRhino>0.025</BMT_RoyalRhino>
 
 			<!-- onmnivore -->
-			
+
 			<!-- predators -->
 			<BMT_AcidSlug>0.01</BMT_AcidSlug>
 			<BMT_Basilisk>0.2</BMT_Basilisk>
 
 			<!-- onmnivore -->
 			<BMT_CrystalCrab>0.0001</BMT_CrystalCrab>
-			
+
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>BMT_FoundryBeetle</li>

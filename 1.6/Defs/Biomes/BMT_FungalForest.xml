@@ -34,9 +34,16 @@
 				</disallowedWeathers>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties">
-				<overrideLandforms>
+				<overrideLandforms operation="add">
 					<li>BMT_FungalForest</li>
 				</overrideLandforms>
+				<allowedLandforms>
+					<li>River</li>
+					<li>RiverSource</li>
+					<li>RiverIsland</li>
+					<li>RiverDelta</li>
+					<li>RiverConfluence</li>
+				</allowedLandforms>
 				<allowLandforms>false</allowLandforms>
 				<allowBiomeTransitions>false</allowBiomeTransitions>
 				<allowSettlementsOnImpassableTerrain>true</allowSettlementsOnImpassableTerrain>
@@ -179,7 +186,7 @@
 				<diseaseInc>Disease_MuscleParasites</diseaseInc>
 				<commonality>50</commonality>
 			</li>
-			
+
 			<li>
 				<diseaseInc>Disease_AnimalFlu</diseaseInc>
 				<commonality>100</commonality>
@@ -251,18 +258,18 @@
 			<BMT_Pusmelon>0.3</BMT_Pusmelon>
 			<BMT_RustPuff>0.2</BMT_RustPuff>
 			<BMT_Sagecrust>1.0</BMT_Sagecrust>
-			
+
 			<!-- mid sized -->
 			<BMT_BalefulBolete>0.02</BMT_BalefulBolete>
 			<BMT_BleedingTooth>0.05</BMT_BleedingTooth>
 			<BMT_CrimsonCap>0.02</BMT_CrimsonCap>
 			<BMT_VioletWimple>0.02</BMT_VioletWimple>
-			
+
 			<!-- trees -->
 			<BMT_FlakespireFungus>2</BMT_FlakespireFungus>
-			
+
 			<!-- other harvestable -->
-			<!-- food --> 
+			<!-- food -->
 			<BMT_DulcisPlant>0.02</BMT_DulcisPlant>
 			<BMT_KessingerPlant>0.001</BMT_KessingerPlant>
 			<BMT_StarchstalkPlant>0.001</BMT_StarchstalkPlant>
@@ -270,12 +277,12 @@
 			<BMT_Shinecap>0.003</BMT_Shinecap>
 			<!-- textiles -->
 			<BMT_GreyLady>0.02</BMT_GreyLady>
-			
+
 			<!-- medicine -->
 			<BMT_MortalMorelPlant>0.005</BMT_MortalMorelPlant>
 			<!-- stimulant drug -->
 			<BMT_Stimquill>0.005</BMT_Stimquill>
-			
+
 			<!-- hydrophytes -->
 			<BMT_GreenArpeau>0.4</BMT_GreenArpeau>
 			<BMT_Nuitae>0.4</BMT_Nuitae>
@@ -325,7 +332,7 @@
 			<BMT_BloodropLarvae>0.05</BMT_BloodropLarvae>
 			<BMT_BloodropMoth>0.1</BMT_BloodropMoth>
 			<BMT_GlowBat>0.75</BMT_GlowBat>
-			
+
 			<!-- onmnivore -->
 			<BMT_CrystalCrab>0.001</BMT_CrystalCrab>
 
