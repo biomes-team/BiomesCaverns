@@ -10,11 +10,6 @@
 			<texPath>BMT_Caverns/Things/Plant/Mycelium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.7~0.3</growingHours>
-			</li>
-		</modExtensions>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>

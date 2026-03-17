@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BMT_CaveTreeBase">
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.0~0.5</growingHours>
-			</li>
-		</modExtensions>
 		<defName>BMT_FlakespireFungus</defName>
 		<label>flakespire fungus</label>
 		<description>A strong purple mushroom tree. Slow-growing, but this woody fungus is very strong and attractive.</description>

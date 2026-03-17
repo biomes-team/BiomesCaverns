@@ -12,11 +12,6 @@
 			<Nutrition>1.25</Nutrition>
 			<Flammability>0.35</Flammability>
 		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.01~0.999</growingHours>
-			</li>
-		</modExtensions>
 		<specialDisplayRadius>6</specialDisplayRadius>
 		<comps>
 			<li Class="BiomesCore.CompProperties_CleanFilthAround">

@@ -42,7 +42,6 @@
 					<li>Boggy</li>
 					<li>Marshy</li>
 				</terrainTags>
-				<growingHours>0.75~0.25</growingHours>
 			</li>
 		</modExtensions>
 	</ThingDef>

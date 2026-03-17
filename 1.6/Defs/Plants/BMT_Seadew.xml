@@ -33,10 +33,5 @@
 				<glowColor>(15,104,106,0)</glowColor>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.75~0.25</growingHours>
-			</li>
-		</modExtensions>
 	</ThingDef>
 </Defs>

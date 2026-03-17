@@ -15,11 +15,6 @@
 			<BeautyOutdoors>14</BeautyOutdoors>
 			<Nutrition>1.0</Nutrition>
 		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.6~0.1</growingHours>
-			</li>
-		</modExtensions>
 		<altitudeLayer>Item</altitudeLayer>
 		<selectable>true</selectable>
 		<plant>
@@ -58,11 +53,6 @@
 			<BeautyOutdoors>14</BeautyOutdoors>
 			<Nutrition>1.0</Nutrition>
 		</statBases>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.6~0.1</growingHours>
-			</li>
-		</modExtensions>
 		<altitudeLayer>Item</altitudeLayer>
 		<selectable>true</selectable>
 		<plant>

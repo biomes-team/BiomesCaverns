@@ -15,7 +15,6 @@
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<growingHours>0.0~0.5</growingHours>
 				<terrainTags>
 					<li>Marshy</li>
 				</terrainTags>
