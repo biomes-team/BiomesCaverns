@@ -15,7 +15,6 @@
 			<BeautyOutdoors>4</BeautyOutdoors>
 			<Nutrition>1.0</Nutrition>
 		</statBases>
-		<modExtensions>
 		<selectable>true</selectable>
 		<plant>
 			<growMinGlow>0</growMinGlow>
