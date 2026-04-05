@@ -15,6 +15,7 @@
 	<blockLight>true</blockLight>
 	<filthLeaving>Filth_RubbleRock</filthLeaving>
 	<building>
+	    <isAirtight>true</isAirtight>
 		<isResourceRock>false</isResourceRock>
 		<isNaturalRock>true</isNaturalRock>
 		<claimable>false</claimable>
@@ -92,6 +93,7 @@
 	<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
 	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	<building>
+	    <isAirtight>true</isAirtight>
 		<paintable>false</paintable>
 		<isStuffableAirtight>false</isStuffableAirtight>
 		<smoothedThing>BMT_BuiltSmoothedCrystalWall</smoothedThing>
