@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BMT_CaveBushBase">
-		<defName>BMT_Boomshroom</defName>
-		<label>boomspore shroom</label>
+		<defName>BMT_Blastpod</defName>
+		<label>blastpod shroom</label>
 		<description>A fungus grown by cavern dwelling populace for its dangerously volatile pods which can be refined into chemfuel.</description>
 		<thingClass>BMT.BiomesPlant</thingClass>
 		<graphicData>

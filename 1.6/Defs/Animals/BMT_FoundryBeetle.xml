@@ -337,6 +337,10 @@
 			<offset>(0,0,-0.2)</offset>
 		  </shadowData>
 		</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/Dessicated_FoundryBeetle</texPath>
+				<drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
@@ -347,6 +351,10 @@
 			<offset>(0,0,-0.25)</offset>
 		  </shadowData>
 		</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/Dessicated_FoundryBeetle</texPath>
+				<drawSize>2</drawSize>
+			</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
@@ -357,6 +365,10 @@
 			<offset>(0,0,-0.3)</offset>
 		  </shadowData>
 		</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>BMT_Caverns/Things/Animal/FoundryBeetle/Dessicated_FoundryBeetle</texPath>
+				<drawSize>2.5</drawSize>
+			</dessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>
   </PawnKindDef>

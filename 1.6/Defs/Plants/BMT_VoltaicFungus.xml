@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveTreeBase">
+		<defName>BMT_VoltaicFungus</defName>
+		<label>voltaic fungus</label>
+		<description>A twisty fungal tree. Slow-growing, but yields a lot of usable material.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Dishcap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+			<pollution>Any</pollution>
+			<growDays>14</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<topWindExposure>0</topWindExposure>
+			<harvestWork>500</harvestWork>
+			<harvestYield>40</harvestYield>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
