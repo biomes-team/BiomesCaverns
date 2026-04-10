@@ -58,6 +58,8 @@
 		<plant>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0.25</growOptimalGlow>
+			<minGrowthTemperature>-50</minGrowthTemperature>		
+			<maxGrowthTemperature>30</maxGrowthTemperature>
 			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
