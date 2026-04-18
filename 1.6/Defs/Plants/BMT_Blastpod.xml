@@ -50,9 +50,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>BMT_BoomSpore</defName>
-		<label>boom spore sac</label>
-		<description>The spore sac of a boomspore shroom. It's a good fuel for campfires and generators, and can be refined into chemfuel.</description>
+		<defName>BMT_BlastSpore</defName>
+		<label>blast spore sac</label>
+		<description>The spore sac of a blastpod fungus. It's a good fuel for campfires and generators, and can be refined into chemfuel.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/BoomSpore</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
