@@ -33,6 +33,7 @@
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>170</wildClusterWeight>
 			<wildOrder>2</wildOrder>
+			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
 

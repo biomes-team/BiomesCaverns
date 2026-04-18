@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BMT_CrimsonCap</defName>
 		<label>crimson cap</label>
-		<description>A big crimson-capped mushroom. It is sometimes mistakenly identified as Dulcis by inexperienced mushroom pickers.</description>
+		<description>A large crimson-capped mushroom. It is pretty enough to be used for decor but not much else.</description>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Plant/CrimsonCap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -11,6 +11,8 @@
 		<statBases>
 			<Nutrition>1.25</Nutrition>
 			<Flammability>0.35</Flammability>
+			<Beauty>10</Beauty>
+			<BeautyOutdoors>10</BeautyOutdoors>
 		</statBases>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -32,13 +34,11 @@
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
-			<harvestYield>2</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 			<interferesWithRoof>false</interferesWithRoof>
+			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
 </Defs>

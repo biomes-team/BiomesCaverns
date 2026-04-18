@@ -43,6 +43,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantFoodRawBase">
@@ -65,6 +66,7 @@
 		</comps>
 		<ingestible>
 			<preferability>RawTasty</preferability>
+			<tasteThought>BMT_DrankCactusJuice</tasteThought>
 			<foodType>VegetableOrFruit</foodType>
 		</ingestible>
 	</ThingDef>

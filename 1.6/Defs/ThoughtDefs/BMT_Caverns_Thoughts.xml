@@ -12,6 +12,19 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>BMT_DrankCactusJuice</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>drank cactus juice</label>
+				<description>I drank the juice of a cave cactus. It was surprisingly good!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>BMT_AteFungalLog</defName>
