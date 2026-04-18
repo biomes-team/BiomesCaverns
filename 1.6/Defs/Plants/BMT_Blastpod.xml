@@ -32,7 +32,7 @@
 			<wildOrder>3</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>BMT_BoomSpore</harvestedThingDef>
+			<harvestedThingDef>BMT_BlastSpore</harvestedThingDef>
 			<harvestYield>8</harvestYield>
 			<sowWork>800</sowWork>
 			<sowMinSkill>8</sowMinSkill>
@@ -131,7 +131,7 @@
 
 	<ThingDef ParentName="BaseIncendiaryProjectile">
 		<defName>Proj_BMT_BoomSporeSac</defName>
-		<label>boom spore sac</label>
+		<label>blast spore sac</label>
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Item/BoomSpore/BoomSpore_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -186,8 +186,8 @@
 
 	<RecipeDef>
 		<defName>BMT_Make_ChemfuelFromBoomSpore</defName>
-		<label>make chemfuel from boom spore sac</label>
-		<description>Extracting a batch of chemfuel from boom spore sacs.</description>
+		<label>make chemfuel from blast spore sac</label>
+		<description>Extracting a batch of chemfuel from blast spore sacs.</description>
 		<jobString>Refining chemfuel from boom spore sacs.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -197,7 +197,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BMT_BoomSpore</li>
+						<li>BMT_BlastSpore</li>
 					</thingDefs>
 				</filter>
 				<count>50</count>
@@ -205,7 +205,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>BMT_BoomSpore</li>
+				<li>BMT_BlastSpore</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
