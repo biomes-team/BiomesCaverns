@@ -9,4 +9,7 @@
 			</placeWorkers>
 		</value>
 	</Operation>
+	<!-- <Operation Class="PatchOperationRemove"> -->
+		<!-- <xpath>Defs/ThingDef[defName="TransportPod"]/placeWorkers[li="PlaceWorker_NotUnderRoof"]</xpath> -->
+	<!-- </Operation> -->
 </Patch>

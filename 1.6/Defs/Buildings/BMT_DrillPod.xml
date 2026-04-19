@@ -17,6 +17,7 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<designationHotKey>Misc12</designationHotKey>
 		<fillPercent>0.5</fillPercent>
+		<!-- <designationCategory></designationCategory> -->
 		<designationCategory>Misc</designationCategory>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<statBases>
@@ -35,7 +36,12 @@
 		  </li>
 		  <li Class="CompProperties_Launchable_TransportPod">
 			<skyfallerLeaving>BMT_DrillPodLeaving</skyfallerLeaving>
+			<activeTransporterDef>BMT_DrillPodActive</activeTransporterDef>
+			<worldObjectDef>BMT_TravelingDrillPods</worldObjectDef>
 		  </li>
+		  <!-- <li Class="CompProperties_Launchable_TransportPod"> -->
+			<!-- <skyfallerLeaving>DropPodLeaving</skyfallerLeaving> -->
+		  <!-- </li> -->
 			<!-- <li Class="CompProperties_Transporter"> -->
 				<!-- <restEffectiveness>0.8</restEffectiveness> -->
 			<!-- </li> -->
