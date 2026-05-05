@@ -25,12 +25,5 @@
 			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 			<mustBeWildToSow>false</mustBeWildToSow>
 		</plant>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-1000</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
-			</li>
-		</comps>
 	</ThingDef>
 </Defs>
