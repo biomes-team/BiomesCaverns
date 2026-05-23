@@ -68,8 +68,6 @@
 		<li IfModActive="sarg.alphabiomes">1.6/Mods/AlphaBiomes</li>
 		<li IfModActive="sarg.magicalmenagerie">1.6/Mods/AlphaMythology</li>
 		<!--<li IfModActive="musicexpanded.framework">1.6/Mods/MusicExpandedPatch</li>-->
-		<li IfModActive="pathfinding.framework">Common/Mods/PathfindingFramework</li>
-		<li IfModActive="pathfinding.framework">1.6/Mods/PathfindingFramework</li>
 		<li IfModActive="GonDragon.UINotIncluded">1.6/Mods/UINotIncluded</li>
 		<li IfModActive="VanillaExpanded.VBrewE">1.6/Mods/VanillaBrewingExpanded</li>
 		<li IfModActive="vanillaexpanded.backgrounds">1.6/Mods/VBgE</li>
