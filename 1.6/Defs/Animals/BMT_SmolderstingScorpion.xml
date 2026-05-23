@@ -45,9 +45,9 @@
 					<li>BMT_BurningSting</li>
 				</capacities>
 				<power>9</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>BMT_StingerGroup</linkedBodyPartsGroup>
-				<chanceFactor>0.2</chanceFactor>
+				<chanceFactor>0.5</chanceFactor>
 			</li>
 			<li>
 				<label>head</label>
@@ -123,7 +123,6 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SmolderstingScorpion/SmolderstingScorpion</texPath>
 					<drawSize>0.7</drawSize>
-					<color>(30,30,30)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SmolderstingScorpion/Dessicated_SmolderstingScorpion</texPath>
@@ -134,7 +133,6 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SmolderstingScorpion/SmolderstingScorpion</texPath>
 					<drawSize>1.0</drawSize>
-					<color>(30,30,30)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SmolderstingScorpion/Dessicated_SmolderstingScorpion</texPath>
@@ -144,8 +142,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SmolderstingScorpion/SmolderstingScorpion</texPath>
-					<drawSize>1.2</drawSize>
-					<color>(30,30,30)</color>
+					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>
@@ -153,7 +150,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SmolderstingScorpion/Dessicated_SmolderstingScorpion</texPath>
-					<drawSize>1.2</drawSize>
+					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

@@ -138,7 +138,7 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/FleeceSpider/FleeceSpider</texPath>
 					<!-- <color>(176,150,106)</color> -->
-					<drawSize>0.4</drawSize>
+					<drawSize>0.6</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -150,7 +150,7 @@
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/FleeceSpider/FleeceSpider</texPath>
 					<!-- <color>(176,150,106)</color> -->
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
