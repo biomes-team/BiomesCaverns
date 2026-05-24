@@ -22,6 +22,8 @@
 			<growOptimalGlow>0.25</growOptimalGlow>
 			<minGrowthTemperature>-50</minGrowthTemperature>		
 			<maxGrowthTemperature>30</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>-50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>30</maxOptimalGrowthTemperature>
 			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
