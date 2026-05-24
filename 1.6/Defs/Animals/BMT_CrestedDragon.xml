@@ -64,24 +64,16 @@
 			</li>
 		</comps>
 		<race>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<predator>true</predator>
 			<baseBodySize>0.7</baseBodySize>
 			<baseHealthScale>0.7</baseHealthScale>
 			<baseHungerRate>0.535</baseHungerRate>
-			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
+			<foodType>CarnivoreAnimal,AnimalProduct</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<useMeatFrom>Iguana</useMeatFrom>
 			<trainability>None</trainability>
 			<lifeExpectancy>11</lifeExpectancy>
-			<gestationPeriodDays>5.661</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.8, 1)</li>
-					<li>(2.4, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

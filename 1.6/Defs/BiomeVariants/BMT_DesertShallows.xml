@@ -76,7 +76,6 @@
 					<!-- herbivores -->
 					<BMT_Pillbug>0.1</BMT_Pillbug>
 					<BMT_CaveCricket>0.2</BMT_CaveCricket>
-					<BMT_CrestedDragon>0.1</BMT_CrestedDragon>
 					<BMT_MaceDrake>0.2</BMT_MaceDrake>
 					<BMT_SandLeaper>0.4</BMT_SandLeaper>
 					<BMT_ImperialToad>0.3</BMT_ImperialToad>
@@ -87,7 +86,7 @@
 					<!-- predators -->
 					<BMT_Diggerpede>0.2</BMT_Diggerpede>
 					<BMT_CactusCrab>0.1</BMT_CactusCrab>
-					<BMT_LandOctopus>0.1</BMT_LandOctopus>
+					<BMT_CrestedDragon>0.1</BMT_CrestedDragon>
 
 					<!-- omnivore -->
 					<BMT_Xyrion>0.1</BMT_Xyrion>
