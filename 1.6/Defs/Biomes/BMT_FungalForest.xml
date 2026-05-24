@@ -284,11 +284,15 @@
 			<BMT_Stimquill>0.005</BMT_Stimquill>
 
 			<!-- hydrophytes -->
-			<BMT_GreenArpeau>0.4</BMT_GreenArpeau>
-			<BMT_Nuitae>0.4</BMT_Nuitae>
-			<BMT_Wrinklecap>0.4</BMT_Wrinklecap>
+			<BMT_Nuitae>0.2</BMT_Nuitae>
+			<BMT_Wrinklecap>0.3</BMT_Wrinklecap> 
+			
+			<BMT_NuitaeMarsh>0.2</BMT_NuitaeMarsh>
+			<BMT_WrinklecapMarsh>0.3</BMT_WrinklecapMarsh>
 
-			<BMT_Nogtyl>0.1</BMT_Nogtyl>
+			<BMT_Arpeau>0.1</BMT_Arpeau>
+			<BMT_Nogtyl>0.1</BMT_Nogtyl> 
+			<BMT_NogtylMarsh>0.3</BMT_NogtylMarsh> 
 
 			<!-- special -->
 			<!-- firepooper -->

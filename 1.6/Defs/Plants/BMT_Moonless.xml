@@ -22,7 +22,10 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
-			<fertilityMin>0.70</fertilityMin>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<wildClusterRadius>3</wildClusterRadius>
 			<growDays>8</growDays>
 			<dieIfLeafless>true</dieIfLeafless>

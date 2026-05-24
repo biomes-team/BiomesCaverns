@@ -20,6 +20,8 @@
 			<growOptimalGlow>0</growOptimalGlow>
 			<minGrowthTemperature>-50</minGrowthTemperature>		
 			<maxGrowthTemperature>30</maxGrowthTemperature>
+			<minGrowthTemperature>-50</minGrowthTemperature>		
+			<maxGrowthTemperature>30</maxGrowthTemperature>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>8</growDays>
 			<fertilityMin>0.05</fertilityMin>

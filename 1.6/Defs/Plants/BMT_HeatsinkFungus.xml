@@ -19,6 +19,8 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<mustBeWildToSow>false</mustBeWildToSow>
 			<growDays>5</growDays>
 			<dieIfLeafless>false</dieIfLeafless>

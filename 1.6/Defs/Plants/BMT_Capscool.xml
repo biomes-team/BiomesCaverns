@@ -17,8 +17,8 @@
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<mustBeWildToSow>true</mustBeWildToSow>

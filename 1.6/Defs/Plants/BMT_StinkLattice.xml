@@ -20,6 +20,8 @@
 			<growDays>4</growDays>
 			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<dieIfLeafless>false</dieIfLeafless>
 			<fertilityMin>0.05</fertilityMin>
 			<pollution>Any</pollution>

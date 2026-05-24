@@ -14,7 +14,9 @@
 		</statBases>
 		<plant>
 			<minGrowthTemperature>-50</minGrowthTemperature>		
-			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<maxGrowthTemperature>30</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>-50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>30</maxOptimalGrowthTemperature>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
 			<growDays>12</growDays>

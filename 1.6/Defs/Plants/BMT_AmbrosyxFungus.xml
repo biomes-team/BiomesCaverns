@@ -36,6 +36,10 @@
 			<allowAutoCut>false</allowAutoCut>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
+			<minGrowthTemperature>-50</minGrowthTemperature>		
+			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>-50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<interferesWithRoof>false</interferesWithRoof>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>5</wildClusterWeight>

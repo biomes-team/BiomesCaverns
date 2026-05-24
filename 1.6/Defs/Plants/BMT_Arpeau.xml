@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="PlantBase">
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<terrainTags>
-					<li>Water</li>
-					<li>Fresh</li>
-					<li>Shallow</li>
-					<li>ChestDeep</li>
-				</terrainTags>
-			</li>
-		</modExtensions>
 		<defName>BMT_Arpeau</defName>
 		<label>arpeau</label>
 		<description>Fast-growing, but doesn't yield much usable material. Aquatic fungus.</description>
@@ -54,6 +44,12 @@
 			<sowTags Inherit="False">
 				<li MayRequire="vanillaexpanded.vplantsemore">VCE_Aquatic</li>
 			</sowTags>
+			<wildTerrainTags>
+				<li>Mud</li>
+				<li>WaterFreshShallow</li>
+				<li>WaterMarshy</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<wildClusterRadius>20</wildClusterRadius>
 			<wildClusterWeight>1</wildClusterWeight>
 			<growDays>5</growDays>
@@ -84,16 +80,6 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<terrainTags>
-					<li>Water</li>
-					<li>Fresh</li>
-					<li>Shallow</li>
-					<li>ChestDeep</li>
-				</terrainTags>
-			</li>
-		</modExtensions>
 		<defName>BMT_GreenArpeau</defName>
 		<label>arpeau</label>
 		<description>Fast-growing, but doesn't yield much usable material. Aquatic fungus.</description>
@@ -137,6 +123,13 @@
 			<sowTags Inherit="False">
 				<li MayRequire="vanillaexpanded.vplantsemore">VCE_Aquatic</li>
 			</sowTags>
+			<wildTerrainTags>
+				<li>Mud</li>
+				<li>WaterFreshShallow</li>
+				<li>WaterMarshy</li>
+				<li>MarshySoil</li>
+			</wildTerrainTags>
+			<completelyIgnoreFertility>true</completelyIgnoreFertility>
 			<wildClusterRadius>20</wildClusterRadius>
 			<wildClusterWeight>1</wildClusterWeight>
 			<growDays>5</growDays>

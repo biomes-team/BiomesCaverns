@@ -20,8 +20,10 @@
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Boomshroom/BoomshroomImmature</immatureGraphicPath>
 			<growMinGlow>0</growMinGlow>
 			<fertilityMin>0.7</fertilityMin>
-			<minGrowthTemperature>0</minGrowthTemperature>		
+			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
 			<maxMeshCount>1</maxMeshCount>

@@ -18,8 +18,10 @@
 			<immatureGraphicPath>BMT_Caverns/Things/Plant/Candlesnuff/CandlesnuffImmature</immatureGraphicPath>
 			<fertilityMin>0.7</fertilityMin>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
-			<minGrowthTemperature>37</minGrowthTemperature>		
+			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>1000</wildClusterWeight>
 			<growDays>12</growDays>

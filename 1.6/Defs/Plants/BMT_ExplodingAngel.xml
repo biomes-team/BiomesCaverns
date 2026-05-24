@@ -24,6 +24,8 @@
 			<growOptimalGlow>50</growOptimalGlow>
 			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
+			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
+			<maxOptimalGrowthTemperature>352.222</maxOptimalGrowthTemperature>
 			<growDays>5</growDays>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>0.8~1</visualSizeRange>
