@@ -21,7 +21,7 @@
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>right claw</label>
@@ -30,7 +30,7 @@
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
