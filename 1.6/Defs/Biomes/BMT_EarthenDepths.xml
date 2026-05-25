@@ -143,6 +143,7 @@
 		  </saltwater_Uncommon>
 		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Hot</rareCatchesSetMaker>
 		</fishTypes>
+		<maxFishPopulation>540</maxFishPopulation>
 		<animalDensity>2</animalDensity>
 		<plantDensity>1</plantDensity>
 		<wildPlantsAreCavePlants>true</wildPlantsAreCavePlants>
