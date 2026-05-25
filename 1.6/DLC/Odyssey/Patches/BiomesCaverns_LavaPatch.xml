@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>/Defs/BiomeDef[defName="BMT_EarthenDepths"]/terrainPatchMakers</xpath>
+	  <value>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.045</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>VolcanicRock</terrain>
+						<!--terrain>Slate_Rough</terrain-->
+						<min>0.33</min>
+						<max>0.73</max>
+					</li>
+					<li>
+						<terrain>LavaDeep</terrain>
+						<min>0.73</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+	  </value>
+	</Operation>
+
+</Patch>
