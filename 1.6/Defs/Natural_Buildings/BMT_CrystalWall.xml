@@ -10,6 +10,7 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
+	    <Beauty>1</Beauty>
 		<MaxHitPoints>200</MaxHitPoints>
 	</statBases>
 	<blockLight>true</blockLight>
@@ -81,6 +82,7 @@
 	</graphicData>
 	<uiIconPath>BMT_Caverns/Things/Natural/Linked/crystal_wall_icon</uiIconPath>
 	<statBases>
+	    <Beauty>1</Beauty>
 		<Flammability>0</Flammability>
 	</statBases>
 	<costList>
@@ -116,6 +118,7 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
+	    <Beauty>2</Beauty>
 		<Flammability>0</Flammability>
 	</statBases>
 	<costList>
