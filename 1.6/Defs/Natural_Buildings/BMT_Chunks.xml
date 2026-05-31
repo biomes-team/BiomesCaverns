@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>BMT_Caverns/Things/Chunks/CrystalChunk</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<color>(255,255,255)</color>
 		</graphicData>
 		<statBases>
 			<Mass>20</Mass>
