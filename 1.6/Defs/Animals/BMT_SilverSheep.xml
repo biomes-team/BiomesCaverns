@@ -132,7 +132,7 @@
 				<labelPlural>lambs</labelPlural>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepMale</texPath>
-					<drawSize>0.89</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -140,7 +140,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepFemale</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -148,13 +148,13 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/Dessicated_SilverSheepFemale</texPath>
-					<drawSize>0.89</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepMale</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -170,11 +170,11 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/Dessicated_SilverSheepMale</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/Dessicated_SilverSheepFemale</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.5</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -188,7 +188,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/SilverSheepFemale</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -200,7 +200,7 @@
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/SilverSheep/Dessicated_SilverSheepFemale</texPath>
-					<drawSize>2.65</drawSize>
+					<drawSize>2</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
