@@ -21,7 +21,7 @@
 			<fertilityMin>0.75</fertilityMin>
 			<fertilitySensitivity>0.75</fertilitySensitivity>
 			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>50</growOptimalGlow>
+			<growOptimalGlow>0</growOptimalGlow>
 			<minGrowthTemperature>50</minGrowthTemperature>		
 			<maxGrowthTemperature>352.222</maxGrowthTemperature>
 			<minOptimalGrowthTemperature>50</minOptimalGrowthTemperature>		
