@@ -61,7 +61,7 @@
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs</xpath>
 					<value>
-						<ThingDef ParentName="RoughPlantBase">
+						<ThingDef ParentName="OrganicProductBase">
 							<defName>BMT_RoyalSauce</defName>
 							<label>royal sauce</label>
 							<description>An intensely savoury sauce made from stewing fronds of royal bracket. Helps counter the effects of living in the dark.</description>
@@ -87,6 +87,7 @@
 								<preferability>NeverForNutrition</preferability>
 								<specialThoughtAsIngredient>BMT_ConsumedRoyalSauce</specialThoughtAsIngredient>
 								<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+								<foodType>Processed</foodType>
 							</ingestible>
 						</ThingDef>
 					</value>
