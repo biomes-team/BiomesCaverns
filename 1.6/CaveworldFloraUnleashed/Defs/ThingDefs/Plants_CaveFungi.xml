@@ -62,6 +62,10 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<minGrowTemperature>5</minGrowTemperature>
+			<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
+			<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
+			<maxGrowTemperature>40</maxGrowTemperature>
 			<wildClusterRadius>7</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.1</topWindExposure>
@@ -76,10 +80,6 @@
 		  <purpose>Food</purpose>
 		  <humanFoodPlant>true</humanFoodPlant>			
 		</plant>
-		<minGrowTemperature>5</minGrowTemperature>
-		<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
-		<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
-		<maxGrowTemperature>40</maxGrowTemperature>
 		<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
 		<growOnlyUndeRoof>true</growOnlyUndeRoof>
 		<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
@@ -125,6 +125,10 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<minGrowTemperature>0</minGrowTemperature>
+			<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
+			<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
+			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.1</topWindExposure>
@@ -136,8 +140,8 @@
 			<visualSizeRange>0.6~0.8</visualSizeRange>
 			<growDays>14</growDays> 
 			<wildOrder>0</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>			
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>			
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -145,10 +149,6 @@
 				<glowColor>(30,221,166,0)</glowColor>
 			</li>
 		</comps>
-		<minGrowTemperature>0</minGrowTemperature>
-		<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
-		<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
-		<maxGrowTemperature>50</maxGrowTemperature>
 		<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
 		<growOnlyUndeRoof>true</growOnlyUndeRoof>
 		<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>	
@@ -193,6 +193,10 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<minGrowTemperature>0</minGrowTemperature>
+			<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
+			<maxOptimalGrowTemperature>20</maxOptimalGrowTemperature>
+			<maxGrowTemperature>30</maxGrowTemperature>
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.2</topWindExposure>
@@ -214,10 +218,6 @@
 				<glowColor>(169,48,32,0)</glowColor>
 			</li>
 		</comps>
-		<minGrowTemperature>0</minGrowTemperature>
-		<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
-		<maxOptimalGrowTemperature>20</maxOptimalGrowTemperature>
-		<maxGrowTemperature>30</maxGrowTemperature>
 		<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
 		<growOnlyUndeRoof>true</growOnlyUndeRoof>
 		<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>	
@@ -263,6 +263,10 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<minGrowTemperature>10</minGrowTemperature>
+			<minOptimalGrowTemperature>18</minOptimalGrowTemperature>
+			<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
+			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.4</topWindExposure>
@@ -283,10 +287,6 @@
 				<glowColor>(203,157,39,0)</glowColor>
 			</li>
 		</comps>
-		<minGrowTemperature>10</minGrowTemperature>
-		<minOptimalGrowTemperature>18</minOptimalGrowTemperature>
-		<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
-		<maxGrowTemperature>50</maxGrowTemperature>
 		<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
 		<growOnlyUndeRoof>true</growOnlyUndeRoof>
 		<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>	
@@ -335,6 +335,10 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<minGrowTemperature>-5</minGrowTemperature>
+			<minOptimalGrowTemperature>5</minOptimalGrowTemperature>
+			<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
+			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.3</topWindExposure>
@@ -353,10 +357,6 @@
 				<glowColor>(71,207,198,0)</glowColor>
 			</li>
 		</comps>
-		<minGrowTemperature>-5</minGrowTemperature>
-		<minOptimalGrowTemperature>5</minOptimalGrowTemperature>
-		<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
-		<maxGrowTemperature>50</maxGrowTemperature>
 		<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
 		<growOnlyUndeRoof>true</growOnlyUndeRoof>
 		<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>	
@@ -403,6 +403,10 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
+			<minGrowTemperature>0</minGrowTemperature>
+			<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
+			<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
+			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>1</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.2</topWindExposure>
@@ -419,10 +423,6 @@
 				<glowColor>(238,211,148,0)</glowColor>
 			</li>
 		</comps>
-		<minGrowTemperature>0</minGrowTemperature>
-		<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
-		<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
-		<maxGrowTemperature>50</maxGrowTemperature>
 		<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
 		<growOnlyUndeRoof>true</growOnlyUndeRoof>
 		<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>	
