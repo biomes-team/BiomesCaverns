@@ -62,10 +62,6 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<minGrowTemperature>5</minGrowTemperature>
-			<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
-			<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
-			<maxGrowTemperature>40</maxGrowTemperature>
 			<wildClusterRadius>7</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.1</topWindExposure>
@@ -125,10 +121,6 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<minGrowTemperature>0</minGrowTemperature>
-			<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
-			<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
-			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>3</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.1</topWindExposure>
@@ -193,10 +185,6 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<minGrowTemperature>0</minGrowTemperature>
-			<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
-			<maxOptimalGrowTemperature>20</maxOptimalGrowTemperature>
-			<maxGrowTemperature>30</maxGrowTemperature>
 			<wildClusterRadius>6</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.2</topWindExposure>
@@ -263,10 +251,6 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<minGrowTemperature>10</minGrowTemperature>
-			<minOptimalGrowTemperature>18</minOptimalGrowTemperature>
-			<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
-			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.4</topWindExposure>
@@ -335,10 +319,6 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<minGrowTemperature>-5</minGrowTemperature>
-			<minOptimalGrowTemperature>5</minOptimalGrowTemperature>
-			<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
-			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.3</topWindExposure>
@@ -403,10 +383,6 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<minGrowTemperature>0</minGrowTemperature>
-			<minOptimalGrowTemperature>10</minOptimalGrowTemperature>
-			<maxOptimalGrowTemperature>40</maxOptimalGrowTemperature>
-			<maxGrowTemperature>50</maxGrowTemperature>
 			<wildClusterRadius>1</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<topWindExposure>0.2</topWindExposure>
