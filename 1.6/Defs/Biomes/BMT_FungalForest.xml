@@ -103,8 +103,8 @@
 					<li MayRequire="sarg.alphaanimals">AA_IncidentSummitCrab</li>
 					<li MayRequire="sarg.alphaanimals">AA_Incident_SkyMeteorite</li>
 					<li MayRequire="sarg.alphaanimals">AA_Eclipse</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Whiteout</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Scorch</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_MeteoriteShower</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
