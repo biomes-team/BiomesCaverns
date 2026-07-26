@@ -72,6 +72,14 @@
 		<combatPower>180</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
+		<alternateGraphics>
+			<li>
+				<texPath>BMT_Caverns/Things/Animal/CactusCrab/CactusCrab2</texPath>
+			</li>
+			<li>
+				<texPath>BMT_Caverns/Things/Animal/CactusCrab/CactusCrab3</texPath>
+			</li>
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
