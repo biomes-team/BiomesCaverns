@@ -109,7 +109,7 @@
 		<wildGroupSize>1~2</wildGroupSize>
 		<lifeStages>
 			<li>
-				<label>mammoth calf</label>
+				<label>mastodon calf</label>
 				<bodyGraphicData>
 					<texPath>BMT_Caverns/Things/Animal/HoarfrostMastodon/HoarfrostMastodon</texPath>
 					<drawSize>1.6</drawSize>
