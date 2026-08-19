@@ -20,7 +20,7 @@
 			<harvestYield>6</harvestYield>
 			<growDays>33.3</growDays>
 			<harvestTag>Standard</harvestTag>
-			<fertilityMin>0.0</fertilityMin>
+			<fertilityMin>0.1</fertilityMin>
 			<sowMinSkill>7</sowMinSkill>
 			<!-- <wildClusterRadius>0</wildClusterRadius> -->
 		</plant>
