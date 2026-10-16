@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_CaveBushBase">
+		<defName>BMT_AbyssalGrapesVine</defName>
+		<label>abyssal grapes</label>
+		<description>Although not actually forming grapes, the abyssal grapes are an attempt at creating the perfect nutrient for travelers and mining expeditions. Almost as big as a melon, the fruit is known for having longer lifespans and almost never rotting away when harvested.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.20</Nutrition>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/AbyssalGrapes</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.2, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>10</pathCost>
+		<ingestible/>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>14</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<immatureGraphicPath>BMT_Caverns/Things/Plant/AbyssalGrapes</immatureGraphicPath>
+			<harvestYield>20</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_AbyssalGrapes</harvestedThingDef>
+			<visualSizeRange>0.6~1.1</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>50</wildClusterWeight>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<!-- fruit -->
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>BMT_AbyssalGrapes</defName>
+		<label>abyssal grapes</label>
+		<description>Raw abyssal grapes. Nice to eat, even when raw.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/AbyssalGrapes/AbyssalGrapes</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>75</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+</Defs>

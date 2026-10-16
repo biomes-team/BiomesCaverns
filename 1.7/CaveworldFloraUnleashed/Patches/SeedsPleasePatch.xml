@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SeedsPlease</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>BMT_BrightbellsSeed</defName>
+							<label>brightbells spores</label>
+							<sources>
+								<li>BMT_Brightbells</li>
+							</sources>
+							<graphicData>
+								<texPath>Things/Item/Seeds/BMT_BrightbellsSeeds</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+						</SeedsPlease.SeedDef>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>BMT_GleamcapSeed</defName>
+							<label>gleamcap spores</label>
+							<sources>
+								<li>BMT_Gleamcap</li>
+							</sources>
+							<graphicData>
+								<texPath>Things/Item/Seeds/BMT_GleamcapSeeds</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+						</SeedsPlease.SeedDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>BMT_ExtractSeed_Gleamcap</defName>
+							<label>extract gleamcap spores</label>
+							<description>Extract spores from gleamcap salve.</description>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BMT_GleamcapSalve</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BMT_GleamcapSalve</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BMT_GleamcapSeed>3</BMT_GleamcapSeed>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>BMT_ShimmershroomSeed</defName>
+							<label>shimmershroom spores</label>
+							<sources>
+								<li>BMT_Shimmershroom</li>
+							</sources>
+							<graphicData>
+								<texPath>Things/Item/Seeds/BMT_ShimmershroomSeeds</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+						</SeedsPlease.SeedDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>BMT_ExtractSeed_Shimmershroom</defName>
+							<label>extract shimmershroom spores</label>
+							<description>Extract spores from shimmershroom.</description>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BMT_RawShimmershroom</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BMT_RawShimmershroom</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BMT_ShimmershroomSeed>3</BMT_ShimmershroomSeed>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>BMT_GlowbulbSeed</defName>
+							<label>glowbulb spores</label>
+							<sources>
+								<li>BMT_Glowbulb</li>
+							</sources>
+							<graphicData>
+								<texPath>Things/Item/Seeds/BMT_GlowbulbSeeds</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+						</SeedsPlease.SeedDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>BMT_ExtractSeed_Glowbulb</defName>
+							<label>extract glowbulb spores</label>
+							<description>Extract spores from glowbulb.</description>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BMT_RawGlowbulb</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BMT_RawGlowbulb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BMT_GlowbulbSeed>3</BMT_GlowbulbSeed>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>BMT_GreyfieldsSeed</defName>
+							<label>greyfields spores</label>
+							<sources>
+								<li>BMT_Greyfields</li>
+							</sources>
+							<graphicData>
+								<texPath>Things/Item/Seeds/BMT_GreyfieldsSeeds</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+						</SeedsPlease.SeedDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>BMT_ExtractSeed_Greyfields</defName>
+							<label>extract greyfields spores</label>
+							<description>Extract spores from greyfields.</description>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BMT_RawGreyfields</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BMT_RawGreyfields</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BMT_GreyfieldsSeed>3</BMT_GreyfieldsSeed>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>BMT_RoyalBracketSeed</defName>
+							<label>royal bracket spores</label>
+							<sources>
+								<li>BMT_RoyalBracket</li>
+							</sources>
+							<graphicData>
+								<texPath>Things/Item/Seeds/BMT_RoyalBracketSeeds</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+						</SeedsPlease.SeedDef>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defname="BMT_RawRoyalBracket"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<RecipeDef ParentName="ExtractSeed">
+								<defName>BMT_ExtractSeed_RoyalBracket</defName>
+								<label>extract royal bracket spores</label>
+								<description>Extract spores from royal bracket.</description>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>BMT_RawRoyalBracket</li>
+											</thingDefs>
+										</filter>
+										<count>4</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>BMT_RawRoyalBracket</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<BMT_RoyalBracketSeed>3</BMT_RoyalBracketSeed>
+								</products>
+							</RecipeDef>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+										<!-- ROYAL BRACKET -->
+									<!-- Mushroom that can be made into sauce -->
+									<ThingDef ParentName="PlantFoodRawBase">
+										<defName>BMT_RawRoyalBracket</defName>
+										<label>raw royal bracket</label>
+										<description>Raw royal bracket, ready to be cooked into food or processed into royal sauce.</description>
+										<graphicData>
+											<texPath>Things/Item/Resource/PlantFoodRaw/BMT_RawRoyalBracket</texPath>
+											<graphicClass>Graphic_Single</graphicClass>
+										</graphicData>
+										<statBases>
+											<MarketValue>2.0</MarketValue>
+											<Mass>0.03</Mass>
+										</statBases>
+										<ingestible>
+											<foodType>VegetableOrFruit</foodType>
+											<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+										</ingestible>
+										<comps>
+											<li Class="CompProperties_Rottable">
+												<daysToRotStart>10</daysToRotStart>
+											</li>
+										</comps>
+									</ThingDef> 
+								</value>
+							</li>
+							
+							<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="BMT_RoyalBracket"]/plant/harvestedThingDef</xpath>
+								<value>
+									<harvestedThingDef>BMT_RawRoyalBracket</harvestedThingDef>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<RecipeDef ParentName="ExtractSeed">
+										<defName>BMT_ExtractSeed_RoyalBracket</defName>
+										<label>extract royal bracket spores</label>
+										<description>Extract spores from royal bracket.</description>
+										<ingredients>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>BMT_RawRoyalBracket</li>
+													</thingDefs>
+												</filter>
+												<count>4</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<thingDefs>
+												<li>BMT_RawRoyalBracket</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<products>
+											<BMT_RoyalBracketSeed>3</BMT_RoyalBracketSeed>
+										</products>
+									</RecipeDef>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

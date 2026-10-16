@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--
+	Uses parts of WorldFeatureNamerCommon without including it, as we do not want its default r_name values or anything
+	using animals. Biome-specific RulePackDefs must define biome_terrain_word and biome_item_word.
+	-->
+	<RulePackDef>
+		<defName>BMT_FeatureNamer_CavernCommon</defName>
+		<include>
+			<li>TribalWordUtility</li>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=20)->[place_name] [biome_terrain_word]</li>
+				<li>r_name(p=10)->[place_name] [terrain_word]</li>
+				<li>r_name(p=2)->[story_name] [biome_terrain_word]</li>
+				<li>r_name->[story_name] [terrain_word]</li>
+
+				<li>place_name(p=8)->[PlaceOutlander]</li>
+				<li>place_name(p=6)->[WordTribal]</li>
+				<li>place_name(p=4)->[biome_item_word]</li>
+				<li>place_name->[item_word]</li>
+
+				<li>story_name(p=20)->[story_subject]'s [story_result]</li>
+				<li>story_name(p=10)->[story_subject]'s [biome_item_word]</li>
+				<li>story_name(p=3)->[story_subject]'s [item_word]</li>
+				<li>story_name(p=2)->[story_subject]'s [BodyPart]</li>
+				<li>story_name->[story_subject]'s [Gore]</li>
+
+				<li>story_subject(p=5)->[NamePerson]</li>
+				<li>story_subject->[WordTribal]</li>
+				<li>story_subject->[PlaceOutlander]</li>
+
+				<li>item_word->bloodrop moth</li>
+				<li>item_word->crystal crab</li>
+				<li>item_word->dripstone</li>
+				<li>item_word->hive</li>
+				<li>item_word->megascarab</li>
+				<li>item_word->megaspider</li>
+				<li>item_word->mycelium</li>
+				<li>item_word->pillbug</li>
+				<li>item_word->spelopede</li>
+				<li>item_word->stalactite</li>
+				<li>item_word->stalagmite</li>
+
+				<li>story_result(p=7)->bane</li>
+				<li>story_result->achievement</li>
+				<li>story_result->arrogance</li>
+				<li>story_result->bluff</li>
+				<li>story_result->bounty</li>
+				<li>story_result->cataclysm</li>
+				<li>story_result->collapse</li>
+				<li>story_result->conceit</li>
+				<li>story_result->debt</li>
+				<li>story_result->deception</li>
+				<li>story_result->delight</li>
+				<li>story_result->delusion</li>
+				<li>story_result->destruction</li>
+				<li>story_result->downfall</li>
+				<li>story_result->end</li>
+				<li>story_result->facade</li>
+				<li>story_result->fault</li>
+				<li>story_result->finale</li>
+				<li>story_result->folly</li>
+				<li>story_result->fraud</li>
+				<li>story_result->honor</li>
+				<li>story_result->jackpot</li>
+				<li>story_result->jewel</li>
+				<li>story_result->joy</li>
+				<li>story_result->loss</li>
+				<li>story_result->lunacy</li>
+				<li>story_result->misstep</li>
+				<li>story_result->mistake</li>
+				<li>story_result->pride</li>
+				<li>story_result->prize</li>
+				<li>story_result->retirement</li>
+				<li>story_result->ruin</li>
+				<li>story_result->ruination</li>
+				<li>story_result->ruse</li>
+				<li>story_result->stand</li>
+				<li>story_result->trophy</li>
+				<li>story_result->undoing</li>
+				<li>story_result->vice</li>
+				<li>story_result->wonder</li>
+
+				<li>terrain_word->abyss</li>
+				<li>terrain_word->caves</li>
+				<li>terrain_word->caverns</li>
+				<li>terrain_word->chasm</li>
+				<li>terrain_word->cleft</li>
+				<li>terrain_word->darkness</li>
+				<li>terrain_word->depths</li>
+				<li>terrain_word->halls</li>
+				<li>terrain_word->hollows</li>
+				<li>terrain_word->labyrinth</li>
+				<li>terrain_word->network</li>
+				<li>terrain_word->rift</li>
+				<li>terrain_word->tunnels</li>
+				<li>terrain_word->underworld</li>
+				<li>terrain_word->void</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>BMT_FeatureNamer_CrystalCaverns</defName>
+		<include>
+			<li>BMT_FeatureNamer_CavernCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+
+				<li>biome_item_word(p=6)->crystal</li>
+				<li>biome_item_word->crystalcap</li>
+				<li>biome_item_word->crystalope</li>
+				<li>biome_item_word->crystal beetle</li>
+				<li>biome_item_word->crystal mantis</li>
+				<li>biome_item_word->facet moth</li>
+				<li>biome_item_word->glowslug</li>
+				<li>biome_item_word->glowsnail</li>
+				<li>biome_item_word->jewelbug</li>
+
+				<li>biome_terrain_word->cluster</li>
+				<li>biome_terrain_word->dazzle</li>
+				<li>biome_terrain_word->geode</li>
+				<li>biome_terrain_word->glitter</li>
+				<li>biome_terrain_word->glow</li>
+				<li>biome_terrain_word->iridescence</li>
+				<li>biome_terrain_word->luminescence</li>
+
+				<li>story_result(p=20)->purple lung</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>BMT_FeatureNamer_EarthenDepths</defName>
+		<include>
+			<li>BMT_FeatureNamer_CavernCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+
+				<li>biome_item_word(p=6)->magma</li>
+				<li>biome_item_word(p=6)->lava</li>
+				<li>biome_item_word->ash</li>
+				<li>biome_item_word->basilisk</li>
+				<li>biome_item_word->boom moth</li>
+				<li>biome_item_word->foundry beetle</li>
+				<li>biome_item_word->metallosnail</li>
+
+				<li>biome_terrain_word->caldera</li>
+				<li>biome_terrain_word->crucible</li>
+				<li>biome_terrain_word->forge</li>
+				<li>biome_terrain_word->furnace</li>
+				<li>biome_terrain_word->hell</li>
+				<li>biome_terrain_word->inferno</li>
+				<li>biome_terrain_word->volcano</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>BMT_FeatureNamer_FungalForest</defName>
+		<include>
+			<li>BMT_FeatureNamer_CavernCommon</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+
+				<li>biome_item_word(p=4)->mushroom</li>
+				<li>biome_item_word(p=4)->fungus</li>
+				<li>biome_item_word(p=4)->mycelium</li>
+				<li>biome_item_word->aaroxis dendoria</li>
+				<li>biome_item_word->fungal ferret</li>
+				<li>biome_item_word->fungal mantis</li>
+				<li>biome_item_word->maxolotl</li>
+				<li>biome_item_word->moss beetle</li>
+				<li>biome_item_word->sonar rabbit</li>
+				<li>biome_item_word->yooka</li>
+
+				<li>biome_terrain_word->fungal forest</li>
+				<li>biome_terrain_word->fungal jungle</li>
+				<li>biome_terrain_word->mold</li>
+				<li>biome_terrain_word->undergrowth</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

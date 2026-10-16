@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>Floor_Totemic_Boards</defName>
+		<label>totemic boards</label>
+	</DesignatorDropdownGroupDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_MushroomBoards_Totemic</defName>
+		<label>totemic mushroom boards</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Fine mushroom boards decorated in a totemic style.</description>
+		<texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<dominantStyleCategory>Totemic</dominantStyleCategory>
+		<color>(195,195,195)</color>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+			<StyleDominance>1</StyleDominance>
+			<Flammability>0.22</Flammability>
+		</statBases>
+		<costList>
+			<BMT_MushroomLog>20</BMT_MushroomLog>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<designatorDropdown>Floor_Totemic_Boards</designatorDropdown>
+	</TerrainDef>
+
+</Defs>

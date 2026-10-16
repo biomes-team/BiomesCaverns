@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BMT_CavePlantBase">
+		<defName>BMT_JadeGlintsCrop</defName>
+		<label>jade glint fungus</label>
+		<description>A weird yet strangely beautiful fungus capable of surviving most anywhere dark. First engineered as a decorative mushroom it was then later found its real psychite-like proprieties. While it can be eaten raw for a tiny high, its fluids are more often refined and crystalized into a powerful drug known as Glitter, well used in illegal mining companies to keep their assets working on extra shifts.</description>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/JadeGlints</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>14</pathCost>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<pollution>Any</pollution>			
+			<growDays>8</growDays> 
+			<dieIfLeafless>true</dieIfLeafless>
+			<fertilityMin>0.25</fertilityMin> 
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>BMT_JadeGlints</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>BMT_Fungiponics</li>
+			</sowTags>
+			<topWindExposure>0</topWindExposure>
+			<visualSizeRange>0.5~1.0</visualSizeRange>
+			<wildClusterRadius>6</wildClusterRadius> 
+			<wildClusterWeight>25</wildClusterWeight> 
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>false</humanFoodPlant>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant> 
+	</ThingDef>
+	<!-- drug -->
+	<ThingDef ParentName="DrugBase">
+		<defName>BMT_JadeGlints</defName>
+		<label>jade glints</label>
+		<description>A harvested form of the jade glint fungus. In its base form, it can give a tiny but non-addictive bodily high with much weaker effects than its refined state. It can be refined into a drug known as Glitter.</description>
+		<descriptionHyperlinks>
+			<HediffDef>BMT_GlintHigh</HediffDef>
+		</descriptionHyperlinks>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Crops/JadeGlints/JadeGlints</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>4</DeteriorationRate>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<baseIngestTicks>80</baseIngestTicks>
+			<chairSearchRadius>4</chairSearchRadius>
+			<preferability>DesperateOnly</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<foodType>VegetableOrFruit</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.7</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>BMT_GlintHigh</hediffDef>
+					<severity>0.50</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>PsychiteTolerance</hediffDef>
+				  <severity>0.010</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Rest</need>
+				  <offset>0.01</offset>
+				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Outdoors</need>
+				  <offset>0.05</offset>
+				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+      <li Class="CompProperties_Drug">
+        <chemical>Psychite</chemical>
+        <addictiveness>0.00005</addictiveness>
+        <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
+        <needLevelOffset>0.2</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>100</listOrder>
+        <overdoseSeverityOffset>0.25~0.45</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+      </li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+	<!-- hediff -->
+	<ThingDef ParentName="MakeableDrugBase">
+    <defName>BMT_Glitter</defName>
+    <label>glitter</label>
+    <description>A crystalized version of the jade glint juices. When snorted, it makes the user better at physical labor and affects their mood, making them feel as though they are not indoors. Like many drugs, it is addictive, though it is only half as addictive as yayo.\n\nWhile the fungus was originally designed for beauty, the drug made from it is now used to control mining corp workers at the cost of their health.</description>
+    <descriptionHyperlinks>
+      <HediffDef>BMT_GlitterHigh</HediffDef>
+      <HediffDef>PsychiteTolerance</HediffDef>
+      <HediffDef>PsychiteAddiction</HediffDef>
+      <HediffDef>ChemicalDamageSevere</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>BMT_Caverns/Things/Item/Drug/Glitter</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>350</WorkToMake>
+      <MarketValue>30</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.50</joy>
+      <drugCategory>Hard</drugCategory>
+      <baseIngestTicks>150</baseIngestTicks>
+      <ingestSound>Ingest_Snort</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.21,0,0.05)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Snort {0}</ingestCommandString>
+      <ingestReportString>Snorting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BMT_GlitterHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.25</offset>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+		<li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Outdoors</need>
+          <offset>0.25</offset>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PsychiteTolerance</hediffDef>
+          <severity>0.020</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PsychiteRefining</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <BMT_JadeGlints>8</BMT_JadeGlints>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Psychite</chemical>
+        <addictiveness>0.01</addictiveness>
+        <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>100</listOrder>
+        <overdoseSeverityOffset>0.25~0.45</overdoseSeverityOffset>
+        <largeOverdoseChance>0.01</largeOverdoseChance>
+      </li>
+    </comps>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+  </ThingDef>
+  
+  <HediffDef>
+		<defName>BMT_GlintHigh</defName>
+		<label>glint high</label>
+		<labelNoun>a glint high</labelNoun>
+		<description>Recently ingested jade glint. It makes my body feel good.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(0,0.7,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.85</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<socialFightChanceFactor>0.01</socialFightChanceFactor>
+				<statOffsets>
+					<WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.025</offset>
+					</li>
+				</capMods>
+
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>BMT_GlitterHigh</defName>
+		<label>glitter high</label>
+		<labelNoun>a glitter high</labelNoun>
+		<description>Recently ingested glitter. It feels energizing but my mind feels odd.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(0,0.7,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<socialFightChanceFactor>0.25</socialFightChanceFactor>
+				<statOffsets>
+					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+					<RestFallRateFactor>-0.45</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- thought-->
+	
+		<ThoughtDef>
+		<defName>BMT_GlintThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>BMT_GlintHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>glint high</label>
+				<description>My body feels ready to work.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>BMT_GlitterThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>BMT_GlitterHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>glitter high</label>
+				<description>Glitter makes me feel ready to work but my mind feels strangely distant.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

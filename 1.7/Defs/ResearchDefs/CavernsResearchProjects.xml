@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!--=============== Cultivating Fungi ==============-->
+	<ResearchProjectDef>
+		<defName>BMT_AdvancedFungi</defName>
+		<label>specialized fungi</label>
+		<description>Research how to grow strange fungi with unique functions, from cooling to exploding.</description>
+		<techLevel>Neolithic</techLevel>
+		<baseCost>1200</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.7</researchViewY>
+		<prerequisites>
+			<li>BMT_ResearchMushrooms</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>BMT_CrystalIncubator</defName>
+		<label>crystallization</label>
+		<description>Research methods of artificial crystal growth.</description>
+		<techLevel>Industrial</techLevel>
+		<baseCost>1200</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>1.10</researchViewY>
+		<prerequisites>
+			<li>Hydroponics</li>
+			<li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BushBase">
+		<defName>BMT_Fungusfern</defName>
+		<label>fungusfern</label>
+		<description>A symbiosis between two species of mushroom and fern that lives in crystal caverns.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/Fungusfern</texPath>
+			<drawSize>1.15</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<topWindExposure>0</topWindExposure>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<growDays>3</growDays>
+			<interferesWithRoof>false</interferesWithRoof>
+			<!--leaflessGraphicPath>BMT_Caverns/Things/Plant/FungusfernLeafless</leaflessGraphicPath-->
+		</plant>
+	</ThingDef>
+</Defs>

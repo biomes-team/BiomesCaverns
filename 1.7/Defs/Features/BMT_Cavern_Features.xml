@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FeatureDef Name="BMT_FeatureDef_Cavern_Base" Abstract="True">
+		<workerClass>BiomesCaverns.FeatureWorkers.FeatureWorker_CavernBiomeCluster</workerClass>
+		<!-- Cavern features must have a higher priority than vanilla mountain ranges. -->
+		<order>190</order>
+		<minRootGroupSize>1</minRootGroupSize>
+		<minRootGroupsInCluster>1</minRootGroupsInCluster>
+		<maxSpaceBetweenRootGroups>2</maxSpaceBetweenRootGroups>
+		<minSize>4</minSize>
+		<maxSize>400</maxSize>
+	</FeatureDef>
+
+	<FeatureDef ParentName="BMT_FeatureDef_Cavern_Base">
+		<defName>BMT_FeatureDef_CrystalCaverns</defName>
+		<rootBiomes>
+			<li>BMT_CrystalCaverns</li>
+		</rootBiomes>
+		<nameMaker>BMT_FeatureNamer_CrystalCaverns</nameMaker>
+	</FeatureDef>
+
+	<FeatureDef ParentName="BMT_FeatureDef_Cavern_Base">
+		<defName>BMT_FeatureDef_EarthenDepths</defName>
+		<rootBiomes>
+			<li>BMT_EarthenDepths</li>
+		</rootBiomes>
+		<nameMaker>BMT_FeatureNamer_EarthenDepths</nameMaker>
+	</FeatureDef>
+
+	<FeatureDef ParentName="BMT_FeatureDef_Cavern_Base">
+		<defName>BMT_FeatureDef_FungalForest</defName>
+		<rootBiomes>
+			<li>BMT_FungalForest</li>
+		</rootBiomes>
+		<nameMaker>BMT_FeatureNamer_FungalForest</nameMaker>
+	</FeatureDef>
+
+</Defs>

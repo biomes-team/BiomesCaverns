@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Mushroom Wine -->
+
+	<BMT_NoMushroomMust>没有蘑菇汁</BMT_NoMushroomMust>
+	<BMT_ContainsMushroomMust>内含 {0} / {1} 蘑菇汁.</BMT_ContainsMushroomMust>
+	<BMT_ContainsMushroomWine>内含 {0} / {1} 蘑菇酒.</BMT_ContainsMushroomWine>
+
+</LanguageData>

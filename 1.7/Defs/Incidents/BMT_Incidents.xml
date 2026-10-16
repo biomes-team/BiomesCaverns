@@ -1,0 +1,98 @@
+<Defs>
+	<!-- Other Caverns events are currently defined in Core, to allow reusing them in other Biomes!. -->
+	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
+		<defName>BMT_AmbrosyxSprout</defName>
+		<label>ambrosyx sprout</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>BiomesCore.IncidentWorker_PlantSprout</workerClass>
+		<baseChance>1.0</baseChance>
+		<letterLabel>Ambrosyx sprout</letterLabel>
+		<letterText>A grove of the mysterious fungi mushroom has sprouted nearby! If you wait for the fungi to grow, you'll be able to harvest the delicious, pleasurable, and slightly addictive mushroom.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<allowedBiomes>
+			<li>BMT_EarthenDepths</li>
+			<li>BMT_FungalForest</li>
+			<li>BMT_CrystalCaverns</li>
+		</allowedBiomes>
+		<plant>BMT_AmbrosyxFungus</plant>
+		<amount>10~20</amount>
+		<ignoreSeason>true</ignoreSeason>
+		<allowIndoors>true</allowIndoors>
+	</IncidentDef>
+
+	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
+		<defName>BMT_ExplodingAngel</defName>
+		<label>exploding angel</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>BiomesCore.IncidentWorker_PlantSprout</workerClass>
+		<baseChance>0.4</baseChance>
+		<letterLabel>Angel sprout</letterLabel>
+		<letterText>A grove of the mysterious fungi mushroom has sprouted nearby! Fully grown, they can get dangerous.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<allowedBiomes>
+			<li>BMT_EarthenDepths</li>
+			<!-- <li>BMT_FungalForest</li> -->
+			<!-- <li>BMT_CrystalCaverns</li> -->
+		</allowedBiomes>
+		<plant>BMT_ExplodingAngel</plant>
+		<amount>5~15</amount>
+		<ignoreSeason>true</ignoreSeason>
+		<allowIndoors>true</allowIndoors>
+	</IncidentDef>
+
+	<IncidentDef Class="BiomesCore.PlantSproutIncidentDef">
+		<defName>BMT_SkulltopSprout</defName>
+		<label>skulltop sprout</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>BiomesCore.IncidentWorker_PlantSprout</workerClass>
+		<baseChance>0.5</baseChance>
+		<letterLabel>Skulltop sprout</letterLabel>
+		<letterText>A grove of the mysterious skulltop mushrooms has sprouted nearby! Fully grown, they can get dangerous.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<allowedBiomes>
+			<li>BMT_EarthenDepths</li>
+			<li>BMT_FungalForest</li>
+			<li>BMT_CrystalCaverns</li>
+		</allowedBiomes>
+		<plant>BMT_Skulltop</plant>
+		<amount>30~50</amount>
+		<ignoreSeason>true</ignoreSeason>
+		<allowIndoors>true</allowIndoors>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>BMT_SporeCloud</defName>
+		<label>spore cloud</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>BMT_SporeCloud</gameCondition>
+		<letterLabel>Spore cloud</letterLabel>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>0.06</baseChance>
+		<earliestDay>60</earliestDay>
+		<minRefireDays>90</minRefireDays>
+		<disallowedBiomes>
+			<li>BMT_EarthenDepths</li>
+			<li>BMT_FungalForest</li>
+			<li>BMT_CrystalCaverns</li>
+		</disallowedBiomes>
+		<disabledWhen>
+		  <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+		<durationDays>2.5~10.5</durationDays>
+		<tale>ToxicFallout</tale>
+	</IncidentDef>
+
+</Defs>

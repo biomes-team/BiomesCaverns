@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_TreePolux"]</xpath>
+		<value>
+			<thingClass>BMT.BiomesPlant</thingClass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Plant_TreePolux"]</xpath>
+		<value>
+			<li Class="BiomesCore.DefModExtensions.CustomGraphicsPlantDef">
+				<graphicsPerBiome>
+					<li Class="BiomesCore.DefModExtensions.BiomeGraphics">
+						<biomes>
+							<li>BMT_CrystalCaverns</li>
+							<li>BMT_FungalForest</li>
+							<li>BMT_EarthenDepths</li>
+						</biomes>
+						<graphicPath>BMT_Caverns/Things/Plant/PoluxShroom</graphicPath>
+					</li>
+				</graphicsPerBiome>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_TreePolux"]/plant</xpath>
+		<value>
+			<interferesWithRoof>false</interferesWithRoof>
+		</value>
+	</Operation>
+</Patch>

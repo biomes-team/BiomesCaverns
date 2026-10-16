@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TreeBase" Name="BMT_CaveTreeBase" Abstract="True">
+		<statBases>
+			<Flammability>0.25</Flammability>
+		</statBases>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<interferesWithRoof>false</interferesWithRoof>
+			<harvestTag>Wood</harvestTag>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+			<burnedThingDef>BMT_BurnedMushroom</burnedThingDef>
+			<smashedThingDef>BMT_CavernMycelium</smashedThingDef>
+			<choppedThingDef>BMT_CavernMycelium</choppedThingDef>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase" Name="BMT_CavePlantBase" Abstract="True">
+		<statBases>
+			<Nutrition>0.20</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<cavePlantWeight>0.0</cavePlantWeight>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="BMT_CavePlantBase" Name="BMT_CaveBushBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<selectable>true</selectable>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<cavePlant>true</cavePlant>
+			<interferesWithRoof>false</interferesWithRoof>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>3</growDays>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<visualSizeRange>0.7~1.1</visualSizeRange>
+			<topWindExposure>0.20</topWindExposure>
+			<wildOrder>2</wildOrder>
+		</plant>
+		<graphicData>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+</Defs>

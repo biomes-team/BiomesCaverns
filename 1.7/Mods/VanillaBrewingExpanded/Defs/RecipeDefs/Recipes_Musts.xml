@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>BMT_AmbrosyxMush</defName>
+		<label>make ambrosyx mush</label>
+		<description>Make sliced and pressed ambrosyx, can be left alone to ripen into must to be further distilled into an extremely fine liquor.</description>
+		<jobString>Making ambrosyx mush.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>
+			<li>VBE_Bar</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_AmbrosyxShroom</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_AmbrosyxShroom</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>BMT_AmbrosyxShroom</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_AmbrandyMush>1</VBE_AmbrandyMush>
+		</products>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+</Defs>

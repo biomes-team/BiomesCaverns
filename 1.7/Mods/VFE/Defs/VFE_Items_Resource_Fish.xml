@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=====================================================================-->
+	<!--=============================== Fish ================================-->
+	<!--=====================================================================-->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_BlindTetra</defName>
+		<label>blind tetra</label>
+		<description>Raw blind tetra.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Small/BlindTetra</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_DevilsPupfish</defName>
+		<label>devils pupfish</label>
+		<description>Raw devils pupfish.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Small/DevilsPupfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_GhostShrimp</defName>
+		<label>ghost shrimp</label>
+		<description>Raw ghost shrimp.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Small/GhostShrimp</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_Rocktooth</defName>
+		<label>rocktooth</label>
+		<description>Raw rocktooth.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Small/Rocktooth</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+	<!-- ================================================ -->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_CaveAngelFish</defName>
+		<label>cave angel fish</label>
+		<description>Raw cave angel fish.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Medium/CaveAngelFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.10</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.25</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_Lumineel</defName>
+		<label>lumineel</label>
+		<description>Raw lumineel.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Medium/Lumineel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.10</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.25</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(144,161,208, 0)</glowColor>
+		  </li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_RockLobster</defName>
+		<label>rock lobster</label>
+		<description>Raw rock lobster.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Medium/RockLobster</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.10</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.25</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_StoneSalamander</defName>
+		<label>stone salamander</label>
+		<description>Raw stone salamander.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Medium/StoneSalamander</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.10</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.25</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+	<!-- ================================================ -->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_BlindCatfish</defName>
+		<label>blind catfish</label>
+		<description>Raw blind catfish.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Large/BlindCatfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_Boneblade</defName>
+		<label>boneblade</label>
+		<description>Raw boneblade.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Large/Boneblade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_GiantCaveCrab</defName>
+		<label>giant cave crab</label>
+		<description>Raw giant cave crab.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Large/GiantCaveCrab</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_GlowCuttlefish</defName>
+		<label>glow cuttle fish</label>
+		<description>Raw glow cuttle fish.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/Fish/Large/GlowCuttlefish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<glowColor>(124,161,246, 0)</glowColor>
+		  </li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_BrightWispcap</defName>
+		<label>bright wispcap</label>
+		<description>A short brightly-glowing mushroom. It was engineered during early caveworld colonization efforts to provide constant natural light.</description>
+		<thingClass>BMT.BiomesPlant</thingClass>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/BrightWispcap</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(0.75,0.75)</drawSize>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<statBases>
+			<Flammability>0.0</Flammability>
+			<Beauty>2</Beauty>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<uiIconScale>1.5</uiIconScale>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>1000</wildClusterWeight>
+			<growDays>5</growDays>
+			<topWindExposure>0</topWindExposure>
+			<dieIfLeafless>false</dieIfLeafless>
+			<wildOrder>3</wildOrder>
+			<neverBlightable>true</neverBlightable>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef IsNull="true"/>
+			<harvestYield>0</harvestYield>
+			<sowResearchPrerequisites Inherit="False">
+				<li>BMT_ResearchMushrooms</li>
+			</sowResearchPrerequisites>
+			<sowWork>100</sowWork>
+			<sowMinSkill>3</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Decorative</li>
+			</sowTags>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(201,204,231,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

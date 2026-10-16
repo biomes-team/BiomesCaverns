@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ToDo: remove sequence and findmod. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<success>Always</success>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="DarktorchFungus"]/comps/li/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>BMT_RawShimmershroom</li>
+						<li>BMT_RawGlowbulb</li>
+						<li>BMT_RawGreyfields</li>
+					</value>
+				</li>
+				<!-- Make Nutrifungus a ThingDef_FruitingBody. -->
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]</xpath>
+					<attribute>Class</attribute>
+					<value>Caveworld_Flora_Unleashed.ThingDef_FruitingBody</value>
+				</li>
+				<!-- Add the BMT_Fungiponics sow tag. -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]/plant/sowTags</xpath>
+					<value>
+						<li>BMT_Fungiponics</li>
+					</value>
+				</li>
+				<!-- Add ThingDef_FruitingBody nodes to the Nutrifungus. -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Plant_Nutrifungus"]</xpath>
+					<value>
+						<minGrowTemperature>5</minGrowTemperature>
+						<minOptimalGrowTemperature>15</minOptimalGrowTemperature>
+						<maxOptimalGrowTemperature>35</maxOptimalGrowTemperature>
+						<maxGrowTemperature>40</maxGrowTemperature>
+						<growOnlyOnRoughRock>true</growOnlyOnRoughRock>
+						<growOnlyUndeRoof>true</growOnlyUndeRoof>
+						<growOnlyNearNaturalRock>true</growOnlyNearNaturalRock>
+						<minFertility>0.0</minFertility>
+						<maxFertility>999.0</maxFertility>
+						<minLight>0.0</minLight>
+						<maxLight>0.6</maxLight>
+						<MyceliumAbundance>0</MyceliumAbundance>
+						<MyceliumSizeRange>
+							<min>4</min>
+							<max>7</max>
+						</MyceliumSizeRange>
+						<MyceliumSpawnRadius>2.0</MyceliumSpawnRadius>
+						<MyceliumExclusivityRadiusOffset>5</MyceliumExclusivityRadiusOffset>
+						<MyceliumExclusivityRadiusFactor>2</MyceliumExclusivityRadiusFactor>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

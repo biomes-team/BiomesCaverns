@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="BMT_Caverns_EggFertExtreme" ParentName="EggBase" >
+	<tickerType>Normal</tickerType>
+	<ingestible>
+	  <preferability>DesperateOnly</preferability>
+	</ingestible>
+	<thingCategories>
+	  <li>EggsFertilized</li>
+	</thingCategories>
+	<comps>
+	  <li Class="CompProperties_TemperatureRuinable">
+		<minSafeTemperature>0</minSafeTemperature>
+		<maxSafeTemperature>999</maxSafeTemperature>
+		<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

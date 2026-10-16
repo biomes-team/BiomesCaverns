@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Mushroom Wine -->
+
+	<BMT_NoMushroomMust>Aucun jus de champignon</BMT_NoMushroomMust>
+	<BMT_ContainsMushroomMust>Contient {0} / {1} jus de champignon.</BMT_ContainsMushroomMust>
+	<BMT_ContainsMushroomWine>Contient {0} / {1} vin de champignon.</BMT_ContainsMushroomWine>
+
+</LanguageData>

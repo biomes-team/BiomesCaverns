@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<GameConditionDef>
+		<defName>BMT_GameCondition_PhosphoricLights</defName>
+		<conditionClass>BiomesCaverns.Incidents.GameCondition_PhosphoricLights</conditionClass>
+		<label>phosphoric lights</label>
+		<description>Ethereal phosphoric lights fill the cavern, enchanting all who see them and lifting their spirits.</description>
+		<endMessage>The phosphoric lights are ending.</endMessage>
+		<letterText>Ethereal phosphoric lights fill the cavern, enchanting all who see them and lifting their spirits.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+
+	<IncidentDef>
+		<defName>BMT_Incident_PhosphoricLights</defName>
+		<label>phosphoric lights</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<allowedBiomes>
+			<li MayRequire="biomesteam.biomescaverns">BMT_CrystalCaverns</li>
+			<li MayRequire="biomesteam.biomescaverns">BMT_EarthenDepths</li>
+			<li MayRequire="biomesteam.biomescaverns">BMT_FungalForest</li>
+		</allowedBiomes>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>BMT_GameCondition_PhosphoricLights</gameCondition>
+		<letterLabel>Phosphoric Lights</letterLabel>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>1.2</baseChance>
+		<minRefireDays>15</minRefireDays>
+		<durationDays>0.45~0.75</durationDays>
+		<tale>BMT_PhosphoricLights_Tale</tale>
+	</IncidentDef>
+
+	<ThoughtDef>
+		<defName>BMT_Thought_PhosphoricLights</defName>
+		<workerClass>BiomesCaverns.Incidents.ThoughtWorker_PhosphoricLights</workerClass>
+		<gameCondition>BMT_GameCondition_PhosphoricLights</gameCondition>
+		<stages>
+			<li>
+				<label>mesmerizing lights</label>
+				<description>These beautiful lights fill my heart with joy.</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<TaleDef>
+		<defName>BMT_PhosphoricLights_Tale</defName>
+		<label>phosphoric lights</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>20</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->the time phosphoric lights illuminated the cavern of [PAWN_nameDef]'s [Community]</li>
+				<li>tale_noun->when eerie phosphorescent lights danced within [PAWN_nameDef]'s [Community]</li>
+				<li>tale_noun->[PAWN_nameDef]'s [Community] bathed in the otherworldly glow of phosphoric lights</li>
+				<li>image->the cavern awash in ethereal [Color]s and [Color]s [circumstance_phrase]</li>
+				<li>image->a captivating display of [Color] lights [circumstance_phrase]</li>
+				<li>image->a network of radiant [Color] glimmers [circumstance_phrase]</li>
+				<li>image->intricate [Color] patterns with [Color] highlights [circumstance_phrase]</li>
+				<li>image->[Color] lights gracefully swirling [circumstance_group]</li>
+				<li>circumstance_phrase->casting an enchanting radiance over the cavern floor</li>
+				<li>circumstance_phrase->highlighting the beauty of the [TerrainFeature] below</li>
+				<li>circumstance_phrase->floating mysteriously throughout the cavern</li>
+				<li>circumstance_phrase->encircling a mesmerizing formation of [TerrainFeature]s and [TerrainFeature]s</li>
+				<li>desc_sentence->Below, [PAWN_nameDef] is enraptured, lost in thought.</li>
+				<li>desc_sentence->[PAWN_nameDef] stands near a radiant [TerrainFeature], awe-struck.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [Animal]s move peacefully in the eerie light.</li>
+				<li>desc_sentence->There is a sense of calm and wonder all around.</li>
+				<li>desc_sentence->There is no [Enemy] in sight.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+</Defs>

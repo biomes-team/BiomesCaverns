@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="ResourceVerbBase"> <!--RoughPlantBase-->
+		<defName>BMT_MushroomLog</defName>
+		<label>mushroom log</label>
+		<description>Material from large fibrous fungi. Useful for building structures and weapons. Good animal feed, but largely inedible for humans. \n\nDoes not burn easily and cannot be used as fuel for normal burning but can be used for darklight sources.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Item/MushroomLog</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+			<MarketValue>1.1</MarketValue>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Mass>0.4</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.40</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<tasteThought>BMT_AteFungalLog</tasteThought>
+			<foodType>Fungus</foodType>
+			<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>10</minRewardCount>
+		<stuffProps>
+			<stuffAdjective>fungal</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<color>(195,195,195)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.55</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>Foods</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>mushroom log</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tickerType>Rare</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>BMT_Leather_Mushroom</defName>
+		<label>mushroom leather</label>
+		<description>A squishy damp fabric, not really leather.</description>
+		<graphicData>
+			<color>(195,195,195)</color>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>4</DeteriorationRate>
+			<Mass>0.03</Mass>
+			<Flammability>0.2</Flammability>
+			<StuffPower_Armor_Sharp>0.22</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.22</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.8</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(195,195,195)</color>
+			<commonality>0.002</commonality>
+		</stuffProps>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>BMT_Make_Mushroomleather</defName>
+		<label>make mushroom leather</label>
+		<description>Skin mushroom logs to create weak mushroom leather.</description>
+		<jobString>Making mushroom leather.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>1200</workAmount>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_MushroomLog</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BMT_MushroomLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BMT_Leather_Mushroom>50</BMT_Leather_Mushroom>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+
+</Defs>

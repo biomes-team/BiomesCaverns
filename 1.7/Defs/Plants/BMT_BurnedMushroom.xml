@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef>
+		<defName>BMT_BurnedMushroom</defName>
+		<label>burned shroom</label>
+		<description>A burned mushroom stump. It's ugly and yields very little usable logs.</description>
+		<category>Plant</category>
+		<thingClass>DeadPlant</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<minifiedDef IsNull="True"/>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<tickerType>Long</tickerType>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<neverMultiSelect>True</neverMultiSelect>
+		<drawerType>MapMeshOnly</drawerType>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<startingHpRange>
+			<min>0.5</min>
+			<max>1</max>
+		</startingHpRange>
+		<passability>PassThroughOnly</passability>
+		<pathCost>14</pathCost>
+		<messageOnDeteriorateInStorage>false</messageOnDeteriorateInStorage>
+		<graphicData>
+			<texPath>Things/Plant/BurnedTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.2, 0.15, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestWork>180</harvestWork>
+			<harvestYield>4</harvestYield>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<topWindExposure>0</topWindExposure>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<harvestedThingDef>BMT_MushroomLog</harvestedThingDef>
+			<harvestFailable>false</harvestFailable>
+			<harvestTag>Wood</harvestTag>
+			<growDays>30</growDays>
+			<growMinGlow>0</growMinGlow>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<visualSizeRange>1.2~1.9</visualSizeRange>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+		</plant>
+		<thingCategories>
+			<li>Plants</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

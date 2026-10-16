@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>BMT_FruitingBodies</defName>
+		<label>mold fruiting bodies</label>
+		<description>The fruiting bodies of a mold that grows in caverns.</description>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Plant/FruitingBodies</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>4.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<pollution>Any</pollution>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.5</visualSizeRange>
+			<topWindExposure>0</topWindExposure>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<interferesWithRoof>false</interferesWithRoof>
+		</plant>
+	</ThingDef>
+</Defs>

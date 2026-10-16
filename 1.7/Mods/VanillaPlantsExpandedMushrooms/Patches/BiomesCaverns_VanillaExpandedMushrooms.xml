@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VPE_Plant_Timbercap" or defName="VPE_Plant_Healtruffle" or defName="VPE_Plant_Stinker" or defName="VPE_Plant_Blisscap" or defName="VPE_Plant_Bileceps" or defName="VPE_Plant_MycothreadMushroom"]/plant/sowTags</xpath>
+		<value>
+			<li>BMT_Fungiponics</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BMT_ShimmershroomPlanted" or defName="BMT_GlowbulbPlanted" or defName="BMT_GreyfieldsPlanted" or defName="BMT_RoyalBracketPlanted" or defName="BMT_GleamcapPlanted" or defName="BMT_BrightbellsPlanted"]/plant/sowTags</xpath>
+		<value>
+			<li>VPE_Mushroom</li>
+		</value>
+	</Operation>
+</Patch>

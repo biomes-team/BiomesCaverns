@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeatherDef[defName="BMT_Calm" or defName="BMT_FungalCavern"]</xpath>
+		<value>
+			<li Class="UINotIncluded.WeatherDefExtension">
+				<icon>GD/UI/Icons/Weather/Clear</icon>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

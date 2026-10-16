@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================================================================= -->
+
+	<RecipeDef Name="BMT_Caverns_VanillaDrugsCrafting_Base" Abstract="True">
+		<label>Make drugs</label>
+		<description>Make a drugs.</description>
+		<jobString>Making drugs.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<!-- <displayPriority>1</displayPriority> -->
+		<!-- <researchPrerequisites> -->
+		<!-- <li>GoJuiceProduction</li> -->
+		<!-- </researchPrerequisites> -->
+		<ingredients>
+			<!-- <li> -->
+			<!-- <filter> -->
+			<!-- <thingDefs> -->
+			<!-- <li>Neutroamine</li> -->
+			<!-- </thingDefs> -->
+			<!-- </filter> -->
+			<!-- <count>2</count> -->
+			<!-- </li> -->
+			<!-- <li> -->
+			<!-- <filter> -->
+			<!-- <thingDefs> -->
+			<!-- <li>BMT_Glitter</li> -->
+			<!-- </thingDefs> -->
+			<!-- </filter> -->
+			<!-- <count>1</count> -->
+			<!-- </li> -->
+		</ingredients>
+	</RecipeDef>
+
+	<!-- ======================================================================= -->
+
+	<RecipeDef ParentName="BMT_Caverns_VanillaDrugsCrafting_Base">
+		<defName>BMT_Caverns_MakeGoJuiceFromGlitter1c</defName>
+		<label>make go-juice from glitter</label>
+		<description>Make a go-juice from glitter.</description>
+		<jobString>Making go-juice from glitter.</jobString>
+		<workAmount>600</workAmount>
+		<researchPrerequisites>
+			<li>GoJuiceProduction</li>
+		</researchPrerequisites>
+		<products>
+			<GoJuice>1</GoJuice>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_Glitter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+	</RecipeDef>
+
+	<RecipeDef ParentName="BMT_Caverns_VanillaDrugsCrafting_Base">
+		<defName>BMT_Caverns_MakeGoJuiceFromGlitter5c</defName>
+		<label>make go-juice from glitter x5</label>
+		<description>Make a go-juice from glitter.</description>
+		<jobString>Making go-juice from glitter.</jobString>
+		<workAmount>2400</workAmount>
+		<researchPrerequisites>
+			<li>GoJuiceProduction</li>
+		</researchPrerequisites>
+		<products>
+			<GoJuice>5</GoJuice>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BMT_Glitter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+	</RecipeDef>
+
+</Defs>

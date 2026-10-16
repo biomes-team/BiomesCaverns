@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+			  <xpath>/Defs/ThingDef[@Name="TorchBase"]/designatorDropdown</xpath>
+			  <success>Invert</success>
+			  <value>
+				<designatorDropdown>BMT_TorchesAndLamps</designatorDropdown>
+			  </value>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/ThingDef[@Name="TorchBase"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<designatorDropdown>BMT_TorchesAndLamps</designatorDropdown>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

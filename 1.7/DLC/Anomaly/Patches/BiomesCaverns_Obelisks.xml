@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>/Defs/IncidentDef[@Name="ObeliskBase"]/disallowedBiomes</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/IncidentDef[@Name="ObeliskBase"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<disallowedBiomes/>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[@Name="ObeliskBase"]/disallowedBiomes</xpath>
+		<value>
+		  <li>BMT_CrystalCaverns</li>
+		  <li>BMT_EarthenDepths</li>
+		  <li>BMT_FungalForest</li>
+		</value>
+	</Operation>
+
+</Patch>

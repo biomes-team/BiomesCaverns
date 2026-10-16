@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_WoodenParquetMushroom</defName>
+		<label>mushroom parquet</label>
+		<description>Beautifully laid down wooden flooring for that posh, fancy feeling. Whilst beautiful, it takes a long time to lay down and is also very flammable.</description>
+		<texturePath>Terrains/Parquet</texturePath>
+		<renderPrecedence>228</renderPrecedence>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<color>(195,195,195)</color>
+		<costList>
+			<BMT_MushroomLog>12</BMT_MushroomLog>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<Beauty>2</Beauty>
+			<Flammability>0.22</Flammability>
+		</statBases>
+		<constructEffect>ConstructWood</constructEffect>
+		<designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
+	</TerrainDef>
+
+</Defs>

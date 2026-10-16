@@ -78,4 +78,29 @@
 		<!-- <li IfModActive="vanillaexpanded.vcef">1.6/Mods/VFE</li> -->
 		<li IfModActive="dankpyon.medieval.overhaul">1.6/Mods/MedievalOverhaul</li>
 	</v1.6>
+	<v1.7>
+		<li>1.7</li>
+		<li>\</li>
+		<li>Common/CaveworldFloraUnleashed</li>
+		<li>1.7/CaveworldFloraUnleashed</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.7/DLC/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.7/DLC/Ideology</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.7/DLC/Biotech</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.7/DLC/Anomaly</li>
+		<li IfModActive="ludeon.rimworld.odyssey">1.7/DLC/Odyssey</li> 
+
+		<li IfModActive="sarg.alphaanimals">1.7/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.alphabiomes">1.7/Mods/AlphaBiomes</li>
+		<li IfModActive="sarg.magicalmenagerie">1.7/Mods/AlphaMythology</li>
+		<!--<li IfModActive="musicexpanded.framework">1.7/Mods/MusicExpandedPatch</li>-->
+		<li IfModActive="GonDragon.UINotIncluded">1.7/Mods/UINotIncluded</li>
+		<li IfModActive="VanillaExpanded.VBrewE">1.7/Mods/VanillaBrewingExpanded</li>
+		<li IfModActive="vanillaexpanded.backgrounds">1.7/Mods/VBgE</li>
+		<li IfModActive="VanillaExpanded.HelixienGas">1.7/Mods/VanillaHelixienGasExpanded</li>
+		<li IfModActive="OskarPotocki.VFE.Mechanoid">1.7/Mods/VanillaFactionsExpandedMechanoid</li>
+		<li IfModActive="VanillaExpanded.VFEArchitect">1.7/Mods/VanillaFurnitureExpandedArchitect</li>
+		<li IfModActive="VanillaExpanded.VPlantsEMushrooms">1.7/Mods/VanillaPlantsExpandedMushrooms</li>
+		<!-- <li IfModActive="vanillaexpanded.vcef">1.7/Mods/VFE</li> -->
+		<li IfModActive="dankpyon.medieval.overhaul">1.7/Mods/MedievalOverhaul</li>
+	</v1.7>
 </loadFolders>

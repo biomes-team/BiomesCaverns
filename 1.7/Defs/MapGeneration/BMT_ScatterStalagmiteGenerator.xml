@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GenStepDef>
+		<order>320</order>
+		<defName>BMT_ScatterStalagmiteGenerator</defName>
+		<!-- Only runs for cavern biomes. -->
+		<genStep Class="BiomesCaverns.GenSteps.GenStep_ScatterStalagmite">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>5</minSpacing>
+			<countPer10kCellsRange>8.0~12.0</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>true</allowRoofed>
+			<validators>
+				<li Class="BiomesCaverns.GenSteps.ScattererValidator_RoughRockBuildable">
+					<radius>5</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+					<things>
+						<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
+						<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
+						<BMT_NaturalBuildings_Stalagmites_Large>0.00833</BMT_NaturalBuildings_Stalagmites_Large>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<clusterRectRadius>2~4</clusterRectRadius>
+				</li>
+				<li>
+					<things>
+						<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
+						<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
+						<BMT_NaturalBuildings_Stalagmites_Large>0.01</BMT_NaturalBuildings_Stalagmites_Large>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<clusterRectRadius>3~4</clusterRectRadius>
+				</li>
+				<li>
+					<things>
+						<BMT_NaturalBuildings_Stalagmites_Small>0.1</BMT_NaturalBuildings_Stalagmites_Small>
+						<BMT_NaturalBuildings_Stalagmites_Medium>0.0833</BMT_NaturalBuildings_Stalagmites_Medium>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+					<clusterRectRadius>3~4</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	</GenStepDef>
+
+</Defs>
