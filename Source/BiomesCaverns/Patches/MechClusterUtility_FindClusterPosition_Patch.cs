@@ -18,25 +18,30 @@ namespace BiomesCaverns.Patches
 		{
 			List<CodeInstruction> codes = instructions.ToList();
 
+			// IntVec3 result = IntVec3.Invalid;
+			int resultInit = codes.FindIndex(code =>
+				code.LoadsField(AccessTools.Field(typeof(IntVec3), nameof(IntVec3.Invalid))));
 			int randomCellCall = codes.FindIndex(code =>
 				code.Calls(AccessTools.Method(typeof(CellFinderLoose), nameof(CellFinderLoose.RandomCellWith))));
 			int siegeCall = codes.FindIndex(code =>
 				code.Calls(AccessTools.Method(typeof(RCellFinder), nameof(RCellFinder.FindSiegePositionFrom))));
 
-			if (randomCellCall < 0 || siegeCall < 0 || !codes[randomCellCall + 1].IsStloc() ||
-			    !codes[siegeCall + 1].IsStloc())
+			if (resultInit < 0 || randomCellCall < 0 || siegeCall < 0 || !codes[resultInit + 1].IsStloc() ||
+			    !codes[randomCellCall + 1].IsStloc() || !codes[siegeCall + 1].IsStloc())
 			{
 				BiomesCore.BiomesCore.Error("MechClusterUtility_FindClusterPosition_Patch: IL pattern not found, patch skipped.");
 				return codes;
 			}
 
+			int resultLocal = codes[resultInit + 1].LocalIndex();
 			int startCellLocal = codes[randomCellCall + 1].LocalIndex();
 			int siegeCellLocal = codes[siegeCall + 1].LocalIndex();
 
 			// result = startCell; -> result = siegeCell;
 			for (int i = siegeCall + 2; i < codes.Count - 1; i++)
 			{
-				if (codes[i].IsLdloc() && codes[i].LocalIndex() == startCellLocal && codes[i + 1].IsStloc())
+				if (codes[i].IsLdloc() && codes[i].LocalIndex() == startCellLocal && codes[i + 1].IsStloc() &&
+				    codes[i + 1].LocalIndex() == resultLocal)
 				{
 					codes[i] = CodeInstruction.LoadLocal(siegeCellLocal).MoveLabelsFrom(codes[i]).MoveBlocksFrom(codes[i]);
 					return codes;

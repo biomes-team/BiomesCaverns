@@ -15,6 +15,19 @@ namespace BiomesCaverns.Patches
 	[HarmonyPatch]
 	public static class MechClusterUtility_GetClusterPositionScore_Patch
 	{
+		private static bool Prepare()
+		{
+			if (TargetMethod() != null)
+			{
+				return true;
+			}
+
+			// A null target would make PatchAll throw and skip every remaining Caverns patch.
+			BiomesCore.BiomesCore.Error(
+				"MechClusterUtility_GetClusterPositionScore_Patch: CheckCell local function not found, patch skipped.");
+			return false;
+		}
+
 		private static MethodBase TargetMethod()
 		{
 			// CheckCell is a local function of GetClusterPositionScore.
